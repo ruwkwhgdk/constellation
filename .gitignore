@@ -1,0 +1,22 @@
+# Visual Studio / C++ / Rider 관련 임시 파일
+.vs/
+.vscode/
+.idea/
+*.sln
+*.suo
+*.opensdf
+*.opendb
+*.sdf
+*.VC.db
+*.xcworkspace
+*.xcodeproj
+
+# 언리얼 엔진 자동 생성 및 캐시 폴더 (절대 올리면 안 되는 것들)
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+
+# 기타 빌드 파일
+obj/
+[Bb]uild/

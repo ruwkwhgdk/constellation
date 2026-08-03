@@ -6,8 +6,11 @@
 #include "Subsystems/GameInstanceSubsystem.h"
 #include "CurrencySubsystem.generated.h"
 
+class UConstellationSaveGame;
+
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnGoldChanged, int32, NewGold);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnStarCoinChanged, int32, NewStarCoin);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnStarCoinCollectionChanged, int32, Collected, int32, Total);
 
 /**
  * Holds the player's currency balances (Gold, StarCoin) for the lifetime of the GameInstance,
@@ -20,6 +23,28 @@ class CONSTELLATION_API UCurrencySubsystem : public UGameInstanceSubsystem
 	GENERATED_BODY()
 
 public:
+	virtual void Initialize(FSubsystemCollectionBase& Collection) override;
+
+	/** True if this StarCoin pickup was already permanently collected in a previous session. */
+	UFUNCTION(BlueprintPure, Category = "Currency|StarCoin")
+	static bool IsStarCoinAlreadyCollected(const AActor* CollectableItem);
+
+	/** Permanently marks this StarCoin pickup as collected and immediately persists the save. */
+	UFUNCTION(BlueprintCallable, Category = "Currency|StarCoin")
+	static void MarkStarCoinCollected(const AActor* CollectableItem);
+
+	/** Registers a placed StarCoin pickup so it counts toward the total. Call once from the pickup's BeginPlay. */
+	UFUNCTION(BlueprintCallable, Category = "Currency|StarCoin")
+	static void RegisterStarCoinPickup(const AActor* CollectableItem);
+
+	/** Number of distinct StarCoin pickups permanently collected so far. */
+	UFUNCTION(BlueprintPure, Category = "Currency|StarCoin")
+	int32 GetCollectedStarCoinCount() const { return CollectedStarCoinIDs.Num(); }
+
+	/** Number of distinct StarCoin pickups registered (placed) in the game so far. */
+	UFUNCTION(BlueprintPure, Category = "Currency|StarCoin")
+	int32 GetTotalStarCoinCount() const { return AllStarCoinIDs.Num(); }
+
 	/** Anywhere-callable helper: adds Gold without needing a Get Subsystem node in BP. */
 	UFUNCTION(BlueprintCallable, Category = "Currency|StarCoin", meta = (WorldContext = "WorldContextObject"))
 	static void AddStarCoinTo(const UObject* WorldContextObject, int32 Amount);
@@ -35,6 +60,10 @@ public:
 	/** Broadcast whenever the StarCoin balance changes. */
 	UPROPERTY(BlueprintAssignable, Category = "Currency|StarCoin")
 	FOnStarCoinChanged OnStarCoinChanged;
+
+	/** Broadcast whenever the collected or total StarCoin pickup count changes. */
+	UPROPERTY(BlueprintAssignable, Category = "Currency|StarCoin")
+	FOnStarCoinCollectionChanged OnStarCoinCollectionChanged;
 
 	/** Adds Amount to the player's Gold balance. Amount must be positive. */
 	UFUNCTION(BlueprintCallable, Category = "Currency|Gold")
@@ -64,4 +93,21 @@ protected:
 
 	UPROPERTY(BlueprintReadOnly, Category = "Currency|StarCoin", meta = (AllowPrivateAccess = "true"))
 	int32 StarCoin = 0;
+
+private:
+	bool IsStarCoinIDCollected(const FString& CollectableID) const;
+	void MarkStarCoinIDCollected(const FString& CollectableID);
+	void RegisterStarCoinID(const FString& CollectableID);
+	void SaveToDisk();
+
+	static const FString SaveSlotName;
+	static constexpr int32 SaveUserIndex = 0;
+
+	UPROPERTY(Transient)
+	TObjectPtr<UConstellationSaveGame> CurrentSaveGame = nullptr;
+
+	TArray<FString> CollectedStarCoinIDs;
+
+	/** Not persisted: rebuilt each session as placed StarCoin pickups call RegisterStarCoinPickup in BeginPlay. */
+	TSet<FString> AllStarCoinIDs;
 };

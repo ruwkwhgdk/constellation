@@ -11,6 +11,7 @@ class UConstellationSaveGame;
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnGoldChanged, int32, NewGold);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnStarCoinChanged, int32, NewStarCoin);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnStarCoinCollectionChanged, int32, Collected, int32, Total);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnDummyItemChanged, int32, NewDummyItemCount);
 
 /**
  * Holds the player's currency balances (Gold, StarCoin) for the lifetime of the GameInstance,
@@ -87,6 +88,29 @@ public:
 	UFUNCTION(BlueprintPure, Category = "Currency|StarCoin")
 	int32 GetStarCoin() const { return StarCoin; }
 
+	/** True if this chest was already permanently opened in a previous session. */
+	UFUNCTION(BlueprintPure, Category = "Chest")
+	static bool IsChestAlreadyOpened(const AActor* Chest);
+
+	/** Permanently marks this chest as opened and immediately persists the save. */
+	UFUNCTION(BlueprintCallable, Category = "Chest")
+	static void MarkChestOpened(const AActor* Chest);
+
+	/** Anywhere-callable helper: grants dummy items without needing a Get Subsystem node in BP. */
+	UFUNCTION(BlueprintCallable, Category = "Item", meta = (WorldContext = "WorldContextObject"))
+	static void AddDummyItemTo(const UObject* WorldContextObject, int32 Amount);
+
+	/** Adds Amount to the player's dummy item count. Amount must be positive. */
+	UFUNCTION(BlueprintCallable, Category = "Item")
+	void AddDummyItem(int32 Amount);
+
+	UFUNCTION(BlueprintPure, Category = "Item")
+	int32 GetDummyItemCount() const { return DummyItemCount; }
+
+	/** Broadcast whenever the dummy item count changes. */
+	UPROPERTY(BlueprintAssignable, Category = "Item")
+	FOnDummyItemChanged OnDummyItemChanged;
+
 protected:
 	UPROPERTY(BlueprintReadOnly, Category = "Currency|Gold", meta = (AllowPrivateAccess = "true"))
 	int32 Gold = 0;
@@ -94,10 +118,15 @@ protected:
 	UPROPERTY(BlueprintReadOnly, Category = "Currency|StarCoin", meta = (AllowPrivateAccess = "true"))
 	int32 StarCoin = 0;
 
+	UPROPERTY(BlueprintReadOnly, Category = "Item", meta = (AllowPrivateAccess = "true"))
+	int32 DummyItemCount = 0;
+
 private:
 	bool IsStarCoinIDCollected(const FString& CollectableID) const;
 	void MarkStarCoinIDCollected(const FString& CollectableID);
 	void RegisterStarCoinID(const FString& CollectableID);
+	bool IsChestIDOpened(const FString& ChestID) const;
+	void MarkChestIDOpened(const FString& ChestID);
 	void SaveToDisk();
 
 	static const FString SaveSlotName;
@@ -110,4 +139,7 @@ private:
 
 	/** Not persisted: rebuilt each session as placed StarCoin pickups call RegisterStarCoinPickup in BeginPlay. */
 	TSet<FString> AllStarCoinIDs;
+
+	/** Stable per-actor IDs (AActor::GetName()) of every chest that has been opened. */
+	TArray<FString> OpenedChestIDs;
 };

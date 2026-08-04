@@ -22,4 +22,11 @@ public:
 	/** Stable per-actor IDs (AActor::GetName()) of every StarCoin pickup ever collected. */
 	UPROPERTY()
 	TArray<FString> CollectedStarCoinIDs;
+
+	UPROPERTY()
+	int32 DummyItemCount = 0;
+
+	/** Stable per-actor IDs (AActor::GetName()) of every chest that has been opened. */
+	UPROPERTY()
+	TArray<FString> OpenedChestIDs;
 };

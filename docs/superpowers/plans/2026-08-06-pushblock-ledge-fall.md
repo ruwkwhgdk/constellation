@@ -430,3 +430,24 @@ input simulation limits). This task is a manual playtest checklist to run in the
 - [ ] **Step 6: Report the outcome** (pass/fail per step above) back in the conversation. Any
   failure here means returning to Task 5 to adjust the `EventGraph` logic, recompiling, and
   re-testing — not editing the design document.
+
+## Post-plan fixes (found during Task 7 retests)
+
+Three issues surfaced during manual PIE testing after the plan's 6 tasks were complete and
+committed, each root-caused with live PIE evidence rather than guessed at. Full detail (including
+the exact corrected DSL for each) is in the design spec's amendment notes on `IsGrounded()` and
+`EventTick`; summarized here for the record:
+
+1. **`IsGrounded` traced from the wrong point (raw pivot instead of actor bounds).** Fixed in
+   Task 2's function — see design spec.
+2. **`IsGrounded`'s trace start was too close to the floor (didn't tolerate embedding).** Fixed
+   by starting the trace from the actor bounds' center instead of its computed bottom — see
+   design spec.
+3. **A block that partially overhangs a ledge got permanently stuck** (`IsFalling` latched true
+   forever, `FallSpeed` unbounded) because the fall movement's swept collision got blocked by
+   residual contact with the ledge's lip. Fixed by disabling sweep on the fall movement
+   specifically (landing is now detected purely via `IsGrounded`, not collision blocking) and
+   adding a `MaxFallSpeed` variable (default `-5000.0`) that clamps `FallSpeed` — see design spec.
+
+All three were committed as separate follow-up commits on `develop` (`85a405a`, `772c358`, and
+one more for the sweep/clamp fix) after the plan's original `3fdbfc1`.

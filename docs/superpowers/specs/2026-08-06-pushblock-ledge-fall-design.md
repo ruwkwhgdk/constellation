@@ -81,6 +81,27 @@ Factors out the existing "end the push" sequence so it isn't duplicated:
 `SetIsPushed(false)` → `Ac_Push::EndPush` on the pushing player's push component →
 `SetPushingPlayer(none)`.
 
+**Third amendment (retest at an actual playable ledge found a third issue):** pushing to a real
+ledge edge correctly ended the push, but the block then got permanently stuck — `IsFalling: true`
+forever, `FallSpeed` growing unbounded (observed at -101,382 in a live PIE session, equivalent to
+over 100 seconds of continuous accumulation), position essentially unchanged. Root cause: the
+block's own box collision was still partially resting on the ledge's lip even though its
+bounding-box center (where `IsGrounded` traces from) had cleared the edge. The swept
+`AddActorWorldOffset` used for the fall movement was getting blocked immediately by that residual
+partial contact — the block could never actually move down to clear the ledge, so it could never
+re-trigger `IsGrounded` either. Two changes fixed this:
+- The fall movement's `AddActorWorldOffset` no longer sweeps (`bSweep = false`). Landing is
+  detected purely by `IsGrounded`'s trace on the following tick, not by collision blocking, so a
+  block committed to falling can freely clear a ledge's lip instead of getting wedged on it.
+- `FallSpeed` is now clamped to a new `MaxFallSpeed` variable (default `-5000.0`, a reasonable
+  terminal velocity) via `select`, preventing the unbounded runaway observed above and the
+  tunneling risk that would come with it.
+
+Verified with a live PIE session: relocated the actual stuck actor back to its exact stuck
+position (confirmed via the editor's saved level state, which PIE always reverts to on stop) and
+watched it — it fell cleanly (~2965 units, down to real ground far below) and landed with
+`IsFalling: false`, `FallSpeed: 0`.
+
 ### `EventTick` (restructured)
 
 ```

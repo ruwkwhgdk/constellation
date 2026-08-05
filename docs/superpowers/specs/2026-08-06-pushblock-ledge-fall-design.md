@@ -38,9 +38,33 @@ grounded" for this actor.
 ### New functions on `BP_PushBlock`
 
 **`IsGrounded()` → bool**
-Line-traces straight down from the actor's pivot (`GetActorLocation`) by `FloorBumpTolerance`,
-on the default `Visibility` trace channel, ignoring self. Returns whether the trace hit
-something.
+Line-traces straight down from the actor's world bounding-box bottom (`GetActorBounds`'
+`Origin.Z - BoxExtent.Z`, not the raw actor pivot) by `FloorBumpTolerance`, on the default
+`Visibility` trace channel, ignoring self. Returns whether the trace hit something.
+
+**Amended post-implementation (manual PIE testing found a regression — see below):** the
+original design traced from `GetActorLocation()` (the pivot) directly, on the assumption the
+pivot sits at the mesh's base — matching the requirement's own phrasing ("if the pivot ... is
+not on the ground"). `SM_Push_Block`'s actual local bounds are Z -95.05 to +94.87: its pivot is
+at the mesh's vertical *center*, not its base. A 3-unit trace from the pivot on a normally-
+resting block is ~95 units short of the floor and always returns "not grounded," latching
+`IsFalling` true forever and permanently blocking `EventHit`'s push-start guard. Using the
+actor's actual world bounding-box bottom instead of the raw pivot makes the check correct
+regardless of a mesh's pivot convention.
+
+**Second amendment (first fix wasn't sufficient — same symptom persisted on retest):** tracing
+from exactly `bottomZ` down by `FloorBumpTolerance` still failed, because the placed
+`BP_PushBlock` instances in `AbandonedSchool` sit embedded ~5.5 units into their floor mesh
+(confirmed by direct measurement: floor top at Z=-750, block bottom at Z=-755.5) — deeper than
+the 3-unit tolerance. A trace whose *start* point is already past the floor's surface never
+registers a hit (no crossing exists within the segment), regardless of how the end point is
+computed. Fixed by starting the trace from the actor's bounding-box **center** (`Origin`, always
+safely inside the block's own volume, which the trace ignores via `bIgnoreSelf`) down to
+`bottomZ - FloorBumpTolerance`, so the trace always crosses both the block's own bottom face and
+the floor surface beneath it, regardless of embedding depth. Verified empirically by starting a
+PIE session and reading `IsFalling`/`FallSpeed` directly off all four placed instances after
+settling — all report `IsFalling: false`, `FallSpeed: 0`, holding their original resting
+position.
 
 **`GetEffectiveGravityZ()` → float**
 Returns the constant `-980.0` (Unreal's standard default gravity). The original design read

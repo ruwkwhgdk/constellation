@@ -132,6 +132,13 @@ Call `add_function_param`:
 
 - [ ] **Step 3: Write the function body**
 
+**Amended post-implementation — see the design spec's "Amended post-implementation" note on
+`IsGrounded()` for the full story.** Manual PIE testing after Task 7 found this original version
+made the block permanently unpushable, because `SM_Push_Block`'s pivot sits at the mesh's
+vertical center (confirmed via `StaticMeshTools.get_bounds`: local Z bounds -95.05 to +94.87),
+not its base — so a 3-unit trace from the raw pivot never reaches the floor on a normally-resting
+block. Fixed to trace from the actor's actual world bounding-box bottom instead:
+
 Call `write_graph_dsl`:
 ```json
 {
@@ -139,13 +146,34 @@ Call `write_graph_dsl`:
   "toolset_name": "editor_toolset.toolsets.blueprint.BlueprintTools",
   "arguments": {
     "graph": {"refPath": "/Game/Blueprints/Actor/Common/BP_PushBlock.BP_PushBlock:Is Grounded"},
-    "code": "(fn IsGrounded ()\n  (bind loc (Transformation|GetActorLocation))\n  (bind tol (Variables|Default|GetFloorBumpTolerance))\n  (bind offset (Math|Vector|MakeVector 0.0 0.0 (- tol)))\n  (bind endLoc (Math|Vector|vector+vector loc offset))\n  (bind (_outhit _hit) (Collision|LineTraceByChannel :Start loc :End endLoc :TraceChannel \"TraceTypeQuery1\" :bIgnoreSelf true))\n  (return _hit))"
+    "code": "(fn IsGrounded ()\n  (bind tol (Variables|Default|GetFloorBumpTolerance))\n  (bind (origin extent) (Collision|GetActorBounds self))\n  (bind bottomZ (- (.z origin) (.z extent)))\n  (bind start (Math|Vector|MakeVector (.x origin) (.y origin) bottomZ))\n  (bind end (Math|Vector|MakeVector (.x origin) (.y origin) (- bottomZ tol)))\n  (bind (_outhit _hit) (Collision|LineTraceByChannel :Start start :End end :TraceChannel \"TraceTypeQuery1\" :bIgnoreSelf true))\n  (return _hit))"
   }
 }
 ```
-This traces straight down from the actor's pivot (`GetActorLocation`) by `FloorBumpTolerance` on
-the default `Visibility` channel, ignoring the block's own collision, and returns whether
-anything was hit.
+This traces straight down from the bottom-center of the actor's world bounding box (correct
+regardless of the mesh's pivot convention) by `FloorBumpTolerance` on the default `Visibility`
+channel, ignoring the block's own collision, and returns whether anything was hit.
+
+**Second amendment — this version still wasn't sufficient.** Retesting found the same symptom.
+Direct measurement showed the placed instances sit ~5.5 units embedded into their floor mesh
+(floor top Z=-750, block bottom Z=-755.5) — deeper than `FloorBumpTolerance` (3 units) — so a
+trace starting exactly at `bottomZ` never crosses the floor's surface (it starts past it).
+Fixed by starting the trace from the actor bounds' `Origin` (the bounding-box center — safely
+inside the block, ignored via `bIgnoreSelf`) instead of `bottomZ`, so the trace always crosses
+both the block's own bottom face and the floor beneath it regardless of embedding depth:
+```json
+{
+  "tool_name": "write_graph_dsl",
+  "toolset_name": "editor_toolset.toolsets.blueprint.BlueprintTools",
+  "arguments": {
+    "graph": {"refPath": "/Game/Blueprints/Actor/Common/BP_PushBlock.BP_PushBlock:Is Grounded"},
+    "code": "(fn IsGrounded ()\n  (bind tol (Variables|Default|GetFloorBumpTolerance))\n  (bind (origin extent) (Collision|GetActorBounds self))\n  (bind endZ (- (- (.z origin) (.z extent)) tol))\n  (bind end (Math|Vector|MakeVector (.x origin) (.y origin) endZ))\n  (bind (_outhit _hit) (Collision|LineTraceByChannel :Start origin :End end :TraceChannel \"TraceTypeQuery1\" :bIgnoreSelf true))\n  (return _hit))"
+  }
+}
+```
+Verified empirically: started a PIE session, read `IsFalling`/`FallSpeed` directly off all four
+placed `BP_PushBlock` instances in `AbandonedSchool` after settling — all report
+`IsFalling: false`, `FallSpeed: 0`, holding their original resting position.
 
 - [ ] **Step 4: Verify**
 

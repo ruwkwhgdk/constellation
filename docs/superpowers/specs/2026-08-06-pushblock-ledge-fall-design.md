@@ -43,9 +43,14 @@ on the default `Visibility` trace channel, ignoring self. Returns whether the tr
 something.
 
 **`GetEffectiveGravityZ()` → float**
-Reads the level's `WorldSettings`. If gravity is overridden (`bGlobalGravitySet`), returns
-`GlobalGravityZ`; otherwise returns the standard Unreal default `-980.0` (this project does not
-override gravity anywhere in config, so this is the value actually in effect today).
+Returns the constant `-980.0` (Unreal's standard default gravity). The original design read
+`WorldSettings.GlobalGravityZ` dynamically, but that node requires an actual `UWorld` reference
+as its target and this project's Blueprint node set has no reflected way to obtain one from an
+Actor — confirmed by testing that `connect_pins` genuinely rejects wiring an Actor Self-reference
+into that pin, not merely a DSL syntax issue. Since this project does not override gravity
+anywhere in `Config/`, the constant is the value actually in effect; the function stays a named,
+single-purpose wrapper so a future per-level override could be added here later without touching
+`EventTick`.
 
 **`StopPushing()`**
 Factors out the existing "end the push" sequence so it isn't duplicated:

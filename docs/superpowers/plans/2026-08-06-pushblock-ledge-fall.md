@@ -193,19 +193,26 @@ above (one `fn IsGrounded` with a line trace and a `return`).
 
 - [ ] **Step 3: Write the function body**
 
+**Amended during implementation (see note below):** the original design read `WorldSettings`
+dynamically, but `Utilities|World|GetWorldSettings`'s `self` pin is strictly typed to `World`
+(a `UWorld` member-function target, not a WorldContext-style pin), and this project's Blueprint
+node set has no reflected way to get a `World` reference from an Actor (`AActor::GetWorld()` is
+not a BlueprintCallable node here — confirmed by `connect_pins` genuinely rejecting an Actor
+Self-reference wired into that pin, not just a DSL quirk). Since this project does not override
+gravity anywhere in `Config/` (confirmed by grep during design), the function now simply returns
+the constant:
 ```json
 {
   "tool_name": "write_graph_dsl",
   "toolset_name": "editor_toolset.toolsets.blueprint.BlueprintTools",
   "arguments": {
     "graph": {"refPath": "/Game/Blueprints/Actor/Common/BP_PushBlock.BP_PushBlock:Get Effective Gravity Z"},
-    "code": "(fn GetEffectiveGravityZ ()\n  (bind ws (Utilities|World|GetWorldSettings self))\n  (bind overridden (|GetbGlobalGravitySet ws))\n  (if overridden\n    (return (|GetGlobalGravityZ ws))\n    (else\n      (return -980.0))))"
+    "code": "(fn GetEffectiveGravityZ ()\n  (return -980.0))"
   }
 }
 ```
-This reads the level's `WorldSettings`: if gravity is overridden (`bGlobalGravitySet`), it
-returns `GlobalGravityZ`; otherwise it returns Unreal's standard default, `-980.0` (this project
-does not override gravity anywhere in `Config/`, so `-980.0` is what's actually in effect today).
+This still centralizes "the gravity value BP_PushBlock falls with" in one named function, so a
+future per-level override could be added there later without touching `EventTick`.
 
 - [ ] **Step 4: Verify**
 
@@ -285,6 +292,16 @@ brainstorming). If it doesn't match, stop and investigate before proceeding.
 
 - [ ] **Step 2: Write the replacement EventGraph**
 
+**Amended during implementation (see notes below):** Tasks 2 and 4 discovered that
+`write_graph_dsl` cannot author fresh nodes using the *display* names `read_graph_dsl` shows for
+two node categories: promotable arithmetic operators (must use the generic `+`/`-`/`*`/`/`
+infix operators instead of e.g. `Math|Vector|vector*vector`) and the dynamic "get component"
+getter for the pushing player's `Ac_Push` component (must use `Class|BPPlayerHeroine|GetAcPush`,
+not `|GetAc_Push`). Both corrections are already applied in the DSL below. The vector negation
+for the step-down offset also now uses unary `-` instead of multiplying by a literal
+`"-1, -1, -1"` vector string, for the same reason (untested vector-literal-through-generic-operator
+parsing is an avoidable risk when unary minus already does the job).
+
 Call `write_graph_dsl`:
 ```json
 {
@@ -292,7 +309,7 @@ Call `write_graph_dsl`:
   "toolset_name": "editor_toolset.toolsets.blueprint.BlueprintTools",
   "arguments": {
     "graph": {"refPath": "/Game/Blueprints/Actor/Common/BP_PushBlock.BP_PushBlock:EventGraph"},
-    "code": "(event Collision|EventHit (MyComp Other OtherComp bSelfMoved HitLocation HitNormal NormalImpulse Hit)\n  (bind _asbp_player_heroine (Utilities|Casting|CastToBP_Player_Heroine Other))\n  (if (and (not (Variables|Default|GetIsPushed)) (not (Variables|Default|GetIsFalling)))\n    (Variables|Default|SetPushingPlayer _asbp_player_heroine)\n    (bind _ispushpositionvalid (CallFunction|IsPushPositionValid HitLocation HitNormal))\n    (if _ispushpositionvalid\n      (bind _outvector (CallFunction|GetDirectionalAxis HitNormal))\n      (Variables|Default|SetIsPushed true)\n      (bind _output_get (Variables|Default|SetPushDirection _outvector))\n      (Class|AcPush|DoPush (Variables|Default|GetPushingPlayer) self _output_get HitLocation))))\n\n(event EventTick (DeltaSeconds)\n  (bind _grounded (CallFunction|IsGrounded))\n  (if _grounded\n    (Variables|Default|SetFallSpeed 0.0)\n    (Variables|Default|SetIsFalling false)\n    (if (Variables|Default|GetIsPushed)\n      (bind _floorbumptolerance (Variables|Default|GetFloorBumpTolerance))\n      (bind _upoffset (Math|Vector|MakeVector 0.0 0.0 _floorbumptolerance))\n      (bind _pushingplayer (Variables|Default|GetPushingPlayer))\n      (bind _ac_push (|GetAc_Push _pushingplayer))\n      (bind _iskeep (CallFunction|IsKeepPushDirection))\n      (if _iskeep\n        (bind _pushspeedresult (Class|AcPush|GetPushSpeedResult _ac_push self))\n        (Transformation|AddActorWorldOffset _upoffset true)\n        (Transformation|AddActorWorldOffset (Math|Vector|vector*vector (Math|Vector|vector*vector (Math|Vector|Normalize (Variables|Default|GetPushDirection)) DeltaSeconds) _pushspeedresult) true)\n        (Transformation|AddActorWorldOffset (Math|Vector|vector*vector _upoffset \"-1, -1, -1\") true)\n        (else\n          (CallFunction|StopPushing)))))\n    (else\n      (if (Variables|Default|GetIsPushed)\n        (CallFunction|StopPushing))\n      (Variables|Default|SetIsFalling true)\n      (bind _gravityz (CallFunction|GetEffectiveGravityZ))\n      (bind _newfallspeed (+ (Variables|Default|GetFallSpeed) (* _gravityz DeltaSeconds)))\n      (Variables|Default|SetFallSpeed _newfallspeed)\n      (Transformation|AddActorWorldOffset (Math|Vector|MakeVector 0.0 0.0 (* _newfallspeed DeltaSeconds)) true))))"
+    "code": "(event Collision|EventHit (MyComp Other OtherComp bSelfMoved HitLocation HitNormal NormalImpulse Hit)\n  (bind _asbp_player_heroine (Utilities|Casting|CastToBP_Player_Heroine Other))\n  (if (and (not (Variables|Default|GetIsPushed)) (not (Variables|Default|GetIsFalling)))\n    (Variables|Default|SetPushingPlayer _asbp_player_heroine)\n    (bind _ispushpositionvalid (CallFunction|IsPushPositionValid HitLocation HitNormal))\n    (if _ispushpositionvalid\n      (bind _outvector (CallFunction|GetDirectionalAxis HitNormal))\n      (Variables|Default|SetIsPushed true)\n      (bind _output_get (Variables|Default|SetPushDirection _outvector))\n      (Class|AcPush|DoPush (Variables|Default|GetPushingPlayer) self _output_get HitLocation))))\n\n(event EventTick (DeltaSeconds)\n  (bind _grounded (CallFunction|IsGrounded))\n  (if _grounded\n    (Variables|Default|SetFallSpeed 0.0)\n    (Variables|Default|SetIsFalling false)\n    (if (Variables|Default|GetIsPushed)\n      (bind _floorbumptolerance (Variables|Default|GetFloorBumpTolerance))\n      (bind _upoffset (Math|Vector|MakeVector 0.0 0.0 _floorbumptolerance))\n      (bind _pushingplayer (Variables|Default|GetPushingPlayer))\n      (bind _ac_push (Class|BPPlayerHeroine|GetAcPush _pushingplayer))\n      (bind _iskeep (CallFunction|IsKeepPushDirection))\n      (if _iskeep\n        (bind _pushspeedresult (Class|AcPush|GetPushSpeedResult _ac_push self))\n        (Transformation|AddActorWorldOffset _upoffset true)\n        (Transformation|AddActorWorldOffset (* (* (Math|Vector|Normalize (Variables|Default|GetPushDirection)) DeltaSeconds) _pushspeedresult) true)\n        (Transformation|AddActorWorldOffset (- _upoffset) true)\n        (else\n          (CallFunction|StopPushing)))))\n    (else\n      (if (Variables|Default|GetIsPushed)\n        (CallFunction|StopPushing))\n      (Variables|Default|SetIsFalling true)\n      (bind _gravityz (CallFunction|GetEffectiveGravityZ))\n      (bind _newfallspeed (+ (Variables|Default|GetFallSpeed) (* _gravityz DeltaSeconds)))\n      (Variables|Default|SetFallSpeed _newfallspeed)\n      (Transformation|AddActorWorldOffset (Math|Vector|MakeVector 0.0 0.0 (* _newfallspeed DeltaSeconds)) true))))"
   }
 }
 ```

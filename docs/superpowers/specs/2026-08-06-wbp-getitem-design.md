@@ -101,6 +101,32 @@ covers `WBP_GetItem` too since that variable is generically typed.
   BP_HUD::EventRequestShowGetItemUI(GetHUD() as BP_HUD, Item)
   ```
 
+## As shipped (differs from the design above)
+
+Implementation surfaced a few tooling constraints that changed the mechanism without changing the
+requirement each piece satisfies:
+
+- **`WBP_GetItem` widget tree:** `Background` and a new `ContentBox` (`VerticalBox`, holding
+  `ItemImage` and `ConfirmButton`) are siblings under `RootCanvas`, both anchored to the same
+  50%/50% centered region, rather than `ItemImage`/`ConfirmButton` nesting inside `Background`
+  (a `Border` only supports one child). `ContentBox` visually sits on top of `Background`,
+  matching the sibling-panel pattern `WBP_Dialogue` already uses for its own background+content.
+- **Image binding:** no expose-on-spawn/bound-function pair. `WBP_GetItem` instead exposes a
+  plain public function `SetItemTexture(NewTexture: Texture2D)` — sets the `ItemTexture` member
+  variable and pushes the texture into `ItemImage` via `Appearance::SetBrushFromTexture` (the
+  same one-node pattern `WBP_Tutorial` already uses elsewhere in this project). `BP_HUD` calls it
+  explicitly after `CreateWidget`, rather than the widget pulling the value itself.
+- **`BP_HUD`'s new entry point is a function, not a custom event:** `RequestShowGetItemUI
+  (ItemTexture: Texture2D)`, calling a small helper `ShowGetItemWidget(ItemTexture)` that does the
+  actual create/track/show sequence. `RequestShowGetItemUI` calls the helper from *both* the
+  `Ref_ActiveUI`-valid and -invalid branches (unlike `EventRequestShowChoiceUI`, which only acts
+  in the valid branch and is a no-op otherwise) — necessary because a chest interaction, unlike a
+  dialogue-chained choice, is typically the *first* popup shown, so `Ref_ActiveUI` starts `None`.
+- **`BP_Chest`'s call site:** `Class|BPHUD|RequestShowGetItemUI(hudTyped, Item)` — same cast-then-call
+  shape as designed, just written directly onto the existing `EventInteract` graph via surgical
+  node/pin edits rather than a full-graph DSL rewrite, since the chest's Timeline node
+  (`Custom|PlayOpenAnimation`) can't be reconstructed from the available tooling.
+
 ## Requirement mapping
 
 - "UI displayed in the center of the screen" → `Background`'s anchors are centered with equal

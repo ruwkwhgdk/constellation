@@ -20,3 +20,7 @@ Saved/
 # 기타 빌드 파일
 obj/
 [Bb]uild/
+
+# Python 캐시
+__pycache__/
+*.pyc

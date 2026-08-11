@@ -6,7 +6,7 @@
 실제 로직은 3D Model Creation 저장소의 atom_import 패키지에 있다."""
 import sys
 
-REPO_ROOT = r"C:\Users\User\Desktop\Portfolio\3D Model Creation"
+REPO_ROOT = r"C:\Users\User\Desktop\Portfolio\3D Model Creation\dist\AtomPipelineGUI"
 
 
 def main():

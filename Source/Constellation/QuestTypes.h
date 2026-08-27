@@ -59,10 +59,6 @@ struct FQuestProgressStepDef
 {
 	GENERATED_BODY()
 
-	/** What the player should do for this step. Shown as the quest's current objective while active. */
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Quest")
-	FText Objective;
-
 	/** Additional flavor/context text for this step. */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Quest")
 	FText Description;
@@ -154,10 +150,6 @@ struct FQuestSaveEntry
 
 	UPROPERTY()
 	int32 Progress = 0;
-
-	/** Sub-progress within the current step (see FQuestProgressStepDef). */
-	UPROPERTY()
-	int32 InnerProgress = 0;
 
 	UPROPERTY()
 	FName EndingID;

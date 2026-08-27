@@ -13,6 +13,20 @@
 const FString UQuestSubsystem::SaveSlotName = TEXT("ConstellationSaveGame");
 const TCHAR* UQuestSubsystem::DefaultDatabasePath = TEXT("/Game/Data/Quests/DA_QuestDatabase.DA_QuestDatabase");
 
+namespace
+{
+	/** Resolves the entry for the given 1-based Progress (0 before the quest starts) from a per-step text array, clamped to a valid index. */
+	FText GetTextForProgress(const TArray<FText>& PerStepText, int32 Progress)
+	{
+		if (PerStepText.Num() == 0)
+		{
+			return FText::GetEmpty();
+		}
+		const int32 Index = FMath::Clamp(Progress - 1, 0, PerStepText.Num() - 1);
+		return PerStepText[Index];
+	}
+}
+
 void UQuestSubsystem::Initialize(FSubsystemCollectionBase& Collection)
 {
 	Super::Initialize(Collection);
@@ -35,7 +49,6 @@ void UQuestSubsystem::Initialize(FSubsystemCollectionBase& Collection)
 			FQuestRuntimeState& RS = RuntimeStates.Add(Entry.QuestID);
 			RS.State = Entry.State;
 			RS.Progress = Entry.Progress;
-			RS.InnerProgress = Entry.InnerProgress;
 			RS.EndingID = Entry.EndingID;
 		}
 	}
@@ -299,19 +312,19 @@ FQuestDisplayInfo UQuestSubsystem::GetQuestDisplayInfo(FName QuestID) const
 	case EQuestState::Available:
 		Info.bVisible = true;
 		Info.Title = Quest->Title;
-		Info.Description = Quest->Description;
+		Info.Description = GetTextForProgress(Quest->Description, Info.Progress);
 		break;
 
 	case EQuestState::Progressed:
 	{
 		Info.bVisible = true;
 		Info.Title = Quest->Title;
-		Info.Description = Quest->Description;
 		Info.Progress = GetQuestProgress(QuestID);
+		Info.Description = GetTextForProgress(Quest->Description, Info.Progress);
+		Info.CurrentObjectiveText = GetTextForProgress(Quest->Objective, Info.Progress);
 		if (Quest->ProgressSteps.IsValidIndex(Info.Progress - 1))
 		{
 			const FQuestProgressStepDef& Step = Quest->ProgressSteps[Info.Progress - 1];
-			Info.CurrentObjectiveText = Step.Objective;
 			Info.CurrentStepDescription = Step.Description;
 			Info.MaxInnerProgress = Step.InnerProgressCount;
 			Info.TargetPositions = Step.TargetPositions;
@@ -324,8 +337,8 @@ FQuestDisplayInfo UQuestSubsystem::GetQuestDisplayInfo(FName QuestID) const
 	{
 		Info.bVisible = true;
 		Info.Title = Quest->Title;
-		Info.Description = Quest->Description;
 		Info.Progress = GetQuestProgress(QuestID);
+		Info.Description = GetTextForProgress(Quest->Description, Info.Progress);
 		Info.EndingID = GetQuestEnding(QuestID);
 		Info.EndingText = Quest->FindEndingText(Info.EndingID);
 		break;
@@ -448,7 +461,6 @@ void UQuestSubsystem::SaveToDisk()
 		Entry.QuestID = Pair.Key;
 		Entry.State = Pair.Value.State;
 		Entry.Progress = Pair.Value.Progress;
-		Entry.InnerProgress = Pair.Value.InnerProgress;
 		Entry.EndingID = Pair.Value.EndingID;
 		Entries.Add(Entry);
 	}

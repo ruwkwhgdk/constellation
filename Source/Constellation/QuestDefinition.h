@@ -27,9 +27,20 @@ public:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Quest")
 	FText Title;
 
-	/** Shown once the quest reaches Available. */
+	/**
+	 * Shown once the quest reaches Available. One entry per progress step — indexed the same way as
+	 * ProgressSteps (Description[Progress - 1] once Progressed; Description[0] beforehand). Should have
+	 * ProgressSteps.Num() entries.
+	 */
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Quest")
-	FText Description;
+	TArray<FText> Description;
+
+	/**
+	 * Per-step objective blurb for UI display, indexed the same way as ProgressSteps. Should have
+	 * ProgressSteps.Num() entries.
+	 */
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Quest")
+	TArray<FText> Objective;
 
 	/** While Locked, a Hidden quest is excluded from search/minimap results entirely (not shown as "???"). */
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Quest")

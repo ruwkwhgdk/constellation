@@ -91,6 +91,24 @@ public:
     UPROPERTY(EditAnywhere, Category = "SlimeClimb|Movement")
     float ReattachSpeed = 8.f;   // 부양 시 표면으로 끌어당기는 속도
 
+    // bTreatAsFloor를 실제로 뒤집기 전에, 반대 판정이 이 시간(초) 동안 계속
+    // 유지되어야 한다. 90도 바닥/벽 모서리에서는 한 프레임만 보면 감지된 노멀이
+    // 바닥과 벽 사이를 오갈 수 있는데(캐릭터가 이음매에 딱 붙어 있어 아주 작은
+    // 위치 변화만으로도 트레이스의 최적 후보가 뒤바뀜), 그 값을 그대로 반영하면
+    // BP_Player_Slime의 Tick이 매번 SetMovementMode(Walking/Flying)를 다시
+    // 호출해 슬라임이 다음 표면에 올라타려다 계속 실패하는 것처럼 보인다.
+    UPROPERTY(EditAnywhere, Category = "SlimeClimb|Movement")
+    float FloorWallSwitchDelay = 0.15f;
+
+    // 재부착 트레이스가 실패해도 이 시간(초) 동안은 위치/속도를 건드리지 않고
+    // 넘어간다. 바닥/벽 전환 중에는 CurrentSurfaceNormal이 아직 목표를 향해
+    // 보간되는 도중이라 재부착 트레이스가 한두 프레임 허공을 가리킬 수 있는데,
+    // 실패할 때마다 즉시 LastValidLocation으로 되돌리고 속도를 0으로 만들면
+    // 보간이 끝나기도 전에 매번 원점으로 리셋되어 절대 표면에 올라타지 못하고
+    // 같은 자리에서 계속 실패하는 무한 루프가 된다.
+    UPROPERTY(EditAnywhere, Category = "SlimeClimb|Movement")
+    float ReattachFailGrace = 0.2f;
+
     // 입력을 표면 평면에 투영해 이동. MeshPivot 기준 방향 사용.
     UFUNCTION(BlueprintCallable, Category = "SlimeClimb")
     void MoveOnSurface(USceneComponent* MeshPivotComp, float InputX, float InputY);
@@ -101,4 +119,6 @@ protected:
     FVector LastMoveDirection = FVector::ForwardVector;
     FVector SurfaceForward = FVector::ForwardVector;
     FVector LastValidLocation = FVector::ZeroVector;
+    float FloorWallSwitchTimer = 0.f;
+    float ReattachFailTimer = 0.f;
 };

@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/SaveGame.h"
+#include "QuestTypes.h"
 #include "ConstellationSaveGame.generated.h"
 
 /**
@@ -29,4 +30,8 @@ public:
 	/** Stable per-actor IDs (AActor::GetName()) of every chest that has been opened. */
 	UPROPERTY()
 	TArray<FString> OpenedChestIDs;
+
+	/** Runtime state (State/Progress/Ending) for every quest that has left the Locked stage. */
+	UPROPERTY()
+	TArray<FQuestSaveEntry> QuestStates;
 };

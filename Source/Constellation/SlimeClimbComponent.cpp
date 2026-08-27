@@ -212,7 +212,14 @@ bool USlimeClimbComponent::DetectSurface()
 
 bool USlimeClimbComponent::IsOnWalkableFloor() const
 {
-    return TargetSurfaceNormal.Z >= FloorNormalZThreshold;
+    // bTreatAsFloor는 UpdateOrientation에서 히스테리시스(FloorNormalZThreshold ± 여유값)를
+    // 적용해 갱신된다. 여기서 TargetSurfaceNormal.Z를 문턱값과 그대로 비교해버리면 바닥과
+    // 벽이 만나는 90도 모서리에서 노멀이 문턱값 근처를 프레임마다 오르내릴 때 히스테리시스가
+    // 무시되어 Walking/Flying 모드가 매 프레임 번갈아 전환된다. 그 결과 슬라임이 모서리에서
+    // 계속 오르기를 시도하지만 앞으로 나아가지 못하고 그 자리에 멈추는 현상이 발생했다.
+    // BP_Player_Slime의 EventTick은 DetectSurface -> UpdateOrientation 다음에 이 함수를 호출
+    // 하므로, 이미 갱신된 bTreatAsFloor를 그대로 반환하면 항상 최신값과 일치한다.
+    return bTreatAsFloor;
 }
 
 void USlimeClimbComponent::UpdateOrientation(USceneComponent* MeshPivotComp, UCharacterMovementComponent* MoveComp, FVector CurrentLookVector, float DeltaTime)
@@ -242,9 +249,27 @@ void USlimeClimbComponent::UpdateOrientation(USceneComponent* MeshPivotComp, UCh
         CurrentSurfaceNormal, TargetSurfaceNormal, DeltaTime, NormalInterpSpeed).GetSafeNormal();
 
     // 2. 바닥/벽 판정 히스테리시스 (먼저 갱신 — 이동 방식 결정에 필요)
+    // 우선 밴드(0.15/0.05)로 한 번 거르고, 그래도 반대 판정이 FloorWallSwitchDelay
+    // 동안 계속 유지될 때만 실제로 뒤집는다. 모서리에서는 밴드를 벗어난 값이
+    // 한 프레임만 잠깐 나타났다가 되돌아오는 경우가 많아 밴드만으로는 부족하다.
     const float Z = TargetSurfaceNormal.Z;
-    if (bTreatAsFloor && Z < FloorNormalZThreshold - 0.15f)  bTreatAsFloor = false;
-    else if (!bTreatAsFloor && Z > FloorNormalZThreshold + 0.05f) bTreatAsFloor = true;
+    bool bRawWantsFloor = bTreatAsFloor;
+    if (bTreatAsFloor && Z < FloorNormalZThreshold - 0.15f)  bRawWantsFloor = false;
+    else if (!bTreatAsFloor && Z > FloorNormalZThreshold + 0.05f) bRawWantsFloor = true;
+
+    if (bRawWantsFloor != bTreatAsFloor)
+    {
+        FloorWallSwitchTimer += DeltaTime;
+        if (FloorWallSwitchTimer >= FloorWallSwitchDelay)
+        {
+            bTreatAsFloor = bRawWantsFloor;
+            FloorWallSwitchTimer = 0.f;
+        }
+    }
+    else
+    {
+        FloorWallSwitchTimer = 0.f;
+    }
 
     // 3. 표면 재부착 (벽/곡면일 때, 부양 방지 — 이동은 물리에 맡김)
     if (!bTreatAsFloor)
@@ -284,6 +309,8 @@ void USlimeClimbComponent::UpdateOrientation(USceneComponent* MeshPivotComp, UCh
 
         if (bSnapped)
         {
+            ReattachFailTimer = 0.f;   // 정상적으로 붙었으니 실패 유예 타이머 초기화
+
             const FVector SurfacePoint = SnapHit.ImpactPoint + SnapHit.ImpactNormal * SurfaceOffset;
             // 표면으로부터의 수직 거리
             const FVector ToSlime = Origin - SurfacePoint;
@@ -300,15 +327,28 @@ void USlimeClimbComponent::UpdateOrientation(USceneComponent* MeshPivotComp, UCh
         }
         else
         {
-            // ★ 재부착 트레이스 실패 = 표면을 놓치고 허공에 뜬 상태
-            // (뒤로 이동하며 모서리를 돌 때 CurrentSurfaceNormal 방향이 더 이상
-            //  실제 표면을 가리키지 않아 발생 — 마지막 유효 위치로 즉시 복귀시켜
-            //  중력 없는 Fly 상태로 계속 떠내려가는 것을 방지)
-            Owner->SetActorLocation(LastValidLocation, false);
-            if (MoveComp)
-                MoveComp->Velocity = FVector::ZeroVector;
+            // ★ 재부착 트레이스 실패 = 표면을 놓치고 허공에 뜬 상태.
+            // 다만 바닥/벽 전환 직후에는 CurrentSurfaceNormal이 아직 목표를 향해
+            // 보간되는 도중이라 트레이스 방향이 한두 프레임 허공을 가리킬 수 있다.
+            // 실패마다 즉시 리셋하면 보간이 끝나기 전에 매번 원점으로 되돌아가
+            // 다음 표면에 영영 올라타지 못하는 루프가 되므로, 실패가
+            // ReattachFailGrace 동안 계속될 때만 안전장치를 발동한다.
+            ReattachFailTimer += DeltaTime;
+            if (ReattachFailTimer >= ReattachFailGrace)
+            {
+                // (뒤로 이동하며 모서리를 돌 때 CurrentSurfaceNormal 방향이 더 이상
+                //  실제 표면을 가리키지 않아 발생 — 마지막 유효 위치로 복귀시켜
+                //  중력 없는 Fly 상태로 계속 떠내려가는 것을 방지)
+                Owner->SetActorLocation(LastValidLocation, false);
+                if (MoveComp)
+                    MoveComp->Velocity = FVector::ZeroVector;
+            }
             return;   // 이번 프레임 메시 정렬은 건너뛰고 다음 프레임에 재시도
         }
+    }
+    else
+    {
+        ReattachFailTimer = 0.f;   // 바닥 모드에서는 재부착 로직을 쓰지 않으므로 초기화
     }
 
     // 표면에 붙어있음이 확인된 위치만 '마지막 유효 위치'로 기록

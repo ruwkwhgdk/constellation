@@ -70,6 +70,30 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Quest")
 	bool AdvanceInnerQuestProgress(FName QuestID);
 
+	/** Adds Amount to Progress (clamped to [1, number of progress steps]), resetting InnerProgress to 0. Amount may be negative. */
+	UFUNCTION(BlueprintCallable, Category = "Quest")
+	bool AddQuestProgress(FName QuestID, int32 Amount);
+
+	/** Adds Amount to InnerProgress (clamped to [0, current step's InnerProgressCount]). Amount may be negative. */
+	UFUNCTION(BlueprintCallable, Category = "Quest")
+	bool AddQuestInnerProgress(FName QuestID, int32 Amount);
+
+	/**
+	 * Directly sets Progress to NewProgress (clamped to [1, number of progress steps]), resetting InnerProgress
+	 * to 0. Requires the quest to be currently Progressed. Returns false if the quest isn't Progressed, has no
+	 * progress steps defined, or NewProgress (after clamping) equals the current value.
+	 */
+	UFUNCTION(BlueprintCallable, Category = "Quest")
+	bool SetQuestProgress(FName QuestID, int32 NewProgress);
+
+	/**
+	 * Directly sets InnerProgress to NewInnerProgress (clamped to [0, current step's InnerProgressCount]).
+	 * Requires the quest to be currently Progressed. Returns false if the quest isn't Progressed, the current
+	 * step tracks no sub-progress, or NewInnerProgress (after clamping) equals the current value.
+	 */
+	UFUNCTION(BlueprintCallable, Category = "Quest")
+	bool SetQuestInnerProgress(FName QuestID, int32 NewInnerProgress);
+
 	/** Attempts Progressed -> Complete, recording EndingID. Returns false if the quest isn't currently Progressed. */
 	UFUNCTION(BlueprintCallable, Category = "Quest")
 	bool CompleteQuest(FName QuestID, FName EndingID);
@@ -113,6 +137,22 @@ public:
 	/** Anywhere-callable helper: advances a quest's inner progress without needing a Get Subsystem node in BP. */
 	UFUNCTION(BlueprintCallable, Category = "Quest", meta = (WorldContext = "WorldContextObject"))
 	static bool AdvanceInnerQuestProgressFor(const UObject* WorldContextObject, FName QuestID);
+
+	/** Anywhere-callable helper: adds Amount to a quest's progress without needing a Get Subsystem node in BP. */
+	UFUNCTION(BlueprintCallable, Category = "Quest", meta = (WorldContext = "WorldContextObject"))
+	static bool AddQuestProgressFor(const UObject* WorldContextObject, FName QuestID, int32 Amount);
+
+	/** Anywhere-callable helper: adds Amount to a quest's inner progress without needing a Get Subsystem node in BP. */
+	UFUNCTION(BlueprintCallable, Category = "Quest", meta = (WorldContext = "WorldContextObject"))
+	static bool AddQuestInnerProgressFor(const UObject* WorldContextObject, FName QuestID, int32 Amount);
+
+	/** Anywhere-callable helper: directly sets a quest's progress without needing a Get Subsystem node in BP. */
+	UFUNCTION(BlueprintCallable, Category = "Quest", meta = (WorldContext = "WorldContextObject"))
+	static bool SetQuestProgressFor(const UObject* WorldContextObject, FName QuestID, int32 NewProgress);
+
+	/** Anywhere-callable helper: directly sets a quest's inner progress without needing a Get Subsystem node in BP. */
+	UFUNCTION(BlueprintCallable, Category = "Quest", meta = (WorldContext = "WorldContextObject"))
+	static bool SetQuestInnerProgressFor(const UObject* WorldContextObject, FName QuestID, int32 NewInnerProgress);
 
 	/** Anywhere-callable helper: completes a quest without needing a Get Subsystem node in BP. */
 	UFUNCTION(BlueprintCallable, Category = "Quest", meta = (WorldContext = "WorldContextObject"))

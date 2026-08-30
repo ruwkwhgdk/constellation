@@ -262,6 +262,86 @@ bool UQuestSubsystem::AdvanceInnerQuestProgress(FName QuestID)
 	return true;
 }
 
+bool UQuestSubsystem::AddQuestProgress(FName QuestID, int32 Amount)
+{
+	return SetQuestProgress(QuestID, GetQuestProgress(QuestID) + Amount);
+}
+
+bool UQuestSubsystem::AddQuestInnerProgress(FName QuestID, int32 Amount)
+{
+	return SetQuestInnerProgress(QuestID, GetQuestInnerProgress(QuestID) + Amount);
+}
+
+bool UQuestSubsystem::SetQuestProgress(FName QuestID, int32 NewProgress)
+{
+	const UQuestDefinition* Quest = FindQuestDefinition(QuestID);
+	if (!Quest || GetQuestState(QuestID) != EQuestState::Progressed)
+	{
+		return false;
+	}
+
+	FQuestRuntimeState* RS = RuntimeStates.Find(QuestID);
+	if (!RS)
+	{
+		return false;
+	}
+
+	const int32 MaxSteps = Quest->ProgressSteps.Num();
+	if (MaxSteps <= 0)
+	{
+		return false;
+	}
+
+	const int32 Clamped = FMath::Clamp(NewProgress, 1, MaxSteps);
+	if (Clamped == RS->Progress)
+	{
+		return false;
+	}
+
+	RS->Progress = Clamped;
+	RS->InnerProgress = 0;
+	OnQuestProgressChanged.Broadcast(QuestID, RS->Progress);
+	SaveToDisk();
+	return true;
+}
+
+bool UQuestSubsystem::SetQuestInnerProgress(FName QuestID, int32 NewInnerProgress)
+{
+	const UQuestDefinition* Quest = FindQuestDefinition(QuestID);
+	if (!Quest || GetQuestState(QuestID) != EQuestState::Progressed)
+	{
+		return false;
+	}
+
+	FQuestRuntimeState* RS = RuntimeStates.Find(QuestID);
+	if (!RS)
+	{
+		return false;
+	}
+
+	if (!Quest->ProgressSteps.IsValidIndex(RS->Progress - 1))
+	{
+		return false;
+	}
+
+	const int32 MaxInner = Quest->ProgressSteps[RS->Progress - 1].InnerProgressCount;
+	if (MaxInner <= 0)
+	{
+		return false;
+	}
+
+	const int32 Clamped = FMath::Clamp(NewInnerProgress, 0, MaxInner);
+	if (Clamped == RS->InnerProgress)
+	{
+		return false;
+	}
+
+	RS->InnerProgress = Clamped;
+	OnQuestInnerProgressChanged.Broadcast(QuestID, RS->InnerProgress);
+	SaveToDisk();
+	return true;
+}
+
 bool UQuestSubsystem::CompleteQuest(FName QuestID, FName EndingID)
 {
 	if (GetQuestState(QuestID) != EQuestState::Progressed)
@@ -543,6 +623,70 @@ bool UQuestSubsystem::AdvanceInnerQuestProgressFor(const UObject* WorldContextOb
 			if (UQuestSubsystem* Sub = GI->GetSubsystem<UQuestSubsystem>())
 			{
 				return Sub->AdvanceInnerQuestProgress(QuestID);
+			}
+		}
+	}
+	return false;
+}
+
+bool UQuestSubsystem::AddQuestProgressFor(const UObject* WorldContextObject, FName QuestID, int32 Amount)
+{
+	if (!WorldContextObject) return false;
+	if (const UWorld* World = WorldContextObject->GetWorld())
+	{
+		if (UGameInstance* GI = World->GetGameInstance())
+		{
+			if (UQuestSubsystem* Sub = GI->GetSubsystem<UQuestSubsystem>())
+			{
+				return Sub->AddQuestProgress(QuestID, Amount);
+			}
+		}
+	}
+	return false;
+}
+
+bool UQuestSubsystem::AddQuestInnerProgressFor(const UObject* WorldContextObject, FName QuestID, int32 Amount)
+{
+	if (!WorldContextObject) return false;
+	if (const UWorld* World = WorldContextObject->GetWorld())
+	{
+		if (UGameInstance* GI = World->GetGameInstance())
+		{
+			if (UQuestSubsystem* Sub = GI->GetSubsystem<UQuestSubsystem>())
+			{
+				return Sub->AddQuestInnerProgress(QuestID, Amount);
+			}
+		}
+	}
+	return false;
+}
+
+bool UQuestSubsystem::SetQuestProgressFor(const UObject* WorldContextObject, FName QuestID, int32 NewProgress)
+{
+	if (!WorldContextObject) return false;
+	if (const UWorld* World = WorldContextObject->GetWorld())
+	{
+		if (UGameInstance* GI = World->GetGameInstance())
+		{
+			if (UQuestSubsystem* Sub = GI->GetSubsystem<UQuestSubsystem>())
+			{
+				return Sub->SetQuestProgress(QuestID, NewProgress);
+			}
+		}
+	}
+	return false;
+}
+
+bool UQuestSubsystem::SetQuestInnerProgressFor(const UObject* WorldContextObject, FName QuestID, int32 NewInnerProgress)
+{
+	if (!WorldContextObject) return false;
+	if (const UWorld* World = WorldContextObject->GetWorld())
+	{
+		if (UGameInstance* GI = World->GetGameInstance())
+		{
+			if (UQuestSubsystem* Sub = GI->GetSubsystem<UQuestSubsystem>())
+			{
+				return Sub->SetQuestInnerProgress(QuestID, NewInnerProgress);
 			}
 		}
 	}

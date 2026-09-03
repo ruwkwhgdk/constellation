@@ -16,7 +16,7 @@ void AQuestTargetMarker::SyncToQuest()
 {
 	if (!Quest)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("AQuestTargetMarker::SyncToQuest: No Quest assigned on %s"), *GetActorLabel());
+		UE_LOG(LogTemp, Warning, TEXT("AQuestTargetMarker::SyncToQuest: No Quest assigned on %s"), *GetName());
 		return;
 	}
 

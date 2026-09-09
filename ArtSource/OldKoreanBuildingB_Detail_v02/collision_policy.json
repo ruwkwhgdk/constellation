@@ -1,0 +1,570 @@
+{
+  "SM_KB_Wall_Solid_360": {
+    "custom_hulls": 1,
+    "disable_auto_collision": true
+  },
+  "SM_KB_Wall_Entrance_360": {
+    "custom_hulls": 3,
+    "disable_auto_collision": true
+  },
+  "SM_KB_Wall_Window_360": {
+    "custom_hulls": 4,
+    "disable_auto_collision": true
+  },
+  "SM_KB_Wall_Solid_300": {
+    "custom_hulls": 1,
+    "disable_auto_collision": true
+  },
+  "SM_KB_Wall_Window_300": {
+    "custom_hulls": 4,
+    "disable_auto_collision": true
+  },
+  "SM_KB_Wall_Entrance_300": {
+    "custom_hulls": 3,
+    "disable_auto_collision": true
+  },
+  "SM_KB_Window_Frame_270": {
+    "custom_hulls": 6,
+    "disable_auto_collision": true
+  },
+  "SM_KB_Window_Panel_270": {
+    "custom_hulls": 1,
+    "disable_auto_collision": true
+  },
+  "SM_KB_Window_Panel_140": {
+    "custom_hulls": 1,
+    "disable_auto_collision": true
+  },
+  "SM_KB_Door_Frame_140": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_Floor_360x300": {
+    "custom_hulls": 1,
+    "disable_auto_collision": true
+  },
+  "SM_KB_Fascia_360": {
+    "custom_hulls": 1,
+    "disable_auto_collision": true
+  },
+  "SM_KB_Fascia_300": {
+    "custom_hulls": 1,
+    "disable_auto_collision": true
+  },
+  "SM_KB_Parapet_360": {
+    "custom_hulls": 2,
+    "disable_auto_collision": true
+  },
+  "SM_KB_Parapet_300": {
+    "custom_hulls": 2,
+    "disable_auto_collision": true
+  },
+  "SM_KB_Partition_Door_720": {
+    "custom_hulls": 3,
+    "disable_auto_collision": true
+  },
+  "SM_KB_Partition_Door_1000": {
+    "custom_hulls": 3,
+    "disable_auto_collision": true
+  },
+  "SM_KB_Partition_Solid_380": {
+    "custom_hulls": 1,
+    "disable_auto_collision": true
+  },
+  "SM_KB_Stairwell_Side_560": {
+    "custom_hulls": 1,
+    "disable_auto_collision": true
+  },
+  "SM_KB_Landing_410x200": {
+    "custom_hulls": 1,
+    "disable_auto_collision": true
+  },
+  "SM_KB_Landing_410x236": {
+    "custom_hulls": 1,
+    "disable_auto_collision": true
+  },
+  "SM_KB_Floor_1000x300": {
+    "custom_hulls": 1,
+    "disable_auto_collision": true
+  },
+  "SM_KB_Floor_440x040": {
+    "custom_hulls": 1,
+    "disable_auto_collision": true
+  },
+  "SM_KB_Stair_Flight_180_170": {
+    "custom_hulls": 12,
+    "disable_auto_collision": true
+  },
+  "SM_KB_Stair_Rail_300": {
+    "custom_hulls": 6,
+    "disable_auto_collision": true
+  },
+  "SM_KB_Guardrail_180": {
+    "custom_hulls": 5,
+    "disable_auto_collision": true
+  },
+  "SM_KB_Awning_360": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_Sign_Blank_360": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_Roofhouse_Door_440": {
+    "custom_hulls": 3,
+    "disable_auto_collision": true
+  },
+  "SM_KB_Roofhouse_Side_760": {
+    "custom_hulls": 1,
+    "disable_auto_collision": true
+  },
+  "SM_KB_Roofhouse_Back_440": {
+    "custom_hulls": 1,
+    "disable_auto_collision": true
+  },
+  "SM_KB_Roofhouse_Cap_480x800": {
+    "custom_hulls": 1,
+    "disable_auto_collision": true
+  },
+  "SM_KB_Awning_Striped_Green_360": {
+    "custom_hulls": 48,
+    "disable_auto_collision": true
+  },
+  "SM_KB_Awning_Striped_Orange_360": {
+    "custom_hulls": 48,
+    "disable_auto_collision": true
+  },
+  "SM_KB_SignText_0_0": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_SignText_0_1": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_SignText_0_2": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_SignText_0_3": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_SignText_1_0": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_SignText_1_1": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_SignText_1_2": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_SignText_1_3": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_SignText_2_0": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_SignText_2_1": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_SignText_2_2": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_SignText_2_3": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_VerticalSign_Case": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_VerticalSign_Text": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_WindowPoster_0": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_WindowPosterText_0": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_WindowPoster_1": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_WindowPosterText_1": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_WindowPoster_2": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_WindowPosterText_2": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_WindowPoster_3": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_WindowPosterText_3": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_ShopDoorTrim_0_0": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_ShopDoorTrim_0_1": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_ShopDoorTrim_1_0": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_ShopDoorTrim_1_1": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_ShopDoorTrim_2_0": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_ShopDoorTrim_2_1": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_ShopDoorTrim_3_0": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_ShopDoorTrim_3_1": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_AirConditioner_90": {
+    "custom_hulls": 1,
+    "disable_auto_collision": true
+  },
+  "SM_KB_Drainpipe_340": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_AC_PipePair": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_Stool_Red": {
+    "custom_hulls": 9,
+    "disable_auto_collision": true
+  },
+  "SM_KB_UtilityBox": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_Baseboard_300": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_CeilingLamp_0": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_CeilingLamp_1": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_CeilingLamp_2": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_Roofhouse_Clerestory": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_BandPanel_1_0": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_BandPanel_1_1": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_BandPanel_1_2": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_BandPanel_1_3": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_BandPanel_1_4": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_BandPanel_1_5": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_BandPanel_1_6": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_BandPanel_1_7": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_BandPanel_1_8": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_BandPanel_1_9": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_BandPanel_1_10": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_BandPanel_1_11": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_BandPanel_2_0": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_BandPanel_2_1": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_BandPanel_2_2": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_BandPanel_2_3": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_BandPanel_2_4": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_BandPanel_2_5": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_BandPanel_2_6": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_BandPanel_2_7": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_BandPanel_2_8": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_BandPanel_2_9": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_BandPanel_2_10": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_BandPanel_2_11": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_BandPanel_3_0": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_BandPanel_3_1": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_BandPanel_3_2": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_BandPanel_3_3": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_BandPanel_3_4": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_BandPanel_3_5": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_BandPanel_3_6": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_BandPanel_3_7": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_BandPanel_3_8": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_BandPanel_3_9": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_BandPanel_3_10": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_BandPanel_3_11": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_ShopDisplay_0_0": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_ShopPrint_0_0": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_ShopDisplay_0_1": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_ShopPrint_0_1": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_ShopDisplay_1_0": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_ShopPrint_1_0": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_ShopDisplay_1_1": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_ShopPrint_1_1": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_ShopDisplay_2_0": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_ShopPrint_2_0": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_ShopDisplay_2_1": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_ShopPrint_2_1": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_ShopDisplay_3_0": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_ShopPrint_3_0": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_ShopDisplay_3_1": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_ShopPrint_3_1": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_AcademyFilm_0_0": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_AcademyFilm_0_1": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_AcademyFilm_0_2": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_AcademyWindowText_0": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_AcademyFilm_1_0": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_AcademyFilm_1_1": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_AcademyFilm_1_2": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_AcademyWindowText_1": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_AcademyFilm_2_0": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_AcademyFilm_2_1": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_AcademyFilm_2_2": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_AcademyWindowText_2": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_AcademyFilm_3_0": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_AcademyFilm_3_1": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_AcademyFilm_3_2": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  },
+  "SM_KB_AcademyWindowText_3": {
+    "custom_hulls": 0,
+    "disable_auto_collision": true
+  }
+}

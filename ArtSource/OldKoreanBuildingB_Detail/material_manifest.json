@@ -1,0 +1,37 @@
+{
+  "texture_size": 1024,
+  "texture_repeat_m": 4,
+  "normal_format": "OpenGL +Y; flip green channel for Unreal DirectX normal convention",
+  "pbr_materials": {
+    "Wall": {
+      "material": "M_KB_Wall",
+      "basecolor": "Textures/T_KB_Wall_BaseColor.png",
+      "roughness": "Textures/T_KB_Wall_Roughness.png",
+      "normal": "Textures/T_KB_Wall_Normal.png"
+    },
+    "Concrete": {
+      "material": "M_KB_Concrete",
+      "basecolor": "Textures/T_KB_Concrete_BaseColor.png",
+      "roughness": "Textures/T_KB_Concrete_Roughness.png",
+      "normal": "Textures/T_KB_Concrete_Normal.png"
+    },
+    "Inside": {
+      "material": "M_KB_Inside",
+      "basecolor": "Textures/T_KB_Inside_BaseColor.png",
+      "roughness": "Textures/T_KB_Inside_Roughness.png",
+      "normal": "Textures/T_KB_Inside_Normal.png"
+    },
+    "Floor": {
+      "material": "M_KB_Floor",
+      "basecolor": "Textures/T_KB_Floor_BaseColor.png",
+      "roughness": "Textures/T_KB_Floor_Roughness.png",
+      "normal": "Textures/T_KB_Floor_Normal.png"
+    },
+    "Stair": {
+      "material": "M_KB_Stair",
+      "basecolor": "Textures/T_KB_Stair_BaseColor.png",
+      "roughness": "Textures/T_KB_Stair_Roughness.png",
+      "normal": "Textures/T_KB_Stair_Normal.png"
+    }
+  }
+}

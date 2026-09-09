@@ -1,0 +1,442 @@
+C:\Users\User\Documents\UnrealProjects\Constellation\ArtSource\OldKoreanBuildingB_Detail_v02\blockout_v02_source.py:29: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m.use_nodes = True
+C:\Users\User\Documents\UnrealProjects\Constellation\ArtSource\OldKoreanBuildingB_Detail_v02\generate_detail.py:58: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new('M_KB_'+key);m.diffuse_color=color;m.use_nodes=True
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_Wall_Solid_360.fbx'
+export finished in 0.0127 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_Wall_Entrance_360.fbx'
+export finished in 0.0124 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_Wall_Window_360.fbx'
+export finished in 0.0170 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_Wall_Solid_300.fbx'
+export finished in 0.0104 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_Wall_Window_300.fbx'
+export finished in 0.0130 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_Wall_Entrance_300.fbx'
+export finished in 0.0122 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_Window_Frame_270.fbx'
+export finished in 0.0139 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_Window_Panel_270.fbx'
+export finished in 0.0096 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_Window_Panel_140.fbx'
+export finished in 0.0101 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_Door_Frame_140.fbx'
+export finished in 0.0080 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_Floor_360x300.fbx'
+export finished in 0.0105 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_Fascia_360.fbx'
+export finished in 0.0098 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_Fascia_300.fbx'
+export finished in 0.0110 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_Parapet_360.fbx'
+export finished in 0.0115 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_Parapet_300.fbx'
+export finished in 0.0126 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_Partition_Door_720.fbx'
+export finished in 0.0133 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_Partition_Door_1000.fbx'
+export finished in 0.0127 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_Partition_Solid_380.fbx'
+export finished in 0.0109 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_Stairwell_Side_560.fbx'
+export finished in 0.0104 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_Landing_410x200.fbx'
+export finished in 0.0107 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_Landing_410x236.fbx'
+export finished in 0.0103 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_Floor_1000x300.fbx'
+export finished in 0.0097 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_Floor_440x040.fbx'
+export finished in 0.0107 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_Stair_Flight_180_170.fbx'
+export finished in 0.0199 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_Stair_Rail_300.fbx'
+export finished in 0.0153 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_Guardrail_180.fbx'
+export finished in 0.0141 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_Awning_360.fbx'
+export finished in 0.0091 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_Sign_Blank_360.fbx'
+export finished in 0.0092 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_Roofhouse_Door_440.fbx'
+export finished in 0.0126 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_Roofhouse_Side_760.fbx'
+export finished in 0.0112 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_Roofhouse_Back_440.fbx'
+export finished in 0.0129 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_Roofhouse_Cap_480x800.fbx'
+export finished in 0.0119 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_Awning_Striped_Green_360.fbx'
+export finished in 0.0546 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_Awning_Striped_Orange_360.fbx'
+export finished in 0.0629 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_SignText_0_0.fbx'
+export finished in 0.0061 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_SignText_0_1.fbx'
+export finished in 0.0063 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_SignText_0_2.fbx'
+export finished in 0.0060 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_SignText_0_3.fbx'
+export finished in 0.0053 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_SignText_1_0.fbx'
+export finished in 0.0059 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_SignText_1_1.fbx'
+export finished in 0.0058 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_SignText_1_2.fbx'
+export finished in 0.0063 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_SignText_1_3.fbx'
+export finished in 0.0057 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_SignText_2_0.fbx'
+export finished in 0.0055 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_SignText_2_1.fbx'
+export finished in 0.0053 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_SignText_2_2.fbx'
+export finished in 0.0058 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_SignText_2_3.fbx'
+export finished in 0.0057 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_VerticalSign_Case.fbx'
+export finished in 0.0097 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_VerticalSign_Text.fbx'
+export finished in 0.0070 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_WindowPoster_0.fbx'
+export finished in 0.0101 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_WindowPosterText_0.fbx'
+export finished in 0.0047 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_WindowPoster_1.fbx'
+export finished in 0.0113 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_WindowPosterText_1.fbx'
+export finished in 0.0048 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_WindowPoster_2.fbx'
+export finished in 0.0096 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_WindowPosterText_2.fbx'
+export finished in 0.0055 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_WindowPoster_3.fbx'
+export finished in 0.0095 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_WindowPosterText_3.fbx'
+export finished in 0.0057 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_ShopDoorTrim_0_0.fbx'
+export finished in 0.0097 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_ShopDoorTrim_0_1.fbx'
+export finished in 0.0099 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_ShopDoorTrim_1_0.fbx'
+export finished in 0.0091 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_ShopDoorTrim_1_1.fbx'
+export finished in 0.0109 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_ShopDoorTrim_2_0.fbx'
+export finished in 0.0094 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_ShopDoorTrim_2_1.fbx'
+export finished in 0.0093 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_ShopDoorTrim_3_0.fbx'
+export finished in 0.0094 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_ShopDoorTrim_3_1.fbx'
+export finished in 0.0095 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_AirConditioner_90.fbx'
+export finished in 0.0140 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_Drainpipe_340.fbx'
+export finished in 0.0046 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_AC_PipePair.fbx'
+export finished in 0.0046 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_Stool_Red.fbx'
+export finished in 0.0183 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_UtilityBox.fbx'
+export finished in 0.0093 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_Baseboard_300.fbx'
+export finished in 0.0245 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_CeilingLamp_0.fbx'
+export finished in 0.0098 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_CeilingLamp_1.fbx'
+export finished in 0.0097 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_CeilingLamp_2.fbx'
+export finished in 0.0092 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_Roofhouse_Clerestory.fbx'
+export finished in 0.0098 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_BandPanel_1_0.fbx'
+export finished in 0.0092 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_BandPanel_1_1.fbx'
+export finished in 0.0091 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_BandPanel_1_2.fbx'
+export finished in 0.0095 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_BandPanel_1_3.fbx'
+export finished in 0.0092 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_BandPanel_1_4.fbx'
+export finished in 0.0090 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_BandPanel_1_5.fbx'
+export finished in 0.0089 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_BandPanel_1_6.fbx'
+export finished in 0.0098 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_BandPanel_1_7.fbx'
+export finished in 0.0091 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_BandPanel_1_8.fbx'
+export finished in 0.0112 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_BandPanel_1_9.fbx'
+export finished in 0.0167 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_BandPanel_1_10.fbx'
+export finished in 0.0174 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_BandPanel_1_11.fbx'
+export finished in 0.0168 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_BandPanel_2_0.fbx'
+export finished in 0.0164 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_BandPanel_2_1.fbx'
+export finished in 0.0159 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_BandPanel_2_2.fbx'
+export finished in 0.0158 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_BandPanel_2_3.fbx'
+export finished in 0.0170 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_BandPanel_2_4.fbx'
+export finished in 0.0182 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_BandPanel_2_5.fbx'
+export finished in 0.0170 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_BandPanel_2_6.fbx'
+export finished in 0.0173 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_BandPanel_2_7.fbx'
+export finished in 0.0168 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_BandPanel_2_8.fbx'
+export finished in 0.0161 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_BandPanel_2_9.fbx'
+export finished in 0.0160 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_BandPanel_2_10.fbx'
+export finished in 0.0162 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_BandPanel_2_11.fbx'
+export finished in 0.0161 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_BandPanel_3_0.fbx'
+export finished in 0.0165 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_BandPanel_3_1.fbx'
+export finished in 0.0158 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_BandPanel_3_2.fbx'
+export finished in 0.0161 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_BandPanel_3_3.fbx'
+export finished in 0.0162 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_BandPanel_3_4.fbx'
+export finished in 0.0161 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_BandPanel_3_5.fbx'
+export finished in 0.0158 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_BandPanel_3_6.fbx'
+export finished in 0.0170 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_BandPanel_3_7.fbx'
+export finished in 0.0171 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_BandPanel_3_8.fbx'
+export finished in 0.0171 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_BandPanel_3_9.fbx'
+export finished in 0.0161 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_BandPanel_3_10.fbx'
+export finished in 0.0166 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_BandPanel_3_11.fbx'
+export finished in 0.0171 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_ShopDisplay_0_0.fbx'
+export finished in 0.0174 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_ShopPrint_0_0.fbx'
+export finished in 0.0076 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_ShopDisplay_0_1.fbx'
+export finished in 0.0165 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_ShopPrint_0_1.fbx'
+export finished in 0.0074 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_ShopDisplay_1_0.fbx'
+export finished in 0.0173 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_ShopPrint_1_0.fbx'
+export finished in 0.0071 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_ShopDisplay_1_1.fbx'
+export finished in 0.0179 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_ShopPrint_1_1.fbx'
+export finished in 0.0077 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_ShopDisplay_2_0.fbx'
+export finished in 0.0174 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_ShopPrint_2_0.fbx'
+export finished in 0.0078 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_ShopDisplay_2_1.fbx'
+export finished in 0.0167 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_ShopPrint_2_1.fbx'
+export finished in 0.0079 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_ShopDisplay_3_0.fbx'
+export finished in 0.0175 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_ShopPrint_3_0.fbx'
+export finished in 0.0089 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_ShopDisplay_3_1.fbx'
+export finished in 0.0183 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_ShopPrint_3_1.fbx'
+export finished in 0.0087 sec.00:16.312  image.write      | ERROR OpenImageIO write failed: Could not open file " \.thumbnails\large\blender_31352_c17dbbed4674ce28bbdf36a7d95ab602.png.png"
+01:36.531  render           | Saved: 'C:\Users\User\Documents\UnrealProjects\Constellation\ArtSource\OldKoreanBuildingB_Detail_v02\Previews\01_Detailed_Exterior.png'
+02:03.547  render           | Saved: 'C:\Users\User\Documents\UnrealProjects\Constellation\ArtSource\OldKoreanBuildingB_Detail_v02\Previews\02_Detailed_FrontRight.png'
+02:34.843  render           | Saved: 'C:\Users\User\Documents\UnrealProjects\Constellation\ArtSource\OldKoreanBuildingB_Detail_v02\Previews\03_Storefront_Closeup.png'
+
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_AcademyFilm_0_0.fbx'
+export finished in 0.0172 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_AcademyFilm_0_1.fbx'
+export finished in 0.0169 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_AcademyFilm_0_2.fbx'
+export finished in 0.0165 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_AcademyWindowText_0.fbx'
+export finished in 0.0098 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_AcademyFilm_1_0.fbx'
+export finished in 0.0162 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_AcademyFilm_1_1.fbx'
+export finished in 0.0162 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_AcademyFilm_1_2.fbx'
+export finished in 0.0165 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_AcademyWindowText_1.fbx'
+export finished in 0.0106 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_AcademyFilm_2_0.fbx'
+export finished in 0.0165 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_AcademyFilm_2_1.fbx'
+export finished in 0.0157 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_AcademyFilm_2_2.fbx'
+export finished in 0.0162 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_AcademyWindowText_2.fbx'
+export finished in 0.0098 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_AcademyFilm_3_0.fbx'
+export finished in 0.0157 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_AcademyFilm_3_1.fbx'
+export finished in 0.0159 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_AcademyFilm_3_2.fbx'
+export finished in 0.0163 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\Modules\\SM_KB_AcademyWindowText_3.fbx'
+export finished in 0.0099 sec.
+
+FBX export starting... 'C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OldKoreanBuildingB_Detail_v02\\OldKoreanBuildingB_Detail_Assembly.fbx'
+export finished in 4.4564 sec.
+Info: Saved as "OldKoreanBuildingB_Detail.blend"
+DETAIL_COMPLETE 142 418
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

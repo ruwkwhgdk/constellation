@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "components_verified": 286,
+  "left_glazing_added": 11,
+  "partition_endpoints_corrected": 15,
+  "level": "/Game/Levels/L_StartIsland",
+  "actor": "BP_OldKoreanBuildingB_Blockout_C_0",
+  "visual_review": [
+    "front",
+    "left",
+    "right"
+  ],
+  "playtest": "User reported successful movement before these fixes; no new gameplay test performed."
+}

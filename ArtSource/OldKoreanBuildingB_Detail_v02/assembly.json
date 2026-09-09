@@ -1,0 +1,7112 @@
+{
+  "units": "metres",
+  "front": "-Y",
+  "placements": [
+    {
+      "name": "SM_KB_Floor_360x300__000",
+      "module": "SM_KB_Floor_360x300",
+      "location_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "floor",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Floor_360x300__001",
+      "module": "SM_KB_Floor_360x300",
+      "location_m": [
+        0.0,
+        3.0,
+        0.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "floor",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Floor_360x300__002",
+      "module": "SM_KB_Floor_360x300",
+      "location_m": [
+        0.0,
+        6.0,
+        0.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "floor",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Floor_360x300__003",
+      "module": "SM_KB_Floor_360x300",
+      "location_m": [
+        0.0,
+        9.0,
+        0.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "floor",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Floor_360x300__004",
+      "module": "SM_KB_Floor_360x300",
+      "location_m": [
+        3.5999999046325684,
+        0.0,
+        0.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "floor",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Floor_360x300__005",
+      "module": "SM_KB_Floor_360x300",
+      "location_m": [
+        3.5999999046325684,
+        3.0,
+        0.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "floor",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Floor_360x300__006",
+      "module": "SM_KB_Floor_360x300",
+      "location_m": [
+        3.5999999046325684,
+        6.0,
+        0.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "floor",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Floor_360x300__007",
+      "module": "SM_KB_Floor_360x300",
+      "location_m": [
+        3.5999999046325684,
+        9.0,
+        0.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "floor",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Floor_360x300__008",
+      "module": "SM_KB_Floor_360x300",
+      "location_m": [
+        7.199999809265137,
+        0.0,
+        0.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "floor",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Floor_360x300__009",
+      "module": "SM_KB_Floor_360x300",
+      "location_m": [
+        7.199999809265137,
+        3.0,
+        0.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "floor",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Floor_360x300__010",
+      "module": "SM_KB_Floor_360x300",
+      "location_m": [
+        7.199999809265137,
+        6.0,
+        0.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "floor",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Floor_360x300__011",
+      "module": "SM_KB_Floor_360x300",
+      "location_m": [
+        7.199999809265137,
+        9.0,
+        0.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "floor",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Floor_360x300__012",
+      "module": "SM_KB_Floor_360x300",
+      "location_m": [
+        10.800000190734863,
+        0.0,
+        0.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "floor",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Floor_360x300__013",
+      "module": "SM_KB_Floor_360x300",
+      "location_m": [
+        10.800000190734863,
+        3.0,
+        0.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "floor",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Floor_360x300__014",
+      "module": "SM_KB_Floor_360x300",
+      "location_m": [
+        10.800000190734863,
+        6.0,
+        0.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "floor",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Floor_360x300__015",
+      "module": "SM_KB_Floor_360x300",
+      "location_m": [
+        10.800000190734863,
+        9.0,
+        0.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "floor",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Wall_Entrance_360__016",
+      "module": "SM_KB_Wall_Entrance_360",
+      "location_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Door_Frame_140__017",
+      "module": "SM_KB_Door_Frame_140",
+      "location_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Awning_360__018",
+      "module": "SM_KB_Awning_Striped_Orange_360",
+      "location_m": [
+        0.11999999731779099,
+        0.0,
+        0.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "front",
+      "scale": [
+        0.8799999952316284,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Sign_Blank_360__019",
+      "module": "SM_KB_Sign_Blank_360",
+      "location_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Wall_Window_360__020",
+      "module": "SM_KB_Wall_Window_360",
+      "location_m": [
+        14.399999618530273,
+        12.0,
+        0.0
+      ],
+      "rotation_z_deg": 180,
+      "level": 0,
+      "role": "rear",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Frame_270__021",
+      "module": "SM_KB_Window_Frame_270",
+      "location_m": [
+        14.399999618530273,
+        12.0,
+        0.0
+      ],
+      "rotation_z_deg": 180,
+      "level": 0,
+      "role": "rear",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Panel_270__022",
+      "module": "SM_KB_Window_Panel_270",
+      "location_m": [
+        14.399999618530273,
+        12.0,
+        0.0
+      ],
+      "rotation_z_deg": 180,
+      "level": 0,
+      "role": "rear",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Fascia_360__023",
+      "module": "SM_KB_Fascia_360",
+      "location_m": [
+        0.0,
+        0.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Fascia_360__024",
+      "module": "SM_KB_Fascia_360",
+      "location_m": [
+        14.399999618530273,
+        12.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 180,
+      "level": 0,
+      "role": "rear",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Wall_Entrance_360__025",
+      "module": "SM_KB_Wall_Entrance_360",
+      "location_m": [
+        3.5999999046325684,
+        0.0,
+        0.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Door_Frame_140__026",
+      "module": "SM_KB_Door_Frame_140",
+      "location_m": [
+        3.5999999046325684,
+        0.0,
+        0.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Awning_360__027",
+      "module": "SM_KB_Awning_Striped_Orange_360",
+      "location_m": [
+        3.7199997901916504,
+        0.0,
+        0.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "front",
+      "scale": [
+        0.8799999952316284,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Sign_Blank_360__028",
+      "module": "SM_KB_Sign_Blank_360",
+      "location_m": [
+        3.5999999046325684,
+        0.0,
+        0.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Wall_Window_360__029",
+      "module": "SM_KB_Wall_Window_360",
+      "location_m": [
+        10.800000190734863,
+        12.0,
+        0.0
+      ],
+      "rotation_z_deg": 180,
+      "level": 0,
+      "role": "rear",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Frame_270__030",
+      "module": "SM_KB_Window_Frame_270",
+      "location_m": [
+        10.800000190734863,
+        12.0,
+        0.0
+      ],
+      "rotation_z_deg": 180,
+      "level": 0,
+      "role": "rear",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Panel_270__031",
+      "module": "SM_KB_Window_Panel_270",
+      "location_m": [
+        10.800000190734863,
+        12.0,
+        0.0
+      ],
+      "rotation_z_deg": 180,
+      "level": 0,
+      "role": "rear",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Fascia_360__032",
+      "module": "SM_KB_Fascia_360",
+      "location_m": [
+        3.5999999046325684,
+        0.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Fascia_360__033",
+      "module": "SM_KB_Fascia_360",
+      "location_m": [
+        10.800000190734863,
+        12.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 180,
+      "level": 0,
+      "role": "rear",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Wall_Entrance_360__034",
+      "module": "SM_KB_Wall_Entrance_360",
+      "location_m": [
+        7.199999809265137,
+        0.0,
+        0.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Door_Frame_140__035",
+      "module": "SM_KB_Door_Frame_140",
+      "location_m": [
+        7.199999809265137,
+        0.0,
+        0.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Awning_360__036",
+      "module": "SM_KB_Awning_Striped_Green_360",
+      "location_m": [
+        7.319999694824219,
+        0.0,
+        0.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "front",
+      "scale": [
+        0.8799999952316284,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Sign_Blank_360__037",
+      "module": "SM_KB_Sign_Blank_360",
+      "location_m": [
+        7.199999809265137,
+        0.0,
+        0.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Wall_Window_360__038",
+      "module": "SM_KB_Wall_Window_360",
+      "location_m": [
+        7.199999809265137,
+        12.0,
+        0.0
+      ],
+      "rotation_z_deg": 180,
+      "level": 0,
+      "role": "rear",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Frame_270__039",
+      "module": "SM_KB_Window_Frame_270",
+      "location_m": [
+        7.199999809265137,
+        12.0,
+        0.0
+      ],
+      "rotation_z_deg": 180,
+      "level": 0,
+      "role": "rear",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Panel_270__040",
+      "module": "SM_KB_Window_Panel_270",
+      "location_m": [
+        7.199999809265137,
+        12.0,
+        0.0
+      ],
+      "rotation_z_deg": 180,
+      "level": 0,
+      "role": "rear",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Fascia_360__041",
+      "module": "SM_KB_Fascia_360",
+      "location_m": [
+        7.199999809265137,
+        0.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Fascia_360__042",
+      "module": "SM_KB_Fascia_360",
+      "location_m": [
+        7.199999809265137,
+        12.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 180,
+      "level": 0,
+      "role": "rear",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Wall_Entrance_360__043",
+      "module": "SM_KB_Wall_Entrance_360",
+      "location_m": [
+        10.800000190734863,
+        0.0,
+        0.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Door_Frame_140__044",
+      "module": "SM_KB_Door_Frame_140",
+      "location_m": [
+        10.800000190734863,
+        0.0,
+        0.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Awning_360__045",
+      "module": "SM_KB_Awning_Striped_Green_360",
+      "location_m": [
+        10.920000076293945,
+        0.0,
+        0.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "front",
+      "scale": [
+        0.8799999952316284,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Sign_Blank_360__046",
+      "module": "SM_KB_Sign_Blank_360",
+      "location_m": [
+        10.800000190734863,
+        0.0,
+        0.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Wall_Window_360__047",
+      "module": "SM_KB_Wall_Window_360",
+      "location_m": [
+        3.5999999046325684,
+        12.0,
+        0.0
+      ],
+      "rotation_z_deg": 180,
+      "level": 0,
+      "role": "rear",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Frame_270__048",
+      "module": "SM_KB_Window_Frame_270",
+      "location_m": [
+        3.5999999046325684,
+        12.0,
+        0.0
+      ],
+      "rotation_z_deg": 180,
+      "level": 0,
+      "role": "rear",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Panel_270__049",
+      "module": "SM_KB_Window_Panel_270",
+      "location_m": [
+        3.5999999046325684,
+        12.0,
+        0.0
+      ],
+      "rotation_z_deg": 180,
+      "level": 0,
+      "role": "rear",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Fascia_360__050",
+      "module": "SM_KB_Fascia_360",
+      "location_m": [
+        10.800000190734863,
+        0.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Fascia_360__051",
+      "module": "SM_KB_Fascia_360",
+      "location_m": [
+        3.5999999046325684,
+        12.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 180,
+      "level": 0,
+      "role": "rear",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Wall_Window_300__052",
+      "module": "SM_KB_Wall_Window_300",
+      "location_m": [
+        0.0,
+        3.0,
+        0.0
+      ],
+      "rotation_z_deg": -90,
+      "level": 0,
+      "role": "left",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Wall_Window_300__053",
+      "module": "SM_KB_Wall_Window_300",
+      "location_m": [
+        14.399999618530273,
+        0.0,
+        0.0
+      ],
+      "rotation_z_deg": 90,
+      "level": 0,
+      "role": "right",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Panel_140__054",
+      "module": "SM_KB_Window_Panel_140",
+      "location_m": [
+        14.399999618530273,
+        0.0,
+        0.0
+      ],
+      "rotation_z_deg": 90,
+      "level": 0,
+      "role": "right",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Fascia_300__055",
+      "module": "SM_KB_Fascia_300",
+      "location_m": [
+        0.0,
+        3.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": -90,
+      "level": 0,
+      "role": "left",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Fascia_300__056",
+      "module": "SM_KB_Fascia_300",
+      "location_m": [
+        14.399999618530273,
+        0.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 90,
+      "level": 0,
+      "role": "right",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Wall_Entrance_300__057",
+      "module": "SM_KB_Wall_Entrance_300",
+      "location_m": [
+        0.0,
+        6.0,
+        0.0
+      ],
+      "rotation_z_deg": -90,
+      "level": 0,
+      "role": "left",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Wall_Window_300__058",
+      "module": "SM_KB_Wall_Window_300",
+      "location_m": [
+        14.399999618530273,
+        3.0,
+        0.0
+      ],
+      "rotation_z_deg": 90,
+      "level": 0,
+      "role": "right",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Panel_140__059",
+      "module": "SM_KB_Window_Panel_140",
+      "location_m": [
+        14.399999618530273,
+        3.0,
+        0.0
+      ],
+      "rotation_z_deg": 90,
+      "level": 0,
+      "role": "right",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Fascia_300__060",
+      "module": "SM_KB_Fascia_300",
+      "location_m": [
+        0.0,
+        6.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": -90,
+      "level": 0,
+      "role": "left",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Fascia_300__061",
+      "module": "SM_KB_Fascia_300",
+      "location_m": [
+        14.399999618530273,
+        3.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 90,
+      "level": 0,
+      "role": "right",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Wall_Window_300__062",
+      "module": "SM_KB_Wall_Window_300",
+      "location_m": [
+        0.0,
+        9.0,
+        0.0
+      ],
+      "rotation_z_deg": -90,
+      "level": 0,
+      "role": "left",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Wall_Window_300__063",
+      "module": "SM_KB_Wall_Window_300",
+      "location_m": [
+        14.399999618530273,
+        6.0,
+        0.0
+      ],
+      "rotation_z_deg": 90,
+      "level": 0,
+      "role": "right",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Panel_140__064",
+      "module": "SM_KB_Window_Panel_140",
+      "location_m": [
+        14.399999618530273,
+        6.0,
+        0.0
+      ],
+      "rotation_z_deg": 90,
+      "level": 0,
+      "role": "right",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Fascia_300__065",
+      "module": "SM_KB_Fascia_300",
+      "location_m": [
+        0.0,
+        9.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": -90,
+      "level": 0,
+      "role": "left",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Fascia_300__066",
+      "module": "SM_KB_Fascia_300",
+      "location_m": [
+        14.399999618530273,
+        6.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 90,
+      "level": 0,
+      "role": "right",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Wall_Window_300__067",
+      "module": "SM_KB_Wall_Window_300",
+      "location_m": [
+        0.0,
+        12.0,
+        0.0
+      ],
+      "rotation_z_deg": -90,
+      "level": 0,
+      "role": "left",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Wall_Window_300__068",
+      "module": "SM_KB_Wall_Window_300",
+      "location_m": [
+        14.399999618530273,
+        9.0,
+        0.0
+      ],
+      "rotation_z_deg": 90,
+      "level": 0,
+      "role": "right",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Panel_140__069",
+      "module": "SM_KB_Window_Panel_140",
+      "location_m": [
+        14.399999618530273,
+        9.0,
+        0.0
+      ],
+      "rotation_z_deg": 90,
+      "level": 0,
+      "role": "right",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Fascia_300__070",
+      "module": "SM_KB_Fascia_300",
+      "location_m": [
+        0.0,
+        12.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": -90,
+      "level": 0,
+      "role": "left",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Fascia_300__071",
+      "module": "SM_KB_Fascia_300",
+      "location_m": [
+        14.399999618530273,
+        9.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 90,
+      "level": 0,
+      "role": "right",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Partition_Door_720__072",
+      "module": "SM_KB_Partition_Door_720",
+      "location_m": [
+        0.23999999463558197,
+        3.799999952316284,
+        0.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "partition",
+      "scale": [
+        0.9666666388511658,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Partition_Door_720__073",
+      "module": "SM_KB_Partition_Door_720",
+      "location_m": [
+        7.199999809265137,
+        3.799999952316284,
+        0.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "partition",
+      "scale": [
+        0.9666666388511658,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Partition_Solid_380__074",
+      "module": "SM_KB_Partition_Solid_380",
+      "location_m": [
+        7.199999809265137,
+        0.23999999463558197,
+        0.0
+      ],
+      "rotation_z_deg": 90,
+      "level": 0,
+      "role": "partition",
+      "scale": [
+        0.9368420839309692,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Partition_Door_1000__075",
+      "module": "SM_KB_Partition_Door_1000",
+      "location_m": [
+        4.400000095367432,
+        6.400000095367432,
+        0.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "partition",
+      "scale": [
+        0.9760000109672546,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Stairwell_Side_560__076",
+      "module": "SM_KB_Stairwell_Side_560",
+      "location_m": [
+        4.400000095367432,
+        11.760000228881836,
+        0.0
+      ],
+      "rotation_z_deg": -90,
+      "level": 0,
+      "role": "stairwall",
+      "scale": [
+        0.9571428298950195,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Stair_Flight_180_170__077",
+      "module": "SM_KB_Stair_Flight_180_170",
+      "location_m": [
+        0.30000001192092896,
+        6.400000095367432,
+        0.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "stair",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Stair_Flight_180_170__078",
+      "module": "SM_KB_Stair_Flight_180_170",
+      "location_m": [
+        4.099999904632568,
+        9.399999618530273,
+        1.7000000476837158
+      ],
+      "rotation_z_deg": 180,
+      "level": 0,
+      "role": "stair",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Landing_410x236__079",
+      "module": "SM_KB_Landing_410x236",
+      "location_m": [
+        0.30000001192092896,
+        9.399999618530273,
+        1.7000000476837158
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "stair",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Stair_Rail_300__080",
+      "module": "SM_KB_Stair_Rail_300",
+      "location_m": [
+        0.24500000476837158,
+        6.400000095367432,
+        0.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "rail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Stair_Rail_300__081",
+      "module": "SM_KB_Stair_Rail_300",
+      "location_m": [
+        2.0999999046325684,
+        6.400000095367432,
+        0.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "rail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Stair_Rail_300__082",
+      "module": "SM_KB_Stair_Rail_300",
+      "location_m": [
+        2.299999952316284,
+        9.399999618530273,
+        1.7000000476837158
+      ],
+      "rotation_z_deg": 180,
+      "level": 0,
+      "role": "rail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Stair_Rail_300__083",
+      "module": "SM_KB_Stair_Rail_300",
+      "location_m": [
+        4.15500020980835,
+        9.399999618530273,
+        1.7000000476837158
+      ],
+      "rotation_z_deg": 180,
+      "level": 0,
+      "role": "rail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Floor_360x300__084",
+      "module": "SM_KB_Floor_360x300",
+      "location_m": [
+        0.0,
+        0.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "floor",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Floor_360x300__085",
+      "module": "SM_KB_Floor_360x300",
+      "location_m": [
+        0.0,
+        3.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "floor",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Floor_360x300__086",
+      "module": "SM_KB_Floor_360x300",
+      "location_m": [
+        3.5999999046325684,
+        0.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "floor",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Floor_360x300__087",
+      "module": "SM_KB_Floor_360x300",
+      "location_m": [
+        3.5999999046325684,
+        3.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "floor",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Floor_360x300__088",
+      "module": "SM_KB_Floor_360x300",
+      "location_m": [
+        7.199999809265137,
+        0.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "floor",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Floor_360x300__089",
+      "module": "SM_KB_Floor_360x300",
+      "location_m": [
+        7.199999809265137,
+        3.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "floor",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Floor_360x300__090",
+      "module": "SM_KB_Floor_360x300",
+      "location_m": [
+        10.800000190734863,
+        0.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "floor",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Floor_360x300__091",
+      "module": "SM_KB_Floor_360x300",
+      "location_m": [
+        10.800000190734863,
+        3.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "floor",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Floor_1000x300__092",
+      "module": "SM_KB_Floor_1000x300",
+      "location_m": [
+        4.400000095367432,
+        6.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "floor",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Floor_1000x300__093",
+      "module": "SM_KB_Floor_1000x300",
+      "location_m": [
+        4.400000095367432,
+        9.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "floor",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Floor_440x040__094",
+      "module": "SM_KB_Floor_440x040",
+      "location_m": [
+        0.0,
+        6.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "floor",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Wall_Window_360__095",
+      "module": "SM_KB_Wall_Window_360",
+      "location_m": [
+        0.0,
+        0.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Frame_270__096",
+      "module": "SM_KB_Window_Frame_270",
+      "location_m": [
+        0.0,
+        0.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Panel_270__097",
+      "module": "SM_KB_Window_Panel_270",
+      "location_m": [
+        0.0,
+        0.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Sign_Blank_360__098",
+      "module": "SM_KB_Sign_Blank_360",
+      "location_m": [
+        0.0,
+        0.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Wall_Window_360__099",
+      "module": "SM_KB_Wall_Window_360",
+      "location_m": [
+        14.399999618530273,
+        12.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 180,
+      "level": 1,
+      "role": "rear",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Frame_270__100",
+      "module": "SM_KB_Window_Frame_270",
+      "location_m": [
+        14.399999618530273,
+        12.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 180,
+      "level": 1,
+      "role": "rear",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Panel_270__101",
+      "module": "SM_KB_Window_Panel_270",
+      "location_m": [
+        14.399999618530273,
+        12.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 180,
+      "level": 1,
+      "role": "rear",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Fascia_360__102",
+      "module": "SM_KB_Fascia_360",
+      "location_m": [
+        0.0,
+        0.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Fascia_360__103",
+      "module": "SM_KB_Fascia_360",
+      "location_m": [
+        14.399999618530273,
+        12.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 180,
+      "level": 1,
+      "role": "rear",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Wall_Window_360__104",
+      "module": "SM_KB_Wall_Window_360",
+      "location_m": [
+        3.5999999046325684,
+        0.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Frame_270__105",
+      "module": "SM_KB_Window_Frame_270",
+      "location_m": [
+        3.5999999046325684,
+        0.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Panel_270__106",
+      "module": "SM_KB_Window_Panel_270",
+      "location_m": [
+        3.5999999046325684,
+        0.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Sign_Blank_360__107",
+      "module": "SM_KB_Sign_Blank_360",
+      "location_m": [
+        3.5999999046325684,
+        0.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Wall_Window_360__108",
+      "module": "SM_KB_Wall_Window_360",
+      "location_m": [
+        10.800000190734863,
+        12.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 180,
+      "level": 1,
+      "role": "rear",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Frame_270__109",
+      "module": "SM_KB_Window_Frame_270",
+      "location_m": [
+        10.800000190734863,
+        12.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 180,
+      "level": 1,
+      "role": "rear",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Panel_270__110",
+      "module": "SM_KB_Window_Panel_270",
+      "location_m": [
+        10.800000190734863,
+        12.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 180,
+      "level": 1,
+      "role": "rear",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Fascia_360__111",
+      "module": "SM_KB_Fascia_360",
+      "location_m": [
+        3.5999999046325684,
+        0.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Fascia_360__112",
+      "module": "SM_KB_Fascia_360",
+      "location_m": [
+        10.800000190734863,
+        12.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 180,
+      "level": 1,
+      "role": "rear",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Wall_Window_360__113",
+      "module": "SM_KB_Wall_Window_360",
+      "location_m": [
+        7.199999809265137,
+        0.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Frame_270__114",
+      "module": "SM_KB_Window_Frame_270",
+      "location_m": [
+        7.199999809265137,
+        0.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Panel_270__115",
+      "module": "SM_KB_Window_Panel_270",
+      "location_m": [
+        7.199999809265137,
+        0.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Sign_Blank_360__116",
+      "module": "SM_KB_Sign_Blank_360",
+      "location_m": [
+        7.199999809265137,
+        0.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Wall_Window_360__117",
+      "module": "SM_KB_Wall_Window_360",
+      "location_m": [
+        7.199999809265137,
+        12.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 180,
+      "level": 1,
+      "role": "rear",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Frame_270__118",
+      "module": "SM_KB_Window_Frame_270",
+      "location_m": [
+        7.199999809265137,
+        12.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 180,
+      "level": 1,
+      "role": "rear",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Panel_270__119",
+      "module": "SM_KB_Window_Panel_270",
+      "location_m": [
+        7.199999809265137,
+        12.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 180,
+      "level": 1,
+      "role": "rear",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Fascia_360__120",
+      "module": "SM_KB_Fascia_360",
+      "location_m": [
+        7.199999809265137,
+        0.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Fascia_360__121",
+      "module": "SM_KB_Fascia_360",
+      "location_m": [
+        7.199999809265137,
+        12.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 180,
+      "level": 1,
+      "role": "rear",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Wall_Window_360__122",
+      "module": "SM_KB_Wall_Window_360",
+      "location_m": [
+        10.800000190734863,
+        0.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Frame_270__123",
+      "module": "SM_KB_Window_Frame_270",
+      "location_m": [
+        10.800000190734863,
+        0.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Panel_270__124",
+      "module": "SM_KB_Window_Panel_270",
+      "location_m": [
+        10.800000190734863,
+        0.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Sign_Blank_360__125",
+      "module": "SM_KB_Sign_Blank_360",
+      "location_m": [
+        10.800000190734863,
+        0.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Wall_Window_360__126",
+      "module": "SM_KB_Wall_Window_360",
+      "location_m": [
+        3.5999999046325684,
+        12.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 180,
+      "level": 1,
+      "role": "rear",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Frame_270__127",
+      "module": "SM_KB_Window_Frame_270",
+      "location_m": [
+        3.5999999046325684,
+        12.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 180,
+      "level": 1,
+      "role": "rear",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Panel_270__128",
+      "module": "SM_KB_Window_Panel_270",
+      "location_m": [
+        3.5999999046325684,
+        12.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 180,
+      "level": 1,
+      "role": "rear",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Fascia_360__129",
+      "module": "SM_KB_Fascia_360",
+      "location_m": [
+        10.800000190734863,
+        0.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Fascia_360__130",
+      "module": "SM_KB_Fascia_360",
+      "location_m": [
+        3.5999999046325684,
+        12.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 180,
+      "level": 1,
+      "role": "rear",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Wall_Window_300__131",
+      "module": "SM_KB_Wall_Window_300",
+      "location_m": [
+        0.0,
+        3.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": -90,
+      "level": 1,
+      "role": "left",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Wall_Window_300__132",
+      "module": "SM_KB_Wall_Window_300",
+      "location_m": [
+        14.399999618530273,
+        0.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 90,
+      "level": 1,
+      "role": "right",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Panel_140__133",
+      "module": "SM_KB_Window_Panel_140",
+      "location_m": [
+        14.399999618530273,
+        0.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 90,
+      "level": 1,
+      "role": "right",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Fascia_300__134",
+      "module": "SM_KB_Fascia_300",
+      "location_m": [
+        0.0,
+        3.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": -90,
+      "level": 1,
+      "role": "left",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Fascia_300__135",
+      "module": "SM_KB_Fascia_300",
+      "location_m": [
+        14.399999618530273,
+        0.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 90,
+      "level": 1,
+      "role": "right",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Wall_Window_300__136",
+      "module": "SM_KB_Wall_Window_300",
+      "location_m": [
+        0.0,
+        6.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": -90,
+      "level": 1,
+      "role": "left",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Wall_Window_300__137",
+      "module": "SM_KB_Wall_Window_300",
+      "location_m": [
+        14.399999618530273,
+        3.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 90,
+      "level": 1,
+      "role": "right",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Panel_140__138",
+      "module": "SM_KB_Window_Panel_140",
+      "location_m": [
+        14.399999618530273,
+        3.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 90,
+      "level": 1,
+      "role": "right",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Fascia_300__139",
+      "module": "SM_KB_Fascia_300",
+      "location_m": [
+        0.0,
+        6.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": -90,
+      "level": 1,
+      "role": "left",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Fascia_300__140",
+      "module": "SM_KB_Fascia_300",
+      "location_m": [
+        14.399999618530273,
+        3.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 90,
+      "level": 1,
+      "role": "right",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Wall_Window_300__141",
+      "module": "SM_KB_Wall_Window_300",
+      "location_m": [
+        0.0,
+        9.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": -90,
+      "level": 1,
+      "role": "left",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Wall_Window_300__142",
+      "module": "SM_KB_Wall_Window_300",
+      "location_m": [
+        14.399999618530273,
+        6.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 90,
+      "level": 1,
+      "role": "right",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Panel_140__143",
+      "module": "SM_KB_Window_Panel_140",
+      "location_m": [
+        14.399999618530273,
+        6.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 90,
+      "level": 1,
+      "role": "right",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Fascia_300__144",
+      "module": "SM_KB_Fascia_300",
+      "location_m": [
+        0.0,
+        9.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": -90,
+      "level": 1,
+      "role": "left",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Fascia_300__145",
+      "module": "SM_KB_Fascia_300",
+      "location_m": [
+        14.399999618530273,
+        6.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 90,
+      "level": 1,
+      "role": "right",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Wall_Window_300__146",
+      "module": "SM_KB_Wall_Window_300",
+      "location_m": [
+        0.0,
+        12.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": -90,
+      "level": 1,
+      "role": "left",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Wall_Window_300__147",
+      "module": "SM_KB_Wall_Window_300",
+      "location_m": [
+        14.399999618530273,
+        9.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 90,
+      "level": 1,
+      "role": "right",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Panel_140__148",
+      "module": "SM_KB_Window_Panel_140",
+      "location_m": [
+        14.399999618530273,
+        9.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 90,
+      "level": 1,
+      "role": "right",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Fascia_300__149",
+      "module": "SM_KB_Fascia_300",
+      "location_m": [
+        0.0,
+        12.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": -90,
+      "level": 1,
+      "role": "left",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Fascia_300__150",
+      "module": "SM_KB_Fascia_300",
+      "location_m": [
+        14.399999618530273,
+        9.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 90,
+      "level": 1,
+      "role": "right",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Partition_Door_720__151",
+      "module": "SM_KB_Partition_Door_720",
+      "location_m": [
+        0.23999999463558197,
+        3.799999952316284,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "partition",
+      "scale": [
+        0.9666666388511658,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Partition_Door_720__152",
+      "module": "SM_KB_Partition_Door_720",
+      "location_m": [
+        7.199999809265137,
+        3.799999952316284,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "partition",
+      "scale": [
+        0.9666666388511658,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Partition_Solid_380__153",
+      "module": "SM_KB_Partition_Solid_380",
+      "location_m": [
+        7.199999809265137,
+        0.23999999463558197,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 90,
+      "level": 1,
+      "role": "partition",
+      "scale": [
+        0.9368420839309692,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Partition_Door_1000__154",
+      "module": "SM_KB_Partition_Door_1000",
+      "location_m": [
+        4.400000095367432,
+        6.400000095367432,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "partition",
+      "scale": [
+        0.9760000109672546,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Stairwell_Side_560__155",
+      "module": "SM_KB_Stairwell_Side_560",
+      "location_m": [
+        4.400000095367432,
+        11.760000228881836,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": -90,
+      "level": 1,
+      "role": "stairwall",
+      "scale": [
+        0.9571428298950195,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Stair_Flight_180_170__156",
+      "module": "SM_KB_Stair_Flight_180_170",
+      "location_m": [
+        0.30000001192092896,
+        6.400000095367432,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "stair",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Stair_Flight_180_170__157",
+      "module": "SM_KB_Stair_Flight_180_170",
+      "location_m": [
+        4.099999904632568,
+        9.399999618530273,
+        5.099999904632568
+      ],
+      "rotation_z_deg": 180,
+      "level": 1,
+      "role": "stair",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Landing_410x236__158",
+      "module": "SM_KB_Landing_410x236",
+      "location_m": [
+        0.30000001192092896,
+        9.399999618530273,
+        5.099999904632568
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "stair",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Stair_Rail_300__159",
+      "module": "SM_KB_Stair_Rail_300",
+      "location_m": [
+        0.24500000476837158,
+        6.400000095367432,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "rail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Stair_Rail_300__160",
+      "module": "SM_KB_Stair_Rail_300",
+      "location_m": [
+        2.0999999046325684,
+        6.400000095367432,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "rail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Stair_Rail_300__161",
+      "module": "SM_KB_Stair_Rail_300",
+      "location_m": [
+        2.299999952316284,
+        9.399999618530273,
+        5.099999904632568
+      ],
+      "rotation_z_deg": 180,
+      "level": 1,
+      "role": "rail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Stair_Rail_300__162",
+      "module": "SM_KB_Stair_Rail_300",
+      "location_m": [
+        4.15500020980835,
+        9.399999618530273,
+        5.099999904632568
+      ],
+      "rotation_z_deg": 180,
+      "level": 1,
+      "role": "rail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Floor_360x300__163",
+      "module": "SM_KB_Floor_360x300",
+      "location_m": [
+        0.0,
+        0.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "floor",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Floor_360x300__164",
+      "module": "SM_KB_Floor_360x300",
+      "location_m": [
+        0.0,
+        3.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "floor",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Floor_360x300__165",
+      "module": "SM_KB_Floor_360x300",
+      "location_m": [
+        3.5999999046325684,
+        0.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "floor",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Floor_360x300__166",
+      "module": "SM_KB_Floor_360x300",
+      "location_m": [
+        3.5999999046325684,
+        3.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "floor",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Floor_360x300__167",
+      "module": "SM_KB_Floor_360x300",
+      "location_m": [
+        7.199999809265137,
+        0.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "floor",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Floor_360x300__168",
+      "module": "SM_KB_Floor_360x300",
+      "location_m": [
+        7.199999809265137,
+        3.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "floor",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Floor_360x300__169",
+      "module": "SM_KB_Floor_360x300",
+      "location_m": [
+        10.800000190734863,
+        0.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "floor",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Floor_360x300__170",
+      "module": "SM_KB_Floor_360x300",
+      "location_m": [
+        10.800000190734863,
+        3.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "floor",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Floor_1000x300__171",
+      "module": "SM_KB_Floor_1000x300",
+      "location_m": [
+        4.400000095367432,
+        6.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "floor",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Floor_1000x300__172",
+      "module": "SM_KB_Floor_1000x300",
+      "location_m": [
+        4.400000095367432,
+        9.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "floor",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Floor_440x040__173",
+      "module": "SM_KB_Floor_440x040",
+      "location_m": [
+        0.0,
+        6.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "floor",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Wall_Window_360__174",
+      "module": "SM_KB_Wall_Window_360",
+      "location_m": [
+        0.0,
+        0.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Frame_270__175",
+      "module": "SM_KB_Window_Frame_270",
+      "location_m": [
+        0.0,
+        0.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Panel_270__176",
+      "module": "SM_KB_Window_Panel_270",
+      "location_m": [
+        0.0,
+        0.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Sign_Blank_360__177",
+      "module": "SM_KB_Sign_Blank_360",
+      "location_m": [
+        0.0,
+        0.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Wall_Window_360__178",
+      "module": "SM_KB_Wall_Window_360",
+      "location_m": [
+        14.399999618530273,
+        12.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 180,
+      "level": 2,
+      "role": "rear",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Frame_270__179",
+      "module": "SM_KB_Window_Frame_270",
+      "location_m": [
+        14.399999618530273,
+        12.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 180,
+      "level": 2,
+      "role": "rear",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Panel_270__180",
+      "module": "SM_KB_Window_Panel_270",
+      "location_m": [
+        14.399999618530273,
+        12.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 180,
+      "level": 2,
+      "role": "rear",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Fascia_360__181",
+      "module": "SM_KB_Fascia_360",
+      "location_m": [
+        0.0,
+        0.0,
+        10.199999809265137
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Fascia_360__182",
+      "module": "SM_KB_Fascia_360",
+      "location_m": [
+        14.399999618530273,
+        12.0,
+        10.199999809265137
+      ],
+      "rotation_z_deg": 180,
+      "level": 2,
+      "role": "rear",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Wall_Window_360__183",
+      "module": "SM_KB_Wall_Window_360",
+      "location_m": [
+        3.5999999046325684,
+        0.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Frame_270__184",
+      "module": "SM_KB_Window_Frame_270",
+      "location_m": [
+        3.5999999046325684,
+        0.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Panel_270__185",
+      "module": "SM_KB_Window_Panel_270",
+      "location_m": [
+        3.5999999046325684,
+        0.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Sign_Blank_360__186",
+      "module": "SM_KB_Sign_Blank_360",
+      "location_m": [
+        3.5999999046325684,
+        0.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Wall_Window_360__187",
+      "module": "SM_KB_Wall_Window_360",
+      "location_m": [
+        10.800000190734863,
+        12.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 180,
+      "level": 2,
+      "role": "rear",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Frame_270__188",
+      "module": "SM_KB_Window_Frame_270",
+      "location_m": [
+        10.800000190734863,
+        12.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 180,
+      "level": 2,
+      "role": "rear",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Panel_270__189",
+      "module": "SM_KB_Window_Panel_270",
+      "location_m": [
+        10.800000190734863,
+        12.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 180,
+      "level": 2,
+      "role": "rear",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Fascia_360__190",
+      "module": "SM_KB_Fascia_360",
+      "location_m": [
+        3.5999999046325684,
+        0.0,
+        10.199999809265137
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Fascia_360__191",
+      "module": "SM_KB_Fascia_360",
+      "location_m": [
+        10.800000190734863,
+        12.0,
+        10.199999809265137
+      ],
+      "rotation_z_deg": 180,
+      "level": 2,
+      "role": "rear",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Wall_Window_360__192",
+      "module": "SM_KB_Wall_Window_360",
+      "location_m": [
+        7.199999809265137,
+        0.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Frame_270__193",
+      "module": "SM_KB_Window_Frame_270",
+      "location_m": [
+        7.199999809265137,
+        0.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Panel_270__194",
+      "module": "SM_KB_Window_Panel_270",
+      "location_m": [
+        7.199999809265137,
+        0.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Sign_Blank_360__195",
+      "module": "SM_KB_Sign_Blank_360",
+      "location_m": [
+        7.199999809265137,
+        0.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Wall_Window_360__196",
+      "module": "SM_KB_Wall_Window_360",
+      "location_m": [
+        7.199999809265137,
+        12.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 180,
+      "level": 2,
+      "role": "rear",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Frame_270__197",
+      "module": "SM_KB_Window_Frame_270",
+      "location_m": [
+        7.199999809265137,
+        12.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 180,
+      "level": 2,
+      "role": "rear",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Panel_270__198",
+      "module": "SM_KB_Window_Panel_270",
+      "location_m": [
+        7.199999809265137,
+        12.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 180,
+      "level": 2,
+      "role": "rear",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Fascia_360__199",
+      "module": "SM_KB_Fascia_360",
+      "location_m": [
+        7.199999809265137,
+        0.0,
+        10.199999809265137
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Fascia_360__200",
+      "module": "SM_KB_Fascia_360",
+      "location_m": [
+        7.199999809265137,
+        12.0,
+        10.199999809265137
+      ],
+      "rotation_z_deg": 180,
+      "level": 2,
+      "role": "rear",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Wall_Window_360__201",
+      "module": "SM_KB_Wall_Window_360",
+      "location_m": [
+        10.800000190734863,
+        0.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Frame_270__202",
+      "module": "SM_KB_Window_Frame_270",
+      "location_m": [
+        10.800000190734863,
+        0.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Panel_270__203",
+      "module": "SM_KB_Window_Panel_270",
+      "location_m": [
+        10.800000190734863,
+        0.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Sign_Blank_360__204",
+      "module": "SM_KB_Sign_Blank_360",
+      "location_m": [
+        10.800000190734863,
+        0.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Wall_Window_360__205",
+      "module": "SM_KB_Wall_Window_360",
+      "location_m": [
+        3.5999999046325684,
+        12.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 180,
+      "level": 2,
+      "role": "rear",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Frame_270__206",
+      "module": "SM_KB_Window_Frame_270",
+      "location_m": [
+        3.5999999046325684,
+        12.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 180,
+      "level": 2,
+      "role": "rear",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Panel_270__207",
+      "module": "SM_KB_Window_Panel_270",
+      "location_m": [
+        3.5999999046325684,
+        12.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 180,
+      "level": 2,
+      "role": "rear",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Fascia_360__208",
+      "module": "SM_KB_Fascia_360",
+      "location_m": [
+        10.800000190734863,
+        0.0,
+        10.199999809265137
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "front",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Fascia_360__209",
+      "module": "SM_KB_Fascia_360",
+      "location_m": [
+        3.5999999046325684,
+        12.0,
+        10.199999809265137
+      ],
+      "rotation_z_deg": 180,
+      "level": 2,
+      "role": "rear",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Wall_Window_300__210",
+      "module": "SM_KB_Wall_Window_300",
+      "location_m": [
+        0.0,
+        3.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": -90,
+      "level": 2,
+      "role": "left",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Wall_Window_300__211",
+      "module": "SM_KB_Wall_Window_300",
+      "location_m": [
+        14.399999618530273,
+        0.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 90,
+      "level": 2,
+      "role": "right",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Panel_140__212",
+      "module": "SM_KB_Window_Panel_140",
+      "location_m": [
+        14.399999618530273,
+        0.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 90,
+      "level": 2,
+      "role": "right",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Fascia_300__213",
+      "module": "SM_KB_Fascia_300",
+      "location_m": [
+        0.0,
+        3.0,
+        10.199999809265137
+      ],
+      "rotation_z_deg": -90,
+      "level": 2,
+      "role": "left",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Fascia_300__214",
+      "module": "SM_KB_Fascia_300",
+      "location_m": [
+        14.399999618530273,
+        0.0,
+        10.199999809265137
+      ],
+      "rotation_z_deg": 90,
+      "level": 2,
+      "role": "right",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Wall_Window_300__215",
+      "module": "SM_KB_Wall_Window_300",
+      "location_m": [
+        0.0,
+        6.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": -90,
+      "level": 2,
+      "role": "left",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Wall_Window_300__216",
+      "module": "SM_KB_Wall_Window_300",
+      "location_m": [
+        14.399999618530273,
+        3.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 90,
+      "level": 2,
+      "role": "right",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Panel_140__217",
+      "module": "SM_KB_Window_Panel_140",
+      "location_m": [
+        14.399999618530273,
+        3.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 90,
+      "level": 2,
+      "role": "right",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Fascia_300__218",
+      "module": "SM_KB_Fascia_300",
+      "location_m": [
+        0.0,
+        6.0,
+        10.199999809265137
+      ],
+      "rotation_z_deg": -90,
+      "level": 2,
+      "role": "left",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Fascia_300__219",
+      "module": "SM_KB_Fascia_300",
+      "location_m": [
+        14.399999618530273,
+        3.0,
+        10.199999809265137
+      ],
+      "rotation_z_deg": 90,
+      "level": 2,
+      "role": "right",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Wall_Window_300__220",
+      "module": "SM_KB_Wall_Window_300",
+      "location_m": [
+        0.0,
+        9.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": -90,
+      "level": 2,
+      "role": "left",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Wall_Window_300__221",
+      "module": "SM_KB_Wall_Window_300",
+      "location_m": [
+        14.399999618530273,
+        6.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 90,
+      "level": 2,
+      "role": "right",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Panel_140__222",
+      "module": "SM_KB_Window_Panel_140",
+      "location_m": [
+        14.399999618530273,
+        6.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 90,
+      "level": 2,
+      "role": "right",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Fascia_300__223",
+      "module": "SM_KB_Fascia_300",
+      "location_m": [
+        0.0,
+        9.0,
+        10.199999809265137
+      ],
+      "rotation_z_deg": -90,
+      "level": 2,
+      "role": "left",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Fascia_300__224",
+      "module": "SM_KB_Fascia_300",
+      "location_m": [
+        14.399999618530273,
+        6.0,
+        10.199999809265137
+      ],
+      "rotation_z_deg": 90,
+      "level": 2,
+      "role": "right",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Wall_Window_300__225",
+      "module": "SM_KB_Wall_Window_300",
+      "location_m": [
+        0.0,
+        12.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": -90,
+      "level": 2,
+      "role": "left",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Wall_Window_300__226",
+      "module": "SM_KB_Wall_Window_300",
+      "location_m": [
+        14.399999618530273,
+        9.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 90,
+      "level": 2,
+      "role": "right",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Panel_140__227",
+      "module": "SM_KB_Window_Panel_140",
+      "location_m": [
+        14.399999618530273,
+        9.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 90,
+      "level": 2,
+      "role": "right",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Fascia_300__228",
+      "module": "SM_KB_Fascia_300",
+      "location_m": [
+        0.0,
+        12.0,
+        10.199999809265137
+      ],
+      "rotation_z_deg": -90,
+      "level": 2,
+      "role": "left",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Fascia_300__229",
+      "module": "SM_KB_Fascia_300",
+      "location_m": [
+        14.399999618530273,
+        9.0,
+        10.199999809265137
+      ],
+      "rotation_z_deg": 90,
+      "level": 2,
+      "role": "right",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Partition_Door_720__230",
+      "module": "SM_KB_Partition_Door_720",
+      "location_m": [
+        0.23999999463558197,
+        3.799999952316284,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "partition",
+      "scale": [
+        0.9666666388511658,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Partition_Door_720__231",
+      "module": "SM_KB_Partition_Door_720",
+      "location_m": [
+        7.199999809265137,
+        3.799999952316284,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "partition",
+      "scale": [
+        0.9666666388511658,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Partition_Solid_380__232",
+      "module": "SM_KB_Partition_Solid_380",
+      "location_m": [
+        7.199999809265137,
+        0.23999999463558197,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 90,
+      "level": 2,
+      "role": "partition",
+      "scale": [
+        0.9368420839309692,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Partition_Door_1000__233",
+      "module": "SM_KB_Partition_Door_1000",
+      "location_m": [
+        4.400000095367432,
+        6.400000095367432,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "partition",
+      "scale": [
+        0.9760000109672546,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Stairwell_Side_560__234",
+      "module": "SM_KB_Stairwell_Side_560",
+      "location_m": [
+        4.400000095367432,
+        11.760000228881836,
+        6.800000190734863
+      ],
+      "rotation_z_deg": -90,
+      "level": 2,
+      "role": "stairwall",
+      "scale": [
+        0.9571428298950195,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Stair_Flight_180_170__235",
+      "module": "SM_KB_Stair_Flight_180_170",
+      "location_m": [
+        0.30000001192092896,
+        6.400000095367432,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "stair",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Stair_Flight_180_170__236",
+      "module": "SM_KB_Stair_Flight_180_170",
+      "location_m": [
+        4.099999904632568,
+        9.399999618530273,
+        8.5
+      ],
+      "rotation_z_deg": 180,
+      "level": 2,
+      "role": "stair",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Landing_410x236__237",
+      "module": "SM_KB_Landing_410x236",
+      "location_m": [
+        0.30000001192092896,
+        9.399999618530273,
+        8.5
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "stair",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Stair_Rail_300__238",
+      "module": "SM_KB_Stair_Rail_300",
+      "location_m": [
+        0.24500000476837158,
+        6.400000095367432,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "rail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Stair_Rail_300__239",
+      "module": "SM_KB_Stair_Rail_300",
+      "location_m": [
+        2.0999999046325684,
+        6.400000095367432,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "rail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Stair_Rail_300__240",
+      "module": "SM_KB_Stair_Rail_300",
+      "location_m": [
+        2.299999952316284,
+        9.399999618530273,
+        8.5
+      ],
+      "rotation_z_deg": 180,
+      "level": 2,
+      "role": "rail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Stair_Rail_300__241",
+      "module": "SM_KB_Stair_Rail_300",
+      "location_m": [
+        4.15500020980835,
+        9.399999618530273,
+        8.5
+      ],
+      "rotation_z_deg": 180,
+      "level": 2,
+      "role": "rail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Floor_360x300__242",
+      "module": "SM_KB_Floor_360x300",
+      "location_m": [
+        0.0,
+        0.0,
+        10.199999809265137
+      ],
+      "rotation_z_deg": 0,
+      "level": 3,
+      "role": "floor",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Floor_360x300__243",
+      "module": "SM_KB_Floor_360x300",
+      "location_m": [
+        0.0,
+        3.0,
+        10.199999809265137
+      ],
+      "rotation_z_deg": 0,
+      "level": 3,
+      "role": "floor",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Floor_360x300__244",
+      "module": "SM_KB_Floor_360x300",
+      "location_m": [
+        3.5999999046325684,
+        0.0,
+        10.199999809265137
+      ],
+      "rotation_z_deg": 0,
+      "level": 3,
+      "role": "floor",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Floor_360x300__245",
+      "module": "SM_KB_Floor_360x300",
+      "location_m": [
+        3.5999999046325684,
+        3.0,
+        10.199999809265137
+      ],
+      "rotation_z_deg": 0,
+      "level": 3,
+      "role": "floor",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Floor_360x300__246",
+      "module": "SM_KB_Floor_360x300",
+      "location_m": [
+        7.199999809265137,
+        0.0,
+        10.199999809265137
+      ],
+      "rotation_z_deg": 0,
+      "level": 3,
+      "role": "floor",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Floor_360x300__247",
+      "module": "SM_KB_Floor_360x300",
+      "location_m": [
+        7.199999809265137,
+        3.0,
+        10.199999809265137
+      ],
+      "rotation_z_deg": 0,
+      "level": 3,
+      "role": "floor",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Floor_360x300__248",
+      "module": "SM_KB_Floor_360x300",
+      "location_m": [
+        10.800000190734863,
+        0.0,
+        10.199999809265137
+      ],
+      "rotation_z_deg": 0,
+      "level": 3,
+      "role": "floor",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Floor_360x300__249",
+      "module": "SM_KB_Floor_360x300",
+      "location_m": [
+        10.800000190734863,
+        3.0,
+        10.199999809265137
+      ],
+      "rotation_z_deg": 0,
+      "level": 3,
+      "role": "floor",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Floor_1000x300__250",
+      "module": "SM_KB_Floor_1000x300",
+      "location_m": [
+        4.400000095367432,
+        6.0,
+        10.199999809265137
+      ],
+      "rotation_z_deg": 0,
+      "level": 3,
+      "role": "floor",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Floor_1000x300__251",
+      "module": "SM_KB_Floor_1000x300",
+      "location_m": [
+        4.400000095367432,
+        9.0,
+        10.199999809265137
+      ],
+      "rotation_z_deg": 0,
+      "level": 3,
+      "role": "floor",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Floor_440x040__252",
+      "module": "SM_KB_Floor_440x040",
+      "location_m": [
+        0.0,
+        6.0,
+        10.199999809265137
+      ],
+      "rotation_z_deg": 0,
+      "level": 3,
+      "role": "floor",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Parapet_360__253",
+      "module": "SM_KB_Parapet_360",
+      "location_m": [
+        0.0,
+        0.0,
+        10.199999809265137
+      ],
+      "rotation_z_deg": 0,
+      "level": 3,
+      "role": "parapet",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Parapet_360__254",
+      "module": "SM_KB_Parapet_360",
+      "location_m": [
+        14.399999618530273,
+        12.0,
+        10.199999809265137
+      ],
+      "rotation_z_deg": 180,
+      "level": 3,
+      "role": "parapet",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Parapet_360__255",
+      "module": "SM_KB_Parapet_360",
+      "location_m": [
+        3.5999999046325684,
+        0.0,
+        10.199999809265137
+      ],
+      "rotation_z_deg": 0,
+      "level": 3,
+      "role": "parapet",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Parapet_360__256",
+      "module": "SM_KB_Parapet_360",
+      "location_m": [
+        10.800000190734863,
+        12.0,
+        10.199999809265137
+      ],
+      "rotation_z_deg": 180,
+      "level": 3,
+      "role": "parapet",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Parapet_360__257",
+      "module": "SM_KB_Parapet_360",
+      "location_m": [
+        7.199999809265137,
+        0.0,
+        10.199999809265137
+      ],
+      "rotation_z_deg": 0,
+      "level": 3,
+      "role": "parapet",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Parapet_360__258",
+      "module": "SM_KB_Parapet_360",
+      "location_m": [
+        7.199999809265137,
+        12.0,
+        10.199999809265137
+      ],
+      "rotation_z_deg": 180,
+      "level": 3,
+      "role": "parapet",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Parapet_360__259",
+      "module": "SM_KB_Parapet_360",
+      "location_m": [
+        10.800000190734863,
+        0.0,
+        10.199999809265137
+      ],
+      "rotation_z_deg": 0,
+      "level": 3,
+      "role": "parapet",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Parapet_360__260",
+      "module": "SM_KB_Parapet_360",
+      "location_m": [
+        3.5999999046325684,
+        12.0,
+        10.199999809265137
+      ],
+      "rotation_z_deg": 180,
+      "level": 3,
+      "role": "parapet",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Parapet_300__261",
+      "module": "SM_KB_Parapet_300",
+      "location_m": [
+        0.0,
+        3.0,
+        10.199999809265137
+      ],
+      "rotation_z_deg": -90,
+      "level": 3,
+      "role": "parapet",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Parapet_300__262",
+      "module": "SM_KB_Parapet_300",
+      "location_m": [
+        14.399999618530273,
+        0.0,
+        10.199999809265137
+      ],
+      "rotation_z_deg": 90,
+      "level": 3,
+      "role": "parapet",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Parapet_300__263",
+      "module": "SM_KB_Parapet_300",
+      "location_m": [
+        0.0,
+        6.0,
+        10.199999809265137
+      ],
+      "rotation_z_deg": -90,
+      "level": 3,
+      "role": "parapet",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Parapet_300__264",
+      "module": "SM_KB_Parapet_300",
+      "location_m": [
+        14.399999618530273,
+        3.0,
+        10.199999809265137
+      ],
+      "rotation_z_deg": 90,
+      "level": 3,
+      "role": "parapet",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Parapet_300__265",
+      "module": "SM_KB_Parapet_300",
+      "location_m": [
+        0.0,
+        9.0,
+        10.199999809265137
+      ],
+      "rotation_z_deg": -90,
+      "level": 3,
+      "role": "parapet",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Parapet_300__266",
+      "module": "SM_KB_Parapet_300",
+      "location_m": [
+        14.399999618530273,
+        6.0,
+        10.199999809265137
+      ],
+      "rotation_z_deg": 90,
+      "level": 3,
+      "role": "parapet",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Parapet_300__267",
+      "module": "SM_KB_Parapet_300",
+      "location_m": [
+        0.0,
+        12.0,
+        10.199999809265137
+      ],
+      "rotation_z_deg": -90,
+      "level": 3,
+      "role": "parapet",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Parapet_300__268",
+      "module": "SM_KB_Parapet_300",
+      "location_m": [
+        14.399999618530273,
+        9.0,
+        10.199999809265137
+      ],
+      "rotation_z_deg": 90,
+      "level": 3,
+      "role": "parapet",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Roofhouse_Door_440__269",
+      "module": "SM_KB_Roofhouse_Door_440",
+      "location_m": [
+        0.0,
+        4.400000095367432,
+        10.199999809265137
+      ],
+      "rotation_z_deg": 0,
+      "level": 3,
+      "role": "headhouse",
+      "scale": [
+        1.0,
+        1.0,
+        0.8571428656578064
+      ]
+    },
+    {
+      "name": "SM_KB_Roofhouse_Side_760__270",
+      "module": "SM_KB_Roofhouse_Side_760",
+      "location_m": [
+        0.0,
+        12.0,
+        10.199999809265137
+      ],
+      "rotation_z_deg": -90,
+      "level": 3,
+      "role": "headhouse",
+      "scale": [
+        1.0,
+        1.0,
+        0.8571428656578064
+      ]
+    },
+    {
+      "name": "SM_KB_Roofhouse_Side_760__271",
+      "module": "SM_KB_Roofhouse_Side_760",
+      "location_m": [
+        4.400000095367432,
+        4.400000095367432,
+        10.199999809265137
+      ],
+      "rotation_z_deg": 90,
+      "level": 3,
+      "role": "headhouse",
+      "scale": [
+        1.0,
+        1.0,
+        0.8571428656578064
+      ]
+    },
+    {
+      "name": "SM_KB_Roofhouse_Back_440__272",
+      "module": "SM_KB_Roofhouse_Back_440",
+      "location_m": [
+        4.400000095367432,
+        12.0,
+        10.199999809265137
+      ],
+      "rotation_z_deg": 180,
+      "level": 3,
+      "role": "headhouse",
+      "scale": [
+        1.0,
+        1.0,
+        0.8571428656578064
+      ]
+    },
+    {
+      "name": "SM_KB_Roofhouse_Cap_480x800__273",
+      "module": "SM_KB_Roofhouse_Cap_480x800",
+      "location_m": [
+        -0.20000000298023224,
+        4.199999809265137,
+        12.600000381469727
+      ],
+      "rotation_z_deg": 0,
+      "level": 4,
+      "role": "headroof",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Guardrail_180__274",
+      "module": "SM_KB_Guardrail_180",
+      "location_m": [
+        0.30000001192092896,
+        6.400000095367432,
+        10.199999809265137
+      ],
+      "rotation_z_deg": 0,
+      "level": 3,
+      "role": "rail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Panel_140__275",
+      "module": "SM_KB_Window_Panel_140",
+      "location_m": [
+        0.0,
+        3.0,
+        0.0
+      ],
+      "rotation_z_deg": -90,
+      "level": 0,
+      "role": "left",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Panel_140__276",
+      "module": "SM_KB_Window_Panel_140",
+      "location_m": [
+        0.0,
+        9.0,
+        0.0
+      ],
+      "rotation_z_deg": -90,
+      "level": 0,
+      "role": "left",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Panel_140__277",
+      "module": "SM_KB_Window_Panel_140",
+      "location_m": [
+        0.0,
+        12.0,
+        0.0
+      ],
+      "rotation_z_deg": -90,
+      "level": 0,
+      "role": "left",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Panel_140__278",
+      "module": "SM_KB_Window_Panel_140",
+      "location_m": [
+        0.0,
+        3.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": -90,
+      "level": 1,
+      "role": "left",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Panel_140__279",
+      "module": "SM_KB_Window_Panel_140",
+      "location_m": [
+        0.0,
+        6.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": -90,
+      "level": 1,
+      "role": "left",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Panel_140__280",
+      "module": "SM_KB_Window_Panel_140",
+      "location_m": [
+        0.0,
+        9.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": -90,
+      "level": 1,
+      "role": "left",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Panel_140__281",
+      "module": "SM_KB_Window_Panel_140",
+      "location_m": [
+        0.0,
+        12.0,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": -90,
+      "level": 1,
+      "role": "left",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Panel_140__282",
+      "module": "SM_KB_Window_Panel_140",
+      "location_m": [
+        0.0,
+        3.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": -90,
+      "level": 2,
+      "role": "left",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Panel_140__283",
+      "module": "SM_KB_Window_Panel_140",
+      "location_m": [
+        0.0,
+        6.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": -90,
+      "level": 2,
+      "role": "left",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Panel_140__284",
+      "module": "SM_KB_Window_Panel_140",
+      "location_m": [
+        0.0,
+        9.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": -90,
+      "level": 2,
+      "role": "left",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Window_Panel_140__285",
+      "module": "SM_KB_Window_Panel_140",
+      "location_m": [
+        0.0,
+        12.0,
+        6.800000190734863
+      ],
+      "rotation_z_deg": -90,
+      "level": 2,
+      "role": "left",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_SignText_0_0__286",
+      "module": "SM_KB_SignText_0_0",
+      "location_m": [
+        1.7999999523162842,
+        -0.17499999701976776,
+        2.9200000762939453
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_SignText_0_1__287",
+      "module": "SM_KB_SignText_0_1",
+      "location_m": [
+        5.400000095367432,
+        -0.17499999701976776,
+        2.9200000762939453
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_SignText_0_2__288",
+      "module": "SM_KB_SignText_0_2",
+      "location_m": [
+        9.0,
+        -0.17499999701976776,
+        2.9200000762939453
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_SignText_0_3__289",
+      "module": "SM_KB_SignText_0_3",
+      "location_m": [
+        12.600000381469727,
+        -0.17499999701976776,
+        2.9200000762939453
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_SignText_1_0__290",
+      "module": "SM_KB_SignText_1_0",
+      "location_m": [
+        1.7999999523162842,
+        -0.17499999701976776,
+        6.320000171661377
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_SignText_1_1__291",
+      "module": "SM_KB_SignText_1_1",
+      "location_m": [
+        5.400000095367432,
+        -0.17499999701976776,
+        6.320000171661377
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_SignText_1_2__292",
+      "module": "SM_KB_SignText_1_2",
+      "location_m": [
+        9.0,
+        -0.17499999701976776,
+        6.320000171661377
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_SignText_1_3__293",
+      "module": "SM_KB_SignText_1_3",
+      "location_m": [
+        12.600000381469727,
+        -0.17499999701976776,
+        6.320000171661377
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_SignText_2_0__294",
+      "module": "SM_KB_SignText_2_0",
+      "location_m": [
+        1.7999999523162842,
+        -0.17499999701976776,
+        9.720000267028809
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_SignText_2_1__295",
+      "module": "SM_KB_SignText_2_1",
+      "location_m": [
+        5.400000095367432,
+        -0.17499999701976776,
+        9.720000267028809
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_SignText_2_2__296",
+      "module": "SM_KB_SignText_2_2",
+      "location_m": [
+        9.0,
+        -0.17499999701976776,
+        9.720000267028809
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_SignText_2_3__297",
+      "module": "SM_KB_SignText_2_3",
+      "location_m": [
+        12.600000381469727,
+        -0.17499999701976776,
+        9.720000267028809
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_VerticalSign_Case__298",
+      "module": "SM_KB_VerticalSign_Case",
+      "location_m": [
+        0.05000000074505806,
+        -0.6499999761581421,
+        3.799999952316284
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_VerticalSign_Text__299",
+      "module": "SM_KB_VerticalSign_Text",
+      "location_m": [
+        0.4099999964237213,
+        -0.6800000071525574,
+        5.300000190734863
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_WindowPoster_0__300",
+      "module": "SM_KB_WindowPoster_0",
+      "location_m": [
+        0.6000000238418579,
+        -0.009999999776482582,
+        7.71999979019165
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_WindowPosterText_0__301",
+      "module": "SM_KB_WindowPosterText_0",
+      "location_m": [
+        0.875,
+        -0.02500000037252903,
+        8.359999656677246
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_WindowPoster_1__302",
+      "module": "SM_KB_WindowPoster_1",
+      "location_m": [
+        4.199999809265137,
+        -0.009999999776482582,
+        7.71999979019165
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_WindowPosterText_1__303",
+      "module": "SM_KB_WindowPosterText_1",
+      "location_m": [
+        4.474999904632568,
+        -0.02500000037252903,
+        8.359999656677246
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_WindowPoster_2__304",
+      "module": "SM_KB_WindowPoster_2",
+      "location_m": [
+        8.800000190734863,
+        -0.009999999776482582,
+        7.71999979019165
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_WindowPosterText_2__305",
+      "module": "SM_KB_WindowPosterText_2",
+      "location_m": [
+        9.074999809265137,
+        -0.02500000037252903,
+        8.359999656677246
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_WindowPoster_3__306",
+      "module": "SM_KB_WindowPoster_3",
+      "location_m": [
+        11.899999618530273,
+        -0.009999999776482582,
+        7.71999979019165
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_WindowPosterText_3__307",
+      "module": "SM_KB_WindowPosterText_3",
+      "location_m": [
+        12.175000190734863,
+        -0.02500000037252903,
+        8.359999656677246
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_ShopDoorTrim_0_0__308",
+      "module": "SM_KB_ShopDoorTrim_0_0",
+      "location_m": [
+        1.100000023841858,
+        -0.019999999552965164,
+        0.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_ShopDoorTrim_0_1__309",
+      "module": "SM_KB_ShopDoorTrim_0_1",
+      "location_m": [
+        2.430000066757202,
+        -0.019999999552965164,
+        0.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_ShopDoorTrim_1_0__310",
+      "module": "SM_KB_ShopDoorTrim_1_0",
+      "location_m": [
+        4.699999809265137,
+        -0.019999999552965164,
+        0.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_ShopDoorTrim_1_1__311",
+      "module": "SM_KB_ShopDoorTrim_1_1",
+      "location_m": [
+        6.03000020980835,
+        -0.019999999552965164,
+        0.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_ShopDoorTrim_2_0__312",
+      "module": "SM_KB_ShopDoorTrim_2_0",
+      "location_m": [
+        8.300000190734863,
+        -0.019999999552965164,
+        0.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_ShopDoorTrim_2_1__313",
+      "module": "SM_KB_ShopDoorTrim_2_1",
+      "location_m": [
+        9.630000114440918,
+        -0.019999999552965164,
+        0.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_ShopDoorTrim_3_0__314",
+      "module": "SM_KB_ShopDoorTrim_3_0",
+      "location_m": [
+        11.899999618530273,
+        -0.019999999552965164,
+        0.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_ShopDoorTrim_3_1__315",
+      "module": "SM_KB_ShopDoorTrim_3_1",
+      "location_m": [
+        13.229999542236328,
+        -0.019999999552965164,
+        0.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_AirConditioner_90__316",
+      "module": "SM_KB_AirConditioner_90",
+      "location_m": [
+        0.3499999940395355,
+        -0.5,
+        3.6500000953674316
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_AirConditioner_90__317",
+      "module": "SM_KB_AirConditioner_90",
+      "location_m": [
+        7.0,
+        -0.5,
+        3.6500000953674316
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_AirConditioner_90__318",
+      "module": "SM_KB_AirConditioner_90",
+      "location_m": [
+        12.75,
+        -0.5,
+        3.6500000953674316
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_AirConditioner_90__319",
+      "module": "SM_KB_AirConditioner_90",
+      "location_m": [
+        0.3499999940395355,
+        -0.5,
+        7.050000190734863
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_AirConditioner_90__320",
+      "module": "SM_KB_AirConditioner_90",
+      "location_m": [
+        10.100000381469727,
+        -0.5,
+        7.050000190734863
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_AirConditioner_90__321",
+      "module": "SM_KB_AirConditioner_90",
+      "location_m": [
+        5.300000190734863,
+        10.800000190734863,
+        10.199999809265137
+      ],
+      "rotation_z_deg": 180,
+      "level": 3,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_AirConditioner_90__322",
+      "module": "SM_KB_AirConditioner_90",
+      "location_m": [
+        6.5,
+        10.800000190734863,
+        10.199999809265137
+      ],
+      "rotation_z_deg": 180,
+      "level": 3,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Drainpipe_340__323",
+      "module": "SM_KB_Drainpipe_340",
+      "location_m": [
+        -0.07999999821186066,
+        -0.11999999731779099,
+        0.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Drainpipe_340__324",
+      "module": "SM_KB_Drainpipe_340",
+      "location_m": [
+        14.479999542236328,
+        -0.11999999731779099,
+        0.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Drainpipe_340__325",
+      "module": "SM_KB_Drainpipe_340",
+      "location_m": [
+        -0.07999999821186066,
+        -0.11999999731779099,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Drainpipe_340__326",
+      "module": "SM_KB_Drainpipe_340",
+      "location_m": [
+        14.479999542236328,
+        -0.11999999731779099,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Drainpipe_340__327",
+      "module": "SM_KB_Drainpipe_340",
+      "location_m": [
+        -0.07999999821186066,
+        -0.11999999731779099,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Drainpipe_340__328",
+      "module": "SM_KB_Drainpipe_340",
+      "location_m": [
+        14.479999542236328,
+        -0.11999999731779099,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_AC_PipePair__329",
+      "module": "SM_KB_AC_PipePair",
+      "location_m": [
+        1.25,
+        -0.18000000715255737,
+        3.700000047683716
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_AC_PipePair__330",
+      "module": "SM_KB_AC_PipePair",
+      "location_m": [
+        7.900000095367432,
+        -0.18000000715255737,
+        3.700000047683716
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_AC_PipePair__331",
+      "module": "SM_KB_AC_PipePair",
+      "location_m": [
+        1.25,
+        -0.18000000715255737,
+        7.099999904632568
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Stool_Red__332",
+      "module": "SM_KB_Stool_Red",
+      "location_m": [
+        13.550000190734863,
+        -0.5,
+        0.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Stool_Red__333",
+      "module": "SM_KB_Stool_Red",
+      "location_m": [
+        13.550000190734863,
+        -0.949999988079071,
+        0.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Stool_Red__334",
+      "module": "SM_KB_Stool_Red",
+      "location_m": [
+        13.550000190734863,
+        -1.399999976158142,
+        0.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Stool_Red__335",
+      "module": "SM_KB_Stool_Red",
+      "location_m": [
+        13.550000190734863,
+        -1.850000023841858,
+        0.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_UtilityBox__336",
+      "module": "SM_KB_UtilityBox",
+      "location_m": [
+        -0.27000001072883606,
+        2.0,
+        1.399999976158142
+      ],
+      "rotation_z_deg": -90,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Baseboard_300__337",
+      "module": "SM_KB_Baseboard_300",
+      "location_m": [
+        4.599999904632568,
+        11.729999542236328,
+        0.0
+      ],
+      "rotation_z_deg": 180,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Baseboard_300__338",
+      "module": "SM_KB_Baseboard_300",
+      "location_m": [
+        7.599999904632568,
+        11.729999542236328,
+        0.0
+      ],
+      "rotation_z_deg": 180,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Baseboard_300__339",
+      "module": "SM_KB_Baseboard_300",
+      "location_m": [
+        10.600000381469727,
+        11.729999542236328,
+        0.0
+      ],
+      "rotation_z_deg": 180,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_CeilingLamp_0__340",
+      "module": "SM_KB_CeilingLamp_0",
+      "location_m": [
+        6.0,
+        4.900000095367432,
+        3.140000104904175
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Baseboard_300__341",
+      "module": "SM_KB_Baseboard_300",
+      "location_m": [
+        4.599999904632568,
+        11.729999542236328,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 180,
+      "level": 1,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Baseboard_300__342",
+      "module": "SM_KB_Baseboard_300",
+      "location_m": [
+        7.599999904632568,
+        11.729999542236328,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 180,
+      "level": 1,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Baseboard_300__343",
+      "module": "SM_KB_Baseboard_300",
+      "location_m": [
+        10.600000381469727,
+        11.729999542236328,
+        3.4000000953674316
+      ],
+      "rotation_z_deg": 180,
+      "level": 1,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_CeilingLamp_1__344",
+      "module": "SM_KB_CeilingLamp_1",
+      "location_m": [
+        6.0,
+        4.900000095367432,
+        6.539999961853027
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Baseboard_300__345",
+      "module": "SM_KB_Baseboard_300",
+      "location_m": [
+        4.599999904632568,
+        11.729999542236328,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 180,
+      "level": 2,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Baseboard_300__346",
+      "module": "SM_KB_Baseboard_300",
+      "location_m": [
+        7.599999904632568,
+        11.729999542236328,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 180,
+      "level": 2,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Baseboard_300__347",
+      "module": "SM_KB_Baseboard_300",
+      "location_m": [
+        10.600000381469727,
+        11.729999542236328,
+        6.800000190734863
+      ],
+      "rotation_z_deg": 180,
+      "level": 2,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_CeilingLamp_2__348",
+      "module": "SM_KB_CeilingLamp_2",
+      "location_m": [
+        6.0,
+        4.900000095367432,
+        9.9399995803833
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "detail",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_KB_Roofhouse_Clerestory__349",
+      "module": "SM_KB_Roofhouse_Clerestory",
+      "location_m": [
+        0,
+        4.33,
+        12.0
+      ],
+      "rotation_z_deg": 0,
+      "level": 3,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_BandPanel_1_0__350",
+      "module": "SM_KB_BandPanel_1_0",
+      "location_m": [
+        0.0,
+        -0.43,
+        3.2199999999999998
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_BandPanel_1_1__351",
+      "module": "SM_KB_BandPanel_1_1",
+      "location_m": [
+        1.2,
+        -0.43,
+        3.2199999999999998
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_BandPanel_1_2__352",
+      "module": "SM_KB_BandPanel_1_2",
+      "location_m": [
+        2.4,
+        -0.43,
+        3.2199999999999998
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_BandPanel_1_3__353",
+      "module": "SM_KB_BandPanel_1_3",
+      "location_m": [
+        3.5999999999999996,
+        -0.43,
+        3.2199999999999998
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_BandPanel_1_4__354",
+      "module": "SM_KB_BandPanel_1_4",
+      "location_m": [
+        4.8,
+        -0.43,
+        3.2199999999999998
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_BandPanel_1_5__355",
+      "module": "SM_KB_BandPanel_1_5",
+      "location_m": [
+        6.0,
+        -0.43,
+        3.2199999999999998
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_BandPanel_1_6__356",
+      "module": "SM_KB_BandPanel_1_6",
+      "location_m": [
+        7.199999999999999,
+        -0.43,
+        3.2199999999999998
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_BandPanel_1_7__357",
+      "module": "SM_KB_BandPanel_1_7",
+      "location_m": [
+        8.4,
+        -0.43,
+        3.2199999999999998
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_BandPanel_1_8__358",
+      "module": "SM_KB_BandPanel_1_8",
+      "location_m": [
+        9.6,
+        -0.43,
+        3.2199999999999998
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_BandPanel_1_9__359",
+      "module": "SM_KB_BandPanel_1_9",
+      "location_m": [
+        10.799999999999999,
+        -0.43,
+        3.2199999999999998
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_BandPanel_1_10__360",
+      "module": "SM_KB_BandPanel_1_10",
+      "location_m": [
+        12.0,
+        -0.43,
+        3.2199999999999998
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_BandPanel_1_11__361",
+      "module": "SM_KB_BandPanel_1_11",
+      "location_m": [
+        13.2,
+        -0.43,
+        3.2199999999999998
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_BandPanel_2_0__362",
+      "module": "SM_KB_BandPanel_2_0",
+      "location_m": [
+        0.0,
+        -0.43,
+        6.62
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_BandPanel_2_1__363",
+      "module": "SM_KB_BandPanel_2_1",
+      "location_m": [
+        1.2,
+        -0.43,
+        6.62
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_BandPanel_2_2__364",
+      "module": "SM_KB_BandPanel_2_2",
+      "location_m": [
+        2.4,
+        -0.43,
+        6.62
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_BandPanel_2_3__365",
+      "module": "SM_KB_BandPanel_2_3",
+      "location_m": [
+        3.5999999999999996,
+        -0.43,
+        6.62
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_BandPanel_2_4__366",
+      "module": "SM_KB_BandPanel_2_4",
+      "location_m": [
+        4.8,
+        -0.43,
+        6.62
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_BandPanel_2_5__367",
+      "module": "SM_KB_BandPanel_2_5",
+      "location_m": [
+        6.0,
+        -0.43,
+        6.62
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_BandPanel_2_6__368",
+      "module": "SM_KB_BandPanel_2_6",
+      "location_m": [
+        7.199999999999999,
+        -0.43,
+        6.62
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_BandPanel_2_7__369",
+      "module": "SM_KB_BandPanel_2_7",
+      "location_m": [
+        8.4,
+        -0.43,
+        6.62
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_BandPanel_2_8__370",
+      "module": "SM_KB_BandPanel_2_8",
+      "location_m": [
+        9.6,
+        -0.43,
+        6.62
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_BandPanel_2_9__371",
+      "module": "SM_KB_BandPanel_2_9",
+      "location_m": [
+        10.799999999999999,
+        -0.43,
+        6.62
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_BandPanel_2_10__372",
+      "module": "SM_KB_BandPanel_2_10",
+      "location_m": [
+        12.0,
+        -0.43,
+        6.62
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_BandPanel_2_11__373",
+      "module": "SM_KB_BandPanel_2_11",
+      "location_m": [
+        13.2,
+        -0.43,
+        6.62
+      ],
+      "rotation_z_deg": 0,
+      "level": 2,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_BandPanel_3_0__374",
+      "module": "SM_KB_BandPanel_3_0",
+      "location_m": [
+        0.0,
+        -0.43,
+        10.02
+      ],
+      "rotation_z_deg": 0,
+      "level": 3,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_BandPanel_3_1__375",
+      "module": "SM_KB_BandPanel_3_1",
+      "location_m": [
+        1.2,
+        -0.43,
+        10.02
+      ],
+      "rotation_z_deg": 0,
+      "level": 3,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_BandPanel_3_2__376",
+      "module": "SM_KB_BandPanel_3_2",
+      "location_m": [
+        2.4,
+        -0.43,
+        10.02
+      ],
+      "rotation_z_deg": 0,
+      "level": 3,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_BandPanel_3_3__377",
+      "module": "SM_KB_BandPanel_3_3",
+      "location_m": [
+        3.5999999999999996,
+        -0.43,
+        10.02
+      ],
+      "rotation_z_deg": 0,
+      "level": 3,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_BandPanel_3_4__378",
+      "module": "SM_KB_BandPanel_3_4",
+      "location_m": [
+        4.8,
+        -0.43,
+        10.02
+      ],
+      "rotation_z_deg": 0,
+      "level": 3,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_BandPanel_3_5__379",
+      "module": "SM_KB_BandPanel_3_5",
+      "location_m": [
+        6.0,
+        -0.43,
+        10.02
+      ],
+      "rotation_z_deg": 0,
+      "level": 3,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_BandPanel_3_6__380",
+      "module": "SM_KB_BandPanel_3_6",
+      "location_m": [
+        7.199999999999999,
+        -0.43,
+        10.02
+      ],
+      "rotation_z_deg": 0,
+      "level": 3,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_BandPanel_3_7__381",
+      "module": "SM_KB_BandPanel_3_7",
+      "location_m": [
+        8.4,
+        -0.43,
+        10.02
+      ],
+      "rotation_z_deg": 0,
+      "level": 3,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_BandPanel_3_8__382",
+      "module": "SM_KB_BandPanel_3_8",
+      "location_m": [
+        9.6,
+        -0.43,
+        10.02
+      ],
+      "rotation_z_deg": 0,
+      "level": 3,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_BandPanel_3_9__383",
+      "module": "SM_KB_BandPanel_3_9",
+      "location_m": [
+        10.799999999999999,
+        -0.43,
+        10.02
+      ],
+      "rotation_z_deg": 0,
+      "level": 3,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_BandPanel_3_10__384",
+      "module": "SM_KB_BandPanel_3_10",
+      "location_m": [
+        12.0,
+        -0.43,
+        10.02
+      ],
+      "rotation_z_deg": 0,
+      "level": 3,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_BandPanel_3_11__385",
+      "module": "SM_KB_BandPanel_3_11",
+      "location_m": [
+        13.2,
+        -0.43,
+        10.02
+      ],
+      "rotation_z_deg": 0,
+      "level": 3,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_ShopDisplay_0_0__386",
+      "module": "SM_KB_ShopDisplay_0_0",
+      "location_m": [
+        0.08,
+        -0.07,
+        0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_ShopPrint_0_0__387",
+      "module": "SM_KB_ShopPrint_0_0",
+      "location_m": [
+        0.57,
+        -0.11,
+        1.55
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_ShopDisplay_0_1__388",
+      "module": "SM_KB_ShopDisplay_0_1",
+      "location_m": [
+        2.52,
+        -0.07,
+        0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_ShopPrint_0_1__389",
+      "module": "SM_KB_ShopPrint_0_1",
+      "location_m": [
+        3.01,
+        -0.11,
+        1.55
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_ShopDisplay_1_0__390",
+      "module": "SM_KB_ShopDisplay_1_0",
+      "location_m": [
+        3.68,
+        -0.07,
+        0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_ShopPrint_1_0__391",
+      "module": "SM_KB_ShopPrint_1_0",
+      "location_m": [
+        4.17,
+        -0.11,
+        1.55
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_ShopDisplay_1_1__392",
+      "module": "SM_KB_ShopDisplay_1_1",
+      "location_m": [
+        6.12,
+        -0.07,
+        0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_ShopPrint_1_1__393",
+      "module": "SM_KB_ShopPrint_1_1",
+      "location_m": [
+        6.61,
+        -0.11,
+        1.55
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_ShopDisplay_2_0__394",
+      "module": "SM_KB_ShopDisplay_2_0",
+      "location_m": [
+        7.28,
+        -0.07,
+        0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_ShopPrint_2_0__395",
+      "module": "SM_KB_ShopPrint_2_0",
+      "location_m": [
+        7.7700000000000005,
+        -0.11,
+        1.55
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_ShopDisplay_2_1__396",
+      "module": "SM_KB_ShopDisplay_2_1",
+      "location_m": [
+        9.72,
+        -0.07,
+        0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_ShopPrint_2_1__397",
+      "module": "SM_KB_ShopPrint_2_1",
+      "location_m": [
+        10.21,
+        -0.11,
+        1.55
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_ShopDisplay_3_0__398",
+      "module": "SM_KB_ShopDisplay_3_0",
+      "location_m": [
+        10.88,
+        -0.07,
+        0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_ShopPrint_3_0__399",
+      "module": "SM_KB_ShopPrint_3_0",
+      "location_m": [
+        11.370000000000001,
+        -0.11,
+        1.55
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_ShopDisplay_3_1__400",
+      "module": "SM_KB_ShopDisplay_3_1",
+      "location_m": [
+        13.32,
+        -0.07,
+        0
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_ShopPrint_3_1__401",
+      "module": "SM_KB_ShopPrint_3_1",
+      "location_m": [
+        13.81,
+        -0.11,
+        1.55
+      ],
+      "rotation_z_deg": 0,
+      "level": 0,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_AcademyFilm_0_0__402",
+      "module": "SM_KB_AcademyFilm_0_0",
+      "location_m": [
+        0.52,
+        -0.045,
+        4.4
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_AcademyFilm_0_1__403",
+      "module": "SM_KB_AcademyFilm_0_1",
+      "location_m": [
+        1.3900000000000001,
+        -0.045,
+        4.4
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_AcademyFilm_0_2__404",
+      "module": "SM_KB_AcademyFilm_0_2",
+      "location_m": [
+        2.26,
+        -0.045,
+        4.4
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_AcademyWindowText_0__405",
+      "module": "SM_KB_AcademyWindowText_0",
+      "location_m": [
+        1.8,
+        -0.065,
+        4.7
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_AcademyFilm_1_0__406",
+      "module": "SM_KB_AcademyFilm_1_0",
+      "location_m": [
+        4.12,
+        -0.045,
+        4.4
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_AcademyFilm_1_1__407",
+      "module": "SM_KB_AcademyFilm_1_1",
+      "location_m": [
+        4.99,
+        -0.045,
+        4.4
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_AcademyFilm_1_2__408",
+      "module": "SM_KB_AcademyFilm_1_2",
+      "location_m": [
+        5.86,
+        -0.045,
+        4.4
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_AcademyWindowText_1__409",
+      "module": "SM_KB_AcademyWindowText_1",
+      "location_m": [
+        5.4,
+        -0.065,
+        4.7
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_AcademyFilm_2_0__410",
+      "module": "SM_KB_AcademyFilm_2_0",
+      "location_m": [
+        7.720000000000001,
+        -0.045,
+        4.4
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_AcademyFilm_2_1__411",
+      "module": "SM_KB_AcademyFilm_2_1",
+      "location_m": [
+        8.59,
+        -0.045,
+        4.4
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_AcademyFilm_2_2__412",
+      "module": "SM_KB_AcademyFilm_2_2",
+      "location_m": [
+        9.46,
+        -0.045,
+        4.4
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_AcademyWindowText_2__413",
+      "module": "SM_KB_AcademyWindowText_2",
+      "location_m": [
+        9.0,
+        -0.065,
+        4.7
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_AcademyFilm_3_0__414",
+      "module": "SM_KB_AcademyFilm_3_0",
+      "location_m": [
+        11.32,
+        -0.045,
+        4.4
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_AcademyFilm_3_1__415",
+      "module": "SM_KB_AcademyFilm_3_1",
+      "location_m": [
+        12.19,
+        -0.045,
+        4.4
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_AcademyFilm_3_2__416",
+      "module": "SM_KB_AcademyFilm_3_2",
+      "location_m": [
+        13.06,
+        -0.045,
+        4.4
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SM_KB_AcademyWindowText_3__417",
+      "module": "SM_KB_AcademyWindowText_3",
+      "location_m": [
+        12.600000000000001,
+        -0.065,
+        4.7
+      ],
+      "rotation_z_deg": 0,
+      "level": 1,
+      "role": "detail",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    }
+  ]
+}

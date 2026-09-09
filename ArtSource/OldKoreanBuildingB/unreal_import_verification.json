@@ -1,0 +1,347 @@
+{
+  "passed": true,
+  "modules": [
+    {
+      "module": "SM_KB_Wall_Solid_360",
+      "dimensions_cm": [
+        360.00000209814675,
+        24.000030517578125,
+        320
+      ],
+      "collision_hulls": 1
+    },
+    {
+      "module": "SM_KB_Wall_Entrance_360",
+      "dimensions_cm": [
+        360.00000209814675,
+        24.000030517578125,
+        320
+      ],
+      "collision_hulls": 3
+    },
+    {
+      "module": "SM_KB_Wall_Window_360",
+      "dimensions_cm": [
+        360.00000209814675,
+        24.000030517578125,
+        320
+      ],
+      "collision_hulls": 4
+    },
+    {
+      "module": "SM_KB_Wall_Solid_300",
+      "dimensions_cm": [
+        300.00000209814675,
+        24.000024795532227,
+        320
+      ],
+      "collision_hulls": 1
+    },
+    {
+      "module": "SM_KB_Wall_Window_300",
+      "dimensions_cm": [
+        300.00000209814675,
+        24.000024795532227,
+        320
+      ],
+      "collision_hulls": 4
+    },
+    {
+      "module": "SM_KB_Wall_Entrance_300",
+      "dimensions_cm": [
+        300.00000209814675,
+        24.000024795532227,
+        320
+      ],
+      "collision_hulls": 3
+    },
+    {
+      "module": "SM_KB_Window_Frame_270",
+      "dimensions_cm": [
+        270,
+        8.00002384185791,
+        170
+      ],
+      "collision_hulls": 6
+    },
+    {
+      "module": "SM_KB_Window_Panel_270",
+      "dimensions_cm": [
+        260,
+        2.5000228881835938,
+        156
+      ],
+      "collision_hulls": 1
+    },
+    {
+      "module": "SM_KB_Window_Panel_140",
+      "dimensions_cm": [
+        140,
+        2.500011444091797,
+        170
+      ],
+      "collision_hulls": 1
+    },
+    {
+      "module": "SM_KB_Door_Frame_140",
+      "dimensions_cm": [
+        154.00000762939453,
+        30.000013828277588,
+        247
+      ],
+      "collision_hulls": 0
+    },
+    {
+      "module": "SM_KB_Floor_360x300",
+      "dimensions_cm": [
+        360.00002622683314,
+        300.0000305175781,
+        20
+      ],
+      "collision_hulls": 1
+    },
+    {
+      "module": "SM_KB_Fascia_360",
+      "dimensions_cm": [
+        360.00000209814675,
+        62.000030517578125,
+        43
+      ],
+      "collision_hulls": 1
+    },
+    {
+      "module": "SM_KB_Fascia_300",
+      "dimensions_cm": [
+        300.00000209814675,
+        62.00002479553223,
+        43
+      ],
+      "collision_hulls": 1
+    },
+    {
+      "module": "SM_KB_Parapet_360",
+      "dimensions_cm": [
+        360.0000025352606,
+        34.000030517578125,
+        113
+      ],
+      "collision_hulls": 2
+    },
+    {
+      "module": "SM_KB_Parapet_300",
+      "dimensions_cm": [
+        300.0000025352606,
+        34.00002479553223,
+        113
+      ],
+      "collision_hulls": 2
+    },
+    {
+      "module": "SM_KB_Partition_Door_720",
+      "dimensions_cm": [
+        720.0000013113417,
+        15.0000638961792,
+        320
+      ],
+      "collision_hulls": 3
+    },
+    {
+      "module": "SM_KB_Partition_Door_1000",
+      "dimensions_cm": [
+        1000.0000013113417,
+        15.00008773803711,
+        320
+      ],
+      "collision_hulls": 3
+    },
+    {
+      "module": "SM_KB_Partition_Solid_380",
+      "dimensions_cm": [
+        380.00000131134175,
+        15.000033378601074,
+        320
+      ],
+      "collision_hulls": 1
+    },
+    {
+      "module": "SM_KB_Stairwell_Side_560",
+      "dimensions_cm": [
+        560.0000013113417,
+        15.000049591064453,
+        320
+      ],
+      "collision_hulls": 1
+    },
+    {
+      "module": "SM_KB_Landing_410x200",
+      "dimensions_cm": [
+        410.0000174845554,
+        200.00003051757812,
+        20
+      ],
+      "collision_hulls": 1
+    },
+    {
+      "module": "SM_KB_Landing_410x236",
+      "dimensions_cm": [
+        410.00002063177453,
+        236.00003051757812,
+        20
+      ],
+      "collision_hulls": 1
+    },
+    {
+      "module": "SM_KB_Floor_1000x300",
+      "dimensions_cm": [
+        1000.0000262268331,
+        300.0000915527344,
+        20
+      ],
+      "collision_hulls": 1
+    },
+    {
+      "module": "SM_KB_Floor_440x040",
+      "dimensions_cm": [
+        440.0000034969112,
+        40.000038146972656,
+        20
+      ],
+      "collision_hulls": 1
+    },
+    {
+      "module": "SM_KB_Stair_Flight_180_170",
+      "dimensions_cm": [
+        180.00002622683314,
+        307.39521884918213,
+        183.0503387451172
+      ],
+      "collision_hulls": 12
+    },
+    {
+      "module": "SM_KB_Stair_Rail_300",
+      "dimensions_cm": [
+        5.500026226833143,
+        302.71156907081604,
+        274.7851257324219
+      ],
+      "collision_hulls": 6
+    },
+    {
+      "module": "SM_KB_Guardrail_180",
+      "dimensions_cm": [
+        180.0000004808253,
+        5.500015735626221,
+        110.5
+      ],
+      "collision_hulls": 5
+    },
+    {
+      "module": "SM_KB_Awning_360",
+      "dimensions_cm": [
+        360,
+        110.00003147219832,
+        36.00001525878906
+      ],
+      "collision_hulls": 0
+    },
+    {
+      "module": "SM_KB_Sign_Blank_360",
+      "dimensions_cm": [
+        336,
+        16.000029469452784,
+        42
+      ],
+      "collision_hulls": 0
+    },
+    {
+      "module": "SM_KB_Roofhouse_Door_440",
+      "dimensions_cm": [
+        440.00000209814675,
+        24.000038146972656,
+        280
+      ],
+      "collision_hulls": 3
+    },
+    {
+      "module": "SM_KB_Roofhouse_Side_760",
+      "dimensions_cm": [
+        760.0000020981468,
+        24.00006675720215,
+        280
+      ],
+      "collision_hulls": 1
+    },
+    {
+      "module": "SM_KB_Roofhouse_Back_440",
+      "dimensions_cm": [
+        440.00000209814675,
+        24.000038146972656,
+        280
+      ],
+      "collision_hulls": 1
+    },
+    {
+      "module": "SM_KB_Roofhouse_Cap_480x800",
+      "dimensions_cm": [
+        480.00010045579984,
+        800.0000610351562,
+        18
+      ],
+      "collision_hulls": 1
+    }
+  ],
+  "blueprint": {
+    "passed": true,
+    "components_verified": 275,
+    "assets_saved": 43,
+    "paths": [
+      "/Game/Environment/OldKoreanBuildingB/Blockout/BP_OldKoreanBuildingB_Blockout",
+      "/Game/Environment/OldKoreanBuildingB/Blockout/Meshes/SM_KB_Landing_410x200",
+      "/Game/Environment/OldKoreanBuildingB/Blockout/Meshes/SM_KB_Wall_Solid_360",
+      "/Game/Environment/OldKoreanBuildingB/Blockout/Meshes/SM_KB_Guardrail_180",
+      "/Game/Environment/OldKoreanBuildingB/Blockout/Meshes/SM_KB_Roofhouse_Cap_480x800",
+      "/Game/Environment/OldKoreanBuildingB/Blockout/Meshes/SM_KB_Roofhouse_Back_440",
+      "/Game/Environment/OldKoreanBuildingB/Blockout/Meshes/SM_KB_Roofhouse_Side_760",
+      "/Game/Environment/OldKoreanBuildingB/Blockout/Meshes/SM_KB_Roofhouse_Door_440",
+      "/Game/Environment/OldKoreanBuildingB/Blockout/Meshes/SM_KB_Parapet_300",
+      "/Game/Environment/OldKoreanBuildingB/Blockout/Meshes/M_BKO_White",
+      "/Game/Environment/OldKoreanBuildingB/Blockout/Meshes/SM_KB_Parapet_360",
+      "/Game/Environment/OldKoreanBuildingB/Blockout/Meshes/SM_KB_Floor_440x040",
+      "/Game/Environment/OldKoreanBuildingB/Blockout/Meshes/SM_KB_Floor_1000x300",
+      "/Game/Environment/OldKoreanBuildingB/Blockout/Meshes/M_BKO_Rail",
+      "/Game/Environment/OldKoreanBuildingB/Blockout/Meshes/SM_KB_Stair_Rail_300",
+      "/Game/Environment/OldKoreanBuildingB/Blockout/Meshes/SM_KB_Landing_410x236",
+      "/Game/Environment/OldKoreanBuildingB/Blockout/Meshes/M_BKO_Stair",
+      "/Game/Environment/OldKoreanBuildingB/Blockout/Meshes/SM_KB_Stair_Flight_180_170",
+      "/Game/Environment/OldKoreanBuildingB/Blockout/Meshes/SM_KB_Stairwell_Side_560",
+      "/Game/Environment/OldKoreanBuildingB/Blockout/Meshes/SM_KB_Partition_Door_1000",
+      "/Game/Environment/OldKoreanBuildingB/Blockout/Meshes/SM_KB_Partition_Solid_380",
+      "/Game/Environment/OldKoreanBuildingB/Blockout/Meshes/M_BKO_Inside",
+      "/Game/Environment/OldKoreanBuildingB/Blockout/Meshes/SM_KB_Partition_Door_720",
+      "/Game/Environment/OldKoreanBuildingB/Blockout/Meshes/SM_KB_Wall_Entrance_300",
+      "/Game/Environment/OldKoreanBuildingB/Blockout/Meshes/SM_KB_Fascia_300",
+      "/Game/Environment/OldKoreanBuildingB/Blockout/Meshes/SM_KB_Window_Panel_140",
+      "/Game/Environment/OldKoreanBuildingB/Blockout/Meshes/SM_KB_Wall_Window_300",
+      "/Game/Environment/OldKoreanBuildingB/Blockout/Meshes/SM_KB_Wall_Solid_300",
+      "/Game/Environment/OldKoreanBuildingB/Blockout/Meshes/M_BKO_Concrete",
+      "/Game/Environment/OldKoreanBuildingB/Blockout/Meshes/SM_KB_Fascia_360",
+      "/Game/Environment/OldKoreanBuildingB/Blockout/Meshes/M_BKO_Glass",
+      "/Game/Environment/OldKoreanBuildingB/Blockout/Meshes/SM_KB_Window_Panel_270",
+      "/Game/Environment/OldKoreanBuildingB/Blockout/Meshes/SM_KB_Window_Frame_270",
+      "/Game/Environment/OldKoreanBuildingB/Blockout/Meshes/SM_KB_Wall_Window_360",
+      "/Game/Environment/OldKoreanBuildingB/Blockout/Meshes/SM_KB_Sign_Blank_360",
+      "/Game/Environment/OldKoreanBuildingB/Blockout/Meshes/M_BKO_Teal",
+      "/Game/Environment/OldKoreanBuildingB/Blockout/Meshes/SM_KB_Awning_360",
+      "/Game/Environment/OldKoreanBuildingB/Blockout/Meshes/M_BKO_Frame",
+      "/Game/Environment/OldKoreanBuildingB/Blockout/Meshes/SM_KB_Door_Frame_140",
+      "/Game/Environment/OldKoreanBuildingB/Blockout/Meshes/M_BKO_Floor",
+      "/Game/Environment/OldKoreanBuildingB/Blockout/Meshes/SM_KB_Floor_360x300",
+      "/Game/Environment/OldKoreanBuildingB/Blockout/Meshes/M_BKO_Wall",
+      "/Game/Environment/OldKoreanBuildingB/Blockout/Meshes/SM_KB_Wall_Entrance_360"
+    ]
+  },
+  "level_modified": false,
+  "playtest": "User to perform",
+  "unit_fix": "FBX_SCALE_NONE; meter source exported with centimeter object scale; Unreal asset scale verified",
+  "blueprint_compile": "passed with warnings_as_errors"
+}

@@ -1,0 +1,303 @@
+{
+  "passed": true,
+  "modules": 32,
+  "assembly_instances": 286,
+  "module_results": [
+    {
+      "module": "SM_KB_Wall_Solid_360",
+      "dimensions_m": [
+        3.5999999046325684,
+        0.23999999463558197,
+        3.200000047683716
+      ],
+      "closed_collision_hulls": 1
+    },
+    {
+      "module": "SM_KB_Wall_Entrance_360",
+      "dimensions_m": [
+        3.5999999046325684,
+        0.23999999463558197,
+        3.200000047683716
+      ],
+      "closed_collision_hulls": 3
+    },
+    {
+      "module": "SM_KB_Wall_Window_360",
+      "dimensions_m": [
+        3.5999999046325684,
+        0.23999999463558197,
+        3.200000047683716
+      ],
+      "closed_collision_hulls": 4
+    },
+    {
+      "module": "SM_KB_Wall_Solid_300",
+      "dimensions_m": [
+        3.0,
+        0.23999999463558197,
+        3.200000047683716
+      ],
+      "closed_collision_hulls": 1
+    },
+    {
+      "module": "SM_KB_Wall_Window_300",
+      "dimensions_m": [
+        3.0,
+        0.23999999463558197,
+        3.200000047683716
+      ],
+      "closed_collision_hulls": 4
+    },
+    {
+      "module": "SM_KB_Wall_Entrance_300",
+      "dimensions_m": [
+        3.0,
+        0.23999999463558197,
+        3.200000047683716
+      ],
+      "closed_collision_hulls": 3
+    },
+    {
+      "module": "SM_KB_Window_Frame_270",
+      "dimensions_m": [
+        2.700000047683716,
+        0.07999999821186066,
+        1.7000000476837158
+      ],
+      "closed_collision_hulls": 6
+    },
+    {
+      "module": "SM_KB_Window_Panel_270",
+      "dimensions_m": [
+        2.5999999046325684,
+        0.02499999850988388,
+        1.5600000619888306
+      ],
+      "closed_collision_hulls": 1
+    },
+    {
+      "module": "SM_KB_Window_Panel_140",
+      "dimensions_m": [
+        1.4000000953674316,
+        0.02499999850988388,
+        1.7000000476837158
+      ],
+      "closed_collision_hulls": 1
+    },
+    {
+      "module": "SM_KB_Door_Frame_140",
+      "dimensions_m": [
+        1.5399999618530273,
+        0.30000001192092896,
+        2.4700000286102295
+      ],
+      "closed_collision_hulls": 0
+    },
+    {
+      "module": "SM_KB_Floor_360x300",
+      "dimensions_m": [
+        3.5999999046325684,
+        3.0,
+        0.20000000298023224
+      ],
+      "closed_collision_hulls": 1
+    },
+    {
+      "module": "SM_KB_Fascia_360",
+      "dimensions_m": [
+        3.5999999046325684,
+        0.6200000047683716,
+        0.4300000071525574
+      ],
+      "closed_collision_hulls": 1
+    },
+    {
+      "module": "SM_KB_Fascia_300",
+      "dimensions_m": [
+        3.0,
+        0.6200000047683716,
+        0.4300000071525574
+      ],
+      "closed_collision_hulls": 1
+    },
+    {
+      "module": "SM_KB_Parapet_360",
+      "dimensions_m": [
+        3.5999999046325684,
+        0.3400000035762787,
+        1.1299999952316284
+      ],
+      "closed_collision_hulls": 2
+    },
+    {
+      "module": "SM_KB_Parapet_300",
+      "dimensions_m": [
+        3.0,
+        0.3400000035762787,
+        1.1299999952316284
+      ],
+      "closed_collision_hulls": 2
+    },
+    {
+      "module": "SM_KB_Partition_Door_720",
+      "dimensions_m": [
+        7.199999809265137,
+        0.15000000596046448,
+        3.200000047683716
+      ],
+      "closed_collision_hulls": 3
+    },
+    {
+      "module": "SM_KB_Partition_Door_1000",
+      "dimensions_m": [
+        10.0,
+        0.15000000596046448,
+        3.200000047683716
+      ],
+      "closed_collision_hulls": 3
+    },
+    {
+      "module": "SM_KB_Partition_Solid_380",
+      "dimensions_m": [
+        3.799999952316284,
+        0.15000000596046448,
+        3.200000047683716
+      ],
+      "closed_collision_hulls": 1
+    },
+    {
+      "module": "SM_KB_Stairwell_Side_560",
+      "dimensions_m": [
+        5.599999904632568,
+        0.15000000596046448,
+        3.200000047683716
+      ],
+      "closed_collision_hulls": 1
+    },
+    {
+      "module": "SM_KB_Landing_410x200",
+      "dimensions_m": [
+        4.099999904632568,
+        2.0,
+        0.20000000298023224
+      ],
+      "closed_collision_hulls": 1
+    },
+    {
+      "module": "SM_KB_Landing_410x236",
+      "dimensions_m": [
+        4.099999904632568,
+        2.359999895095825,
+        0.20000000298023224
+      ],
+      "closed_collision_hulls": 1
+    },
+    {
+      "module": "SM_KB_Floor_1000x300",
+      "dimensions_m": [
+        10.0,
+        3.0,
+        0.20000000298023224
+      ],
+      "closed_collision_hulls": 1
+    },
+    {
+      "module": "SM_KB_Floor_440x040",
+      "dimensions_m": [
+        4.400000095367432,
+        0.4000000059604645,
+        0.20000000298023224
+      ],
+      "closed_collision_hulls": 1
+    },
+    {
+      "module": "SM_KB_Stair_Flight_180_170",
+      "dimensions_m": [
+        1.7999999523162842,
+        3.0739519596099854,
+        1.8305033445358276
+      ],
+      "closed_collision_hulls": 12
+    },
+    {
+      "module": "SM_KB_Stair_Rail_300",
+      "dimensions_m": [
+        0.054999999701976776,
+        3.0271155834198,
+        2.7478511333465576
+      ],
+      "closed_collision_hulls": 6
+    },
+    {
+      "module": "SM_KB_Guardrail_180",
+      "dimensions_m": [
+        1.7999999523162842,
+        0.054999999701976776,
+        1.1050000190734863
+      ],
+      "closed_collision_hulls": 5
+    },
+    {
+      "module": "SM_KB_Awning_360",
+      "dimensions_m": [
+        3.5999999046325684,
+        1.100000023841858,
+        0.3600001335144043
+      ],
+      "closed_collision_hulls": 0
+    },
+    {
+      "module": "SM_KB_Sign_Blank_360",
+      "dimensions_m": [
+        3.3600001335144043,
+        0.1599999964237213,
+        0.4200000762939453
+      ],
+      "closed_collision_hulls": 0
+    },
+    {
+      "module": "SM_KB_Roofhouse_Door_440",
+      "dimensions_m": [
+        4.400000095367432,
+        0.23999999463558197,
+        2.799999952316284
+      ],
+      "closed_collision_hulls": 3
+    },
+    {
+      "module": "SM_KB_Roofhouse_Side_760",
+      "dimensions_m": [
+        7.599999904632568,
+        0.23999999463558197,
+        2.799999952316284
+      ],
+      "closed_collision_hulls": 1
+    },
+    {
+      "module": "SM_KB_Roofhouse_Back_440",
+      "dimensions_m": [
+        4.400000095367432,
+        0.23999999463558197,
+        2.799999952316284
+      ],
+      "closed_collision_hulls": 1
+    },
+    {
+      "module": "SM_KB_Roofhouse_Cap_480x800",
+      "dimensions_m": [
+        4.800000190734863,
+        8.0,
+        0.18000000715255737
+      ],
+      "closed_collision_hulls": 1
+    }
+  ],
+  "checks": [
+    "FBX import succeeds",
+    "Module dimensions match saved source in metres",
+    "UV layer retained",
+    "UCX hulls closed and positive-volume",
+    "Assembly placement translations retained"
+  ],
+  "unreal_import_verified": false
+}

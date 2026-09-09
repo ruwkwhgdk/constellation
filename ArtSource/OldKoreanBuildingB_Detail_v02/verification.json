@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "modules": 142,
+  "assembly_instances": 418,
+  "texture_maps": [
+    "T_KB_Concrete_BaseColor.png",
+    "T_KB_Concrete_Normal.png",
+    "T_KB_Concrete_Roughness.png",
+    "T_KB_Floor_BaseColor.png",
+    "T_KB_Floor_Normal.png",
+    "T_KB_Floor_Roughness.png",
+    "T_KB_Inside_BaseColor.png",
+    "T_KB_Inside_Normal.png",
+    "T_KB_Inside_Roughness.png",
+    "T_KB_Stair_BaseColor.png",
+    "T_KB_Stair_Normal.png",
+    "T_KB_Stair_Roughness.png",
+    "T_KB_Wall_BaseColor.png",
+    "T_KB_Wall_Normal.png",
+    "T_KB_Wall_Roughness.png"
+  ],
+  "checks": [
+    "all texture files present at 1024x1024",
+    "all FBX modules reimport",
+    "dimensions retained",
+    "collision hulls closed",
+    "assembly world bounds retained"
+  ],
+  "unreal_import": "Not performed for this detail review milestone"
+}

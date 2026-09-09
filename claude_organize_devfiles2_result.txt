@@ -1,0 +1,7 @@
+MOVED_COUNT=5
+  moved: claude_organize_devfiles.py
+  moved: claude_organize_devfiles_result.txt
+  moved: claude_git_checkpoint2_result.txt
+  moved: claude_git_checkpoint3.py
+  moved: claude_git_checkpoint3_result.txt
+MISSING_COUNT=0

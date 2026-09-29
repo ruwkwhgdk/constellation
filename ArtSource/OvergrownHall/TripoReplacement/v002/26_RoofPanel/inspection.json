@@ -1,0 +1,23 @@
+{
+  "id": "26",
+  "name": "RoofPanel",
+  "mesh": "SM_OH_T_26_RoofPanel",
+  "source_triangles": 27963,
+  "triangles": 6969,
+  "budget": 7000,
+  "dimensions_m": [
+    2.9984421730041504,
+    2.0,
+    0.15007829666137695
+  ],
+  "boundary_edges": 9,
+  "uv_layers": 1,
+  "edits": [
+    "roof panel horizontal"
+  ],
+  "textures": [
+    "basecolor.png",
+    "normal.png",
+    "rm.png"
+  ]
+}

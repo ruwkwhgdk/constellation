@@ -1,0 +1,14 @@
+{
+  "saved_map": true,
+  "architecture_count": 10,
+  "closed_architecture_collision": true,
+  "added_count": 29,
+  "nonblocking_details": true,
+  "foliage_v010_preserved": true,
+  "arches_v011_preserved": true,
+  "water_and_floor_v012_preserved": true,
+  "birds": 28,
+  "playtest": "user",
+  "editor_performance_report": "performance.json",
+  "gameplay_performance_test": false
+}

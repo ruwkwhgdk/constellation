@@ -1,0 +1,21 @@
+{
+  "id": "17",
+  "name": "Shrub",
+  "mesh": "SM_OH_T_17_Shrub",
+  "source_triangles": 28267,
+  "triangles": 14970,
+  "budget": 15000,
+  "dimensions_m": [
+    1.4463379383087158,
+    1.256699562072754,
+    1.1906555891036987
+  ],
+  "boundary_edges": 38,
+  "uv_layers": 1,
+  "edits": [],
+  "textures": [
+    "basecolor.png",
+    "normal.png",
+    "rm.png"
+  ]
+}

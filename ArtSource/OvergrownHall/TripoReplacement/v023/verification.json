@@ -1,0 +1,12 @@
+{
+  "saved_map": true,
+  "actors": 739,
+  "unrelated_transforms_and_all_meshes_preserved": true,
+  "moved_side_trees": 10,
+  "wall_growth": 4,
+  "closed_roof": 50,
+  "birds": 28,
+  "animation_sections": 140,
+  "rear_trees_absent": true,
+  "playtest": false
+}

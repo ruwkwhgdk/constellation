@@ -1,0 +1,13 @@
+{
+  "saved_existing_meshes": 532,
+  "attached_foliage": 53,
+  "material_overrides": 585,
+  "geometry_collision_and_flock": "passed",
+  "reflective_water_preserved": true,
+  "texture_runtime_size": [
+    1024,
+    1024
+  ],
+  "averaged_mips": true,
+  "playtest": false
+}

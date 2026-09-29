@@ -1,0 +1,30 @@
+{
+  "stage": "layout_pass_01",
+  "source": "Production/v001",
+  "bench_width_cm": 180,
+  "bench_center_cm": [
+    -120,
+    1020,
+    0
+  ],
+  "camera_cm": [
+    0,
+    200,
+    155
+  ],
+  "camera_target_cm": [
+    0,
+    1700,
+    400
+  ],
+  "camera_lens_mm": 22,
+  "changes": [
+    "rear glazed field narrowed 22 percent",
+    "side architectural rows inward 125cm",
+    "bench shifted 50cm right and20cm rearward",
+    "14 shrub clumps around sides",
+    "dry slabs lowered3.5cm"
+  ],
+  "human_in_comparison": false,
+  "playtest": "pending"
+}

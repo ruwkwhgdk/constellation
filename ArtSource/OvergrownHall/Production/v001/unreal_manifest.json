@@ -1,0 +1,496 @@
+{
+  "assets": [
+    {
+      "name": "SM_OH_Blockout_01",
+      "category": "01",
+      "bounds_min_cm": [
+        -800.0,
+        157.5,
+        0.0
+      ],
+      "bounds_max_cm": [
+        800.0,
+        1842.4998779296875,
+        120.00000762939453
+      ],
+      "materials": [
+        "Proxy_Trim"
+      ],
+      "collision": true
+    },
+    {
+      "name": "SM_OH_Blockout_02",
+      "category": "02",
+      "bounds_min_cm": [
+        -789.0,
+        167.5,
+        59.99999237060547
+      ],
+      "bounds_max_cm": [
+        789.0,
+        1987.5,
+        1170.0
+      ],
+      "materials": [
+        "Proxy_Stone"
+      ],
+      "collision": true
+    },
+    {
+      "name": "SM_OH_Blockout_03",
+      "category": "03",
+      "bounds_min_cm": [
+        -807.5,
+        150.0,
+        942.5
+      ],
+      "bounds_max_cm": [
+        807.5,
+        1850.0,
+        977.5000610351562
+      ],
+      "materials": [
+        "Proxy_Trim"
+      ],
+      "collision": true
+    },
+    {
+      "name": "SM_OH_Blockout_04",
+      "category": "04",
+      "bounds_min_cm": [
+        -780.0,
+        209.00001525878906,
+        29.999996185302734
+      ],
+      "bounds_max_cm": [
+        780.0,
+        1791.0,
+        737.0
+      ],
+      "materials": [
+        "Proxy_Stone"
+      ],
+      "collision": true
+    },
+    {
+      "name": "SM_OH_Blockout_05",
+      "category": "05",
+      "bounds_min_cm": [
+        -782.5,
+        0.0,
+        0.0
+      ],
+      "bounds_max_cm": [
+        782.5,
+        2000.0,
+        1100.0
+      ],
+      "materials": [
+        "Proxy_Stone"
+      ],
+      "collision": true
+    },
+    {
+      "name": "SM_OH_Blockout_06",
+      "category": "06",
+      "bounds_min_cm": [
+        -627.47998046875,
+        1953.0001220703125,
+        300.0
+      ],
+      "bounds_max_cm": [
+        627.47998046875,
+        1967.0,
+        730.0
+      ],
+      "materials": [
+        "Proxy_Metal"
+      ],
+      "collision": true
+    },
+    {
+      "name": "SM_OH_Blockout_07",
+      "category": "07",
+      "bounds_min_cm": [
+        -630.8400268554688,
+        1953.0001220703125,
+        764.9999389648438
+      ],
+      "bounds_max_cm": [
+        630.8400268554688,
+        1967.0,
+        1156.0
+      ],
+      "materials": [
+        "Proxy_Metal"
+      ],
+      "collision": true
+    },
+    {
+      "name": "SM_OH_Blockout_08",
+      "category": "08",
+      "bounds_min_cm": [
+        -623.7000732421875,
+        1955.0001220703125,
+        296.75
+      ],
+      "bounds_max_cm": [
+        623.7000732421875,
+        1965.0,
+        980.0
+      ],
+      "materials": [
+        "Proxy_Metal"
+      ],
+      "collision": true
+    },
+    {
+      "name": "SM_OH_Blockout_09",
+      "category": "09",
+      "bounds_min_cm": [
+        -800.0,
+        0.0,
+        277.5
+      ],
+      "bounds_max_cm": [
+        800.0,
+        2000.0,
+        820.0
+      ],
+      "materials": [
+        "Proxy_Trim",
+        "Proxy_Stone"
+      ],
+      "collision": true
+    },
+    {
+      "name": "SM_OH_Blockout_10",
+      "category": "10",
+      "bounds_min_cm": [
+        -762.7993774414062,
+        100.0,
+        974.2600708007812
+      ],
+      "bounds_max_cm": [
+        762.7993774414062,
+        2000.0,
+        1210.6378173828125
+      ],
+      "materials": [
+        "Proxy_Metal"
+      ],
+      "collision": true
+    },
+    {
+      "name": "SM_OH_Blockout_11",
+      "category": "11",
+      "bounds_min_cm": [
+        -764.743408203125,
+        188.0,
+        865.769775390625
+      ],
+      "bounds_max_cm": [
+        764.743408203125,
+        1812.0001220703125,
+        944.2302856445312
+      ],
+      "materials": [
+        "Proxy_Trim"
+      ],
+      "collision": true
+    },
+    {
+      "name": "SM_OH_Blockout_12",
+      "category": "12",
+      "bounds_min_cm": [
+        -86.0,
+        1940.0,
+        -0.4999995231628418
+      ],
+      "bounds_max_cm": [
+        86.0,
+        1990.0,
+        220.0
+      ],
+      "materials": [
+        "Proxy_Trim"
+      ],
+      "collision": true
+    },
+    {
+      "name": "SM_OH_Blockout_13",
+      "category": "13",
+      "bounds_min_cm": [
+        -800.0,
+        0.0,
+        -30.000001907348633
+      ],
+      "bounds_max_cm": [
+        800.0,
+        2000.0,
+        20.0
+      ],
+      "materials": [
+        "Proxy_Floor"
+      ],
+      "collision": true
+    },
+    {
+      "name": "SM_OH_Blockout_14",
+      "category": "14",
+      "bounds_min_cm": [
+        -260.0,
+        971.5,
+        0.0
+      ],
+      "bounds_max_cm": [
+        -80.00000762939453,
+        1037.488037109375,
+        92.0
+      ],
+      "materials": [
+        "Proxy_Metal",
+        "Proxy_Bench"
+      ],
+      "collision": true
+    },
+    {
+      "name": "SM_OH_Blockout_16",
+      "category": "16",
+      "bounds_min_cm": [
+        -788.7230834960938,
+        169.1307830810547,
+        3.499999523162842
+      ],
+      "bounds_max_cm": [
+        781.5958251953125,
+        1913.8929443359375,
+        53.18598937988281
+      ],
+      "materials": [
+        "Proxy_Foliage_1",
+        "Proxy_Foliage_2",
+        "Proxy_Foliage_0"
+      ],
+      "collision": false
+    },
+    {
+      "name": "SM_OH_Blockout_17",
+      "category": "17",
+      "bounds_min_cm": [
+        -746.82080078125,
+        1630.1363525390625,
+        -39.097625732421875
+      ],
+      "bounds_max_cm": [
+        727.1641235351562,
+        2072.519775390625,
+        175.82321166992188
+      ],
+      "materials": [
+        "Proxy_Foliage_2",
+        "Proxy_Foliage_1",
+        "Proxy_Foliage_0",
+        "Proxy_Bench"
+      ],
+      "collision": false
+    },
+    {
+      "name": "SM_OH_Blockout_18",
+      "category": "18",
+      "bounds_min_cm": [
+        -764.859130859375,
+        566.8383178710938,
+        212.48426818847656
+      ],
+      "bounds_max_cm": [
+        759.4517822265625,
+        1835.0213623046875,
+        839.1923828125
+      ],
+      "materials": [
+        "Proxy_Foliage_1",
+        "Proxy_Foliage_0",
+        "Proxy_Foliage_2",
+        "Proxy_Bench"
+      ],
+      "collision": false
+    },
+    {
+      "name": "SM_OH_Blockout_19",
+      "category": "19",
+      "bounds_min_cm": [
+        -1438.8582763671875,
+        2110.131103515625,
+        0.0
+      ],
+      "bounds_max_cm": [
+        1366.822998046875,
+        3227.86474609375,
+        739.99365234375
+      ],
+      "materials": [
+        "Proxy_Foliage_0",
+        "Proxy_Foliage_1",
+        "Proxy_Foliage_2",
+        "Proxy_Bench"
+      ],
+      "collision": false
+    },
+    {
+      "name": "SM_OH_Blockout_21",
+      "category": "21",
+      "bounds_min_cm": [
+        -793.1102294921875,
+        141.62184143066406,
+        2.200000047683716
+      ],
+      "bounds_max_cm": [
+        766.9652709960938,
+        1039.4091796875,
+        2.200000047683716
+      ],
+      "materials": [
+        "Proxy_Water"
+      ],
+      "collision": false
+    },
+    {
+      "name": "SM_OH_Blockout_25",
+      "category": "25",
+      "bounds_min_cm": [
+        -762.5,
+        197.5,
+        50.0
+      ],
+      "bounds_max_cm": [
+        762.5,
+        602.5,
+        120.00000762939453
+      ],
+      "materials": [
+        "Proxy_Metal"
+      ],
+      "collision": true
+    },
+    {
+      "name": "SM_OH_Blockout_26",
+      "category": "26",
+      "bounds_min_cm": [
+        -694.9418334960938,
+        150.0,
+        1011.719970703125
+      ],
+      "bounds_max_cm": [
+        646.588134765625,
+        1900.0,
+        1243.9764404296875
+      ],
+      "materials": [
+        "Proxy_Stone"
+      ],
+      "collision": true
+    }
+  ],
+  "materials": {
+    "Proxy_Bench": {
+      "color": [
+        0.2199999988079071,
+        0.27000001072883606,
+        0.2199999988079071
+      ],
+      "roughness": 0.699999988079071,
+      "metallic": 0.0,
+      "surface_detail": "",
+      "two_sided": false
+    },
+    "Proxy_Floor": {
+      "color": [
+        0.2199999988079071,
+        0.3100000023841858,
+        0.30000001192092896
+      ],
+      "roughness": 0.699999988079071,
+      "metallic": 0.0,
+      "surface_detail": "floor",
+      "two_sided": false
+    },
+    "Proxy_Foliage_0": {
+      "color": [
+        0.10000000149011612,
+        0.23999999463558197,
+        0.07999999821186066
+      ],
+      "roughness": 0.7200000286102295,
+      "metallic": 0.0,
+      "surface_detail": "",
+      "two_sided": true
+    },
+    "Proxy_Foliage_1": {
+      "color": [
+        0.2199999988079071,
+        0.3799999952316284,
+        0.10000000149011612
+      ],
+      "roughness": 0.7200000286102295,
+      "metallic": 0.0,
+      "surface_detail": "",
+      "two_sided": true
+    },
+    "Proxy_Foliage_2": {
+      "color": [
+        0.3199999928474426,
+        0.4300000071525574,
+        0.12999999523162842
+      ],
+      "roughness": 0.7200000286102295,
+      "metallic": 0.0,
+      "surface_detail": "",
+      "two_sided": true
+    },
+    "Proxy_Metal": {
+      "color": [
+        0.054999999701976776,
+        0.0949999988079071,
+        0.0949999988079071
+      ],
+      "roughness": 0.4000000059604645,
+      "metallic": 0.6000000238418579,
+      "surface_detail": "",
+      "two_sided": false
+    },
+    "Proxy_Stone": {
+      "color": [
+        0.14000000059604645,
+        0.23000000417232513,
+        0.25
+      ],
+      "roughness": 0.699999988079071,
+      "metallic": 0.0,
+      "surface_detail": "plaster",
+      "two_sided": false
+    },
+    "Proxy_Trim": {
+      "color": [
+        0.23000000417232513,
+        0.3199999928474426,
+        0.3199999928474426
+      ],
+      "roughness": 0.699999988079071,
+      "metallic": 0.0,
+      "surface_detail": "plaster",
+      "two_sided": false
+    },
+    "Proxy_Water": {
+      "color": [
+        0.07000000029802322,
+        0.27000001072883606,
+        0.28999999165534973
+      ],
+      "roughness": 0.10000000149011612,
+      "metallic": 0.6499999761581421,
+      "surface_detail": "water",
+      "two_sided": false
+    }
+  }
+}

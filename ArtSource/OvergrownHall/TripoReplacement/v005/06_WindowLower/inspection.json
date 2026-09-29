@@ -1,0 +1,24 @@
+{
+  "id": "06",
+  "name": "WindowLower",
+  "mesh": "SM_OH_Clean_06_WindowLower",
+  "source": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OvergrownHall\\TripoReplacement\\v002\\06_WindowLower\\prepared.blend",
+  "source_triangles": 11969,
+  "triangles": 1080,
+  "budget": 12000,
+  "dimensions_m": [
+    2.3001132011413574,
+    0.1402358114719391,
+    4.300261974334717
+  ],
+  "boundary_edges": 0,
+  "basecolor": "basecolor.png",
+  "organic": false,
+  "edits": [
+    "source-guided hard-surface retopology",
+    "straight edges and planar faces",
+    "small 2-segment bevels",
+    "Tripo base color reprojected to new UV",
+    "normal map intentionally omitted: old tangent basis is invalid"
+  ]
+}

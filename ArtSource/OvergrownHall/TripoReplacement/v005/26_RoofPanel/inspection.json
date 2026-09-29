@@ -1,0 +1,24 @@
+{
+  "id": "26",
+  "name": "RoofPanel",
+  "mesh": "SM_OH_Clean_26_RoofPanel",
+  "source": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OvergrownHall\\TripoReplacement\\v002\\26_RoofPanel\\prepared.blend",
+  "source_triangles": 6969,
+  "triangles": 648,
+  "budget": 7000,
+  "dimensions_m": [
+    2.9984421730041504,
+    2.0,
+    0.15007829666137695
+  ],
+  "boundary_edges": 0,
+  "basecolor": "basecolor.png",
+  "organic": false,
+  "edits": [
+    "source-guided hard-surface retopology",
+    "straight edges and planar faces",
+    "small 2-segment bevels",
+    "Tripo base color reprojected to new UV",
+    "normal map intentionally omitted: old tangent basis is invalid"
+  ]
+}

@@ -1,0 +1,415 @@
+[
+  {
+    "id": "01",
+    "name": "ColumnBase",
+    "mesh": "SM_OH_T_01_ColumnBase",
+    "source_triangles": 27674,
+    "triangles": 7970,
+    "budget": 8000,
+    "dimensions_m": [
+      0.8002166748046875,
+      0.8501749038696289,
+      1.199825644493103
+    ],
+    "boundary_edges": 0,
+    "uv_layers": 1,
+    "edits": [],
+    "textures": [
+      "basecolor.png",
+      "normal.png",
+      "rm.png"
+    ]
+  },
+  {
+    "id": "03",
+    "name": "ColumnCapital",
+    "mesh": "SM_OH_T_03_ColumnCapital",
+    "source_triangles": 28378,
+    "triangles": 7970,
+    "budget": 8000,
+    "dimensions_m": [
+      0.9499752521514893,
+      0.9999603629112244,
+      0.4998127520084381
+    ],
+    "boundary_edges": 0,
+    "uv_layers": 1,
+    "edits": [],
+    "textures": [
+      "basecolor.png",
+      "normal.png",
+      "rm.png"
+    ]
+  },
+  {
+    "id": "04",
+    "name": "SideArch",
+    "mesh": "SM_OH_T_04_SideArch",
+    "source_triangles": 27198,
+    "triangles": 11970,
+    "budget": 12000,
+    "dimensions_m": [
+      3.699000120162964,
+      0.3993445038795471,
+      7.098957061767578
+    ],
+    "boundary_edges": 346,
+    "uv_layers": 1,
+    "edits": [
+      "unwanted central gate removed"
+    ],
+    "textures": [
+      "basecolor.png",
+      "normal.png",
+      "rm.png"
+    ]
+  },
+  {
+    "id": "05",
+    "name": "Wall",
+    "mesh": "SM_OH_T_05_Wall",
+    "source_triangles": 28615,
+    "triangles": 5969,
+    "budget": 6000,
+    "dimensions_m": [
+      3.0009145736694336,
+      0.4016653895378113,
+      1.497518539428711
+    ],
+    "boundary_edges": 3,
+    "uv_layers": 1,
+    "edits": [],
+    "textures": [
+      "basecolor.png",
+      "normal.png",
+      "rm.png"
+    ]
+  },
+  {
+    "id": "06",
+    "name": "WindowLower",
+    "mesh": "SM_OH_T_06_WindowLower",
+    "source_triangles": 23171,
+    "triangles": 11969,
+    "budget": 12000,
+    "dimensions_m": [
+      2.3001132011413574,
+      0.1402358114719391,
+      4.300261974334717
+    ],
+    "boundary_edges": 9,
+    "uv_layers": 1,
+    "edits": [],
+    "textures": [
+      "basecolor.png",
+      "normal.png",
+      "rm.png"
+    ]
+  },
+  {
+    "id": "07",
+    "name": "WindowArch",
+    "mesh": "SM_OH_T_07_WindowArch",
+    "source_triangles": 27934,
+    "triangles": 7970,
+    "budget": 8000,
+    "dimensions_m": [
+      2.3000760078430176,
+      0.13981252908706665,
+      1.2005996704101562
+    ],
+    "boundary_edges": 0,
+    "uv_layers": 1,
+    "edits": [
+      "upper semicircle isolated for arched window crown"
+    ],
+    "textures": [
+      "basecolor.png",
+      "normal.png",
+      "rm.png"
+    ]
+  },
+  {
+    "id": "08",
+    "name": "Mullion",
+    "mesh": "SM_OH_T_08_Mullion",
+    "source_triangles": 28818,
+    "triangles": 1970,
+    "budget": 2000,
+    "dimensions_m": [
+      0.07006430625915527,
+      0.09967095404863358,
+      3.000025987625122
+    ],
+    "boundary_edges": 0,
+    "uv_layers": 1,
+    "edits": [
+      "ornamental end plates removed"
+    ],
+    "textures": [
+      "basecolor.png",
+      "normal.png",
+      "rm.png"
+    ]
+  },
+  {
+    "id": "09",
+    "name": "Beam",
+    "mesh": "SM_OH_T_09_Beam",
+    "source_triangles": 28303,
+    "triangles": 5969,
+    "budget": 6000,
+    "dimensions_m": [
+      4.000563144683838,
+      0.5004537105560303,
+      0.4001395106315613
+    ],
+    "boundary_edges": 3,
+    "uv_layers": 1,
+    "edits": [
+      "longitudinal axis to X"
+    ],
+    "textures": [
+      "basecolor.png",
+      "normal.png",
+      "rm.png"
+    ]
+  },
+  {
+    "id": "10",
+    "name": "RoofTruss",
+    "mesh": "SM_OH_T_10_RoofTruss",
+    "source_triangles": 25462,
+    "triangles": 11970,
+    "budget": 12000,
+    "dimensions_m": [
+      12.699999809265137,
+      0.21995475888252258,
+      1.9999349117279053
+    ],
+    "boundary_edges": 0,
+    "uv_layers": 1,
+    "edits": [],
+    "textures": [
+      "basecolor.png",
+      "normal.png",
+      "rm.png"
+    ]
+  },
+  {
+    "id": "11",
+    "name": "BrokenBeam",
+    "mesh": "SM_OH_T_11_BrokenBeam",
+    "source_triangles": 28290,
+    "triangles": 5969,
+    "budget": 6000,
+    "dimensions_m": [
+      1.500199556350708,
+      0.29972293972969055,
+      0.35031092166900635
+    ],
+    "boundary_edges": 3,
+    "uv_layers": 1,
+    "edits": [],
+    "textures": [
+      "basecolor.png",
+      "normal.png",
+      "rm.png"
+    ]
+  },
+  {
+    "id": "12",
+    "name": "SmallArch",
+    "mesh": "SM_OH_T_12_SmallArch",
+    "source_triangles": 28629,
+    "triangles": 9970,
+    "budget": 10000,
+    "dimensions_m": [
+      1.6986026763916016,
+      0.5,
+      2.1915249824523926
+    ],
+    "boundary_edges": 6,
+    "uv_layers": 1,
+    "edits": [],
+    "textures": [
+      "basecolor.png",
+      "normal.png",
+      "rm.png"
+    ]
+  },
+  {
+    "id": "13",
+    "name": "Floor",
+    "mesh": "SM_OH_T_13_Floor",
+    "source_triangles": 27648,
+    "triangles": 3969,
+    "budget": 4000,
+    "dimensions_m": [
+      2.001382350921631,
+      1.9994826316833496,
+      0.15033036470413208
+    ],
+    "boundary_edges": 11,
+    "uv_layers": 1,
+    "edits": [
+      "walkable top flattened"
+    ],
+    "textures": [
+      "basecolor.png",
+      "normal.png",
+      "rm.png"
+    ]
+  },
+  {
+    "id": "14",
+    "name": "Bench",
+    "mesh": "SM_OH_T_14_Bench",
+    "source_triangles": 27252,
+    "triangles": 11970,
+    "budget": 12000,
+    "dimensions_m": [
+      1.799593448638916,
+      0.6499999761581421,
+      0.899449348449707
+    ],
+    "boundary_edges": 0,
+    "uv_layers": 1,
+    "edits": [
+      "longitudinal axis to X"
+    ],
+    "textures": [
+      "basecolor.png",
+      "normal.png",
+      "rm.png"
+    ]
+  },
+  {
+    "id": "15",
+    "name": "Rubble",
+    "mesh": "SM_OH_T_15_Rubble",
+    "source_triangles": 28314,
+    "triangles": 7970,
+    "budget": 8000,
+    "dimensions_m": [
+      1.2003898620605469,
+      0.9998955726623535,
+      0.45005008578300476
+    ],
+    "boundary_edges": 16,
+    "uv_layers": 1,
+    "edits": [],
+    "textures": [
+      "basecolor.png",
+      "normal.png",
+      "rm.png"
+    ]
+  },
+  {
+    "id": "16",
+    "name": "Grass",
+    "mesh": "SM_OH_T_16_Grass",
+    "source_triangles": 27621,
+    "triangles": 8969,
+    "budget": 9000,
+    "dimensions_m": [
+      0.6845496892929077,
+      0.6988222002983093,
+      0.44648295640945435
+    ],
+    "boundary_edges": 9,
+    "uv_layers": 1,
+    "edits": [],
+    "textures": [
+      "basecolor.png",
+      "normal.png",
+      "rm.png"
+    ]
+  },
+  {
+    "id": "17",
+    "name": "Shrub",
+    "mesh": "SM_OH_T_17_Shrub",
+    "source_triangles": 28267,
+    "triangles": 14970,
+    "budget": 15000,
+    "dimensions_m": [
+      1.4463379383087158,
+      1.256699562072754,
+      1.1906555891036987
+    ],
+    "boundary_edges": 38,
+    "uv_layers": 1,
+    "edits": [],
+    "textures": [
+      "basecolor.png",
+      "normal.png",
+      "rm.png"
+    ]
+  },
+  {
+    "id": "18",
+    "name": "Vine",
+    "mesh": "SM_OH_T_18_Vine",
+    "source_triangles": 27089,
+    "triangles": 11969,
+    "budget": 12000,
+    "dimensions_m": [
+      0.6502393484115601,
+      0.1504136621952057,
+      1.9996119737625122
+    ],
+    "boundary_edges": 3,
+    "uv_layers": 1,
+    "edits": [],
+    "textures": [
+      "basecolor.png",
+      "normal.png",
+      "rm.png"
+    ]
+  },
+  {
+    "id": "25",
+    "name": "Railing",
+    "mesh": "SM_OH_T_25_Railing",
+    "source_triangles": 27414,
+    "triangles": 7969,
+    "budget": 8000,
+    "dimensions_m": [
+      1.9999477863311768,
+      0.11994676291942596,
+      1.0001307725906372
+    ],
+    "boundary_edges": 3,
+    "uv_layers": 1,
+    "edits": [],
+    "textures": [
+      "basecolor.png",
+      "normal.png",
+      "rm.png"
+    ]
+  },
+  {
+    "id": "26",
+    "name": "RoofPanel",
+    "mesh": "SM_OH_T_26_RoofPanel",
+    "source_triangles": 27963,
+    "triangles": 6969,
+    "budget": 7000,
+    "dimensions_m": [
+      2.9984421730041504,
+      2.0,
+      0.15007829666137695
+    ],
+    "boundary_edges": 9,
+    "uv_layers": 1,
+    "edits": [
+      "roof panel horizontal"
+    ],
+    "textures": [
+      "basecolor.png",
+      "normal.png",
+      "rm.png"
+    ]
+  }
+]

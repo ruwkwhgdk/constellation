@@ -1,0 +1,8 @@
+{
+  "status": "pass",
+  "stair_landing_join": true,
+  "rail_brackets_outward": true,
+  "rail_clearance_cm": 120.0,
+  "axis": "FBX Y reflected; assembly uses measured UE bounds",
+  "playtest": "not_run"
+}

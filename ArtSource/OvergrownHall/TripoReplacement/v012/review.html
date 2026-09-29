@@ -1,0 +1,11 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><title>Overgrown Hall · 얕은 물 보정</title>
+<style>body{background:#192c2b;color:#edeadf;font:17px/1.7 sans-serif;max-width:1400px;margin:36px auto;padding:0 20px}img{width:100%;display:block}button{background:#d4dfcb;color:#20302c;border:0;border-radius:5px;padding:12px 20px;margin:0 8px 12px 0;cursor:pointer;font:inherit}.pair{display:grid;grid-template-columns:1fr 1fr;gap:20px}code{overflow-wrap:anywhere}a{color:#bce2cd}@media(max-width:750px){.pair{grid-template-columns:1fr}}</style>
+<h1>바닥이 비치는 얕은 수면</h1><p>실제 Unreal 렌더입니다. 같은 카메라에서 물의 투과와 침수 바닥을 비교할 수 있습니다.</p>
+<button onclick="show(0)">수정 후</button><button onclick="show(1)">이전 v011</button><button onclick="show(2)">진단: 물을 숨긴 상태</button>
+<h2 id="caption">수정 후</h2><img id="scene" src="unreal_shallows.png" alt="현재 Unreal 렌더">
+<p>불투명 수면을 반투명 재질로 교체하고, 바닥과 만나는 부분을 부드럽게 처리했습니다. 침수 바닥 47개의 깊이를 조금씩 다르게 조정하고 벤치 석판 가장자리에 파손을 추가했습니다.</p>
+<div class="pair"><section><h2>원화</h2><img src="../../References/source_scene.png" alt="원화"></section><section><h2>수정 전</h2><img src="../v011/unreal_water_ruins.png" alt="v011"></section></div>
+<p>바닥 투과는 구현했지만 물리적 굴절·수중 표현·캐릭터가 일으키는 파문은 아직 없습니다. 직접 플레이와 성능 검증은 별도입니다.</p>
+<p>레벨: <code>/Game/Environment/OvergrownHall/TripoFull/Maps/L_OvergrownHall_TripoFull</code></p>
+<p><a href="STATUS.md">제작·재현·한계</a> · <a href="shore_mesh.json">메시 검사</a> · <a href="verification.json">저장 검사</a></p>
+<script>function show(i){document.getElementById('scene').src=['unreal_shallows.png','../v011/unreal_water_ruins.png','without_water.png'][i];document.getElementById('caption').textContent=['수정 후','이전 v011','진단용: 물을 숨긴 상태 (저장된 레벨에는 물이 있습니다)'][i]}</script></html>

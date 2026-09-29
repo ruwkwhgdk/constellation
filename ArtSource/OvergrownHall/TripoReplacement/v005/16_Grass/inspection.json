@@ -1,0 +1,20 @@
+{
+  "id": "16",
+  "name": "Grass",
+  "mesh": "SM_OH_Clean_16_Grass",
+  "source": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OvergrownHall\\TripoReplacement\\v002\\16_Grass\\prepared.blend",
+  "source_triangles": 8969,
+  "triangles": 8969,
+  "budget": 9000,
+  "dimensions_m": [
+    0.6845497190952301,
+    0.6988222002983093,
+    0.4464829553908203
+  ],
+  "boundary_edges": 9,
+  "basecolor": null,
+  "organic": true,
+  "edits": [
+    "bounded local spike smoothing; original topology and UV retained"
+  ]
+}

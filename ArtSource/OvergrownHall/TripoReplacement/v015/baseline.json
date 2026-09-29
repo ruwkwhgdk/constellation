@@ -1,0 +1,1334 @@
+{
+  "OH_Tripo_Tree_10": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedTree_Runtime.SM_OH_PaintedTree_Runtime",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/M_OH_LeafWindNear.M_OH_LeafWindNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_19.M_OH_Illustrated_19"
+    ],
+    "position": [
+      -750.0,
+      2450.0,
+      0.0
+    ],
+    "rotation": [
+      0.0,
+      -64.99999999999999,
+      0.0
+    ],
+    "scale": [
+      1.0912945250727628,
+      1.0912945250727628,
+      1.0912945250727628
+    ]
+  },
+  "OH_Tripo_Tree_11": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedTree_Runtime.SM_OH_PaintedTree_Runtime",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/M_OH_LeafWindNear.M_OH_LeafWindNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_19.M_OH_Illustrated_19"
+    ],
+    "position": [
+      -400.0,
+      2450.0,
+      0.0
+    ],
+    "rotation": [
+      0.0,
+      72.5,
+      -0.0
+    ],
+    "scale": [
+      0.9991148690709596,
+      0.9991148690709596,
+      0.9991148690709596
+    ]
+  },
+  "OH_Tripo_Tree_12": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedTree_Runtime.SM_OH_PaintedTree_Runtime",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/M_OH_LeafWindNear.M_OH_LeafWindNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_19.M_OH_Illustrated_19"
+    ],
+    "position": [
+      0.0,
+      2450.0,
+      0.0
+    ],
+    "rotation": [
+      0.0,
+      -150.0,
+      0.0
+    ],
+    "scale": [
+      0.9094421637993376,
+      0.9094421637993376,
+      0.9094421637993376
+    ]
+  },
+  "OH_Tripo_Tree_13": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedTree_Runtime.SM_OH_PaintedTree_Runtime",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/M_OH_LeafWindNear.M_OH_LeafWindNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_19.M_OH_Illustrated_19"
+    ],
+    "position": [
+      400.0,
+      2450.0,
+      0.0
+    ],
+    "rotation": [
+      0.0,
+      -12.499999999999996,
+      0.0
+    ],
+    "scale": [
+      1.0762558450479602,
+      1.0762558450479602,
+      1.0762558450479602
+    ]
+  },
+  "OH_Tripo_Tree_14": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedTree_Runtime.SM_OH_PaintedTree_Runtime",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/M_OH_LeafWindNear.M_OH_LeafWindNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_19.M_OH_Illustrated_19"
+    ],
+    "position": [
+      750.0,
+      2450.0,
+      0.0
+    ],
+    "rotation": [
+      0.0,
+      125.00000000000001,
+      -0.0
+    ],
+    "scale": [
+      1.027090578830787,
+      1.027090578830787,
+      1.027090578830787
+    ]
+  },
+  "OH_Tripo_Tree_15": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedTree_Runtime.SM_OH_PaintedTree_Runtime",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/M_OH_LeafWindNear.M_OH_LeafWindNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_19.M_OH_Illustrated_19"
+    ],
+    "position": [
+      -900.0,
+      2950.0,
+      0.0
+    ],
+    "rotation": [
+      0.0,
+      -97.50000000000001,
+      0.0
+    ],
+    "scale": [
+      0.9011968375907138,
+      0.9011968375907138,
+      0.9011968375907138
+    ]
+  },
+  "OH_Tripo_Tree_16": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedTree_Runtime.SM_OH_PaintedTree_Runtime",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/M_OH_LeafWindNear.M_OH_LeafWindNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_19.M_OH_Illustrated_19"
+    ],
+    "position": [
+      -300.0,
+      2950.0,
+      0.0
+    ],
+    "rotation": [
+      0.0,
+      40.00000000000003,
+      -0.0
+    ],
+    "scale": [
+      1.0551426681241691,
+      1.0551426681241691,
+      1.0551426681241691
+    ]
+  },
+  "OH_Tripo_Tree_17": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedTree_Runtime.SM_OH_PaintedTree_Runtime",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/M_OH_LeafWindNear.M_OH_LeafWindNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_19.M_OH_Illustrated_19"
+    ],
+    "position": [
+      300.0,
+      2950.0,
+      0.0
+    ],
+    "rotation": [
+      0.0,
+      177.5,
+      -0.0
+    ],
+    "scale": [
+      1.0529082686120024,
+      1.0529082686120024,
+      1.0529082686120024
+    ]
+  },
+  "OH_Tripo_Tree_18": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedTree_Runtime.SM_OH_PaintedTree_Runtime",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/M_OH_LeafWindNear.M_OH_LeafWindNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_19.M_OH_Illustrated_19"
+    ],
+    "position": [
+      900.0,
+      2950.0,
+      0.0
+    ],
+    "rotation": [
+      0.0,
+      -45.0,
+      0.0
+    ],
+    "scale": [
+      0.9008221146556884,
+      0.9008221146556884,
+      0.9008221146556884
+    ]
+  },
+  "OH_FULL_26_0254": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_26_RoofPanel.SM_OH_Clean_26_RoofPanel",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_26.M_OH_Weathered_26"
+    ],
+    "position": [
+      500.0,
+      400.0,
+      1068.4210777282715
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      -14.743562698364258
+    ],
+    "scale": [
+      1.3002875708729493,
+      2.5,
+      1.0661101808811801
+    ]
+  },
+  "OH_FULL_26_0255": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_26_RoofPanel.SM_OH_Clean_26_RoofPanel",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_26.M_OH_Weathered_26"
+    ],
+    "position": [
+      500.0,
+      1200.0,
+      1068.4210777282715
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      -14.743562698364258
+    ],
+    "scale": [
+      0.9777619597629779,
+      1.5,
+      1.0661101808811801
+    ]
+  },
+  "OH_FULL_26_0256": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_26_RoofPanel.SM_OH_Clean_26_RoofPanel",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_26.M_OH_Weathered_26"
+    ],
+    "position": [
+      -500.0,
+      700.0,
+      1068.4210777282715
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      14.743562698364263
+    ],
+    "scale": [
+      0.9777619597629779,
+      2.0,
+      1.0661101808811801
+    ]
+  },
+  "OH_FULL_26_0257": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_26_RoofPanel.SM_OH_Clean_26_RoofPanel",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_26.M_OH_Weathered_26"
+    ],
+    "position": [
+      0.0,
+      1800.0,
+      1200.0
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      14.743562698364263
+    ],
+    "scale": [
+      0.9777620392771273,
+      1.0,
+      1.0661101808811801
+    ]
+  },
+  "OH_STRUCTURE_Roof_00": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_26_RoofPanel.SM_OH_Clean_26_RoofPanel",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_26.M_OH_Weathered_26"
+    ],
+    "position": [
+      450.0,
+      200.0,
+      1076.578947368421
+    ],
+    "rotation": [
+      -4.969616689786745e-17,
+      -2.0,
+      -14.000000000000002
+    ],
+    "scale": [
+      1.0,
+      2.03,
+      1.0
+    ]
+  },
+  "OH_STRUCTURE_Roof_01": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_26_RoofPanel.SM_OH_Clean_26_RoofPanel",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_26.M_OH_Weathered_26"
+    ],
+    "position": [
+      450.0,
+      600.0,
+      1076.578947368421
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      -13.999999999999998
+    ],
+    "scale": [
+      1.0,
+      2.03,
+      1.0
+    ]
+  },
+  "OH_STRUCTURE_Roof_02": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_26_RoofPanel.SM_OH_Clean_26_RoofPanel",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_26.M_OH_Weathered_26"
+    ],
+    "position": [
+      450.0,
+      1000.0,
+      1076.578947368421
+    ],
+    "rotation": [
+      4.969616689786745e-17,
+      1.9999999999999993,
+      -13.999999999999998
+    ],
+    "scale": [
+      1.0,
+      2.03,
+      1.0
+    ]
+  },
+  "OH_STRUCTURE_Roof_03": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_26_RoofPanel.SM_OH_Clean_26_RoofPanel",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_26.M_OH_Weathered_26"
+    ],
+    "position": [
+      450.0,
+      1400.0,
+      1076.578947368421
+    ],
+    "rotation": [
+      -4.969616689786745e-17,
+      -2.0,
+      -14.000000000000002
+    ],
+    "scale": [
+      1.0,
+      2.03,
+      1.0
+    ]
+  },
+  "OH_STRUCTURE_Roof_04": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_26_RoofPanel.SM_OH_Clean_26_RoofPanel",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_26.M_OH_Weathered_26"
+    ],
+    "position": [
+      450.0,
+      1800.0,
+      1076.578947368421
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      -13.999999999999998
+    ],
+    "scale": [
+      1.0,
+      2.03,
+      1.0
+    ]
+  },
+  "OH_STRUCTURE_Roof_05": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_26_RoofPanel.SM_OH_Clean_26_RoofPanel",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_26.M_OH_Weathered_26"
+    ],
+    "position": [
+      150.0,
+      200.0,
+      1155.5263157894735
+    ],
+    "rotation": [
+      4.969616689786745e-17,
+      1.9999999999999993,
+      -13.999999999999998
+    ],
+    "scale": [
+      1.0,
+      2.03,
+      1.0
+    ]
+  },
+  "OH_STRUCTURE_Roof_06": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_26_RoofPanel.SM_OH_Clean_26_RoofPanel",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_26.M_OH_Weathered_26"
+    ],
+    "position": [
+      150.0,
+      600.0,
+      1155.5263157894735
+    ],
+    "rotation": [
+      -4.969616689786745e-17,
+      -2.0,
+      -14.000000000000002
+    ],
+    "scale": [
+      1.0,
+      2.03,
+      1.0
+    ]
+  },
+  "OH_STRUCTURE_Roof_07": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_26_RoofPanel.SM_OH_Clean_26_RoofPanel",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_26.M_OH_Weathered_26"
+    ],
+    "position": [
+      150.0,
+      1000.0,
+      1155.5263157894735
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      -13.999999999999998
+    ],
+    "scale": [
+      1.0,
+      2.03,
+      1.0
+    ]
+  },
+  "OH_STRUCTURE_Roof_08": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_26_RoofPanel.SM_OH_Clean_26_RoofPanel",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_26.M_OH_Weathered_26"
+    ],
+    "position": [
+      150.0,
+      1400.0,
+      1155.5263157894735
+    ],
+    "rotation": [
+      4.969616689786745e-17,
+      1.9999999999999993,
+      -13.999999999999998
+    ],
+    "scale": [
+      1.0,
+      2.03,
+      1.0
+    ]
+  },
+  "OH_STRUCTURE_Roof_09": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_26_RoofPanel.SM_OH_Clean_26_RoofPanel",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_26.M_OH_Weathered_26"
+    ],
+    "position": [
+      150.0,
+      1800.0,
+      1155.5263157894735
+    ],
+    "rotation": [
+      -4.969616689786745e-17,
+      -2.0,
+      -14.000000000000002
+    ],
+    "scale": [
+      1.0,
+      2.03,
+      1.0
+    ]
+  },
+  "OH_STRUCTURE_Roof_10": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_26_RoofPanel.SM_OH_Clean_26_RoofPanel",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_26.M_OH_Weathered_26"
+    ],
+    "position": [
+      -150.0,
+      200.0,
+      1155.5263157894735
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      14.000000000000004
+    ],
+    "scale": [
+      1.0,
+      2.03,
+      1.0
+    ]
+  },
+  "OH_STRUCTURE_Roof_11": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_26_RoofPanel.SM_OH_Clean_26_RoofPanel",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_26.M_OH_Weathered_26"
+    ],
+    "position": [
+      -150.0,
+      600.0,
+      1155.5263157894735
+    ],
+    "rotation": [
+      0.0,
+      2.0,
+      14.000000000000004
+    ],
+    "scale": [
+      1.0,
+      2.03,
+      1.0
+    ]
+  },
+  "OH_STRUCTURE_Roof_12": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_26_RoofPanel.SM_OH_Clean_26_RoofPanel",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_26.M_OH_Weathered_26"
+    ],
+    "position": [
+      -450.0,
+      200.0,
+      1076.578947368421
+    ],
+    "rotation": [
+      4.969616689786745e-17,
+      -1.9999999999999993,
+      14.0
+    ],
+    "scale": [
+      1.0,
+      2.03,
+      1.0
+    ]
+  },
+  "OH_STRUCTURE_Roof_13": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_26_RoofPanel.SM_OH_Clean_26_RoofPanel",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_26.M_OH_Weathered_26"
+    ],
+    "position": [
+      -450.0,
+      600.0,
+      1076.578947368421
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      14.000000000000004
+    ],
+    "scale": [
+      1.0,
+      2.03,
+      1.0
+    ]
+  },
+  "OH_Refine_Forest_000": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedCrown_Runtime.SM_OH_PaintedCrown_Runtime",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/M_OH_LeafWindNear.M_OH_LeafWindNear"
+    ],
+    "position": [
+      -1679.7338161021687,
+      2408.7231626942607,
+      489.94760186235976
+    ],
+    "rotation": [
+      0.0,
+      158.07041931152344,
+      -0.0
+    ],
+    "scale": [
+      1.347385441035554,
+      0.8757182537433285,
+      1.8214141625278666
+    ]
+  },
+  "OH_Refine_Forest_001": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedCrown_Runtime.SM_OH_PaintedCrown_Runtime",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/M_OH_LeafWindNear.M_OH_LeafWindNear"
+    ],
+    "position": [
+      -1076.5295903127928,
+      2488.6178139240233,
+      417.4896410446352
+    ],
+    "rotation": [
+      0.0,
+      -57.81607055664062,
+      0.0
+    ],
+    "scale": [
+      1.195410559961203,
+      0.9448596455256084,
+      2.0999085593842115
+    ]
+  },
+  "OH_Refine_Forest_002": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedCrown_Runtime.SM_OH_PaintedCrown_Runtime",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/M_OH_LeafWindNear.M_OH_LeafWindNear"
+    ],
+    "position": [
+      -837.5047853293684,
+      2628.055783383285,
+      407.53091141166834
+    ],
+    "rotation": [
+      0.0,
+      -37.90353393554688,
+      0.0
+    ],
+    "scale": [
+      1.356710063500227,
+      1.0922701236228387,
+      1.441810511075223
+    ]
+  },
+  "OH_Refine_Forest_003": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedCrown_Runtime.SM_OH_PaintedCrown_Runtime",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/M_OH_LeafWindNear.M_OH_LeafWindNear"
+    ],
+    "position": [
+      -340.9132913987654,
+      2410.7352210018907,
+      410.6384303392794
+    ],
+    "rotation": [
+      0.0,
+      95.24732971191412,
+      -0.0
+    ],
+    "scale": [
+      1.3625482412877656,
+      0.8578926154107812,
+      1.9921321665268006
+    ]
+  },
+  "OH_Refine_Forest_004": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedCrown_Runtime.SM_OH_PaintedCrown_Runtime",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/M_OH_LeafWindNear.M_OH_LeafWindNear"
+    ],
+    "position": [
+      104.98785195943478,
+      2500.467822998521,
+      438.87585780461706
+    ],
+    "rotation": [
+      0.0,
+      14.306639671325689,
+      -0.0
+    ],
+    "scale": [
+      1.1868467995476852,
+      1.210586868356233,
+      1.6980018059265682
+    ]
+  },
+  "OH_Refine_Forest_005": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedCrown_Runtime.SM_OH_PaintedCrown_Runtime",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/M_OH_LeafWindNear.M_OH_LeafWindNear"
+    ],
+    "position": [
+      398.0104524567712,
+      2524.6156553207097,
+      431.994405624913
+    ],
+    "rotation": [
+      0.0,
+      14.300271034240723,
+      -0.0
+    ],
+    "scale": [
+      0.9114822577617522,
+      0.9367383625964949,
+      1.8606232222203545
+    ]
+  },
+  "OH_Refine_Forest_006": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedCrown_Runtime.SM_OH_PaintedCrown_Runtime",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/M_OH_LeafWindNear.M_OH_LeafWindNear"
+    ],
+    "position": [
+      881.6605052175505,
+      2514.4439232094655,
+      508.07393237035603
+    ],
+    "rotation": [
+      0.0,
+      -141.93460083007815,
+      0.0
+    ],
+    "scale": [
+      1.0943062997493263,
+      0.852218884027675,
+      1.4383439632003114
+    ]
+  },
+  "OH_Refine_Forest_007": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedCrown_Runtime.SM_OH_PaintedCrown_Runtime",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/M_OH_LeafWindNear.M_OH_LeafWindNear"
+    ],
+    "position": [
+      1276.5992272060594,
+      2440.502409050893,
+      390.5534549829911
+    ],
+    "rotation": [
+      0.0,
+      -12.230712890624996,
+      0.0
+    ],
+    "scale": [
+      1.2238976579403311,
+      0.8895181571531764,
+      1.621204846466593
+    ]
+  },
+  "OH_Refine_Forest_008": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedCrown_Runtime.SM_OH_PaintedCrown_Runtime",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/M_OH_LeafWindNear.M_OH_LeafWindNear"
+    ],
+    "position": [
+      1553.2700267830094,
+      2507.9850788780595,
+      424.80718767262687
+    ],
+    "rotation": [
+      0.0,
+      105.21536254882815,
+      -0.0
+    ],
+    "scale": [
+      1.1375888996632233,
+      1.1552643592652179,
+      1.945486583169478
+    ]
+  },
+  "OH_Refine_Forest_009": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedCrown_Runtime.SM_OH_PaintedCrown_Runtime",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/M_OH_LeafWindFar.M_OH_LeafWindFar"
+    ],
+    "position": [
+      -1522.1545401255576,
+      3269.8836287686077,
+      500.5230067484089
+    ],
+    "rotation": [
+      0.0,
+      -109.28776550292973,
+      0.0
+    ],
+    "scale": [
+      1.1812138971773283,
+      0.974411330149983,
+      1.86525012600217
+    ]
+  },
+  "OH_Refine_Forest_010": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedCrown_Runtime.SM_OH_PaintedCrown_Runtime",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/M_OH_LeafWindFar.M_OH_LeafWindFar"
+    ],
+    "position": [
+      -1192.617342576606,
+      3287.3491135871836,
+      422.75850273479364
+    ],
+    "rotation": [
+      0.0,
+      -109.01188659667976,
+      0.0
+    ],
+    "scale": [
+      1.3474715543209754,
+      0.932616152227823,
+      1.6800268082350072
+    ]
+  },
+  "OH_Refine_Forest_011": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedCrown_Runtime.SM_OH_PaintedCrown_Runtime",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/M_OH_LeafWindFar.M_OH_LeafWindFar"
+    ],
+    "position": [
+      -929.3361454599244,
+      3132.340026430122,
+      495.99761047305014
+    ],
+    "rotation": [
+      0.0,
+      173.56101989746094,
+      -0.0
+    ],
+    "scale": [
+      1.389424620351487,
+      1.1855565165517397,
+      1.776464500046542
+    ]
+  },
+  "OH_Refine_Forest_012": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedCrown_Runtime.SM_OH_PaintedCrown_Runtime",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/M_OH_LeafWindFar.M_OH_LeafWindFar"
+    ],
+    "position": [
+      -322.370249226277,
+      3023.183036977566,
+      411.4766817101959
+    ],
+    "rotation": [
+      0.0,
+      -170.33959960937503,
+      0.0
+    ],
+    "scale": [
+      1.3107739417908641,
+      1.1894342574347279,
+      1.9574801227517185
+    ]
+  },
+  "OH_Refine_Forest_013": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedCrown_Runtime.SM_OH_PaintedCrown_Runtime",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/M_OH_LeafWindFar.M_OH_LeafWindFar"
+    ],
+    "position": [
+      -129.76234971422664,
+      3282.1811408786552,
+      471.8039989729241
+    ],
+    "rotation": [
+      0.0,
+      -23.021148681640625,
+      0.0
+    ],
+    "scale": [
+      1.243084947300439,
+      0.9631922555428281,
+      1.946478192627505
+    ]
+  },
+  "OH_Refine_Forest_014": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedCrown_Runtime.SM_OH_PaintedCrown_Runtime",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/M_OH_LeafWindFar.M_OH_LeafWindFar"
+    ],
+    "position": [
+      297.1972287254737,
+      3052.8772825601227,
+      423.8614370430779
+    ],
+    "rotation": [
+      0.0,
+      119.67459869384763,
+      -0.0
+    ],
+    "scale": [
+      1.2205821311425704,
+      0.8772877743297774,
+      1.9996387131682263
+    ]
+  },
+  "OH_Refine_Forest_015": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedCrown_Runtime.SM_OH_PaintedCrown_Runtime",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/M_OH_LeafWindFar.M_OH_LeafWindFar"
+    ],
+    "position": [
+      815.2517403162583,
+      3244.6591269565133,
+      484.15873229310137
+    ],
+    "rotation": [
+      0.0,
+      -73.42294311523438,
+      0.0
+    ],
+    "scale": [
+      1.282395764353916,
+      0.9942617832887001,
+      2.0183352272326878
+    ]
+  },
+  "OH_Refine_Forest_016": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedCrown_Runtime.SM_OH_PaintedCrown_Runtime",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/M_OH_LeafWindFar.M_OH_LeafWindFar"
+    ],
+    "position": [
+      1284.911350896995,
+      3115.2355736884865,
+      487.06966813441215
+    ],
+    "rotation": [
+      0.0,
+      117.61483764648439,
+      -0.0
+    ],
+    "scale": [
+      1.0416595175561234,
+      0.9512307658963461,
+      2.040330279862041
+    ]
+  },
+  "OH_Refine_Forest_017": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedCrown_Runtime.SM_OH_PaintedCrown_Runtime",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/M_OH_LeafWindFar.M_OH_LeafWindFar"
+    ],
+    "position": [
+      1638.3333995309358,
+      3290.394377761527,
+      397.1465524932493
+    ],
+    "rotation": [
+      0.0,
+      -64.90628051757812,
+      0.0
+    ],
+    "scale": [
+      1.2936944459619972,
+      1.113367093066323,
+      1.7492300612687715
+    ]
+  },
+  "OH_Refine_Forest_018": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedCrown_Runtime.SM_OH_PaintedCrown_Runtime",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/M_OH_LeafWindFar.M_OH_LeafWindFar"
+    ],
+    "position": [
+      -1575.2854762491893,
+      3942.314361749482,
+      400.46186733232963
+    ],
+    "rotation": [
+      0.0,
+      42.75341033935549,
+      -0.0
+    ],
+    "scale": [
+      1.2201977360161862,
+      1.0471398094572684,
+      1.7903486316621837
+    ]
+  },
+  "OH_Refine_Forest_019": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedCrown_Runtime.SM_OH_PaintedCrown_Runtime",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/M_OH_LeafWindFar.M_OH_LeafWindFar"
+    ],
+    "position": [
+      -1205.6791709407566,
+      3771.671816418828,
+      398.02152671551664
+    ],
+    "rotation": [
+      0.0,
+      132.1383361816406,
+      -0.0
+    ],
+    "scale": [
+      1.3092244891958862,
+      1.1607247886098906,
+      1.520416070771196
+    ]
+  },
+  "OH_Refine_Forest_020": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedCrown_Runtime.SM_OH_PaintedCrown_Runtime",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/M_OH_LeafWindFar.M_OH_LeafWindFar"
+    ],
+    "position": [
+      -862.4147463028501,
+      3859.0575197557655,
+      403.7965347227355
+    ],
+    "rotation": [
+      0.0,
+      -35.91232299804694,
+      0.0
+    ],
+    "scale": [
+      1.312354421041595,
+      0.9686426439243313,
+      2.091420316314107
+    ]
+  },
+  "OH_Refine_Forest_021": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedCrown_Runtime.SM_OH_PaintedCrown_Runtime",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/M_OH_LeafWindFar.M_OH_LeafWindFar"
+    ],
+    "position": [
+      -519.4733870667765,
+      4010.0511151800265,
+      387.7007815644749
+    ],
+    "rotation": [
+      0.0,
+      127.31037902832028,
+      -0.0
+    ],
+    "scale": [
+      1.3400588828302717,
+      0.9734672920253422,
+      1.5630530912577625
+    ]
+  },
+  "OH_Refine_Forest_022": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedCrown_Runtime.SM_OH_PaintedCrown_Runtime",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/M_OH_LeafWindFar.M_OH_LeafWindFar"
+    ],
+    "position": [
+      -128.95387954731382,
+      4013.1005662157263,
+      406.0260885756763
+    ],
+    "rotation": [
+      0.0,
+      -103.29028320312503,
+      0.0
+    ],
+    "scale": [
+      1.1978231666665233,
+      1.0913986907413948,
+      1.604800621467548
+    ]
+  },
+  "OH_Refine_Forest_023": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedCrown_Runtime.SM_OH_PaintedCrown_Runtime",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/M_OH_LeafWindFar.M_OH_LeafWindFar"
+    ],
+    "position": [
+      335.65022235501306,
+      3861.184643603263,
+      494.2968051305858
+    ],
+    "rotation": [
+      0.0,
+      -141.11001586914065,
+      0.0
+    ],
+    "scale": [
+      1.1173644965725593,
+      0.873407593949126,
+      1.998753329305344
+    ]
+  },
+  "OH_Refine_Forest_024": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedCrown_Runtime.SM_OH_PaintedCrown_Runtime",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/M_OH_LeafWindFar.M_OH_LeafWindFar"
+    ],
+    "position": [
+      871.4174905035295,
+      3969.87434069943,
+      518.4128060435976
+    ],
+    "rotation": [
+      0.0,
+      19.067111968994148,
+      -0.0
+    ],
+    "scale": [
+      1.1070761049615456,
+      0.9023207632842637,
+      1.7259443227951117
+    ]
+  },
+  "OH_Refine_Forest_025": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedCrown_Runtime.SM_OH_PaintedCrown_Runtime",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/M_OH_LeafWindFar.M_OH_LeafWindFar"
+    ],
+    "position": [
+      1282.998231338428,
+      3957.8289813355113,
+      422.7955878611937
+    ],
+    "rotation": [
+      0.0,
+      -49.83157348632811,
+      0.0
+    ],
+    "scale": [
+      1.2824422768487764,
+      0.9625427001826493,
+      1.7085167628614772
+    ]
+  },
+  "OH_Refine_Forest_026": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedCrown_Runtime.SM_OH_PaintedCrown_Runtime",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/M_OH_LeafWindFar.M_OH_LeafWindFar"
+    ],
+    "position": [
+      1615.3166203566143,
+      4004.7174298355485,
+      471.1798814367728
+    ],
+    "rotation": [
+      0.0,
+      -15.75897216796875,
+      0.0
+    ],
+    "scale": [
+      0.9033177358289075,
+      0.9258573177885372,
+      1.8856673149011467
+    ]
+  },
+  "OH_Refine_Canopy_045": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedCrown_Runtime.SM_OH_PaintedCrown_Runtime",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/M_OH_LeafWindNear.M_OH_LeafWindNear"
+    ],
+    "position": [
+      -772.9968570799408,
+      2450.0,
+      338.3013027725565
+    ],
+    "rotation": [
+      0.0,
+      154.32110595703125,
+      -0.0
+    ],
+    "scale": [
+      0.7639061675509339,
+      0.8730356200582103,
+      1.2004239775800392
+    ]
+  },
+  "OH_Refine_Canopy_046": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedCrown_Runtime.SM_OH_PaintedCrown_Runtime",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/M_OH_LeafWindNear.M_OH_LeafWindNear"
+    ],
+    "position": [
+      -331.56723836098865,
+      2450.0,
+      309.7256094119975
+    ],
+    "rotation": [
+      0.0,
+      119.96666717529301,
+      -0.0
+    ],
+    "scale": [
+      0.6993804083496716,
+      0.7992918952567677,
+      1.0990263559780555
+    ]
+  },
+  "OH_Refine_Canopy_047": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedCrown_Runtime.SM_OH_PaintedCrown_Runtime",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/M_OH_LeafWindNear.M_OH_LeafWindNear"
+    ],
+    "position": [
+      39.39378914325653,
+      2450.0,
+      281.92707077779465
+    ],
+    "rotation": [
+      0.0,
+      47.55910110473634,
+      -0.0
+    ],
+    "scale": [
+      0.6366095146595363,
+      0.7275537310394702,
+      1.0003863801792714
+    ]
+  },
+  "OH_Refine_Canopy_048": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedCrown_Runtime.SM_OH_PaintedCrown_Runtime",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/M_OH_LeafWindNear.M_OH_LeafWindNear"
+    ],
+    "position": [
+      376.8306833541041,
+      2450.0,
+      333.63931196486766
+    ],
+    "rotation": [
+      0.0,
+      18.72220993041993,
+      -0.0
+    ],
+    "scale": [
+      0.7533790915335721,
+      0.8610046760383683,
+      1.1838814295527564
+    ]
+  },
+  "OH_Refine_Canopy_049": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedCrown_Runtime.SM_OH_PaintedCrown_Runtime",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/M_OH_LeafWindNear.M_OH_LeafWindNear"
+    ],
+    "position": [
+      775.4270024746727,
+      2450.0,
+      318.39807943754397
+    ],
+    "rotation": [
+      0.0,
+      97.06670379638673,
+      -0.0
+    ],
+    "scale": [
+      0.7189634051815508,
+      0.8216724630646296,
+      1.1297996367138656
+    ]
+  },
+  "OH_Refine_Canopy_050": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedCrown_Runtime.SM_OH_PaintedCrown_Runtime",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/M_OH_LeafWindFar.M_OH_LeafWindFar"
+    ],
+    "position": [
+      -824.87838296732,
+      2950.0,
+      279.37101965312127
+    ],
+    "rotation": [
+      0.0,
+      0.4229487776756288,
+      -0.0
+    ],
+    "scale": [
+      0.6308377863134996,
+      0.720957470072571,
+      0.9913165213497852
+    ]
+  },
+  "OH_Refine_Canopy_051": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedCrown_Runtime.SM_OH_PaintedCrown_Runtime",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/M_OH_LeafWindFar.M_OH_LeafWindFar"
+    ],
+    "position": [
+      -234.81747927648422,
+      2950.0,
+      327.0942271184924
+    ],
+    "rotation": [
+      0.0,
+      -107.03240966796879,
+      0.0
+    ],
+    "scale": [
+      0.7385998676869183,
+      0.8441141344993354,
+      1.160656934936586
+    ]
+  },
+  "OH_Refine_Canopy_052": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedCrown_Runtime.SM_OH_PaintedCrown_Runtime",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/M_OH_LeafWindFar.M_OH_LeafWindFar"
+    ],
+    "position": [
+      264.7999432229991,
+      2950.0,
+      326.4015632697207
+    ],
+    "rotation": [
+      0.0,
+      -14.223968505859375,
+      0.0
+    ],
+    "scale": [
+      0.7370357880284016,
+      0.8423266148896019,
+      1.1581990954732027
+    ]
+  },
+  "OH_Refine_Canopy_053": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedCrown_Runtime.SM_OH_PaintedCrown_Runtime",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/M_OH_LeafWindFar.M_OH_LeafWindFar"
+    ],
+    "position": [
+      988.5461267297112,
+      2950.0,
+      279.25485554326343
+    ],
+    "rotation": [
+      0.0,
+      108.6799011230469,
+      -0.0
+    ],
+    "scale": [
+      0.6305754802589818,
+      0.7206576917245507,
+      0.9909043261212573
+    ]
+  }
+}

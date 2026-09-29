@@ -1,0 +1,37 @@
+{
+  "assets": [
+    {
+      "path": "/Game/Environment/StairwellModular/Meshes/SM_Stairwell_DoorLeaf14.SM_Stairwell_DoorLeaf14",
+      "dimensions_cm": [
+        98.8000015616417,
+        13.99999189376831,
+        209.39997693896294
+      ],
+      "collision_hulls": 1
+    },
+    {
+      "path": "/Game/Environment/StairwellModular/Meshes/SM_Stairwell_DoorFrame13.SM_Stairwell_DoorFrame13",
+      "dimensions_cm": [
+        109.99998807907104,
+        15.000009536743164,
+        215.00001525878906
+      ],
+      "collision_hulls": 3
+    }
+  ],
+  "blueprint": "/Game/Environment/StairwellModular/Blueprints/BP_Stairwell_DoorAssembly",
+  "map": "/Game/Environment/StairwellModular/Maps/L_Stairwell_DoorVerification",
+  "runtime_interaction_implemented": false,
+  "states": [
+    {
+      "name": "Closed",
+      "leaf_yaw": 0.0,
+      "frame_unchanged": true
+    },
+    {
+      "name": "Open90",
+      "leaf_yaw": 89.99999999999999,
+      "frame_unchanged": true
+    }
+  ]
+}

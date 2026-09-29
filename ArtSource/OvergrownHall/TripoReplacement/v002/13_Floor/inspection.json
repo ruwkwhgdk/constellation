@@ -1,0 +1,23 @@
+{
+  "id": "13",
+  "name": "Floor",
+  "mesh": "SM_OH_T_13_Floor",
+  "source_triangles": 27648,
+  "triangles": 3969,
+  "budget": 4000,
+  "dimensions_m": [
+    2.001382350921631,
+    1.9994826316833496,
+    0.15033036470413208
+  ],
+  "boundary_edges": 11,
+  "uv_layers": 1,
+  "edits": [
+    "walkable top flattened"
+  ],
+  "textures": [
+    "basecolor.png",
+    "normal.png",
+    "rm.png"
+  ]
+}

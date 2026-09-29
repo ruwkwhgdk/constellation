@@ -1,0 +1,19 @@
+{
+  "map": "/Game/Environment/OvergrownHall/TripoReplacement/Maps/L_OvergrownHall_TripoReview",
+  "dimensions_cm": {
+    "Pillar": [
+      64.99999237060547,
+      65.00000381469727,
+      300.0
+    ],
+    "Tree": [
+      521.0341186523438,
+      457.16864013671875,
+      600.0000610351562
+    ]
+  },
+  "pillars": 30,
+  "trees": 19,
+  "flock_verified": true,
+  "playtest": false
+}

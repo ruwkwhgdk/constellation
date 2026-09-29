@@ -1,0 +1,11 @@
+{
+  "map": "/Game/Environment/OvergrownHall/TripoReplacement/Maps/L_OvergrownHall_TripoReview",
+  "pillar_segments": 30,
+  "trees": 19,
+  "status": "candidate_applied_for_review",
+  "meshes": {
+    "Pillar": "/Game/Environment/OvergrownHall/TripoReplacement/Meshes/SM_OH_Tripo_Pillar.SM_OH_Tripo_Pillar",
+    "Tree": "/Game/Environment/OvergrownHall/TripoReplacement/Meshes/SM_OH_Tripo_Tree.SM_OH_Tripo_Tree"
+  },
+  "adoption": "pending user appearance review"
+}

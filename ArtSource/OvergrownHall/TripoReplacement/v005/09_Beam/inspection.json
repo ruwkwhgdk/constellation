@@ -1,0 +1,24 @@
+{
+  "id": "09",
+  "name": "Beam",
+  "mesh": "SM_OH_Clean_09_Beam",
+  "source": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OvergrownHall\\TripoReplacement\\v002\\09_Beam\\prepared.blend",
+  "source_triangles": 5969,
+  "triangles": 108,
+  "budget": 6000,
+  "dimensions_m": [
+    4.000563144683838,
+    0.5004537105560303,
+    0.4001395106315613
+  ],
+  "boundary_edges": 0,
+  "basecolor": "basecolor.png",
+  "organic": false,
+  "edits": [
+    "source-guided hard-surface retopology",
+    "straight edges and planar faces",
+    "small 2-segment bevels",
+    "Tripo base color reprojected to new UV",
+    "normal map intentionally omitted: old tangent basis is invalid"
+  ]
+}

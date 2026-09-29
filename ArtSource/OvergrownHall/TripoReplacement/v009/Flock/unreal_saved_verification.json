@@ -1,0 +1,11 @@
+{
+  "status": "saved_flock_structure_and_evaluation_pass",
+  "birds": 28,
+  "autoplay": true,
+  "infinite_loop": true,
+  "evaluated_frame": 240,
+  "min_actor_displacement_cm": 299.5467020092128,
+  "sequence": "/Game/Environment/OvergrownHall/TripoFull/Sequences/LS_OvergrownHall_Flock.LS_OvergrownHall_Flock",
+  "map": "/Game/Environment/OvergrownHall/TripoFull/Maps/L_OvergrownHall_TripoFull",
+  "visual_playtest": "not_run"
+}

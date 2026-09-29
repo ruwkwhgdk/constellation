@@ -1,0 +1,9 @@
+{
+  "model_version": "gpt_image_2",
+  "prompt": "Create a 4x4 modular game asset concept sheet based on the reference stairwell. Exactly 16 equal cells, thin grid, neutral gray background, consistent realistic worn ceramic/concrete/metal materials, soft studio lighting, clear isolated isometric objects, no dramatic shadows, no people. Label cells 01-16 only, left-to-right top-to-bottom. Row1: 01 straight six-step staircase (15cm rise,30cm tread,140cm width); 02 tiled landing slab; 03 gray square floor tile panel; 04 yellow tactile paving panel. Row2: 05 small white tiled straight wall; 06 tiled inner corner wall WITHOUT rails; 07 rough concrete ceiling panel; 08 concrete crossbeam. Row3: 09 horizontal double handrail with brackets; 10 sloped double handrail at 26.6deg; 11 double handrail 90deg corner; 12 rounded double rail end. Row4: 13 empty metal door frame 100x210cm clear opening; 14 matching gray utility door leaf; 15 fluorescent light fixture; 16 narrow ribbed stair nosing strip. Keep parts separate, all fully visible.",
+  "file": {
+    "type": "png",
+    "file_token": "59e6aae3-c98d-4bcd-a780-0c6fe6d95731"
+  },
+  "type": "generate_image"
+}

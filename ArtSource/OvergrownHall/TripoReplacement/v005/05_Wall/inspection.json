@@ -1,0 +1,24 @@
+{
+  "id": "05",
+  "name": "Wall",
+  "mesh": "SM_OH_Clean_05_Wall",
+  "source": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OvergrownHall\\TripoReplacement\\v002\\05_Wall\\prepared.blend",
+  "source_triangles": 5969,
+  "triangles": 324,
+  "budget": 6000,
+  "dimensions_m": [
+    3.0009145736694336,
+    0.4016653895378113,
+    1.497518539428711
+  ],
+  "boundary_edges": 0,
+  "basecolor": "basecolor.png",
+  "organic": false,
+  "edits": [
+    "source-guided hard-surface retopology",
+    "straight edges and planar faces",
+    "small 2-segment bevels",
+    "Tripo base color reprojected to new UV",
+    "normal map intentionally omitted: old tangent basis is invalid"
+  ]
+}

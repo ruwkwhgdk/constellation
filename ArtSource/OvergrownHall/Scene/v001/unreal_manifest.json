@@ -1,0 +1,496 @@
+{
+  "assets": [
+    {
+      "name": "SM_OH_Blockout_01",
+      "category": "01",
+      "bounds_min_cm": [
+        -675.0,
+        157.50000476837158,
+        0.0
+      ],
+      "bounds_max_cm": [
+        675.0,
+        1842.4999237060547,
+        120.00000476837158
+      ],
+      "materials": [
+        "Proxy_Trim"
+      ],
+      "collision": true
+    },
+    {
+      "name": "SM_OH_Blockout_02",
+      "category": "02",
+      "bounds_min_cm": [
+        -663.9999866485596,
+        167.49999523162842,
+        59.999990463256836
+      ],
+      "bounds_max_cm": [
+        663.9999866485596,
+        1987.5,
+        1169.9999809265137
+      ],
+      "materials": [
+        "Proxy_Stone"
+      ],
+      "collision": true
+    },
+    {
+      "name": "SM_OH_Blockout_03",
+      "category": "03",
+      "bounds_min_cm": [
+        -682.4999809265137,
+        150.0,
+        942.5000190734863
+      ],
+      "bounds_max_cm": [
+        682.4999809265137,
+        1850.0,
+        977.500057220459
+      ],
+      "materials": [
+        "Proxy_Trim"
+      ],
+      "collision": true
+    },
+    {
+      "name": "SM_OH_Blockout_04",
+      "category": "04",
+      "bounds_min_cm": [
+        -655.0000190734863,
+        209.00001525878906,
+        29.999995231628418
+      ],
+      "bounds_max_cm": [
+        655.0000190734863,
+        1790.999984741211,
+        736.9999885559082
+      ],
+      "materials": [
+        "Proxy_Stone"
+      ],
+      "collision": true
+    },
+    {
+      "name": "SM_OH_Blockout_05",
+      "category": "05",
+      "bounds_min_cm": [
+        -779.9999713897705,
+        0.0,
+        0.0
+      ],
+      "bounds_max_cm": [
+        779.9999713897705,
+        2000.0,
+        1100.0
+      ],
+      "materials": [
+        "Proxy_Stone"
+      ],
+      "collision": true
+    },
+    {
+      "name": "SM_OH_Blockout_06",
+      "category": "06",
+      "bounds_min_cm": [
+        -489.4343852996826,
+        1953.0000686645508,
+        300.0
+      ],
+      "bounds_max_cm": [
+        489.4343852996826,
+        1967.0000076293945,
+        730.0000190734863
+      ],
+      "materials": [
+        "Proxy_Metal"
+      ],
+      "collision": true
+    },
+    {
+      "name": "SM_OH_Blockout_07",
+      "category": "07",
+      "bounds_min_cm": [
+        -492.05522537231445,
+        1953.0000686645508,
+        764.9999618530273
+      ],
+      "bounds_max_cm": [
+        492.05522537231445,
+        1967.0000076293945,
+        1156.00004196167
+      ],
+      "materials": [
+        "Proxy_Metal"
+      ],
+      "collision": true
+    },
+    {
+      "name": "SM_OH_Blockout_08",
+      "category": "08",
+      "bounds_min_cm": [
+        -486.4860534667969,
+        1955.000114440918,
+        296.74999713897705
+      ],
+      "bounds_max_cm": [
+        486.4860534667969,
+        1964.9999618530273,
+        980.0000190734863
+      ],
+      "materials": [
+        "Proxy_Metal"
+      ],
+      "collision": true
+    },
+    {
+      "name": "SM_OH_Blockout_09",
+      "category": "09",
+      "bounds_min_cm": [
+        -800.0,
+        0.0,
+        277.50000953674316
+      ],
+      "bounds_max_cm": [
+        800.0,
+        2000.0,
+        819.9999809265137
+      ],
+      "materials": [
+        "Proxy_Trim",
+        "Proxy_Stone"
+      ],
+      "collision": true
+    },
+    {
+      "name": "SM_OH_Blockout_10",
+      "category": "10",
+      "bounds_min_cm": [
+        -762.7994060516357,
+        100.0,
+        974.2600440979004
+      ],
+      "bounds_max_cm": [
+        762.7994060516357,
+        2000.0,
+        1210.6378555297852
+      ],
+      "materials": [
+        "Proxy_Metal"
+      ],
+      "collision": true
+    },
+    {
+      "name": "SM_OH_Blockout_11",
+      "category": "11",
+      "bounds_min_cm": [
+        -639.7433757781982,
+        187.99999952316284,
+        865.7697677612305
+      ],
+      "bounds_max_cm": [
+        639.7433757781982,
+        1812.0000839233398,
+        944.2303657531738
+      ],
+      "materials": [
+        "Proxy_Trim"
+      ],
+      "collision": true
+    },
+    {
+      "name": "SM_OH_Blockout_12",
+      "category": "12",
+      "bounds_min_cm": [
+        -86.00000143051147,
+        1939.9999618530273,
+        -0.4999995231628418
+      ],
+      "bounds_max_cm": [
+        86.00000143051147,
+        1989.9999618530273,
+        220.00000476837158
+      ],
+      "materials": [
+        "Proxy_Trim"
+      ],
+      "collision": true
+    },
+    {
+      "name": "SM_OH_Blockout_13",
+      "category": "13",
+      "bounds_min_cm": [
+        -3250.0,
+        -1800.0,
+        -55.000001192092896
+      ],
+      "bounds_max_cm": [
+        3250.0,
+        5200.0,
+        20.000000298023224
+      ],
+      "materials": [
+        "Proxy_Floor"
+      ],
+      "collision": true
+    },
+    {
+      "name": "SM_OH_Blockout_14",
+      "category": "14",
+      "bounds_min_cm": [
+        30.000007152557373,
+        991.4999961853027,
+        0.0
+      ],
+      "bounds_max_cm": [
+        209.99999046325684,
+        1057.487964630127,
+        92.00000166893005
+      ],
+      "materials": [
+        "Proxy_Metal",
+        "Proxy_Bench"
+      ],
+      "collision": true
+    },
+    {
+      "name": "SM_OH_Blockout_16",
+      "category": "16",
+      "bounds_min_cm": [
+        -781.5958023071289,
+        169.13079023361206,
+        3.4999996423721313
+      ],
+      "bounds_max_cm": [
+        788.723087310791,
+        1913.892936706543,
+        53.18598747253418
+      ],
+      "materials": [
+        "Proxy_Foliage_1",
+        "Proxy_Foliage_2",
+        "Proxy_Foliage_0"
+      ],
+      "collision": false
+    },
+    {
+      "name": "SM_OH_Blockout_17",
+      "category": "17",
+      "bounds_min_cm": [
+        -727.1641254425049,
+        1000.6044387817383,
+        -53.08241248130798
+      ],
+      "bounds_max_cm": [
+        746.8208312988281,
+        2072.519874572754,
+        176.97224617004395
+      ],
+      "materials": [
+        "Proxy_Foliage_2",
+        "Proxy_Foliage_1",
+        "Proxy_Foliage_0",
+        "Proxy_Bench"
+      ],
+      "collision": false
+    },
+    {
+      "name": "SM_OH_Blockout_18",
+      "category": "18",
+      "bounds_min_cm": [
+        -634.4517707824707,
+        566.8383121490479,
+        212.4842643737793
+      ],
+      "bounds_max_cm": [
+        639.85915184021,
+        1835.0214004516602,
+        839.1923904418945
+      ],
+      "materials": [
+        "Proxy_Foliage_1",
+        "Proxy_Foliage_0",
+        "Proxy_Foliage_2",
+        "Proxy_Bench"
+      ],
+      "collision": false
+    },
+    {
+      "name": "SM_OH_Blockout_19",
+      "category": "19",
+      "bounds_min_cm": [
+        -1726.8627166748047,
+        129.42283153533936,
+        0.0
+      ],
+      "bounds_max_cm": [
+        1700.0900268554688,
+        3227.8648376464844,
+        842.9272651672363
+      ],
+      "materials": [
+        "Proxy_Foliage_0",
+        "Proxy_Foliage_1",
+        "Proxy_Foliage_2",
+        "Proxy_Bench"
+      ],
+      "collision": false
+    },
+    {
+      "name": "SM_OH_Blockout_21",
+      "category": "21",
+      "bounds_min_cm": [
+        -766.9652938842773,
+        241.62182807922363,
+        2.199999988079071
+      ],
+      "bounds_max_cm": [
+        793.1102275848389,
+        1139.4091606140137,
+        2.199999988079071
+      ],
+      "materials": [
+        "Proxy_Water"
+      ],
+      "collision": false
+    },
+    {
+      "name": "SM_OH_Blockout_25",
+      "category": "25",
+      "bounds_min_cm": [
+        -637.5,
+        197.5000023841858,
+        50.0
+      ],
+      "bounds_max_cm": [
+        637.5,
+        602.5000095367432,
+        120.00000476837158
+      ],
+      "materials": [
+        "Proxy_Metal"
+      ],
+      "collision": true
+    },
+    {
+      "name": "SM_OH_Blockout_26",
+      "category": "26",
+      "bounds_min_cm": [
+        -646.588134765625,
+        150.0,
+        1011.7199897766113
+      ],
+      "bounds_max_cm": [
+        694.9418544769287,
+        1900.0,
+        1243.9764022827148
+      ],
+      "materials": [
+        "Proxy_Stone"
+      ],
+      "collision": true
+    }
+  ],
+  "materials": {
+    "Proxy_Bench": {
+      "color": [
+        0.2199999988079071,
+        0.27000001072883606,
+        0.2199999988079071
+      ],
+      "roughness": 0.699999988079071,
+      "metallic": 0.0,
+      "surface_detail": "",
+      "two_sided": false
+    },
+    "Proxy_Floor": {
+      "color": [
+        0.2199999988079071,
+        0.3100000023841858,
+        0.30000001192092896
+      ],
+      "roughness": 0.699999988079071,
+      "metallic": 0.0,
+      "surface_detail": "floor",
+      "two_sided": false
+    },
+    "Proxy_Foliage_0": {
+      "color": [
+        0.10000000149011612,
+        0.23999999463558197,
+        0.07999999821186066
+      ],
+      "roughness": 0.7200000286102295,
+      "metallic": 0.0,
+      "surface_detail": "",
+      "two_sided": true
+    },
+    "Proxy_Foliage_1": {
+      "color": [
+        0.2199999988079071,
+        0.3799999952316284,
+        0.10000000149011612
+      ],
+      "roughness": 0.7200000286102295,
+      "metallic": 0.0,
+      "surface_detail": "",
+      "two_sided": true
+    },
+    "Proxy_Foliage_2": {
+      "color": [
+        0.3199999928474426,
+        0.4300000071525574,
+        0.12999999523162842
+      ],
+      "roughness": 0.7200000286102295,
+      "metallic": 0.0,
+      "surface_detail": "",
+      "two_sided": true
+    },
+    "Proxy_Metal": {
+      "color": [
+        0.054999999701976776,
+        0.0949999988079071,
+        0.0949999988079071
+      ],
+      "roughness": 0.4000000059604645,
+      "metallic": 0.6000000238418579,
+      "surface_detail": "",
+      "two_sided": false
+    },
+    "Proxy_Stone": {
+      "color": [
+        0.14000000059604645,
+        0.23000000417232513,
+        0.25
+      ],
+      "roughness": 0.699999988079071,
+      "metallic": 0.0,
+      "surface_detail": "plaster",
+      "two_sided": false
+    },
+    "Proxy_Trim": {
+      "color": [
+        0.23000000417232513,
+        0.3199999928474426,
+        0.3199999928474426
+      ],
+      "roughness": 0.699999988079071,
+      "metallic": 0.0,
+      "surface_detail": "plaster",
+      "two_sided": false
+    },
+    "Proxy_Water": {
+      "color": [
+        0.07000000029802322,
+        0.27000001072883606,
+        0.28999999165534973
+      ],
+      "roughness": 0.10000000149011612,
+      "metallic": 0.6499999761581421,
+      "surface_detail": "water",
+      "two_sided": false
+    }
+  }
+}

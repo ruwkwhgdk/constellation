@@ -1,0 +1,7 @@
+{
+  "r.ReflectionMethod": 2,
+  "r.DynamicGlobalIlluminationMethod": 0,
+  "r.GenerateMeshDistanceFields": 0,
+  "r.AllowGlobalClipPlane": 1,
+  "r.Water.SingleLayer.Reflection": 1
+}

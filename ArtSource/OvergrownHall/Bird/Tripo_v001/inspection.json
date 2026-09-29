@@ -1,0 +1,51 @@
+{
+  "status": "downloaded_and_opened",
+  "source": "Tripo web H3.1",
+  "triangles": 19038,
+  "vertices": 13604,
+  "mesh_objects": 1,
+  "material_slots": 1,
+  "uv_layers": [
+    1
+  ],
+  "images": [
+    {
+      "name": "OH_Pigeon_Tripo_v001_basecolor.jpg",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "name": "OH_Pigeon_Tripo_v001_normal.png",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "name": "OH_Pigeon_Tripo_v001_rm.jpg",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "name": "Viewer Node",
+      "size": [
+        256,
+        256
+      ]
+    }
+  ],
+  "bounds_source_units": [
+    0.98114013671875,
+    0.6748657822608948,
+    0.739288330078125
+  ],
+  "finite_vertices": true,
+  "has_armature": false,
+  "rigging_status": "not_started",
+  "appearance": "awaiting user adoption",
+  "pose": "raised wings; neutral-pose adjustment required before reusing old motion"
+}

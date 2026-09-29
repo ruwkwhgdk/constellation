@@ -1,0 +1,24 @@
+[
+  {
+    "id": "19",
+    "mesh": "SM_OH_PaintedTree",
+    "leaf_clusters": 532,
+    "leaf_card_triangles": 12768,
+    "total_triangles": 17103,
+    "materials": 2,
+    "source_stems": "Tripo v008",
+    "leaf_texture": "painted_leaves.png",
+    "source_leaf_shells_replaced": true
+  },
+  {
+    "id": "17",
+    "mesh": "SM_OH_PaintedShrub",
+    "leaf_clusters": 215,
+    "leaf_card_triangles": 5160,
+    "total_triangles": 6157,
+    "materials": 2,
+    "source_stems": "Tripo v008",
+    "leaf_texture": "painted_leaves.png",
+    "source_leaf_shells_replaced": true
+  }
+]

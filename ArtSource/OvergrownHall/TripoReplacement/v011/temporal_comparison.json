@@ -1,0 +1,13 @@
+{
+  "water": [
+    1.1111296296296296,
+    0.9570925925925926,
+    0.8645648148148148
+  ],
+  "architecture": [
+    0.4411848635235732,
+    0.35431141439205954,
+    0.29476426799007444
+  ],
+  "note": "Two real rendered frames, approximately 10 seconds apart. Temporal AA also changes pixels; this metric alone is not proof of physically correct waves."
+}

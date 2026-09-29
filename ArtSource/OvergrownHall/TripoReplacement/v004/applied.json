@@ -1,0 +1,277 @@
+{
+  "map": "/Game/Environment/OvergrownHall/TripoFull/Maps/L_OvergrownHall_TripoFull",
+  "materials": {
+    "01": {
+      "material": "/Game/Environment/OvergrownHall/TripoFull/PaintedMaterials/M_OH_Painted_01",
+      "tint": [
+        0.48,
+        0.44,
+        0.32
+      ],
+      "pigment_blend": 0.42,
+      "normal_strength": 0.16,
+      "mip_bias": 2
+    },
+    "03": {
+      "material": "/Game/Environment/OvergrownHall/TripoFull/PaintedMaterials/M_OH_Painted_03",
+      "tint": [
+        0.48,
+        0.44,
+        0.32
+      ],
+      "pigment_blend": 0.42,
+      "normal_strength": 0.16,
+      "mip_bias": 2
+    },
+    "04": {
+      "material": "/Game/Environment/OvergrownHall/TripoFull/PaintedMaterials/M_OH_Painted_04",
+      "tint": [
+        0.48,
+        0.44,
+        0.32
+      ],
+      "pigment_blend": 0.42,
+      "normal_strength": 0.16,
+      "mip_bias": 2
+    },
+    "05": {
+      "material": "/Game/Environment/OvergrownHall/TripoFull/PaintedMaterials/M_OH_Painted_05",
+      "tint": [
+        0.48,
+        0.44,
+        0.32
+      ],
+      "pigment_blend": 0.42,
+      "normal_strength": 0.16,
+      "mip_bias": 2
+    },
+    "06": {
+      "material": "/Game/Environment/OvergrownHall/TripoFull/PaintedMaterials/M_OH_Painted_06",
+      "tint": [
+        0.18,
+        0.25,
+        0.24
+      ],
+      "pigment_blend": 0.32,
+      "normal_strength": 0.16,
+      "mip_bias": 2
+    },
+    "07": {
+      "material": "/Game/Environment/OvergrownHall/TripoFull/PaintedMaterials/M_OH_Painted_07",
+      "tint": [
+        0.18,
+        0.25,
+        0.24
+      ],
+      "pigment_blend": 0.32,
+      "normal_strength": 0.16,
+      "mip_bias": 2
+    },
+    "08": {
+      "material": "/Game/Environment/OvergrownHall/TripoFull/PaintedMaterials/M_OH_Painted_08",
+      "tint": [
+        0.18,
+        0.25,
+        0.24
+      ],
+      "pigment_blend": 0.32,
+      "normal_strength": 0.16,
+      "mip_bias": 2
+    },
+    "09": {
+      "material": "/Game/Environment/OvergrownHall/TripoFull/PaintedMaterials/M_OH_Painted_09",
+      "tint": [
+        0.48,
+        0.44,
+        0.32
+      ],
+      "pigment_blend": 0.42,
+      "normal_strength": 0.16,
+      "mip_bias": 2
+    },
+    "10": {
+      "material": "/Game/Environment/OvergrownHall/TripoFull/PaintedMaterials/M_OH_Painted_10",
+      "tint": [
+        0.18,
+        0.25,
+        0.24
+      ],
+      "pigment_blend": 0.32,
+      "normal_strength": 0.16,
+      "mip_bias": 2
+    },
+    "11": {
+      "material": "/Game/Environment/OvergrownHall/TripoFull/PaintedMaterials/M_OH_Painted_11",
+      "tint": [
+        0.48,
+        0.44,
+        0.32
+      ],
+      "pigment_blend": 0.42,
+      "normal_strength": 0.16,
+      "mip_bias": 2
+    },
+    "12": {
+      "material": "/Game/Environment/OvergrownHall/TripoFull/PaintedMaterials/M_OH_Painted_12",
+      "tint": [
+        0.48,
+        0.44,
+        0.32
+      ],
+      "pigment_blend": 0.42,
+      "normal_strength": 0.16,
+      "mip_bias": 2
+    },
+    "13": {
+      "material": "/Game/Environment/OvergrownHall/TripoFull/PaintedMaterials/M_OH_Painted_13",
+      "tint": [
+        0.48,
+        0.44,
+        0.32
+      ],
+      "pigment_blend": 0.42,
+      "normal_strength": 0.16,
+      "mip_bias": 2
+    },
+    "14": {
+      "material": "/Game/Environment/OvergrownHall/TripoFull/PaintedMaterials/M_OH_Painted_14",
+      "tint": [
+        0.34,
+        0.28,
+        0.16
+      ],
+      "pigment_blend": 0.32,
+      "normal_strength": 0.16,
+      "mip_bias": 2
+    },
+    "15": {
+      "material": "/Game/Environment/OvergrownHall/TripoFull/PaintedMaterials/M_OH_Painted_15",
+      "tint": [
+        0.48,
+        0.44,
+        0.32
+      ],
+      "pigment_blend": 0.42,
+      "normal_strength": 0.16,
+      "mip_bias": 2
+    },
+    "16": {
+      "material": "/Game/Environment/OvergrownHall/TripoFull/PaintedMaterials/M_OH_Painted_16",
+      "tint": [
+        0.3,
+        0.44,
+        0.12
+      ],
+      "pigment_blend": 0.38,
+      "normal_strength": 0.1,
+      "mip_bias": 2
+    },
+    "17": {
+      "material": "/Game/Environment/OvergrownHall/TripoFull/PaintedMaterials/M_OH_Painted_17",
+      "tint": [
+        0.3,
+        0.44,
+        0.12
+      ],
+      "pigment_blend": 0.38,
+      "normal_strength": 0.1,
+      "mip_bias": 2
+    },
+    "18": {
+      "material": "/Game/Environment/OvergrownHall/TripoFull/PaintedMaterials/M_OH_Painted_18",
+      "tint": [
+        0.3,
+        0.44,
+        0.12
+      ],
+      "pigment_blend": 0.38,
+      "normal_strength": 0.1,
+      "mip_bias": 2
+    },
+    "25": {
+      "material": "/Game/Environment/OvergrownHall/TripoFull/PaintedMaterials/M_OH_Painted_25",
+      "tint": [
+        0.18,
+        0.25,
+        0.24
+      ],
+      "pigment_blend": 0.32,
+      "normal_strength": 0.16,
+      "mip_bias": 2
+    },
+    "26": {
+      "material": "/Game/Environment/OvergrownHall/TripoFull/PaintedMaterials/M_OH_Painted_26",
+      "tint": [
+        0.48,
+        0.44,
+        0.32
+      ],
+      "pigment_blend": 0.42,
+      "normal_strength": 0.16,
+      "mip_bias": 2
+    },
+    "02": {
+      "material": "/Game/Environment/OvergrownHall/TripoFull/PaintedMaterials/M_OH_Painted_02",
+      "tint": [
+        0.48,
+        0.44,
+        0.32
+      ],
+      "pigment_blend": 0.42,
+      "normal_strength": 0.16,
+      "mip_bias": 2
+    },
+    "19": {
+      "material": "/Game/Environment/OvergrownHall/TripoFull/PaintedMaterials/M_OH_Painted_19",
+      "tint": [
+        0.3,
+        0.44,
+        0.12
+      ],
+      "pigment_blend": 0.38,
+      "normal_strength": 0.1,
+      "mip_bias": 2
+    }
+  },
+  "actors": {
+    "19": 19,
+    "17": 69,
+    "16": 48,
+    "18": 24,
+    "05": 24,
+    "09": 18,
+    "01": 10,
+    "02": 55,
+    "03": 10,
+    "26": 18,
+    "13": 163,
+    "04": 8,
+    "11": 10,
+    "25": 4,
+    "06": 8,
+    "07": 4,
+    "08": 29,
+    "10": 3,
+    "12": 1,
+    "14": 1,
+    "15": 6
+  },
+  "total": 532,
+  "sun_intensity": 16000,
+  "sun_angle": 10,
+  "sun_color": [
+    1,
+    0.84,
+    0.6
+  ],
+  "sky_intensity": 2.2,
+  "color_contrast": 0.9,
+  "color_gamma": 1.06,
+  "color_gain": [
+    1.04,
+    1.03,
+    0.98
+  ],
+  "ambient_occlusion_intensity": 0.35,
+  "playtest": false
+}

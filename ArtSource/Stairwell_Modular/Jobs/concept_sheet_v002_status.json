@@ -1,0 +1,28 @@
+{
+  "code": 0,
+  "data": {
+    "task_id": "effacbe8-d129-4db1-a819-da71c1b3a807",
+    "type": "generate_image",
+    "status": "success",
+    "input": {
+      "prompt": "Edit this 4x4 modular asset sheet. Preserve the grid, labels 01-16, camera style, neutral gray background, materials, and all unmentioned cells exactly. Correct only these cells: 01 replace with a BARE straight staircase of exactly SIX steps, each 15cm high and 30cm deep, total width 140cm. ABSOLUTELY NO side walls, parapets, railings, posts or handrails; exposed stair side profile on both sides. 02 plain gray tiled landing slab, REMOVE all yellow tactile tiles and replace them with matching gray floor tiles. 08 replace L-shaped beam with one simple STRAIGHT rectangular concrete beam, no elbow or perpendicular end. 14 show only the gray metal DOOR LEAF with its handle and hinges, remove the surrounding door FRAME, which already exists separately in 13. 06 use the same small tile size and dark skirting as 05. Keep every object isolated and fully visible. This sheet is for separate reusable game modules, never fused assemblies.",
+      "model_version": "gpt_image_2",
+      "file": {
+        "type": "png",
+        "object": {
+          "bucket": "tripo-data",
+          "key": "tcli_36cdbe9c39e740a09a7460b758060782/20260923/effacbe8-d129-4db1-a819-da71c1b3a807/image.png"
+        }
+      }
+    },
+    "output": {
+      "generated_image": "https://tripo-data.rg1.data.tripo3d.com/tcli_36cdbe9c39e740a09a7460b758060782/20260923/effacbe8-d129-4db1-a819-da71c1b3a807/generated_image.png?Key-Pair-Id=K1676C64NMVM2J&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly90cmlwby1kYXRhLnJnMS5kYXRhLnRyaXBvM2QuY29tL3RjbGlfMzZjZGJlOWMzOWU3NDBhMDlhNzQ2MGI3NTgwNjA3ODIvMjAyNjA5MjMvZWZmYWNiZTgtZDEyOS00ZGIxLWE4MTktZGE3MWMxYjNhODA3L2dlbmVyYXRlZF9pbWFnZS5wbmciLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTAyMDgwMDB9fX1dfQ__&Signature=gcEh5MG4k7rWFqUPAcN4JpyFBuAM6Pj9GTr~UJhwOCeK0dtKzm-u6pmjYL7znuzxMVBz6JuZG7wEYXeU2HAA9H9Nuz9uvIuMQMzS69-nKnxwTDuN5DtKfDMhibLh~zxSfC6GstbI7CR~TPBHFidl2wOPuxyjsTlwhEU05K7LzzBVSD706ju1JiyqPePaqtoILjboZRgMmCOZdcvjZ54m6sVflc-xRRTR6bp3dkembDW9rhELfEPDtbT~3VAMAjQDpqflLNQGHMDsg9-MU7cgnemLN0minBmHSme5F~T052cAjiWl5Hriir87HkvYuwyF2CkVvCSVYwqrx9dFGWf7Eg__"
+    },
+    "progress": 100,
+    "create_time": 1790177581,
+    "consumed_credit": 10,
+    "queuing_num": -1,
+    "running_left_time": -1,
+    "result": {}
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "12",
+  "name": "SmallArch",
+  "mesh": "SM_OH_T_12_SmallArch",
+  "source_triangles": 28629,
+  "triangles": 9970,
+  "budget": 10000,
+  "dimensions_m": [
+    1.6986026763916016,
+    0.5,
+    2.1915249824523926
+  ],
+  "boundary_edges": 6,
+  "uv_layers": 1,
+  "edits": [],
+  "textures": [
+    "basecolor.png",
+    "normal.png",
+    "rm.png"
+  ]
+}

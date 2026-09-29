@@ -1,0 +1,17 @@
+{
+  "status": "pass",
+  "map": "/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_PlayScale2",
+  "architecture_scale": 2,
+  "stair_width_cm": 480,
+  "landing_depth_cm": 360,
+  "step_height_cm": 30,
+  "tread_depth_cm": 60,
+  "character_max_step_height_cm": 45.0,
+  "props_scale_preserved": true,
+  "rail_diameter_cm": 4,
+  "rail_vertical_spacing_cm": 25,
+  "rail_modules": 32,
+  "main_rail_clearance_cm": 460,
+  "stairs_landing_seams": true,
+  "playtest": "not_run"
+}

@@ -1,0 +1,67 @@
+{
+  "source": "light15_raw_v001.glb",
+  "requested_face_limit": 3000,
+  "objects": [
+    {
+      "name": "SM_Stairwell_Light15_Part00",
+      "vertices": 3604,
+      "triangles": 3406,
+      "material_slots": 1,
+      "uv_layers": 1,
+      "boundary_edges": 3162,
+      "nonmanifold_edges": 3162
+    }
+  ],
+  "status": "awaiting_user_review",
+  "import_dimensions_m": [
+    0.22504889965057373,
+    1.0,
+    0.1682974398136139
+  ],
+  "review_dimensions_cm": [
+    120.0,
+    27.006,
+    20.196
+  ],
+  "triangles": 3406,
+  "face_limit_pass": false,
+  "scale_policy": "Review copy uniformly scaled to 120cm maximum dimension; not source-measured size.",
+  "materials": [
+    {
+      "name": "tripo_material_4aa20774-e697-4117-a168-527ce0f5a17f",
+      "textures": [
+        {
+          "image": "Color_4aa20774-e697-4117-a168-527ce0f5a17f",
+          "size": [
+            2048,
+            2048
+          ],
+          "colorspace": "sRGB"
+        },
+        {
+          "image": "ORM_4aa20774-e697-4117-a168-527ce0f5a17f",
+          "size": [
+            2048,
+            2048
+          ],
+          "colorspace": "Non-Color"
+        },
+        {
+          "image": "NormalGL_4aa20774-e697-4117-a168-527ce0f5a17f",
+          "size": [
+            2048,
+            2048
+          ],
+          "colorspace": "Non-Color"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Not approved for import",
+    "No Unreal collision or lighting setup",
+    "No automatic emission split",
+    "No full kit generation yet",
+    "Original GLB retained unchanged"
+  ]
+}

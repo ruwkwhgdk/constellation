@@ -1,0 +1,23 @@
+{
+  "map": "/Game/Environment/OvergrownHall/TripoFull/Maps/L_OvergrownHall_TripoFull",
+  "changed_shrubs": [
+    "OH_FinalWallGrowth_00",
+    "OH_FinalWallGrowth_01",
+    "OH_FinalWallGrowth_02",
+    "OH_FinalWallGrowth_03"
+  ],
+  "added": [
+    "OH_ReferenceIntegration_LintelLeaves_00",
+    "OH_ReferenceIntegration_LintelLeaves_01",
+    "OH_ReferenceIntegration_LintelLeaves_02"
+  ],
+  "rear_walls": [
+    "OH_FULL_05_0225",
+    "OH_FULL_05_0226",
+    "OH_FULL_05_0227",
+    "OH_FULL_05_0228",
+    "OH_FULL_05_0229",
+    "OH_FULL_05_0230"
+  ],
+  "playtest": false
+}

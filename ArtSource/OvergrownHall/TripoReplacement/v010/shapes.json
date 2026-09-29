@@ -1,0 +1,36 @@
+[
+  {
+    "id": "19",
+    "mesh": "SM_OH_RoundedTree",
+    "source": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OvergrownHall\\TripoReplacement\\v001\\Tree\\prepared.blend",
+    "leaf_faces_selected": 25544,
+    "source_faces": 29879,
+    "voxel_cm": 5.5,
+    "triangles": 24335,
+    "material_slots": 2,
+    "dimensions_m": [
+      5.0006866455078125,
+      4.379981994628906,
+      5.940318584442139
+    ],
+    "stem_uv_preserved": true,
+    "leaf_colors": "nearest source pigment, palette softened"
+  },
+  {
+    "id": "17",
+    "mesh": "SM_OH_RoundedShrub",
+    "source": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OvergrownHall\\TripoReplacement\\v002\\17_Shrub\\prepared.blend",
+    "leaf_faces_selected": 13973,
+    "source_faces": 14970,
+    "voxel_cm": 2.1999999999999997,
+    "triangles": 10997,
+    "material_slots": 2,
+    "dimensions_m": [
+      1.342329978942871,
+      1.1816875338554382,
+      1.1613994848448783
+    ],
+    "stem_uv_preserved": true,
+    "leaf_colors": "nearest source pigment, palette softened"
+  }
+]

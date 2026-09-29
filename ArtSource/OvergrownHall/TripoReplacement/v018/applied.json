@@ -1,0 +1,16 @@
+{
+  "map": "/Game/Environment/OvergrownHall/TripoFull/Maps/L_OvergrownHall_TripoFull",
+  "position": [
+    0,
+    100,
+    112
+  ],
+  "pitch": 9.276398658752443,
+  "yaw": 90,
+  "fov": 72.7,
+  "actor_count": 721,
+  "scene_signature": "bf81ade3e505303a2d25fb75413df94a0720c4548023984a99b9f749cdcc5b70",
+  "geometry_changed": false,
+  "gameplay_camera_changed": false,
+  "playtest": "user"
+}

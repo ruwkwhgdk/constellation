@@ -1,0 +1,21 @@
+{
+  "saved_map": true,
+  "foliage_preserved": {
+    "Tree": 19,
+    "Shrub": 85,
+    "Crown": 54
+  },
+  "broken_arch_count": 3,
+  "closed_arch_collision": true,
+  "nonblocking_water": true,
+  "water_center": [
+    9.1552734375e-05,
+    700.0,
+    2.200000047683716
+  ],
+  "world_space_normals": true,
+  "birds": 28,
+  "physical_transmission": false,
+  "playtest": false,
+  "performance_test": false
+}

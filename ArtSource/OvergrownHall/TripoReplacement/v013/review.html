@@ -1,0 +1,10 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><title>Overgrown Hall · 통합 미술 보정</title>
+<style>body{background:#182c30;color:#eeeade;font:17px/1.7 sans-serif;max-width:1400px;margin:36px auto;padding:0 20px}img{width:100%;display:block}button{background:#d5dfcb;color:#20302c;border:0;border-radius:5px;padding:12px 20px;margin:0 8px 12px 0;cursor:pointer;font:inherit}.pair{display:grid;grid-template-columns:1fr 1fr;gap:20px}code{overflow-wrap:anywhere}a{color:#bce2cd}@media(max-width:750px){.pair{grid-template-columns:1fr}}</style>
+<h1>후면 폐허와 빛·식생·물가 정리</h1><p>같은 카메라에서 촬영한 실제 Unreal 렌더입니다.</p>
+<button onclick="show(true)">수정 후</button><button onclick="show(false)">이전 v012</button><h2 id="caption">수정 후</h2><img id="scene" src="unreal_final_art.png" alt="현재 Unreal 렌더">
+<p>후면 건축10곳에 파손을 추가하고, 청록색 그림자와 따뜻한 빛의 대비를 보정했습니다. 파손 접점에 덩굴9개·잎 군집5개, 물가에 석판9개·잔해6개를 배치했습니다. 기존 투명 수면과 주요 식생은 유지됩니다.</p>
+<div class="pair"><section><h2>원화</h2><img src="../../References/source_scene.png" alt="원화"></section><section><h2>수정 전</h2><img src="../v012/unreal_shallows.png" alt="v012"></section></div>
+<p>플레이 테스트는 사용자 확인 항목입니다. 추가 장식은 NoCollision이며 기존 바닥 높이와 공간 크기를 유지했습니다. 충돌 설정 검사가 실제 플레이 통과를 뜻하지는 않습니다.</p>
+<p>레벨: <code>/Game/Environment/OvergrownHall/TripoFull/Maps/L_OvergrownHall_TripoFull</code></p>
+<p><a href="STATUS.md">제작·재현·한계</a> · <a href="assets.json">메시 실측</a> · <a href="verification.json">저장 검사</a> · <a href="performance.json">에디터 렌더링 기록 (게임 FPS 아님)</a></p>
+<script>function show(after){document.getElementById('scene').src=after?'unreal_final_art.png':'../v012/unreal_shallows.png';document.getElementById('caption').textContent=after?'수정 후':'이전 v012'}</script></html>

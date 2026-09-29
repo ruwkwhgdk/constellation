@@ -1,0 +1,144 @@
+{
+  "map": "/Game/Environment/OvergrownHall/TripoFull/Maps/L_OvergrownHall_TripoFull",
+  "changed": [
+    "OH_FULL_06_0301",
+    "OH_FULL_06_0302",
+    "OH_FULL_07_0303",
+    "OH_FULL_06_0305",
+    "OH_FULL_06_0306",
+    "OH_FULL_07_0307",
+    "OH_FULL_06_0309",
+    "OH_FULL_06_0310",
+    "OH_FULL_07_0311",
+    "OH_FULL_06_0313",
+    "OH_FULL_06_0314",
+    "OH_FULL_07_0315",
+    "OH_FULL_02_0239",
+    "OH_FULL_02_0240",
+    "OH_FULL_02_0241",
+    "OH_FULL_02_0242",
+    "OH_FULL_02_0243",
+    "OH_FULL_02_0244",
+    "OH_FULL_02_0245",
+    "OH_FULL_02_0246",
+    "OH_FULL_02_0247",
+    "OH_FULL_02_0248",
+    "OH_FULL_02_0249",
+    "OH_FULL_02_0250",
+    "OH_FULL_02_0251",
+    "OH_FULL_02_0252",
+    "OH_FULL_02_0253",
+    "OH_FULL_09_0235",
+    "OH_FULL_09_0236",
+    "OH_FULL_09_0237",
+    "OH_FULL_09_0238",
+    "OH_FULL_05_0277",
+    "OH_FULL_11_0285",
+    "OH_FULL_11_0286",
+    "OH_FULL_11_0296",
+    "OH_FULL_11_0297",
+    "OH_Finish_FocalSun"
+  ],
+  "added": [
+    "OH_ReferenceProportion_BeamLeaves_00",
+    "OH_ReferenceProportion_BeamLeaves_01",
+    "OH_ReferenceProportion_BeamLeaves_02",
+    "OH_ReferenceProportion_BeamLeaves_03",
+    "OH_ReferenceProportion_UpperWall_-1_0",
+    "OH_ReferenceProportion_UpperWall_-1_1",
+    "OH_ReferenceProportion_UpperWall_-1_2",
+    "OH_ReferenceProportion_UpperWall_-1_3",
+    "OH_ReferenceProportion_UpperWall_1_0",
+    "OH_ReferenceProportion_UpperWall_1_1",
+    "OH_ReferenceProportion_UpperWall_1_2",
+    "OH_ReferenceProportion_UpperWall_1_3"
+  ],
+  "windows": [
+    {
+      "label": "OH_FULL_06_0301",
+      "center_x": 543.5,
+      "width_cm": 106.8,
+      "base_z": 315
+    },
+    {
+      "label": "OH_FULL_06_0302",
+      "center_x": 543.5,
+      "width_cm": 106.8,
+      "base_z": 825
+    },
+    {
+      "label": "OH_FULL_07_0303",
+      "center_x": 543.5,
+      "width_cm": 106.8,
+      "base_z": 969.9999999999999
+    },
+    {
+      "label": "OH_FULL_06_0305",
+      "center_x": 317.5,
+      "width_cm": 292.8,
+      "base_z": 315
+    },
+    {
+      "label": "OH_FULL_06_0306",
+      "center_x": 317.5,
+      "width_cm": 292.8,
+      "base_z": 825
+    },
+    {
+      "label": "OH_FULL_07_0307",
+      "center_x": 317.5,
+      "width_cm": 292.8,
+      "base_z": 969.9999999999999
+    },
+    {
+      "label": "OH_FULL_06_0309",
+      "center_x": 3.5,
+      "width_cm": 282.8,
+      "base_z": 315
+    },
+    {
+      "label": "OH_FULL_06_0310",
+      "center_x": 3.5,
+      "width_cm": 282.8,
+      "base_z": 825
+    },
+    {
+      "label": "OH_FULL_07_0311",
+      "center_x": 3.5,
+      "width_cm": 282.8,
+      "base_z": 969.9999999999999
+    },
+    {
+      "label": "OH_FULL_06_0313",
+      "center_x": -324.5,
+      "width_cm": 320.8,
+      "base_z": 315
+    },
+    {
+      "label": "OH_FULL_06_0314",
+      "center_x": -324.5,
+      "width_cm": 320.8,
+      "base_z": 825
+    },
+    {
+      "label": "OH_FULL_07_0315",
+      "center_x": -324.5,
+      "width_cm": 320.8,
+      "base_z": 969.9999999999999
+    }
+  ],
+  "boundaries_cm": [
+    610,
+    477,
+    158,
+    -151,
+    -498
+  ],
+  "side_members": [
+    "OH_FULL_11_0285",
+    "OH_FULL_11_0286",
+    "OH_FULL_11_0296",
+    "OH_FULL_11_0297"
+  ],
+  "playtest": false
+}

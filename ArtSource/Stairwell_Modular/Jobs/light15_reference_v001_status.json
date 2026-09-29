@@ -1,0 +1,28 @@
+{
+  "code": 0,
+  "data": {
+    "task_id": "0002b9e4-3375-43f6-8110-cb8e57e5c890",
+    "type": "generate_image",
+    "status": "success",
+    "input": {
+      "prompt": "Extract ONLY the fluorescent light fixture labeled 15 in the provided modular sheet. Create a high-resolution isolated product reference of exactly that ONE complete light fixture, with the same long rectangular weathered gray metal housing, white fluorescent tubes, end caps and mounting structure. Preserve the approved utilitarian subway design and proportions. Show the entire object large and centered, an informative three-quarter view showing the tube-facing side and housing depth. Uniform plain mid-gray background, soft neutral studio light, no floor or wall, no cast shadow, no frame, no numbers, no letters, no grid, no other objects. White tubes should be clearly defined, not glowing or overexposed; lighting will be added in the game engine. Do not add cables, bend the housing, or invent decorative elements. This image is the input for one low-poly game prop.",
+      "model_version": "gpt_image_2",
+      "file": {
+        "object": {
+          "bucket": "tripo-data",
+          "key": "tcli_36cdbe9c39e740a09a7460b758060782/20260923/0002b9e4-3375-43f6-8110-cb8e57e5c890/image.png"
+        },
+        "type": "png"
+      }
+    },
+    "output": {
+      "generated_image": "https://tripo-data.rg1.data.tripo3d.com/tcli_36cdbe9c39e740a09a7460b758060782/20260923/0002b9e4-3375-43f6-8110-cb8e57e5c890/generated_image.png?Key-Pair-Id=K1676C64NMVM2J&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly90cmlwby1kYXRhLnJnMS5kYXRhLnRyaXBvM2QuY29tL3RjbGlfMzZjZGJlOWMzOWU3NDBhMDlhNzQ2MGI3NTgwNjA3ODIvMjAyNjA5MjMvMDAwMmI5ZTQtMzM3NS00M2Y2LTgxMTAtY2I4ZTU3ZTVjODkwL2dlbmVyYXRlZF9pbWFnZS5wbmciLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTAyMDgwMDB9fX1dfQ__&Signature=FydBEtBBC8uIN4JziTB4oQyLiphpUxN64hWsAR1HGTOv7HZucLe4imQ3sUuL2bESnGvkLHsI9lTy3NclooY-1z~-W7H3KoilqW4x4CADGxQxp~XpogHZPozOso0IoG6MpjoFbXeOBJ8WmlXrEH~Vcdp7LeGeoVBSG5fSbJj6tWehX8y2ltNhKVNEiU~OUjSRbUAs75hB6iaoT5f3aKPhS1sgwP5el-A0hTpgntMyjofMGE7uUflTl-AUvXZJd2OIIAJaBAm3ubGXp~LR~qgb-VwIYn9qi5FKXYTHpH~rWu9zdzqSuy63pWMlvhnk4-A9-ji2VVYYAURP6reBl5KheA__"
+    },
+    "progress": 100,
+    "create_time": 1790181196,
+    "consumed_credit": 10,
+    "queuing_num": -1,
+    "running_left_time": -1,
+    "result": {}
+  }
+}

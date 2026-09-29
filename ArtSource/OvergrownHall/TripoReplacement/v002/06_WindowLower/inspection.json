@@ -1,0 +1,21 @@
+{
+  "id": "06",
+  "name": "WindowLower",
+  "mesh": "SM_OH_T_06_WindowLower",
+  "source_triangles": 23171,
+  "triangles": 11969,
+  "budget": 12000,
+  "dimensions_m": [
+    2.3001132011413574,
+    0.1402358114719391,
+    4.300261974334717
+  ],
+  "boundary_edges": 9,
+  "uv_layers": 1,
+  "edits": [],
+  "textures": [
+    "basecolor.png",
+    "normal.png",
+    "rm.png"
+  ]
+}

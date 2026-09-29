@@ -1,0 +1,23 @@
+{
+  "id": "08",
+  "name": "Mullion",
+  "mesh": "SM_OH_T_08_Mullion",
+  "source_triangles": 28818,
+  "triangles": 1970,
+  "budget": 2000,
+  "dimensions_m": [
+    0.07006430625915527,
+    0.09967095404863358,
+    3.000025987625122
+  ],
+  "boundary_edges": 0,
+  "uv_layers": 1,
+  "edits": [
+    "ornamental end plates removed"
+  ],
+  "textures": [
+    "basecolor.png",
+    "normal.png",
+    "rm.png"
+  ]
+}

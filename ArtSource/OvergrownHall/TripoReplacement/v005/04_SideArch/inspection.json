@@ -1,0 +1,24 @@
+{
+  "id": "04",
+  "name": "SideArch",
+  "mesh": "SM_OH_Clean_04_SideArch",
+  "source": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OvergrownHall\\TripoReplacement\\v002\\04_SideArch\\prepared.blend",
+  "source_triangles": 11970,
+  "triangles": 1608,
+  "budget": 12000,
+  "dimensions_m": [
+    3.699000120162964,
+    0.3993445038795471,
+    7.098957061767578
+  ],
+  "boundary_edges": 0,
+  "basecolor": "basecolor.png",
+  "organic": false,
+  "edits": [
+    "source-guided hard-surface retopology",
+    "straight edges and planar faces",
+    "small 2-segment bevels",
+    "Tripo base color reprojected to new UV",
+    "normal map intentionally omitted: old tangent basis is invalid"
+  ]
+}

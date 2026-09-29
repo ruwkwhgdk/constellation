@@ -1,0 +1,486 @@
+[
+  {
+    "id": "01",
+    "name": "ColumnBase",
+    "mesh": "SM_OH_Clean_01_ColumnBase",
+    "source": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OvergrownHall\\TripoReplacement\\v002\\01_ColumnBase\\prepared.blend",
+    "source_triangles": 7970,
+    "triangles": 756,
+    "budget": 8000,
+    "dimensions_m": [
+      0.8002166748046875,
+      0.8501749038696289,
+      1.199825644493103
+    ],
+    "boundary_edges": 0,
+    "basecolor": "basecolor.png",
+    "organic": false,
+    "edits": [
+      "source-guided hard-surface retopology",
+      "straight edges and planar faces",
+      "small 2-segment bevels",
+      "Tripo base color reprojected to new UV",
+      "normal map intentionally omitted: old tangent basis is invalid"
+    ]
+  },
+  {
+    "id": "03",
+    "name": "ColumnCapital",
+    "mesh": "SM_OH_Clean_03_ColumnCapital",
+    "source": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OvergrownHall\\TripoReplacement\\v002\\03_ColumnCapital\\prepared.blend",
+    "source_triangles": 7970,
+    "triangles": 432,
+    "budget": 8000,
+    "dimensions_m": [
+      0.9499752521514893,
+      0.9999603629112244,
+      0.4998127520084381
+    ],
+    "boundary_edges": 0,
+    "basecolor": "basecolor.png",
+    "organic": false,
+    "edits": [
+      "source-guided hard-surface retopology",
+      "straight edges and planar faces",
+      "small 2-segment bevels",
+      "Tripo base color reprojected to new UV",
+      "normal map intentionally omitted: old tangent basis is invalid"
+    ]
+  },
+  {
+    "id": "04",
+    "name": "SideArch",
+    "mesh": "SM_OH_Clean_04_SideArch",
+    "source": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OvergrownHall\\TripoReplacement\\v002\\04_SideArch\\prepared.blend",
+    "source_triangles": 11970,
+    "triangles": 1608,
+    "budget": 12000,
+    "dimensions_m": [
+      3.699000120162964,
+      0.3993445038795471,
+      7.098957061767578
+    ],
+    "boundary_edges": 0,
+    "basecolor": "basecolor.png",
+    "organic": false,
+    "edits": [
+      "source-guided hard-surface retopology",
+      "straight edges and planar faces",
+      "small 2-segment bevels",
+      "Tripo base color reprojected to new UV",
+      "normal map intentionally omitted: old tangent basis is invalid"
+    ]
+  },
+  {
+    "id": "05",
+    "name": "Wall",
+    "mesh": "SM_OH_Clean_05_Wall",
+    "source": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OvergrownHall\\TripoReplacement\\v002\\05_Wall\\prepared.blend",
+    "source_triangles": 5969,
+    "triangles": 324,
+    "budget": 6000,
+    "dimensions_m": [
+      3.0009145736694336,
+      0.4016653895378113,
+      1.497518539428711
+    ],
+    "boundary_edges": 0,
+    "basecolor": "basecolor.png",
+    "organic": false,
+    "edits": [
+      "source-guided hard-surface retopology",
+      "straight edges and planar faces",
+      "small 2-segment bevels",
+      "Tripo base color reprojected to new UV",
+      "normal map intentionally omitted: old tangent basis is invalid"
+    ]
+  },
+  {
+    "id": "06",
+    "name": "WindowLower",
+    "mesh": "SM_OH_Clean_06_WindowLower",
+    "source": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OvergrownHall\\TripoReplacement\\v002\\06_WindowLower\\prepared.blend",
+    "source_triangles": 11969,
+    "triangles": 1080,
+    "budget": 12000,
+    "dimensions_m": [
+      2.3001132011413574,
+      0.1402358114719391,
+      4.300261974334717
+    ],
+    "boundary_edges": 0,
+    "basecolor": "basecolor.png",
+    "organic": false,
+    "edits": [
+      "source-guided hard-surface retopology",
+      "straight edges and planar faces",
+      "small 2-segment bevels",
+      "Tripo base color reprojected to new UV",
+      "normal map intentionally omitted: old tangent basis is invalid"
+    ]
+  },
+  {
+    "id": "07",
+    "name": "WindowArch",
+    "mesh": "SM_OH_Clean_07_WindowArch",
+    "source": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OvergrownHall\\TripoReplacement\\v002\\07_WindowArch\\prepared.blend",
+    "source_triangles": 7970,
+    "triangles": 1284,
+    "budget": 8000,
+    "dimensions_m": [
+      2.3000760078430176,
+      0.13981252908706665,
+      1.2005996704101562
+    ],
+    "boundary_edges": 0,
+    "basecolor": "basecolor.png",
+    "organic": false,
+    "edits": [
+      "source-guided hard-surface retopology",
+      "straight edges and planar faces",
+      "small 2-segment bevels",
+      "Tripo base color reprojected to new UV",
+      "normal map intentionally omitted: old tangent basis is invalid"
+    ]
+  },
+  {
+    "id": "08",
+    "name": "Mullion",
+    "mesh": "SM_OH_Clean_08_Mullion",
+    "source": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OvergrownHall\\TripoReplacement\\v002\\08_Mullion\\prepared.blend",
+    "source_triangles": 1970,
+    "triangles": 108,
+    "budget": 2000,
+    "dimensions_m": [
+      0.07006430625915527,
+      0.09967095404863358,
+      3.000025987625122
+    ],
+    "boundary_edges": 0,
+    "basecolor": "basecolor.png",
+    "organic": false,
+    "edits": [
+      "source-guided hard-surface retopology",
+      "straight edges and planar faces",
+      "small 2-segment bevels",
+      "Tripo base color reprojected to new UV",
+      "normal map intentionally omitted: old tangent basis is invalid"
+    ]
+  },
+  {
+    "id": "09",
+    "name": "Beam",
+    "mesh": "SM_OH_Clean_09_Beam",
+    "source": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OvergrownHall\\TripoReplacement\\v002\\09_Beam\\prepared.blend",
+    "source_triangles": 5969,
+    "triangles": 108,
+    "budget": 6000,
+    "dimensions_m": [
+      4.000563144683838,
+      0.5004537105560303,
+      0.4001395106315613
+    ],
+    "boundary_edges": 0,
+    "basecolor": "basecolor.png",
+    "organic": false,
+    "edits": [
+      "source-guided hard-surface retopology",
+      "straight edges and planar faces",
+      "small 2-segment bevels",
+      "Tripo base color reprojected to new UV",
+      "normal map intentionally omitted: old tangent basis is invalid"
+    ]
+  },
+  {
+    "id": "10",
+    "name": "RoofTruss",
+    "mesh": "SM_OH_Clean_10_RoofTruss",
+    "source": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OvergrownHall\\TripoReplacement\\v002\\10_RoofTruss\\prepared.blend",
+    "source_triangles": 11970,
+    "triangles": 432,
+    "budget": 12000,
+    "dimensions_m": [
+      12.699999809265137,
+      0.21995475888252258,
+      1.9999349117279053
+    ],
+    "boundary_edges": 0,
+    "basecolor": "basecolor.png",
+    "organic": false,
+    "edits": [
+      "source-guided hard-surface retopology",
+      "straight edges and planar faces",
+      "small 2-segment bevels",
+      "Tripo base color reprojected to new UV",
+      "normal map intentionally omitted: old tangent basis is invalid"
+    ]
+  },
+  {
+    "id": "11",
+    "name": "BrokenBeam",
+    "mesh": "SM_OH_Clean_11_BrokenBeam",
+    "source": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OvergrownHall\\TripoReplacement\\v002\\11_BrokenBeam\\prepared.blend",
+    "source_triangles": 5969,
+    "triangles": 108,
+    "budget": 6000,
+    "dimensions_m": [
+      1.500199556350708,
+      0.29972293972969055,
+      0.35031092166900635
+    ],
+    "boundary_edges": 0,
+    "basecolor": "basecolor.png",
+    "organic": false,
+    "edits": [
+      "source-guided hard-surface retopology",
+      "straight edges and planar faces",
+      "small 2-segment bevels",
+      "Tripo base color reprojected to new UV",
+      "normal map intentionally omitted: old tangent basis is invalid"
+    ]
+  },
+  {
+    "id": "12",
+    "name": "SmallArch",
+    "mesh": "SM_OH_Clean_12_SmallArch",
+    "source": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OvergrownHall\\TripoReplacement\\v002\\12_SmallArch\\prepared.blend",
+    "source_triangles": 9970,
+    "triangles": 1500,
+    "budget": 10000,
+    "dimensions_m": [
+      1.6986026763916016,
+      0.5,
+      2.1915249824523926
+    ],
+    "boundary_edges": 0,
+    "basecolor": "basecolor.png",
+    "organic": false,
+    "edits": [
+      "source-guided hard-surface retopology",
+      "straight edges and planar faces",
+      "small 2-segment bevels",
+      "Tripo base color reprojected to new UV",
+      "normal map intentionally omitted: old tangent basis is invalid"
+    ]
+  },
+  {
+    "id": "13",
+    "name": "Floor",
+    "mesh": "SM_OH_Clean_13_Floor",
+    "source": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OvergrownHall\\TripoReplacement\\v002\\13_Floor\\prepared.blend",
+    "source_triangles": 3969,
+    "triangles": 432,
+    "budget": 4000,
+    "dimensions_m": [
+      2.001382350921631,
+      1.9994826316833496,
+      0.15033036470413208
+    ],
+    "boundary_edges": 0,
+    "basecolor": "basecolor.png",
+    "organic": false,
+    "edits": [
+      "source-guided hard-surface retopology",
+      "straight edges and planar faces",
+      "small 2-segment bevels",
+      "Tripo base color reprojected to new UV",
+      "normal map intentionally omitted: old tangent basis is invalid"
+    ]
+  },
+  {
+    "id": "14",
+    "name": "Bench",
+    "mesh": "SM_OH_Clean_14_Bench",
+    "source": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OvergrownHall\\TripoReplacement\\v002\\14_Bench\\prepared.blend",
+    "source_triangles": 11970,
+    "triangles": 1512,
+    "budget": 12000,
+    "dimensions_m": [
+      1.799593448638916,
+      0.6499999761581421,
+      0.899449348449707
+    ],
+    "boundary_edges": 0,
+    "basecolor": "basecolor.png",
+    "organic": false,
+    "edits": [
+      "source-guided hard-surface retopology",
+      "straight edges and planar faces",
+      "small 2-segment bevels",
+      "Tripo base color reprojected to new UV",
+      "normal map intentionally omitted: old tangent basis is invalid"
+    ]
+  },
+  {
+    "id": "15",
+    "name": "Rubble",
+    "mesh": "SM_OH_Clean_15_Rubble",
+    "source": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OvergrownHall\\TripoReplacement\\v002\\15_Rubble\\prepared.blend",
+    "source_triangles": 7970,
+    "triangles": 7970,
+    "budget": 8000,
+    "dimensions_m": [
+      1.200389802455902,
+      0.9998955726623535,
+      0.4500500828726217
+    ],
+    "boundary_edges": 16,
+    "basecolor": null,
+    "organic": true,
+    "edits": [
+      "bounded local spike smoothing; original topology and UV retained"
+    ]
+  },
+  {
+    "id": "16",
+    "name": "Grass",
+    "mesh": "SM_OH_Clean_16_Grass",
+    "source": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OvergrownHall\\TripoReplacement\\v002\\16_Grass\\prepared.blend",
+    "source_triangles": 8969,
+    "triangles": 8969,
+    "budget": 9000,
+    "dimensions_m": [
+      0.6845497190952301,
+      0.6988222002983093,
+      0.4464829553908203
+    ],
+    "boundary_edges": 9,
+    "basecolor": null,
+    "organic": true,
+    "edits": [
+      "bounded local spike smoothing; original topology and UV retained"
+    ]
+  },
+  {
+    "id": "17",
+    "name": "Shrub",
+    "mesh": "SM_OH_Clean_17_Shrub",
+    "source": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OvergrownHall\\TripoReplacement\\v002\\17_Shrub\\prepared.blend",
+    "source_triangles": 14970,
+    "triangles": 14970,
+    "budget": 15000,
+    "dimensions_m": [
+      1.446337878704071,
+      1.2566995024681091,
+      1.190655590267852
+    ],
+    "boundary_edges": 38,
+    "basecolor": null,
+    "organic": true,
+    "edits": [
+      "bounded local spike smoothing; original topology and UV retained"
+    ]
+  },
+  {
+    "id": "18",
+    "name": "Vine",
+    "mesh": "SM_OH_Clean_18_Vine",
+    "source": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OvergrownHall\\TripoReplacement\\v002\\18_Vine\\prepared.blend",
+    "source_triangles": 11969,
+    "triangles": 11969,
+    "budget": 12000,
+    "dimensions_m": [
+      0.6502393484115601,
+      0.15041366964578629,
+      1.999611932595144
+    ],
+    "boundary_edges": 3,
+    "basecolor": null,
+    "organic": true,
+    "edits": [
+      "bounded local spike smoothing; original topology and UV retained"
+    ]
+  },
+  {
+    "id": "25",
+    "name": "Railing",
+    "mesh": "SM_OH_Clean_25_Railing",
+    "source": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OvergrownHall\\TripoReplacement\\v002\\25_Railing\\prepared.blend",
+    "source_triangles": 7969,
+    "triangles": 864,
+    "budget": 8000,
+    "dimensions_m": [
+      1.9999477863311768,
+      0.11994676291942596,
+      1.0001307725906372
+    ],
+    "boundary_edges": 0,
+    "basecolor": "basecolor.png",
+    "organic": false,
+    "edits": [
+      "source-guided hard-surface retopology",
+      "straight edges and planar faces",
+      "small 2-segment bevels",
+      "Tripo base color reprojected to new UV",
+      "normal map intentionally omitted: old tangent basis is invalid"
+    ]
+  },
+  {
+    "id": "26",
+    "name": "RoofPanel",
+    "mesh": "SM_OH_Clean_26_RoofPanel",
+    "source": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OvergrownHall\\TripoReplacement\\v002\\26_RoofPanel\\prepared.blend",
+    "source_triangles": 6969,
+    "triangles": 648,
+    "budget": 7000,
+    "dimensions_m": [
+      2.9984421730041504,
+      2.0,
+      0.15007829666137695
+    ],
+    "boundary_edges": 0,
+    "basecolor": "basecolor.png",
+    "organic": false,
+    "edits": [
+      "source-guided hard-surface retopology",
+      "straight edges and planar faces",
+      "small 2-segment bevels",
+      "Tripo base color reprojected to new UV",
+      "normal map intentionally omitted: old tangent basis is invalid"
+    ]
+  },
+  {
+    "id": "02",
+    "name": "Pillar",
+    "mesh": "SM_OH_Clean_02_Pillar",
+    "source": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OvergrownHall\\TripoReplacement\\v001\\Pillar\\prepared.blend",
+    "source_triangles": 4255,
+    "triangles": 108,
+    "budget": 12000,
+    "dimensions_m": [
+      0.6499999761581421,
+      0.6499999761581421,
+      3.0
+    ],
+    "boundary_edges": 0,
+    "basecolor": "basecolor.png",
+    "organic": false,
+    "edits": [
+      "source-guided hard-surface retopology",
+      "straight edges and planar faces",
+      "small 2-segment bevels",
+      "Tripo base color reprojected to new UV",
+      "normal map intentionally omitted: old tangent basis is invalid"
+    ]
+  },
+  {
+    "id": "19",
+    "name": "Tree",
+    "mesh": "SM_OH_Clean_19_Tree",
+    "source": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OvergrownHall\\TripoReplacement\\v001\\Tree\\prepared.blend",
+    "source_triangles": 29879,
+    "triangles": 29879,
+    "budget": 30000,
+    "dimensions_m": [
+      5.210340976715088,
+      4.571686267852783,
+      6.000000476837158
+    ],
+    "boundary_edges": 3,
+    "basecolor": null,
+    "organic": true,
+    "edits": [
+      "bounded local spike smoothing; original topology and UV retained"
+    ]
+  }
+]

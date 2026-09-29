@@ -1,0 +1,3065 @@
+{
+  "OH_FULL_17_0000": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0001": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0002": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0003": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0004": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0005": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0006": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0007": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0008": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0009": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0010": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0011": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0012": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0013": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0014": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0015": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0016": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0017": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0018": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0019": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0020": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0021": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0022": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0023": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0024": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0025": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0026": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0027": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0028": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0029": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0030": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0031": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0032": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0033": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0034": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0035": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0036": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0037": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0038": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0039": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0040": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0041": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0042": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0043": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0044": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0045": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0046": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0047": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0048": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0049": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0050": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0051": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0052": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0053": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0054": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_16_0055": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_16_Grass.SM_OH_Clean_16_Grass",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_16.M_OH_Illustrated_16"
+    ]
+  },
+  "OH_FULL_16_0056": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_16_Grass.SM_OH_Clean_16_Grass",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_16.M_OH_Illustrated_16"
+    ]
+  },
+  "OH_FULL_16_0057": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_16_Grass.SM_OH_Clean_16_Grass",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_16.M_OH_Illustrated_16"
+    ]
+  },
+  "OH_FULL_16_0058": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_16_Grass.SM_OH_Clean_16_Grass",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_16.M_OH_Illustrated_16"
+    ]
+  },
+  "OH_FULL_16_0059": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_16_Grass.SM_OH_Clean_16_Grass",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_16.M_OH_Illustrated_16"
+    ]
+  },
+  "OH_FULL_16_0060": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_16_Grass.SM_OH_Clean_16_Grass",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_16.M_OH_Illustrated_16"
+    ]
+  },
+  "OH_FULL_16_0061": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_16_Grass.SM_OH_Clean_16_Grass",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_16.M_OH_Illustrated_16"
+    ]
+  },
+  "OH_FULL_16_0062": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_16_Grass.SM_OH_Clean_16_Grass",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_16.M_OH_Illustrated_16"
+    ]
+  },
+  "OH_FULL_16_0063": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_16_Grass.SM_OH_Clean_16_Grass",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_16.M_OH_Illustrated_16"
+    ]
+  },
+  "OH_FULL_16_0064": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_16_Grass.SM_OH_Clean_16_Grass",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_16.M_OH_Illustrated_16"
+    ]
+  },
+  "OH_FULL_16_0065": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_16_Grass.SM_OH_Clean_16_Grass",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_16.M_OH_Illustrated_16"
+    ]
+  },
+  "OH_FULL_16_0066": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_16_Grass.SM_OH_Clean_16_Grass",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_16.M_OH_Illustrated_16"
+    ]
+  },
+  "OH_FULL_16_0067": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_16_Grass.SM_OH_Clean_16_Grass",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_16.M_OH_Illustrated_16"
+    ]
+  },
+  "OH_FULL_16_0068": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_16_Grass.SM_OH_Clean_16_Grass",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_16.M_OH_Illustrated_16"
+    ]
+  },
+  "OH_FULL_16_0069": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_16_Grass.SM_OH_Clean_16_Grass",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_16.M_OH_Illustrated_16"
+    ]
+  },
+  "OH_FULL_16_0070": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_16_Grass.SM_OH_Clean_16_Grass",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_16.M_OH_Illustrated_16"
+    ]
+  },
+  "OH_FULL_16_0071": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_16_Grass.SM_OH_Clean_16_Grass",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_16.M_OH_Illustrated_16"
+    ]
+  },
+  "OH_FULL_16_0072": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_16_Grass.SM_OH_Clean_16_Grass",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_16.M_OH_Illustrated_16"
+    ]
+  },
+  "OH_FULL_16_0073": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_16_Grass.SM_OH_Clean_16_Grass",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_16.M_OH_Illustrated_16"
+    ]
+  },
+  "OH_FULL_16_0074": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_16_Grass.SM_OH_Clean_16_Grass",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_16.M_OH_Illustrated_16"
+    ]
+  },
+  "OH_FULL_16_0075": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_16_Grass.SM_OH_Clean_16_Grass",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_16.M_OH_Illustrated_16"
+    ]
+  },
+  "OH_FULL_16_0076": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_16_Grass.SM_OH_Clean_16_Grass",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_16.M_OH_Illustrated_16"
+    ]
+  },
+  "OH_FULL_16_0077": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_16_Grass.SM_OH_Clean_16_Grass",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_16.M_OH_Illustrated_16"
+    ]
+  },
+  "OH_FULL_16_0078": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_16_Grass.SM_OH_Clean_16_Grass",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_16.M_OH_Illustrated_16"
+    ]
+  },
+  "OH_FULL_18_0079": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18"
+    ]
+  },
+  "OH_FULL_18_0080": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18"
+    ]
+  },
+  "OH_FULL_18_0081": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18"
+    ]
+  },
+  "OH_FULL_18_0082": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18"
+    ]
+  },
+  "OH_FULL_18_0083": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18"
+    ]
+  },
+  "OH_FULL_18_0084": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18"
+    ]
+  },
+  "OH_FULL_18_0085": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18"
+    ]
+  },
+  "OH_FULL_18_0086": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18"
+    ]
+  },
+  "OH_FULL_18_0087": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18"
+    ]
+  },
+  "OH_FULL_18_0088": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18"
+    ]
+  },
+  "OH_FULL_18_0089": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18"
+    ]
+  },
+  "OH_FULL_18_0090": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18"
+    ]
+  },
+  "OH_FULL_16_0091": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_16_Grass.SM_OH_Clean_16_Grass",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_16.M_OH_Illustrated_16"
+    ]
+  },
+  "OH_FULL_16_0092": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_16_Grass.SM_OH_Clean_16_Grass",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_16.M_OH_Illustrated_16"
+    ]
+  },
+  "OH_FULL_16_0093": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_16_Grass.SM_OH_Clean_16_Grass",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_16.M_OH_Illustrated_16"
+    ]
+  },
+  "OH_FULL_16_0094": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_16_Grass.SM_OH_Clean_16_Grass",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_16.M_OH_Illustrated_16"
+    ]
+  },
+  "OH_FULL_16_0095": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_16_Grass.SM_OH_Clean_16_Grass",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_16.M_OH_Illustrated_16"
+    ]
+  },
+  "OH_FULL_16_0096": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_16_Grass.SM_OH_Clean_16_Grass",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_16.M_OH_Illustrated_16"
+    ]
+  },
+  "OH_FULL_16_0097": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_16_Grass.SM_OH_Clean_16_Grass",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_16.M_OH_Illustrated_16"
+    ]
+  },
+  "OH_FULL_16_0098": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_16_Grass.SM_OH_Clean_16_Grass",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_16.M_OH_Illustrated_16"
+    ]
+  },
+  "OH_FULL_16_0099": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_16_Grass.SM_OH_Clean_16_Grass",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_16.M_OH_Illustrated_16"
+    ]
+  },
+  "OH_FULL_16_0100": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_16_Grass.SM_OH_Clean_16_Grass",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_16.M_OH_Illustrated_16"
+    ]
+  },
+  "OH_FULL_16_0101": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_16_Grass.SM_OH_Clean_16_Grass",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_16.M_OH_Illustrated_16"
+    ]
+  },
+  "OH_FULL_16_0102": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_16_Grass.SM_OH_Clean_16_Grass",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_16.M_OH_Illustrated_16"
+    ]
+  },
+  "OH_FULL_16_0103": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_16_Grass.SM_OH_Clean_16_Grass",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_16.M_OH_Illustrated_16"
+    ]
+  },
+  "OH_FULL_16_0104": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_16_Grass.SM_OH_Clean_16_Grass",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_16.M_OH_Illustrated_16"
+    ]
+  },
+  "OH_FULL_16_0105": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_16_Grass.SM_OH_Clean_16_Grass",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_16.M_OH_Illustrated_16"
+    ]
+  },
+  "OH_FULL_16_0106": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_16_Grass.SM_OH_Clean_16_Grass",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_16.M_OH_Illustrated_16"
+    ]
+  },
+  "OH_FULL_16_0107": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_16_Grass.SM_OH_Clean_16_Grass",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_16.M_OH_Illustrated_16"
+    ]
+  },
+  "OH_FULL_16_0108": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_16_Grass.SM_OH_Clean_16_Grass",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_16.M_OH_Illustrated_16"
+    ]
+  },
+  "OH_FULL_16_0109": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_16_Grass.SM_OH_Clean_16_Grass",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_16.M_OH_Illustrated_16"
+    ]
+  },
+  "OH_FULL_16_0110": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_16_Grass.SM_OH_Clean_16_Grass",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_16.M_OH_Illustrated_16"
+    ]
+  },
+  "OH_FULL_16_0111": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_16_Grass.SM_OH_Clean_16_Grass",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_16.M_OH_Illustrated_16"
+    ]
+  },
+  "OH_FULL_16_0112": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_16_Grass.SM_OH_Clean_16_Grass",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_16.M_OH_Illustrated_16"
+    ]
+  },
+  "OH_FULL_16_0113": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_16_Grass.SM_OH_Clean_16_Grass",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_16.M_OH_Illustrated_16"
+    ]
+  },
+  "OH_FULL_16_0114": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_16_Grass.SM_OH_Clean_16_Grass",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_16.M_OH_Illustrated_16"
+    ]
+  },
+  "OH_FULL_18_0115": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18"
+    ]
+  },
+  "OH_FULL_18_0116": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18"
+    ]
+  },
+  "OH_FULL_18_0117": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18"
+    ]
+  },
+  "OH_FULL_18_0118": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18"
+    ]
+  },
+  "OH_FULL_18_0119": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18"
+    ]
+  },
+  "OH_FULL_18_0120": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18"
+    ]
+  },
+  "OH_FULL_18_0121": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18"
+    ]
+  },
+  "OH_FULL_18_0122": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18"
+    ]
+  },
+  "OH_FULL_18_0123": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18"
+    ]
+  },
+  "OH_FULL_18_0124": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18"
+    ]
+  },
+  "OH_FULL_18_0125": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18"
+    ]
+  },
+  "OH_FULL_18_0126": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18"
+    ]
+  },
+  "OH_FULL_17_0127": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0128": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0129": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0130": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0131": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0132": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0133": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0134": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0135": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0136": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0137": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0138": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0139": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_17_0140": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_17.M_OH_Illustrated_17"
+    ]
+  },
+  "OH_FULL_05_0141": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_05_Wall.SM_OH_Clean_05_Wall",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_05.M_OH_Weathered_05"
+    ]
+  },
+  "OH_FULL_05_0142": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Chipped_05.SM_OH_Chipped_05",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_05.M_OH_Weathered_05"
+    ]
+  },
+  "OH_FULL_05_0143": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_05_Wall.SM_OH_Clean_05_Wall",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_05.M_OH_Weathered_05"
+    ]
+  },
+  "OH_FULL_05_0144": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_05_Wall.SM_OH_Clean_05_Wall",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_05.M_OH_Weathered_05"
+    ]
+  },
+  "OH_FULL_05_0145": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_05_Wall.SM_OH_Clean_05_Wall",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_05.M_OH_Weathered_05"
+    ]
+  },
+  "OH_FULL_05_0146": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Chipped_05.SM_OH_Chipped_05",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_05.M_OH_Weathered_05"
+    ]
+  },
+  "OH_FULL_05_0147": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_05_Wall.SM_OH_Clean_05_Wall",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_05.M_OH_Weathered_05"
+    ]
+  },
+  "OH_FULL_09_0148": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_09_Beam.SM_OH_Clean_09_Beam",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_09.M_OH_Weathered_09"
+    ]
+  },
+  "OH_FULL_09_0149": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_09_Beam.SM_OH_Clean_09_Beam",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_09.M_OH_Weathered_09"
+    ]
+  },
+  "OH_FULL_09_0150": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_09_Beam.SM_OH_Clean_09_Beam",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_09.M_OH_Weathered_09"
+    ]
+  },
+  "OH_FULL_09_0151": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_09_Beam.SM_OH_Clean_09_Beam",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_09.M_OH_Weathered_09"
+    ]
+  },
+  "OH_FULL_09_0152": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_09_Beam.SM_OH_Clean_09_Beam",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_09.M_OH_Weathered_09"
+    ]
+  },
+  "OH_FULL_01_0153": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_01_ColumnBase.SM_OH_Clean_01_ColumnBase",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_01.M_OH_Weathered_01"
+    ]
+  },
+  "OH_FULL_02_0154": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_02_0155": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_02_0156": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_03_0157": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_03_ColumnCapital.SM_OH_Clean_03_ColumnCapital",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_03.M_OH_Weathered_03"
+    ]
+  },
+  "OH_FULL_02_0158": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_01_0159": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_01_ColumnBase.SM_OH_Clean_01_ColumnBase",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_01.M_OH_Weathered_01"
+    ]
+  },
+  "OH_FULL_02_0160": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_02_0161": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_02_0162": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_03_0163": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_03_ColumnCapital.SM_OH_Clean_03_ColumnCapital",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_03.M_OH_Weathered_03"
+    ]
+  },
+  "OH_FULL_02_0164": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_01_0165": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_01_ColumnBase.SM_OH_Clean_01_ColumnBase",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_01.M_OH_Weathered_01"
+    ]
+  },
+  "OH_FULL_02_0166": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_02_0167": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_02_0168": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_03_0169": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_03_ColumnCapital.SM_OH_Clean_03_ColumnCapital",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_03.M_OH_Weathered_03"
+    ]
+  },
+  "OH_FULL_02_0170": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_01_0171": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_01_ColumnBase.SM_OH_Clean_01_ColumnBase",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_01.M_OH_Weathered_01"
+    ]
+  },
+  "OH_FULL_02_0172": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_02_0173": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_02_0174": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_03_0175": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_03_ColumnCapital.SM_OH_Clean_03_ColumnCapital",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_03.M_OH_Weathered_03"
+    ]
+  },
+  "OH_FULL_02_0176": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_01_0177": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_01_ColumnBase.SM_OH_Clean_01_ColumnBase",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_01.M_OH_Weathered_01"
+    ]
+  },
+  "OH_FULL_02_0178": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_02_0179": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_02_0180": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_03_0181": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_03_ColumnCapital.SM_OH_Clean_03_ColumnCapital",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_03.M_OH_Weathered_03"
+    ]
+  },
+  "OH_FULL_02_0182": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_05_0183": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_05_Wall.SM_OH_Clean_05_Wall",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_05.M_OH_Weathered_05"
+    ]
+  },
+  "OH_FULL_05_0184": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_05_Wall.SM_OH_Clean_05_Wall",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_05.M_OH_Weathered_05"
+    ]
+  },
+  "OH_FULL_05_0185": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Chipped_05.SM_OH_Chipped_05",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_05.M_OH_Weathered_05"
+    ]
+  },
+  "OH_FULL_05_0186": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_05_Wall.SM_OH_Clean_05_Wall",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_05.M_OH_Weathered_05"
+    ]
+  },
+  "OH_FULL_05_0187": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_05_Wall.SM_OH_Clean_05_Wall",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_05.M_OH_Weathered_05"
+    ]
+  },
+  "OH_FULL_05_0188": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_05_Wall.SM_OH_Clean_05_Wall",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_05.M_OH_Weathered_05"
+    ]
+  },
+  "OH_FULL_05_0189": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Chipped_05.SM_OH_Chipped_05",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_05.M_OH_Weathered_05"
+    ]
+  },
+  "OH_FULL_09_0190": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_09_Beam.SM_OH_Clean_09_Beam",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_09.M_OH_Weathered_09"
+    ]
+  },
+  "OH_FULL_09_0191": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_09_Beam.SM_OH_Clean_09_Beam",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_09.M_OH_Weathered_09"
+    ]
+  },
+  "OH_FULL_09_0192": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_09_Beam.SM_OH_Clean_09_Beam",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_09.M_OH_Weathered_09"
+    ]
+  },
+  "OH_FULL_09_0193": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_09_Beam.SM_OH_Clean_09_Beam",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_09.M_OH_Weathered_09"
+    ]
+  },
+  "OH_FULL_09_0194": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_09_Beam.SM_OH_Clean_09_Beam",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_09.M_OH_Weathered_09"
+    ]
+  },
+  "OH_FULL_01_0195": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_01_ColumnBase.SM_OH_Clean_01_ColumnBase",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_01.M_OH_Weathered_01"
+    ]
+  },
+  "OH_FULL_02_0196": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_02_0197": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_02_0198": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_03_0199": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_03_ColumnCapital.SM_OH_Clean_03_ColumnCapital",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_03.M_OH_Weathered_03"
+    ]
+  },
+  "OH_FULL_02_0200": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_01_0201": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_01_ColumnBase.SM_OH_Clean_01_ColumnBase",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_01.M_OH_Weathered_01"
+    ]
+  },
+  "OH_FULL_02_0202": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_02_0203": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_02_0204": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_03_0205": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_03_ColumnCapital.SM_OH_Clean_03_ColumnCapital",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_03.M_OH_Weathered_03"
+    ]
+  },
+  "OH_FULL_02_0206": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_01_0207": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_01_ColumnBase.SM_OH_Clean_01_ColumnBase",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_01.M_OH_Weathered_01"
+    ]
+  },
+  "OH_FULL_02_0208": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_02_0209": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_02_0210": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_03_0211": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_03_ColumnCapital.SM_OH_Clean_03_ColumnCapital",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_03.M_OH_Weathered_03"
+    ]
+  },
+  "OH_FULL_02_0212": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_01_0213": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_01_ColumnBase.SM_OH_Clean_01_ColumnBase",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_01.M_OH_Weathered_01"
+    ]
+  },
+  "OH_FULL_02_0214": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_02_0215": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_02_0216": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_03_0217": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_03_ColumnCapital.SM_OH_Clean_03_ColumnCapital",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_03.M_OH_Weathered_03"
+    ]
+  },
+  "OH_FULL_02_0218": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_01_0219": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_01_ColumnBase.SM_OH_Clean_01_ColumnBase",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_01.M_OH_Weathered_01"
+    ]
+  },
+  "OH_FULL_02_0220": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_02_0221": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_02_0222": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_03_0223": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_03_ColumnCapital.SM_OH_Clean_03_ColumnCapital",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_03.M_OH_Weathered_03"
+    ]
+  },
+  "OH_FULL_02_0224": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_05_0225": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_05_Wall.SM_OH_Clean_05_Wall",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_05.M_OH_Weathered_05"
+    ]
+  },
+  "OH_FULL_05_0226": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_05_Wall.SM_OH_Clean_05_Wall",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_05.M_OH_Weathered_05"
+    ]
+  },
+  "OH_FULL_05_0227": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_05_Wall.SM_OH_Clean_05_Wall",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_05.M_OH_Weathered_05"
+    ]
+  },
+  "OH_FULL_05_0228": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Chipped_05.SM_OH_Chipped_05",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_05.M_OH_Weathered_05"
+    ]
+  },
+  "OH_FULL_05_0229": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_05_Wall.SM_OH_Clean_05_Wall",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_05.M_OH_Weathered_05"
+    ]
+  },
+  "OH_FULL_05_0230": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_05_Wall.SM_OH_Clean_05_Wall",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_05.M_OH_Weathered_05"
+    ]
+  },
+  "OH_FULL_09_0231": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_09_Beam.SM_OH_Clean_09_Beam",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_09.M_OH_Weathered_09"
+    ]
+  },
+  "OH_FULL_09_0232": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_09_Beam.SM_OH_Clean_09_Beam",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_09.M_OH_Weathered_09"
+    ]
+  },
+  "OH_FULL_09_0233": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_09_Beam.SM_OH_Clean_09_Beam",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_09.M_OH_Weathered_09"
+    ]
+  },
+  "OH_FULL_09_0234": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_09_Beam.SM_OH_Clean_09_Beam",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_09.M_OH_Weathered_09"
+    ]
+  },
+  "OH_FULL_09_0235": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_09_Beam.SM_OH_Clean_09_Beam",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_09.M_OH_Weathered_09"
+    ]
+  },
+  "OH_FULL_09_0236": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_09_Beam.SM_OH_Clean_09_Beam",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_09.M_OH_Weathered_09"
+    ]
+  },
+  "OH_FULL_09_0237": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_09_Beam.SM_OH_Clean_09_Beam",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_09.M_OH_Weathered_09"
+    ]
+  },
+  "OH_FULL_09_0238": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_09_Beam.SM_OH_Clean_09_Beam",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_09.M_OH_Weathered_09"
+    ]
+  },
+  "OH_FULL_02_0239": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_02_0240": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_02_0241": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_02_0242": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_02_0243": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_02_0244": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_02_0245": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_02_0246": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_02_0247": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_02_0248": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_02_0249": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_02_0250": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_02_0251": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_02_0252": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_02_0253": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_02_Pillar.SM_OH_Clean_02_Pillar",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_02.M_OH_Weathered_02"
+    ]
+  },
+  "OH_FULL_26_0254": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_26_RoofPanel.SM_OH_Clean_26_RoofPanel",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_26.M_OH_Weathered_26"
+    ]
+  },
+  "OH_FULL_26_0255": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_26_RoofPanel.SM_OH_Clean_26_RoofPanel",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_26.M_OH_Weathered_26"
+    ]
+  },
+  "OH_FULL_26_0256": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_26_RoofPanel.SM_OH_Clean_26_RoofPanel",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_26.M_OH_Weathered_26"
+    ]
+  },
+  "OH_FULL_26_0257": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_26_RoofPanel.SM_OH_Clean_26_RoofPanel",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_26.M_OH_Weathered_26"
+    ]
+  },
+  "OH_FULL_13_0258": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0259": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0260": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0261": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0262": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0263": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0264": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0265": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0266": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0267": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0268": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0269": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0270": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0271": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0272": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0273": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_05_0274": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_05_Wall.SM_OH_Clean_05_Wall",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_05.M_OH_Weathered_05"
+    ]
+  },
+  "OH_FULL_05_0275": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Chipped_05.SM_OH_Chipped_05",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_05.M_OH_Weathered_05"
+    ]
+  },
+  "OH_FULL_13_0276": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_ShoreSlab.SM_OH_ShoreSlab",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_05_0277": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_05_Wall.SM_OH_Clean_05_Wall",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_05.M_OH_Weathered_05"
+    ]
+  },
+  "OH_FULL_05_0278": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_05_Wall.SM_OH_Clean_05_Wall",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_05.M_OH_Weathered_05"
+    ]
+  },
+  "OH_FULL_04_0279": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_BrokenArchA.SM_OH_BrokenArchA",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_04.M_OH_Weathered_04"
+    ]
+  },
+  "OH_FULL_04_0280": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Chipped_04.SM_OH_Chipped_04",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_04.M_OH_Weathered_04"
+    ]
+  },
+  "OH_FULL_04_0281": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_BrokenArchB.SM_OH_BrokenArchB",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_04.M_OH_Weathered_04"
+    ]
+  },
+  "OH_FULL_04_0282": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_04_SideArch.SM_OH_Clean_04_SideArch",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_04.M_OH_Weathered_04"
+    ]
+  },
+  "OH_FULL_11_0283": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_11_BrokenBeam.SM_OH_Clean_11_BrokenBeam",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_11.M_OH_Weathered_11"
+    ]
+  },
+  "OH_FULL_11_0284": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_11_BrokenBeam.SM_OH_Clean_11_BrokenBeam",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_11.M_OH_Weathered_11"
+    ]
+  },
+  "OH_FULL_11_0285": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_11_BrokenBeam.SM_OH_Clean_11_BrokenBeam",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_11.M_OH_Weathered_11"
+    ]
+  },
+  "OH_FULL_11_0286": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_11_BrokenBeam.SM_OH_Clean_11_BrokenBeam",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_11.M_OH_Weathered_11"
+    ]
+  },
+  "OH_FULL_11_0287": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_11_BrokenBeam.SM_OH_Clean_11_BrokenBeam",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_11.M_OH_Weathered_11"
+    ]
+  },
+  "OH_FULL_25_0288": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_25_Railing.SM_OH_Clean_25_Railing",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_25.M_OH_Illustrated_25"
+    ]
+  },
+  "OH_FULL_25_0289": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_25_Railing.SM_OH_Clean_25_Railing",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_25.M_OH_Illustrated_25"
+    ]
+  },
+  "OH_FULL_04_0290": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_04_SideArch.SM_OH_Clean_04_SideArch",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_04.M_OH_Weathered_04"
+    ]
+  },
+  "OH_FULL_04_0291": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_BrokenArchB.SM_OH_BrokenArchB",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_04.M_OH_Weathered_04"
+    ]
+  },
+  "OH_FULL_04_0292": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_04_SideArch.SM_OH_Clean_04_SideArch",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_04.M_OH_Weathered_04"
+    ]
+  },
+  "OH_FULL_04_0293": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_04_SideArch.SM_OH_Clean_04_SideArch",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_04.M_OH_Weathered_04"
+    ]
+  },
+  "OH_FULL_11_0294": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_11_BrokenBeam.SM_OH_Clean_11_BrokenBeam",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_11.M_OH_Weathered_11"
+    ]
+  },
+  "OH_FULL_11_0295": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_11_BrokenBeam.SM_OH_Clean_11_BrokenBeam",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_11.M_OH_Weathered_11"
+    ]
+  },
+  "OH_FULL_11_0296": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_11_BrokenBeam.SM_OH_Clean_11_BrokenBeam",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_11.M_OH_Weathered_11"
+    ]
+  },
+  "OH_FULL_11_0297": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_11_BrokenBeam.SM_OH_Clean_11_BrokenBeam",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_11.M_OH_Weathered_11"
+    ]
+  },
+  "OH_FULL_11_0298": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_11_BrokenBeam.SM_OH_Clean_11_BrokenBeam",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_11.M_OH_Weathered_11"
+    ]
+  },
+  "OH_FULL_25_0299": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_25_Railing.SM_OH_Clean_25_Railing",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_25.M_OH_Illustrated_25"
+    ]
+  },
+  "OH_FULL_25_0300": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_25_Railing.SM_OH_Clean_25_Railing",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_25.M_OH_Illustrated_25"
+    ]
+  },
+  "OH_FULL_06_0301": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_06_WindowLower.SM_OH_Clean_06_WindowLower",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_06.M_OH_Illustrated_06"
+    ]
+  },
+  "OH_FULL_06_0302": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_06_WindowLower.SM_OH_Clean_06_WindowLower",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_06.M_OH_Illustrated_06"
+    ]
+  },
+  "OH_FULL_07_0303": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_07_WindowArch.SM_OH_Clean_07_WindowArch",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_07.M_OH_Illustrated_07"
+    ]
+  },
+  "OH_FULL_08_0304": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_08_Mullion.SM_OH_Clean_08_Mullion",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_08.M_OH_Illustrated_08"
+    ]
+  },
+  "OH_FULL_06_0305": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_06_WindowLower.SM_OH_Clean_06_WindowLower",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_06.M_OH_Illustrated_06"
+    ]
+  },
+  "OH_FULL_06_0306": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_06_WindowLower.SM_OH_Clean_06_WindowLower",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_06.M_OH_Illustrated_06"
+    ]
+  },
+  "OH_FULL_07_0307": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_07_WindowArch.SM_OH_Clean_07_WindowArch",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_07.M_OH_Illustrated_07"
+    ]
+  },
+  "OH_FULL_08_0308": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_08_Mullion.SM_OH_Clean_08_Mullion",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_08.M_OH_Illustrated_08"
+    ]
+  },
+  "OH_FULL_06_0309": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_06_WindowLower.SM_OH_Clean_06_WindowLower",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_06.M_OH_Illustrated_06"
+    ]
+  },
+  "OH_FULL_06_0310": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_06_WindowLower.SM_OH_Clean_06_WindowLower",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_06.M_OH_Illustrated_06"
+    ]
+  },
+  "OH_FULL_07_0311": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_07_WindowArch.SM_OH_Clean_07_WindowArch",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_07.M_OH_Illustrated_07"
+    ]
+  },
+  "OH_FULL_08_0312": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_08_Mullion.SM_OH_Clean_08_Mullion",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_08.M_OH_Illustrated_08"
+    ]
+  },
+  "OH_FULL_06_0313": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_06_WindowLower.SM_OH_Clean_06_WindowLower",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_06.M_OH_Illustrated_06"
+    ]
+  },
+  "OH_FULL_06_0314": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_06_WindowLower.SM_OH_Clean_06_WindowLower",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_06.M_OH_Illustrated_06"
+    ]
+  },
+  "OH_FULL_07_0315": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_07_WindowArch.SM_OH_Clean_07_WindowArch",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_07.M_OH_Illustrated_07"
+    ]
+  },
+  "OH_FULL_08_0316": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_08_Mullion.SM_OH_Clean_08_Mullion",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_08.M_OH_Illustrated_08"
+    ]
+  },
+  "OH_FULL_10_0317": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_10_RoofTruss.SM_OH_Clean_10_RoofTruss",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_10.M_OH_Illustrated_10"
+    ]
+  },
+  "OH_FULL_10_0318": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_10_RoofTruss.SM_OH_Clean_10_RoofTruss",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_10.M_OH_Illustrated_10"
+    ]
+  },
+  "OH_FULL_10_0319": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_10_RoofTruss.SM_OH_Clean_10_RoofTruss",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_10.M_OH_Illustrated_10"
+    ]
+  },
+  "OH_FULL_08_0320": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_08_Mullion.SM_OH_Clean_08_Mullion",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_08.M_OH_Illustrated_08"
+    ]
+  },
+  "OH_FULL_08_0321": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_08_Mullion.SM_OH_Clean_08_Mullion",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_08.M_OH_Illustrated_08"
+    ]
+  },
+  "OH_FULL_08_0322": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_08_Mullion.SM_OH_Clean_08_Mullion",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_08.M_OH_Illustrated_08"
+    ]
+  },
+  "OH_FULL_08_0323": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_08_Mullion.SM_OH_Clean_08_Mullion",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_08.M_OH_Illustrated_08"
+    ]
+  },
+  "OH_FULL_08_0324": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_08_Mullion.SM_OH_Clean_08_Mullion",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_08.M_OH_Illustrated_08"
+    ]
+  },
+  "OH_FULL_08_0325": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_08_Mullion.SM_OH_Clean_08_Mullion",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_08.M_OH_Illustrated_08"
+    ]
+  },
+  "OH_FULL_08_0326": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_08_Mullion.SM_OH_Clean_08_Mullion",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_08.M_OH_Illustrated_08"
+    ]
+  },
+  "OH_FULL_08_0327": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_08_Mullion.SM_OH_Clean_08_Mullion",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_08.M_OH_Illustrated_08"
+    ]
+  },
+  "OH_FULL_08_0328": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_08_Mullion.SM_OH_Clean_08_Mullion",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_08.M_OH_Illustrated_08"
+    ]
+  },
+  "OH_FULL_08_0329": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_08_Mullion.SM_OH_Clean_08_Mullion",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_08.M_OH_Illustrated_08"
+    ]
+  },
+  "OH_FULL_08_0330": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_08_Mullion.SM_OH_Clean_08_Mullion",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_08.M_OH_Illustrated_08"
+    ]
+  },
+  "OH_FULL_08_0331": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_08_Mullion.SM_OH_Clean_08_Mullion",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_08.M_OH_Illustrated_08"
+    ]
+  },
+  "OH_FULL_08_0332": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_08_Mullion.SM_OH_Clean_08_Mullion",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_08.M_OH_Illustrated_08"
+    ]
+  },
+  "OH_FULL_08_0333": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_08_Mullion.SM_OH_Clean_08_Mullion",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_08.M_OH_Illustrated_08"
+    ]
+  },
+  "OH_FULL_08_0334": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_08_Mullion.SM_OH_Clean_08_Mullion",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_08.M_OH_Illustrated_08"
+    ]
+  },
+  "OH_FULL_08_0335": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_08_Mullion.SM_OH_Clean_08_Mullion",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_08.M_OH_Illustrated_08"
+    ]
+  },
+  "OH_FULL_08_0336": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_08_Mullion.SM_OH_Clean_08_Mullion",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_08.M_OH_Illustrated_08"
+    ]
+  },
+  "OH_FULL_08_0337": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_08_Mullion.SM_OH_Clean_08_Mullion",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_08.M_OH_Illustrated_08"
+    ]
+  },
+  "OH_FULL_08_0338": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_08_Mullion.SM_OH_Clean_08_Mullion",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_08.M_OH_Illustrated_08"
+    ]
+  },
+  "OH_FULL_08_0339": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_08_Mullion.SM_OH_Clean_08_Mullion",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_08.M_OH_Illustrated_08"
+    ]
+  },
+  "OH_FULL_08_0340": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_08_Mullion.SM_OH_Clean_08_Mullion",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_08.M_OH_Illustrated_08"
+    ]
+  },
+  "OH_FULL_08_0341": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_08_Mullion.SM_OH_Clean_08_Mullion",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_08.M_OH_Illustrated_08"
+    ]
+  },
+  "OH_FULL_08_0342": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_08_Mullion.SM_OH_Clean_08_Mullion",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_08.M_OH_Illustrated_08"
+    ]
+  },
+  "OH_FULL_08_0343": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_08_Mullion.SM_OH_Clean_08_Mullion",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_08.M_OH_Illustrated_08"
+    ]
+  },
+  "OH_FULL_08_0344": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_08_Mullion.SM_OH_Clean_08_Mullion",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_08.M_OH_Illustrated_08"
+    ]
+  },
+  "OH_FULL_12_0345": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_12_SmallArch.SM_OH_Clean_12_SmallArch",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_12.M_OH_Weathered_12"
+    ]
+  },
+  "OH_FULL_14_0346": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_14_Bench.SM_OH_Clean_14_Bench",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_14.M_OH_Illustrated_14"
+    ]
+  },
+  "OH_FULL_13_0347": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0348": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0349": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0350": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0351": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0352": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0353": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0354": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0355": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0356": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0357": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0358": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0359": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0360": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0361": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0362": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0363": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0364": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0365": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0366": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0367": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0368": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0369": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0370": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0371": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0372": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0373": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0374": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0375": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0376": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0377": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0378": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0379": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0380": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0381": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0382": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0383": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0384": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0385": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0386": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0387": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0388": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0389": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0390": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0391": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0392": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0393": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0394": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0395": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0396": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0397": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0398": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0399": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0400": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0401": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0402": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0403": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0404": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0405": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0406": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0407": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0408": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0409": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0410": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0411": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0412": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0413": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0414": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0415": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0416": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0417": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0418": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0419": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0420": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0421": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0422": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0423": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0424": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0425": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0426": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0427": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0428": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0429": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0430": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0431": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0432": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0433": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0434": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0435": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0436": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0437": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0438": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0439": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0440": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0441": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0442": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0443": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0444": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0445": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0446": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0447": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0448": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0449": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0450": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0451": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0452": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0453": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0454": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0455": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0456": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0457": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0458": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0459": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0460": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0461": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0462": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0463": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0464": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0465": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0466": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0467": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0468": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0469": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0470": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0471": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0472": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0473": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0474": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0475": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0476": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0477": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0478": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0479": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0480": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0481": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0482": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0483": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0484": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0485": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0486": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0487": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0488": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0489": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0490": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0491": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_13_0492": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_13_Floor.SM_OH_Clean_13_Floor",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_13.M_OH_Weathered_13"
+    ]
+  },
+  "OH_FULL_15_0493": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_15_Rubble.SM_OH_Clean_15_Rubble",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_15.M_OH_Illustrated_15"
+    ]
+  },
+  "OH_FULL_15_0494": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_15_Rubble.SM_OH_Clean_15_Rubble",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_15.M_OH_Illustrated_15"
+    ]
+  },
+  "OH_FULL_15_0495": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_15_Rubble.SM_OH_Clean_15_Rubble",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_15.M_OH_Illustrated_15"
+    ]
+  },
+  "OH_FULL_15_0496": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_15_Rubble.SM_OH_Clean_15_Rubble",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_15.M_OH_Illustrated_15"
+    ]
+  },
+  "OH_FULL_15_0497": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_15_Rubble.SM_OH_Clean_15_Rubble",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_15.M_OH_Illustrated_15"
+    ]
+  },
+  "OH_FULL_15_0498": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_15_Rubble.SM_OH_Clean_15_Rubble",
+    "materials": [
+      "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_15.M_OH_Illustrated_15"
+    ]
+  }
+}

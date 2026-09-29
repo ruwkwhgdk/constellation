@@ -1,0 +1,21 @@
+{
+  "id": "01",
+  "name": "ColumnBase",
+  "mesh": "SM_OH_T_01_ColumnBase",
+  "source_triangles": 27674,
+  "triangles": 7970,
+  "budget": 8000,
+  "dimensions_m": [
+    0.8002166748046875,
+    0.8501749038696289,
+    1.199825644493103
+  ],
+  "boundary_edges": 0,
+  "uv_layers": 1,
+  "edits": [],
+  "textures": [
+    "basecolor.png",
+    "normal.png",
+    "rm.png"
+  ]
+}

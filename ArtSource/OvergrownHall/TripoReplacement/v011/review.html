@@ -1,0 +1,11 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><title>Overgrown Hall · 물과 파손 보정</title>
+<style>body{background:#192c2b;color:#edeadf;font:17px/1.7 sans-serif;max-width:1400px;margin:36px auto;padding:0 20px}img{width:100%;display:block}button{background:#d4dfcb;color:#20302c;border:0;border-radius:5px;padding:12px 20px;margin:0 8px 12px 0;cursor:pointer;font:inherit}.pair{display:grid;grid-template-columns:1fr 1fr;gap:20px}code{overflow-wrap:anywhere}a{color:#bce2cd}@media(max-width:750px){.pair{grid-template-columns:1fr}}</style>
+<h1>잔잔한 수면과 비대칭 아치 파손</h1><p>채택한 잎 표현과 조명을 유지한 실제 Unreal 화면입니다.</p>
+<button onclick="show(0)">수정 후</button><button onclick="show(1)">이전 v010</button><button onclick="show(2)">시간이 흐른 수면</button>
+<h2 id="caption">수정 후</h2><img id="scene" src="unreal_water_ruins.png" alt="현재 Unreal 렌더">
+<p>수면의 작은 높이 변화와 움직이는 노멀로 반사를 흔들고, 아치 세 곳에 서로 다른 큰 결손을 추가했습니다. 파손 과정에서 공중에 남은 작은 조각은 제거했습니다.</p>
+<div class="pair"><section><h2>원화</h2><img src="../../References/source_scene.png" alt="원화"></section><section><h2>수정 전</h2><img src="../v010/unreal_foliage.png" alt="v010"></section></div>
+<p>수면은 아직 불투명 반사 기반 표현입니다. 실제 바닥 투과·굴절은 구현하지 않았습니다. 직접 플레이와 성능 검증도 별도입니다.</p>
+<p>레벨: <code>/Game/Environment/OvergrownHall/TripoFull/Maps/L_OvergrownHall_TripoFull</code></p>
+<p><a href="STATUS.md">제작·재현·한계</a> · <a href="assets.json">메시 실측</a> · <a href="verification.json">저장 검사</a></p>
+<script>function show(i){document.getElementById('scene').src=['unreal_water_ruins.png','../v010/unreal_foliage.png','water_later.png'][i];document.getElementById('caption').textContent=['수정 후','이전 v010','시간이 흐른 수면'][i]}</script></html>

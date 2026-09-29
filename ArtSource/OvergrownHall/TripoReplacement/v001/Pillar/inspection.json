@@ -1,0 +1,55 @@
+{
+  "kind": "Pillar",
+  "source_triangles": 11389,
+  "game_triangles": 4255,
+  "dimensions_m": [
+    0.6499999761581421,
+    0.6500000357627869,
+    3.0
+  ],
+  "uv_layers": 1,
+  "textures": [
+    {
+      "file": "basecolor.png",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "file": "ruined_concrete_pillar_3d_model_metallic.png",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "file": "normal.png",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "file": "rm.png",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "file": "ruined_concrete_pillar_3d_model_roughness.png",
+      "size": [
+        2048,
+        2048
+      ]
+    }
+  ],
+  "collision": "one simple box",
+  "edits": [
+    "base-centered ground pivot",
+    "dimension normalization",
+    "central shaft isolated; cut ends capped and flattened"
+  ],
+  "adoption": "pending user appearance review"
+}

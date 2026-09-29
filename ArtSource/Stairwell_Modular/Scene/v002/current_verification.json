@@ -1,0 +1,26 @@
+{
+  "status": "pass",
+  "deleted_packages_absent": true,
+  "maps": [
+    {
+      "path": "/Game/Environment/StairwellModular/ReviewKit/Maps/L_Stairwell_KitReview",
+      "mesh_actors": 49,
+      "missing_meshes_or_materials": 0
+    },
+    {
+      "path": "/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_Reference",
+      "mesh_actors": 267,
+      "missing_meshes_or_materials": 0
+    },
+    {
+      "path": "/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_PlayScale2",
+      "mesh_actors": 275,
+      "missing_meshes_or_materials": 0
+    }
+  ],
+  "playtest": "not_run",
+  "stair_width_cm": 480,
+  "door_infill_absent": true,
+  "current_map": "/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_PlayScale2",
+  "screenshot_refreshed": false
+}

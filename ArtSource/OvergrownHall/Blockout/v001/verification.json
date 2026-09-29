@@ -1,0 +1,26 @@
+{
+  "stage": "blockout_not_final_assets",
+  "units": "meters",
+  "hall": [
+    16,
+    20,
+    12
+  ],
+  "bench_width": 1.8,
+  "mesh_objects": 556,
+  "triangles": 7868,
+  "finite_vertices": true,
+  "human_in_scene": false,
+  "bird_rig": "not_created_yet",
+  "unreal_playtest": "not_run",
+  "temporary": [
+    "foliage masses",
+    "water",
+    "materials",
+    "lighting"
+  ],
+  "new_modules": [
+    25,
+    26
+  ]
+}

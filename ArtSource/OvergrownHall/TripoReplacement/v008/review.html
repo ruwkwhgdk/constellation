@@ -1,0 +1,11 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><title>Overgrown Hall · 불균일 식생과 역광</title>
+<style>body{background:#192b2e;color:#edeadf;font:17px/1.7 sans-serif;max-width:1400px;margin:36px auto;padding:0 20px}img{width:100%;display:block}button{background:#d4dfcb;color:#20302c;border:0;border-radius:5px;padding:12px 20px;margin:0 8px 12px 0;cursor:pointer;font:inherit}.pair{display:grid;grid-template-columns:1fr 1fr;gap:20px}code{overflow-wrap:anywhere}a{color:#bce2cd}@media(max-width:750px){.pair{grid-template-columns:1fr}}</style>
+<h1>불균일한 이끼·덩굴과 역광 보정</h1><p>동일한 카메라로 촬영한 실제 Unreal 화면입니다.</p>
+<button onclick="show(true)">이번 수정</button><button onclick="show(false)">이전 v007</button><h2 id="caption">이번 수정</h2><img id="scene" src="unreal_atmosphere.png" alt="현재 Unreal 렌더">
+<div class="pair"><section><h2>원화</h2><img src="../../References/source_scene.png" alt="원화"></section><section><h2>이전 v007</h2><img src="../v007/unreal_pigment.png" alt="이전 Unreal 렌더"></section></div>
+<p>이끼는 좌우 비대칭의 큰 습윤 구역과 불규칙한 가장자리·빈틈으로 분포합니다. 모든 기둥을 일정하게 덮지 않도록 했으며, 기존 덩굴24개와 추가 식생53개, 총77개의 폭·길이·높이도 서로 달리했습니다.</p>
+<p>Tripo 관목·덩굴·나무의 UV와 폴리곤 수를 보존한 채 잎 끝을 소폭 보정했습니다. 기존 나무의 큰 가지 구조를 새로 제작한 것은 아닙니다. 따뜻한 후면 광원과 차가운 실내 보조광을 조정했고 고정 노출1024를 유지합니다.</p>
+<p>현재 레벨: <code>/Game/Environment/OvergrownHall/TripoFull/Maps/L_OvergrownHall_TripoFull</code></p>
+<p><a href="applied.json">이끼 구역·식생 배치·조명</a> · <a href="foliage_shapes.json">Tripo 형태 보정 실측</a> · <a href="verification.json">저장 검사</a> · <a href="exposure_render_verification.json">렌더 검사</a> · <a href="STATUS.md">재생성·한계</a></p>
+<p>직접 플레이와 성능 측정은 별도입니다.</p>
+<script>function show(after){document.getElementById('scene').src=after?'unreal_atmosphere.png':'../v007/unreal_pigment.png';document.getElementById('caption').textContent=after?'이번 수정':'이전 v007'}</script></html>

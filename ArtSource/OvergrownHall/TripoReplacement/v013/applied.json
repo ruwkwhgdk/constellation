@@ -1,0 +1,508 @@
+{
+  "map": "/Game/Environment/OvergrownHall/TripoFull/Maps/L_OvergrownHall_TripoFull",
+  "architecture": [
+    {
+      "label": "OH_FULL_05_0226",
+      "mesh": "SM_OH_RearBroken_05"
+    },
+    {
+      "label": "OH_FULL_05_0229",
+      "mesh": "SM_OH_RearBroken_05"
+    },
+    {
+      "label": "OH_FULL_05_0278",
+      "mesh": "SM_OH_RearBroken_05"
+    },
+    {
+      "label": "OH_FULL_06_0301",
+      "mesh": "SM_OH_RearBroken_06"
+    },
+    {
+      "label": "OH_FULL_06_0313",
+      "mesh": "SM_OH_RearBroken_06"
+    },
+    {
+      "label": "OH_FULL_06_0306",
+      "mesh": "SM_OH_RearBroken_06"
+    },
+    {
+      "label": "OH_FULL_07_0303",
+      "mesh": "SM_OH_RearBroken_07"
+    },
+    {
+      "label": "OH_FULL_09_0235",
+      "mesh": "SM_OH_RearBroken_09"
+    },
+    {
+      "label": "OH_FULL_09_0238",
+      "mesh": "SM_OH_RearBroken_09"
+    },
+    {
+      "label": "OH_FULL_09_0231",
+      "mesh": "SM_OH_RearBroken_09"
+    }
+  ],
+  "seam_material_actors": [
+    "OH_FULL_05_0225",
+    "OH_FULL_05_0226",
+    "OH_FULL_05_0227",
+    "OH_FULL_05_0228",
+    "OH_FULL_05_0229",
+    "OH_FULL_05_0230",
+    "OH_FULL_09_0231",
+    "OH_FULL_09_0232",
+    "OH_FULL_09_0233",
+    "OH_FULL_09_0234",
+    "OH_FULL_09_0235",
+    "OH_FULL_09_0236",
+    "OH_FULL_09_0237",
+    "OH_FULL_09_0238",
+    "OH_FULL_05_0274",
+    "OH_FULL_05_0275",
+    "OH_FULL_05_0277",
+    "OH_FULL_05_0278"
+  ],
+  "added": [
+    {
+      "label": "OH_Finish_AttachedVine_000",
+      "kind": "AttachedVine",
+      "position": [
+        485,
+        1940,
+        270
+      ],
+      "scale": [
+        0.9969401983420041,
+        0.5736435942652743,
+        0.6005469857352528
+      ],
+      "mesh": "SM_OH_Soft_18_Vine"
+    },
+    {
+      "label": "OH_Finish_SeamLeaves_001",
+      "kind": "SeamLeaves",
+      "position": [
+        485,
+        1935,
+        260
+      ],
+      "scale": [
+        0.1,
+        0.09,
+        0.12
+      ],
+      "mesh": "SM_OH_PaintedCrown"
+    },
+    {
+      "label": "OH_Finish_AttachedVine_002",
+      "kind": "AttachedVine",
+      "position": [
+        445,
+        1940,
+        292
+      ],
+      "scale": [
+        0.973499932424674,
+        0.7837658338072997,
+        0.561885948822712
+      ],
+      "mesh": "SM_OH_Soft_18_Vine"
+    },
+    {
+      "label": "OH_Finish_AttachedVine_003",
+      "kind": "AttachedVine",
+      "position": [
+        -385,
+        1940,
+        265
+      ],
+      "scale": [
+        0.7124827654361938,
+        0.7401909907585396,
+        0.7888476527984898
+      ],
+      "mesh": "SM_OH_Soft_18_Vine"
+    },
+    {
+      "label": "OH_Finish_SeamLeaves_004",
+      "kind": "SeamLeaves",
+      "position": [
+        -385,
+        1935,
+        255
+      ],
+      "scale": [
+        0.1,
+        0.09,
+        0.12
+      ],
+      "mesh": "SM_OH_PaintedCrown"
+    },
+    {
+      "label": "OH_Finish_AttachedVine_005",
+      "kind": "AttachedVine",
+      "position": [
+        -438,
+        1940,
+        290
+      ],
+      "scale": [
+        0.7433571698824883,
+        0.5701896406870702,
+        0.6004814190212413
+      ],
+      "mesh": "SM_OH_Soft_18_Vine"
+    },
+    {
+      "label": "OH_Finish_AttachedVine_006",
+      "kind": "AttachedVine",
+      "position": [
+        520,
+        1940,
+        740
+      ],
+      "scale": [
+        0.809770991762186,
+        0.5530598454081596,
+        0.552320411960015
+      ],
+      "mesh": "SM_OH_Soft_18_Vine"
+    },
+    {
+      "label": "OH_Finish_SeamLeaves_007",
+      "kind": "SeamLeaves",
+      "position": [
+        520,
+        1935,
+        730
+      ],
+      "scale": [
+        0.1,
+        0.09,
+        0.12
+      ],
+      "mesh": "SM_OH_PaintedCrown"
+    },
+    {
+      "label": "OH_Finish_AttachedVine_008",
+      "kind": "AttachedVine",
+      "position": [
+        565,
+        1940,
+        810
+      ],
+      "scale": [
+        0.9557072506139084,
+        0.5884684015191771,
+        0.6758011563808592
+      ],
+      "mesh": "SM_OH_Soft_18_Vine"
+    },
+    {
+      "label": "OH_Finish_AttachedVine_009",
+      "kind": "AttachedVine",
+      "position": [
+        -510,
+        1940,
+        688
+      ],
+      "scale": [
+        0.865279249405798,
+        0.604189339079896,
+        0.4307017773442461
+      ],
+      "mesh": "SM_OH_Soft_18_Vine"
+    },
+    {
+      "label": "OH_Finish_SeamLeaves_010",
+      "kind": "SeamLeaves",
+      "position": [
+        -510,
+        1935,
+        678
+      ],
+      "scale": [
+        0.1,
+        0.09,
+        0.12
+      ],
+      "mesh": "SM_OH_PaintedCrown"
+    },
+    {
+      "label": "OH_Finish_AttachedVine_011",
+      "kind": "AttachedVine",
+      "position": [
+        -455,
+        1940,
+        735
+      ],
+      "scale": [
+        0.8174212663355798,
+        0.5516305957253252,
+        0.5620991698752321
+      ],
+      "mesh": "SM_OH_Soft_18_Vine"
+    },
+    {
+      "label": "OH_Finish_AttachedVine_012",
+      "kind": "AttachedVine",
+      "position": [
+        230,
+        1940,
+        722
+      ],
+      "scale": [
+        0.8305844630026809,
+        0.7881234440262377,
+        0.7223946115029958
+      ],
+      "mesh": "SM_OH_Soft_18_Vine"
+    },
+    {
+      "label": "OH_Finish_SeamLeaves_013",
+      "kind": "SeamLeaves",
+      "position": [
+        230,
+        1935,
+        712
+      ],
+      "scale": [
+        0.1,
+        0.09,
+        0.12
+      ],
+      "mesh": "SM_OH_PaintedCrown"
+    },
+    {
+      "label": "OH_Finish_ShoreFragment_014",
+      "kind": "ShoreFragment",
+      "position": [
+        -460,
+        540,
+        -3.1
+      ],
+      "scale": [
+        0.2572395072629698,
+        0.2443186385623347,
+        0.30241090442594465
+      ],
+      "mesh": "SM_OH_ShoreSlab"
+    },
+    {
+      "label": "OH_Finish_ShoreFragment_015",
+      "kind": "ShoreFragment",
+      "position": [
+        -405,
+        590,
+        -1.9
+      ],
+      "scale": [
+        0.23156093273276612,
+        0.15335586446447774,
+        0.2932136679304106
+      ],
+      "mesh": "SM_OH_ShoreSlab"
+    },
+    {
+      "label": "OH_Finish_ShoreFragment_016",
+      "kind": "ShoreFragment",
+      "position": [
+        -480,
+        760,
+        -1.9
+      ],
+      "scale": [
+        0.2821004158421805,
+        0.14005011417691265,
+        0.19486449199645875
+      ],
+      "mesh": "SM_OH_ShoreSlab"
+    },
+    {
+      "label": "OH_Finish_ShoreFragment_017",
+      "kind": "ShoreFragment",
+      "position": [
+        -330,
+        820,
+        -3.1
+      ],
+      "scale": [
+        0.17522948251680528,
+        0.24240423843264758,
+        0.22835408526751955
+      ],
+      "mesh": "SM_OH_ShoreSlab"
+    },
+    {
+      "label": "OH_Finish_ShoreFragment_018",
+      "kind": "ShoreFragment",
+      "position": [
+        400,
+        660,
+        -1.9
+      ],
+      "scale": [
+        0.19716263639631498,
+        0.18573645278474402,
+        0.2596848718557667
+      ],
+      "mesh": "SM_OH_ShoreSlab"
+    },
+    {
+      "label": "OH_Finish_ShoreFragment_019",
+      "kind": "ShoreFragment",
+      "position": [
+        440,
+        735,
+        -1.9
+      ],
+      "scale": [
+        0.287076979064432,
+        0.19313234801234938,
+        0.3008576100315247
+      ],
+      "mesh": "SM_OH_ShoreSlab"
+    },
+    {
+      "label": "OH_Finish_ShoreFragment_020",
+      "kind": "ShoreFragment",
+      "position": [
+        370,
+        875,
+        -3.1
+      ],
+      "scale": [
+        0.17707200138348617,
+        0.22873442821769605,
+        0.3008845872847586
+      ],
+      "mesh": "SM_OH_ShoreSlab"
+    },
+    {
+      "label": "OH_Finish_ShoreFragment_021",
+      "kind": "ShoreFragment",
+      "position": [
+        -240,
+        1120,
+        -1.9
+      ],
+      "scale": [
+        0.24627033866898462,
+        0.16689703398817085,
+        0.2608777541707077
+      ],
+      "mesh": "SM_OH_ShoreSlab"
+    },
+    {
+      "label": "OH_Finish_ShoreFragment_022",
+      "kind": "ShoreFragment",
+      "position": [
+        325,
+        1220,
+        -1.9
+      ],
+      "scale": [
+        0.25010250913506804,
+        0.18840944566742754,
+        0.293043858056648
+      ],
+      "mesh": "SM_OH_ShoreSlab"
+    },
+    {
+      "label": "OH_Finish_SubmergedRubble_023",
+      "kind": "SubmergedRubble",
+      "position": [
+        -515,
+        730,
+        -4
+      ],
+      "scale": [
+        0.32,
+        0.28,
+        0.21
+      ],
+      "mesh": "SM_OH_Clean_15_Rubble"
+    },
+    {
+      "label": "OH_Finish_SubmergedRubble_024",
+      "kind": "SubmergedRubble",
+      "position": [
+        -430,
+        865,
+        -4
+      ],
+      "scale": [
+        0.32,
+        0.28,
+        0.21
+      ],
+      "mesh": "SM_OH_Clean_15_Rubble"
+    },
+    {
+      "label": "OH_Finish_SubmergedRubble_025",
+      "kind": "SubmergedRubble",
+      "position": [
+        -360,
+        1160,
+        -4
+      ],
+      "scale": [
+        0.32,
+        0.28,
+        0.21
+      ],
+      "mesh": "SM_OH_Clean_15_Rubble"
+    },
+    {
+      "label": "OH_Finish_SubmergedRubble_026",
+      "kind": "SubmergedRubble",
+      "position": [
+        475,
+        750,
+        -4
+      ],
+      "scale": [
+        0.32,
+        0.28,
+        0.21
+      ],
+      "mesh": "SM_OH_Clean_15_Rubble"
+    },
+    {
+      "label": "OH_Finish_SubmergedRubble_027",
+      "kind": "SubmergedRubble",
+      "position": [
+        380,
+        950,
+        -4
+      ],
+      "scale": [
+        0.32,
+        0.28,
+        0.21
+      ],
+      "mesh": "SM_OH_Clean_15_Rubble"
+    },
+    {
+      "label": "OH_Finish_SubmergedRubble_028",
+      "kind": "SubmergedRubble",
+      "position": [
+        430,
+        1350,
+        -4
+      ],
+      "scale": [
+        0.32,
+        0.28,
+        0.21
+      ],
+      "mesh": "SM_OH_Clean_15_Rubble"
+    }
+  ],
+  "focal_light": "OH_Finish_FocalSun",
+  "sun_intensity": 17500,
+  "sky_intensity": 1.35,
+  "water_version": "v012",
+  "playtest": "user",
+  "performance_test": false
+}

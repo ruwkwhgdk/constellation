@@ -1,0 +1,24 @@
+{
+  "id": "13",
+  "name": "Floor",
+  "mesh": "SM_OH_Clean_13_Floor",
+  "source": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OvergrownHall\\TripoReplacement\\v002\\13_Floor\\prepared.blend",
+  "source_triangles": 3969,
+  "triangles": 432,
+  "budget": 4000,
+  "dimensions_m": [
+    2.001382350921631,
+    1.9994826316833496,
+    0.15033036470413208
+  ],
+  "boundary_edges": 0,
+  "basecolor": "basecolor.png",
+  "organic": false,
+  "edits": [
+    "source-guided hard-surface retopology",
+    "straight edges and planar faces",
+    "small 2-segment bevels",
+    "Tripo base color reprojected to new UV",
+    "normal map intentionally omitted: old tangent basis is invalid"
+  ]
+}

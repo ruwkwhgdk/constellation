@@ -1,0 +1,23 @@
+{
+  "map": "/Game/Environment/OvergrownHall/TripoFull/Maps/L_OvergrownHall_TripoFull",
+  "added": [
+    "OH_FinalWallGrowth_00",
+    "OH_FinalWallGrowth_01",
+    "OH_FinalWallGrowth_02",
+    "OH_FinalWallGrowth_03"
+  ],
+  "moved_side_trees": [
+    "OH_Tripo_Tree_00",
+    "OH_Tripo_Tree_01",
+    "OH_Tripo_Tree_02",
+    "OH_Tripo_Tree_03",
+    "OH_Tripo_Tree_04",
+    "OH_Tripo_Tree_05",
+    "OH_Tripo_Tree_06",
+    "OH_Tripo_Tree_07",
+    "OH_Tripo_Tree_08",
+    "OH_Tripo_Tree_09"
+  ],
+  "water_material": "/Game/Environment/OvergrownHall/TripoFull/AtmosphereFinish/M_OH_FinalReflection.M_OH_FinalReflection",
+  "playtest": false
+}

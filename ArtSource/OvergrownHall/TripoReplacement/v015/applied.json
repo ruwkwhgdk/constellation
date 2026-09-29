@@ -1,0 +1,523 @@
+{
+  "map": "/Game/Environment/OvergrownHall/TripoFull/Maps/L_OvergrownHall_TripoFull",
+  "roof_panels": [
+    {
+      "label": "OH_ClosedRoof_00_00",
+      "center": [
+        -525,
+        -100,
+        1154.0
+      ],
+      "mesh": "SM_OH_Clean_26_RoofPanel"
+    },
+    {
+      "label": "OH_ClosedRoof_00_01",
+      "center": [
+        -525,
+        100,
+        1154.0
+      ],
+      "mesh": "SM_OH_Clean_26_RoofPanel"
+    },
+    {
+      "label": "OH_ClosedRoof_00_02",
+      "center": [
+        -525,
+        300,
+        1154.0
+      ],
+      "mesh": "SM_OH_Clean_26_RoofPanel"
+    },
+    {
+      "label": "OH_ClosedRoof_00_03",
+      "center": [
+        -525,
+        500,
+        1154.0
+      ],
+      "mesh": "SM_OH_Clean_26_RoofPanel"
+    },
+    {
+      "label": "OH_ClosedRoof_00_04",
+      "center": [
+        -525,
+        700,
+        1154.0
+      ],
+      "mesh": "SM_OH_Clean_26_RoofPanel"
+    },
+    {
+      "label": "OH_ClosedRoof_00_05",
+      "center": [
+        -525,
+        900,
+        1154.0
+      ],
+      "mesh": "SM_OH_Clean_26_RoofPanel"
+    },
+    {
+      "label": "OH_ClosedRoof_00_06",
+      "center": [
+        -525,
+        1100,
+        1154.0
+      ],
+      "mesh": "SM_OH_Clean_26_RoofPanel"
+    },
+    {
+      "label": "OH_ClosedRoof_00_07",
+      "center": [
+        -525,
+        1300,
+        1154.0
+      ],
+      "mesh": "SM_OH_Clean_26_RoofPanel"
+    },
+    {
+      "label": "OH_ClosedRoof_00_08",
+      "center": [
+        -525,
+        1500,
+        1154.0
+      ],
+      "mesh": "SM_OH_Clean_26_RoofPanel"
+    },
+    {
+      "label": "OH_ClosedRoof_00_09",
+      "center": [
+        -525,
+        1700,
+        1154.0
+      ],
+      "mesh": "SM_OH_Clean_26_RoofPanel"
+    },
+    {
+      "label": "OH_ClosedRoof_00_10",
+      "center": [
+        -525,
+        1900,
+        1154.0
+      ],
+      "mesh": "SM_OH_Clean_26_RoofPanel"
+    },
+    {
+      "label": "OH_ClosedRoof_00_11",
+      "center": [
+        -525,
+        2100,
+        1154.0
+      ],
+      "mesh": "SM_OH_Clean_26_RoofPanel"
+    },
+    {
+      "label": "OH_ClosedRoof_01_00",
+      "center": [
+        -175,
+        -100,
+        1238.0
+      ],
+      "mesh": "SM_OH_Clean_26_RoofPanel"
+    },
+    {
+      "label": "OH_ClosedRoof_01_01",
+      "center": [
+        -175,
+        100,
+        1238.0
+      ],
+      "mesh": "SM_OH_Clean_26_RoofPanel"
+    },
+    {
+      "label": "OH_ClosedRoof_01_02",
+      "center": [
+        -175,
+        300,
+        1238.0
+      ],
+      "mesh": "SM_OH_Clean_26_RoofPanel"
+    },
+    {
+      "label": "OH_ClosedRoof_01_03",
+      "center": [
+        -175,
+        500,
+        1238.0
+      ],
+      "mesh": "SM_OH_Clean_26_RoofPanel"
+    },
+    {
+      "label": "OH_ClosedRoof_01_04",
+      "center": [
+        -175,
+        700,
+        1238.0
+      ],
+      "mesh": "SM_OH_Clean_26_RoofPanel"
+    },
+    {
+      "label": "OH_ClosedRoof_01_05",
+      "center": [
+        -175,
+        900,
+        1238.0
+      ],
+      "mesh": "SM_OH_Clean_26_RoofPanel"
+    },
+    {
+      "label": "OH_ClosedRoof_01_06",
+      "center": [
+        -175,
+        1100,
+        1238.0
+      ],
+      "mesh": "SM_OH_Clean_26_RoofPanel"
+    },
+    {
+      "label": "OH_ClosedRoof_01_07",
+      "center": [
+        -175,
+        1300,
+        1238.0
+      ],
+      "mesh": "SM_OH_Clean_26_RoofPanel"
+    },
+    {
+      "label": "OH_ClosedRoof_01_08",
+      "center": [
+        -175,
+        1500,
+        1238.0
+      ],
+      "mesh": "SM_OH_Clean_26_RoofPanel"
+    },
+    {
+      "label": "OH_ClosedRoof_01_09",
+      "center": [
+        -175,
+        1700,
+        1238.0
+      ],
+      "mesh": "SM_OH_Clean_26_RoofPanel"
+    },
+    {
+      "label": "OH_ClosedRoof_01_10",
+      "center": [
+        -175,
+        1900,
+        1238.0
+      ],
+      "mesh": "SM_OH_Clean_26_RoofPanel"
+    },
+    {
+      "label": "OH_ClosedRoof_01_11",
+      "center": [
+        -175,
+        2100,
+        1238.0
+      ],
+      "mesh": "SM_OH_Clean_26_RoofPanel"
+    },
+    {
+      "label": "OH_ClosedRoof_02_00",
+      "center": [
+        175,
+        -100,
+        1238.0
+      ],
+      "mesh": "SM_OH_Clean_26_RoofPanel"
+    },
+    {
+      "label": "OH_ClosedRoof_02_01",
+      "center": [
+        175,
+        100,
+        1238.0
+      ],
+      "mesh": "SM_OH_Clean_26_RoofPanel"
+    },
+    {
+      "label": "OH_ClosedRoof_02_02",
+      "center": [
+        175,
+        300,
+        1238.0
+      ],
+      "mesh": "SM_OH_Clean_26_RoofPanel"
+    },
+    {
+      "label": "OH_ClosedRoof_02_03",
+      "center": [
+        175,
+        500,
+        1238.0
+      ],
+      "mesh": "SM_OH_Clean_26_RoofPanel"
+    },
+    {
+      "label": "OH_ClosedRoof_02_04",
+      "center": [
+        175,
+        700,
+        1238.0
+      ],
+      "mesh": "SM_OH_Clean_26_RoofPanel"
+    },
+    {
+      "label": "OH_ClosedRoof_02_05",
+      "center": [
+        175,
+        900,
+        1238.0
+      ],
+      "mesh": "SM_OH_Clean_26_RoofPanel"
+    },
+    {
+      "label": "OH_ClosedRoof_02_06",
+      "center": [
+        175,
+        1100,
+        1238.0
+      ],
+      "mesh": "SM_OH_Clean_26_RoofPanel"
+    },
+    {
+      "label": "OH_ClosedRoof_02_07",
+      "center": [
+        175,
+        1300,
+        1238.0
+      ],
+      "mesh": "SM_OH_Clean_26_RoofPanel"
+    },
+    {
+      "label": "OH_ClosedRoof_02_08",
+      "center": [
+        175,
+        1500,
+        1238.0
+      ],
+      "mesh": "SM_OH_Clean_26_RoofPanel"
+    },
+    {
+      "label": "OH_ClosedRoof_02_09",
+      "center": [
+        175,
+        1700,
+        1238.0
+      ],
+      "mesh": "SM_OH_Clean_26_RoofPanel"
+    },
+    {
+      "label": "OH_ClosedRoof_02_10",
+      "center": [
+        175,
+        1900,
+        1238.0
+      ],
+      "mesh": "SM_OH_Clean_26_RoofPanel"
+    },
+    {
+      "label": "OH_ClosedRoof_02_11",
+      "center": [
+        175,
+        2100,
+        1238.0
+      ],
+      "mesh": "SM_OH_Clean_26_RoofPanel"
+    },
+    {
+      "label": "OH_ClosedRoof_03_00",
+      "center": [
+        525,
+        -100,
+        1154.0
+      ],
+      "mesh": "SM_OH_Clean_26_RoofPanel"
+    },
+    {
+      "label": "OH_ClosedRoof_03_01",
+      "center": [
+        525,
+        100,
+        1154.0
+      ],
+      "mesh": "SM_OH_Clean_26_RoofPanel"
+    },
+    {
+      "label": "OH_ClosedRoof_03_02",
+      "center": [
+        525,
+        300,
+        1154.0
+      ],
+      "mesh": "SM_OH_Clean_26_RoofPanel"
+    },
+    {
+      "label": "OH_ClosedRoof_03_03",
+      "center": [
+        525,
+        500,
+        1154.0
+      ],
+      "mesh": "SM_OH_Clean_26_RoofPanel"
+    },
+    {
+      "label": "OH_ClosedRoof_03_04",
+      "center": [
+        525,
+        700,
+        1154.0
+      ],
+      "mesh": "SM_OH_Clean_26_RoofPanel"
+    },
+    {
+      "label": "OH_ClosedRoof_03_05",
+      "center": [
+        525,
+        900,
+        1154.0
+      ],
+      "mesh": "SM_OH_Clean_26_RoofPanel"
+    },
+    {
+      "label": "OH_ClosedRoof_03_06",
+      "center": [
+        525,
+        1100,
+        1154.0
+      ],
+      "mesh": "SM_OH_Clean_26_RoofPanel"
+    },
+    {
+      "label": "OH_ClosedRoof_03_07",
+      "center": [
+        525,
+        1300,
+        1154.0
+      ],
+      "mesh": "SM_OH_Clean_26_RoofPanel"
+    },
+    {
+      "label": "OH_ClosedRoof_03_08",
+      "center": [
+        525,
+        1500,
+        1154.0
+      ],
+      "mesh": "SM_OH_Clean_26_RoofPanel"
+    },
+    {
+      "label": "OH_ClosedRoof_03_09",
+      "center": [
+        525,
+        1700,
+        1154.0
+      ],
+      "mesh": "SM_OH_Clean_26_RoofPanel"
+    },
+    {
+      "label": "OH_ClosedRoof_03_10",
+      "center": [
+        525,
+        1900,
+        1154.0
+      ],
+      "mesh": "SM_OH_Clean_26_RoofPanel"
+    },
+    {
+      "label": "OH_ClosedRoof_03_11",
+      "center": [
+        525,
+        2100,
+        1154.0
+      ],
+      "mesh": "SM_OH_Clean_26_RoofPanel"
+    },
+    {
+      "label": "OH_ClosedRoof_Skin_-1",
+      "center": [
+        -400,
+        1000,
+        1194.0
+      ],
+      "mesh": "Cube"
+    },
+    {
+      "label": "OH_ClosedRoof_Skin_1",
+      "center": [
+        400,
+        1000,
+        1194.0
+      ],
+      "mesh": "Cube"
+    }
+  ],
+  "removed": [
+    "OH_Tripo_Tree_10",
+    "OH_Tripo_Tree_11",
+    "OH_Tripo_Tree_12",
+    "OH_Tripo_Tree_13",
+    "OH_Tripo_Tree_14",
+    "OH_Tripo_Tree_15",
+    "OH_Tripo_Tree_16",
+    "OH_Tripo_Tree_17",
+    "OH_Tripo_Tree_18",
+    "OH_FULL_26_0254",
+    "OH_FULL_26_0255",
+    "OH_FULL_26_0256",
+    "OH_FULL_26_0257",
+    "OH_STRUCTURE_Roof_00",
+    "OH_STRUCTURE_Roof_01",
+    "OH_STRUCTURE_Roof_02",
+    "OH_STRUCTURE_Roof_03",
+    "OH_STRUCTURE_Roof_04",
+    "OH_STRUCTURE_Roof_05",
+    "OH_STRUCTURE_Roof_06",
+    "OH_STRUCTURE_Roof_07",
+    "OH_STRUCTURE_Roof_08",
+    "OH_STRUCTURE_Roof_09",
+    "OH_STRUCTURE_Roof_10",
+    "OH_STRUCTURE_Roof_11",
+    "OH_STRUCTURE_Roof_12",
+    "OH_STRUCTURE_Roof_13",
+    "OH_Refine_Forest_000",
+    "OH_Refine_Forest_001",
+    "OH_Refine_Forest_002",
+    "OH_Refine_Forest_003",
+    "OH_Refine_Forest_004",
+    "OH_Refine_Forest_005",
+    "OH_Refine_Forest_006",
+    "OH_Refine_Forest_007",
+    "OH_Refine_Forest_008",
+    "OH_Refine_Forest_009",
+    "OH_Refine_Forest_010",
+    "OH_Refine_Forest_011",
+    "OH_Refine_Forest_012",
+    "OH_Refine_Forest_013",
+    "OH_Refine_Forest_014",
+    "OH_Refine_Forest_015",
+    "OH_Refine_Forest_016",
+    "OH_Refine_Forest_017",
+    "OH_Refine_Forest_018",
+    "OH_Refine_Forest_019",
+    "OH_Refine_Forest_020",
+    "OH_Refine_Forest_021",
+    "OH_Refine_Forest_022",
+    "OH_Refine_Forest_023",
+    "OH_Refine_Forest_024",
+    "OH_Refine_Forest_025",
+    "OH_Refine_Forest_026",
+    "OH_Refine_Canopy_045",
+    "OH_Refine_Canopy_046",
+    "OH_Refine_Canopy_047",
+    "OH_Refine_Canopy_048",
+    "OH_Refine_Canopy_049",
+    "OH_Refine_Canopy_050",
+    "OH_Refine_Canopy_051",
+    "OH_Refine_Canopy_052",
+    "OH_Refine_Canopy_053"
+  ],
+  "roof_material": "/Game/Environment/OvergrownHall/TripoFull/WeatheredMaterials/M_OH_Weathered_26.M_OH_Weathered_26",
+  "lighting_changed": false,
+  "playtest": "user"
+}

@@ -1,0 +1,25 @@
+{
+  "map": "/Game/Environment/OvergrownHall/TripoFull/Maps/L_OvergrownHall_TripoFull",
+  "changes": [
+    {
+      "label": "OH_FULL_04_0279",
+      "mesh": "SM_OH_BrokenArchA",
+      "previous": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_04_SideArch.SM_OH_Clean_04_SideArch"
+    },
+    {
+      "label": "OH_FULL_04_0281",
+      "mesh": "SM_OH_BrokenArchB",
+      "previous": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Clean_04_SideArch.SM_OH_Clean_04_SideArch"
+    },
+    {
+      "label": "OH_FULL_04_0291",
+      "mesh": "SM_OH_BrokenArchB",
+      "previous": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Chipped_04.SM_OH_Chipped_04"
+    }
+  ],
+  "water_mesh": "SM_OH_RippleSheet",
+  "water_material": "M_OH_RippleWater",
+  "water_max_displacement_cm": 0.12,
+  "physical_transmission": false,
+  "foliage_version": "v010"
+}

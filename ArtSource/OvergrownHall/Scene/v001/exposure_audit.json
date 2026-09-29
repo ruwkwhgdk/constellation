@@ -1,0 +1,24 @@
+{
+  "extended_luminance": 0,
+  "actors": [
+    {
+      "name": "OH_Sun",
+      "intensity": 25000.0
+    },
+    {
+      "name": "OH_Sky",
+      "intensity": 1.0
+    },
+    {
+      "name": "OH_Exposure",
+      "unbound": true,
+      "auto_exposure_method": "<AutoExposureMethod.AEM_HISTOGRAM: 0>",
+      "auto_exposure_min_brightness": "10.0",
+      "auto_exposure_max_brightness": "10.0",
+      "auto_exposure_bias": "1.0",
+      "override_auto_exposure_bias": "False",
+      "override_auto_exposure_min_brightness": "True",
+      "override_auto_exposure_max_brightness": "True"
+    }
+  ]
+}

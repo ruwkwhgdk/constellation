@@ -1,0 +1,55 @@
+{
+  "fixtures": {
+    "Ceiling": {
+      "position": [
+        100,
+        55,
+        320
+      ],
+      "yaw": 90,
+      "length_scale": 0.65,
+      "intensity": 1600,
+      "depth_scale": 0.55,
+      "height_scale": 0.45
+    },
+    "LeftWall": {
+      "position": [
+        110,
+        -115,
+        318
+      ],
+      "yaw": 0,
+      "length_scale": 0.8,
+      "intensity": 1000,
+      "depth_scale": 0.55,
+      "height_scale": 0.45,
+      "pitch": 0,
+      "roll": -90.0
+    },
+    "RightWall": {
+      "position": [
+        65,
+        115,
+        318
+      ],
+      "yaw": 0,
+      "length_scale": 0.8,
+      "intensity": 1000,
+      "depth_scale": 0.55,
+      "height_scale": 0.45,
+      "pitch": 0,
+      "roll": 90.0
+    },
+    "Beyond": {
+      "position": [
+        620,
+        240,
+        210
+      ],
+      "yaw": 90,
+      "length_scale": 1.0,
+      "intensity": 2200
+    }
+  },
+  "landing_fill": 1900
+}

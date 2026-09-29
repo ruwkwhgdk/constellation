@@ -1,0 +1,268 @@
+[
+  {
+    "id": "01",
+    "name": "ColumnBase",
+    "task_id": "a6b3833e-790e-4036-81db-682711133901",
+    "bounds": [
+      0.6623230576515198,
+      0.6614381074905396,
+      0.982025146484375
+    ],
+    "triangles": 27674,
+    "objects": [
+      "tripo_node_4787e9ec"
+    ]
+  },
+  {
+    "id": "03",
+    "name": "ColumnCapital",
+    "task_id": "70d77135-1331-4b22-98e6-726b181d5061",
+    "bounds": [
+      0.9210205078125,
+      0.955169677734375,
+      0.9803466796875
+    ],
+    "triangles": 28378,
+    "objects": [
+      "tripo_node_a203deec"
+    ]
+  },
+  {
+    "id": "04",
+    "name": "SideArch",
+    "task_id": "9d4567de-f834-4611-a109-f3631353ac92",
+    "bounds": [
+      0.8120728731155396,
+      0.1401061862707138,
+      0.979248046875
+    ],
+    "triangles": 27198,
+    "objects": [
+      "tripo_node_0f33bf15"
+    ]
+  },
+  {
+    "id": "05",
+    "name": "Wall",
+    "task_id": "4ab73b11-bb7e-4e39-afae-ecf99093d6cf",
+    "bounds": [
+      0.9797059297561646,
+      0.12414170801639557,
+      0.4145660400390625
+    ],
+    "triangles": 28615,
+    "objects": [
+      "tripo_node_9c680857"
+    ]
+  },
+  {
+    "id": "06",
+    "name": "WindowLower",
+    "task_id": "6741f9d6-8544-4a5d-9c64-30bc191e011c",
+    "bounds": [
+      0.9796754121780396,
+      0.10009005665779114,
+      0.816162109375
+    ],
+    "triangles": 23171,
+    "objects": [
+      "tripo_node_ec145b2d"
+    ]
+  },
+  {
+    "id": "07",
+    "name": "WindowArch",
+    "task_id": "60a0b761-2f66-4fd7-b4ba-1f610b3424d8",
+    "bounds": [
+      0.9788514375686646,
+      0.08346940577030182,
+      0.880096435546875
+    ],
+    "triangles": 27934,
+    "objects": [
+      "tripo_node_bdba81c6"
+    ]
+  },
+  {
+    "id": "08",
+    "name": "Mullion",
+    "task_id": "a3a7baab-2050-4613-8528-6066cb3bb6ee",
+    "bounds": [
+      0.3146820068359375,
+      0.3334198594093323,
+      0.977447509765625
+    ],
+    "triangles": 28818,
+    "objects": [
+      "tripo_node_a1d629a3"
+    ]
+  },
+  {
+    "id": "09",
+    "name": "Beam",
+    "task_id": "aa61cdf0-6f2a-4956-9e83-a7ef12f61374",
+    "bounds": [
+      0.23265841603279114,
+      0.9800721406936646,
+      0.3490447998046875
+    ],
+    "triangles": 28303,
+    "objects": [
+      "tripo_node_f0d52577"
+    ]
+  },
+  {
+    "id": "10",
+    "name": "RoofTruss",
+    "task_id": "7f2a2232-ca5e-4633-83fc-81b80c65fcfc",
+    "bounds": [
+      0.9831238985061646,
+      0.5486451983451843,
+      0.771881103515625
+    ],
+    "triangles": 25462,
+    "objects": [
+      "tripo_node_d4f09bb1"
+    ]
+  },
+  {
+    "id": "11",
+    "name": "BrokenBeam",
+    "task_id": "3034d867-a8f9-4629-89cd-469ca6cdd6d4",
+    "bounds": [
+      0.9798890352249146,
+      0.31663525104522705,
+      0.357757568359375
+    ],
+    "triangles": 28290,
+    "objects": [
+      "tripo_node_c66b5505"
+    ]
+  },
+  {
+    "id": "12",
+    "name": "SmallArch",
+    "task_id": "65eb0107-64d1-47f8-af70-b8d016a483ba",
+    "bounds": [
+      0.8286744356155396,
+      0.26824963092803955,
+      0.98382568359375
+    ],
+    "triangles": 28629,
+    "objects": [
+      "tripo_node_b3a7ba11"
+    ]
+  },
+  {
+    "id": "13",
+    "name": "Floor",
+    "task_id": "9e5e6b43-14bd-461c-bea4-3846645ea316",
+    "bounds": [
+      0.90618896484375,
+      0.9845887422561646,
+      0.1466064155101776
+    ],
+    "triangles": 27648,
+    "objects": [
+      "tripo_node_111c9011"
+    ]
+  },
+  {
+    "id": "14",
+    "name": "Bench",
+    "task_id": "e56153c0-8173-4dfc-a218-d812f77ad23a",
+    "bounds": [
+      0.4041901230812073,
+      0.9784547090530396,
+      0.542877197265625
+    ],
+    "triangles": 27252,
+    "objects": [
+      "tripo_node_d177e7a3"
+    ]
+  },
+  {
+    "id": "15",
+    "name": "Rubble",
+    "task_id": "0fb86ce4-34a0-4008-8888-7d3407780353",
+    "bounds": [
+      0.9838258028030396,
+      0.8721314668655396,
+      0.4938201904296875
+    ],
+    "triangles": 28314,
+    "objects": [
+      "tripo_node_2fba543b"
+    ]
+  },
+  {
+    "id": "16",
+    "name": "Grass",
+    "task_id": "a6ed6337-a549-4d7b-a319-0edaac798640",
+    "bounds": [
+      0.9776917099952698,
+      0.9627380967140198,
+      0.656219482421875
+    ],
+    "triangles": 27621,
+    "objects": [
+      "tripo_node_bcc23452"
+    ]
+  },
+  {
+    "id": "17",
+    "name": "Shrub",
+    "task_id": "94caf2ed-56c1-466a-9f27-5c797197ee99",
+    "bounds": [
+      0.9688416719436646,
+      0.9837952852249146,
+      0.86834716796875
+    ],
+    "triangles": 28267,
+    "objects": [
+      "tripo_node_0e7a19e7"
+    ]
+  },
+  {
+    "id": "18",
+    "name": "Vine",
+    "task_id": "56c22587-f4f3-48c5-9433-90dcd8206a5f",
+    "bounds": [
+      0.8049317598342896,
+      0.2889709770679474,
+      0.97845458984375
+    ],
+    "triangles": 27089,
+    "objects": [
+      "tripo_node_0570d6fa"
+    ]
+  },
+  {
+    "id": "25",
+    "name": "Railing",
+    "task_id": "f60819f5-8e99-4010-80d7-91a39e14528c",
+    "bounds": [
+      0.9802247285842896,
+      0.16532912850379944,
+      0.65740966796875
+    ],
+    "triangles": 27414,
+    "objects": [
+      "tripo_node_65eaf44c"
+    ]
+  },
+  {
+    "id": "26",
+    "name": "RoofPanel",
+    "task_id": "db1c647d-170f-4577-be0f-40eb5c3abb07",
+    "bounds": [
+      0.9840089082717896,
+      0.8139039278030396,
+      0.82244873046875
+    ],
+    "triangles": 27963,
+    "objects": [
+      "tripo_node_a80c96e0"
+    ]
+  }
+]

@@ -1,0 +1,254 @@
+{
+  "OH_Painterly_WallLeaves_001": {
+    "position": [
+      -605.0,
+      1000.0,
+      440.0
+    ],
+    "rotation": [
+      1.2424041724466862e-17,
+      3.874915122985839,
+      -3.222969055175781
+    ],
+    "scale": [
+      0.06,
+      0.18,
+      0.216
+    ],
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedCrown_Runtime.SM_OH_PaintedCrown_Runtime"
+  },
+  "OH_Painterly_WallLeaves_002": {
+    "position": [
+      -606.0,
+      1070.0,
+      365.0
+    ],
+    "rotation": [
+      4.969616689786745e-17,
+      9.581184387207038,
+      2.354935646057128
+    ],
+    "scale": [
+      0.06,
+      0.11,
+      0.132
+    ],
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedCrown_Runtime.SM_OH_PaintedCrown_Runtime"
+  },
+  "OH_Painterly_WallLeaves_003": {
+    "position": [
+      -605.0,
+      1510.0,
+      710.0
+    ],
+    "rotation": [
+      1.2424041724466862e-17,
+      -4.2659950256347665,
+      -1.7898310422897343
+    ],
+    "scale": [
+      0.06,
+      0.2,
+      0.24
+    ],
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedCrown_Runtime.SM_OH_PaintedCrown_Runtime"
+  },
+  "OH_Painterly_WallLeaves_004": {
+    "position": [
+      -590.0,
+      1530.0,
+      595.0
+    ],
+    "rotation": [
+      6.212020862233431e-18,
+      0.2840219736099243,
+      -7.135294914245602
+    ],
+    "scale": [
+      0.06,
+      0.13,
+      0.156
+    ],
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedCrown_Runtime.SM_OH_PaintedCrown_Runtime"
+  },
+  "OH_Painterly_WallLeaves_005": {
+    "position": [
+      602.0,
+      1130.0,
+      630.0
+    ],
+    "rotation": [
+      0.0,
+      1.0221457481384286,
+      6.578436851501467
+    ],
+    "scale": [
+      0.06,
+      0.24,
+      0.288
+    ],
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedCrown_Runtime.SM_OH_PaintedCrown_Runtime"
+  },
+  "OH_Painterly_WallLeaves_006": {
+    "position": [
+      600.0,
+      1200.0,
+      530.0
+    ],
+    "rotation": [
+      -2.4848083448933725e-17,
+      -4.5121145248413095,
+      4.119515895843508
+    ],
+    "scale": [
+      0.06,
+      0.15,
+      0.18
+    ],
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedCrown_Runtime.SM_OH_PaintedCrown_Runtime"
+  },
+  "OH_Painterly_WallLeaves_007": {
+    "position": [
+      606.0,
+      1740.0,
+      840.0
+    ],
+    "rotation": [
+      1.987846675914698e-16,
+      -10.171599388122553,
+      10.867828369140621
+    ],
+    "scale": [
+      0.06,
+      0.19,
+      0.22799999999999998
+    ],
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedCrown_Runtime.SM_OH_PaintedCrown_Runtime"
+  },
+  "OH_Painterly_WallLeaves_008": {
+    "position": [
+      605.0,
+      1800.0,
+      755.0
+    ],
+    "rotation": [
+      -4.969616689786745e-17,
+      12.848363876342784,
+      -3.6802172660827623
+    ],
+    "scale": [
+      0.06,
+      0.13,
+      0.156
+    ],
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedCrown_Runtime.SM_OH_PaintedCrown_Runtime"
+  },
+  "OH_Painterly_WallLeaves_009": {
+    "position": [
+      -480.0,
+      1933.0,
+      460.0
+    ],
+    "rotation": [
+      0.0,
+      -6.059233188629153,
+      -1.8405696153640756
+    ],
+    "scale": [
+      0.16,
+      0.06,
+      0.192
+    ],
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedCrown_Runtime.SM_OH_PaintedCrown_Runtime"
+  },
+  "OH_Painterly_WallLeaves_010": {
+    "position": [
+      -420.0,
+      1932.0,
+      395.0
+    ],
+    "rotation": [
+      4.969616689786745e-17,
+      -4.145695209503172,
+      9.385530471801763
+    ],
+    "scale": [
+      0.11,
+      0.06,
+      0.132
+    ],
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedCrown_Runtime.SM_OH_PaintedCrown_Runtime"
+  },
+  "OH_Painterly_WallLeaves_011": {
+    "position": [
+      460.0,
+      1932.0,
+      660.0
+    ],
+    "rotation": [
+      -1.2424041724466862e-17,
+      -1.800013422966004,
+      -6.114234447479252
+    ],
+    "scale": [
+      0.19,
+      0.06,
+      0.22799999999999998
+    ],
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedCrown_Runtime.SM_OH_PaintedCrown_Runtime"
+  },
+  "OH_Painterly_WallLeaves_012": {
+    "position": [
+      510.0,
+      1930.0,
+      570.0
+    ],
+    "rotation": [
+      0.0,
+      -14.937038421630856,
+      10.779351234436037
+    ],
+    "scale": [
+      0.12,
+      0.06,
+      0.144
+    ],
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedCrown_Runtime.SM_OH_PaintedCrown_Runtime"
+  },
+  "OH_Painterly_WallLeaves_013": {
+    "position": [
+      150.0,
+      1934.0,
+      330.0
+    ],
+    "rotation": [
+      0.0,
+      10.081007957458501,
+      1.789567232131958
+    ],
+    "scale": [
+      0.13,
+      0.06,
+      0.156
+    ],
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/FoliageRuntime/SM_OH_PaintedCrown_Runtime.SM_OH_PaintedCrown_Runtime"
+  },
+  "OH_FULL_13_0276": {
+    "position": [
+      120.00000476837158,
+      1019.9999809265137,
+      0.0
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0742575472284757,
+      0.47512328833767087,
+      0.2993407226049462
+    ],
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_ShoreSlab.SM_OH_ShoreSlab"
+  }
+}

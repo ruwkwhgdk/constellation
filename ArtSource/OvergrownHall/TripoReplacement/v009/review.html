@@ -1,0 +1,12 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><title>Overgrown Hall · 원화 비교 보정</title>
+<style>body{background:#182b2c;color:#edeadf;font:17px/1.7 sans-serif;max-width:1400px;margin:36px auto;padding:0 20px}img{width:100%;display:block}button{background:#d4dfcb;color:#20302c;border:0;border-radius:5px;padding:12px 20px;margin:0 8px 12px 0;cursor:pointer;font:inherit}.pair{display:grid;grid-template-columns:1fr 1fr;gap:20px}code{overflow-wrap:anywhere}a{color:#bce2cd}@media(max-width:750px){.pair{grid-template-columns:1fr}}</style>
+<h1>배경 숲 → 빛 → 수면 → 파손·연출</h1><p>동일 카메라에서 촬영한 실제 Unreal 렌더입니다. 캐릭터는 재현 범위에서 제외했습니다.</p>
+<button onclick="show('unreal_reference.png','이번 수정')">이번 수정</button><button onclick="show('unreal_forest.png','중간 단계 · 첫 숲 배치')">숲 배치 중간 단계</button><button onclick="show('../v008/unreal_atmosphere.png','이전 v008')">이전 v008</button><h2 id="caption">이번 수정</h2><img id="scene" src="unreal_reference.png" alt="실제 Unreal 렌더">
+<div class="pair"><section><h2>원화</h2><img src="../../References/source_scene.png" alt="원화"></section><section><h2>이전 v008</h2><img src="../v008/unreal_atmosphere.png" alt="이전 Unreal 렌더"></section></div>
+<p>Tripo 나무에서 수관을 추출해 배경과 기존 나무에54개 배치했습니다. 기존 관목은 낮고 넓게 연결하고 중앙 이동 공간은 비워 두었습니다. 후면 빛과 그림자 부드러움을 조정했습니다.</p>
+<p>수면은 불규칙한 윤곽의 평면으로 교체하고 일부 바닥을1cm 내려 물에 잠기는 영역과 드러난 돌판을 나눴습니다. 반사 거칠기는 천천히 변하지만 기하학적 잔물결·투과·발걸음 반응은 없습니다.</p>
+<p>선택한 아치·벽체에 실제 파손 형상을 적용하고 창 아래 덩굴6개를 보강했습니다. 상부 아치창 높이를 소폭 줄였으며, 리깅·애니메이션이 있는 비둘기28마리를 더 작고 깊게 분산했습니다.</p>
+<p>원화의 붓질과 수목 실루엣까지 완전히 일치한 최종본은 아닙니다. 플레이·성능 측정은 별도입니다.</p>
+<p>레벨: <code>/Game/Environment/OvergrownHall/TripoFull/Maps/L_OvergrownHall_TripoFull</code></p>
+<p><a href="STATUS.md">재현·검증·한계</a> · <a href="applied.json">적용 내역</a> · <a href="verification.json">저장 검사</a> · <a href="exposure_render_verification.json">렌더 검사</a></p>
+<script>function show(src,caption){document.getElementById('scene').src=src;document.getElementById('caption').textContent=caption}</script></html>

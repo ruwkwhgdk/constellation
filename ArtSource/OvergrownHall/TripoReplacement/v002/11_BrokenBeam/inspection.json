@@ -1,0 +1,21 @@
+{
+  "id": "11",
+  "name": "BrokenBeam",
+  "mesh": "SM_OH_T_11_BrokenBeam",
+  "source_triangles": 28290,
+  "triangles": 5969,
+  "budget": 6000,
+  "dimensions_m": [
+    1.500199556350708,
+    0.29972293972969055,
+    0.35031092166900635
+  ],
+  "boundary_edges": 3,
+  "uv_layers": 1,
+  "edits": [],
+  "textures": [
+    "basecolor.png",
+    "normal.png",
+    "rm.png"
+  ]
+}

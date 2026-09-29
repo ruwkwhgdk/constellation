@@ -1,0 +1,11 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><title>Overgrown Hall · 회화풍 수목</title>
+<style>body{background:#192c2b;color:#edeadf;font:17px/1.7 sans-serif;max-width:1400px;margin:36px auto;padding:0 20px}img{width:100%;display:block}button{background:#d4dfcb;color:#20302c;border:0;border-radius:5px;padding:12px 20px;margin:0 8px 12px 0;cursor:pointer;font:inherit}.pair{display:grid;grid-template-columns:1fr 1fr;gap:20px}code{overflow-wrap:anywhere}a{color:#bce2cd}@media(max-width:750px){.pair{grid-template-columns:1fr}}</style>
+<h1>Tripo 가지 구조와 부드러운 잎 무리</h1><p>동일한 카메라·조명에서 비교한 실제 Unreal 화면입니다.</p>
+<button onclick="show(true)">수목 수정 후</button><button onclick="show(false)">이전 v009</button><h2 id="caption">수목 수정 후</h2><img id="scene" src="unreal_foliage.png" alt="현재 Unreal 렌더">
+<div class="pair"><section><h2>원화</h2><img src="../../References/source_scene.png" alt="원화"></section><section><h2>수정 전</h2><img src="../v009/unreal_reference.png" alt="이전 Unreal 렌더"></section></div>
+<p>채택한 Tripo의 줄기·가지와 그 UV를 유지하고, 날카로운 잎 껍질을 회화풍 잎 무리로 교체했습니다. 잎은 약간 휘어진 교차 카드 구조이며 투명 마스크·양면 식생 재질을 사용합니다. 나무 배치를 더 늘린 작업은 아닙니다.</p>
+<div class="pair"><section><h2>나무 단품 · Blender 재질 검토</h2><img src="Tree_painted.png" alt="나무 단품"></section><section><h2>관목 단품 · Blender 재질 검토</h2><img src="Shrub_painted.png" alt="관목 단품"></section></div>
+<p>단품 이미지는 Blender 렌더로 Unreal 장면과 조명이 다릅니다. 삼각형 수는 줄었지만 마스크 재질의 오버드로 비용은 별도이므로 성능 향상을 확정하지 않습니다. 바람 애니메이션·LOD 및 직접 플레이/성능 검증은 별도입니다.</p>
+<p>레벨: <code>/Game/Environment/OvergrownHall/TripoFull/Maps/L_OvergrownHall_TripoFull</code></p>
+<p><a href="STATUS.md">제작·재현·한계</a> · <a href="painted_shapes.json">메시 실측</a> · <a href="verification.json">저장 검사</a> · <a href="TEXTURE_SOURCE.md">텍스처 생성 프롬프트</a></p>
+<script>function show(after){document.getElementById('scene').src=after?'unreal_foliage.png':'../v009/unreal_reference.png';document.getElementById('caption').textContent=after?'수목 수정 후':'이전 v009'}</script></html>

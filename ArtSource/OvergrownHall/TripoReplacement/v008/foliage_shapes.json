@@ -1,0 +1,50 @@
+[
+  {
+    "id": "17",
+    "name": "Shrub",
+    "mesh": "SM_OH_Soft_17_Shrub",
+    "vertices": 6666,
+    "triangles": 14970,
+    "max_displacement_cm": 2.8000000000000007,
+    "mean_displacement_cm": 1.2251461062535958,
+    "uv_preserved": true,
+    "topology_preserved": true,
+    "dimensions_m": [
+      1.396872781735697,
+      1.210468427252535,
+      1.1832312357146293
+    ]
+  },
+  {
+    "id": "18",
+    "name": "Vine",
+    "mesh": "SM_OH_Soft_18_Vine",
+    "vertices": 5809,
+    "triangles": 11969,
+    "max_displacement_cm": 1.6000000000000003,
+    "mean_displacement_cm": 0.7086223696309795,
+    "uv_preserved": true,
+    "topology_preserved": true,
+    "dimensions_m": [
+      0.6336943805217743,
+      0.13821126520633698,
+      1.9886291977018118
+    ]
+  },
+  {
+    "id": "19",
+    "name": "Tree",
+    "mesh": "SM_OH_Soft_19_Tree",
+    "vertices": 14652,
+    "triangles": 29879,
+    "max_displacement_cm": 5.500000000000002,
+    "mean_displacement_cm": 2.537535288575595,
+    "uv_preserved": true,
+    "topology_preserved": true,
+    "dimensions_m": [
+      5.11064233540853,
+      4.463920566576414,
+      5.950697380715992
+    ]
+  }
+]

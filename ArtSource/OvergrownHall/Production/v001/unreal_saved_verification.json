@@ -1,0 +1,13 @@
+{
+  "status": "saved_map_validation_pass",
+  "map": "/Game/Environment/OvergrownHall/Production/Maps/L_OvergrownHall_Detail",
+  "mesh_categories": 21,
+  "missing_meshes_or_materials": 0,
+  "collision_settings_verified": true,
+  "bench_width_cm": 179.99999237060547,
+  "default_pawn": "/Game/Blueprints/Character/PC/BP_Player_Heroine.BP_Player_Heroine_C",
+  "capsule_half_height_cm": 88.0,
+  "spawn_capsule_clearance_cm": 22.0,
+  "playtest": "not_run",
+  "render": "Blender preview only; Unreal appearance not verified"
+}

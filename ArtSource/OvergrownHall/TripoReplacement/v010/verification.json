@@ -1,0 +1,14 @@
+{
+  "saved_counts": {
+    "Tree": 19,
+    "Shrub": 85,
+    "Crown": 54
+  },
+  "material_slots_verified": true,
+  "tree_collision": true,
+  "nonblocking_foliage": true,
+  "alpha_coverage_mips": true,
+  "water_light_bird_count_preserved": true,
+  "playtest": false,
+  "performance_test": false
+}

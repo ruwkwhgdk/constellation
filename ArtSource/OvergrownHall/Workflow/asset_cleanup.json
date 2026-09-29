@@ -1,0 +1,653 @@
+{
+  "candidates": [
+    "/Game/Environment/OvergrownHall/Bird/Clips/A_OH_Pigeon_Fly",
+    "/Game/Environment/OvergrownHall/Bird/Clips/A_OH_Pigeon_FlyToGlide",
+    "/Game/Environment/OvergrownHall/Bird/Clips/A_OH_Pigeon_Glide",
+    "/Game/Environment/OvergrownHall/Bird/Clips/A_OH_Pigeon_GlideToFly",
+    "/Game/Environment/OvergrownHall/Bird/Meshes/SK_OH_Pigeon",
+    "/Game/Environment/OvergrownHall/Bird/Meshes/SK_OH_Pigeon_Skeleton",
+    "/Game/Environment/OvergrownHall/Bird/Tripo/Meshes/OH_Pigeon_Tripo_v001_basecolor",
+    "/Game/Environment/OvergrownHall/Bird/Tripo/Meshes/OH_Pigeon_Tripo_v001_normal",
+    "/Game/Environment/OvergrownHall/Bird/Tripo/Meshes/tripo_material_4fdd9fe1-0906-4e36-931e-eae4ef26502c",
+    "/Game/Environment/OvergrownHall/Blockout/Maps/L_OvergrownHall_Blockout",
+    "/Game/Environment/OvergrownHall/Blockout/Materials/M_Material",
+    "/Game/Environment/OvergrownHall/Blockout/Materials/M_Proxy_Bench",
+    "/Game/Environment/OvergrownHall/Blockout/Materials/M_Proxy_Floor",
+    "/Game/Environment/OvergrownHall/Blockout/Materials/M_Proxy_Foliage_0",
+    "/Game/Environment/OvergrownHall/Blockout/Materials/M_Proxy_Foliage_1",
+    "/Game/Environment/OvergrownHall/Blockout/Materials/M_Proxy_Foliage_2",
+    "/Game/Environment/OvergrownHall/Blockout/Materials/M_Proxy_Metal",
+    "/Game/Environment/OvergrownHall/Blockout/Materials/M_Proxy_Stone",
+    "/Game/Environment/OvergrownHall/Blockout/Materials/M_Proxy_Trim",
+    "/Game/Environment/OvergrownHall/Blockout/Materials/M_Proxy_Water",
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_01",
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_02",
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_03",
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_04",
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_05",
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_06",
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_07",
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_08",
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_09",
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_10",
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_11",
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_12",
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_13",
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_14",
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_16",
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_17",
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_18",
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_19",
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_21",
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_25",
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_26",
+    "/Game/Environment/OvergrownHall/Production/Maps/L_OvergrownHall_Detail",
+    "/Game/Environment/OvergrownHall/Production/Materials/M_Proxy_Bench",
+    "/Game/Environment/OvergrownHall/Production/Materials/M_Proxy_Floor",
+    "/Game/Environment/OvergrownHall/Production/Materials/M_Proxy_Foliage_0",
+    "/Game/Environment/OvergrownHall/Production/Materials/M_Proxy_Foliage_1",
+    "/Game/Environment/OvergrownHall/Production/Materials/M_Proxy_Foliage_2",
+    "/Game/Environment/OvergrownHall/Production/Materials/M_Proxy_Metal",
+    "/Game/Environment/OvergrownHall/Production/Materials/M_Proxy_Stone",
+    "/Game/Environment/OvergrownHall/Production/Materials/M_Proxy_Trim",
+    "/Game/Environment/OvergrownHall/Production/Materials/M_Proxy_Water",
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_01",
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_02",
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_03",
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_04",
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_05",
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_06",
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_07",
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_08",
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_09",
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_10",
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_11",
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_12",
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_13",
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_14",
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_16",
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_17",
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_18",
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_19",
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_21",
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_25",
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_26",
+    "/Game/Environment/OvergrownHall/Production/Sequences/LS_OvergrownHall_Flock",
+    "/Game/Environment/OvergrownHall/Scene/Maps/L_OvergrownHall_Layout",
+    "/Game/Environment/OvergrownHall/Scene/Materials/M_Proxy_Bench",
+    "/Game/Environment/OvergrownHall/Scene/Materials/M_Proxy_Floor",
+    "/Game/Environment/OvergrownHall/Scene/Materials/M_Proxy_Foliage_0",
+    "/Game/Environment/OvergrownHall/Scene/Materials/M_Proxy_Foliage_1",
+    "/Game/Environment/OvergrownHall/Scene/Materials/M_Proxy_Foliage_2",
+    "/Game/Environment/OvergrownHall/Scene/Materials/M_Proxy_Metal",
+    "/Game/Environment/OvergrownHall/Scene/Materials/M_Proxy_Stone",
+    "/Game/Environment/OvergrownHall/Scene/Materials/M_Proxy_Trim",
+    "/Game/Environment/OvergrownHall/Scene/Materials/M_Proxy_Water",
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_01",
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_02",
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_03",
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_04",
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_05",
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_06",
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_07",
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_08",
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_09",
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_10",
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_11",
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_12",
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_13",
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_14",
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_16",
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_17",
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_18",
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_19",
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_21",
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_25",
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_26",
+    "/Game/Environment/OvergrownHall/Scene/Sequences/LS_OvergrownHall_Flock",
+    "/Game/Environment/OvergrownHall/TripoReplacement/Maps/L_OvergrownHall_TripoReview",
+    "/Game/Environment/OvergrownHall/TripoReplacement/Sequences/LS_OvergrownHall_Flock"
+  ],
+  "protected": [
+    "/Game/Environment/OvergrownHall/Scene/Materials/M_Proxy_Stone"
+  ],
+  "references": {
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_17": [
+      "/Game/Environment/OvergrownHall/Scene/Maps/L_OvergrownHall_Layout",
+      "/Game/Environment/OvergrownHall/TripoReplacement/Maps/L_OvergrownHall_TripoReview"
+    ],
+    "/Game/Environment/OvergrownHall/Scene/Materials/M_Proxy_Trim": [
+      "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_01",
+      "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_03",
+      "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_09",
+      "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_11",
+      "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_12"
+    ],
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_25": [
+      "/Game/Environment/OvergrownHall/Scene/Maps/L_OvergrownHall_Layout",
+      "/Game/Environment/OvergrownHall/TripoReplacement/Maps/L_OvergrownHall_TripoReview"
+    ],
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_19": [
+      "/Game/Environment/OvergrownHall/Blockout/Maps/L_OvergrownHall_Blockout"
+    ],
+    "/Game/Environment/OvergrownHall/Production/Maps/L_OvergrownHall_Detail": [
+      "/Game/Environment/OvergrownHall/Production/Sequences/LS_OvergrownHall_Flock"
+    ],
+    "/Game/Environment/OvergrownHall/Bird/Clips/A_OH_Pigeon_Fly": [],
+    "/Game/Environment/OvergrownHall/Production/Sequences/LS_OvergrownHall_Flock": [
+      "/Game/Environment/OvergrownHall/Production/Maps/L_OvergrownHall_Detail"
+    ],
+    "/Game/Environment/OvergrownHall/Scene/Materials/M_Proxy_Stone": [
+      "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_02",
+      "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_04",
+      "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_05",
+      "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_09",
+      "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_26",
+      "/Game/Environment/OvergrownHall/TripoReplacement/Meshes/SM_OH_RemainingPiers"
+    ],
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_06": [
+      "/Game/Environment/OvergrownHall/Production/Maps/L_OvergrownHall_Detail"
+    ],
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_10": [
+      "/Game/Environment/OvergrownHall/Blockout/Maps/L_OvergrownHall_Blockout"
+    ],
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_01": [
+      "/Game/Environment/OvergrownHall/Scene/Maps/L_OvergrownHall_Layout",
+      "/Game/Environment/OvergrownHall/TripoReplacement/Maps/L_OvergrownHall_TripoReview"
+    ],
+    "/Game/Environment/OvergrownHall/Blockout/Materials/M_Proxy_Stone": [
+      "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_02",
+      "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_04",
+      "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_05",
+      "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_09",
+      "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_26"
+    ],
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_06": [
+      "/Game/Environment/OvergrownHall/Blockout/Maps/L_OvergrownHall_Blockout"
+    ],
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_19": [
+      "/Game/Environment/OvergrownHall/Scene/Maps/L_OvergrownHall_Layout"
+    ],
+    "/Game/Environment/OvergrownHall/Blockout/Materials/M_Proxy_Foliage_1": [
+      "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_16",
+      "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_17",
+      "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_18",
+      "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_19"
+    ],
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_07": [
+      "/Game/Environment/OvergrownHall/Blockout/Maps/L_OvergrownHall_Blockout"
+    ],
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_10": [
+      "/Game/Environment/OvergrownHall/Production/Maps/L_OvergrownHall_Detail"
+    ],
+    "/Game/Environment/OvergrownHall/Scene/Materials/M_Proxy_Bench": [
+      "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_14",
+      "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_17",
+      "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_18",
+      "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_19"
+    ],
+    "/Game/Environment/OvergrownHall/Blockout/Materials/M_Proxy_Foliage_0": [
+      "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_16",
+      "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_17",
+      "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_18",
+      "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_19"
+    ],
+    "/Game/Environment/OvergrownHall/Production/Materials/M_Proxy_Stone": [
+      "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_02",
+      "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_04",
+      "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_05",
+      "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_09",
+      "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_26"
+    ],
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_21": [
+      "/Game/Environment/OvergrownHall/Scene/Maps/L_OvergrownHall_Layout",
+      "/Game/Environment/OvergrownHall/TripoReplacement/Maps/L_OvergrownHall_TripoReview"
+    ],
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_17": [
+      "/Game/Environment/OvergrownHall/Production/Maps/L_OvergrownHall_Detail"
+    ],
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_18": [
+      "/Game/Environment/OvergrownHall/Blockout/Maps/L_OvergrownHall_Blockout"
+    ],
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_12": [
+      "/Game/Environment/OvergrownHall/Scene/Maps/L_OvergrownHall_Layout",
+      "/Game/Environment/OvergrownHall/TripoReplacement/Maps/L_OvergrownHall_TripoReview"
+    ],
+    "/Game/Environment/OvergrownHall/TripoReplacement/Sequences/LS_OvergrownHall_Flock": [
+      "/Game/Environment/OvergrownHall/TripoReplacement/Maps/L_OvergrownHall_TripoReview"
+    ],
+    "/Game/Environment/OvergrownHall/Bird/Tripo/Meshes/OH_Pigeon_Tripo_v001_normal": [
+      "/Game/Environment/OvergrownHall/Bird/Tripo/Meshes/tripo_material_4fdd9fe1-0906-4e36-931e-eae4ef26502c"
+    ],
+    "/Game/Environment/OvergrownHall/Blockout/Materials/M_Proxy_Metal": [
+      "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_06",
+      "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_07",
+      "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_08",
+      "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_10",
+      "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_14",
+      "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_25"
+    ],
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_02": [
+      "/Game/Environment/OvergrownHall/Scene/Maps/L_OvergrownHall_Layout"
+    ],
+    "/Game/Environment/OvergrownHall/Blockout/Maps/L_OvergrownHall_Blockout": [],
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_11": [
+      "/Game/Environment/OvergrownHall/Scene/Maps/L_OvergrownHall_Layout",
+      "/Game/Environment/OvergrownHall/TripoReplacement/Maps/L_OvergrownHall_TripoReview"
+    ],
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_26": [
+      "/Game/Environment/OvergrownHall/Production/Maps/L_OvergrownHall_Detail"
+    ],
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_07": [
+      "/Game/Environment/OvergrownHall/Production/Maps/L_OvergrownHall_Detail"
+    ],
+    "/Game/Environment/OvergrownHall/Blockout/Materials/M_Proxy_Bench": [
+      "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_14"
+    ],
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_01": [
+      "/Game/Environment/OvergrownHall/Blockout/Maps/L_OvergrownHall_Blockout"
+    ],
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_14": [
+      "/Game/Environment/OvergrownHall/Production/Maps/L_OvergrownHall_Detail"
+    ],
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_08": [
+      "/Game/Environment/OvergrownHall/Blockout/Maps/L_OvergrownHall_Blockout"
+    ],
+    "/Game/Environment/OvergrownHall/Bird/Tripo/Meshes/OH_Pigeon_Tripo_v001_basecolor": [
+      "/Game/Environment/OvergrownHall/Bird/Tripo/Meshes/tripo_material_4fdd9fe1-0906-4e36-931e-eae4ef26502c"
+    ],
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_02": [
+      "/Game/Environment/OvergrownHall/Blockout/Maps/L_OvergrownHall_Blockout"
+    ],
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_09": [
+      "/Game/Environment/OvergrownHall/Blockout/Maps/L_OvergrownHall_Blockout"
+    ],
+    "/Game/Environment/OvergrownHall/Production/Materials/M_Proxy_Floor": [
+      "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_13"
+    ],
+    "/Game/Environment/OvergrownHall/Bird/Clips/A_OH_Pigeon_FlyToGlide": [],
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_02": [
+      "/Game/Environment/OvergrownHall/Production/Maps/L_OvergrownHall_Detail"
+    ],
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_01": [
+      "/Game/Environment/OvergrownHall/Production/Maps/L_OvergrownHall_Detail"
+    ],
+    "/Game/Environment/OvergrownHall/Scene/Maps/L_OvergrownHall_Layout": [
+      "/Game/Environment/OvergrownHall/Scene/Sequences/LS_OvergrownHall_Flock"
+    ],
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_08": [
+      "/Game/Environment/OvergrownHall/Scene/Maps/L_OvergrownHall_Layout",
+      "/Game/Environment/OvergrownHall/TripoReplacement/Maps/L_OvergrownHall_TripoReview"
+    ],
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_16": [
+      "/Game/Environment/OvergrownHall/Production/Maps/L_OvergrownHall_Detail"
+    ],
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_16": [
+      "/Game/Environment/OvergrownHall/Blockout/Maps/L_OvergrownHall_Blockout"
+    ],
+    "/Game/Environment/OvergrownHall/Scene/Materials/M_Proxy_Metal": [
+      "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_06",
+      "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_07",
+      "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_08",
+      "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_10",
+      "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_14",
+      "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_25"
+    ],
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_03": [
+      "/Game/Environment/OvergrownHall/Production/Maps/L_OvergrownHall_Detail"
+    ],
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_25": [
+      "/Game/Environment/OvergrownHall/Blockout/Maps/L_OvergrownHall_Blockout"
+    ],
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_08": [
+      "/Game/Environment/OvergrownHall/Production/Maps/L_OvergrownHall_Detail"
+    ],
+    "/Game/Environment/OvergrownHall/Blockout/Materials/M_Material": [],
+    "/Game/Environment/OvergrownHall/Production/Materials/M_Proxy_Foliage_0": [
+      "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_16",
+      "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_17",
+      "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_18",
+      "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_19"
+    ],
+    "/Game/Environment/OvergrownHall/Production/Materials/M_Proxy_Metal": [
+      "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_06",
+      "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_07",
+      "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_08",
+      "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_10",
+      "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_14",
+      "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_25"
+    ],
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_21": [
+      "/Game/Environment/OvergrownHall/Blockout/Maps/L_OvergrownHall_Blockout"
+    ],
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_03": [
+      "/Game/Environment/OvergrownHall/Scene/Maps/L_OvergrownHall_Layout",
+      "/Game/Environment/OvergrownHall/TripoReplacement/Maps/L_OvergrownHall_TripoReview"
+    ],
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_12": [
+      "/Game/Environment/OvergrownHall/Blockout/Maps/L_OvergrownHall_Blockout"
+    ],
+    "/Game/Environment/OvergrownHall/Production/Materials/M_Proxy_Foliage_2": [
+      "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_16",
+      "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_17",
+      "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_18",
+      "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_19"
+    ],
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_17": [
+      "/Game/Environment/OvergrownHall/Blockout/Maps/L_OvergrownHall_Blockout"
+    ],
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_04": [
+      "/Game/Environment/OvergrownHall/Production/Maps/L_OvergrownHall_Detail"
+    ],
+    "/Game/Environment/OvergrownHall/Bird/Clips/A_OH_Pigeon_GlideToFly": [],
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_13": [
+      "/Game/Environment/OvergrownHall/Blockout/Maps/L_OvergrownHall_Blockout"
+    ],
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_11": [
+      "/Game/Environment/OvergrownHall/Blockout/Maps/L_OvergrownHall_Blockout"
+    ],
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_06": [
+      "/Game/Environment/OvergrownHall/Scene/Maps/L_OvergrownHall_Layout",
+      "/Game/Environment/OvergrownHall/TripoReplacement/Maps/L_OvergrownHall_TripoReview"
+    ],
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_14": [
+      "/Game/Environment/OvergrownHall/Blockout/Maps/L_OvergrownHall_Blockout"
+    ],
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_26": [
+      "/Game/Environment/OvergrownHall/Scene/Maps/L_OvergrownHall_Layout",
+      "/Game/Environment/OvergrownHall/TripoReplacement/Maps/L_OvergrownHall_TripoReview"
+    ],
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_09": [
+      "/Game/Environment/OvergrownHall/Scene/Maps/L_OvergrownHall_Layout",
+      "/Game/Environment/OvergrownHall/TripoReplacement/Maps/L_OvergrownHall_TripoReview"
+    ],
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_11": [
+      "/Game/Environment/OvergrownHall/Production/Maps/L_OvergrownHall_Detail"
+    ],
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_07": [
+      "/Game/Environment/OvergrownHall/Scene/Maps/L_OvergrownHall_Layout",
+      "/Game/Environment/OvergrownHall/TripoReplacement/Maps/L_OvergrownHall_TripoReview"
+    ],
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_21": [
+      "/Game/Environment/OvergrownHall/Production/Maps/L_OvergrownHall_Detail"
+    ],
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_09": [
+      "/Game/Environment/OvergrownHall/Production/Maps/L_OvergrownHall_Detail"
+    ],
+    "/Game/Environment/OvergrownHall/Scene/Materials/M_Proxy_Foliage_2": [
+      "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_16",
+      "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_17",
+      "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_18",
+      "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_19"
+    ],
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_16": [
+      "/Game/Environment/OvergrownHall/Scene/Maps/L_OvergrownHall_Layout",
+      "/Game/Environment/OvergrownHall/TripoReplacement/Maps/L_OvergrownHall_TripoReview"
+    ],
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_25": [
+      "/Game/Environment/OvergrownHall/Production/Maps/L_OvergrownHall_Detail"
+    ],
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_13": [
+      "/Game/Environment/OvergrownHall/Production/Maps/L_OvergrownHall_Detail"
+    ],
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_03": [
+      "/Game/Environment/OvergrownHall/Blockout/Maps/L_OvergrownHall_Blockout"
+    ],
+    "/Game/Environment/OvergrownHall/Bird/Tripo/Meshes/tripo_material_4fdd9fe1-0906-4e36-931e-eae4ef26502c": [],
+    "/Game/Environment/OvergrownHall/Production/Materials/M_Proxy_Water": [
+      "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_21"
+    ],
+    "/Game/Environment/OvergrownHall/Production/Materials/M_Proxy_Bench": [
+      "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_14",
+      "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_17",
+      "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_18",
+      "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_19"
+    ],
+    "/Game/Environment/OvergrownHall/Scene/Materials/M_Proxy_Foliage_0": [
+      "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_16",
+      "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_17",
+      "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_18",
+      "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_19"
+    ],
+    "/Game/Environment/OvergrownHall/Production/Materials/M_Proxy_Foliage_1": [
+      "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_16",
+      "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_17",
+      "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_18",
+      "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_19"
+    ],
+    "/Game/Environment/OvergrownHall/Bird/Clips/A_OH_Pigeon_Glide": [],
+    "/Game/Environment/OvergrownHall/Blockout/Materials/M_Proxy_Water": [
+      "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_21"
+    ],
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_26": [
+      "/Game/Environment/OvergrownHall/Blockout/Maps/L_OvergrownHall_Blockout"
+    ],
+    "/Game/Environment/OvergrownHall/Blockout/Materials/M_Proxy_Trim": [
+      "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_01",
+      "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_03",
+      "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_09",
+      "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_11",
+      "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_12"
+    ],
+    "/Game/Environment/OvergrownHall/Scene/Sequences/LS_OvergrownHall_Flock": [
+      "/Game/Environment/OvergrownHall/Scene/Maps/L_OvergrownHall_Layout"
+    ],
+    "/Game/Environment/OvergrownHall/Blockout/Materials/M_Proxy_Foliage_2": [
+      "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_16",
+      "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_17",
+      "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_18",
+      "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_19"
+    ],
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_10": [
+      "/Game/Environment/OvergrownHall/Scene/Maps/L_OvergrownHall_Layout",
+      "/Game/Environment/OvergrownHall/TripoReplacement/Maps/L_OvergrownHall_TripoReview"
+    ],
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_18": [
+      "/Game/Environment/OvergrownHall/Production/Maps/L_OvergrownHall_Detail"
+    ],
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_05": [
+      "/Game/Environment/OvergrownHall/Production/Maps/L_OvergrownHall_Detail"
+    ],
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_13": [
+      "/Game/Environment/OvergrownHall/Scene/Maps/L_OvergrownHall_Layout",
+      "/Game/Environment/OvergrownHall/TripoReplacement/Maps/L_OvergrownHall_TripoReview"
+    ],
+    "/Game/Environment/OvergrownHall/Scene/Materials/M_Proxy_Foliage_1": [
+      "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_16",
+      "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_17",
+      "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_18",
+      "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_19"
+    ],
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_12": [
+      "/Game/Environment/OvergrownHall/Production/Maps/L_OvergrownHall_Detail"
+    ],
+    "/Game/Environment/OvergrownHall/Scene/Materials/M_Proxy_Water": [
+      "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_21"
+    ],
+    "/Game/Environment/OvergrownHall/Bird/Meshes/SK_OH_Pigeon": [],
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_19": [
+      "/Game/Environment/OvergrownHall/Production/Maps/L_OvergrownHall_Detail"
+    ],
+    "/Game/Environment/OvergrownHall/Bird/Meshes/SK_OH_Pigeon_Skeleton": [
+      "/Game/Environment/OvergrownHall/Bird/Clips/A_OH_Pigeon_Fly",
+      "/Game/Environment/OvergrownHall/Bird/Clips/A_OH_Pigeon_FlyToGlide",
+      "/Game/Environment/OvergrownHall/Bird/Clips/A_OH_Pigeon_Glide",
+      "/Game/Environment/OvergrownHall/Bird/Clips/A_OH_Pigeon_GlideToFly",
+      "/Game/Environment/OvergrownHall/Bird/Meshes/SK_OH_Pigeon"
+    ],
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_14": [
+      "/Game/Environment/OvergrownHall/Scene/Maps/L_OvergrownHall_Layout",
+      "/Game/Environment/OvergrownHall/TripoReplacement/Maps/L_OvergrownHall_TripoReview"
+    ],
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_18": [
+      "/Game/Environment/OvergrownHall/Scene/Maps/L_OvergrownHall_Layout",
+      "/Game/Environment/OvergrownHall/TripoReplacement/Maps/L_OvergrownHall_TripoReview"
+    ],
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_04": [
+      "/Game/Environment/OvergrownHall/Blockout/Maps/L_OvergrownHall_Blockout"
+    ],
+    "/Game/Environment/OvergrownHall/Scene/Materials/M_Proxy_Floor": [
+      "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_13"
+    ],
+    "/Game/Environment/OvergrownHall/TripoReplacement/Maps/L_OvergrownHall_TripoReview": [
+      "/Game/Environment/OvergrownHall/TripoReplacement/Sequences/LS_OvergrownHall_Flock"
+    ],
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_04": [
+      "/Game/Environment/OvergrownHall/Scene/Maps/L_OvergrownHall_Layout",
+      "/Game/Environment/OvergrownHall/TripoReplacement/Maps/L_OvergrownHall_TripoReview"
+    ],
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_05": [
+      "/Game/Environment/OvergrownHall/Scene/Maps/L_OvergrownHall_Layout",
+      "/Game/Environment/OvergrownHall/TripoReplacement/Maps/L_OvergrownHall_TripoReview"
+    ],
+    "/Game/Environment/OvergrownHall/Blockout/Materials/M_Proxy_Floor": [
+      "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_13"
+    ],
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_05": [
+      "/Game/Environment/OvergrownHall/Blockout/Maps/L_OvergrownHall_Blockout"
+    ],
+    "/Game/Environment/OvergrownHall/Production/Materials/M_Proxy_Trim": [
+      "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_01",
+      "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_03",
+      "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_09",
+      "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_11",
+      "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_12"
+    ]
+  },
+  "deleted": [
+    "/Game/Environment/OvergrownHall/Bird/Clips/A_OH_Pigeon_Fly",
+    "/Game/Environment/OvergrownHall/Bird/Clips/A_OH_Pigeon_FlyToGlide",
+    "/Game/Environment/OvergrownHall/Bird/Clips/A_OH_Pigeon_Glide",
+    "/Game/Environment/OvergrownHall/Bird/Clips/A_OH_Pigeon_GlideToFly",
+    "/Game/Environment/OvergrownHall/Bird/Meshes/SK_OH_Pigeon",
+    "/Game/Environment/OvergrownHall/Bird/Meshes/SK_OH_Pigeon_Skeleton",
+    "/Game/Environment/OvergrownHall/Bird/Tripo/Meshes/OH_Pigeon_Tripo_v001_basecolor",
+    "/Game/Environment/OvergrownHall/Bird/Tripo/Meshes/OH_Pigeon_Tripo_v001_normal",
+    "/Game/Environment/OvergrownHall/Bird/Tripo/Meshes/tripo_material_4fdd9fe1-0906-4e36-931e-eae4ef26502c",
+    "/Game/Environment/OvergrownHall/Blockout/Maps/L_OvergrownHall_Blockout",
+    "/Game/Environment/OvergrownHall/Blockout/Materials/M_Material",
+    "/Game/Environment/OvergrownHall/Blockout/Materials/M_Proxy_Bench",
+    "/Game/Environment/OvergrownHall/Blockout/Materials/M_Proxy_Floor",
+    "/Game/Environment/OvergrownHall/Blockout/Materials/M_Proxy_Foliage_0",
+    "/Game/Environment/OvergrownHall/Blockout/Materials/M_Proxy_Foliage_1",
+    "/Game/Environment/OvergrownHall/Blockout/Materials/M_Proxy_Foliage_2",
+    "/Game/Environment/OvergrownHall/Blockout/Materials/M_Proxy_Metal",
+    "/Game/Environment/OvergrownHall/Blockout/Materials/M_Proxy_Stone",
+    "/Game/Environment/OvergrownHall/Blockout/Materials/M_Proxy_Trim",
+    "/Game/Environment/OvergrownHall/Blockout/Materials/M_Proxy_Water",
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_01",
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_02",
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_03",
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_04",
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_05",
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_06",
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_07",
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_08",
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_09",
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_10",
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_11",
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_12",
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_13",
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_14",
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_16",
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_17",
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_18",
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_19",
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_21",
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_25",
+    "/Game/Environment/OvergrownHall/Blockout/Meshes/SM_OH_Blockout_26",
+    "/Game/Environment/OvergrownHall/Production/Maps/L_OvergrownHall_Detail",
+    "/Game/Environment/OvergrownHall/Production/Materials/M_Proxy_Bench",
+    "/Game/Environment/OvergrownHall/Production/Materials/M_Proxy_Floor",
+    "/Game/Environment/OvergrownHall/Production/Materials/M_Proxy_Foliage_0",
+    "/Game/Environment/OvergrownHall/Production/Materials/M_Proxy_Foliage_1",
+    "/Game/Environment/OvergrownHall/Production/Materials/M_Proxy_Foliage_2",
+    "/Game/Environment/OvergrownHall/Production/Materials/M_Proxy_Metal",
+    "/Game/Environment/OvergrownHall/Production/Materials/M_Proxy_Stone",
+    "/Game/Environment/OvergrownHall/Production/Materials/M_Proxy_Trim",
+    "/Game/Environment/OvergrownHall/Production/Materials/M_Proxy_Water",
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_01",
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_02",
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_03",
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_04",
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_05",
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_06",
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_07",
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_08",
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_09",
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_10",
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_11",
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_12",
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_13",
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_14",
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_16",
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_17",
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_18",
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_19",
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_21",
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_25",
+    "/Game/Environment/OvergrownHall/Production/Meshes/SM_OH_Blockout_26",
+    "/Game/Environment/OvergrownHall/Production/Sequences/LS_OvergrownHall_Flock",
+    "/Game/Environment/OvergrownHall/Scene/Maps/L_OvergrownHall_Layout",
+    "/Game/Environment/OvergrownHall/Scene/Materials/M_Proxy_Bench",
+    "/Game/Environment/OvergrownHall/Scene/Materials/M_Proxy_Floor",
+    "/Game/Environment/OvergrownHall/Scene/Materials/M_Proxy_Foliage_0",
+    "/Game/Environment/OvergrownHall/Scene/Materials/M_Proxy_Foliage_1",
+    "/Game/Environment/OvergrownHall/Scene/Materials/M_Proxy_Foliage_2",
+    "/Game/Environment/OvergrownHall/Scene/Materials/M_Proxy_Metal",
+    "/Game/Environment/OvergrownHall/Scene/Materials/M_Proxy_Trim",
+    "/Game/Environment/OvergrownHall/Scene/Materials/M_Proxy_Water",
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_01",
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_02",
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_03",
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_04",
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_05",
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_06",
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_07",
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_08",
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_09",
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_10",
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_11",
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_12",
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_13",
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_14",
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_16",
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_17",
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_18",
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_19",
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_21",
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_25",
+    "/Game/Environment/OvergrownHall/Scene/Meshes/SM_OH_Blockout_26",
+    "/Game/Environment/OvergrownHall/Scene/Sequences/LS_OvergrownHall_Flock",
+    "/Game/Environment/OvergrownHall/TripoReplacement/Maps/L_OvergrownHall_TripoReview",
+    "/Game/Environment/OvergrownHall/TripoReplacement/Sequences/LS_OvergrownHall_Flock"
+  ],
+  "failed": [],
+  "retained_source_policy": "TripoFull and TripoReplacement base kit/material inputs are retained for maintained derivation recipes; final closure and all external referencers protect assets.",
+  "map_file_fallback": [
+    {
+      "package": "/Game/Environment/OvergrownHall/Blockout/Maps/L_OvergrownHall_Blockout",
+      "file": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\Content\\Environment\\OvergrownHall\\Blockout\\Maps\\L_OvergrownHall_Blockout.umap",
+      "backup": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\Saved\\EnvironmentCleanupRecovery\\L_OvergrownHall_Blockout.umap",
+      "sha256": "48844822E33FCB21A43E7BB23EEF1BA1DDF976A69FC3FD9B4B3591F0D6D3FCDF"
+    },
+    {
+      "package": "/Game/Environment/OvergrownHall/Production/Maps/L_OvergrownHall_Detail",
+      "file": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\Content\\Environment\\OvergrownHall\\Production\\Maps\\L_OvergrownHall_Detail.umap",
+      "backup": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\Saved\\EnvironmentCleanupRecovery\\L_OvergrownHall_Detail.umap",
+      "sha256": "B2ADEAEBCB75E99AF9B57703CAD25C2A947FD722407D7EB3CC1315F41A66A1A1"
+    },
+    {
+      "package": "/Game/Environment/OvergrownHall/Scene/Maps/L_OvergrownHall_Layout",
+      "file": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\Content\\Environment\\OvergrownHall\\Scene\\Maps\\L_OvergrownHall_Layout.umap",
+      "backup": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\Saved\\EnvironmentCleanupRecovery\\L_OvergrownHall_Layout.umap",
+      "sha256": "68F05BCB607B7A9197D6F5BD447132ABE059BD75AE81A3FC8B7CED40A27F8A46"
+    },
+    {
+      "package": "/Game/Environment/OvergrownHall/TripoReplacement/Maps/L_OvergrownHall_TripoReview",
+      "file": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\Content\\Environment\\OvergrownHall\\TripoReplacement\\Maps\\L_OvergrownHall_TripoReview.umap",
+      "backup": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\Saved\\EnvironmentCleanupRecovery\\L_OvergrownHall_TripoReview.umap",
+      "sha256": "CA194F2CF3E73174B4609DFE97E2B4F7CFE37898808B70B6EE9A3F714E036A36"
+    }
+  ]
+}

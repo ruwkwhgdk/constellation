@@ -1,0 +1,11 @@
+{
+  "material_slots_updated": 165,
+  "nosing": "uniform rough metal on original groove geometry",
+  "door": "original texture blended with light grey paint",
+  "localized_stains": true,
+  "rear_bounce_intensity": 650,
+  "status": "pass",
+  "all_actor_transforms_and_meshes_preserved": true,
+  "before": "ef529ca6db92eaeb9155c81d3b3b438572a2d77f7adb91528c634c8746a08d14",
+  "after": "ef529ca6db92eaeb9155c81d3b3b438572a2d77f7adb91528c634c8746a08d14"
+}

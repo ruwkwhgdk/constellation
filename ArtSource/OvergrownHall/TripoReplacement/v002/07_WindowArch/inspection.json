@@ -1,0 +1,23 @@
+{
+  "id": "07",
+  "name": "WindowArch",
+  "mesh": "SM_OH_T_07_WindowArch",
+  "source_triangles": 27934,
+  "triangles": 7970,
+  "budget": 8000,
+  "dimensions_m": [
+    2.3000760078430176,
+    0.13981252908706665,
+    1.2005996704101562
+  ],
+  "boundary_edges": 0,
+  "uv_layers": 1,
+  "edits": [
+    "upper semicircle isolated for arched window crown"
+  ],
+  "textures": [
+    "basecolor.png",
+    "normal.png",
+    "rm.png"
+  ]
+}

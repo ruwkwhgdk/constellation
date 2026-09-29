@@ -1,0 +1,21 @@
+{
+  "saved_map": true,
+  "translucent_surface": true,
+  "depth_fade": true,
+  "world_normal_ripples": true,
+  "reflection_flags": true,
+  "lowered_floor_tiles": 47,
+  "max_floor_drop_cm": 4.5917171032315585,
+  "shore_slab_count": 1,
+  "closed_slab_collision": true,
+  "foliage_preserved": {
+    "Tree": 19,
+    "Shrub": 85,
+    "Crown": 54
+  },
+  "broken_arches_preserved": 3,
+  "birds": 28,
+  "physical_refraction": false,
+  "playtest": false,
+  "performance_test": false
+}

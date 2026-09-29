@@ -1,0 +1,19 @@
+{
+  "leaf_triangles": 2950,
+  "opening_cm": [
+    100,
+    210
+  ],
+  "leaf_body_cm": [
+    98.8,
+    4,
+    209.4
+  ],
+  "clearance_cm": 0.6,
+  "pivot": "Right hinge at origin, bottom Z=0. Local leaf extends toward negative X; front is negative Y.",
+  "frame_collision_hulls": 3,
+  "leaf_collision_hulls": 1,
+  "frame_source": "Procedural fitted frame based on approved asset 13; not Tripo generated",
+  "material": "Leaf basecolor from Tripo; frame uses constant painted metal",
+  "status": "ready_for_unreal_import"
+}

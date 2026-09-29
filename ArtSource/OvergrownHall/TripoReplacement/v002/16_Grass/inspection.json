@@ -1,0 +1,21 @@
+{
+  "id": "16",
+  "name": "Grass",
+  "mesh": "SM_OH_T_16_Grass",
+  "source_triangles": 27621,
+  "triangles": 8969,
+  "budget": 9000,
+  "dimensions_m": [
+    0.6845496892929077,
+    0.6988222002983093,
+    0.44648295640945435
+  ],
+  "boundary_edges": 9,
+  "uv_layers": 1,
+  "edits": [],
+  "textures": [
+    "basecolor.png",
+    "normal.png",
+    "rm.png"
+  ]
+}

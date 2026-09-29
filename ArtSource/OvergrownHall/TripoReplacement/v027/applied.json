@@ -1,0 +1,22 @@
+{
+  "map": "/Game/Environment/OvergrownHall/TripoFull/Maps/L_OvergrownHall_TripoFull",
+  "lights": {
+    "OH_Sun": {
+      "intensity": 1700
+    },
+    "OH_Sky": {
+      "intensity": 1.8
+    },
+    "OH_Finish_FocalSun": {
+      "intensity": 2200000,
+      "inner_cone_angle": 5,
+      "outer_cone_angle": 8,
+      "volumetric_scattering_intensity": 4
+    },
+    "OH_Reference_LowerWindowShaft": {
+      "intensity": 450000,
+      "volumetric_scattering_intensity": 6
+    }
+  },
+  "playtest": false
+}

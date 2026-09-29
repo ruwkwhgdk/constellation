@@ -1,0 +1,619 @@
+{
+  "status": "review_import_verified",
+  "map": "/Game/Environment/StairwellModular/ReviewKit/Maps/L_Stairwell_KitReview",
+  "assets": [
+    {
+      "name": "SM_SW_02_Landing180",
+      "dimensions_cm": [
+        180.0,
+        180.0,
+        10.0
+      ],
+      "bounds_min_cm": [
+        0.0,
+        -180.0,
+        -10.0
+      ],
+      "bounds_max_cm": [
+        180.0,
+        0.0,
+        0.0
+      ],
+      "collision_hulls": 1,
+      "materials": 2,
+      "path": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_02_Landing180.SM_SW_02_Landing180"
+    },
+    {
+      "name": "SM_SW_02_Landing140",
+      "dimensions_cm": [
+        140.0,
+        180.0,
+        10.0
+      ],
+      "bounds_min_cm": [
+        0.0,
+        -180.0,
+        -10.0
+      ],
+      "bounds_max_cm": [
+        140.0,
+        0.0,
+        0.0
+      ],
+      "collision_hulls": 1,
+      "materials": 2,
+      "path": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_02_Landing140.SM_SW_02_Landing140"
+    },
+    {
+      "name": "SM_SW_03_Floor60",
+      "dimensions_cm": [
+        60.000003814697266,
+        60.000003814697266,
+        10.0
+      ],
+      "bounds_min_cm": [
+        0.0,
+        -60.000003814697266,
+        -10.0
+      ],
+      "bounds_max_cm": [
+        60.000003814697266,
+        0.0,
+        0.0
+      ],
+      "collision_hulls": 1,
+      "materials": 2,
+      "path": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60.SM_SW_03_Floor60"
+    },
+    {
+      "name": "SM_SW_04_Tactile60",
+      "dimensions_cm": [
+        60.000003814697266,
+        60.000003814697266,
+        10.400000005960464
+      ],
+      "bounds_min_cm": [
+        0.0,
+        -60.000003814697266,
+        -10.0
+      ],
+      "bounds_max_cm": [
+        60.000003814697266,
+        0.0,
+        0.4000000059604645
+      ],
+      "collision_hulls": 1,
+      "materials": 2,
+      "path": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_04_Tactile60.SM_SW_04_Tactile60"
+    },
+    {
+      "name": "SM_SW_01_Stair1",
+      "dimensions_cm": [
+        30.000001907348633,
+        140.0,
+        15.000000953674316
+      ],
+      "bounds_min_cm": [
+        0.0,
+        -140.0,
+        0.0
+      ],
+      "bounds_max_cm": [
+        30.000001907348633,
+        0.0,
+        15.000000953674316
+      ],
+      "collision_hulls": 1,
+      "materials": 1,
+      "path": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_01_Stair1.SM_SW_01_Stair1"
+    },
+    {
+      "name": "SM_SW_01_Stair6",
+      "dimensions_cm": [
+        180.0,
+        140.0,
+        90.0
+      ],
+      "bounds_min_cm": [
+        0.0,
+        -140.0,
+        0.0
+      ],
+      "bounds_max_cm": [
+        180.0,
+        0.0,
+        90.0
+      ],
+      "collision_hulls": 6,
+      "materials": 1,
+      "path": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_01_Stair6.SM_SW_01_Stair6"
+    },
+    {
+      "name": "SM_SW_05_Wall120",
+      "dimensions_cm": [
+        120.00000762939453,
+        15.600000977516174,
+        240.00001525878906
+      ],
+      "bounds_min_cm": [
+        0.0,
+        -15.000000953674316,
+        0.0
+      ],
+      "bounds_max_cm": [
+        120.00000762939453,
+        0.6000000238418579,
+        240.00001525878906
+      ],
+      "collision_hulls": 1,
+      "materials": 2,
+      "path": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120.SM_SW_05_Wall120"
+    },
+    {
+      "name": "SM_SW_06_WallInnerCorner",
+      "dimensions_cm": [
+        75.00000476837158,
+        75.00000476837158,
+        240.00001525878906
+      ],
+      "bounds_min_cm": [
+        -15.000000953674316,
+        -15.000000953674316,
+        0.0
+      ],
+      "bounds_max_cm": [
+        60.000003814697266,
+        60.000003814697266,
+        240.00001525878906
+      ],
+      "collision_hulls": 3,
+      "materials": 2,
+      "path": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_06_WallInnerCorner.SM_SW_06_WallInnerCorner"
+    },
+    {
+      "name": "SM_SW_20_WallOuterCorner",
+      "dimensions_cm": [
+        60.60000383853912,
+        60.60000383853912,
+        240.00001525878906
+      ],
+      "bounds_min_cm": [
+        -0.6000000238418579,
+        -60.000003814697266,
+        0.0
+      ],
+      "bounds_max_cm": [
+        60.000003814697266,
+        0.6000000238418579,
+        240.00001525878906
+      ],
+      "collision_hulls": 2,
+      "materials": 2,
+      "path": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_20_WallOuterCorner.SM_SW_20_WallOuterCorner"
+    },
+    {
+      "name": "SM_SW_21_WallEndCap",
+      "dimensions_cm": [
+        15.000000953674316,
+        15.600000977516174,
+        240.00001525878906
+      ],
+      "bounds_min_cm": [
+        0.0,
+        -15.000000953674316,
+        0.0
+      ],
+      "bounds_max_cm": [
+        15.000000953674316,
+        0.6000000238418579,
+        240.00001525878906
+      ],
+      "collision_hulls": 1,
+      "materials": 2,
+      "path": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_21_WallEndCap.SM_SW_21_WallEndCap"
+    },
+    {
+      "name": "SM_SW_07_Ceiling120",
+      "dimensions_cm": [
+        120.00000762939453,
+        120.00000762939453,
+        10.0
+      ],
+      "bounds_min_cm": [
+        0.0,
+        -120.00000762939453,
+        0.0
+      ],
+      "bounds_max_cm": [
+        120.00000762939453,
+        0.0,
+        10.0
+      ],
+      "collision_hulls": 1,
+      "materials": 1,
+      "path": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_07_Ceiling120.SM_SW_07_Ceiling120"
+    },
+    {
+      "name": "SM_SW_08_Beam140",
+      "dimensions_cm": [
+        140.0,
+        30.000001907348633,
+        25.0
+      ],
+      "bounds_min_cm": [
+        0.0,
+        -30.000001907348633,
+        0.0
+      ],
+      "bounds_max_cm": [
+        140.0,
+        0.0,
+        25.0
+      ],
+      "collision_hulls": 1,
+      "materials": 1,
+      "path": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_08_Beam140.SM_SW_08_Beam140"
+    },
+    {
+      "name": "SM_SW_22_Skirting120",
+      "dimensions_cm": [
+        120.00000762939453,
+        2.5,
+        12.0
+      ],
+      "bounds_min_cm": [
+        0.0,
+        -2.5,
+        0.0
+      ],
+      "bounds_max_cm": [
+        120.00000762939453,
+        0.0,
+        12.0
+      ],
+      "collision_hulls": 1,
+      "materials": 1,
+      "path": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_22_Skirting120.SM_SW_22_Skirting120"
+    },
+    {
+      "name": "SM_SW_22_SkirtingInner",
+      "dimensions_cm": [
+        60.000003814697266,
+        60.000003814697266,
+        12.0
+      ],
+      "bounds_min_cm": [
+        0.0,
+        -60.000003814697266,
+        0.0
+      ],
+      "bounds_max_cm": [
+        60.000003814697266,
+        0.0,
+        12.0
+      ],
+      "collision_hulls": 2,
+      "materials": 1,
+      "path": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_22_SkirtingInner.SM_SW_22_SkirtingInner"
+    },
+    {
+      "name": "SM_SW_22_SkirtingOuter",
+      "dimensions_cm": [
+        60.000003814697266,
+        62.500003814697266,
+        12.0
+      ],
+      "bounds_min_cm": [
+        0.0,
+        -2.5,
+        0.0
+      ],
+      "bounds_max_cm": [
+        60.000003814697266,
+        60.000003814697266,
+        12.0
+      ],
+      "collision_hulls": 2,
+      "materials": 1,
+      "path": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_22_SkirtingOuter.SM_SW_22_SkirtingOuter"
+    },
+    {
+      "name": "SM_SW_16_Nosing140",
+      "dimensions_cm": [
+        3.5,
+        140.0,
+        0.7000000476837158
+      ],
+      "bounds_min_cm": [
+        0.0,
+        -140.0,
+        0.0
+      ],
+      "bounds_max_cm": [
+        3.5,
+        0.0,
+        0.7000000476837158
+      ],
+      "collision_hulls": 1,
+      "materials": 2,
+      "path": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_16_Nosing140.SM_SW_16_Nosing140"
+    },
+    {
+      "name": "SM_SW_09_RailHorizontal",
+      "dimensions_cm": [
+        125.50000762939453,
+        10.299999237060547,
+        31.500001907348633
+      ],
+      "bounds_min_cm": [
+        -2.75,
+        -8.299999237060547,
+        -4.5
+      ],
+      "bounds_max_cm": [
+        122.75000762939453,
+        2.0,
+        27.000001907348633
+      ],
+      "collision_hulls": 2,
+      "materials": 1,
+      "path": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_09_RailHorizontal.SM_SW_09_RailHorizontal"
+    },
+    {
+      "name": "SM_SW_09_RailHorizontal60",
+      "dimensions_cm": [
+        65.5,
+        10.299999237060547,
+        31.500001907348633
+      ],
+      "bounds_min_cm": [
+        -2.75,
+        -8.299999237060547,
+        -4.5
+      ],
+      "bounds_max_cm": [
+        62.75,
+        2.0,
+        27.000001907348633
+      ],
+      "collision_hulls": 2,
+      "materials": 1,
+      "path": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_09_RailHorizontal60.SM_SW_09_RailHorizontal60"
+    },
+    {
+      "name": "SM_SW_10_RailSlope",
+      "dimensions_cm": [
+        125.50000762939453,
+        10.299999237060547,
+        91.28885650634766
+      ],
+      "bounds_min_cm": [
+        -2.75,
+        -8.299999237060547,
+        -4.5
+      ],
+      "bounds_max_cm": [
+        122.75000762939453,
+        2.0,
+        86.78885650634766
+      ],
+      "collision_hulls": 2,
+      "materials": 1,
+      "path": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_10_RailSlope.SM_SW_10_RailSlope"
+    },
+    {
+      "name": "SM_SW_10_RailSlope60",
+      "dimensions_cm": [
+        65.5,
+        10.299999237060547,
+        61.288856506347656
+      ],
+      "bounds_min_cm": [
+        -2.75,
+        -8.299999237060547,
+        -4.5
+      ],
+      "bounds_max_cm": [
+        62.75,
+        2.0,
+        56.788856506347656
+      ],
+      "collision_hulls": 2,
+      "materials": 1,
+      "path": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_10_RailSlope60.SM_SW_10_RailSlope60"
+    },
+    {
+      "name": "SM_SW_11_RailCornerLeft",
+      "dimensions_cm": [
+        9.999999046325684,
+        10.0,
+        29.000001907348633
+      ],
+      "bounds_min_cm": [
+        0.0,
+        -8.0,
+        -2.0
+      ],
+      "bounds_max_cm": [
+        9.999999046325684,
+        2.0,
+        27.000001907348633
+      ],
+      "collision_hulls": 16,
+      "materials": 1,
+      "path": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_11_RailCornerLeft.SM_SW_11_RailCornerLeft"
+    },
+    {
+      "name": "SM_SW_11_RailCornerRight",
+      "dimensions_cm": [
+        9.999999046325684,
+        10.0,
+        29.000001907348633
+      ],
+      "bounds_min_cm": [
+        0.0,
+        -2.0,
+        -2.0
+      ],
+      "bounds_max_cm": [
+        9.999999046325684,
+        8.0,
+        27.000001907348633
+      ],
+      "collision_hulls": 16,
+      "materials": 1,
+      "path": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_11_RailCornerRight.SM_SW_11_RailCornerRight"
+    },
+    {
+      "name": "SM_SW_17_SlopeToLevel",
+      "dimensions_cm": [
+        4.472135663032532,
+        4.0,
+        29.633437871932983
+      ],
+      "bounds_min_cm": [
+        -0.8944271802902222,
+        -2.0,
+        -1.7888543605804443
+      ],
+      "bounds_max_cm": [
+        3.5777084827423096,
+        2.0,
+        27.84458351135254
+      ],
+      "collision_hulls": 8,
+      "materials": 1,
+      "path": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_17_SlopeToLevel.SM_SW_17_SlopeToLevel"
+    },
+    {
+      "name": "SM_SW_18_LevelToDown",
+      "dimensions_cm": [
+        4.472135543823242,
+        4.0,
+        29.63343858718872
+      ],
+      "bounds_min_cm": [
+        0.0,
+        -2.0,
+        -2.633436679840088
+      ],
+      "bounds_max_cm": [
+        4.472135543823242,
+        2.0,
+        27.000001907348633
+      ],
+      "collision_hulls": 8,
+      "materials": 1,
+      "path": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_18_LevelToDown.SM_SW_18_LevelToDown"
+    },
+    {
+      "name": "SM_SW_12_RailReturnHorizontalLeft",
+      "dimensions_cm": [
+        9.25,
+        10.399999618530273,
+        31.5
+      ],
+      "bounds_min_cm": [
+        0.0,
+        -8.399999618530273,
+        -3.25
+      ],
+      "bounds_max_cm": [
+        9.25,
+        2.0,
+        28.25
+      ],
+      "collision_hulls": 18,
+      "materials": 1,
+      "path": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_12_RailReturnHorizontalLeft.SM_SW_12_RailReturnHorizontalLeft"
+    },
+    {
+      "name": "SM_SW_12_RailReturnHorizontalRight",
+      "dimensions_cm": [
+        9.25,
+        10.399999618530273,
+        31.5
+      ],
+      "bounds_min_cm": [
+        0.0,
+        -2.0,
+        -3.25
+      ],
+      "bounds_max_cm": [
+        9.25,
+        8.399999618530273,
+        28.25
+      ],
+      "collision_hulls": 18,
+      "materials": 1,
+      "path": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_12_RailReturnHorizontalRight.SM_SW_12_RailReturnHorizontalRight"
+    },
+    {
+      "name": "SM_SW_19_RailReturnSlopeLeft",
+      "dimensions_cm": [
+        9.510990977287292,
+        10.399999618530273,
+        32.72213530540466
+      ],
+      "bounds_min_cm": [
+        -0.8944271802902222,
+        -8.399999618530273,
+        -1.7888543605804443
+      ],
+      "bounds_max_cm": [
+        8.61656379699707,
+        2.0,
+        30.93328094482422
+      ],
+      "collision_hulls": 18,
+      "materials": 1,
+      "path": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_19_RailReturnSlopeLeft.SM_SW_19_RailReturnSlopeLeft"
+    },
+    {
+      "name": "SM_SW_19_RailReturnSlopeRight",
+      "dimensions_cm": [
+        9.510990977287292,
+        10.399999618530273,
+        32.72213530540466
+      ],
+      "bounds_min_cm": [
+        -0.8944271802902222,
+        -2.0,
+        -1.7888543605804443
+      ],
+      "bounds_max_cm": [
+        8.61656379699707,
+        8.399999618530273,
+        30.93328094482422
+      ],
+      "collision_hulls": 18,
+      "materials": 1,
+      "path": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_19_RailReturnSlopeRight.SM_SW_19_RailReturnSlopeRight"
+    },
+    {
+      "name": "SM_SW_15_LightFixture",
+      "dimensions_cm": [
+        120.00000762939453,
+        27.005874633789062,
+        20.5478458404541
+      ],
+      "bounds_min_cm": [
+        -60.000003814697266,
+        -13.502937316894531,
+        -10.215263366699219
+      ],
+      "bounds_max_cm": [
+        60.000003814697266,
+        13.502937316894531,
+        10.332582473754883
+      ],
+      "collision_hulls": 1,
+      "materials": 3,
+      "path": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_15_LightFixture.SM_SW_15_LightFixture"
+    }
+  ],
+  "preserved_door_assets": 2,
+  "appearance": "pending_user_review",
+  "playtest": "not_run",
+  "scene": "gallery and fit sample; not a finished source-scene reconstruction"
+}

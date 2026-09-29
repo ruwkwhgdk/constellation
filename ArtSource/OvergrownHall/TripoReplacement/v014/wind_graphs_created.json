@@ -1,0 +1,6 @@
+{
+  "near_max_cm": 0.92,
+  "far_max_cm": 0.46,
+  "leaf_slots_only": true,
+  "base_texture_preserved": true
+}

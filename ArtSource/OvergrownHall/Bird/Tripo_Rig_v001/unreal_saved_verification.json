@@ -1,0 +1,28 @@
+{
+  "status": "saved_skeleton_material_and_animation_pass",
+  "sampled_wing_rotation_dot": 0.7880107077341632,
+  "clips": [
+    {
+      "name": "Fly",
+      "path": "/Game/Environment/OvergrownHall/Bird/Tripo/Clips/A_OH_Pigeon_Fly.A_OH_Pigeon_Fly",
+      "seconds": 0.5
+    },
+    {
+      "name": "Glide",
+      "path": "/Game/Environment/OvergrownHall/Bird/Tripo/Clips/A_OH_Pigeon_Glide.A_OH_Pigeon_Glide",
+      "seconds": 1.0
+    },
+    {
+      "name": "FlyToGlide",
+      "path": "/Game/Environment/OvergrownHall/Bird/Tripo/Clips/A_OH_Pigeon_FlyToGlide.A_OH_Pigeon_FlyToGlide",
+      "seconds": 0.25
+    },
+    {
+      "name": "GlideToFly",
+      "path": "/Game/Environment/OvergrownHall/Bird/Tripo/Clips/A_OH_Pigeon_GlideToFly.A_OH_Pigeon_GlideToFly",
+      "seconds": 0.25
+    }
+  ],
+  "material": "/Game/Environment/OvergrownHall/Bird/Tripo/Materials/M_Pigeon_Tripo.M_Pigeon_Tripo",
+  "gameplay_path_test": "not_run"
+}

@@ -1,0 +1,591 @@
+{
+  "status": "pass",
+  "assets": [
+    {
+      "name": "SM_SW_02_Landing180",
+      "triangles": 444,
+      "uv": true
+    },
+    {
+      "name": "SM_SW_02_Landing140",
+      "triangles": 444,
+      "uv": true
+    },
+    {
+      "name": "SM_SW_03_Floor60",
+      "triangles": 60,
+      "uv": true
+    },
+    {
+      "name": "SM_SW_04_Tactile60",
+      "triangles": 4460,
+      "uv": true
+    },
+    {
+      "name": "SM_SW_01_Stair1",
+      "triangles": 12,
+      "uv": true
+    },
+    {
+      "name": "SM_SW_01_Stair6",
+      "triangles": 72,
+      "uv": true
+    },
+    {
+      "name": "SM_SW_05_Wall120",
+      "triangles": 3468,
+      "uv": true
+    },
+    {
+      "name": "SM_SW_06_WallInnerCorner",
+      "triangles": 3492,
+      "uv": true
+    },
+    {
+      "name": "SM_SW_20_WallOuterCorner",
+      "triangles": 3480,
+      "uv": true
+    },
+    {
+      "name": "SM_SW_21_WallEndCap",
+      "triangles": 300,
+      "uv": true
+    },
+    {
+      "name": "SM_SW_07_Ceiling120",
+      "triangles": 12,
+      "uv": true
+    },
+    {
+      "name": "SM_SW_08_Beam140",
+      "triangles": 12,
+      "uv": true
+    },
+    {
+      "name": "SM_SW_22_Skirting120",
+      "triangles": 12,
+      "uv": true
+    },
+    {
+      "name": "SM_SW_22_SkirtingInner",
+      "triangles": 24,
+      "uv": true
+    },
+    {
+      "name": "SM_SW_22_SkirtingOuter",
+      "triangles": 24,
+      "uv": true
+    },
+    {
+      "name": "SM_SW_16_Nosing140",
+      "triangles": 60,
+      "uv": true
+    },
+    {
+      "name": "SM_SW_09_RailHorizontal",
+      "triangles": 312,
+      "uv": true
+    },
+    {
+      "name": "SM_SW_09_RailHorizontal60",
+      "triangles": 312,
+      "uv": true
+    },
+    {
+      "name": "SM_SW_10_RailSlope",
+      "triangles": 312,
+      "uv": true
+    },
+    {
+      "name": "SM_SW_10_RailSlope60",
+      "triangles": 312,
+      "uv": true
+    },
+    {
+      "name": "SM_SW_11_RailCornerLeft",
+      "triangles": 424,
+      "uv": true
+    },
+    {
+      "name": "SM_SW_11_RailCornerRight",
+      "triangles": 424,
+      "uv": true
+    },
+    {
+      "name": "SM_SW_17_SlopeToLevel",
+      "triangles": 232,
+      "uv": true
+    },
+    {
+      "name": "SM_SW_18_LevelToDown",
+      "triangles": 232,
+      "uv": true
+    },
+    {
+      "name": "SM_SW_12_RailReturnHorizontalLeft",
+      "triangles": 496,
+      "uv": true
+    },
+    {
+      "name": "SM_SW_12_RailReturnHorizontalRight",
+      "triangles": 496,
+      "uv": true
+    },
+    {
+      "name": "SM_SW_19_RailReturnSlopeLeft",
+      "triangles": 496,
+      "uv": true
+    },
+    {
+      "name": "SM_SW_19_RailReturnSlopeRight",
+      "triangles": 496,
+      "uv": true
+    },
+    {
+      "name": "SM_Stairwell_DoorLeaf14",
+      "triangles": 2950,
+      "uv": true
+    },
+    {
+      "name": "SM_Stairwell_DoorFrame13",
+      "triangles": 36,
+      "uv": true
+    },
+    {
+      "name": "SM_SW_15_LightFixture",
+      "triangles": 2869,
+      "uv": true
+    }
+  ],
+  "rails": [
+    {
+      "name": "SM_SW_09_RailHorizontal",
+      "diameter_cm": 4,
+      "vertical_spacing_cm": 25,
+      "interfaces": [
+        {
+          "end": "start",
+          "upper": false,
+          "gap_cm": 1.5522043488499123e-08,
+          "normal_error_deg": 0.0
+        },
+        {
+          "end": "start",
+          "upper": true,
+          "gap_cm": 1.4901969611713656e-06,
+          "normal_error_deg": 0.0
+        },
+        {
+          "end": "end",
+          "upper": false,
+          "gap_cm": 1.1920939060571282e-05,
+          "normal_error_deg": 0.0
+        },
+        {
+          "end": "end",
+          "upper": true,
+          "gap_cm": 1.2287822113086408e-05,
+          "normal_error_deg": 0.0
+        }
+      ]
+    },
+    {
+      "name": "SM_SW_09_RailHorizontal60",
+      "diameter_cm": 4,
+      "vertical_spacing_cm": 25,
+      "interfaces": [
+        {
+          "end": "start",
+          "upper": false,
+          "gap_cm": 1.5522043488499123e-08,
+          "normal_error_deg": 0.0
+        },
+        {
+          "end": "start",
+          "upper": true,
+          "gap_cm": 1.4901969611713656e-06,
+          "normal_error_deg": 0.0
+        },
+        {
+          "end": "end",
+          "upper": false,
+          "gap_cm": 5.960484688499674e-06,
+          "normal_error_deg": 0.0
+        },
+        {
+          "end": "end",
+          "upper": true,
+          "gap_cm": 6.664019951863914e-06,
+          "normal_error_deg": 0.0
+        }
+      ]
+    },
+    {
+      "name": "SM_SW_10_RailSlope",
+      "diameter_cm": 4,
+      "vertical_spacing_cm": 25,
+      "interfaces": [
+        {
+          "end": "start",
+          "upper": false,
+          "gap_cm": 3.030775794845765e-08,
+          "normal_error_deg": 0.0
+        },
+        {
+          "end": "start",
+          "upper": true,
+          "gap_cm": 1.940255410041539e-08,
+          "normal_error_deg": 0.013988227454926254
+        },
+        {
+          "end": "end",
+          "upper": false,
+          "gap_cm": 1.5522043488499123e-08,
+          "normal_error_deg": 0.0
+        },
+        {
+          "end": "end",
+          "upper": true,
+          "gap_cm": 1.5522043488499123e-08,
+          "normal_error_deg": 0.0
+        }
+      ]
+    },
+    {
+      "name": "SM_SW_10_RailSlope60",
+      "diameter_cm": 4,
+      "vertical_spacing_cm": 25,
+      "interfaces": [
+        {
+          "end": "start",
+          "upper": false,
+          "gap_cm": 3.030775794845765e-08,
+          "normal_error_deg": 0.0
+        },
+        {
+          "end": "start",
+          "upper": true,
+          "gap_cm": 1.940255410041539e-08,
+          "normal_error_deg": 0.013988227454926254
+        },
+        {
+          "end": "end",
+          "upper": false,
+          "gap_cm": 5.960484688499674e-06,
+          "normal_error_deg": 0.0
+        },
+        {
+          "end": "end",
+          "upper": true,
+          "gap_cm": 8.429383993498225e-06,
+          "normal_error_deg": 0.0
+        }
+      ]
+    },
+    {
+      "name": "SM_SW_11_RailCornerLeft",
+      "diameter_cm": 4,
+      "vertical_spacing_cm": 25,
+      "interfaces": [
+        {
+          "end": "start",
+          "upper": false,
+          "gap_cm": 1.5522043488499123e-08,
+          "normal_error_deg": 0.0
+        },
+        {
+          "end": "start",
+          "upper": true,
+          "gap_cm": 1.4901969611713656e-06,
+          "normal_error_deg": 0.0
+        },
+        {
+          "end": "end",
+          "upper": false,
+          "gap_cm": 1.0536712127723508e-06,
+          "normal_error_deg": 0.0
+        },
+        {
+          "end": "end",
+          "upper": true,
+          "gap_cm": 3.161013638317052e-06,
+          "normal_error_deg": 0.0
+        }
+      ]
+    },
+    {
+      "name": "SM_SW_11_RailCornerRight",
+      "diameter_cm": 4,
+      "vertical_spacing_cm": 25,
+      "interfaces": [
+        {
+          "end": "start",
+          "upper": false,
+          "gap_cm": 1.5522043488499123e-08,
+          "normal_error_deg": 0.0
+        },
+        {
+          "end": "start",
+          "upper": true,
+          "gap_cm": 1.4901969611713656e-06,
+          "normal_error_deg": 0.0
+        },
+        {
+          "end": "end",
+          "upper": false,
+          "gap_cm": 7.450580596923828e-07,
+          "normal_error_deg": 0.0
+        },
+        {
+          "end": "end",
+          "upper": true,
+          "gap_cm": 3.0719530773294424e-06,
+          "normal_error_deg": 0.0
+        }
+      ]
+    },
+    {
+      "name": "SM_SW_17_SlopeToLevel",
+      "diameter_cm": 4,
+      "vertical_spacing_cm": 25,
+      "interfaces": [
+        {
+          "end": "start",
+          "upper": false,
+          "gap_cm": 3.030775794845765e-08,
+          "normal_error_deg": 0.0
+        },
+        {
+          "end": "start",
+          "upper": true,
+          "gap_cm": 1.940255410041539e-08,
+          "normal_error_deg": 0.013988227454926254
+        },
+        {
+          "end": "end",
+          "upper": false,
+          "gap_cm": 7.452197301109501e-07,
+          "normal_error_deg": 0.0
+        },
+        {
+          "end": "end",
+          "upper": true,
+          "gap_cm": 3.071992292169349e-06,
+          "normal_error_deg": 0.0
+        }
+      ]
+    },
+    {
+      "name": "SM_SW_18_LevelToDown",
+      "diameter_cm": 4,
+      "vertical_spacing_cm": 25,
+      "interfaces": [
+        {
+          "end": "start",
+          "upper": false,
+          "gap_cm": 1.5522043488499123e-08,
+          "normal_error_deg": 0.0
+        },
+        {
+          "end": "start",
+          "upper": true,
+          "gap_cm": 1.4901969611713656e-06,
+          "normal_error_deg": 0.0
+        },
+        {
+          "end": "end",
+          "upper": false,
+          "gap_cm": 3.738202956159283e-07,
+          "normal_error_deg": 0.013988227454926254
+        },
+        {
+          "end": "end",
+          "upper": true,
+          "gap_cm": 3.738202956159283e-07,
+          "normal_error_deg": 0.013988227454926254
+        }
+      ]
+    },
+    {
+      "name": "SM_SW_12_RailReturnHorizontalLeft",
+      "diameter_cm": 4,
+      "vertical_spacing_cm": 25,
+      "interfaces": [
+        {
+          "end": "start",
+          "upper": false,
+          "gap_cm": 1.5522043488499123e-08,
+          "normal_error_deg": 0.0
+        },
+        {
+          "end": "start",
+          "upper": true,
+          "gap_cm": 1.4901969611713656e-06,
+          "normal_error_deg": 0.0
+        },
+        {
+          "end": "end",
+          "upper": false,
+          "gap_cm": 7.450580596923828e-07,
+          "normal_error_deg": 0.0
+        },
+        {
+          "end": "end",
+          "upper": true,
+          "gap_cm": 3.0719530773294424e-06,
+          "normal_error_deg": 0.0
+        }
+      ]
+    },
+    {
+      "name": "SM_SW_12_RailReturnHorizontalRight",
+      "diameter_cm": 4,
+      "vertical_spacing_cm": 25,
+      "interfaces": [
+        {
+          "end": "start",
+          "upper": false,
+          "gap_cm": 1.5522043488499123e-08,
+          "normal_error_deg": 0.0
+        },
+        {
+          "end": "start",
+          "upper": true,
+          "gap_cm": 1.4901969611713656e-06,
+          "normal_error_deg": 0.0
+        },
+        {
+          "end": "end",
+          "upper": false,
+          "gap_cm": 8.33000234328132e-07,
+          "normal_error_deg": 0.0
+        },
+        {
+          "end": "end",
+          "upper": true,
+          "gap_cm": 3.0944585289500932e-06,
+          "normal_error_deg": 0.0
+        }
+      ]
+    },
+    {
+      "name": "SM_SW_19_RailReturnSlopeLeft",
+      "diameter_cm": 4,
+      "vertical_spacing_cm": 25,
+      "interfaces": [
+        {
+          "end": "start",
+          "upper": false,
+          "gap_cm": 3.030775794845765e-08,
+          "normal_error_deg": 0.0
+        },
+        {
+          "end": "start",
+          "upper": true,
+          "gap_cm": 1.940255410041539e-08,
+          "normal_error_deg": 0.013988227454926254
+        },
+        {
+          "end": "end",
+          "upper": false,
+          "gap_cm": 7.679882693323606e-07,
+          "normal_error_deg": 0.0
+        },
+        {
+          "end": "end",
+          "upper": true,
+          "gap_cm": 7.450580596923828e-07,
+          "normal_error_deg": 0.0
+        }
+      ]
+    },
+    {
+      "name": "SM_SW_19_RailReturnSlopeRight",
+      "diameter_cm": 4,
+      "vertical_spacing_cm": 25,
+      "interfaces": [
+        {
+          "end": "start",
+          "upper": false,
+          "gap_cm": 3.030775794845765e-08,
+          "normal_error_deg": 0.0
+        },
+        {
+          "end": "start",
+          "upper": true,
+          "gap_cm": 1.940255410041539e-08,
+          "normal_error_deg": 0.013988227454926254
+        },
+        {
+          "end": "end",
+          "upper": false,
+          "gap_cm": 7.679882693323606e-07,
+          "normal_error_deg": 0.0
+        },
+        {
+          "end": "end",
+          "upper": true,
+          "gap_cm": 7.450580596923828e-07,
+          "normal_error_deg": 0.0
+        }
+      ]
+    }
+  ],
+  "tiles": [
+    {
+      "name": "SM_SW_02_Landing180",
+      "count": 36,
+      "measured_y_pitch_cm": 30,
+      "tile_body_sizes_cm": [
+        [
+          29.7,
+          29.7,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "SM_SW_02_Landing140",
+      "count": 36,
+      "measured_y_pitch_cm": 30,
+      "tile_body_sizes_cm": [
+        [
+          9.7,
+          29.7,
+          1.0
+        ],
+        [
+          29.7,
+          29.7,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "SM_SW_03_Floor60",
+      "count": 4,
+      "measured_y_pitch_cm": 30,
+      "tile_body_sizes_cm": [
+        [
+          29.7,
+          29.7,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "SM_SW_04_Tactile60",
+      "count": 4,
+      "measured_y_pitch_cm": 30,
+      "tile_body_sizes_cm": [
+        [
+          29.7,
+          29.7,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "asset_count": 31,
+  "adopted_id_count": 22
+}

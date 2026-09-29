@@ -1,0 +1,12 @@
+[
+  {
+    "id": "06",
+    "mesh": "SM_OH_Refined_WindowLower",
+    "triangles": 5931
+  },
+  {
+    "id": "04",
+    "mesh": "SM_OH_Refined_SideArch",
+    "triangles": 11970
+  }
+]

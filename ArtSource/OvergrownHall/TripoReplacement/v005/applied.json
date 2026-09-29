@@ -1,0 +1,30 @@
+{
+  "map": "/Game/Environment/OvergrownHall/TripoFull/Maps/L_OvergrownHall_TripoFull",
+  "instances": {
+    "19": 19,
+    "17": 69,
+    "16": 48,
+    "18": 24,
+    "05": 24,
+    "09": 18,
+    "01": 10,
+    "02": 55,
+    "03": 10,
+    "26": 18,
+    "13": 163,
+    "04": 8,
+    "11": 10,
+    "25": 4,
+    "06": 8,
+    "07": 4,
+    "08": 29,
+    "10": 3,
+    "12": 1,
+    "14": 1,
+    "15": 6
+  },
+  "total": 532,
+  "architectural_retopology": 16,
+  "organic_cleanup": 5,
+  "playtest": false
+}

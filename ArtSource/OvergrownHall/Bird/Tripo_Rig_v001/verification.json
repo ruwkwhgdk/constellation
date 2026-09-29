@@ -1,0 +1,34 @@
+{
+  "status": "rig_and_clip_checks_pass",
+  "bones": 17,
+  "vertices": 13604,
+  "triangles": 19038,
+  "weights_normalized": true,
+  "clips": {
+    "Fly": {
+      "loop_vertex_error_m": 0.0,
+      "frames": 25,
+      "fps": 48
+    },
+    "Glide": {
+      "loop_vertex_error_m": 0.0,
+      "frames": 49,
+      "fps": 48
+    },
+    "FlyToGlide": {
+      "endpoint_error_m": 0.0,
+      "frames": 13
+    },
+    "GlideToFly": {
+      "endpoint_error_m": 0.0,
+      "frames": 13
+    }
+  },
+  "root_motion": "in_place",
+  "unreal_import": "pending",
+  "limitations": [
+    "approved Tripo appearance; new skin deformation review pending",
+    "no flight paths or animation controller yet",
+    "loop boundary tested, not full collision or anatomical validation"
+  ]
+}

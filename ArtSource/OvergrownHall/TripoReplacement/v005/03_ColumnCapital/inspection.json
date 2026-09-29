@@ -1,0 +1,24 @@
+{
+  "id": "03",
+  "name": "ColumnCapital",
+  "mesh": "SM_OH_Clean_03_ColumnCapital",
+  "source": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OvergrownHall\\TripoReplacement\\v002\\03_ColumnCapital\\prepared.blend",
+  "source_triangles": 7970,
+  "triangles": 432,
+  "budget": 8000,
+  "dimensions_m": [
+    0.9499752521514893,
+    0.9999603629112244,
+    0.4998127520084381
+  ],
+  "boundary_edges": 0,
+  "basecolor": "basecolor.png",
+  "organic": false,
+  "edits": [
+    "source-guided hard-surface retopology",
+    "straight edges and planar faces",
+    "small 2-segment bevels",
+    "Tripo base color reprojected to new UV",
+    "normal map intentionally omitted: old tangent basis is invalid"
+  ]
+}

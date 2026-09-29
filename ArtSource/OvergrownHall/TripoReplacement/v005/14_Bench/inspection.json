@@ -1,0 +1,24 @@
+{
+  "id": "14",
+  "name": "Bench",
+  "mesh": "SM_OH_Clean_14_Bench",
+  "source": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OvergrownHall\\TripoReplacement\\v002\\14_Bench\\prepared.blend",
+  "source_triangles": 11970,
+  "triangles": 1512,
+  "budget": 12000,
+  "dimensions_m": [
+    1.799593448638916,
+    0.6499999761581421,
+    0.899449348449707
+  ],
+  "boundary_edges": 0,
+  "basecolor": "basecolor.png",
+  "organic": false,
+  "edits": [
+    "source-guided hard-surface retopology",
+    "straight edges and planar faces",
+    "small 2-segment bevels",
+    "Tripo base color reprojected to new UV",
+    "normal map intentionally omitted: old tangent basis is invalid"
+  ]
+}

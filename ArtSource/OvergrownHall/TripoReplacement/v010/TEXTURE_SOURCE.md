@@ -1,0 +1,7 @@
+# Painted leaf cluster
+
+Generated with the built-in image_gen tool, transparent_background=true, 2026-09-28. No CLI/API fallback. Workspace source: `painted_leaves.png` (1254×1254 RGBA); Unreal builds1024×1024 with alpha-coverage-preserving mipmaps. Original generated alpha is preserved. Sampled alpha verification: `alpha_check.json`.
+
+## Exact prompt
+
+Create a single game foliage-card texture on a truly transparent background. One lush irregular cluster of roughly 30 overlapping small round oval deciduous leaves on very fine barely visible twigs, front view, floating isolated. Soft hand-painted gouache background-art style from a warm Japanese animated film, broad confident matte color shapes, warm yellow-green new leaves, mid spring green body, quiet teal-green shadow leaves. Individual leaves should have rounded slightly tapered ends, NOT jagged maple or oak points. Silhouette airy and irregular with several transparent holes between leaves, asymmetrical lobes, edges crisp enough to mask but softly painted internal shading. Cluster fills 85 percent of a square image with transparent margin on all sides, no clipped leaves. Gentle subtle veins, no black outlines, no photorealistic pores or specular highlights. No cast shadow, no ground, no pot, no whole tree, no trunk, no text, no grid, no opaque white or checkerboard background. This is an albedo plus alpha sprite for crossed 3D leaf cards, even neutral illumination, no strong directional baked light. Natural brushwork and a varied organic outline, not a circular bush icon.

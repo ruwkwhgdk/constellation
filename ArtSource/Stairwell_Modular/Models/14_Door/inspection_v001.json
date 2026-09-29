@@ -1,0 +1,61 @@
+{
+  "source": "door14_raw_v001.glb",
+  "status": "awaiting_user_review",
+  "triangle_limit": 3000,
+  "raw_objects": [
+    {
+      "name": "tripo_node_3fe0ace8-7437-480e-a080-443fd0574508",
+      "triangles": 3346,
+      "vertices": 2361,
+      "boundary_edges": 1164,
+      "nonmanifold_edges": 1164,
+      "uv_layers": 1,
+      "material_slots": 1
+    }
+  ],
+  "raw_triangles": 3346,
+  "raw_dimensions_m": [
+    0.5249024033546448,
+    0.1459961235523224,
+    0.99951171875
+  ],
+  "review_objects": [
+    {
+      "name": "SM_Stairwell_Door14_Part00",
+      "triangles": 2950,
+      "vertices": 1516,
+      "boundary_edges": 64,
+      "nonmanifold_edges": 64,
+      "uv_layers": 1,
+      "material_slots": 1
+    }
+  ],
+  "review_triangles": 2950,
+  "review_dimensions_cm": [
+    110.283,
+    30.676,
+    210.0
+  ],
+  "scale_policy": "Uniform 210cm review height; width and thickness retained from generation. Final opening fit and hinge pivot pending.",
+  "materials": [
+    {
+      "name": "tripo_mat_3fe0ace8-7437-480e-a080-443fd0574508",
+      "textures": [
+        {
+          "name": "weathered_metal_door_3d_model_basecolor",
+          "size": [
+            2048,
+            2048
+          ],
+          "colorspace": "sRGB"
+        }
+      ]
+    }
+  ],
+  "not_done": [
+    "Human appearance review",
+    "Exact door frame fit and hinge pivot",
+    "Collision",
+    "Unreal import"
+  ]
+}

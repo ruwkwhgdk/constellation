@@ -1,0 +1,23 @@
+{
+  "id": "14",
+  "name": "Bench",
+  "mesh": "SM_OH_T_14_Bench",
+  "source_triangles": 27252,
+  "triangles": 11970,
+  "budget": 12000,
+  "dimensions_m": [
+    1.799593448638916,
+    0.6499999761581421,
+    0.899449348449707
+  ],
+  "boundary_edges": 0,
+  "uv_layers": 1,
+  "edits": [
+    "longitudinal axis to X"
+  ],
+  "textures": [
+    "basecolor.png",
+    "normal.png",
+    "rm.png"
+  ]
+}

@@ -1,0 +1,2392 @@
+{
+  "OH_Tripo_Tree_00": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedTree.SM_OH_PaintedTree",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -1150.0,
+      350.0,
+      0.0
+    ]
+  },
+  "OH_Tripo_Tree_01": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedTree.SM_OH_PaintedTree",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -1150.0,
+      900.0,
+      0.0
+    ]
+  },
+  "OH_Tripo_Tree_02": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedTree.SM_OH_PaintedTree",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -1150.0,
+      1450.0,
+      0.0
+    ]
+  },
+  "OH_Tripo_Tree_03": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedTree.SM_OH_PaintedTree",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -1150.0,
+      2000.0,
+      0.0
+    ]
+  },
+  "OH_Tripo_Tree_04": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedTree.SM_OH_PaintedTree",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -1150.0,
+      2550.0,
+      0.0
+    ]
+  },
+  "OH_Tripo_Tree_05": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedTree.SM_OH_PaintedTree",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      1150.0,
+      350.0,
+      0.0
+    ]
+  },
+  "OH_Tripo_Tree_06": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedTree.SM_OH_PaintedTree",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      1150.0,
+      900.0,
+      0.0
+    ]
+  },
+  "OH_Tripo_Tree_07": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedTree.SM_OH_PaintedTree",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      1150.0,
+      1450.0,
+      0.0
+    ]
+  },
+  "OH_Tripo_Tree_08": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedTree.SM_OH_PaintedTree",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      1150.0,
+      2000.0,
+      0.0
+    ]
+  },
+  "OH_Tripo_Tree_09": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedTree.SM_OH_PaintedTree",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      1150.0,
+      2550.0,
+      0.0
+    ]
+  },
+  "OH_Tripo_Tree_10": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedTree.SM_OH_PaintedTree",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -750.0,
+      2450.0,
+      0.0
+    ]
+  },
+  "OH_Tripo_Tree_11": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedTree.SM_OH_PaintedTree",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -400.0,
+      2450.0,
+      0.0
+    ]
+  },
+  "OH_Tripo_Tree_12": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedTree.SM_OH_PaintedTree",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      0.0,
+      2450.0,
+      0.0
+    ]
+  },
+  "OH_Tripo_Tree_13": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedTree.SM_OH_PaintedTree",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      400.0,
+      2450.0,
+      0.0
+    ]
+  },
+  "OH_Tripo_Tree_14": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedTree.SM_OH_PaintedTree",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      750.0,
+      2450.0,
+      0.0
+    ]
+  },
+  "OH_Tripo_Tree_15": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedTree.SM_OH_PaintedTree",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -900.0,
+      2950.0,
+      0.0
+    ]
+  },
+  "OH_Tripo_Tree_16": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedTree.SM_OH_PaintedTree",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -300.0,
+      2950.0,
+      0.0
+    ]
+  },
+  "OH_Tripo_Tree_17": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedTree.SM_OH_PaintedTree",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      300.0,
+      2950.0,
+      0.0
+    ]
+  },
+  "OH_Tripo_Tree_18": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedTree.SM_OH_PaintedTree",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      900.0,
+      2950.0,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0000": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      246.48027420043945,
+      1873.016357421875,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0001": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      390.83642959594727,
+      1797.8866577148438,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0002": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      286.5943908691406,
+      1815.1573181152344,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0003": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      563.3867263793945,
+      1706.0026168823242,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0004": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -78.5871684551239,
+      1755.2825927734375,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0005": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      523.8235473632812,
+      1869.0765380859375,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0006": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      341.16063117980957,
+      1998.605728149414,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0007": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      232.87758827209473,
+      1792.85888671875,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0008": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -28.66736650466919,
+      1909.0160369873047,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0009": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -309.966778755188,
+      1786.8877410888672,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0010": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -398.2917547225952,
+      1953.000259399414,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0011": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -43.0076539516449,
+      1921.2461471557617,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0012": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      675.0409126281738,
+      1822.5868225097656,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0013": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -347.25117683410645,
+      1718.7416076660156,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0014": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      324.57642555236816,
+      1797.4002838134766,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0015": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      141.8959617614746,
+      1696.9188690185547,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0016": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      599.5265007019043,
+      1930.483627319336,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0017": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -326.37596130371094,
+      1782.876205444336,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0018": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      530.9330940246582,
+      1948.4891891479492,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0019": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      89.63876366615295,
+      1773.8700866699219,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0020": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      276.38487815856934,
+      1764.1656875610352,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0021": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -4.360860586166382,
+      1992.1646118164062,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0022": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      598.0627059936523,
+      1832.6103210449219,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0023": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -154.8596978187561,
+      1965.3160095214844,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0024": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      476.2476921081543,
+      1867.3627853393555,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0025": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -657.1105480194092,
+      1812.7540588378906,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0026": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -576.597785949707,
+      1748.2429504394531,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0027": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      257.28468894958496,
+      1926.7902374267578,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0028": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      306.7784786224365,
+      1774.3301391601562,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0029": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      184.8919153213501,
+      1895.2289581298828,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0030": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      99.70569014549255,
+      1964.6055221557617,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0031": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      615.6729698181152,
+      1793.9403533935547,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0032": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      260.4527235031128,
+      1997.9446411132812,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0033": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      175.9791374206543,
+      1796.695327758789,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0034": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      515.3801918029785,
+      1731.3655853271484,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0035": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -174.24898147583008,
+      1969.717788696289,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0036": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      409.2489719390869,
+      1959.2287063598633,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0037": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      183.0153465270996,
+      1987.4601364135742,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0038": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      433.02268981933594,
+      1785.1425170898438,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0039": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -113.16595077514648,
+      1806.4678192138672,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0040": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      108.83928537368774,
+      1774.8847961425781,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0041": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -357.62782096862793,
+      1757.8275680541992,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0042": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -336.71233654022217,
+      1905.892562866211,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0043": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -489.3331527709961,
+      1727.2079467773438,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0044": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -322.6224184036255,
+      1921.6659545898438,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0045": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -349.2179870605469,
+      1945.0572967529297,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0046": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -551.8691539764404,
+      1934.1106414794922,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0047": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      176.86514854431152,
+      1801.449203491211,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0048": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      247.60727882385254,
+      1812.7782821655273,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0049": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      11.670470237731934,
+      1844.2882537841797,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0050": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      28.571873903274536,
+      1989.8151397705078,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0051": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      336.8004083633423,
+      1745.010757446289,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0052": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      665.2639389038086,
+      1739.3619537353516,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0053": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -575.0353813171387,
+      1958.7528228759766,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0054": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      266.39459133148193,
+      1811.5581512451172,
+      0.0
+    ]
+  },
+  "OH_FULL_18_0079": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      603.2451629638672,
+      583.6000096961217,
+      211.71686450122496
+    ]
+  },
+  "OH_FULL_18_0080": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      602.8320789337158,
+      641.5118290858378,
+      324.9064158628155
+    ]
+  },
+  "OH_FULL_18_0081": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      599.330472946167,
+      576.770953122028,
+      577.0991202311684
+    ]
+  },
+  "OH_FULL_18_0082": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      598.2993125915527,
+      577.2093880452982,
+      616.6994228277863
+    ]
+  },
+  "OH_FULL_18_0083": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      599.7790813446045,
+      1418.3709927618484,
+      248.46753962746016
+    ]
+  },
+  "OH_FULL_18_0084": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      596.9700336456299,
+      1422.4416009435088,
+      350.0341303423377
+    ]
+  },
+  "OH_FULL_18_0085": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      606.4812183380127,
+      1427.5241244166677,
+      526.4343474697006
+    ]
+  },
+  "OH_FULL_18_0086": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      602.5288581848145,
+      1414.0315406718098,
+      702.372514803702
+    ]
+  },
+  "OH_FULL_18_0087": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      599.085521697998,
+      1834.152536764097,
+      169.1320521085157
+    ]
+  },
+  "OH_FULL_18_0088": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      598.5803127288818,
+      1817.844000998404,
+      391.88190154913195
+    ]
+  },
+  "OH_FULL_18_0089": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      601.3191223144531,
+      1825.6291073182988,
+      507.148133473853
+    ]
+  },
+  "OH_FULL_18_0090": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      595.953369140625,
+      1784.0011434961696,
+      709.0028093151815
+    ]
+  },
+  "OH_FULL_18_0115": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      -596.6954231262207,
+      595.8975165815083,
+      196.81327489021288
+    ]
+  },
+  "OH_FULL_18_0116": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      -602.0158767700195,
+      574.4008819196919,
+      413.8409272384765
+    ]
+  },
+  "OH_FULL_18_0117": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      -596.6647148132324,
+      581.0555731173674,
+      481.6793379509646
+    ]
+  },
+  "OH_FULL_18_0118": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      -597.5235462188721,
+      560.5103558719751,
+      649.9831983251505
+    ]
+  },
+  "OH_FULL_18_0119": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      -600.539493560791,
+      1440.6033652918622,
+      268.98900532095706
+    ]
+  },
+  "OH_FULL_18_0120": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      -595.8874225616455,
+      1356.6287178992054,
+      322.3068093708504
+    ]
+  },
+  "OH_FULL_18_0121": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      -596.1740493774414,
+      1437.6244530677136,
+      533.360282494979
+    ]
+  },
+  "OH_FULL_18_0122": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      -600.7092475891113,
+      1405.355555247953,
+      643.3362658044512
+    ]
+  },
+  "OH_FULL_18_0123": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      -599.462366104126,
+      1758.760987748591,
+      232.71260532463037
+    ]
+  },
+  "OH_FULL_18_0124": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      -601.1844635009766,
+      1835.6703298852804,
+      311.28075688904016
+    ]
+  },
+  "OH_FULL_18_0125": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      -605.4192543029785,
+      1808.1689668646868,
+      484.3390721374028
+    ]
+  },
+  "OH_FULL_18_0126": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      -596.3007926940918,
+      1811.320361937298,
+      695.8857859976113
+    ]
+  },
+  "OH_FULL_17_0127": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      576.8404960632324,
+      1109.5922470092773,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0128": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      524.1982460021973,
+      1515.663719177246,
+      4.067307710647583
+    ]
+  },
+  "OH_FULL_17_0129": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      482.69147872924805,
+      1337.1857643127441,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0130": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      508.69059562683105,
+      1318.135929107666,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0131": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      362.07098960876465,
+      1274.888515472412,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0132": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      433.76550674438477,
+      1199.8794555664062,
+      1.4563500881195068
+    ]
+  },
+  "OH_FULL_17_0133": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      399.8638391494751,
+      1461.729335784912,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0134": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      432.82713890075684,
+      1651.9794464111328,
+      15.26423692703247
+    ]
+  },
+  "OH_FULL_17_0135": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -476.9628047943115,
+      1196.415901184082,
+      32.358989119529724
+    ]
+  },
+  "OH_FULL_17_0136": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -506.2847137451172,
+      1478.5215377807617,
+      16.549205780029297
+    ]
+  },
+  "OH_FULL_17_0137": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -352.62622833251953,
+      1177.8825759887695,
+      0.0
+    ]
+  },
+  "OH_FULL_17_0138": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -507.867431640625,
+      1408.2965850830078,
+      2.1406054496765137
+    ]
+  },
+  "OH_FULL_17_0139": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -507.93914794921875,
+      1065.788459777832,
+      9.63963270187378
+    ]
+  },
+  "OH_FULL_17_0140": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -372.8556156158447,
+      1309.3457221984863,
+      0.0
+    ]
+  },
+  "OH_Growth_Vine_000": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      -602.0,
+      627.6758324583374,
+      143.1771241492699
+    ]
+  },
+  "OH_Growth_Vine_001": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      -602.0,
+      599.4573899949094,
+      319.32983448884954
+    ]
+  },
+  "OH_Growth_Vine_002": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      -602.0,
+      623.7293404103162,
+      502.0912890007399
+    ]
+  },
+  "OH_Growth_Leaf_003": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -593.0,
+      620.9856862902666,
+      90.34637927980978
+    ]
+  },
+  "OH_Growth_Vine_004": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      -602.0,
+      999.9626397090303,
+      47.83910230588571
+    ]
+  },
+  "OH_Growth_Vine_005": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      -602.0,
+      995.1988865671414,
+      273.74847277104186
+    ]
+  },
+  "OH_Growth_Leaf_006": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -593.0,
+      978.5130055042172,
+      42.93679532991656
+    ]
+  },
+  "OH_Growth_Vine_007": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      -602.0,
+      1755.7263383937093,
+      48.5575788065463
+    ]
+  },
+  "OH_Growth_Vine_008": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      -602.0,
+      1797.1622421559675,
+      303.89076822847824
+    ]
+  },
+  "OH_Growth_Leaf_009": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -593.0,
+      1769.1621514225817,
+      4.0
+    ]
+  },
+  "OH_Growth_Vine_010": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      602.0,
+      968.7922830053722,
+      18.33591004077354
+    ]
+  },
+  "OH_Growth_Vine_011": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      602.0,
+      995.098790607025,
+      237.91366106248796
+    ]
+  },
+  "OH_Growth_Leaf_012": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      593.0,
+      973.1945896100403,
+      61.01625199807819
+    ]
+  },
+  "OH_Growth_Vine_013": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      602.0,
+      1380.4753091570337,
+      89.41954359373025
+    ]
+  },
+  "OH_Growth_Vine_014": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      602.0,
+      1418.893923140421,
+      248.0382927003968
+    ]
+  },
+  "OH_Growth_Vine_015": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      602.0,
+      1421.0648855780075,
+      543.1314981512996
+    ]
+  },
+  "OH_Growth_Leaf_016": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      593.0,
+      1430.709669218296,
+      57.005006124078676
+    ]
+  },
+  "OH_Growth_Vine_017": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      602.0,
+      1808.3418577100565,
+      79.14037780079573
+    ]
+  },
+  "OH_Growth_Vine_018": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      602.0,
+      1797.4024267351283,
+      353.07129177976157
+    ]
+  },
+  "OH_Growth_Leaf_019": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      593.0,
+      1817.8410202046512,
+      86.18959551246371
+    ]
+  },
+  "OH_Growth_Vine_020": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      -509.4713718287911,
+      1918.0,
+      102.9687412218492
+    ]
+  },
+  "OH_Growth_Leaf_021": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -463.6397449597968,
+      1910.0,
+      223.46032171302338
+    ]
+  },
+  "OH_Growth_Vine_022": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      -418.5277084988513,
+      1918.0,
+      139.16340809572708
+    ]
+  },
+  "OH_Growth_Leaf_023": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -412.1248792010332,
+      1910.0,
+      298.0233742741449
+    ]
+  },
+  "OH_Growth_Vine_024": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      -347.55382850215767,
+      1918.0,
+      186.65915378188515
+    ]
+  },
+  "OH_Growth_Leaf_025": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -349.05583378084714,
+      1910.0,
+      231.017542147152
+    ]
+  },
+  "OH_Growth_Vine_026": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      -236.26337865894195,
+      1918.0,
+      154.60648194772153
+    ]
+  },
+  "OH_Growth_Leaf_027": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -197.22787800607267,
+      1910.0,
+      220.11047583036046
+    ]
+  },
+  "OH_Growth_Vine_028": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      -110.45376691590047,
+      1918.0,
+      96.66616748885123
+    ]
+  },
+  "OH_Growth_Leaf_029": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -128.7683800076673,
+      1910.0,
+      294.0202498114798
+    ]
+  },
+  "OH_Growth_Vine_030": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      58.228860076743686,
+      1918.0,
+      18.300078878069584
+    ]
+  },
+  "OH_Growth_Leaf_031": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      41.75860863192447,
+      1910.0,
+      213.19816956958402
+    ]
+  },
+  "OH_Growth_Vine_032": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      145.70128688070963,
+      1918.0,
+      102.78241078684789
+    ]
+  },
+  "OH_Growth_Leaf_033": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      120.36474752521792,
+      1910.0,
+      185.13814571821166
+    ]
+  },
+  "OH_Growth_Vine_034": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      284.66230010366957,
+      1918.0,
+      55.369483282308664
+    ]
+  },
+  "OH_Growth_Leaf_035": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      283.93970265450434,
+      1910.0,
+      194.2077817064788
+    ]
+  },
+  "OH_Growth_Vine_036": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      393.22303036095485,
+      1918.0,
+      99.87308061701079
+    ]
+  },
+  "OH_Growth_Leaf_037": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      439.10248813702265,
+      1910.0,
+      262.0607898316158
+    ]
+  },
+  "OH_Growth_Vine_038": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      513.6430840967737,
+      1918.0,
+      111.81504050237847
+    ]
+  },
+  "OH_Growth_Leaf_039": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedShrub.SM_OH_PaintedShrub",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      495.10634610651766,
+      1910.0,
+      187.07853735012048
+    ]
+  },
+  "OH_Growth_Vine_040": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      -471.55910191082876,
+      1938.0,
+      346.52514870718454
+    ]
+  },
+  "OH_Growth_Vine_041": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      -475.9510536975888,
+      1938.0,
+      717.0942042913466
+    ]
+  },
+  "OH_Growth_Vine_042": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      -238.9138726158173,
+      1938.0,
+      304.7935211577825
+    ]
+  },
+  "OH_Growth_Vine_043": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      -292.0054272647189,
+      1938.0,
+      774.5067874170511
+    ]
+  },
+  "OH_Growth_Vine_044": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      291.05281115087604,
+      1938.0,
+      693.4274731479725
+    ]
+  },
+  "OH_Growth_Vine_045": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      497.9036896010964,
+      1938.0,
+      296.6850527427836
+    ]
+  },
+  "OH_Growth_Vine_046": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      515.5852084586197,
+      1938.0,
+      762.543152967885
+    ]
+  },
+  "OH_Growth_Vine_047": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      -603.0,
+      679.0483551646164,
+      675.9981264620745
+    ]
+  },
+  "OH_Growth_Vine_048": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      -603.0,
+      1325.612199603687,
+      658.4245260374319
+    ]
+  },
+  "OH_Growth_Vine_049": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      -603.0,
+      1711.7114599094912,
+      662.274988090731
+    ]
+  },
+  "OH_Growth_Vine_050": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      603.0,
+      696.8464533163963,
+      596.4259211808998
+    ]
+  },
+  "OH_Growth_Vine_051": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      603.0,
+      1359.9417222459244,
+      669.8644601216577
+    ]
+  },
+  "OH_Growth_Vine_052": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      603.0,
+      1720.8813052792061,
+      643.7698167060021
+    ]
+  },
+  "OH_Refine_Forest_000": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -1679.7338161021687,
+      2408.7231626942607,
+      489.94760186235976
+    ]
+  },
+  "OH_Refine_Forest_001": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -1076.5295903127928,
+      2488.6178139240233,
+      417.4896410446352
+    ]
+  },
+  "OH_Refine_Forest_002": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -837.5047853293684,
+      2628.055783383285,
+      407.53091141166834
+    ]
+  },
+  "OH_Refine_Forest_003": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -340.9132913987654,
+      2410.7352210018907,
+      410.6384303392794
+    ]
+  },
+  "OH_Refine_Forest_004": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      104.98785195943478,
+      2500.467822998521,
+      438.87585780461706
+    ]
+  },
+  "OH_Refine_Forest_005": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      398.0104524567712,
+      2524.6156553207097,
+      431.994405624913
+    ]
+  },
+  "OH_Refine_Forest_006": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      881.6605052175505,
+      2514.4439232094655,
+      508.07393237035603
+    ]
+  },
+  "OH_Refine_Forest_007": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      1276.5992272060594,
+      2440.502409050893,
+      390.5534549829911
+    ]
+  },
+  "OH_Refine_Forest_008": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      1553.2700267830094,
+      2507.9850788780595,
+      424.80718767262687
+    ]
+  },
+  "OH_Refine_Forest_009": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafFar.M_OH_LeafFar",
+    "position": [
+      -1522.1545401255576,
+      3269.8836287686077,
+      500.5230067484089
+    ]
+  },
+  "OH_Refine_Forest_010": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafFar.M_OH_LeafFar",
+    "position": [
+      -1192.617342576606,
+      3287.3491135871836,
+      422.75850273479364
+    ]
+  },
+  "OH_Refine_Forest_011": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafFar.M_OH_LeafFar",
+    "position": [
+      -929.3361454599244,
+      3132.340026430122,
+      495.99761047305014
+    ]
+  },
+  "OH_Refine_Forest_012": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafFar.M_OH_LeafFar",
+    "position": [
+      -322.370249226277,
+      3023.183036977566,
+      411.4766817101959
+    ]
+  },
+  "OH_Refine_Forest_013": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafFar.M_OH_LeafFar",
+    "position": [
+      -129.76234971422664,
+      3282.1811408786552,
+      471.8039989729241
+    ]
+  },
+  "OH_Refine_Forest_014": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafFar.M_OH_LeafFar",
+    "position": [
+      297.1972287254737,
+      3052.8772825601227,
+      423.8614370430779
+    ]
+  },
+  "OH_Refine_Forest_015": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafFar.M_OH_LeafFar",
+    "position": [
+      815.2517403162583,
+      3244.6591269565133,
+      484.15873229310137
+    ]
+  },
+  "OH_Refine_Forest_016": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafFar.M_OH_LeafFar",
+    "position": [
+      1284.911350896995,
+      3115.2355736884865,
+      487.06966813441215
+    ]
+  },
+  "OH_Refine_Forest_017": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafFar.M_OH_LeafFar",
+    "position": [
+      1638.3333995309358,
+      3290.394377761527,
+      397.1465524932493
+    ]
+  },
+  "OH_Refine_Forest_018": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafFar.M_OH_LeafFar",
+    "position": [
+      -1575.2854762491893,
+      3942.314361749482,
+      400.46186733232963
+    ]
+  },
+  "OH_Refine_Forest_019": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafFar.M_OH_LeafFar",
+    "position": [
+      -1205.6791709407566,
+      3771.671816418828,
+      398.02152671551664
+    ]
+  },
+  "OH_Refine_Forest_020": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafFar.M_OH_LeafFar",
+    "position": [
+      -862.4147463028501,
+      3859.0575197557655,
+      403.7965347227355
+    ]
+  },
+  "OH_Refine_Forest_021": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafFar.M_OH_LeafFar",
+    "position": [
+      -519.4733870667765,
+      4010.0511151800265,
+      387.7007815644749
+    ]
+  },
+  "OH_Refine_Forest_022": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafFar.M_OH_LeafFar",
+    "position": [
+      -128.95387954731382,
+      4013.1005662157263,
+      406.0260885756763
+    ]
+  },
+  "OH_Refine_Forest_023": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafFar.M_OH_LeafFar",
+    "position": [
+      335.65022235501306,
+      3861.184643603263,
+      494.2968051305858
+    ]
+  },
+  "OH_Refine_Forest_024": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafFar.M_OH_LeafFar",
+    "position": [
+      871.4174905035295,
+      3969.87434069943,
+      518.4128060435976
+    ]
+  },
+  "OH_Refine_Forest_025": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafFar.M_OH_LeafFar",
+    "position": [
+      1282.998231338428,
+      3957.8289813355113,
+      422.7955878611937
+    ]
+  },
+  "OH_Refine_Forest_026": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafFar.M_OH_LeafFar",
+    "position": [
+      1615.3166203566143,
+      4004.7174298355485,
+      471.1798814367728
+    ]
+  },
+  "OH_Refine_Forest_027": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -1297.8334348170179,
+      480.0,
+      217.5486315552812
+    ]
+  },
+  "OH_Refine_Forest_028": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -1136.407576727811,
+      1000.0,
+      214.60516017764883
+    ]
+  },
+  "OH_Refine_Forest_029": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -1192.4912165942662,
+      1580.0,
+      221.1531346880751
+    ]
+  },
+  "OH_Refine_Forest_030": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -1294.132811682017,
+      2100.0,
+      271.89161951360575
+    ]
+  },
+  "OH_Refine_Forest_031": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      1237.0449321307617,
+      480.0,
+      293.34197094604656
+    ]
+  },
+  "OH_Refine_Forest_032": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      1191.3042304115015,
+      1000.0,
+      202.5911659230707
+    ]
+  },
+  "OH_Refine_Forest_033": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      1163.286696309859,
+      1580.0,
+      184.1167773594114
+    ]
+  },
+  "OH_Refine_Forest_034": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      1159.1352615780304,
+      2100.0,
+      230.62359996161098
+    ]
+  },
+  "OH_Refine_Canopy_035": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -1224.518442431475,
+      350.0,
+      310.0
+    ]
+  },
+  "OH_Refine_Canopy_036": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -1132.9525078202603,
+      900.0,
+      338.1882202315961
+    ]
+  },
+  "OH_Refine_Canopy_037": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -1238.389050139238,
+      1450.0,
+      286.5391226454542
+    ]
+  },
+  "OH_Refine_Canopy_038": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -1080.950200012681,
+      2000.0,
+      301.3381195558333
+    ]
+  },
+  "OH_Refine_Canopy_039": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -1084.5314043768758,
+      2550.0,
+      340.67010564532484
+    ]
+  },
+  "OH_Refine_Canopy_040": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      1170.4876145462251,
+      350.0,
+      293.1353455624295
+    ]
+  },
+  "OH_Refine_Canopy_041": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      1156.8319726881655,
+      900.0,
+      293.3662395419865
+    ]
+  },
+  "OH_Refine_Canopy_042": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      1180.159604597606,
+      1450.0,
+      340.70882802654097
+    ]
+  },
+  "OH_Refine_Canopy_043": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      1182.3754457226614,
+      2000.0,
+      301.07499718338295
+    ]
+  },
+  "OH_Refine_Canopy_044": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      1143.1867963498673,
+      2550.0,
+      286.71939535007806
+    ]
+  },
+  "OH_Refine_Canopy_045": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -772.9968570799408,
+      2450.0,
+      338.3013027725565
+    ]
+  },
+  "OH_Refine_Canopy_046": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -331.56723836098865,
+      2450.0,
+      309.7256094119975
+    ]
+  },
+  "OH_Refine_Canopy_047": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      39.39378914325653,
+      2450.0,
+      281.92707077779465
+    ]
+  },
+  "OH_Refine_Canopy_048": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      376.8306833541041,
+      2450.0,
+      333.63931196486766
+    ]
+  },
+  "OH_Refine_Canopy_049": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      775.4270024746727,
+      2450.0,
+      318.39807943754397
+    ]
+  },
+  "OH_Refine_Canopy_050": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafFar.M_OH_LeafFar",
+    "position": [
+      -824.87838296732,
+      2950.0,
+      279.37101965312127
+    ]
+  },
+  "OH_Refine_Canopy_051": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafFar.M_OH_LeafFar",
+    "position": [
+      -234.81747927648422,
+      2950.0,
+      327.0942271184924
+    ]
+  },
+  "OH_Refine_Canopy_052": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafFar.M_OH_LeafFar",
+    "position": [
+      264.7999432229991,
+      2950.0,
+      326.4015632697207
+    ]
+  },
+  "OH_Refine_Canopy_053": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafFar.M_OH_LeafFar",
+    "position": [
+      988.5461267297112,
+      2950.0,
+      279.25485554326343
+    ]
+  },
+  "OH_Refine_SillIvy_054": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      -490.0,
+      1920.0,
+      155.0
+    ]
+  },
+  "OH_Refine_SillIvy_055": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      -430.0,
+      1920.0,
+      185.0
+    ]
+  },
+  "OH_Refine_SillIvy_056": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      -325.0,
+      1920.0,
+      175.0
+    ]
+  },
+  "OH_Refine_SillIvy_057": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      245.0,
+      1920.0,
+      220.0
+    ]
+  },
+  "OH_Refine_SillIvy_058": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      295.0,
+      1920.0,
+      110.0
+    ]
+  },
+  "OH_Refine_SillIvy_059": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      460.0,
+      1920.0,
+      210.0
+    ]
+  },
+  "OH_Finish_AttachedVine_000": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      485.0,
+      1940.0,
+      270.0
+    ]
+  },
+  "OH_Finish_SeamLeaves_001": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      485.0,
+      1935.0,
+      260.0
+    ]
+  },
+  "OH_Finish_AttachedVine_002": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      445.0,
+      1940.0,
+      292.0
+    ]
+  },
+  "OH_Finish_AttachedVine_003": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      -385.0,
+      1940.0,
+      265.0
+    ]
+  },
+  "OH_Finish_SeamLeaves_004": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -385.0,
+      1935.0,
+      255.0
+    ]
+  },
+  "OH_Finish_AttachedVine_005": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      -438.0,
+      1940.0,
+      290.0
+    ]
+  },
+  "OH_Finish_AttachedVine_006": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      520.0,
+      1940.0,
+      740.0
+    ]
+  },
+  "OH_Finish_SeamLeaves_007": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      520.0,
+      1935.0,
+      730.0
+    ]
+  },
+  "OH_Finish_AttachedVine_008": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      565.0,
+      1940.0,
+      810.0
+    ]
+  },
+  "OH_Finish_AttachedVine_009": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      -510.0,
+      1940.0,
+      688.0
+    ]
+  },
+  "OH_Finish_SeamLeaves_010": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      -510.0,
+      1935.0,
+      678.0
+    ]
+  },
+  "OH_Finish_AttachedVine_011": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      -455.0,
+      1940.0,
+      735.0
+    ]
+  },
+  "OH_Finish_AttachedVine_012": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_Soft_18_Vine.SM_OH_Soft_18_Vine",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/IllustratedMaterials/M_OH_Illustrated_18.M_OH_Illustrated_18",
+    "position": [
+      230.0,
+      1940.0,
+      722.0
+    ]
+  },
+  "OH_Finish_SeamLeaves_013": {
+    "mesh": "/Game/Environment/OvergrownHall/TripoFull/Meshes/SM_OH_PaintedCrown.SM_OH_PaintedCrown",
+    "shadow": true,
+    "material": "/Game/Environment/OvergrownHall/TripoFull/FoliagePaint/M_OH_LeafNear.M_OH_LeafNear",
+    "position": [
+      230.0,
+      1935.0,
+      712.0
+    ]
+  }
+}

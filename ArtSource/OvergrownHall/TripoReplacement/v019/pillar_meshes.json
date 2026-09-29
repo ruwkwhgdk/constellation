@@ -1,0 +1,22 @@
+[
+  {
+    "mesh": "SM_OH_SpalledPillarA",
+    "triangles": 168,
+    "nonmanifold": 0,
+    "dimensions_m": [
+      0.6499999761581421,
+      0.6499999761581421,
+      3.0
+    ]
+  },
+  {
+    "mesh": "SM_OH_SpalledPillarB",
+    "triangles": 168,
+    "nonmanifold": 0,
+    "dimensions_m": [
+      0.6499999761581421,
+      0.6499999761581421,
+      3.0
+    ]
+  }
+]

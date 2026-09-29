@@ -1,0 +1,38 @@
+{
+  "candidates": [
+    "/Game/Blueprints/Character/PC/CameraBackups/BP_Player_Heroine_BeforeStairCamera",
+    "/Game/Environment/StairwellModular/Maps/L_Stairwell_DoorVerification",
+    "/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_BeforeCameraRevision",
+    "/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_BeforeFinishRevision",
+    "/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_BeforeLandingRevision",
+    "/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_BeforeLightingRevision",
+    "/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_BeforeMaterialRevision",
+    "/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_BeforeReferenceDetails",
+    "/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_BeforeWidth240"
+  ],
+  "references": {
+    "/Game/Environment/StairwellModular/Maps/L_Stairwell_DoorVerification": [],
+    "/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_BeforeLightingRevision": [],
+    "/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_BeforeReferenceDetails": [],
+    "/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_BeforeFinishRevision": [],
+    "/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_BeforeMaterialRevision": [],
+    "/Game/Blueprints/Character/PC/CameraBackups/BP_Player_Heroine_BeforeStairCamera": [],
+    "/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_BeforeLandingRevision": [],
+    "/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_BeforeCameraRevision": [],
+    "/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_BeforeWidth240": []
+  },
+  "protected": [],
+  "deleted": [
+    "/Game/Blueprints/Character/PC/CameraBackups/BP_Player_Heroine_BeforeStairCamera",
+    "/Game/Environment/StairwellModular/Maps/L_Stairwell_DoorVerification",
+    "/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_BeforeCameraRevision",
+    "/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_BeforeFinishRevision",
+    "/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_BeforeLandingRevision",
+    "/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_BeforeLightingRevision",
+    "/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_BeforeMaterialRevision",
+    "/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_BeforeReferenceDetails",
+    "/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_BeforeWidth240"
+  ],
+  "failed": [],
+  "deletion_method": "Reference-checked Unreal delete API attempted; remaining exact package files removed after engine exit and verified on disk"
+}

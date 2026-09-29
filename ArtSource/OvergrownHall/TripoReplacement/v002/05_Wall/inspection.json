@@ -1,0 +1,21 @@
+{
+  "id": "05",
+  "name": "Wall",
+  "mesh": "SM_OH_T_05_Wall",
+  "source_triangles": 28615,
+  "triangles": 5969,
+  "budget": 6000,
+  "dimensions_m": [
+    3.0009145736694336,
+    0.4016653895378113,
+    1.497518539428711
+  ],
+  "boundary_edges": 3,
+  "uv_layers": 1,
+  "edits": [],
+  "textures": [
+    "basecolor.png",
+    "normal.png",
+    "rm.png"
+  ]
+}

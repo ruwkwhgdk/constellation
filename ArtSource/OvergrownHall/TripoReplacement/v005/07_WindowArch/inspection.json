@@ -1,0 +1,24 @@
+{
+  "id": "07",
+  "name": "WindowArch",
+  "mesh": "SM_OH_Clean_07_WindowArch",
+  "source": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OvergrownHall\\TripoReplacement\\v002\\07_WindowArch\\prepared.blend",
+  "source_triangles": 7970,
+  "triangles": 1284,
+  "budget": 8000,
+  "dimensions_m": [
+    2.3000760078430176,
+    0.13981252908706665,
+    1.2005996704101562
+  ],
+  "boundary_edges": 0,
+  "basecolor": "basecolor.png",
+  "organic": false,
+  "edits": [
+    "source-guided hard-surface retopology",
+    "straight edges and planar faces",
+    "small 2-segment bevels",
+    "Tripo base color reprojected to new UV",
+    "normal map intentionally omitted: old tangent basis is invalid"
+  ]
+}

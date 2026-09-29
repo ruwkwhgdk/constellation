@@ -1,0 +1,23 @@
+{
+  "before_triangles": 3406,
+  "after_triangles": 2946,
+  "limit": 3000,
+  "face_limit_pass": true,
+  "objects": [
+    {
+      "name": "SM_Stairwell_Light15_Part00",
+      "triangles": 2946,
+      "vertices": 1482,
+      "boundary_edges": 136,
+      "uv_layers": 1,
+      "material_slots": 1
+    }
+  ],
+  "status": "awaiting_user_review",
+  "known_visual_issue": "Dark stretched mark on upper housing; needs surface correction or explicit acceptance",
+  "not_done": [
+    "Emission material separation",
+    "Unreal import/collision/light setup",
+    "Remaining kit assets"
+  ]
+}

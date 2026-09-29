@@ -1,0 +1,162 @@
+[
+  {
+    "path": "ArtSource/OvergrownHall/Bird/Tripo_Rig_v001/preview.log",
+    "bytes": 4175,
+    "sha256": "8B3FCA1BDCCF26D02BAAC7593A9A79BA9A746CCA1735B2DB899A49B2AA014ECB"
+  },
+  {
+    "path": "ArtSource/OvergrownHall/Bird/Tripo_Rig_v001/unreal_console.log",
+    "bytes": 34539,
+    "sha256": "5FF4FCBA15EA287530EFDED0F52BCC32C602B6829D7B91B88553158E1F35C26E"
+  },
+  {
+    "path": "ArtSource/OvergrownHall/Bird/Tripo_Rig_v001/unreal_verify_console.log",
+    "bytes": 29342,
+    "sha256": "E078AF68F035E263F5949BC2DD487791AE7CEA4F936D67B8F82F795EF4B68555"
+  },
+  {
+    "path": "ArtSource/OvergrownHall/Bird/Tripo_v001/inspection.log",
+    "bytes": 1764,
+    "sha256": "0AABE81FFFC57507B7E28F11B28B4BD2EF943AF40DA469E4A68E4E0EAB0912C5"
+  },
+  {
+    "path": "ArtSource/OvergrownHall/Bird/Tripo_v001/probe.log",
+    "bytes": 305,
+    "sha256": "FA36E4DC22FE9EE7002CE31A30D80F5B80ED99791F509647ADC3FE2667A940EE"
+  },
+  {
+    "path": "ArtSource/OvergrownHall/Bird/Tripo_v001/rig_build.log",
+    "bytes": 2728,
+    "sha256": "2AFC38990FD71790EA04F5C94DBF326B4D07A0DB3B7A6FDFFFD2A37B01A302BF"
+  },
+  {
+    "path": "ArtSource/OvergrownHall/Bird/v001/build.log",
+    "bytes": 2733,
+    "sha256": "C2841CE2B42D2B02BF6AB521205C235FB76DCF030E0298ED3439A5AA111C52F6"
+  },
+  {
+    "path": "ArtSource/OvergrownHall/Bird/v001/preview_render.log",
+    "bytes": 3925,
+    "sha256": "A961CC393EC87C953984C5E9A592591E789051ABF93BCD5595CD96AC8E685CD6"
+  },
+  {
+    "path": "ArtSource/OvergrownHall/Bird/v001/unreal_console.log",
+    "bytes": 33428,
+    "sha256": "09BD36E3938F0A0BA48FADCD10EC2216C18B3EA33E04732C669B6B1782C96FFA"
+  },
+  {
+    "path": "ArtSource/OvergrownHall/Bird/v001/verify_console.log",
+    "bytes": 29518,
+    "sha256": "2CF3EF72E98B1505EC40646A363B1C1DFD27E0EB80695B2F356FAC7B9F8097BE"
+  },
+  {
+    "path": "ArtSource/OvergrownHall/Blockout/build_v002.log",
+    "bytes": 55009,
+    "sha256": "C7F9C64FD67B1361CC065AD0CAE32335D039B62D25E42FEE194A103F0B7DBEEA"
+  },
+  {
+    "path": "ArtSource/OvergrownHall/Blockout/v001/build.log",
+    "bytes": 54743,
+    "sha256": "DC688601D97AB9AEDD3F4B4950A72EFAF1B09F429A36A995C985B0DB8C3C0174"
+  },
+  {
+    "path": "ArtSource/OvergrownHall/Blockout/v002/export.log",
+    "bytes": 4782,
+    "sha256": "910809D4EEDE1CD82E55277717587B4E0F1910012820B83B90AE256776F4ADA1"
+  },
+  {
+    "path": "ArtSource/OvergrownHall/Blockout/v002/unreal_console.log",
+    "bytes": 49426,
+    "sha256": "051E9511975A95BD699718F155BC4A3A4769A929DE84F34D1525A6246450280B"
+  },
+  {
+    "path": "ArtSource/OvergrownHall/Blockout/v002/verify_console.log",
+    "bytes": 30751,
+    "sha256": "AA550D98801A48563835C6C4D7570AFEE4EF8125508248230FCDB709EE6ADE33"
+  },
+  {
+    "path": "ArtSource/OvergrownHall/Production_detail.log",
+    "bytes": 104463,
+    "sha256": "40BC503994BE079826AE09731A7A32B48239E2AEE0A4129F1038F71AAF9412F3"
+  },
+  {
+    "path": "ArtSource/OvergrownHall/Production/v001/export.log",
+    "bytes": 4319,
+    "sha256": "AF42A80BD7D362D875377ED6243B37453DC144ED69EB9B0E1D008EE4581F3A1B"
+  },
+  {
+    "path": "ArtSource/OvergrownHall/Production/v001/saved_check_console.log",
+    "bytes": 31808,
+    "sha256": "1017E9A98EE55FAE3BC213D472A78BBBB797E49AE51B3AA48343860D8D0780BB"
+  },
+  {
+    "path": "ArtSource/OvergrownHall/Production/v001/unreal_console.log",
+    "bytes": 56539,
+    "sha256": "2B912B09F1F0A1243CFDFA253643D2388DDD530875B7BA3F799E338DDD43789D"
+  },
+  {
+    "path": "ArtSource/OvergrownHall/Production/v001/verify_console.log",
+    "bytes": 14297,
+    "sha256": "465995B75A2D9A29DD2847A251D1D8251A400808910ECB28380B30A7755797C5"
+  },
+  {
+    "path": "ArtSource/OvergrownHall/Scripts/__pycache__/plan_tripo_full_scene.cpython-312.pyc",
+    "bytes": 8598,
+    "sha256": "20DA262D66F06B4300077F554C870F3420E2E8098F459F81D5C81041103B6BEA"
+  },
+  {
+    "path": "ArtSource/OvergrownHall/TripoReplacement/v001/Pillar/prepared.blend1",
+    "bytes": 238185,
+    "sha256": "0F3627516CCFA7A7814B0043E33F572B1BCC536865DB4B606EAFE9B42CFC8C6D"
+  },
+  {
+    "path": "ArtSource/OvergrownHall/TripoReplacement/v001/Tree/prepared.blend1",
+    "bytes": 1321513,
+    "sha256": "BC495E513B12FF7C6EBA1992554DA1A09EA88248E7B84CCCA67B8F26AFA4E0D5"
+  },
+  {
+    "path": "ArtSource/OvergrownHall/TripoReplacement/v006/probe_mirror.png",
+    "bytes": 1431480,
+    "sha256": "3B2F938726FC4CBD8FAB94A486318A12321D9BA69B8E084DF4E412DB5E7D7556"
+  },
+  {
+    "path": "ArtSource/OvergrownHall/TripoReplacement/v006/probe_water.png",
+    "bytes": 1404646,
+    "sha256": "E1B4520BEEE8DC2681F58C6960E439CE5B35D54EB88AEDAF7DAE18223FC14F5B"
+  },
+  {
+    "path": "ArtSource/OvergrownHall/TripoReplacement/v010/SM_OH_RoundedCrown.blend",
+    "bytes": 2325849,
+    "sha256": "81A913A2D81650AA070DCF8909E667F3345108B2AFB68CA58A87B6630CCBCFB8"
+  },
+  {
+    "path": "ArtSource/OvergrownHall/TripoReplacement/v010/SM_OH_RoundedCrown.fbx",
+    "bytes": 500492,
+    "sha256": "DB1F1D53A26DF2B367EB9F3C52F60C441E6EB89FBC19818D746814A2F0D00138"
+  },
+  {
+    "path": "ArtSource/OvergrownHall/TripoReplacement/v010/SM_OH_RoundedShrub.blend",
+    "bytes": 1036510,
+    "sha256": "690B2F376013EC401AC653D657CDA1AD62C7FB8402CEF4795CA7BC95F5D539E0"
+  },
+  {
+    "path": "ArtSource/OvergrownHall/TripoReplacement/v010/SM_OH_RoundedShrub.fbx",
+    "bytes": 366140,
+    "sha256": "8C6A0923BCE84B0B20052A12E56BEA9C260D078344EFD0F66A9C3203634F3424"
+  },
+  {
+    "path": "ArtSource/OvergrownHall/TripoReplacement/v010/SM_OH_RoundedTree.blend",
+    "bytes": 2042219,
+    "sha256": "036B7BE92BCCDBD8164DF584EBA96C4FB3C12EF4818658BF562FAFAAE6724280"
+  },
+  {
+    "path": "ArtSource/OvergrownHall/TripoReplacement/v010/SM_OH_RoundedTree.fbx",
+    "bytes": 809340,
+    "sha256": "41D643636217FC054B5531C37F7CC3EB0B714964044170601DD5DC9C0FB76A64"
+  },
+  {
+    "path": "ArtSource/OvergrownHall/TripoReplacement/v012/probe.png",
+    "bytes": 1260263,
+    "sha256": "9948AEC877367CD4EA21AE4015095E0C8D1716ED86F58E24291DE7A1BD565FCB"
+  }
+]

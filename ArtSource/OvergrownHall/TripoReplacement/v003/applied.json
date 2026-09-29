@@ -1,0 +1,10 @@
+{
+  "map": "/Game/Environment/OvergrownHall/TripoFull/Maps/L_OvergrownHall_TripoFull",
+  "replaced": {
+    "06": 8,
+    "04": 8
+  },
+  "roof_fragments": 14,
+  "window_grid": "3 interior vertical and3 horizontal bars",
+  "playtest": false
+}

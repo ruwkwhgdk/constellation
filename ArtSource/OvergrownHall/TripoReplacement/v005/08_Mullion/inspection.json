@@ -1,0 +1,24 @@
+{
+  "id": "08",
+  "name": "Mullion",
+  "mesh": "SM_OH_Clean_08_Mullion",
+  "source": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OvergrownHall\\TripoReplacement\\v002\\08_Mullion\\prepared.blend",
+  "source_triangles": 1970,
+  "triangles": 108,
+  "budget": 2000,
+  "dimensions_m": [
+    0.07006430625915527,
+    0.09967095404863358,
+    3.000025987625122
+  ],
+  "boundary_edges": 0,
+  "basecolor": "basecolor.png",
+  "organic": false,
+  "edits": [
+    "source-guided hard-surface retopology",
+    "straight edges and planar faces",
+    "small 2-segment bevels",
+    "Tripo base color reprojected to new UV",
+    "normal map intentionally omitted: old tangent basis is invalid"
+  ]
+}

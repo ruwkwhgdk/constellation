@@ -1,0 +1,311 @@
+{
+  "status": "import_and_bounds_pass",
+  "map": "/Game/Environment/OvergrownHall/Scene/Maps/L_OvergrownHall_Layout",
+  "mesh_categories": 21,
+  "assets": [
+    {
+      "name": "SM_OH_Blockout_01",
+      "bounds_min_cm": [
+        -675.0,
+        157.49993896484375,
+        0.0
+      ],
+      "bounds_max_cm": [
+        675.0001831054688,
+        1842.5,
+        120.00000762939453
+      ],
+      "collision": true
+    },
+    {
+      "name": "SM_OH_Blockout_02",
+      "bounds_min_cm": [
+        -664.0,
+        167.49993896484375,
+        59.99999237060547
+      ],
+      "bounds_max_cm": [
+        664.0001220703125,
+        1987.5,
+        1170.0
+      ],
+      "collision": true
+    },
+    {
+      "name": "SM_OH_Blockout_03",
+      "bounds_min_cm": [
+        -682.4999389648438,
+        149.99993896484375,
+        942.5
+      ],
+      "bounds_max_cm": [
+        682.5001220703125,
+        1850.0,
+        977.5000610351562
+      ],
+      "collision": true
+    },
+    {
+      "name": "SM_OH_Blockout_04",
+      "bounds_min_cm": [
+        -655.0,
+        208.9999542236328,
+        29.999996185302734
+      ],
+      "bounds_max_cm": [
+        655.0001831054688,
+        1791.0,
+        737.0
+      ],
+      "collision": true
+    },
+    {
+      "name": "SM_OH_Blockout_05",
+      "bounds_min_cm": [
+        -779.9998168945312,
+        -5.7480476243654266e-05,
+        0.0
+      ],
+      "bounds_max_cm": [
+        780.0001220703125,
+        2000.0,
+        1100.0
+      ],
+      "collision": true
+    },
+    {
+      "name": "SM_OH_Blockout_06",
+      "bounds_min_cm": [
+        -489.4342041015625,
+        1953.0,
+        300.0
+      ],
+      "bounds_max_cm": [
+        489.4345703125,
+        1967.0,
+        730.0
+      ],
+      "collision": true
+    },
+    {
+      "name": "SM_OH_Blockout_07",
+      "bounds_min_cm": [
+        -492.0550537109375,
+        1953.0,
+        764.9999389648438
+      ],
+      "bounds_max_cm": [
+        492.0553894042969,
+        1967.0,
+        1156.0
+      ],
+      "collision": true
+    },
+    {
+      "name": "SM_OH_Blockout_08",
+      "bounds_min_cm": [
+        -486.4858703613281,
+        1955.0001220703125,
+        296.75
+      ],
+      "bounds_max_cm": [
+        486.4862365722656,
+        1965.0,
+        980.0
+      ],
+      "collision": true
+    },
+    {
+      "name": "SM_OH_Blockout_09",
+      "bounds_min_cm": [
+        -799.9998168945312,
+        -5.7699035096447915e-05,
+        277.5
+      ],
+      "bounds_max_cm": [
+        800.0001831054688,
+        2000.0,
+        820.0
+      ],
+      "collision": true
+    },
+    {
+      "name": "SM_OH_Blockout_10",
+      "bounds_min_cm": [
+        -762.7993774414062,
+        99.99994659423828,
+        974.2600708007812
+      ],
+      "bounds_max_cm": [
+        762.799560546875,
+        2000.0,
+        1210.6378173828125
+      ],
+      "collision": true
+    },
+    {
+      "name": "SM_OH_Blockout_11",
+      "bounds_min_cm": [
+        -639.7433471679688,
+        187.99993896484375,
+        865.769775390625
+      ],
+      "bounds_max_cm": [
+        639.7435302734375,
+        1812.0001220703125,
+        944.2303466796875
+      ],
+      "collision": true
+    },
+    {
+      "name": "SM_OH_Blockout_12",
+      "bounds_min_cm": [
+        -85.99983215332031,
+        1940.0,
+        -0.4999995231628418
+      ],
+      "bounds_max_cm": [
+        86.00017547607422,
+        1990.0,
+        220.0
+      ],
+      "collision": true
+    },
+    {
+      "name": "SM_OH_Blockout_13",
+      "bounds_min_cm": [
+        -3250.000244140625,
+        -1800.000244140625,
+        -55.0
+      ],
+      "bounds_max_cm": [
+        3250.00048828125,
+        5200.00048828125,
+        20.0
+      ],
+      "collision": true
+    },
+    {
+      "name": "SM_OH_Blockout_14",
+      "bounds_min_cm": [
+        30.000093460083008,
+        991.5,
+        0.0
+      ],
+      "bounds_max_cm": [
+        210.0000762939453,
+        1057.4879150390625,
+        92.0
+      ],
+      "collision": true
+    },
+    {
+      "name": "SM_OH_Blockout_16",
+      "bounds_min_cm": [
+        -781.5957641601562,
+        169.13072204589844,
+        3.499999523162842
+      ],
+      "bounds_max_cm": [
+        788.7230834960938,
+        1913.8929443359375,
+        53.18598937988281
+      ],
+      "collision": false
+    },
+    {
+      "name": "SM_OH_Blockout_17",
+      "bounds_min_cm": [
+        -727.1639404296875,
+        1000.6044921875,
+        -53.08241271972656
+      ],
+      "bounds_max_cm": [
+        746.8209838867188,
+        2072.519775390625,
+        176.9722442626953
+      ],
+      "collision": false
+    },
+    {
+      "name": "SM_OH_Blockout_18",
+      "bounds_min_cm": [
+        -634.4515991210938,
+        566.83837890625,
+        212.48426818847656
+      ],
+      "bounds_max_cm": [
+        639.8592529296875,
+        1835.021484375,
+        839.1923828125
+      ],
+      "collision": false
+    },
+    {
+      "name": "SM_OH_Blockout_19",
+      "bounds_min_cm": [
+        -1726.862548828125,
+        129.42274475097656,
+        0.0
+      ],
+      "bounds_max_cm": [
+        1700.090087890625,
+        3227.86474609375,
+        842.92724609375
+      ],
+      "collision": false
+    },
+    {
+      "name": "SM_OH_Blockout_21",
+      "bounds_min_cm": [
+        -766.9652099609375,
+        241.62184143066406,
+        2.200000047683716
+      ],
+      "bounds_max_cm": [
+        793.1102905273438,
+        1139.4091796875,
+        2.200000047683716
+      ],
+      "collision": false
+    },
+    {
+      "name": "SM_OH_Blockout_25",
+      "bounds_min_cm": [
+        -637.5,
+        197.4999542236328,
+        50.0
+      ],
+      "bounds_max_cm": [
+        637.5000610351562,
+        602.5000610351562,
+        120.00000762939453
+      ],
+      "collision": true
+    },
+    {
+      "name": "SM_OH_Blockout_26",
+      "bounds_min_cm": [
+        -646.5880737304688,
+        149.99993896484375,
+        1011.719970703125
+      ],
+      "bounds_max_cm": [
+        694.94189453125,
+        1900.0,
+        1243.9764404296875
+      ],
+      "collision": true
+    }
+  ],
+  "player_start_cm": [
+    0,
+    400,
+    110
+  ],
+  "collision": "static architecture complex; water and vegetation disabled",
+  "playtest": "not_run",
+  "visual_verification": "pending",
+  "bird_rig": "not_created",
+  "materials": "procedural first detail pass"
+}

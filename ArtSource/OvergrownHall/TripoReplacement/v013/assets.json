@@ -1,0 +1,50 @@
+[
+  {
+    "id": "05",
+    "mesh": "SM_OH_RearBroken_05",
+    "triangles": 488,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "dimensions_m": [
+      3.0009145736694336,
+      0.4016653895378113,
+      1.497518539428711
+    ]
+  },
+  {
+    "id": "06",
+    "mesh": "SM_OH_RearBroken_06",
+    "triangles": 680,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "dimensions_m": [
+      2.2451133728027344,
+      0.1402358114719391,
+      4.245262145996094
+    ]
+  },
+  {
+    "id": "07",
+    "mesh": "SM_OH_RearBroken_07",
+    "triangles": 1104,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "dimensions_m": [
+      2.3000760078430176,
+      0.13981252908706665,
+      1.2005996704101562
+    ]
+  },
+  {
+    "id": "09",
+    "mesh": "SM_OH_RearBroken_09",
+    "triangles": 84,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "dimensions_m": [
+      3.5078370571136475,
+      0.5004537105560303,
+      0.4001395106315613
+    ]
+  }
+]

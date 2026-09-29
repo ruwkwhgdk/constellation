@@ -1,0 +1,28 @@
+{
+  "code": 0,
+  "data": {
+    "task_id": "4acbd676-0bbd-49eb-967a-6237442fdd45",
+    "type": "generate_image",
+    "status": "success",
+    "input": {
+      "prompt": "Generate a matrix of individual modular pieces of this subway space. EDIT the supplied 4x4 concept sheet, preserving its layout, labels, style and every cell EXCEPT 02,03,04. These three floor modules MUST share exactly the same real tile pitch: 30x30 cm including grout. 02: plain gray tiled landing, exactly SIX rows by SIX columns (36 tiles), overall 180x180 cm. 03: plain gray floor panel, exactly TWO rows by TWO columns (4 tiles), overall 60x60 cm. 04: yellow raised-dot tactile paving, exactly TWO rows by TWO columns (4 tiles), overall 60x60 cm; each yellow tile has the same footprint as each gray tile. Consistent narrow dark grout and surface height; only tactile dots protrude. Label each changed cell with its ID and tile pitch 30x30 cm, plus overall panel dimensions. The larger landing may be drawn at reduced display scale to fit its cell; do not confuse display scale with tile size. Keep all other thirteen cells unchanged. Neutral gray background, isolated objects, no extra props.",
+      "model_version": "gpt_image_2",
+      "file": {
+        "type": "png",
+        "object": {
+          "bucket": "tripo-data",
+          "key": "tcli_36cdbe9c39e740a09a7460b758060782/20260923/4acbd676-0bbd-49eb-967a-6237442fdd45/image.png"
+        }
+      }
+    },
+    "output": {
+      "generated_image": "https://tripo-data.rg1.data.tripo3d.com/tcli_36cdbe9c39e740a09a7460b758060782/20260923/4acbd676-0bbd-49eb-967a-6237442fdd45/generated_image.png?Key-Pair-Id=K1676C64NMVM2J&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly90cmlwby1kYXRhLnJnMS5kYXRhLnRyaXBvM2QuY29tL3RjbGlfMzZjZGJlOWMzOWU3NDBhMDlhNzQ2MGI3NTgwNjA3ODIvMjAyNjA5MjMvNGFjYmQ2NzYtMGJiZC00OWViLTk2N2EtNjIzNzQ0MmZkZDQ1L2dlbmVyYXRlZF9pbWFnZS5wbmciLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTAyMDgwMDB9fX1dfQ__&Signature=ib5JOH5nCqss7u6Wy3vX9uQzNn8mxIlpgT3mDRS1BN5~pWMfgCHODyVEWA7FoqhQBoNcDG0hvvJS9NKrR533TVtJ-C1m7jPlhQGr5bKcZ52bc0ZVB0UlWa9pjFT3-JnL6WoIDDpkFTRkItSZ7pOfTAJvb1ryeXyaBVR75MBzelOBPolhOddpzs2WBvcm2FhtBVgvt-ITOIijbDPdhl3dG6wi3dao2ieqeSAzJEwhRfVCgjYTURcDaIsyhNkg03v1S4b0x72hWfVfFPW7PDlsqsZef7mrBhavrjH5BBOZF2sx~cQUff9z1iXqVL-aKY6Qrf5jT1FFesVAk9pwZEu2kw__"
+    },
+    "progress": 100,
+    "create_time": 1790178095,
+    "consumed_credit": 10,
+    "queuing_num": -1,
+    "running_left_time": -1,
+    "result": {}
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "11",
+  "name": "BrokenBeam",
+  "mesh": "SM_OH_Clean_11_BrokenBeam",
+  "source": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OvergrownHall\\TripoReplacement\\v002\\11_BrokenBeam\\prepared.blend",
+  "source_triangles": 5969,
+  "triangles": 108,
+  "budget": 6000,
+  "dimensions_m": [
+    1.500199556350708,
+    0.29972293972969055,
+    0.35031092166900635
+  ],
+  "boundary_edges": 0,
+  "basecolor": "basecolor.png",
+  "organic": false,
+  "edits": [
+    "source-guided hard-surface retopology",
+    "straight edges and planar faces",
+    "small 2-segment bevels",
+    "Tripo base color reprojected to new UV",
+    "normal map intentionally omitted: old tangent basis is invalid"
+  ]
+}

@@ -1,0 +1,12 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><title>Overgrown Hall · 부드러운 애니메이션 배경</title>
+<style>body{background:#202a28;color:#f0ebdb;font:17px/1.7 sans-serif;max-width:1400px;margin:40px auto;padding:0 20px}img{width:100%;display:block}.pair{display:grid;grid-template-columns:1fr 1fr;gap:20px}button{background:#d9ddbc;border:0;border-radius:5px;padding:12px 20px;margin:0 8px 18px 0;cursor:pointer}code{overflow-wrap:anywhere}a{color:#b6d9af}@media(max-width:750px){.pair{grid-template-columns:1fr}}</style>
+<h1>따뜻하고 부드러운 배경 재질</h1>
+<p>같은 카메라로 촬영한 실제 Unreal 렌더입니다. 버튼으로 전후를 전환할 수 있습니다.</p>
+<button onclick="document.getElementById('shot').src='unreal_painted.png';document.getElementById('caption').textContent='수정 후 · 부드러운 재질'">수정 후</button>
+<button onclick="document.getElementById('shot').src='../v003/unreal_structure.png';document.getElementById('caption').textContent='수정 전 · Tripo PBR'">수정 전</button>
+<h2 id="caption">수정 후 · 부드러운 재질</h2><img id="shot" src="unreal_painted.png" alt="수정 후 Unreal 렌더">
+<div class="pair"><section><h2>원화</h2><img src="../../References/source_scene.png" alt="원화"></section><section><h2>수정 전</h2><img src="../v003/unreal_structure.png" alt="수정 전 Unreal 렌더"></section></div>
+<p>21종 재질을 만들어 532개 배치에 적용했습니다. 미세한 텍스처 무늬를 줄이고 표면 노멀 강도를 10–16%로 낮췄습니다. 석재는 따뜻한 회백색, 식생은 차분한 녹색으로 정리하고 금속 반사와 직사광의 날카로움을 완화했습니다.</p>
+<p>원본 텍스처·메시 재질은 보존하고 현재 레벨에 새 재질을 적용했습니다. 손으로 다시 그린 텍스처는 아니며, 메시 자체의 깨진 윤곽과 잎 형태는 남아 있습니다. 원화의 숲 배경·수면·구도 차이는 별도 보정 대상입니다.</p>
+<p>현재 레벨: <code>/Game/Environment/OvergrownHall/TripoFull/Maps/L_OvergrownHall_TripoFull</code></p>
+<p>검증 자료: <a href="applied.json">적용 설정</a> · <a href="verification.json">저장 재질 검사</a> · <a href="exposure_render_verification.json">렌더 결과</a>. 직접 플레이·성능 검증은 별도입니다.</p></html>

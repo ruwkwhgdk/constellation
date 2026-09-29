@@ -1,0 +1,22 @@
+[
+  {
+    "mesh": "SM_OH_TripoCrown",
+    "kind": "crown",
+    "triangles": 12286
+  },
+  {
+    "mesh": "SM_OH_Chipped_04",
+    "kind": "chip04",
+    "triangles": 1678
+  },
+  {
+    "mesh": "SM_OH_Chipped_05",
+    "kind": "chip05",
+    "triangles": 380
+  },
+  {
+    "mesh": "SM_OH_ShallowOutline",
+    "kind": "water",
+    "triangles": 80
+  }
+]

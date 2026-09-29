@@ -1,0 +1,33 @@
+{
+  "status": "pass",
+  "mesh_instances": 267,
+  "stairs_landing_seams": true,
+  "stair_width_cm": 240,
+  "rail_clearance_cm": 220,
+  "brackets_outward": true,
+  "minimum_ceiling_clearance_cm": 262.6687360986483,
+  "beam_clearance_cm": 244.2,
+  "door_leaf_frame_separate": true,
+  "scope": "Static assembly measurements; no PIE movement or visual rating implied",
+  "playtest": "not_run",
+  "landing_width_cm": 600,
+  "landing_depth_cm": 180,
+  "right_wall_end_x_cm": 120.0,
+  "camera_matches_config": true,
+  "camera": {
+    "name": "reference_camera_revision",
+    "position": [
+      -100,
+      -40,
+      310
+    ],
+    "rotation": [
+      -32,
+      13,
+      0
+    ],
+    "fov": 68,
+    "aspect": 0.6839772007599747
+  },
+  "tile_pitch_preserved": true
+}

@@ -1,0 +1,572 @@
+[
+  {
+    "id": "01",
+    "file": "01_ColumnBase\\Original\\tripo_convert_4787e9ec-0392-4013-982c-563894a2ff04.fbx",
+    "sha256": "ccaa40e5ab908b454438081991ec6d0ce7f77f1a8e859062027d44dced40774b"
+  },
+  {
+    "id": "01",
+    "file": "01_ColumnBase\\Original\\tripo_convert_4787e9ec-0392-4013-982c-563894a2ff04.fbm\\square_stone_plinth_3d_model_basecolor.JPEG",
+    "sha256": "701ece031b958afaf91f99eedc3e14425a80a9cf8f9611b925555cc21ad824a0"
+  },
+  {
+    "id": "01",
+    "file": "01_ColumnBase\\Original\\tripo_convert_4787e9ec-0392-4013-982c-563894a2ff04.fbm\\square_stone_plinth_3d_model_metallic.JPEG",
+    "sha256": "5674318e4eb253a7b40e145b247d61bb9b4df915862635e290cae759d99c3551"
+  },
+  {
+    "id": "01",
+    "file": "01_ColumnBase\\Original\\tripo_convert_4787e9ec-0392-4013-982c-563894a2ff04.fbm\\square_stone_plinth_3d_model_normal.PNG",
+    "sha256": "5147fc5df01dbfddb6462b4903503155de042240ad769d06f24bcdbf10e4c1b3"
+  },
+  {
+    "id": "01",
+    "file": "01_ColumnBase\\Original\\tripo_convert_4787e9ec-0392-4013-982c-563894a2ff04.fbm\\square_stone_plinth_3d_model_rm.JPEG",
+    "sha256": "18904f175d1660887f5462f2426ff5da73d2a216732748312293af62eb00790d"
+  },
+  {
+    "id": "01",
+    "file": "01_ColumnBase\\Original\\tripo_convert_4787e9ec-0392-4013-982c-563894a2ff04.fbm\\square_stone_plinth_3d_model_roughness.JPEG",
+    "sha256": "79da6e8f67877b6050c48c3f461b2255f737cc88b62792971b3b4fb8f048802d"
+  },
+  {
+    "id": "03",
+    "file": "03_ColumnCapital\\Original\\tripo_convert_a203deec-c279-4d86-84c4-f4017f890de0.fbx",
+    "sha256": "7c3323ebf9cdd5f69c28eafca1441f846975a029967012fbf00361535762a620"
+  },
+  {
+    "id": "03",
+    "file": "03_ColumnCapital\\Original\\tripo_convert_a203deec-c279-4d86-84c4-f4017f890de0.fbm\\square_column_capital_3d_model_basecolor.JPEG",
+    "sha256": "53c5a35513add3a80afee2765230f50c71156779acbf7789fcb2f58a90521583"
+  },
+  {
+    "id": "03",
+    "file": "03_ColumnCapital\\Original\\tripo_convert_a203deec-c279-4d86-84c4-f4017f890de0.fbm\\square_column_capital_3d_model_metallic.JPEG",
+    "sha256": "04b307a663d6e02074101eac6ec3a789a2fc7006c3ce8add6a07e2d0e7cae1d0"
+  },
+  {
+    "id": "03",
+    "file": "03_ColumnCapital\\Original\\tripo_convert_a203deec-c279-4d86-84c4-f4017f890de0.fbm\\square_column_capital_3d_model_normal.PNG",
+    "sha256": "6866fc105c129b43bd67a3deae49917e7ffde7fb5df4b4d3dffbd68a29040ac2"
+  },
+  {
+    "id": "03",
+    "file": "03_ColumnCapital\\Original\\tripo_convert_a203deec-c279-4d86-84c4-f4017f890de0.fbm\\square_column_capital_3d_model_rm.JPEG",
+    "sha256": "fea6f1db89bae654f0f856a72f9bbf3fe192f2dee16900ba82a508824463268f"
+  },
+  {
+    "id": "03",
+    "file": "03_ColumnCapital\\Original\\tripo_convert_a203deec-c279-4d86-84c4-f4017f890de0.fbm\\square_column_capital_3d_model_roughness.JPEG",
+    "sha256": "7388c25cbac27fcbcedcc1fded4bf39f60f448d7316a9569b900bc8fb417d4d1"
+  },
+  {
+    "id": "04",
+    "file": "04_SideArch\\Original\\tripo_convert_0f33bf15-713e-4b46-b2c7-99c87efd3c7d.fbx",
+    "sha256": "9eee7f55a4784418364f111f4da5d69199fe0461e8274721467b6f80a3f19fe6"
+  },
+  {
+    "id": "04",
+    "file": "04_SideArch\\Original\\tripo_convert_0f33bf15-713e-4b46-b2c7-99c87efd3c7d.fbm\\ruined_stone_arch_doorway_3d_model_basecolor.JPEG",
+    "sha256": "b77cc185302491b2eb79bedde03be59be755828478a8aeb2b553ab3679eba632"
+  },
+  {
+    "id": "04",
+    "file": "04_SideArch\\Original\\tripo_convert_0f33bf15-713e-4b46-b2c7-99c87efd3c7d.fbm\\ruined_stone_arch_doorway_3d_model_metallic.JPEG",
+    "sha256": "4ae76e6eaf44c342ae404b4127f1f48e5a3a755726775abcf19b9148785d1853"
+  },
+  {
+    "id": "04",
+    "file": "04_SideArch\\Original\\tripo_convert_0f33bf15-713e-4b46-b2c7-99c87efd3c7d.fbm\\ruined_stone_arch_doorway_3d_model_normal.PNG",
+    "sha256": "3c2523acf87955b6d084f612cc07ba24959b96a52fd0890c63fc9c7ed1c3e433"
+  },
+  {
+    "id": "04",
+    "file": "04_SideArch\\Original\\tripo_convert_0f33bf15-713e-4b46-b2c7-99c87efd3c7d.fbm\\ruined_stone_arch_doorway_3d_model_rm.JPEG",
+    "sha256": "fb965e17914bc55482dcaf1a8dbb2662af292fa68389e1c87cfca0612acef328"
+  },
+  {
+    "id": "04",
+    "file": "04_SideArch\\Original\\tripo_convert_0f33bf15-713e-4b46-b2c7-99c87efd3c7d.fbm\\ruined_stone_arch_doorway_3d_model_roughness.JPEG",
+    "sha256": "b3ef61ec7f06af3ec7ba6fcecf04f122c237c16e3a78cf1b2b1d2f14f1340ab0"
+  },
+  {
+    "id": "05",
+    "file": "05_Wall\\Original\\tripo_convert_9c680857-c1f1-4b4f-954f-174b3130404e.fbx",
+    "sha256": "877752e608a707f94559e51d29a39ba6f7fdbc09361a9302fb551bfbe46bead0"
+  },
+  {
+    "id": "05",
+    "file": "05_Wall\\Original\\tripo_convert_9c680857-c1f1-4b4f-954f-174b3130404e.fbm\\ruined_wall_panel_3d_model_basecolor.JPEG",
+    "sha256": "8e78d7c39c90fbdcf45c057a364ce8d6f32d05a91f9445539f81f1457b72d750"
+  },
+  {
+    "id": "05",
+    "file": "05_Wall\\Original\\tripo_convert_9c680857-c1f1-4b4f-954f-174b3130404e.fbm\\ruined_wall_panel_3d_model_metallic.JPEG",
+    "sha256": "10ea6f281c16d55ce2a73bd1d7507f29733afcaa0bea495441a7c75304f83228"
+  },
+  {
+    "id": "05",
+    "file": "05_Wall\\Original\\tripo_convert_9c680857-c1f1-4b4f-954f-174b3130404e.fbm\\ruined_wall_panel_3d_model_normal.PNG",
+    "sha256": "bad0bd74abc4da97d765684652b874b5929657a72678ff525b661abdbb87f383"
+  },
+  {
+    "id": "05",
+    "file": "05_Wall\\Original\\tripo_convert_9c680857-c1f1-4b4f-954f-174b3130404e.fbm\\ruined_wall_panel_3d_model_rm.JPEG",
+    "sha256": "9229596200aac51f21bc5c8a85f350519efc66b2a0114c8f29341e84567a33df"
+  },
+  {
+    "id": "05",
+    "file": "05_Wall\\Original\\tripo_convert_9c680857-c1f1-4b4f-954f-174b3130404e.fbm\\ruined_wall_panel_3d_model_roughness.JPEG",
+    "sha256": "df61776ce19b08ccd56ba91d0e4864ccad9c51c39572b86cad4f06a2f26df32f"
+  },
+  {
+    "id": "06",
+    "file": "06_WindowLower\\Original\\tripo_convert_ec145b2d-705c-4d73-9eba-bcd53e414104.fbx",
+    "sha256": "2df4440113efbd71a7225f784974a4eae2cd11ebbe61e11f33fbe406839bd33c"
+  },
+  {
+    "id": "06",
+    "file": "06_WindowLower\\Original\\tripo_convert_ec145b2d-705c-4d73-9eba-bcd53e414104.fbm\\rusted_metal_window_frame_3d_model_basecolor.JPEG",
+    "sha256": "c1a4380e5db2a6d1bf14e062c48f33de8ff410ac319116f7e1e3d0fc6c78bff3"
+  },
+  {
+    "id": "06",
+    "file": "06_WindowLower\\Original\\tripo_convert_ec145b2d-705c-4d73-9eba-bcd53e414104.fbm\\rusted_metal_window_frame_3d_model_metallic.JPEG",
+    "sha256": "5bfd2714c37e6bd85568394db3566186e8dfc3239e8a928a1d09894ed28ddb34"
+  },
+  {
+    "id": "06",
+    "file": "06_WindowLower\\Original\\tripo_convert_ec145b2d-705c-4d73-9eba-bcd53e414104.fbm\\rusted_metal_window_frame_3d_model_normal.PNG",
+    "sha256": "5bdba479b26d98627a66c2d3980607ecb063bd9f0779bee4aad8d09b48b1b99a"
+  },
+  {
+    "id": "06",
+    "file": "06_WindowLower\\Original\\tripo_convert_ec145b2d-705c-4d73-9eba-bcd53e414104.fbm\\rusted_metal_window_frame_3d_model_rm.JPEG",
+    "sha256": "4fc7557a634b32f35aad148395f87ef213e096e401efbb95fb9341927f913578"
+  },
+  {
+    "id": "06",
+    "file": "06_WindowLower\\Original\\tripo_convert_ec145b2d-705c-4d73-9eba-bcd53e414104.fbm\\rusted_metal_window_frame_3d_model_roughness.JPEG",
+    "sha256": "98d2ba3bcd5306ad17a809874d1e7f96389ba4446a18632cc424e8219f28dbfd"
+  },
+  {
+    "id": "07",
+    "file": "07_WindowArch\\Original\\tripo_convert_bdba81c6-4e74-44c2-9d1a-bb4ec0872fcf.fbx",
+    "sha256": "6f81f02a7c87d54a66193cf387b40956ae2be6f6868d0129030a441d57252e93"
+  },
+  {
+    "id": "07",
+    "file": "07_WindowArch\\Original\\tripo_convert_bdba81c6-4e74-44c2-9d1a-bb4ec0872fcf.fbm\\rusted_circular_window_3d_model_basecolor.JPEG",
+    "sha256": "685dbd87a3c59a5dbf2a53c5ea56349191c3af88fdafbb4812b3514fc6da6252"
+  },
+  {
+    "id": "07",
+    "file": "07_WindowArch\\Original\\tripo_convert_bdba81c6-4e74-44c2-9d1a-bb4ec0872fcf.fbm\\rusted_circular_window_3d_model_metallic.JPEG",
+    "sha256": "907283a22e3691d1d851c1e2e498872fdb61409d152fb20bc6b6f3ae7146ece6"
+  },
+  {
+    "id": "07",
+    "file": "07_WindowArch\\Original\\tripo_convert_bdba81c6-4e74-44c2-9d1a-bb4ec0872fcf.fbm\\rusted_circular_window_3d_model_normal.PNG",
+    "sha256": "a877ff8b1d3615fd5fe25fcf2a78743560151bd920cb521919b7acf66d947f3d"
+  },
+  {
+    "id": "07",
+    "file": "07_WindowArch\\Original\\tripo_convert_bdba81c6-4e74-44c2-9d1a-bb4ec0872fcf.fbm\\rusted_circular_window_3d_model_rm.JPEG",
+    "sha256": "805010789e9f09d909cff4f5177a135adca974c6737986ec29177849edd0ab02"
+  },
+  {
+    "id": "07",
+    "file": "07_WindowArch\\Original\\tripo_convert_bdba81c6-4e74-44c2-9d1a-bb4ec0872fcf.fbm\\rusted_circular_window_3d_model_roughness.JPEG",
+    "sha256": "b6e9e1eae5f24246778217a0aeaea5943b7e5ae6d25f601b704b758c6cf5deb3"
+  },
+  {
+    "id": "08",
+    "file": "08_Mullion\\Original\\tripo_convert_a1d629a3-14cc-49d0-a8e0-63151578869a.fbx",
+    "sha256": "4e4bbc22d2b54ddd7ac76477bafe171cd14806cd5e2d45f8c7d3475ded0451a8"
+  },
+  {
+    "id": "08",
+    "file": "08_Mullion\\Original\\tripo_convert_a1d629a3-14cc-49d0-a8e0-63151578869a.fbm\\rusted_mullion_3d_model_basecolor.JPEG",
+    "sha256": "724e59457f689000fde524fedfa4dfbba67d10726dce9859e0605c7e1e8e8c76"
+  },
+  {
+    "id": "08",
+    "file": "08_Mullion\\Original\\tripo_convert_a1d629a3-14cc-49d0-a8e0-63151578869a.fbm\\rusted_mullion_3d_model_metallic.JPEG",
+    "sha256": "540ff31660688f47447aede525563b6845f943ccea4e859c39752e4e5a1586aa"
+  },
+  {
+    "id": "08",
+    "file": "08_Mullion\\Original\\tripo_convert_a1d629a3-14cc-49d0-a8e0-63151578869a.fbm\\rusted_mullion_3d_model_normal.PNG",
+    "sha256": "5cc7d06eb8e797fde6579b1b32c3389c3cb5fee40616cdb6e5e08790ef2b70ae"
+  },
+  {
+    "id": "08",
+    "file": "08_Mullion\\Original\\tripo_convert_a1d629a3-14cc-49d0-a8e0-63151578869a.fbm\\rusted_mullion_3d_model_rm.JPEG",
+    "sha256": "904bf3c1ff15da955d2ba63acd247168c3bf8d3913e07c3f2d9ce005f1955c3b"
+  },
+  {
+    "id": "08",
+    "file": "08_Mullion\\Original\\tripo_convert_a1d629a3-14cc-49d0-a8e0-63151578869a.fbm\\rusted_mullion_3d_model_roughness.JPEG",
+    "sha256": "c10d76afabd21c39d041c260855aca1d34a7c1cc000f18ac69c2cfd10da09aee"
+  },
+  {
+    "id": "09",
+    "file": "09_Beam\\Original\\tripo_convert_f0d52577-e1d8-4d83-9d7a-56bbaf240e66.fbx",
+    "sha256": "9edb522f88c09a76610615d9e23596acd0c47ae77cb112d0c4a4d867c8db00a2"
+  },
+  {
+    "id": "09",
+    "file": "09_Beam\\Original\\tripo_convert_f0d52577-e1d8-4d83-9d7a-56bbaf240e66.fbm\\concrete_beam_3d_model_basecolor.JPEG",
+    "sha256": "62f5db104f1815ea609ddd6f668ce28dc7c6c65fe51d877c3bd6364d12504d99"
+  },
+  {
+    "id": "09",
+    "file": "09_Beam\\Original\\tripo_convert_f0d52577-e1d8-4d83-9d7a-56bbaf240e66.fbm\\concrete_beam_3d_model_metallic.JPEG",
+    "sha256": "217310b8d04d5a832335289970eab77fd087226f5a6b083b0876b63ec138e6b6"
+  },
+  {
+    "id": "09",
+    "file": "09_Beam\\Original\\tripo_convert_f0d52577-e1d8-4d83-9d7a-56bbaf240e66.fbm\\concrete_beam_3d_model_normal.PNG",
+    "sha256": "409a0d64ca37777de521400fce39dd5865c768fdb3be9743f4e7a47e1b5d4cc5"
+  },
+  {
+    "id": "09",
+    "file": "09_Beam\\Original\\tripo_convert_f0d52577-e1d8-4d83-9d7a-56bbaf240e66.fbm\\concrete_beam_3d_model_rm.JPEG",
+    "sha256": "7910329f6efc9a954bb14a5bbf761a238c13e94ec884b627dbce95bb98618c18"
+  },
+  {
+    "id": "09",
+    "file": "09_Beam\\Original\\tripo_convert_f0d52577-e1d8-4d83-9d7a-56bbaf240e66.fbm\\concrete_beam_3d_model_roughness.JPEG",
+    "sha256": "8aa408a28b003d474426188bdceeb355991ca56ca91e5eba358aa09efcbfa429"
+  },
+  {
+    "id": "10",
+    "file": "10_RoofTruss\\Original\\tripo_convert_d4f09bb1-7ec0-4061-979c-38d61ebcb76f.fbx",
+    "sha256": "dbfca759ba1b0ac74390aed569d43701b7720337afa39f51de89628733dc5ab7"
+  },
+  {
+    "id": "10",
+    "file": "10_RoofTruss\\Original\\tripo_convert_d4f09bb1-7ec0-4061-979c-38d61ebcb76f.fbm\\triangular_roof_truss_3d_model_basecolor.JPEG",
+    "sha256": "bf39e9bed789d56d0ffb7c9e33eab6ff581204b8ed361b8a33677e33d8134bfe"
+  },
+  {
+    "id": "10",
+    "file": "10_RoofTruss\\Original\\tripo_convert_d4f09bb1-7ec0-4061-979c-38d61ebcb76f.fbm\\triangular_roof_truss_3d_model_metallic.JPEG",
+    "sha256": "ac4a23bec3435024f172c49a2188a68f898e2c3bc47fe5788abc5b2d3b4616da"
+  },
+  {
+    "id": "10",
+    "file": "10_RoofTruss\\Original\\tripo_convert_d4f09bb1-7ec0-4061-979c-38d61ebcb76f.fbm\\triangular_roof_truss_3d_model_normal.PNG",
+    "sha256": "107509f29bcd958759b3ab1bf054cd24351586352f3d412b4cc6f99605270350"
+  },
+  {
+    "id": "10",
+    "file": "10_RoofTruss\\Original\\tripo_convert_d4f09bb1-7ec0-4061-979c-38d61ebcb76f.fbm\\triangular_roof_truss_3d_model_rm.JPEG",
+    "sha256": "1fa8c544bfa0eb5c00a573938806f977dbd96cedc78010f58bf94d400eafdbd2"
+  },
+  {
+    "id": "10",
+    "file": "10_RoofTruss\\Original\\tripo_convert_d4f09bb1-7ec0-4061-979c-38d61ebcb76f.fbm\\triangular_roof_truss_3d_model_roughness.JPEG",
+    "sha256": "c26e40b985d3c57a2ede9aa1e664805f6ecc59c2380eac0cc53804150f7bd129"
+  },
+  {
+    "id": "11",
+    "file": "11_BrokenBeam\\Original\\tripo_convert_c66b5505-a57f-4cf4-b6d2-0ad5e7c141d9.fbx",
+    "sha256": "7a2c71445c483e051ec2f70dc5bda1a86d5326dfce6fba597ae5de33cf185d16"
+  },
+  {
+    "id": "11",
+    "file": "11_BrokenBeam\\Original\\tripo_convert_c66b5505-a57f-4cf4-b6d2-0ad5e7c141d9.fbm\\concrete_beam_3d_model_basecolor.JPEG",
+    "sha256": "5c82c2d7026b05663bcfc439e006d33c299f446b20302de0c887d11e0b939b95"
+  },
+  {
+    "id": "11",
+    "file": "11_BrokenBeam\\Original\\tripo_convert_c66b5505-a57f-4cf4-b6d2-0ad5e7c141d9.fbm\\concrete_beam_3d_model_metallic.JPEG",
+    "sha256": "5354920c084ee2bfb3235b17a23bb1767349207ea8bdf197700f1728b196e449"
+  },
+  {
+    "id": "11",
+    "file": "11_BrokenBeam\\Original\\tripo_convert_c66b5505-a57f-4cf4-b6d2-0ad5e7c141d9.fbm\\concrete_beam_3d_model_normal.PNG",
+    "sha256": "7187e3ef5f716283b1fa1b0b48c488fb5d8e6b9fc97f3968833ddd6659f22d5f"
+  },
+  {
+    "id": "11",
+    "file": "11_BrokenBeam\\Original\\tripo_convert_c66b5505-a57f-4cf4-b6d2-0ad5e7c141d9.fbm\\concrete_beam_3d_model_rm.JPEG",
+    "sha256": "d9e02260500e034099abcef3d3a5230e0cf719164088a5d86da9c1d014d007f5"
+  },
+  {
+    "id": "11",
+    "file": "11_BrokenBeam\\Original\\tripo_convert_c66b5505-a57f-4cf4-b6d2-0ad5e7c141d9.fbm\\concrete_beam_3d_model_roughness.JPEG",
+    "sha256": "c5218b72a7cc0867f920cbd7394027894eace14eff5883f345764b25dcdbe122"
+  },
+  {
+    "id": "12",
+    "file": "12_SmallArch\\Original\\tripo_convert_b3a7ba11-f3cc-4177-bdbb-e699ff0a7721.fbx",
+    "sha256": "c85ea88613df65ea92015ce3e81accc64b514448a51a45712700f67e51b7fcf5"
+  },
+  {
+    "id": "12",
+    "file": "12_SmallArch\\Original\\tripo_convert_b3a7ba11-f3cc-4177-bdbb-e699ff0a7721.fbm\\stone_archway_ruin_3d_model_basecolor.JPEG",
+    "sha256": "6ada6fd6df122e129b54b9ba3202e1dd19764c746ad129e52c76fa547da0af7c"
+  },
+  {
+    "id": "12",
+    "file": "12_SmallArch\\Original\\tripo_convert_b3a7ba11-f3cc-4177-bdbb-e699ff0a7721.fbm\\stone_archway_ruin_3d_model_metallic.JPEG",
+    "sha256": "0c9675e854db64f1b12d04dd354a2f75a38fc4d8dd01a82383c2593f1cb991b2"
+  },
+  {
+    "id": "12",
+    "file": "12_SmallArch\\Original\\tripo_convert_b3a7ba11-f3cc-4177-bdbb-e699ff0a7721.fbm\\stone_archway_ruin_3d_model_normal.PNG",
+    "sha256": "4e0c93f50fdeedbbca3414e26df5e48e6301942c555babf4552f990fa59bb28d"
+  },
+  {
+    "id": "12",
+    "file": "12_SmallArch\\Original\\tripo_convert_b3a7ba11-f3cc-4177-bdbb-e699ff0a7721.fbm\\stone_archway_ruin_3d_model_rm.JPEG",
+    "sha256": "c4dfc9961c599e7dff3563246ebc77f0bbc45f35277456f41e46ecb6ab42ce8d"
+  },
+  {
+    "id": "12",
+    "file": "12_SmallArch\\Original\\tripo_convert_b3a7ba11-f3cc-4177-bdbb-e699ff0a7721.fbm\\stone_archway_ruin_3d_model_roughness.JPEG",
+    "sha256": "af4cb437889b8fae1285d4cf991012205d12c28cf8f7d42b0cd26ee8be82d76b"
+  },
+  {
+    "id": "13",
+    "file": "13_Floor\\Original\\tripo_convert_111c9011-858b-4f27-a1be-54388e8a7aa7.fbx",
+    "sha256": "b7ab142a47ba596fd039bf1bcc823c6c348d09cb594e5457ef0f0235100066e9"
+  },
+  {
+    "id": "13",
+    "file": "13_Floor\\Original\\tripo_convert_111c9011-858b-4f27-a1be-54388e8a7aa7.fbm\\stone_tile_3d_model_basecolor.JPEG",
+    "sha256": "1a10018715a17fc69a4a3605b308195f7ea71167e54931d90b23aab2988d9b77"
+  },
+  {
+    "id": "13",
+    "file": "13_Floor\\Original\\tripo_convert_111c9011-858b-4f27-a1be-54388e8a7aa7.fbm\\stone_tile_3d_model_metallic.JPEG",
+    "sha256": "98197f0b8105f49232af3074b7125f53c4bdf6e1f929ecc5a1811d6ffaa54852"
+  },
+  {
+    "id": "13",
+    "file": "13_Floor\\Original\\tripo_convert_111c9011-858b-4f27-a1be-54388e8a7aa7.fbm\\stone_tile_3d_model_normal.PNG",
+    "sha256": "a2b2e0b5819cc1a9e110ac919acab4375055e0a3bf97179dd07ab4fb5c2ac3ef"
+  },
+  {
+    "id": "13",
+    "file": "13_Floor\\Original\\tripo_convert_111c9011-858b-4f27-a1be-54388e8a7aa7.fbm\\stone_tile_3d_model_rm.JPEG",
+    "sha256": "acd3de3641320c32b4a5bee37227b2d0c576d6d23e73fc356cda3ceb08d79038"
+  },
+  {
+    "id": "13",
+    "file": "13_Floor\\Original\\tripo_convert_111c9011-858b-4f27-a1be-54388e8a7aa7.fbm\\stone_tile_3d_model_roughness.JPEG",
+    "sha256": "478d2f885b97d005c4fccb5f658bf64b5c6b43af1b1d8e2b95aec17115bc96d5"
+  },
+  {
+    "id": "14",
+    "file": "14_Bench\\Original\\tripo_convert_d177e7a3-d9af-4b8a-83ca-ee43976583ab.fbx",
+    "sha256": "1c052544bf4b27a10c4d922930cabb06b59e76e7416fceecd65cf6cbed28ca67"
+  },
+  {
+    "id": "14",
+    "file": "14_Bench\\Original\\tripo_convert_d177e7a3-d9af-4b8a-83ca-ee43976583ab.fbm\\weathered_wooden_bench_3d_model_basecolor.JPEG",
+    "sha256": "2652baeb3a11f6331b65be936040b70257b8b5845774882f841ad9e065294ef6"
+  },
+  {
+    "id": "14",
+    "file": "14_Bench\\Original\\tripo_convert_d177e7a3-d9af-4b8a-83ca-ee43976583ab.fbm\\weathered_wooden_bench_3d_model_metallic.JPEG",
+    "sha256": "d79d87acbfa6d9431e51f18b487a07887b3f6b5e8c3714b0228589fcd75f0f67"
+  },
+  {
+    "id": "14",
+    "file": "14_Bench\\Original\\tripo_convert_d177e7a3-d9af-4b8a-83ca-ee43976583ab.fbm\\weathered_wooden_bench_3d_model_normal.PNG",
+    "sha256": "c4b7391f4b5ccb166787effc8542226ceeaf031adda3c4300c00a35e4ebe6a3d"
+  },
+  {
+    "id": "14",
+    "file": "14_Bench\\Original\\tripo_convert_d177e7a3-d9af-4b8a-83ca-ee43976583ab.fbm\\weathered_wooden_bench_3d_model_rm.JPEG",
+    "sha256": "4c92f9b571bbbb4e46dfa612e53f90eb9fd7df806fd797954bd22e64aa6c07bc"
+  },
+  {
+    "id": "14",
+    "file": "14_Bench\\Original\\tripo_convert_d177e7a3-d9af-4b8a-83ca-ee43976583ab.fbm\\weathered_wooden_bench_3d_model_roughness.JPEG",
+    "sha256": "33981f7f6b4d9c9c753364230c5b373f33eb3a35350f0950849b64765faddc0d"
+  },
+  {
+    "id": "15",
+    "file": "15_Rubble\\Original\\tripo_convert_2fba543b-ecfe-41e4-ab23-db5754568080.fbx",
+    "sha256": "943bc456824a1a1603681d2f844bc5dc44ad81b2fd7a26797d672a193b606e9e"
+  },
+  {
+    "id": "15",
+    "file": "15_Rubble\\Original\\tripo_convert_2fba543b-ecfe-41e4-ab23-db5754568080.fbm\\concrete_rubble_3d_model_basecolor.JPEG",
+    "sha256": "2fe948f165de107a5c4086d7942418a7982f19eff4bbffae04223c4c6f306cc2"
+  },
+  {
+    "id": "15",
+    "file": "15_Rubble\\Original\\tripo_convert_2fba543b-ecfe-41e4-ab23-db5754568080.fbm\\concrete_rubble_3d_model_metallic.JPEG",
+    "sha256": "2d2669984ebb47dfd128e5811750631ce30519f9df03a742df128b69ca57fffa"
+  },
+  {
+    "id": "15",
+    "file": "15_Rubble\\Original\\tripo_convert_2fba543b-ecfe-41e4-ab23-db5754568080.fbm\\concrete_rubble_3d_model_normal.PNG",
+    "sha256": "e720b733f4c032c120522d69ef12b8e4c40bb16e2417ea03f03e201ebaa7aa95"
+  },
+  {
+    "id": "15",
+    "file": "15_Rubble\\Original\\tripo_convert_2fba543b-ecfe-41e4-ab23-db5754568080.fbm\\concrete_rubble_3d_model_rm.JPEG",
+    "sha256": "f0e9484d526e0ce418d7bff6a35d43b3e9dc78841a8e8de0b4fd944a2a4dab01"
+  },
+  {
+    "id": "15",
+    "file": "15_Rubble\\Original\\tripo_convert_2fba543b-ecfe-41e4-ab23-db5754568080.fbm\\concrete_rubble_3d_model_roughness.JPEG",
+    "sha256": "c0f45e91385e388c72603ba6dfa47be215c061b35c49642ec613c65a88222127"
+  },
+  {
+    "id": "16",
+    "file": "16_Grass\\Original\\tripo_convert_bcc23452-41a6-4274-b349-af947b379869.fbx",
+    "sha256": "a3a98f2633a72610db6d7be07360da1c235ff7c8758bbba57c34c8b5030f498d"
+  },
+  {
+    "id": "16",
+    "file": "16_Grass\\Original\\tripo_convert_bcc23452-41a6-4274-b349-af947b379869.fbm\\grass_clump_3d_model_basecolor.JPEG",
+    "sha256": "4119f0ad6a3af22dd942767c32377dba502f9c03e25b75f0af6a28e6bab558ff"
+  },
+  {
+    "id": "16",
+    "file": "16_Grass\\Original\\tripo_convert_bcc23452-41a6-4274-b349-af947b379869.fbm\\grass_clump_3d_model_metallic.JPEG",
+    "sha256": "3369e6104caeb6a33c4cda3f5a86ce129dde6cf30e3022b72989e44e4d2dd9aa"
+  },
+  {
+    "id": "16",
+    "file": "16_Grass\\Original\\tripo_convert_bcc23452-41a6-4274-b349-af947b379869.fbm\\grass_clump_3d_model_normal.PNG",
+    "sha256": "988167fe01a3ddac138873b1cef5083597d0fba0053e368b493f6e075cb5fbc6"
+  },
+  {
+    "id": "16",
+    "file": "16_Grass\\Original\\tripo_convert_bcc23452-41a6-4274-b349-af947b379869.fbm\\grass_clump_3d_model_rm.JPEG",
+    "sha256": "c97c29e8a1d20b9ed6145727219bc05958582feb02dab42b402b89207986b9ba"
+  },
+  {
+    "id": "16",
+    "file": "16_Grass\\Original\\tripo_convert_bcc23452-41a6-4274-b349-af947b379869.fbm\\grass_clump_3d_model_roughness.JPEG",
+    "sha256": "91408619a3bca83666adb769f5963366b7629f58d0fa3d20b0e73c1ec72b0625"
+  },
+  {
+    "id": "17",
+    "file": "17_Shrub\\Original\\tripo_convert_0e7a19e7-32e4-48b0-b545-d2f748d7b08a.fbx",
+    "sha256": "8f8e2cbff3909b98135b1686604b4932a587f4858251fc55b30855d4d67dabfc"
+  },
+  {
+    "id": "17",
+    "file": "17_Shrub\\Original\\tripo_convert_0e7a19e7-32e4-48b0-b545-d2f748d7b08a.fbm\\tree_3d_model_basecolor.JPEG",
+    "sha256": "b6870bdcc702056ebb5c418c6e302c38f713a64d0eee0f23951dc24b5fdeea7b"
+  },
+  {
+    "id": "17",
+    "file": "17_Shrub\\Original\\tripo_convert_0e7a19e7-32e4-48b0-b545-d2f748d7b08a.fbm\\tree_3d_model_metallic.JPEG",
+    "sha256": "74e5f5c32864966ce1d37b56e588f66c5c2a10d4a53b6d65c1abdf3b5d411a90"
+  },
+  {
+    "id": "17",
+    "file": "17_Shrub\\Original\\tripo_convert_0e7a19e7-32e4-48b0-b545-d2f748d7b08a.fbm\\tree_3d_model_normal.PNG",
+    "sha256": "ccd6220d9bbf79abbc9daed78538c4cd72be9664c5cd84e89926d91238ec23bc"
+  },
+  {
+    "id": "17",
+    "file": "17_Shrub\\Original\\tripo_convert_0e7a19e7-32e4-48b0-b545-d2f748d7b08a.fbm\\tree_3d_model_rm.JPEG",
+    "sha256": "a5379534c6bb26e645edf61b71bfeaf22ceb73ae0d5194883576ed079a8d5e3c"
+  },
+  {
+    "id": "17",
+    "file": "17_Shrub\\Original\\tripo_convert_0e7a19e7-32e4-48b0-b545-d2f748d7b08a.fbm\\tree_3d_model_roughness.JPEG",
+    "sha256": "0f1b600cb78f7998f31a96ca6d1bf2bb4c5edd077c408d92047540521b428ed2"
+  },
+  {
+    "id": "18",
+    "file": "18_Vine\\Original\\tripo_convert_0570d6fa-2db4-4cad-bba1-d19edc2c8390.fbx",
+    "sha256": "dddd443ab54e4d39bbbb51b3339fa23d1fcd4cf5b4536a2388e4c463a60ba52a"
+  },
+  {
+    "id": "18",
+    "file": "18_Vine\\Original\\tripo_convert_0570d6fa-2db4-4cad-bba1-d19edc2c8390.fbm\\ivy_vine_3d_model_basecolor.JPEG",
+    "sha256": "009eca5dcb2cc38bc00857232079998074bd338be42841265c0c9fa12b7b8468"
+  },
+  {
+    "id": "18",
+    "file": "18_Vine\\Original\\tripo_convert_0570d6fa-2db4-4cad-bba1-d19edc2c8390.fbm\\ivy_vine_3d_model_metallic.JPEG",
+    "sha256": "144cf93619ee7ae67804e32f5a94536610392eaa4ce9e7eb1860ecea8592c4c3"
+  },
+  {
+    "id": "18",
+    "file": "18_Vine\\Original\\tripo_convert_0570d6fa-2db4-4cad-bba1-d19edc2c8390.fbm\\ivy_vine_3d_model_normal.PNG",
+    "sha256": "2ca05277be573a20996f5730f6e9b7792c71fd9b1e29c8728c873181ba286277"
+  },
+  {
+    "id": "18",
+    "file": "18_Vine\\Original\\tripo_convert_0570d6fa-2db4-4cad-bba1-d19edc2c8390.fbm\\ivy_vine_3d_model_rm.JPEG",
+    "sha256": "099e9946b3c7e336964cbae87c7cbf6738e28d3fd4d9760fafe3855ffb795b50"
+  },
+  {
+    "id": "18",
+    "file": "18_Vine\\Original\\tripo_convert_0570d6fa-2db4-4cad-bba1-d19edc2c8390.fbm\\ivy_vine_3d_model_roughness.JPEG",
+    "sha256": "62cd6301c50e1a6b5bce3163c72c5b3de74eb8cffcbaa1dd928a45e25d22f57c"
+  },
+  {
+    "id": "25",
+    "file": "25_Railing\\Original\\tripo_convert_65eaf44c-dd17-4dc8-9982-4d7ad8d30489.fbx",
+    "sha256": "04e0139cd84f53482ede8402bc8391a32e470329709f32cb3f3e9b2f60fcd2dc"
+  },
+  {
+    "id": "25",
+    "file": "25_Railing\\Original\\tripo_convert_65eaf44c-dd17-4dc8-9982-4d7ad8d30489.fbm\\industrial_metal_railing_3d_model_basecolor.JPEG",
+    "sha256": "75c29ecef325ff8acb12755985e9321358aa1ec12b304abd0348ad91a2fdf29f"
+  },
+  {
+    "id": "25",
+    "file": "25_Railing\\Original\\tripo_convert_65eaf44c-dd17-4dc8-9982-4d7ad8d30489.fbm\\industrial_metal_railing_3d_model_metallic.JPEG",
+    "sha256": "fb3705ae2af1adb795f99fa2ce437fd7b77dd331ea3f6fc890e4fc8e6857e215"
+  },
+  {
+    "id": "25",
+    "file": "25_Railing\\Original\\tripo_convert_65eaf44c-dd17-4dc8-9982-4d7ad8d30489.fbm\\industrial_metal_railing_3d_model_normal.PNG",
+    "sha256": "3a3a91e029818474556059597c4aa2d59f6b3bf976a59ce38f1782184bc79cef"
+  },
+  {
+    "id": "25",
+    "file": "25_Railing\\Original\\tripo_convert_65eaf44c-dd17-4dc8-9982-4d7ad8d30489.fbm\\industrial_metal_railing_3d_model_rm.JPEG",
+    "sha256": "d9570f0f8315581c63c4168f0855e9211bd1e927cf5461ffa722f460b4977e7e"
+  },
+  {
+    "id": "25",
+    "file": "25_Railing\\Original\\tripo_convert_65eaf44c-dd17-4dc8-9982-4d7ad8d30489.fbm\\industrial_metal_railing_3d_model_roughness.JPEG",
+    "sha256": "8ac2c50367780b9e68ded428e9d32e279789c824edbdd2b4ba00d895cfde679b"
+  },
+  {
+    "id": "26",
+    "file": "26_RoofPanel\\Original\\tripo_convert_a80c96e0-92af-47b7-b42d-e43c704ecdc5.fbx",
+    "sha256": "19b5b474df4294818a413aae161e3785259f3171b31a8ff3f07eee851d1f22e8"
+  },
+  {
+    "id": "26",
+    "file": "26_RoofPanel\\Original\\tripo_convert_a80c96e0-92af-47b7-b42d-e43c704ecdc5.fbm\\ruined_roofing_panel_3d_model_basecolor.JPEG",
+    "sha256": "26d3ef249e331d60b81720511c54d108b01565556c1722b3c94cf417627ad93d"
+  },
+  {
+    "id": "26",
+    "file": "26_RoofPanel\\Original\\tripo_convert_a80c96e0-92af-47b7-b42d-e43c704ecdc5.fbm\\ruined_roofing_panel_3d_model_metallic.JPEG",
+    "sha256": "97fdddf2ca1b395b1cb7d6ccc136397cb37bea813b65fcc93f201751796d8cc3"
+  },
+  {
+    "id": "26",
+    "file": "26_RoofPanel\\Original\\tripo_convert_a80c96e0-92af-47b7-b42d-e43c704ecdc5.fbm\\ruined_roofing_panel_3d_model_normal.PNG",
+    "sha256": "18ba4a2a833683ac8313d2fb56dddab200fa6bef48923b4a32e96435977ab58e"
+  },
+  {
+    "id": "26",
+    "file": "26_RoofPanel\\Original\\tripo_convert_a80c96e0-92af-47b7-b42d-e43c704ecdc5.fbm\\ruined_roofing_panel_3d_model_rm.JPEG",
+    "sha256": "194fd4a59fa1dfff715c3b99472410a627fc2559dd8cf9f8d5664983f9975826"
+  },
+  {
+    "id": "26",
+    "file": "26_RoofPanel\\Original\\tripo_convert_a80c96e0-92af-47b7-b42d-e43c704ecdc5.fbm\\ruined_roofing_panel_3d_model_roughness.JPEG",
+    "sha256": "e875f8cff325f960eacfb30cf01bd20ce22cbf426efa2375e8a5884253cc013d"
+  }
+]

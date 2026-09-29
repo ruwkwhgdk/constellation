@@ -1,0 +1,20 @@
+{
+  "id": "15",
+  "name": "Rubble",
+  "mesh": "SM_OH_Clean_15_Rubble",
+  "source": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OvergrownHall\\TripoReplacement\\v002\\15_Rubble\\prepared.blend",
+  "source_triangles": 7970,
+  "triangles": 7970,
+  "budget": 8000,
+  "dimensions_m": [
+    1.200389802455902,
+    0.9998955726623535,
+    0.4500500828726217
+  ],
+  "boundary_edges": 16,
+  "basecolor": null,
+  "organic": true,
+  "edits": [
+    "bounded local spike smoothing; original topology and UV retained"
+  ]
+}

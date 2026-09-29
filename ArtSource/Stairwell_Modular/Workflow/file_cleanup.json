@@ -1,0 +1,487 @@
+{
+  "count": 120,
+  "deleted_files": [
+    {
+      "bytes": 1164,
+      "path": "ArtSource\\Stairwell_Modular\\Assembly\\build_v001_final.log"
+    },
+    {
+      "bytes": 960,
+      "path": "ArtSource\\Stairwell_Modular\\Assembly\\build_v001_verified.log"
+    },
+    {
+      "bytes": 1273,
+      "path": "ArtSource\\Stairwell_Modular\\Assembly\\build_v001.log"
+    },
+    {
+      "bytes": 249283,
+      "path": "ArtSource\\Stairwell_Modular\\Assembly\\stairwell_assembly_proof_v001.blend1"
+    },
+    {
+      "bytes": 323382,
+      "path": "ArtSource\\Stairwell_Modular\\camera_apply.log"
+    },
+    {
+      "bytes": 265293,
+      "path": "ArtSource\\Stairwell_Modular\\camera_backup.log"
+    },
+    {
+      "bytes": 320081,
+      "path": "ArtSource\\Stairwell_Modular\\camera_preview-backup-2026.09.24-08.45.42.log"
+    },
+    {
+      "bytes": 316550,
+      "path": "ArtSource\\Stairwell_Modular\\camera_preview.log"
+    },
+    {
+      "bytes": 328931,
+      "path": "ArtSource\\Stairwell_Modular\\details_apply-backup-2026.09.24-09.22.27.log"
+    },
+    {
+      "bytes": 327662,
+      "path": "ArtSource\\Stairwell_Modular\\details_apply.log"
+    },
+    {
+      "bytes": 317878,
+      "path": "ArtSource\\Stairwell_Modular\\details_validate.log"
+    },
+    {
+      "bytes": 278661,
+      "path": "ArtSource\\Stairwell_Modular\\Export\\DoorPair\\unreal_import.log"
+    },
+    {
+      "bytes": 335630,
+      "path": "ArtSource\\Stairwell_Modular\\finish_apply.log"
+    },
+    {
+      "bytes": 74,
+      "path": "ArtSource\\Stairwell_Modular\\Jobs\\balance_after_model15.json"
+    },
+    {
+      "bytes": 75,
+      "path": "ArtSource\\Stairwell_Modular\\Jobs\\balance_after_supplement_v001.json"
+    },
+    {
+      "bytes": 75,
+      "path": "ArtSource\\Stairwell_Modular\\Jobs\\balance_after_v001.json"
+    },
+    {
+      "bytes": 75,
+      "path": "ArtSource\\Stairwell_Modular\\Jobs\\balance_after_v002.json"
+    },
+    {
+      "bytes": 75,
+      "path": "ArtSource\\Stairwell_Modular\\Jobs\\balance_after_v003.json"
+    },
+    {
+      "bytes": 75,
+      "path": "ArtSource\\Stairwell_Modular\\Jobs\\balance_model15_pending.json"
+    },
+    {
+      "bytes": 6765,
+      "path": "ArtSource\\Stairwell_Modular\\kit_build_v001.log"
+    },
+    {
+      "bytes": 325304,
+      "path": "ArtSource\\Stairwell_Modular\\lighting_apply-backup-2026.09.24-08.55.41.log"
+    },
+    {
+      "bytes": 317615,
+      "path": "ArtSource\\Stairwell_Modular\\lighting_apply-backup-2026.09.24-08.57.32.log"
+    },
+    {
+      "bytes": 322925,
+      "path": "ArtSource\\Stairwell_Modular\\lighting_apply.log"
+    },
+    {
+      "bytes": 343682,
+      "path": "ArtSource\\Stairwell_Modular\\material_apply-backup-2026.09.24-09.05.46.log"
+    },
+    {
+      "bytes": 344383,
+      "path": "ArtSource\\Stairwell_Modular\\material_apply.log"
+    },
+    {
+      "bytes": 1170,
+      "path": "ArtSource\\Stairwell_Modular\\Models\\14_Door\\export_pair.log"
+    },
+    {
+      "bytes": 2000,
+      "path": "ArtSource\\Stairwell_Modular\\Models\\14_Door\\inspection_v001.log"
+    },
+    {
+      "bytes": 1222,
+      "path": "ArtSource\\Stairwell_Modular\\Models\\14_Door\\parts_audit.log"
+    },
+    {
+      "bytes": 1006,
+      "path": "ArtSource\\Stairwell_Modular\\Models\\15_Light\\inspection_v001.log"
+    },
+    {
+      "bytes": 1135986,
+      "path": "ArtSource\\Stairwell_Modular\\Models\\15_Light\\light15_view_a.png"
+    },
+    {
+      "bytes": 1218664,
+      "path": "ArtSource\\Stairwell_Modular\\Models\\15_Light\\light15_view_b.png"
+    },
+    {
+      "bytes": 641,
+      "path": "ArtSource\\Stairwell_Modular\\Models\\15_Light\\optimization_v002.log"
+    },
+    {
+      "bytes": 89616,
+      "path": "ArtSource\\Stairwell_Modular\\Models\\15_Light\\tripo_preview_v001.webp"
+    },
+    {
+      "bytes": 266791,
+      "path": "ArtSource\\Stairwell_Modular\\play_check.log"
+    },
+    {
+      "bytes": 265876,
+      "path": "ArtSource\\Stairwell_Modular\\Production\\v001\\reports\\assembly_regression_before.log"
+    },
+    {
+      "bytes": 263788,
+      "path": "ArtSource\\Stairwell_Modular\\Production\\v001\\reports\\assembly_verification.log"
+    },
+    {
+      "bytes": 766,
+      "path": "ArtSource\\Stairwell_Modular\\Production\\v001\\reports\\corner_regression_before.log"
+    },
+    {
+      "bytes": 298,
+      "path": "ArtSource\\Stairwell_Modular\\Production\\v001\\reports\\geometry_verification.log"
+    },
+    {
+      "bytes": 394834,
+      "path": "ArtSource\\Stairwell_Modular\\Production\\v001\\reports\\unreal_import.log"
+    },
+    {
+      "bytes": 3210984,
+      "path": "ArtSource\\Stairwell_Modular\\Production\\v001\\stairwell_kit_review_v001.blend1"
+    },
+    {
+      "bytes": 329872,
+      "path": "ArtSource\\Stairwell_Modular\\scale2_apply.log"
+    },
+    {
+      "bytes": 323226,
+      "path": "ArtSource\\Stairwell_Modular\\scale2_finalize.log"
+    },
+    {
+      "bytes": 323972,
+      "path": "ArtSource\\Stairwell_Modular\\scale2_open.log"
+    },
+    {
+      "bytes": 282654,
+      "path": "ArtSource\\Stairwell_Modular\\scene_build.log"
+    },
+    {
+      "bytes": 314899,
+      "path": "ArtSource\\Stairwell_Modular\\scene_capture-backup-2026.09.23-19.19.45.log"
+    },
+    {
+      "bytes": 343910,
+      "path": "ArtSource\\Stairwell_Modular\\scene_capture-backup-2026.09.23-19.22.40.log"
+    },
+    {
+      "bytes": 358800,
+      "path": "ArtSource\\Stairwell_Modular\\scene_capture-backup-2026.09.23-19.26.18.log"
+    },
+    {
+      "bytes": 359981,
+      "path": "ArtSource\\Stairwell_Modular\\scene_capture-backup-2026.09.23-19.29.52.log"
+    },
+    {
+      "bytes": 361031,
+      "path": "ArtSource\\Stairwell_Modular\\scene_capture-backup-2026.09.23-19.33.26.log"
+    },
+    {
+      "bytes": 362236,
+      "path": "ArtSource\\Stairwell_Modular\\scene_capture-backup-2026.09.23-19.35.43.log"
+    },
+    {
+      "bytes": 361105,
+      "path": "ArtSource\\Stairwell_Modular\\scene_capture-backup-2026.09.23-19.39.51.log"
+    },
+    {
+      "bytes": 376781,
+      "path": "ArtSource\\Stairwell_Modular\\scene_capture-backup-2026.09.24-08.06.56.log"
+    },
+    {
+      "bytes": 365300,
+      "path": "ArtSource\\Stairwell_Modular\\scene_capture-backup-2026.09.24-08.10.29.log"
+    },
+    {
+      "bytes": 384958,
+      "path": "ArtSource\\Stairwell_Modular\\scene_capture.log"
+    },
+    {
+      "bytes": 1519990,
+      "path": "ArtSource\\Stairwell_Modular\\Scene\\v001\\after_camera_revision.png"
+    },
+    {
+      "bytes": 1807313,
+      "path": "ArtSource\\Stairwell_Modular\\Scene\\v001\\after_landing_revision.png"
+    },
+    {
+      "bytes": 1772951,
+      "path": "ArtSource\\Stairwell_Modular\\Scene\\v001\\after_lighting_revision.png"
+    },
+    {
+      "bytes": 2592449,
+      "path": "ArtSource\\Stairwell_Modular\\Scene\\v001\\after_material_revision.png"
+    },
+    {
+      "bytes": 2686705,
+      "path": "ArtSource\\Stairwell_Modular\\Scene\\v001\\after_reference_details.png"
+    },
+    {
+      "bytes": 1689235,
+      "path": "ArtSource\\Stairwell_Modular\\Scene\\v001\\after_width240.png"
+    },
+    {
+      "bytes": 195,
+      "path": "ArtSource\\Stairwell_Modular\\Scene\\v001\\apply_details_report.json"
+    },
+    {
+      "bytes": 978,
+      "path": "ArtSource\\Stairwell_Modular\\Scene\\v001\\apply_lighting_report.json"
+    },
+    {
+      "bytes": 44118,
+      "path": "ArtSource\\Stairwell_Modular\\Scene\\v001\\before_landing_revision.json"
+    },
+    {
+      "bytes": 1816918,
+      "path": "ArtSource\\Stairwell_Modular\\Scene\\v001\\before_landing_revision.png"
+    },
+    {
+      "bytes": 1807313,
+      "path": "ArtSource\\Stairwell_Modular\\Scene\\v001\\before_width240.png"
+    },
+    {
+      "bytes": 1586175,
+      "path": "ArtSource\\Stairwell_Modular\\Scene\\v001\\camera_A.png"
+    },
+    {
+      "bytes": 1531361,
+      "path": "ArtSource\\Stairwell_Modular\\Scene\\v001\\camera_B.png"
+    },
+    {
+      "bytes": 241,
+      "path": "ArtSource\\Stairwell_Modular\\Scene\\v001\\camera_geometry_verification.json"
+    },
+    {
+      "bytes": 1605,
+      "path": "ArtSource\\Stairwell_Modular\\Scene\\v001\\camera_revision.html"
+    },
+    {
+      "bytes": 1281,
+      "path": "ArtSource\\Stairwell_Modular\\Scene\\v001\\CAMERA_REVISION.md"
+    },
+    {
+      "bytes": 2657250,
+      "path": "ArtSource\\Stairwell_Modular\\Scene\\v001\\details_pass01.png"
+    },
+    {
+      "bytes": 266,
+      "path": "ArtSource\\Stairwell_Modular\\Scene\\v001\\details_verification.json"
+    },
+    {
+      "bytes": 1519,
+      "path": "ArtSource\\Stairwell_Modular\\Scene\\v001\\FINISH_REVISION.md"
+    },
+    {
+      "bytes": 2469,
+      "path": "ArtSource\\Stairwell_Modular\\Scene\\v001\\HANDOFF.md"
+    },
+    {
+      "bytes": 416,
+      "path": "ArtSource\\Stairwell_Modular\\Scene\\v001\\landing_revision_verification.json"
+    },
+    {
+      "bytes": 1547,
+      "path": "ArtSource\\Stairwell_Modular\\Scene\\v001\\landing_revision.html"
+    },
+    {
+      "bytes": 1302,
+      "path": "ArtSource\\Stairwell_Modular\\Scene\\v001\\LANDING_REVISION.md"
+    },
+    {
+      "bytes": 263290,
+      "path": "ArtSource\\Stairwell_Modular\\Scene\\v001\\light_material_fix.log"
+    },
+    {
+      "bytes": 952,
+      "path": "ArtSource\\Stairwell_Modular\\Scene\\v001\\lighting_before_details.json"
+    },
+    {
+      "bytes": 1828330,
+      "path": "ArtSource\\Stairwell_Modular\\Scene\\v001\\lighting_pass01.png"
+    },
+    {
+      "bytes": 1601,
+      "path": "ArtSource\\Stairwell_Modular\\Scene\\v001\\lighting_revision.html"
+    },
+    {
+      "bytes": 1178,
+      "path": "ArtSource\\Stairwell_Modular\\Scene\\v001\\LIGHTING_REVISION.md"
+    },
+    {
+      "bytes": 1311,
+      "path": "ArtSource\\Stairwell_Modular\\Scene\\v001\\lighting_verification.json"
+    },
+    {
+      "bytes": 2529996,
+      "path": "ArtSource\\Stairwell_Modular\\Scene\\v001\\material_pass01.png"
+    },
+    {
+      "bytes": 1616,
+      "path": "ArtSource\\Stairwell_Modular\\Scene\\v001\\material_revision.html"
+    },
+    {
+      "bytes": 1461,
+      "path": "ArtSource\\Stairwell_Modular\\Scene\\v001\\MATERIAL_REVISION.md"
+    },
+    {
+      "bytes": 75109,
+      "path": "ArtSource\\Stairwell_Modular\\Scene\\v001\\material_verification.json"
+    },
+    {
+      "bytes": 1891,
+      "path": "ArtSource\\Stairwell_Modular\\Scene\\v001\\reference_details.html"
+    },
+    {
+      "bytes": 1963,
+      "path": "ArtSource\\Stairwell_Modular\\Scene\\v001\\REFERENCE_DETAILS.md"
+    },
+    {
+      "bytes": 1758,
+      "path": "ArtSource\\Stairwell_Modular\\Scene\\v001\\SCENE_PLAN.md"
+    },
+    {
+      "bytes": 263102,
+      "path": "ArtSource\\Stairwell_Modular\\Scene\\v001\\scene_verification.log"
+    },
+    {
+      "bytes": 2379559,
+      "path": "ArtSource\\Stairwell_Modular\\Scene\\v001\\unreal_reference_pass01.png"
+    },
+    {
+      "bytes": 1879296,
+      "path": "ArtSource\\Stairwell_Modular\\Scene\\v001\\unreal_reference_pass02.png"
+    },
+    {
+      "bytes": 1874525,
+      "path": "ArtSource\\Stairwell_Modular\\Scene\\v001\\unreal_reference_pass03.png"
+    },
+    {
+      "bytes": 1785472,
+      "path": "ArtSource\\Stairwell_Modular\\Scene\\v001\\unreal_reference_pass04.png"
+    },
+    {
+      "bytes": 2621576,
+      "path": "ArtSource\\Stairwell_Modular\\Scene\\v001\\unreal_reference.png"
+    },
+    {
+      "bytes": 1524,
+      "path": "ArtSource\\Stairwell_Modular\\Scene\\v001\\WIDTH240_REVISION.md"
+    },
+    {
+      "bytes": 551,
+      "path": "ArtSource\\Stairwell_Modular\\Scene\\v001\\width240_verification.json"
+    },
+    {
+      "bytes": 1535,
+      "path": "ArtSource\\Stairwell_Modular\\Scene\\v001\\width240.html"
+    },
+    {
+      "bytes": 772542,
+      "path": "Content\\Blueprints\\Character\\PC\\CameraBackups\\BP_Player_Heroine_BeforeStairCamera.uasset"
+    },
+    {
+      "bytes": 23961,
+      "path": "Content\\Environment\\StairwellModular\\Maps\\L_Stairwell_DoorVerification.umap"
+    },
+    {
+      "bytes": 430462,
+      "path": "Content\\Environment\\StairwellModular\\Scene\\Maps\\L_Stairwell_BeforeCameraRevision.umap"
+    },
+    {
+      "bytes": 464702,
+      "path": "Content\\Environment\\StairwellModular\\Scene\\Maps\\L_Stairwell_BeforeFinishRevision.umap"
+    },
+    {
+      "bytes": 271370,
+      "path": "Content\\Environment\\StairwellModular\\Scene\\Maps\\L_Stairwell_BeforeLandingRevision.umap"
+    },
+    {
+      "bytes": 431568,
+      "path": "Content\\Environment\\StairwellModular\\Scene\\Maps\\L_Stairwell_BeforeLightingRevision.umap"
+    },
+    {
+      "bytes": 432225,
+      "path": "Content\\Environment\\StairwellModular\\Scene\\Maps\\L_Stairwell_BeforeMaterialRevision.umap"
+    },
+    {
+      "bytes": 432522,
+      "path": "Content\\Environment\\StairwellModular\\Scene\\Maps\\L_Stairwell_BeforeReferenceDetails.umap"
+    },
+    {
+      "bytes": 311455,
+      "path": "Content\\Environment\\StairwellModular\\Scene\\Maps\\L_Stairwell_BeforeWidth240.umap"
+    },
+    {
+      "bytes": 1819,
+      "path": "Content\\Python\\capture_stairwell_scene.py"
+    },
+    {
+      "bytes": 1081,
+      "path": "Content\\Python\\check_stairwell_play.py"
+    },
+    {
+      "bytes": 2118,
+      "path": "Content\\Python\\finalize_stairwell_scale2.py"
+    },
+    {
+      "bytes": 1067,
+      "path": "Content\\Python\\inspect_heroine_camera.py"
+    },
+    {
+      "bytes": 4026,
+      "path": "Content\\Python\\revise_stairwell_camera.py"
+    },
+    {
+      "bytes": 2400,
+      "path": "Content\\Python\\revise_stairwell_details.py"
+    },
+    {
+      "bytes": 2547,
+      "path": "Content\\Python\\revise_stairwell_finish.py"
+    },
+    {
+      "bytes": 2470,
+      "path": "Content\\Python\\revise_stairwell_lighting.py"
+    },
+    {
+      "bytes": 2488,
+      "path": "Content\\Python\\revise_stairwell_materials.py"
+    },
+    {
+      "bytes": 740,
+      "path": "Content\\Python\\save_stairwell_camera_backup.py"
+    },
+    {
+      "bytes": 1866,
+      "path": "Content\\Python\\validate_stairwell_details.py"
+    },
+    {
+      "bytes": 1513,
+      "path": "Content\\Python\\verify_stair_camera_saved.py"
+    }
+  ],
+  "status": "deleted_and_verified",
+  "bytes": 57066373.0
+}

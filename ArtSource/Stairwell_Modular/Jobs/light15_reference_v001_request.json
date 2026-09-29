@@ -1,0 +1,9 @@
+{
+  "prompt": "Extract ONLY the fluorescent light fixture labeled 15 in the provided modular sheet. Create a high-resolution isolated product reference of exactly that ONE complete light fixture, with the same long rectangular weathered gray metal housing, white fluorescent tubes, end caps and mounting structure. Preserve the approved utilitarian subway design and proportions. Show the entire object large and centered, an informative three-quarter view showing the tube-facing side and housing depth. Uniform plain mid-gray background, soft neutral studio light, no floor or wall, no cast shadow, no frame, no numbers, no letters, no grid, no other objects. White tubes should be clearly defined, not glowing or overexposed; lighting will be added in the game engine. Do not add cables, bend the housing, or invent decorative elements. This image is the input for one low-poly game prop.",
+  "file": {
+    "file_token": "237e81e0-1047-4330-8532-8145f1e8bcd2",
+    "type": "png"
+  },
+  "type": "generate_image",
+  "model_version": "gpt_image_2"
+}

@@ -27,3 +27,12 @@ __pycache__/
 
 # 에이전트 작업 스크래치 (스크린샷/로그/handoff 메모 등, 결과물이 아님)
 dev/
+# Reproducible environment authoring logs and Blender automatic backups
+ArtSource/OvergrownHall/**/*.log
+ArtSource/OvergrownHall/*.log
+ArtSource/OvergrownHall/**/*.blend1
+ArtSource/Stairwell_Modular/**/*.blend1
+ArtSource/**/*.blend1
+ArtSource/**/*.log
+ArtSource/**/*.dmp
+ArtSource/**/*.runtime-xml

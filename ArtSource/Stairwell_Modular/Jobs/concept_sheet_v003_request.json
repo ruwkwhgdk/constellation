@@ -1,0 +1,9 @@
+{
+  "prompt": "Generate a matrix of individual modular pieces of this subway space. EDIT the supplied 4x4 concept sheet, preserving its layout, labels, style and every cell EXCEPT 02,03,04. These three floor modules MUST share exactly the same real tile pitch: 30x30 cm including grout. 02: plain gray tiled landing, exactly SIX rows by SIX columns (36 tiles), overall 180x180 cm. 03: plain gray floor panel, exactly TWO rows by TWO columns (4 tiles), overall 60x60 cm. 04: yellow raised-dot tactile paving, exactly TWO rows by TWO columns (4 tiles), overall 60x60 cm; each yellow tile has the same footprint as each gray tile. Consistent narrow dark grout and surface height; only tactile dots protrude. Label each changed cell with its ID and tile pitch 30x30 cm, plus overall panel dimensions. The larger landing may be drawn at reduced display scale to fit its cell; do not confuse display scale with tile size. Keep all other thirteen cells unchanged. Neutral gray background, isolated objects, no extra props.",
+  "file": {
+    "file_token": "237e81e0-1047-4330-8532-8145f1e8bcd2",
+    "type": "png"
+  },
+  "model_version": "gpt_image_2",
+  "type": "generate_image"
+}

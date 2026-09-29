@@ -1,0 +1,9 @@
+{
+  "saved_existing_meshes": 532,
+  "moss_instances": 307,
+  "attached_foliage": 53,
+  "water_model": "Stylized opaque puddle + dynamic planar reflection",
+  "nonblocking_water_and_foliage": true,
+  "existing_flock_and_collision_checks": "passed",
+  "playtest": false
+}

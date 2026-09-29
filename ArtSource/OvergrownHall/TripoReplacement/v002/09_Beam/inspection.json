@@ -1,0 +1,23 @@
+{
+  "id": "09",
+  "name": "Beam",
+  "mesh": "SM_OH_T_09_Beam",
+  "source_triangles": 28303,
+  "triangles": 5969,
+  "budget": 6000,
+  "dimensions_m": [
+    4.000563144683838,
+    0.5004537105560303,
+    0.4001395106315613
+  ],
+  "boundary_edges": 3,
+  "uv_layers": 1,
+  "edits": [
+    "longitudinal axis to X"
+  ],
+  "textures": [
+    "basecolor.png",
+    "normal.png",
+    "rm.png"
+  ]
+}

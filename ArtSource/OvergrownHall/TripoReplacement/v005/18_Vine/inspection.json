@@ -1,0 +1,20 @@
+{
+  "id": "18",
+  "name": "Vine",
+  "mesh": "SM_OH_Clean_18_Vine",
+  "source": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OvergrownHall\\TripoReplacement\\v002\\18_Vine\\prepared.blend",
+  "source_triangles": 11969,
+  "triangles": 11969,
+  "budget": 12000,
+  "dimensions_m": [
+    0.6502393484115601,
+    0.15041366964578629,
+    1.999611932595144
+  ],
+  "boundary_edges": 3,
+  "basecolor": null,
+  "organic": true,
+  "edits": [
+    "bounded local spike smoothing; original topology and UV retained"
+  ]
+}

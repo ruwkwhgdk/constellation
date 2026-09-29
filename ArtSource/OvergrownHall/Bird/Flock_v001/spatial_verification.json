@@ -1,0 +1,6 @@
+{
+  "minimum_architecture_surface_distance_m": 2.6119844913482666,
+  "samples": 1452,
+  "minimum_bird_center_distance_cm": 142.53515113359433,
+  "scope": "sampled paths against source architecture; not runtime collision avoidance"
+}

@@ -1,0 +1,12 @@
+{
+  "ShowFlag.Translucency": 2,
+  "ShowFlag.PlanarReflections": 0,
+  "ShowFlag.ReflectionEnvironment": 2,
+  "r.AllowGlobalClipPlane": 1,
+  "r.ReflectionEnvironment": 1,
+  "r.SSR.Quality": 3,
+  "plane_location": "<Struct 'Vector' (0x000002346C7795F0) {x: 13.000000, y: 690.000000, z: 6.000000}>",
+  "plane_up": "<Struct 'Vector' (0x000002346C7795F0) {x: 0.000000, y: 0.000000, z: 1.000000}>",
+  "plane_visible": true,
+  "plane_hidden": false
+}

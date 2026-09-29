@@ -1,0 +1,13 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><title>Overgrown Hall · 이끼·덩굴·수면</title>
+<style>body{background:#202a28;color:#eee9db;font:17px/1.7 sans-serif;max-width:1400px;margin:36px auto;padding:0 20px}img{width:100%;display:block}button{background:#d4dfc7;color:#1e2925;border:0;border-radius:5px;padding:12px 20px;margin:0 8px 12px 0;cursor:pointer;font:inherit}.pair{display:grid;grid-template-columns:1fr 1fr;gap:20px}code{overflow-wrap:anywhere}a{color:#bce2bb}@media(max-width:750px){.pair{grid-template-columns:1fr}}</style>
+<h1>건축물의 식생과 얕은 수면</h1>
+<p>현재 레벨을 같은 카메라에서 촬영한 실제 Unreal 화면입니다.</p>
+<button onclick="show(true)">수정 후</button><button onclick="show(false)">수정 전</button>
+<h2 id="caption">수정 후</h2><img id="scene" src="unreal_growth_water.png" alt="이끼와 수면 보정 후 Unreal">
+<div class="pair"><section><h2>원화</h2><img src="../../References/source_scene.png" alt="원화"></section><section><h2>수정 전</h2><img src="../v005/unreal_clean.png" alt="수정 전"></section></div>
+<p>석재에 불규칙하게 번지는 이끼를 추가하고, 측면 기둥·후면 창 아래·상부 보에 Tripo 덩굴과 잎 덩어리를 배치했습니다. 구조의 직선과 창 개구부는 유지합니다.</p>
+<p>바닥의 단색 면을 실제 장면이 비치는 잔잔한 수면으로 교체했습니다. 얕은 물처럼 보이도록 수면 높이를 2.2cm로 유지해 돌판이 드러나게 했습니다. 최종 재질은 반사를 강조한 불투명 표현이며 실제 바닥 투과·굴절과 움직이는 잔물결은 생략합니다. 물과 추가 식생은 캐릭터 이동을 막지 않습니다. 발걸음에 반응하는 물결·물소리는 이번 범위에 포함하지 않았습니다.</p>
+<p>현재 레벨: <code>/Game/Environment/OvergrownHall/TripoFull/Maps/L_OvergrownHall_TripoFull</code></p>
+<p><a href="applied.json">적용 설정·식생 배치</a> · <a href="verification.json">저장 상태 검사</a> · <a href="exposure_render_verification.json">렌더 결과</a> · <a href="STATUS.md">재생성 방법</a></p>
+<p>캐릭터 직접 플레이와 성능 측정은 별도입니다.</p>
+<script>function show(after){document.getElementById('scene').src=after?'unreal_growth_water.png':'../v005/unreal_clean.png';document.getElementById('caption').textContent=after?'수정 후':'수정 전'}</script></html>

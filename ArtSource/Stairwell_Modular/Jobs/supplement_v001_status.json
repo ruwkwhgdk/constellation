@@ -1,0 +1,28 @@
+{
+  "code": 0,
+  "data": {
+    "task_id": "e8bb66f2-c170-4d06-9458-4377198731fd",
+    "type": "generate_image",
+    "status": "success",
+    "input": {
+      "prompt": "Generate a matrix of individual modular pieces of this subway space. Supplement the reference kit with a separate 2x3 sheet of SIX missing connector modules, labels 17-22. Gray background, isolated realistic game assets, same worn metal and white tile materials, consistent isometric studio views. 17: pair of smooth metal handrail bends transitioning from an ascending 26.6-degree slope into horizontal. 18: pair transitioning from horizontal into descending 26.6-degree slope. 19: pair of SLOPED handrail terminal returns curving into the wall, brackets separate, no wall. All rails use identical round tube diameter and maintain vertical pair spacing. 20: white small-tiled OUTSIDE wall corner, show convex external corner, not an inside corner. 21: a narrow tiled vertical wall END CAP showing finished exposed wall thickness. 22: dark narrow skirting trim with straight and corner variants. No full staircase, no doors, no people, no arrows, no extra modules. Show complete objects, no clipping.",
+      "model_version": "gpt_image_2",
+      "file": {
+        "object": {
+          "bucket": "tripo-data",
+          "key": "tcli_36cdbe9c39e740a09a7460b758060782/20260923/e8bb66f2-c170-4d06-9458-4377198731fd/image.png"
+        },
+        "type": "png"
+      }
+    },
+    "output": {
+      "generated_image": "https://tripo-data.rg1.data.tripo3d.com/tcli_36cdbe9c39e740a09a7460b758060782/20260923/e8bb66f2-c170-4d06-9458-4377198731fd/generated_image.png?Key-Pair-Id=K1676C64NMVM2J&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly90cmlwby1kYXRhLnJnMS5kYXRhLnRyaXBvM2QuY29tL3RjbGlfMzZjZGJlOWMzOWU3NDBhMDlhNzQ2MGI3NTgwNjA3ODIvMjAyNjA5MjMvZThiYjY2ZjItYzE3MC00ZDA2LTk0NTgtNDM3NzE5ODczMWZkL2dlbmVyYXRlZF9pbWFnZS5wbmciLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTAyMDgwMDB9fX1dfQ__&Signature=aGHQEYI59CQB-feM3~cT2hlS-MRZUKVcug0mkqAqYZrQtunbE7FSPDsBkBlPYzg9-vNTDo1LPQYsFw6cAqs1RtvA81-k0ebGsDOAqnz41QtbSAQQE2jp~8JFQtD2jI7NaG7y~j2N63IAmFDjnMNOOQjge4ai4vxvqmc3iZ-CJY2m4nAUhH4BSr~BPmmVa2Rn~yAbY8s-qe5zIqUaEsYg2TURyu9pr1EGuE-777bvjoZdmb2mMtITyJSBhZrKx-0GvD8Bi4h5YScueUCLJ6kaF7PHv3nd7W0~LliuXmnpo69Eb7z1UQPHUC9nMxkRH~Uz4BPiiCdtpEMCBD-WYH4AvQ__"
+    },
+    "progress": 100,
+    "create_time": 1790178397,
+    "consumed_credit": 10,
+    "queuing_num": -1,
+    "running_left_time": -1,
+    "result": {}
+  }
+}

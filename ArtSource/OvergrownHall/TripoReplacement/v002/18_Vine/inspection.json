@@ -1,0 +1,21 @@
+{
+  "id": "18",
+  "name": "Vine",
+  "mesh": "SM_OH_T_18_Vine",
+  "source_triangles": 27089,
+  "triangles": 11969,
+  "budget": 12000,
+  "dimensions_m": [
+    0.6502393484115601,
+    0.1504136621952057,
+    1.9996119737625122
+  ],
+  "boundary_edges": 3,
+  "uv_layers": 1,
+  "edits": [],
+  "textures": [
+    "basecolor.png",
+    "normal.png",
+    "rm.png"
+  ]
+}

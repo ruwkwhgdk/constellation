@@ -1,0 +1,9 @@
+<!doctype html><meta charset="utf-8"><title>Overgrown Hall · Tripo 교체 검토</title>
+<style>body{background:#172125;color:#e8eeee;font:17px/1.6 sans-serif;max-width:1300px;margin:40px auto;padding:0 24px}img{width:100%;display:block}section{margin:35px 0}.pair{display:grid;grid-template-columns:1fr 1fr;gap:20px}article{background:#233238;padding:20px;border-radius:12px}code{overflow-wrap:anywhere}h1{font-size:30px}a{color:#a9e6cb}</style>
+<h1>Tripo 기둥·나무 교체 검토</h1>
+<p>원본 FBX·PBR 텍스처 보존 → Blender 치수·피벗·접합면 보정 → Unreal 검토용 레벨 적용. 외형 채택 대기.</p>
+<p>Unreal 레벨: <code>/Game/Environment/OvergrownHall/TripoReplacement/Maps/L_OvergrownHall_TripoReview</code></p>
+<section><h2>실제 Unreal 교체 결과</h2><img src="unreal_review.png"><p>기둥 30구간, 나무 19그루. 기존 카메라·조명 기준 비교. 실제 플레이 및 성능 측정은 별도 확인 필요.</p></section>
+<section class="pair"><article><h2>교체 전</h2><img src="../../Scene/v001/unreal_reference_pass.png"></article><article><h2>원화</h2><img src="../../References/source_scene.png"></article></section>
+<section class="pair"><article><h2>기둥 보정본</h2><img src="Pillar/review.png"><p>65 × 65 × 300cm, 4,255삼각형. 몸통을 분리하고 절단면을 막음. 원본의 주두·기단은 보존된 원본에서 복구 가능.</p><a href="Pillar/prepared.blend">Blender 파일</a></article><article><h2>나무 보정본</h2><img src="Tree/review.png"><p>높이 600cm, 29,879삼각형. 균일 배율과 지면 피벗 보정. 두껍고 뾰족한 잎 표현은 남아 있으며 근접용 최종 품질로 승인하지 않음.</p><a href="Tree/prepared.blend">Blender 파일</a></article></section>
+<p>이번 교체 대상은 기둥 몸통과 외부 나무입니다. 아치·상부 구조·관목·덩굴은 기존 모델이며 후속 교체 대상입니다. 새 메시 반입 시 미세한 탄젠트 경고가 있어 최종 품질 단계에서 추가 정리가 필요합니다.</p>

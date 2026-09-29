@@ -1,0 +1,178 @@
+{
+  "units": "cm",
+  "purpose": "Geometric proof only; no Unreal playtest or production mesh approval",
+  "joints": [
+    {
+      "a": "Rail_65_00_Straight",
+      "b": "Rail_65_01_Bend",
+      "gap_cm": 0.0,
+      "ring_plane_angle_deg": 0.0
+    },
+    {
+      "a": "Rail_65_01_Bend",
+      "b": "Rail_65_02_Straight",
+      "gap_cm": 0.0,
+      "ring_plane_angle_deg": 0.0
+    },
+    {
+      "a": "Rail_65_02_Straight",
+      "b": "Rail_65_03_Bend",
+      "gap_cm": 0.0,
+      "ring_plane_angle_deg": 0.0
+    },
+    {
+      "a": "Rail_65_03_Bend",
+      "b": "Rail_65_04_Straight",
+      "gap_cm": 0.0,
+      "ring_plane_angle_deg": 0.0
+    },
+    {
+      "a": "Rail_65_04_Straight",
+      "b": "Rail_65_05_Bend",
+      "gap_cm": 0.0,
+      "ring_plane_angle_deg": 0.0
+    },
+    {
+      "a": "Rail_65_05_Bend",
+      "b": "Rail_65_06_Straight",
+      "gap_cm": 0.0,
+      "ring_plane_angle_deg": 0.0
+    },
+    {
+      "a": "Rail_65_06_Straight",
+      "b": "Rail_65_07_Bend",
+      "gap_cm": 0.0,
+      "ring_plane_angle_deg": 0.0
+    },
+    {
+      "a": "Rail_65_07_Bend",
+      "b": "Rail_65_08_Straight",
+      "gap_cm": 0.0,
+      "ring_plane_angle_deg": 0.0
+    },
+    {
+      "a": "Rail_90_00_Straight",
+      "b": "Rail_90_01_Bend",
+      "gap_cm": 0.0,
+      "ring_plane_angle_deg": 0.0
+    },
+    {
+      "a": "Rail_90_01_Bend",
+      "b": "Rail_90_02_Straight",
+      "gap_cm": 0.0,
+      "ring_plane_angle_deg": 0.0
+    },
+    {
+      "a": "Rail_90_02_Straight",
+      "b": "Rail_90_03_Bend",
+      "gap_cm": 0.0,
+      "ring_plane_angle_deg": 0.0
+    },
+    {
+      "a": "Rail_90_03_Bend",
+      "b": "Rail_90_04_Straight",
+      "gap_cm": 0.0,
+      "ring_plane_angle_deg": 0.0
+    },
+    {
+      "a": "Rail_90_04_Straight",
+      "b": "Rail_90_05_Bend",
+      "gap_cm": 0.0,
+      "ring_plane_angle_deg": 0.0
+    },
+    {
+      "a": "Rail_90_05_Bend",
+      "b": "Rail_90_06_Straight",
+      "gap_cm": 0.0,
+      "ring_plane_angle_deg": 0.0
+    },
+    {
+      "a": "Rail_90_06_Straight",
+      "b": "Rail_90_07_Bend",
+      "gap_cm": 0.0,
+      "ring_plane_angle_deg": 0.0
+    },
+    {
+      "a": "Rail_90_07_Bend",
+      "b": "Rail_90_08_Straight",
+      "gap_cm": 0.0,
+      "ring_plane_angle_deg": 0.0
+    },
+    {
+      "a": "12-H0.35_00_Straight",
+      "b": "12-H0.35_01_Bend",
+      "gap_cm": 0.0,
+      "ring_plane_angle_deg": 0.0
+    },
+    {
+      "a": "12-H0.35_01_Bend",
+      "b": "12-H0.35_02_Straight",
+      "gap_cm": 0.0,
+      "ring_plane_angle_deg": 0.0
+    },
+    {
+      "a": "12-H0.6_00_Straight",
+      "b": "12-H0.6_01_Bend",
+      "gap_cm": 0.0,
+      "ring_plane_angle_deg": 0.0
+    },
+    {
+      "a": "12-H0.6_01_Bend",
+      "b": "12-H0.6_02_Straight",
+      "gap_cm": 0.0,
+      "ring_plane_angle_deg": 0.0
+    },
+    {
+      "a": "12-S0.35_00_Straight",
+      "b": "12-S0.35_01_Bend",
+      "gap_cm": 0.0,
+      "ring_plane_angle_deg": 0.0
+    },
+    {
+      "a": "12-S0.35_01_Bend",
+      "b": "12-S0.35_02_Straight",
+      "gap_cm": 0.0,
+      "ring_plane_angle_deg": 0.0
+    },
+    {
+      "a": "12-S0.6_00_Straight",
+      "b": "12-S0.6_01_Bend",
+      "gap_cm": 0.0,
+      "ring_plane_angle_deg": 0.0
+    },
+    {
+      "a": "12-S0.6_01_Bend",
+      "b": "12-S0.6_02_Straight",
+      "gap_cm": 0.0,
+      "ring_plane_angle_deg": 0.0
+    }
+  ],
+  "tile_pitch_cm": 30,
+  "grout_cm": 0.3,
+  "rail_diameter_cm": 4,
+  "rail_vertical_spacing_cm": 25,
+  "bend_radius_cm": 8,
+  "measured_straight_rail_clear_width_cm": 120.00000476837158,
+  "stair_rise_cm": 15,
+  "stair_tread_cm": 30,
+  "stair_angle_deg": 26.56505117707799,
+  "headroom_test": "Not tested: no final ceiling/beam assembly in this sample",
+  "playtest": "Not run; heroine capsule width 68cm used only as a dimensional reference",
+  "measured_tile_body_cm": [
+    29.7,
+    29.7
+  ],
+  "tile_centers_pitch_cm": 29.999995628992398,
+  "return_validation": "Horizontal and 26.565deg slope: pipe-to-bend and bend-to-wall stub interfaces measured; mounting clearance outside sample not tested",
+  "joint_count": 24,
+  "max_gap_cm": 0.0,
+  "max_ring_plane_angle_deg": 0.0,
+  "limitations": [
+    "Procedural proof geometry, not Tripo production assets",
+    "No UV/LOD/collision production handoff",
+    "No full source camera match",
+    "No Unreal locomotion/camera test",
+    "Wall pieces are untextured geometric prototypes",
+    "Open mating rings must be welded or otherwise finished for final meshes"
+  ]
+}

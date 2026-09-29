@@ -1,0 +1,21 @@
+{
+  "id": "15",
+  "name": "Rubble",
+  "mesh": "SM_OH_T_15_Rubble",
+  "source_triangles": 28314,
+  "triangles": 7970,
+  "budget": 8000,
+  "dimensions_m": [
+    1.2003898620605469,
+    0.9998955726623535,
+    0.45005008578300476
+  ],
+  "boundary_edges": 16,
+  "uv_layers": 1,
+  "edits": [],
+  "textures": [
+    "basecolor.png",
+    "normal.png",
+    "rm.png"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "code": 0,
+  "data": {
+    "task_id": "604935ab-5eb6-4da4-9ad3-4150e47cc759",
+    "type": "generate_image",
+    "status": "success",
+    "input": {
+      "prompt": "Create a 4x4 modular game asset concept sheet based on the reference stairwell. Exactly 16 equal cells, thin grid, neutral gray background, consistent realistic worn ceramic/concrete/metal materials, soft studio lighting, clear isolated isometric objects, no dramatic shadows, no people. Label cells 01-16 only, left-to-right top-to-bottom. Row1: 01 straight six-step staircase (15cm rise,30cm tread,140cm width); 02 tiled landing slab; 03 gray square floor tile panel; 04 yellow tactile paving panel. Row2: 05 small white tiled straight wall; 06 tiled inner corner wall WITHOUT rails; 07 rough concrete ceiling panel; 08 concrete crossbeam. Row3: 09 horizontal double handrail with brackets; 10 sloped double handrail at 26.6deg; 11 double handrail 90deg corner; 12 rounded double rail end. Row4: 13 empty metal door frame 100x210cm clear opening; 14 matching gray utility door leaf; 15 fluorescent light fixture; 16 narrow ribbed stair nosing strip. Keep parts separate, all fully visible.",
+      "model_version": "gpt_image_2",
+      "file": {
+        "type": "png",
+        "object": {
+          "bucket": "tripo-data",
+          "key": "tcli_36cdbe9c39e740a09a7460b758060782/20260923/604935ab-5eb6-4da4-9ad3-4150e47cc759/image.png"
+        }
+      }
+    },
+    "output": {
+      "generated_image": "https://tripo-data.rg1.data.tripo3d.com/tcli_36cdbe9c39e740a09a7460b758060782/20260923/604935ab-5eb6-4da4-9ad3-4150e47cc759/generated_image.png?Key-Pair-Id=K1676C64NMVM2J&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly90cmlwby1kYXRhLnJnMS5kYXRhLnRyaXBvM2QuY29tL3RjbGlfMzZjZGJlOWMzOWU3NDBhMDlhNzQ2MGI3NTgwNjA3ODIvMjAyNjA5MjMvNjA0OTM1YWItNWViNi00ZGE0LTlhZDMtNDE1MGU0N2NjNzU5L2dlbmVyYXRlZF9pbWFnZS5wbmciLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTAyMDgwMDB9fX1dfQ__&Signature=HkCuy5RokZxe~4dmFEbJdjQh8l9HIUnNclNW9fFSHfo1Uhudz5jbFZ2gfhWBe3s3GhfqShsWl-CvnhS0~sQnJHJ3yRViQWtBOt7hL0-0Lq97nnzMrpDVnz~MJgxFm2N9JsLIsnf5wA0FQgoQK01Fd8NH8HnCqppKgBHt5jHPytO11r-qbaKGdAxm3QTRsvR4COEh2-IhXnpMG79LYjXOoEz9CBPZETirExpClhYNIMrDwhKZ5Hhvpwq34PlUtcACqOd59g0hNulaDfn3I8qa-OKJhJXqUAVJqFfwyjHVW~-9VOkQ6B9b2BkoZ7rrMu42IHZsu0awBYrtgSQg45~HSg__"
+    },
+    "progress": 100,
+    "create_time": 1790177417,
+    "consumed_credit": 10,
+    "queuing_num": -1,
+    "running_left_time": -1,
+    "result": {}
+  }
+}

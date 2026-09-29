@@ -1,0 +1,40 @@
+[
+  {
+    "mesh": "SM_OH_BrokenArchA",
+    "kind": "arch",
+    "triangles": 1370,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "dimensions_m": [
+      3.699000120162964,
+      0.3993445038795471,
+      7.098957061767578
+    ],
+    "removed_floating_islands": []
+  },
+  {
+    "mesh": "SM_OH_BrokenArchB",
+    "kind": "arch",
+    "triangles": 1394,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "dimensions_m": [
+      3.699000120162964,
+      0.3993445038795471,
+      7.098957061767578
+    ],
+    "removed_floating_islands": []
+  },
+  {
+    "mesh": "SM_OH_RippleSheet",
+    "kind": "water",
+    "triangles": 12640,
+    "boundary_edges": 160,
+    "nonmanifold_edges": 160,
+    "dimensions_m": [
+      12.712038040161133,
+      17.559999465942383,
+      0.0
+    ]
+  }
+]

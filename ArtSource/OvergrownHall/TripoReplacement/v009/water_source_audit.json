@@ -1,0 +1,36 @@
+[
+  {
+    "file": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OvergrownHall\\Scene\\v001\\FBX\\SM_OH_Blockout_21.fbx",
+    "min": [
+      -7.669651985168457,
+      -11.394091606140137,
+      0.02199999988079071
+    ],
+    "max": [
+      7.931102752685547,
+      -2.4162182807922363,
+      0.02199999988079071
+    ],
+    "normal_z": [
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "file": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OvergrownHall\\TripoReplacement\\v009\\SM_OH_ShallowOutline.fbx",
+    "min": [
+      -6.349181175231934,
+      -1.7799999713897705,
+      0.02199999988079071
+    ],
+    "max": [
+      6.349180221557617,
+      15.779999732971191,
+      0.02199999988079071
+    ],
+    "normal_z": [
+      1.0,
+      1.0
+    ]
+  }
+]

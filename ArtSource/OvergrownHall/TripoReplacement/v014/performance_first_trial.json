@@ -1,0 +1,43 @@
+{
+  "active_frames": 758,
+  "metrics": {
+    "FrameTime": {
+      "median": 26.35935,
+      "p95": 32.1437
+    },
+    "RHI/DrawCalls": {
+      "median": 1159.0,
+      "p95": 1175.0
+    },
+    "RHI/PrimitivesDrawn": {
+      "median": 17189344.0,
+      "p95": 17207528.0
+    },
+    "DrawCall/Basepass": {
+      "median": 95.0,
+      "p95": 95.0
+    },
+    "DrawCall/Translucency": {
+      "median": 3.0,
+      "p95": 3.0
+    },
+    "DrawCall/ShadowDepths": {
+      "median": 621.0,
+      "p95": 621.0
+    },
+    "GPUTime": {
+      "median": 14.0164,
+      "p95": 14.6016
+    },
+    "GameThreadTime": {
+      "median": 10.14655,
+      "p95": 15.5548
+    },
+    "GPUMem/LocalUsedMB": {
+      "median": 2329.0508,
+      "p95": 2329.3008
+    }
+  },
+  "context": "Editor fixed-camera forced redraw, not PIE or packaged gameplay. Window requested 1200x640; viewport size can differ. Startup/high-res screenshot work excluded. No before/after performance baseline.",
+  "source": "Saved\\Profiling\\CSV\\Hall_v014.csv"
+}

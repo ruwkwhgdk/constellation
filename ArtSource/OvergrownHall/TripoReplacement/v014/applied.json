@@ -1,0 +1,1069 @@
+{
+  "map": "/Game/Environment/OvergrownHall/TripoFull/Maps/L_OvergrownHall_TripoFull",
+  "lods": [
+    {
+      "kind": "Tree",
+      "mesh": "SM_OH_PaintedTree_Runtime",
+      "triangles": [
+        17103,
+        10261,
+        5131
+      ],
+      "screen_sizes": [
+        1,
+        0.24,
+        0.1
+      ]
+    },
+    {
+      "kind": "Shrub",
+      "mesh": "SM_OH_PaintedShrub_Runtime",
+      "triangles": [
+        6157,
+        3695,
+        1848
+      ],
+      "screen_sizes": [
+        1,
+        0.08,
+        0.025
+      ]
+    },
+    {
+      "kind": "Crown",
+      "mesh": "SM_OH_PaintedCrown_Runtime",
+      "triangles": [
+        8736,
+        5242,
+        2620
+      ],
+      "screen_sizes": [
+        1,
+        0.24,
+        0.1
+      ]
+    }
+  ],
+  "changed": [
+    {
+      "label": "OH_Tripo_Tree_00",
+      "kind": "Tree",
+      "far": false,
+      "mesh": "SM_OH_PaintedTree_Runtime"
+    },
+    {
+      "label": "OH_Tripo_Tree_01",
+      "kind": "Tree",
+      "far": false,
+      "mesh": "SM_OH_PaintedTree_Runtime"
+    },
+    {
+      "label": "OH_Tripo_Tree_02",
+      "kind": "Tree",
+      "far": false,
+      "mesh": "SM_OH_PaintedTree_Runtime"
+    },
+    {
+      "label": "OH_Tripo_Tree_03",
+      "kind": "Tree",
+      "far": false,
+      "mesh": "SM_OH_PaintedTree_Runtime"
+    },
+    {
+      "label": "OH_Tripo_Tree_04",
+      "kind": "Tree",
+      "far": false,
+      "mesh": "SM_OH_PaintedTree_Runtime"
+    },
+    {
+      "label": "OH_Tripo_Tree_05",
+      "kind": "Tree",
+      "far": false,
+      "mesh": "SM_OH_PaintedTree_Runtime"
+    },
+    {
+      "label": "OH_Tripo_Tree_06",
+      "kind": "Tree",
+      "far": false,
+      "mesh": "SM_OH_PaintedTree_Runtime"
+    },
+    {
+      "label": "OH_Tripo_Tree_07",
+      "kind": "Tree",
+      "far": false,
+      "mesh": "SM_OH_PaintedTree_Runtime"
+    },
+    {
+      "label": "OH_Tripo_Tree_08",
+      "kind": "Tree",
+      "far": false,
+      "mesh": "SM_OH_PaintedTree_Runtime"
+    },
+    {
+      "label": "OH_Tripo_Tree_09",
+      "kind": "Tree",
+      "far": false,
+      "mesh": "SM_OH_PaintedTree_Runtime"
+    },
+    {
+      "label": "OH_Tripo_Tree_10",
+      "kind": "Tree",
+      "far": false,
+      "mesh": "SM_OH_PaintedTree_Runtime"
+    },
+    {
+      "label": "OH_Tripo_Tree_11",
+      "kind": "Tree",
+      "far": false,
+      "mesh": "SM_OH_PaintedTree_Runtime"
+    },
+    {
+      "label": "OH_Tripo_Tree_12",
+      "kind": "Tree",
+      "far": false,
+      "mesh": "SM_OH_PaintedTree_Runtime"
+    },
+    {
+      "label": "OH_Tripo_Tree_13",
+      "kind": "Tree",
+      "far": false,
+      "mesh": "SM_OH_PaintedTree_Runtime"
+    },
+    {
+      "label": "OH_Tripo_Tree_14",
+      "kind": "Tree",
+      "far": false,
+      "mesh": "SM_OH_PaintedTree_Runtime"
+    },
+    {
+      "label": "OH_Tripo_Tree_15",
+      "kind": "Tree",
+      "far": false,
+      "mesh": "SM_OH_PaintedTree_Runtime"
+    },
+    {
+      "label": "OH_Tripo_Tree_16",
+      "kind": "Tree",
+      "far": false,
+      "mesh": "SM_OH_PaintedTree_Runtime"
+    },
+    {
+      "label": "OH_Tripo_Tree_17",
+      "kind": "Tree",
+      "far": false,
+      "mesh": "SM_OH_PaintedTree_Runtime"
+    },
+    {
+      "label": "OH_Tripo_Tree_18",
+      "kind": "Tree",
+      "far": false,
+      "mesh": "SM_OH_PaintedTree_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0000",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0001",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0002",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0003",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0004",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0005",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0006",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0007",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0008",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0009",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0010",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0011",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0012",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0013",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0014",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0015",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0016",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0017",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0018",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0019",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0020",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0021",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0022",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0023",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0024",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0025",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0026",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0027",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0028",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0029",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0030",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0031",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0032",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0033",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0034",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0035",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0036",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0037",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0038",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0039",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0040",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0041",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0042",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0043",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0044",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0045",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0046",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0047",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0048",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0049",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0050",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0051",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0052",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0053",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0054",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0127",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0128",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0129",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0130",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0131",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0132",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0133",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0134",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0135",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0136",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0137",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0138",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0139",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_FULL_17_0140",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_Growth_Leaf_003",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_Growth_Leaf_006",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_Growth_Leaf_009",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_Growth_Leaf_012",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_Growth_Leaf_016",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_Growth_Leaf_019",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_Growth_Leaf_021",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_Growth_Leaf_023",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_Growth_Leaf_025",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_Growth_Leaf_027",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_Growth_Leaf_029",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_Growth_Leaf_031",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_Growth_Leaf_033",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_Growth_Leaf_035",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_Growth_Leaf_037",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_Growth_Leaf_039",
+      "kind": "Shrub",
+      "far": false,
+      "mesh": "SM_OH_PaintedShrub_Runtime"
+    },
+    {
+      "label": "OH_Refine_Forest_000",
+      "kind": "Crown",
+      "far": false,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Forest_001",
+      "kind": "Crown",
+      "far": false,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Forest_002",
+      "kind": "Crown",
+      "far": false,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Forest_003",
+      "kind": "Crown",
+      "far": false,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Forest_004",
+      "kind": "Crown",
+      "far": false,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Forest_005",
+      "kind": "Crown",
+      "far": false,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Forest_006",
+      "kind": "Crown",
+      "far": false,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Forest_007",
+      "kind": "Crown",
+      "far": false,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Forest_008",
+      "kind": "Crown",
+      "far": false,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Forest_009",
+      "kind": "Crown",
+      "far": true,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Forest_010",
+      "kind": "Crown",
+      "far": true,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Forest_011",
+      "kind": "Crown",
+      "far": true,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Forest_012",
+      "kind": "Crown",
+      "far": true,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Forest_013",
+      "kind": "Crown",
+      "far": true,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Forest_014",
+      "kind": "Crown",
+      "far": true,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Forest_015",
+      "kind": "Crown",
+      "far": true,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Forest_016",
+      "kind": "Crown",
+      "far": true,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Forest_017",
+      "kind": "Crown",
+      "far": true,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Forest_018",
+      "kind": "Crown",
+      "far": true,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Forest_019",
+      "kind": "Crown",
+      "far": true,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Forest_020",
+      "kind": "Crown",
+      "far": true,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Forest_021",
+      "kind": "Crown",
+      "far": true,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Forest_022",
+      "kind": "Crown",
+      "far": true,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Forest_023",
+      "kind": "Crown",
+      "far": true,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Forest_024",
+      "kind": "Crown",
+      "far": true,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Forest_025",
+      "kind": "Crown",
+      "far": true,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Forest_026",
+      "kind": "Crown",
+      "far": true,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Forest_027",
+      "kind": "Crown",
+      "far": false,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Forest_028",
+      "kind": "Crown",
+      "far": false,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Forest_029",
+      "kind": "Crown",
+      "far": false,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Forest_030",
+      "kind": "Crown",
+      "far": false,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Forest_031",
+      "kind": "Crown",
+      "far": false,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Forest_032",
+      "kind": "Crown",
+      "far": false,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Forest_033",
+      "kind": "Crown",
+      "far": false,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Forest_034",
+      "kind": "Crown",
+      "far": false,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Canopy_035",
+      "kind": "Crown",
+      "far": false,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Canopy_036",
+      "kind": "Crown",
+      "far": false,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Canopy_037",
+      "kind": "Crown",
+      "far": false,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Canopy_038",
+      "kind": "Crown",
+      "far": false,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Canopy_039",
+      "kind": "Crown",
+      "far": false,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Canopy_040",
+      "kind": "Crown",
+      "far": false,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Canopy_041",
+      "kind": "Crown",
+      "far": false,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Canopy_042",
+      "kind": "Crown",
+      "far": false,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Canopy_043",
+      "kind": "Crown",
+      "far": false,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Canopy_044",
+      "kind": "Crown",
+      "far": false,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Canopy_045",
+      "kind": "Crown",
+      "far": false,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Canopy_046",
+      "kind": "Crown",
+      "far": false,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Canopy_047",
+      "kind": "Crown",
+      "far": false,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Canopy_048",
+      "kind": "Crown",
+      "far": false,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Canopy_049",
+      "kind": "Crown",
+      "far": false,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Canopy_050",
+      "kind": "Crown",
+      "far": true,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Canopy_051",
+      "kind": "Crown",
+      "far": true,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Canopy_052",
+      "kind": "Crown",
+      "far": true,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Refine_Canopy_053",
+      "kind": "Crown",
+      "far": true,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Finish_SeamLeaves_001",
+      "kind": "Crown",
+      "far": false,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Finish_SeamLeaves_004",
+      "kind": "Crown",
+      "far": false,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Finish_SeamLeaves_007",
+      "kind": "Crown",
+      "far": false,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Finish_SeamLeaves_010",
+      "kind": "Crown",
+      "far": false,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    },
+    {
+      "label": "OH_Finish_SeamLeaves_013",
+      "kind": "Crown",
+      "far": false,
+      "mesh": "SM_OH_PaintedCrown_Runtime"
+    }
+  ],
+  "shadow_disabled": [
+    "OH_Refine_Forest_009",
+    "OH_Refine_Forest_010",
+    "OH_Refine_Forest_011",
+    "OH_Refine_Forest_012",
+    "OH_Refine_Forest_013",
+    "OH_Refine_Forest_014",
+    "OH_Refine_Forest_015",
+    "OH_Refine_Forest_016",
+    "OH_Refine_Forest_017",
+    "OH_Refine_Forest_018",
+    "OH_Refine_Forest_019",
+    "OH_Refine_Forest_020",
+    "OH_Refine_Forest_021",
+    "OH_Refine_Forest_022",
+    "OH_Refine_Forest_023",
+    "OH_Refine_Forest_024",
+    "OH_Refine_Forest_025",
+    "OH_Refine_Forest_026",
+    "OH_Refine_Canopy_050",
+    "OH_Refine_Canopy_051",
+    "OH_Refine_Canopy_052",
+    "OH_Refine_Canopy_053",
+    "OH_Finish_AttachedVine_000",
+    "OH_Finish_SeamLeaves_001",
+    "OH_Finish_AttachedVine_002",
+    "OH_Finish_AttachedVine_003",
+    "OH_Finish_SeamLeaves_004",
+    "OH_Finish_AttachedVine_005",
+    "OH_Finish_AttachedVine_006",
+    "OH_Finish_SeamLeaves_007",
+    "OH_Finish_AttachedVine_008",
+    "OH_Finish_AttachedVine_009",
+    "OH_Finish_SeamLeaves_010",
+    "OH_Finish_AttachedVine_011",
+    "OH_Finish_AttachedVine_012",
+    "OH_Finish_SeamLeaves_013"
+  ],
+  "focal_fill_shadows": false,
+  "reflection_screen_percentage": 60,
+  "actor_count": 714,
+  "playtest": "user"
+}

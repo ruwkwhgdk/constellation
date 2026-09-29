@@ -1,0 +1,12 @@
+{
+  "existing_instances": 532,
+  "growth_instances": 53,
+  "varied_placements": 77,
+  "moss_instances": 317,
+  "foliage_shapes": 3,
+  "tree_collision": true,
+  "water_preserved": true,
+  "flock": "passed",
+  "saved_lighting_verified": true,
+  "playtest": false
+}

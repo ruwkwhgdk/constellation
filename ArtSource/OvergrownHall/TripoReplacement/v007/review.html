@@ -1,0 +1,10 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><title>Overgrown Hall · 표면 색감과 붓질</title>
+<style>body{background:#202b2d;color:#edeadf;font:17px/1.7 sans-serif;max-width:1400px;margin:36px auto;padding:0 20px}img{width:100%;display:block}button{background:#d4dfcb;color:#20302c;border:0;border-radius:5px;padding:12px 20px;margin:0 8px 12px 0;cursor:pointer;font:inherit}.pair{display:grid;grid-template-columns:1fr 1fr;gap:20px}code{overflow-wrap:anywhere}a{color:#bce2cd}@media(max-width:750px){.pair{grid-template-columns:1fr}}</style>
+<h1>석재 색면과 식생 명암 보정</h1><p>같은 카메라·조명으로 촬영한 실제 Unreal 화면입니다. 원화 속 캐릭터는 제작 대상에서 제외합니다.</p>
+<button onclick="show(true)">이번 수정</button><button onclick="show(false)">이전 v006</button><h2 id="caption">이번 수정</h2>
+<img id="scene" src="unreal_pigment.png" alt="현재 Unreal 렌더">
+<div class="pair"><section><h2>원화</h2><img src="../../References/source_scene.png" alt="원화"></section><section><h2>이전 v006</h2><img src="../v006/unreal_growth_water.png" alt="이전 Unreal 렌더"></section></div>
+<p>건축물은 새로 제작한 회화풍 광물질 표면을 공통 실측 크기로 투영합니다. 전면에 반복되던 녹색 얼룩은 줄이고 이끼를 하단과 턱에 집중했습니다. 잎은 Tripo 원본 UV를 유지하면서 잔명암과 미세 반사를 줄이고 색을 정돈했습니다.</p>
+<div class="pair"><section><h2>새 석재 텍스처</h2><img src="Textures/painted_mineral.png" alt="생성한 석재 표면 텍스처"></section><section><h2>이번 적용 범위</h2><p>532개 기존 배치와 53개 추가 식생의 재질을 적용·재로드 검사합니다. 형태, 카메라, 조명, 물 반사, 비둘기 연출은 유지합니다.</p><p>원화의 역광·청록 음영·부드러운 수목 덩어리까지 완전히 일치한 최종본은 아닙니다. 이번 검토는 표면 텍스처 보정입니다. 직접 플레이와 성능 측정은 별도입니다.</p><p><a href="TEXTURE_SOURCE.md">텍스처 생성 프롬프트·적용 방식</a> · <a href="verification.json">저장 검사</a> · <a href="exposure_render_verification.json">렌더 검사</a> · <a href="STATUS.md">재생성 방법</a></p></section></div>
+<p>레벨: <code>/Game/Environment/OvergrownHall/TripoFull/Maps/L_OvergrownHall_TripoFull</code></p>
+<script>function show(after){document.getElementById('scene').src=after?'unreal_pigment.png':'../v006/unreal_growth_water.png';document.getElementById('caption').textContent=after?'이번 수정':'이전 v006'}</script></html>

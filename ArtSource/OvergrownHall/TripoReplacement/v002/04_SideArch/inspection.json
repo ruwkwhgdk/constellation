@@ -1,0 +1,23 @@
+{
+  "id": "04",
+  "name": "SideArch",
+  "mesh": "SM_OH_T_04_SideArch",
+  "source_triangles": 27198,
+  "triangles": 11970,
+  "budget": 12000,
+  "dimensions_m": [
+    3.699000120162964,
+    0.3993445038795471,
+    7.098957061767578
+  ],
+  "boundary_edges": 346,
+  "uv_layers": 1,
+  "edits": [
+    "unwanted central gate removed"
+  ],
+  "textures": [
+    "basecolor.png",
+    "normal.png",
+    "rm.png"
+  ]
+}

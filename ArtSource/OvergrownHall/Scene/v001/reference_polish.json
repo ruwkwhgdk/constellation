@@ -1,0 +1,10 @@
+{
+  "bench_camera_right_cm": -120.00008487701375,
+  "bench_width_cm": 179.9999828338623,
+  "sun_lux": 18000,
+  "sun_yaw": -37,
+  "volumetric_fog": true,
+  "surface": "low contrast broad variation; authored peeling still pending",
+  "water": "opaque rough reflection approximation; not final water",
+  "playtest": false
+}

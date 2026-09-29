@@ -1,0 +1,11 @@
+{
+  "stage": 2,
+  "existing": 532,
+  "growth": 53,
+  "added": 60,
+  "birds": 28,
+  "flock_evaluation": true,
+  "water_bounds_and_floor_heights": true,
+  "bird_scale_verified": true,
+  "playtest": false
+}

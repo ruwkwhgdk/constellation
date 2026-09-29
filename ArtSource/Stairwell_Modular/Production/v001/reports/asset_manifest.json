@@ -1,0 +1,999 @@
+{
+  "version": "v001",
+  "status": "appearance_approved_scene_work_in_progress",
+  "assets": [
+    {
+      "id": "02",
+      "name": "SM_SW_02_Landing180",
+      "triangles": 444,
+      "budget": 4000,
+      "dimensions_cm": [
+        180.0,
+        180.0,
+        10.0
+      ],
+      "collision_hulls": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "materials": [
+        "M_Kit_Grout",
+        "M_Kit_FloorTile"
+      ],
+      "route": "procedural_blender",
+      "appearance": "approved_by_user_2026-09-24",
+      "technical": "pass",
+      "uv_layers": 1,
+      "notes": {
+        "tile_pitch_cm": 30,
+        "grout_cm": 0.3
+      }
+    },
+    {
+      "id": "02",
+      "name": "SM_SW_02_Landing140",
+      "triangles": 444,
+      "budget": 4000,
+      "dimensions_cm": [
+        140.0,
+        180.0,
+        10.0
+      ],
+      "collision_hulls": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "materials": [
+        "M_Kit_Grout",
+        "M_Kit_FloorTile"
+      ],
+      "route": "procedural_blender",
+      "appearance": "approved_by_user_2026-09-24",
+      "technical": "pass",
+      "uv_layers": 1,
+      "notes": {
+        "tile_pitch_cm": 30,
+        "grout_cm": 0.3
+      }
+    },
+    {
+      "id": "03",
+      "name": "SM_SW_03_Floor60",
+      "triangles": 60,
+      "budget": 4000,
+      "dimensions_cm": [
+        60.0,
+        60.0,
+        10.0
+      ],
+      "collision_hulls": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "materials": [
+        "M_Kit_Grout",
+        "M_Kit_FloorTile"
+      ],
+      "route": "procedural_blender",
+      "appearance": "approved_by_user_2026-09-24",
+      "technical": "pass",
+      "uv_layers": 1,
+      "notes": {
+        "tile_pitch_cm": 30,
+        "grout_cm": 0.3
+      }
+    },
+    {
+      "id": "04",
+      "name": "SM_SW_04_Tactile60",
+      "triangles": 4460,
+      "budget": 8000,
+      "dimensions_cm": [
+        60.0,
+        60.0,
+        10.4
+      ],
+      "collision_hulls": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "materials": [
+        "M_Kit_Grout",
+        "M_Kit_Tactile"
+      ],
+      "route": "procedural_blender",
+      "appearance": "approved_by_user_2026-09-24",
+      "technical": "pass",
+      "uv_layers": 1,
+      "notes": {
+        "tile_pitch_cm": 30,
+        "grout_cm": 0.3
+      }
+    },
+    {
+      "id": "01",
+      "name": "SM_SW_01_Stair1",
+      "triangles": 12,
+      "budget": 6000,
+      "dimensions_cm": [
+        30.0,
+        140.0,
+        15.0
+      ],
+      "collision_hulls": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "materials": [
+        "M_Kit_Concrete"
+      ],
+      "route": "procedural_blender",
+      "appearance": "approved_by_user_2026-09-24",
+      "technical": "pass",
+      "uv_layers": 1,
+      "notes": {
+        "rise_cm": 15,
+        "tread_cm": 30,
+        "collision": "one convex box per step; 15cm step below heroine 45cm MaxStepHeight; PIE not yet tested"
+      }
+    },
+    {
+      "id": "01",
+      "name": "SM_SW_01_Stair6",
+      "triangles": 72,
+      "budget": 6000,
+      "dimensions_cm": [
+        180.0,
+        140.0,
+        90.0
+      ],
+      "collision_hulls": 6,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "materials": [
+        "M_Kit_Concrete"
+      ],
+      "route": "procedural_blender",
+      "appearance": "approved_by_user_2026-09-24",
+      "technical": "pass",
+      "uv_layers": 1,
+      "notes": {
+        "rise_cm": 15,
+        "tread_cm": 30,
+        "collision": "one convex box per step; 15cm step below heroine 45cm MaxStepHeight; PIE not yet tested"
+      }
+    },
+    {
+      "id": "05",
+      "name": "SM_SW_05_Wall120",
+      "triangles": 3468,
+      "budget": 4000,
+      "dimensions_cm": [
+        120.0,
+        15.6,
+        240.0
+      ],
+      "collision_hulls": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "materials": [
+        "M_Kit_Grout",
+        "M_Kit_WallTile"
+      ],
+      "route": "procedural_blender",
+      "appearance": "approved_by_user_2026-09-24",
+      "technical": "pass",
+      "uv_layers": 1,
+      "notes": {
+        "wall_tile_pitch_cm": 10,
+        "wall_grout_cm": 0.3
+      }
+    },
+    {
+      "id": "06",
+      "name": "SM_SW_06_WallInnerCorner",
+      "triangles": 3492,
+      "budget": 4000,
+      "dimensions_cm": [
+        75.0,
+        75.0,
+        240.0
+      ],
+      "collision_hulls": 3,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "materials": [
+        "M_Kit_Grout",
+        "M_Kit_WallTile"
+      ],
+      "route": "procedural_blender",
+      "appearance": "approved_by_user_2026-09-24",
+      "technical": "pass",
+      "uv_layers": 1,
+      "notes": {
+        "wall_tile_pitch_cm": 10,
+        "corner_angle_deg": 90
+      }
+    },
+    {
+      "id": "20",
+      "name": "SM_SW_20_WallOuterCorner",
+      "triangles": 3480,
+      "budget": 4000,
+      "dimensions_cm": [
+        60.6,
+        60.6,
+        240.0
+      ],
+      "collision_hulls": 2,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "materials": [
+        "M_Kit_Grout",
+        "M_Kit_WallTile"
+      ],
+      "route": "procedural_blender",
+      "appearance": "approved_by_user_2026-09-24",
+      "technical": "pass",
+      "uv_layers": 1,
+      "notes": {
+        "wall_tile_pitch_cm": 10,
+        "corner_angle_deg": -90
+      }
+    },
+    {
+      "id": "21",
+      "name": "SM_SW_21_WallEndCap",
+      "triangles": 300,
+      "budget": 4000,
+      "dimensions_cm": [
+        15.0,
+        15.6,
+        240.0
+      ],
+      "collision_hulls": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "materials": [
+        "M_Kit_Grout",
+        "M_Kit_WallTile"
+      ],
+      "route": "procedural_blender",
+      "appearance": "approved_by_user_2026-09-24",
+      "technical": "pass",
+      "uv_layers": 1,
+      "notes": {
+        "width_cm": 15
+      }
+    },
+    {
+      "id": "07",
+      "name": "SM_SW_07_Ceiling120",
+      "triangles": 12,
+      "budget": 4000,
+      "dimensions_cm": [
+        120.0,
+        120.0,
+        10.0
+      ],
+      "collision_hulls": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "materials": [
+        "M_Kit_Concrete"
+      ],
+      "route": "procedural_blender",
+      "appearance": "approved_by_user_2026-09-24",
+      "technical": "pass",
+      "uv_layers": 1,
+      "notes": {}
+    },
+    {
+      "id": "08",
+      "name": "SM_SW_08_Beam140",
+      "triangles": 12,
+      "budget": 4000,
+      "dimensions_cm": [
+        140.0,
+        30.0,
+        25.0
+      ],
+      "collision_hulls": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "materials": [
+        "M_Kit_Concrete"
+      ],
+      "route": "procedural_blender",
+      "appearance": "approved_by_user_2026-09-24",
+      "technical": "pass",
+      "uv_layers": 1,
+      "notes": {}
+    },
+    {
+      "id": "22",
+      "name": "SM_SW_22_Skirting120",
+      "triangles": 12,
+      "budget": 4000,
+      "dimensions_cm": [
+        120.0,
+        2.5,
+        12.0
+      ],
+      "collision_hulls": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "materials": [
+        "M_Kit_DarkTrim"
+      ],
+      "route": "procedural_blender",
+      "appearance": "approved_by_user_2026-09-24",
+      "technical": "pass",
+      "uv_layers": 1,
+      "notes": {}
+    },
+    {
+      "id": "22",
+      "name": "SM_SW_22_SkirtingInner",
+      "triangles": 24,
+      "budget": 4000,
+      "dimensions_cm": [
+        60.0,
+        60.0,
+        12.0
+      ],
+      "collision_hulls": 2,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "materials": [
+        "M_Kit_DarkTrim"
+      ],
+      "route": "procedural_blender",
+      "appearance": "approved_by_user_2026-09-24",
+      "technical": "pass",
+      "uv_layers": 1,
+      "notes": {}
+    },
+    {
+      "id": "22",
+      "name": "SM_SW_22_SkirtingOuter",
+      "triangles": 24,
+      "budget": 4000,
+      "dimensions_cm": [
+        60.0,
+        62.5,
+        12.0
+      ],
+      "collision_hulls": 2,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "materials": [
+        "M_Kit_DarkTrim"
+      ],
+      "route": "procedural_blender",
+      "appearance": "approved_by_user_2026-09-24",
+      "technical": "pass",
+      "uv_layers": 1,
+      "notes": {}
+    },
+    {
+      "id": "16",
+      "name": "SM_SW_16_Nosing140",
+      "triangles": 60,
+      "budget": 4000,
+      "dimensions_cm": [
+        3.5,
+        140.0,
+        0.7
+      ],
+      "collision_hulls": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "materials": [
+        "M_Kit_DarkTrim",
+        "M_Kit_RailSteel"
+      ],
+      "route": "procedural_blender",
+      "appearance": "approved_by_user_2026-09-24",
+      "technical": "pass",
+      "uv_layers": 1,
+      "notes": {}
+    },
+    {
+      "id": "09",
+      "name": "SM_SW_09_RailHorizontal",
+      "triangles": 312,
+      "budget": 4000,
+      "dimensions_cm": [
+        125.5,
+        10.3,
+        31.5
+      ],
+      "collision_hulls": 2,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "materials": [
+        "M_Kit_RailSteel"
+      ],
+      "route": "procedural_blender",
+      "appearance": "approved_by_user_2026-09-24",
+      "technical": "pass",
+      "uv_layers": 1,
+      "notes": {
+        "start": [
+          0,
+          0,
+          0
+        ],
+        "end": [
+          1.2,
+          0,
+          0
+        ],
+        "tangent": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "diameter_cm": 4,
+        "vertical_spacing_cm": 25,
+        "rail_origin": "lower rail center at start"
+      }
+    },
+    {
+      "id": "09",
+      "name": "SM_SW_09_RailHorizontal60",
+      "triangles": 312,
+      "budget": 4000,
+      "dimensions_cm": [
+        65.5,
+        10.3,
+        31.5
+      ],
+      "collision_hulls": 2,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "materials": [
+        "M_Kit_RailSteel"
+      ],
+      "route": "procedural_blender",
+      "appearance": "approved_by_user_2026-09-24",
+      "technical": "pass",
+      "uv_layers": 1,
+      "notes": {
+        "start": [
+          0,
+          0,
+          0
+        ],
+        "end": [
+          0.6,
+          0,
+          0
+        ],
+        "tangent": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "diameter_cm": 4,
+        "vertical_spacing_cm": 25,
+        "rail_origin": "lower rail center at start"
+      }
+    },
+    {
+      "id": "10",
+      "name": "SM_SW_10_RailSlope",
+      "triangles": 312,
+      "budget": 4000,
+      "dimensions_cm": [
+        125.5,
+        10.3,
+        91.2889
+      ],
+      "collision_hulls": 2,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "materials": [
+        "M_Kit_RailSteel"
+      ],
+      "route": "procedural_blender",
+      "appearance": "approved_by_user_2026-09-24",
+      "technical": "pass",
+      "uv_layers": 1,
+      "notes": {
+        "start": [
+          0,
+          0,
+          0
+        ],
+        "end": [
+          1.2,
+          0,
+          0.6
+        ],
+        "tangent": [
+          0.8944271802902222,
+          0.0,
+          0.4472135901451111
+        ],
+        "diameter_cm": 4,
+        "vertical_spacing_cm": 25,
+        "rail_origin": "lower rail center at start"
+      }
+    },
+    {
+      "id": "10",
+      "name": "SM_SW_10_RailSlope60",
+      "triangles": 312,
+      "budget": 4000,
+      "dimensions_cm": [
+        65.5,
+        10.3,
+        61.2889
+      ],
+      "collision_hulls": 2,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "materials": [
+        "M_Kit_RailSteel"
+      ],
+      "route": "procedural_blender",
+      "appearance": "approved_by_user_2026-09-24",
+      "technical": "pass",
+      "uv_layers": 1,
+      "notes": {
+        "start": [
+          0,
+          0,
+          0
+        ],
+        "end": [
+          0.6,
+          0,
+          0.3
+        ],
+        "tangent": [
+          0.8944271802902222,
+          0.0,
+          0.4472135901451111
+        ],
+        "diameter_cm": 4,
+        "vertical_spacing_cm": 25,
+        "rail_origin": "lower rail center at start"
+      }
+    },
+    {
+      "id": "11",
+      "name": "SM_SW_11_RailCornerLeft",
+      "triangles": 424,
+      "budget": 4000,
+      "dimensions_cm": [
+        10.0,
+        10.0,
+        29.0
+      ],
+      "collision_hulls": 16,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "materials": [
+        "M_Kit_RailSteel"
+      ],
+      "route": "procedural_blender",
+      "appearance": "approved_by_user_2026-09-24",
+      "technical": "pass",
+      "uv_layers": 1,
+      "notes": {
+        "start": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "end": [
+          0.07999999821186066,
+          0.07999999821186066,
+          0.0
+        ],
+        "start_tangent": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "end_tangent": [
+          8.940696716308594E-08,
+          1.0,
+          0.0
+        ],
+        "radius_cm": 8
+      }
+    },
+    {
+      "id": "11",
+      "name": "SM_SW_11_RailCornerRight",
+      "triangles": 424,
+      "budget": 4000,
+      "dimensions_cm": [
+        10.0,
+        10.0,
+        29.0
+      ],
+      "collision_hulls": 16,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "materials": [
+        "M_Kit_RailSteel"
+      ],
+      "route": "procedural_blender",
+      "appearance": "approved_by_user_2026-09-24",
+      "technical": "pass",
+      "uv_layers": 1,
+      "notes": {
+        "start": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "end": [
+          0.07999999821186066,
+          -0.07999999821186066,
+          0.0
+        ],
+        "start_tangent": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "end_tangent": [
+          8.940696716308594E-08,
+          -1.0,
+          0.0
+        ],
+        "radius_cm": 8
+      }
+    },
+    {
+      "id": "17",
+      "name": "SM_SW_17_SlopeToLevel",
+      "triangles": 232,
+      "budget": 4000,
+      "dimensions_cm": [
+        4.4721,
+        4.0,
+        29.6334
+      ],
+      "collision_hulls": 8,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "materials": [
+        "M_Kit_RailSteel"
+      ],
+      "route": "procedural_blender",
+      "appearance": "approved_by_user_2026-09-24",
+      "technical": "pass",
+      "uv_layers": 1,
+      "notes": {
+        "start": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "end": [
+          0.03577708452939987,
+          0.0,
+          0.008445829153060913
+        ],
+        "start_tangent": [
+          0.8944271802902222,
+          0.0,
+          0.4472135901451111
+        ],
+        "end_tangent": [
+          1.0,
+          0.0,
+          2.980232238769531E-08
+        ],
+        "radius_cm": 8
+      }
+    },
+    {
+      "id": "18",
+      "name": "SM_SW_18_LevelToDown",
+      "triangles": 232,
+      "budget": 4000,
+      "dimensions_cm": [
+        4.4721,
+        4.0,
+        29.6334
+      ],
+      "collision_hulls": 8,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "materials": [
+        "M_Kit_RailSteel"
+      ],
+      "route": "procedural_blender",
+      "appearance": "approved_by_user_2026-09-24",
+      "technical": "pass",
+      "uv_layers": 1,
+      "notes": {
+        "start": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "end": [
+          0.03577708452939987,
+          0.0,
+          -0.008445821702480316
+        ],
+        "start_tangent": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "end_tangent": [
+          0.8944272398948669,
+          0.0,
+          -0.4472135901451111
+        ],
+        "radius_cm": 8
+      }
+    },
+    {
+      "id": "12",
+      "name": "SM_SW_12_RailReturnHorizontalLeft",
+      "triangles": 496,
+      "budget": 4000,
+      "dimensions_cm": [
+        9.25,
+        10.4,
+        31.5
+      ],
+      "collision_hulls": 18,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "materials": [
+        "M_Kit_RailSteel"
+      ],
+      "route": "procedural_blender",
+      "appearance": "approved_by_user_2026-09-24",
+      "technical": "pass",
+      "uv_layers": 1,
+      "notes": {
+        "start": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "end": [
+          0.05999999865889549,
+          0.07999999821186066,
+          0.0
+        ],
+        "start_tangent": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "end_tangent": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "radius_cm": 6,
+        "wall_center_offset_cm": 8
+      }
+    },
+    {
+      "id": "12",
+      "name": "SM_SW_12_RailReturnHorizontalRight",
+      "triangles": 496,
+      "budget": 4000,
+      "dimensions_cm": [
+        9.25,
+        10.4,
+        31.5
+      ],
+      "collision_hulls": 18,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "materials": [
+        "M_Kit_RailSteel"
+      ],
+      "route": "procedural_blender",
+      "appearance": "approved_by_user_2026-09-24",
+      "technical": "pass",
+      "uv_layers": 1,
+      "notes": {
+        "start": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "end": [
+          0.05999999865889549,
+          -0.07999999821186066,
+          0.0
+        ],
+        "start_tangent": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "end_tangent": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "radius_cm": 6,
+        "wall_center_offset_cm": 8
+      }
+    },
+    {
+      "id": "19",
+      "name": "SM_SW_19_RailReturnSlopeLeft",
+      "triangles": 496,
+      "budget": 4000,
+      "dimensions_cm": [
+        9.511,
+        10.4,
+        32.7221
+      ],
+      "collision_hulls": 18,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "materials": [
+        "M_Kit_RailSteel"
+      ],
+      "route": "procedural_blender",
+      "appearance": "approved_by_user_2026-09-24",
+      "technical": "pass",
+      "uv_layers": 1,
+      "notes": {
+        "start": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "end": [
+          0.0536656379699707,
+          0.07999999821186066,
+          0.02683281898498535
+        ],
+        "start_tangent": [
+          0.8944271802902222,
+          0.0,
+          0.4472135901451111
+        ],
+        "end_tangent": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "radius_cm": 6,
+        "wall_center_offset_cm": 8
+      }
+    },
+    {
+      "id": "19",
+      "name": "SM_SW_19_RailReturnSlopeRight",
+      "triangles": 496,
+      "budget": 4000,
+      "dimensions_cm": [
+        9.511,
+        10.4,
+        32.7221
+      ],
+      "collision_hulls": 18,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "materials": [
+        "M_Kit_RailSteel"
+      ],
+      "route": "procedural_blender",
+      "appearance": "approved_by_user_2026-09-24",
+      "technical": "pass",
+      "uv_layers": 1,
+      "notes": {
+        "start": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "end": [
+          0.0536656379699707,
+          -0.07999999821186066,
+          0.02683281898498535
+        ],
+        "start_tangent": [
+          0.8944271802902222,
+          0.0,
+          0.4472135901451111
+        ],
+        "end_tangent": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "radius_cm": 6,
+        "wall_center_offset_cm": 8
+      }
+    },
+    {
+      "id": "14",
+      "name": "SM_Stairwell_DoorLeaf14",
+      "triangles": 2950,
+      "budget": 3000,
+      "dimensions_cm": [
+        98.8,
+        14.0,
+        209.4
+      ],
+      "collision_hulls": 1,
+      "route": "tripo_web_corrected",
+      "appearance": "approved_by_user_2026-09-24",
+      "technical": "previous_import_verified",
+      "materials": [
+        "tripo_mat_3fe0ace8-7437-480e-a080-443fd0574508"
+      ],
+      "notes": {
+        "existing_unreal_asset": true
+      }
+    },
+    {
+      "id": "13",
+      "name": "SM_Stairwell_DoorFrame13",
+      "triangles": 36,
+      "budget": 3000,
+      "dimensions_cm": [
+        110.0,
+        15.0,
+        215.0
+      ],
+      "collision_hulls": 3,
+      "route": "procedural_blender",
+      "appearance": "approved_by_user_2026-09-24",
+      "technical": "previous_import_verified",
+      "materials": [],
+      "notes": {
+        "existing_unreal_asset": true
+      }
+    },
+    {
+      "id": "15",
+      "name": "SM_SW_15_LightFixture",
+      "triangles": 2869,
+      "budget": 3000,
+      "dimensions_cm": [
+        120.0,
+        27.0059,
+        20.5478
+      ],
+      "collision_hulls": 1,
+      "boundary_edges": 133,
+      "nonmanifold_edges": 150,
+      "materials": [
+        "tripo_material_4aa20774-e697-4117-a168-527ce0f5a17f",
+        "M_Kit_MetalPaint",
+        "M_Kit_LampEmission"
+      ],
+      "route": "tripo_api_corrected",
+      "appearance": "approved_by_user_2026-09-24",
+      "technical": "pass_with_documented_source_boundaries",
+      "uv_layers": 1,
+      "notes": {
+        "source": "Tripo API light15 v002; not regenerated",
+        "repair": "Added 3mm painted upper cover over source slit and two emissive surfaces",
+        "review_note": "Cover and emissive alignment require appearance review; generated mesh retains boundary edges"
+      }
+    }
+  ],
+  "shared_spec": {
+    "floor_pitch_cm": 30,
+    "wall_pitch_cm": 10,
+    "grout_cm": 0.3,
+    "rail_diameter_cm": 4,
+    "rail_spacing_cm": 25
+  },
+  "limitations": [
+    "Texture/material refinement pending",
+    "Light retains documented source boundaries",
+    "No PIE movement/camera validation",
+    "Reference-scene reconstruction in progress"
+  ]
+}

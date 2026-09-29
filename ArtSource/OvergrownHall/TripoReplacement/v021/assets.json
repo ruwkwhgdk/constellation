@@ -1,0 +1,46 @@
+[
+  {
+    "mesh": "SM_OH_FracturedSideArchA",
+    "kind": "arch",
+    "triangles": 484,
+    "nonmanifold": 0,
+    "dimensions_m": [
+      3.626499652862549,
+      0.3922133445739746,
+      7.098957061767578
+    ]
+  },
+  {
+    "mesh": "SM_OH_FracturedSideArchB",
+    "kind": "arch",
+    "triangles": 668,
+    "nonmanifold": 0,
+    "dimensions_m": [
+      3.6361169815063477,
+      0.3993445038795471,
+      7.098957061767578
+    ]
+  },
+  {
+    "mesh": "SM_OH_FracturedSideArchC",
+    "kind": "arch",
+    "triangles": 1356,
+    "nonmanifold": 0,
+    "dimensions_m": [
+      3.699000120162964,
+      0.3993445038795471,
+      7.098957061767578
+    ]
+  },
+  {
+    "mesh": "SM_OH_FracturedRoofTruss",
+    "kind": "truss",
+    "triangles": 364,
+    "nonmanifold": 0,
+    "dimensions_m": [
+      12.670333862304688,
+      0.21995475888252258,
+      1.9999349117279053
+    ]
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "status": "skeletal_import_pass",
+  "mesh": "/Game/Environment/OvergrownHall/Bird/Meshes/SK_OH_Pigeon.SK_OH_Pigeon",
+  "skeleton": "/Game/Environment/OvergrownHall/Bird/Meshes/SK_OH_Pigeon_Skeleton.SK_OH_Pigeon_Skeleton",
+  "clips": [
+    {
+      "name": "Fly",
+      "path": "/Game/Environment/OvergrownHall/Bird/Clips/A_OH_Pigeon_Fly.A_OH_Pigeon_Fly",
+      "seconds": 0.5
+    },
+    {
+      "name": "Glide",
+      "path": "/Game/Environment/OvergrownHall/Bird/Clips/A_OH_Pigeon_Glide.A_OH_Pigeon_Glide",
+      "seconds": 1.0
+    },
+    {
+      "name": "FlyToGlide",
+      "path": "/Game/Environment/OvergrownHall/Bird/Clips/A_OH_Pigeon_FlyToGlide.A_OH_Pigeon_FlyToGlide",
+      "seconds": 0.25
+    },
+    {
+      "name": "GlideToFly",
+      "path": "/Game/Environment/OvergrownHall/Bird/Clips/A_OH_Pigeon_GlideToFly.A_OH_Pigeon_GlideToFly",
+      "seconds": 0.25
+    }
+  ],
+  "playback_verification": "pending",
+  "flight_paths": "not_created",
+  "appearance": "first rigged draft"
+}

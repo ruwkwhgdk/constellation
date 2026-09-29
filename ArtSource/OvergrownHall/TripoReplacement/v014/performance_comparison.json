@@ -1,0 +1,32 @@
+{
+  "before": "v013",
+  "after": "v014",
+  "metrics": {
+    "GPUTime": {
+      "before": 12.6539,
+      "after": 12.6852,
+      "change_percent": 0.24735457052766918
+    },
+    "FrameTime": {
+      "before": 25.5836,
+      "after": 23.8084,
+      "change_percent": -6.938820181678896
+    },
+    "RHI/DrawCalls": {
+      "before": 1100.0,
+      "after": 961.0,
+      "change_percent": -12.636363636363635
+    },
+    "RHI/PrimitivesDrawn": {
+      "before": 18402476.0,
+      "after": 16577491.0,
+      "change_percent": -9.917062247493213
+    },
+    "DrawCall/ShadowDepths": {
+      "before": 577.0,
+      "after": 434.0,
+      "change_percent": -24.783362218370886
+    }
+  },
+  "note": "Same reference-camera editor capture script and window request; separate runs, not gameplay, actual viewport resolution can differ from requested window dimensions."
+}

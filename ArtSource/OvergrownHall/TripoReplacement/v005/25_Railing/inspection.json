@@ -1,0 +1,24 @@
+{
+  "id": "25",
+  "name": "Railing",
+  "mesh": "SM_OH_Clean_25_Railing",
+  "source": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OvergrownHall\\TripoReplacement\\v002\\25_Railing\\prepared.blend",
+  "source_triangles": 7969,
+  "triangles": 864,
+  "budget": 8000,
+  "dimensions_m": [
+    1.9999477863311768,
+    0.11994676291942596,
+    1.0001307725906372
+  ],
+  "boundary_edges": 0,
+  "basecolor": "basecolor.png",
+  "organic": false,
+  "edits": [
+    "source-guided hard-surface retopology",
+    "straight edges and planar faces",
+    "small 2-segment bevels",
+    "Tripo base color reprojected to new UV",
+    "normal map intentionally omitted: old tangent basis is invalid"
+  ]
+}

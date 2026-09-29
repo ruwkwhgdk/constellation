@@ -1,0 +1,21 @@
+{
+  "id": "25",
+  "name": "Railing",
+  "mesh": "SM_OH_T_25_Railing",
+  "source_triangles": 27414,
+  "triangles": 7969,
+  "budget": 8000,
+  "dimensions_m": [
+    1.9999477863311768,
+    0.11994676291942596,
+    1.0001307725906372
+  ],
+  "boundary_edges": 3,
+  "uv_layers": 1,
+  "edits": [],
+  "textures": [
+    "basecolor.png",
+    "normal.png",
+    "rm.png"
+  ]
+}

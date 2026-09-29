@@ -1,0 +1,20 @@
+{
+  "id": "19",
+  "name": "Tree",
+  "mesh": "SM_OH_Clean_19_Tree",
+  "source": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OvergrownHall\\TripoReplacement\\v001\\Tree\\prepared.blend",
+  "source_triangles": 29879,
+  "triangles": 29879,
+  "budget": 30000,
+  "dimensions_m": [
+    5.210340976715088,
+    4.571686267852783,
+    6.000000476837158
+  ],
+  "boundary_edges": 3,
+  "basecolor": null,
+  "organic": true,
+  "edits": [
+    "bounded local spike smoothing; original topology and UV retained"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "map": "/Game/Environment/OvergrownHall/TripoFull/Maps/L_OvergrownHall_TripoFull",
+  "changed_meshes": [
+    "OH_FULL_04_0279",
+    "OH_FULL_04_0280",
+    "OH_FULL_04_0281",
+    "OH_FULL_04_0290",
+    "OH_FULL_04_0291",
+    "OH_FULL_04_0292",
+    "OH_FULL_10_0317",
+    "OH_FULL_10_0318",
+    "OH_FULL_10_0319"
+  ],
+  "added": [
+    "OH_Silhouette_Hanging_00",
+    "OH_Silhouette_Hanging_01",
+    "OH_Silhouette_Hanging_02",
+    "OH_Silhouette_Hanging_03",
+    "OH_Silhouette_Hanging_04",
+    "OH_Silhouette_Hanging_05"
+  ],
+  "bird_scales": {
+    "OH_Flock_Bird_25": 0.58,
+    "OH_Flock_Bird_21": 0.32,
+    "OH_Flock_Bird_03": 0.27,
+    "OH_Flock_Bird_06": 0.48,
+    "OH_Flock_Bird_17": 0.27,
+    "OH_Flock_Bird_01": 0.3,
+    "OH_Flock_Bird_10": 0.27,
+    "OH_Flock_Bird_27": 0.48,
+    "OH_Flock_Bird_13": 0.48,
+    "OH_Flock_Bird_12": 0.36,
+    "OH_Flock_Bird_15": 0.3,
+    "OH_Flock_Bird_26": 0.36,
+    "OH_Flock_Bird_14": 0.32,
+    "OH_Flock_Bird_04": 0.58,
+    "OH_Flock_Bird_23": 0.43,
+    "OH_Flock_Bird_02": 0.43,
+    "OH_Flock_Bird_20": 0.48,
+    "OH_Flock_Bird_22": 0.3,
+    "OH_Flock_Bird_19": 0.36,
+    "OH_Flock_Bird_28": 0.32,
+    "OH_Flock_Bird_24": 0.27,
+    "OH_Flock_Bird_07": 0.32,
+    "OH_Flock_Bird_11": 0.58,
+    "OH_Flock_Bird_09": 0.43,
+    "OH_Flock_Bird_08": 0.3,
+    "OH_Flock_Bird_18": 0.58,
+    "OH_Flock_Bird_05": 0.36,
+    "OH_Flock_Bird_16": 0.43
+  },
+  "playtest": false
+}

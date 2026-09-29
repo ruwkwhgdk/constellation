@@ -1,0 +1,20 @@
+{
+  "quad": false,
+  "type": "image_to_model",
+  "geometry_quality": "standard",
+  "texture_seed": 240915,
+  "export_uv": true,
+  "file": {
+    "type": "png",
+    "file_token": "7d38ab67-a290-448b-b4d2-7f03b1a7a551"
+  },
+  "auto_size": false,
+  "smart_low_poly": true,
+  "face_limit": 3000,
+  "model_seed": 240915,
+  "texture_quality": "standard",
+  "pbr": true,
+  "orientation": "default",
+  "texture": true,
+  "model_version": "v3.1-20260211"
+}

@@ -1,0 +1,55 @@
+{
+  "kind": "Tree",
+  "source_triangles": 29879,
+  "game_triangles": 29879,
+  "dimensions_m": [
+    5.210340976715088,
+    4.571686267852783,
+    6.000000476837158
+  ],
+  "uv_layers": 1,
+  "textures": [
+    {
+      "file": "basecolor.png",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "file": "tree_3d_model_metallic.png",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "file": "normal.png",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "file": "rm.png",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "file": "tree_3d_model_roughness.png",
+      "size": [
+        2048,
+        2048
+      ]
+    }
+  ],
+  "collision": "one simple box",
+  "edits": [
+    "base-centered ground pivot",
+    "dimension normalization",
+    "uniform scaling"
+  ],
+  "adoption": "pending user appearance review"
+}

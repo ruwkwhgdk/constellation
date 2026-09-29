@@ -1,0 +1,3842 @@
+{
+  "map": "/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_Reference",
+  "mesh_instances": [
+    {
+      "name": "MainStairsNear",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_01_Stair6",
+      "position": [
+        0,
+        -120,
+        90
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1.7142857142857142,
+        1
+      ]
+    },
+    {
+      "name": "MainStairsFar",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_01_Stair6",
+      "position": [
+        180,
+        -120,
+        0
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1.7142857142857142,
+        1
+      ]
+    },
+    {
+      "name": "MainNosing0",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_16_Nosing140",
+      "position": [
+        180,
+        -120,
+        15
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1.7142857142857142,
+        1
+      ]
+    },
+    {
+      "name": "MainNosing1",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_16_Nosing140",
+      "position": [
+        150,
+        -120,
+        30
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1.7142857142857142,
+        1
+      ]
+    },
+    {
+      "name": "MainNosing2",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_16_Nosing140",
+      "position": [
+        120,
+        -120,
+        45
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1.7142857142857142,
+        1
+      ]
+    },
+    {
+      "name": "MainNosing3",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_16_Nosing140",
+      "position": [
+        90,
+        -120,
+        60
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1.7142857142857142,
+        1
+      ]
+    },
+    {
+      "name": "MainNosing4",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_16_Nosing140",
+      "position": [
+        60,
+        -120,
+        75
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1.7142857142857142,
+        1
+      ]
+    },
+    {
+      "name": "MainNosing5",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_16_Nosing140",
+      "position": [
+        30,
+        -120,
+        90
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1.7142857142857142,
+        1
+      ]
+    },
+    {
+      "name": "MainNosing6",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_16_Nosing140",
+      "position": [
+        0,
+        -120,
+        105
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1.7142857142857142,
+        1
+      ]
+    },
+    {
+      "name": "MainNosing7",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_16_Nosing140",
+      "position": [
+        -30,
+        -120,
+        120
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1.7142857142857142,
+        1
+      ]
+    },
+    {
+      "name": "MainNosing8",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_16_Nosing140",
+      "position": [
+        -60,
+        -120,
+        135
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1.7142857142857142,
+        1
+      ]
+    },
+    {
+      "name": "MainNosing9",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_16_Nosing140",
+      "position": [
+        -90,
+        -120,
+        150
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1.7142857142857142,
+        1
+      ]
+    },
+    {
+      "name": "MainNosing10",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_16_Nosing140",
+      "position": [
+        -120,
+        -120,
+        165
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1.7142857142857142,
+        1
+      ]
+    },
+    {
+      "name": "MainNosing11",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_16_Nosing140",
+      "position": [
+        -150,
+        -120,
+        180
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1.7142857142857142,
+        1
+      ]
+    },
+    {
+      "name": "UpperLanding",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        -360,
+        -60,
+        180
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "UpperLanding_Tile_0_1",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        -360,
+        0,
+        180
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "UpperLanding_Tile_0_2",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        -360,
+        60,
+        180
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "UpperLanding_Tile_0_3",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        -360,
+        120,
+        180
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "UpperLanding_Tile_1_0",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        -300,
+        -60,
+        180
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "UpperLanding_Tile_1_1",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        -300,
+        0,
+        180
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "UpperLanding_Tile_1_2",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        -300,
+        60,
+        180
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "UpperLanding_Tile_1_3",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        -300,
+        120,
+        180
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "UpperLanding_Tile_2_0",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        -240,
+        -60,
+        180
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "UpperLanding_Tile_2_1",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        -240,
+        0,
+        180
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "UpperLanding_Tile_2_2",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        -240,
+        60,
+        180
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "UpperLanding_Tile_2_3",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        -240,
+        120,
+        180
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "MiddleLandingLeft",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        180,
+        -60,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "MiddleLandingLeft_Tile_0_1",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        180,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "MiddleLandingLeft_Tile_0_2",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        180,
+        60,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "MiddleLandingLeft_Tile_0_3",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        180,
+        120,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "MiddleLandingLeft_Tile_1_0",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        240,
+        -60,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "MiddleLandingLeft_Tile_1_1",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        240,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "MiddleLandingLeft_Tile_1_2",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        240,
+        60,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "MiddleLandingLeft_Tile_1_3",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        240,
+        120,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "MiddleLandingLeft_Tile_2_0",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        300,
+        -60,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "MiddleLandingLeft_Tile_2_1",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        300,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "MiddleLandingLeft_Tile_2_2",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        300,
+        60,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "MiddleLandingLeft_Tile_2_3",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        300,
+        120,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "MiddleLandingRight",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        180,
+        180,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "MiddleLandingRight_Tile_0_1",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        180,
+        240,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "MiddleLandingRight_Tile_0_2",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        180,
+        300,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "MiddleLandingRight_Tile_0_3",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        180,
+        360,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "MiddleLandingRight_Tile_1_0",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        240,
+        180,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "MiddleLandingRight_Tile_1_1",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        240,
+        240,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "MiddleLandingRight_Tile_1_2",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        240,
+        300,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "MiddleLandingRight_Tile_1_3",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        240,
+        360,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "MiddleLandingRight_Tile_2_0",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        300,
+        180,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "MiddleLandingRight_Tile_2_1",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        300,
+        240,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "MiddleLandingRight_Tile_2_2",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        300,
+        300,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "MiddleLandingRight_Tile_2_3",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        300,
+        360,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "MiddleLandingExtension",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        180,
+        420,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "MiddleLandingExtension_Tile_0_1",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        180,
+        480,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "MiddleLandingExtension_Tile_1_0",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        240,
+        420,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "MiddleLandingExtension_Tile_1_1",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        240,
+        480,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "MiddleLandingExtension_Tile_2_0",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        300,
+        420,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "MiddleLandingExtension_Tile_2_1",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        300,
+        480,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "TactileMain_0",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_04_Tactile60",
+      "position": [
+        180,
+        -60,
+        0.2
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "TactileMain_1",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_04_Tactile60",
+      "position": [
+        180,
+        0,
+        0.2
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "TactileMain_2",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_04_Tactile60",
+      "position": [
+        180,
+        60,
+        0.2
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "TactileMain_3",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_04_Tactile60",
+      "position": [
+        180,
+        120,
+        0.2
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "TactileNext_0",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_04_Tactile60",
+      "position": [
+        300,
+        180,
+        0.2
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "TactileNext_1",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_04_Tactile60",
+      "position": [
+        300,
+        240,
+        0.2
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "TactileNext_2",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_04_Tactile60",
+      "position": [
+        300,
+        300,
+        0.2
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "TactileNext_3",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_04_Tactile60",
+      "position": [
+        300,
+        360,
+        0.2
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "NextStairsNear",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_01_Stair6",
+      "position": [
+        540,
+        120,
+        -90
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1.7142857142857142,
+        1
+      ]
+    },
+    {
+      "name": "NextStairsFar",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_01_Stair6",
+      "position": [
+        720,
+        120,
+        -180
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1.7142857142857142,
+        1
+      ]
+    },
+    {
+      "name": "NextNosing0",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_16_Nosing140",
+      "position": [
+        720,
+        120,
+        -165
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1.7142857142857142,
+        1
+      ]
+    },
+    {
+      "name": "NextNosing1",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_16_Nosing140",
+      "position": [
+        690,
+        120,
+        -150
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1.7142857142857142,
+        1
+      ]
+    },
+    {
+      "name": "NextNosing2",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_16_Nosing140",
+      "position": [
+        660,
+        120,
+        -135
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1.7142857142857142,
+        1
+      ]
+    },
+    {
+      "name": "NextNosing3",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_16_Nosing140",
+      "position": [
+        630,
+        120,
+        -120
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1.7142857142857142,
+        1
+      ]
+    },
+    {
+      "name": "NextNosing4",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_16_Nosing140",
+      "position": [
+        600,
+        120,
+        -105
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1.7142857142857142,
+        1
+      ]
+    },
+    {
+      "name": "NextNosing5",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_16_Nosing140",
+      "position": [
+        570,
+        120,
+        -90
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1.7142857142857142,
+        1
+      ]
+    },
+    {
+      "name": "NextNosing6",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_16_Nosing140",
+      "position": [
+        540,
+        120,
+        -75
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1.7142857142857142,
+        1
+      ]
+    },
+    {
+      "name": "NextNosing7",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_16_Nosing140",
+      "position": [
+        510,
+        120,
+        -60
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1.7142857142857142,
+        1
+      ]
+    },
+    {
+      "name": "NextNosing8",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_16_Nosing140",
+      "position": [
+        480,
+        120,
+        -45
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1.7142857142857142,
+        1
+      ]
+    },
+    {
+      "name": "NextNosing9",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_16_Nosing140",
+      "position": [
+        450,
+        120,
+        -30
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1.7142857142857142,
+        1
+      ]
+    },
+    {
+      "name": "NextNosing10",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_16_Nosing140",
+      "position": [
+        420,
+        120,
+        -15
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1.7142857142857142,
+        1
+      ]
+    },
+    {
+      "name": "NextNosing11",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_16_Nosing140",
+      "position": [
+        390,
+        120,
+        0
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1.7142857142857142,
+        1
+      ]
+    },
+    {
+      "name": "LowerLanding",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        720,
+        180,
+        -180
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LowerLanding_Tile_0_1",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        720,
+        240,
+        -180
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LowerLanding_Tile_0_2",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        720,
+        300,
+        -180
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LowerLanding_Tile_0_3",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        720,
+        360,
+        -180
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LowerLanding_Tile_1_0",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        780,
+        180,
+        -180
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LowerLanding_Tile_1_1",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        780,
+        240,
+        -180
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LowerLanding_Tile_1_2",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        780,
+        300,
+        -180
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LowerLanding_Tile_1_3",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        780,
+        360,
+        -180
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LowerLanding_Tile_2_0",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        840,
+        180,
+        -180
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LowerLanding_Tile_2_1",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        840,
+        240,
+        -180
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LowerLanding_Tile_2_2",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        840,
+        300,
+        -180
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LowerLanding_Tile_2_3",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        840,
+        360,
+        -180
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LeftWall_0_-30",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        -360,
+        -120,
+        -30
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LeftWall_0_210",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        -360,
+        -120,
+        210
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LeftWall_1_-30",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        -240,
+        -120,
+        -30
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LeftWall_1_210",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        -240,
+        -120,
+        210
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LeftWall_2_-30",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        -120,
+        -120,
+        -30
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LeftWall_2_210",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        -120,
+        -120,
+        210
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LeftWall_3_-30",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        0,
+        -120,
+        -30
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LeftWall_3_210",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        0,
+        -120,
+        210
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LeftWall_4_-30",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        120,
+        -120,
+        -30
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LeftWall_4_210",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        120,
+        -120,
+        210
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LeftWall_5_-30",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        240,
+        -120,
+        -30
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LeftWall_5_210",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        240,
+        -120,
+        210
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "MainRightWall_0_-30",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        -180,
+        120,
+        -30
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "MainRightWall_0_210",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        -180,
+        120,
+        210
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "MainRightWall_1_-30",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        -60,
+        120,
+        -30
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "MainRightWall_1_210",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        -60,
+        120,
+        210
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "MainRightWall_2_-30",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        60,
+        120,
+        -30
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "MainRightWall_2_210",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        60,
+        120,
+        210
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "FarRightWall_0_-210",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        300,
+        480,
+        -210
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "FarRightWall_0_30",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        300,
+        480,
+        30
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "FarRightWall_1_-210",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        420,
+        480,
+        -210
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "FarRightWall_1_30",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        420,
+        480,
+        30
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "FarRightWall_2_-210",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        540,
+        480,
+        -210
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "FarRightWall_2_30",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        540,
+        480,
+        30
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "FarRightWall_3_-210",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        660,
+        480,
+        -210
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "FarRightWall_3_30",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        660,
+        480,
+        30
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "FarRightWall_4_-210",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        780,
+        480,
+        -210
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "FarRightWall_4_30",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        780,
+        480,
+        30
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "FarRightWall_5_-210",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        900,
+        480,
+        -210
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "FarRightWall_5_30",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        900,
+        480,
+        30
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "FarRightWall_6_-210",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        1020,
+        480,
+        -210
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "FarRightWall_6_30",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        1020,
+        480,
+        30
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "NextDivider_0_-210",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        360,
+        120,
+        -210
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "NextDivider_0_30",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        360,
+        120,
+        30
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "NextDivider_1_-210",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        480,
+        120,
+        -210
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "NextDivider_1_30",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        480,
+        120,
+        30
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "NextDivider_2_-210",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        600,
+        120,
+        -210
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "NextDivider_2_30",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        600,
+        120,
+        30
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "NextDivider_3_-210",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        720,
+        120,
+        -210
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "NextDivider_3_30",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        720,
+        120,
+        30
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "NextDivider_4_-210",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        840,
+        120,
+        -210
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "NextDivider_4_30",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        840,
+        120,
+        30
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "NextOuter_0_-210",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        480,
+        360,
+        -210
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "NextOuter_0_30",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        480,
+        360,
+        30
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "NextOuter_1_-210",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        600,
+        360,
+        -210
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "NextOuter_1_30",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        600,
+        360,
+        30
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "NextOuter_2_-210",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        720,
+        360,
+        -210
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "NextOuter_2_30",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        720,
+        360,
+        30
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "NextOuter_3_-210",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        840,
+        360,
+        -210
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "NextOuter_3_30",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        840,
+        360,
+        30
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "NextOuter_4_-210",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        960,
+        360,
+        -210
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "NextOuter_4_30",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        960,
+        360,
+        30
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LandingBackWall",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_05_Wall120",
+      "position": [
+        360,
+        360,
+        0
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SideFloor_60_180",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        60,
+        180,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SideFloor_60_240",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        60,
+        240,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SideFloor_60_300",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        60,
+        300,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SideFloor_60_360",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        60,
+        360,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SideFloor_60_420",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        60,
+        420,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SideFloor_60_480",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        60,
+        480,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SideFloor_120_180",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        120,
+        180,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SideFloor_120_240",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        120,
+        240,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SideFloor_120_300",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        120,
+        300,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SideFloor_120_360",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        120,
+        360,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SideFloor_120_420",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        120,
+        420,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SideFloor_120_480",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_03_Floor60",
+      "position": [
+        120,
+        480,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "DoorWallLeft",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_21_WallEndCap",
+      "position": [
+        360,
+        -70,
+        0
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "DoorWallRight",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_21_WallEndCap",
+      "position": [
+        360,
+        45,
+        0
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "DoorSideTrim-130",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_21_WallEndCap",
+      "position": [
+        360,
+        -130,
+        0
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "DoorSideTrim-115",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_21_WallEndCap",
+      "position": [
+        360,
+        -115,
+        0
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "DoorSideTrim-100",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_21_WallEndCap",
+      "position": [
+        360,
+        -100,
+        0
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "DoorSideTrim-85",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_21_WallEndCap",
+      "position": [
+        360,
+        -85,
+        0
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "DoorSideTrim60",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_21_WallEndCap",
+      "position": [
+        360,
+        60,
+        0
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "DoorSideTrim75",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_21_WallEndCap",
+      "position": [
+        360,
+        75,
+        0
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "DoorSideTrim90",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_21_WallEndCap",
+      "position": [
+        360,
+        90,
+        0
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "DoorSideTrim105",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_21_WallEndCap",
+      "position": [
+        360,
+        105,
+        0
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "DoorWallOver",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_08_Beam140",
+      "position": [
+        360,
+        -120,
+        215
+      ],
+      "yaw": 90,
+      "scale": [
+        1.7142857142857142,
+        1,
+        8.6
+      ]
+    },
+    {
+      "name": "DoorFrame",
+      "mesh": "/Game/Environment/StairwellModular/Meshes/SM_Stairwell_DoorFrame13",
+      "position": [
+        358,
+        45,
+        0
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "DoorLeaf",
+      "mesh": "/Game/Environment/StairwellModular/Meshes/SM_Stairwell_DoorLeaf14",
+      "position": [
+        358,
+        45,
+        0
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Ceiling_Slope_0_-120",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_07_Ceiling120",
+      "position": [
+        -360.0,
+        -120,
+        550.0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pitch": -26.565051
+    },
+    {
+      "name": "Ceiling_Slope_0_0",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_07_Ceiling120",
+      "position": [
+        -360.0,
+        0,
+        550.0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pitch": -26.565051
+    },
+    {
+      "name": "Ceiling_Slope_0_120",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_07_Ceiling120",
+      "position": [
+        -360.0,
+        120,
+        550.0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pitch": -26.565051
+    },
+    {
+      "name": "Ceiling_Slope_0_240",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_07_Ceiling120",
+      "position": [
+        -360.0,
+        240,
+        550.0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pitch": -26.565051
+    },
+    {
+      "name": "Ceiling_Slope_0_360",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_07_Ceiling120",
+      "position": [
+        -360.0,
+        360,
+        550.0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pitch": -26.565051
+    },
+    {
+      "name": "Ceiling_Slope_0_480",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_07_Ceiling120",
+      "position": [
+        -360.0,
+        480,
+        550.0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pitch": -26.565051
+    },
+    {
+      "name": "Ceiling_Slope_1_-120",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_07_Ceiling120",
+      "position": [
+        -252.668737,
+        -120,
+        496.334369
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pitch": -26.565051
+    },
+    {
+      "name": "Ceiling_Slope_1_0",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_07_Ceiling120",
+      "position": [
+        -252.668737,
+        0,
+        496.334369
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pitch": -26.565051
+    },
+    {
+      "name": "Ceiling_Slope_1_120",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_07_Ceiling120",
+      "position": [
+        -252.668737,
+        120,
+        496.334369
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pitch": -26.565051
+    },
+    {
+      "name": "Ceiling_Slope_1_240",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_07_Ceiling120",
+      "position": [
+        -252.668737,
+        240,
+        496.334369
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pitch": -26.565051
+    },
+    {
+      "name": "Ceiling_Slope_1_360",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_07_Ceiling120",
+      "position": [
+        -252.668737,
+        360,
+        496.334369
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pitch": -26.565051
+    },
+    {
+      "name": "Ceiling_Slope_1_480",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_07_Ceiling120",
+      "position": [
+        -252.668737,
+        480,
+        496.334369
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pitch": -26.565051
+    },
+    {
+      "name": "Ceiling_Slope_2_-120",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_07_Ceiling120",
+      "position": [
+        -145.337474,
+        -120,
+        442.668738
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pitch": -26.565051
+    },
+    {
+      "name": "Ceiling_Slope_2_0",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_07_Ceiling120",
+      "position": [
+        -145.337474,
+        0,
+        442.668738
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pitch": -26.565051
+    },
+    {
+      "name": "Ceiling_Slope_2_120",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_07_Ceiling120",
+      "position": [
+        -145.337474,
+        120,
+        442.668738
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pitch": -26.565051
+    },
+    {
+      "name": "Ceiling_Slope_2_240",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_07_Ceiling120",
+      "position": [
+        -145.337474,
+        240,
+        442.668738
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pitch": -26.565051
+    },
+    {
+      "name": "Ceiling_Slope_2_360",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_07_Ceiling120",
+      "position": [
+        -145.337474,
+        360,
+        442.668738
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pitch": -26.565051
+    },
+    {
+      "name": "Ceiling_Slope_2_480",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_07_Ceiling120",
+      "position": [
+        -145.337474,
+        480,
+        442.668738
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pitch": -26.565051
+    },
+    {
+      "name": "Ceiling_Slope_3_-120",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_07_Ceiling120",
+      "position": [
+        -38.00621100000001,
+        -120,
+        389.003107
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pitch": -26.565051
+    },
+    {
+      "name": "Ceiling_Slope_3_0",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_07_Ceiling120",
+      "position": [
+        -38.00621100000001,
+        0,
+        389.003107
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pitch": -26.565051
+    },
+    {
+      "name": "Ceiling_Slope_3_120",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_07_Ceiling120",
+      "position": [
+        -38.00621100000001,
+        120,
+        389.003107
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pitch": -26.565051
+    },
+    {
+      "name": "Ceiling_Slope_3_240",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_07_Ceiling120",
+      "position": [
+        -38.00621100000001,
+        240,
+        389.003107
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pitch": -26.565051
+    },
+    {
+      "name": "Ceiling_Slope_3_360",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_07_Ceiling120",
+      "position": [
+        -38.00621100000001,
+        360,
+        389.003107
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pitch": -26.565051
+    },
+    {
+      "name": "Ceiling_Slope_3_480",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_07_Ceiling120",
+      "position": [
+        -38.00621100000001,
+        480,
+        389.003107
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pitch": -26.565051
+    },
+    {
+      "name": "Ceiling_Slope_4_-120",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_07_Ceiling120",
+      "position": [
+        69.32505200000003,
+        -120,
+        335.33747600000004
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pitch": -26.565051
+    },
+    {
+      "name": "Ceiling_Slope_4_0",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_07_Ceiling120",
+      "position": [
+        69.32505200000003,
+        0,
+        335.33747600000004
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pitch": -26.565051
+    },
+    {
+      "name": "Ceiling_Slope_4_120",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_07_Ceiling120",
+      "position": [
+        69.32505200000003,
+        120,
+        335.33747600000004
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pitch": -26.565051
+    },
+    {
+      "name": "Ceiling_Slope_4_240",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_07_Ceiling120",
+      "position": [
+        69.32505200000003,
+        240,
+        335.33747600000004
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pitch": -26.565051
+    },
+    {
+      "name": "Ceiling_Slope_4_360",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_07_Ceiling120",
+      "position": [
+        69.32505200000003,
+        360,
+        335.33747600000004
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pitch": -26.565051
+    },
+    {
+      "name": "Ceiling_Slope_4_480",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_07_Ceiling120",
+      "position": [
+        69.32505200000003,
+        480,
+        335.33747600000004
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pitch": -26.565051
+    },
+    {
+      "name": "Ceiling_Landing_196_-120",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_07_Ceiling120",
+      "position": [
+        196,
+        -120,
+        285
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Ceiling_Landing_196_0",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_07_Ceiling120",
+      "position": [
+        196,
+        0,
+        285
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Ceiling_Landing_196_120",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_07_Ceiling120",
+      "position": [
+        196,
+        120,
+        285
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Ceiling_Landing_196_240",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_07_Ceiling120",
+      "position": [
+        196,
+        240,
+        285
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Ceiling_Landing_196_360",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_07_Ceiling120",
+      "position": [
+        196,
+        360,
+        285
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Ceiling_Landing_196_480",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_07_Ceiling120",
+      "position": [
+        196,
+        480,
+        285
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Ceiling_Landing_316_-120",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_07_Ceiling120",
+      "position": [
+        316,
+        -120,
+        285
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Ceiling_Landing_316_0",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_07_Ceiling120",
+      "position": [
+        316,
+        0,
+        285
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Ceiling_Landing_316_120",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_07_Ceiling120",
+      "position": [
+        316,
+        120,
+        285
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Ceiling_Landing_316_240",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_07_Ceiling120",
+      "position": [
+        316,
+        240,
+        285
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Ceiling_Landing_316_360",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_07_Ceiling120",
+      "position": [
+        316,
+        360,
+        285
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Ceiling_Landing_316_480",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_07_Ceiling120",
+      "position": [
+        316,
+        480,
+        285
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "CrossBeam",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_08_Beam140",
+      "position": [
+        172,
+        -120,
+        260
+      ],
+      "yaw": 90,
+      "scale": [
+        4.285714285714286,
+        0.8,
+        1
+      ]
+    },
+    {
+      "name": "MainRail_-112_0",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_10_RailSlope",
+      "position": [
+        180,
+        -112,
+        65
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "name": "MainRail_-112_1",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_10_RailSlope",
+      "position": [
+        60,
+        -112,
+        125
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "name": "MainRail_-112_2",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_10_RailSlope",
+      "position": [
+        -60,
+        -112,
+        185
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "name": "MainRail_112_0",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_10_RailSlope",
+      "position": [
+        180,
+        112,
+        65
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "MainRail_112_1",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_10_RailSlope",
+      "position": [
+        60,
+        112,
+        125
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "MainRail_112_2",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_10_RailSlope",
+      "position": [
+        -60,
+        112,
+        185
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "NextRail_128_0",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_10_RailSlope",
+      "position": [
+        720,
+        128,
+        -115
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "name": "NextRail_128_1",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_10_RailSlope",
+      "position": [
+        600,
+        128,
+        -55
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "name": "NextRail_128_2",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_10_RailSlope",
+      "position": [
+        480,
+        128,
+        5
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "name": "NextRail_352_0",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_10_RailSlope",
+      "position": [
+        720,
+        352,
+        -115
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "NextRail_352_1",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_10_RailSlope",
+      "position": [
+        600,
+        352,
+        -55
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "NextRail_352_2",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_10_RailSlope",
+      "position": [
+        480,
+        352,
+        5
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "OpenEdgeRailPost60",
+      "mesh": "/Engine/BasicShapes/Cube",
+      "position": [
+        60,
+        120,
+        106
+      ],
+      "yaw": 0,
+      "scale": [
+        0.04,
+        0.04,
+        0.92
+      ]
+    },
+    {
+      "name": "OpenEdgeRailPost180",
+      "mesh": "/Engine/BasicShapes/Cube",
+      "position": [
+        180,
+        120,
+        46
+      ],
+      "yaw": 0,
+      "scale": [
+        0.04,
+        0.04,
+        0.92
+      ]
+    },
+    {
+      "name": "MainBottomTransition_-112",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_17_SlopeToLevel",
+      "position": [
+        180,
+        -112,
+        90
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        -1
+      ]
+    },
+    {
+      "name": "MainBottomTransition_112",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_17_SlopeToLevel",
+      "position": [
+        180,
+        112,
+        90
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        -1
+      ]
+    },
+    {
+      "name": "LandingRail_-112",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_09_RailHorizontal",
+      "position": [
+        183.5777088,
+        -112,
+        64.1554175
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LandingRailEnd_-112",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_12_RailReturnHorizontalLeft",
+      "position": [
+        303.5777088,
+        -112,
+        64.1554175
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LandingRail_472",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_09_RailHorizontal",
+      "position": [
+        183.5777088,
+        472,
+        64.1554175
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "name": "LandingRailEnd_472",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_12_RailReturnHorizontalRight",
+      "position": [
+        303.5777088,
+        472,
+        64.1554175
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LeftSkirt-300",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_22_Skirting120",
+      "position": [
+        -300,
+        -119,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LeftSkirt-180",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_22_Skirting120",
+      "position": [
+        -180,
+        -119,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LeftSkirt-60",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_22_Skirting120",
+      "position": [
+        -60,
+        -119,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LeftSkirt60",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_22_Skirting120",
+      "position": [
+        60,
+        -119,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LeftSkirt180",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_22_Skirting120",
+      "position": [
+        180,
+        -119,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Lamp_Ceiling",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_15_LightFixture",
+      "position": [
+        -30,
+        0,
+        374
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LuminousStrip_Ceiling-1",
+      "mesh": "/Engine/BasicShapes/Cube",
+      "position": [
+        -24.5,
+        -3.3677786976552215E-16,
+        363.3
+      ],
+      "yaw": 90,
+      "scale": [
+        1.04,
+        0.026,
+        0.006
+      ]
+    },
+    {
+      "name": "LuminousStrip_Ceiling1",
+      "mesh": "/Engine/BasicShapes/Cube",
+      "position": [
+        -35.5,
+        3.3677786976552215E-16,
+        363.3
+      ],
+      "yaw": 90,
+      "scale": [
+        1.04,
+        0.026,
+        0.006
+      ]
+    },
+    {
+      "name": "Lamp_LeftWall",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_15_LightFixture",
+      "position": [
+        -80,
+        -108,
+        385
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LuminousStrip_LeftWall-1",
+      "mesh": "/Engine/BasicShapes/Cube",
+      "position": [
+        -80.0,
+        -113.5,
+        374.3
+      ],
+      "yaw": 0,
+      "scale": [
+        1.04,
+        0.026,
+        0.006
+      ]
+    },
+    {
+      "name": "LuminousStrip_LeftWall1",
+      "mesh": "/Engine/BasicShapes/Cube",
+      "position": [
+        -80.0,
+        -102.5,
+        374.3
+      ],
+      "yaw": 0,
+      "scale": [
+        1.04,
+        0.026,
+        0.006
+      ]
+    },
+    {
+      "name": "Lamp_RightWall",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_15_LightFixture",
+      "position": [
+        -80,
+        108,
+        385
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LuminousStrip_RightWall-1",
+      "mesh": "/Engine/BasicShapes/Cube",
+      "position": [
+        -80.0,
+        102.5,
+        374.3
+      ],
+      "yaw": 0,
+      "scale": [
+        1.04,
+        0.026,
+        0.006
+      ]
+    },
+    {
+      "name": "LuminousStrip_RightWall1",
+      "mesh": "/Engine/BasicShapes/Cube",
+      "position": [
+        -80.0,
+        113.5,
+        374.3
+      ],
+      "yaw": 0,
+      "scale": [
+        1.04,
+        0.026,
+        0.006
+      ]
+    },
+    {
+      "name": "Lamp_Beyond",
+      "mesh": "/Game/Environment/StairwellModular/ReviewKit/Meshes/SM_SW_15_LightFixture",
+      "position": [
+        620,
+        240,
+        210
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LuminousStrip_Beyond-1",
+      "mesh": "/Engine/BasicShapes/Cube",
+      "position": [
+        625.5,
+        240.0,
+        199.3
+      ],
+      "yaw": 90,
+      "scale": [
+        1.04,
+        0.026,
+        0.006
+      ]
+    },
+    {
+      "name": "LuminousStrip_Beyond1",
+      "mesh": "/Engine/BasicShapes/Cube",
+      "position": [
+        614.5,
+        240.0,
+        199.3
+      ],
+      "yaw": 90,
+      "scale": [
+        1.04,
+        0.026,
+        0.006
+      ]
+    }
+  ],
+  "camera": {
+    "name": "reference_camera_revision",
+    "position": [
+      -100,
+      -40,
+      310
+    ],
+    "rotation": [
+      -32,
+      13,
+      0
+    ],
+    "fov": 68,
+    "aspect": 0.6839772007599747
+  },
+  "status": "finish_revision_rendered_verified",
+  "assumptions": [
+    "Depth inferred from one image; two twelve-step flights",
+    "15/30cm stairs, 240cm scene width; 220cm rail clearance",
+    "Sloped ceiling follows stair pitch; landing ceiling 285cm",
+    "Scene material overrides: subdued world noise and brighter emission; final weathering pending"
+  ],
+  "lighting": {
+    "fixtures": {
+      "Ceiling": {
+        "position": [
+          100,
+          55,
+          320
+        ],
+        "yaw": 90,
+        "length_scale": 0.65,
+        "intensity": 1600,
+        "depth_scale": 0.55,
+        "height_scale": 0.45
+      },
+      "LeftWall": {
+        "position": [
+          110,
+          -115,
+          318
+        ],
+        "yaw": 0,
+        "length_scale": 0.8,
+        "intensity": 1000,
+        "depth_scale": 0.55,
+        "height_scale": 0.45,
+        "pitch": 0,
+        "roll": -90.0
+      },
+      "RightWall": {
+        "position": [
+          65,
+          115,
+          318
+        ],
+        "yaw": 0,
+        "length_scale": 0.8,
+        "intensity": 1000,
+        "depth_scale": 0.55,
+        "height_scale": 0.45,
+        "pitch": 0,
+        "roll": 90.0
+      },
+      "Beyond": {
+        "position": [
+          620,
+          240,
+          210
+        ],
+        "yaw": 90,
+        "length_scale": 1.0,
+        "intensity": 2200
+      }
+    },
+    "landing_fill": 1900
+  },
+  "material_revision": "Weathered v001; material_verification.json",
+  "reference_details": {
+    "landing_pattern_yaw_deg": 30,
+    "landing_footprint_unchanged": true,
+    "right_wall_end_cm": 120,
+    "rear_panels": 4,
+    "door_push_bars": 2,
+    "reference_hidden_geometry": "inferred"
+  },
+  "finish_revision": "finish_verification.json"
+}

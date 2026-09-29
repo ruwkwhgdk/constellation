@@ -1,0 +1,9 @@
+{
+  "model_version": "gpt_image_2",
+  "prompt": "Edit this 4x4 modular asset sheet. Preserve the grid, labels 01-16, camera style, neutral gray background, materials, and all unmentioned cells exactly. Correct only these cells: 01 replace with a BARE straight staircase of exactly SIX steps, each 15cm high and 30cm deep, total width 140cm. ABSOLUTELY NO side walls, parapets, railings, posts or handrails; exposed stair side profile on both sides. 02 plain gray tiled landing slab, REMOVE all yellow tactile tiles and replace them with matching gray floor tiles. 08 replace L-shaped beam with one simple STRAIGHT rectangular concrete beam, no elbow or perpendicular end. 14 show only the gray metal DOOR LEAF with its handle and hinges, remove the surrounding door FRAME, which already exists separately in 13. 06 use the same small tile size and dark skirting as 05. Keep every object isolated and fully visible. This sheet is for separate reusable game modules, never fused assemblies.",
+  "file": {
+    "file_token": "7e5b07b2-3a5f-455d-8df7-20799d9e3f0c",
+    "type": "png"
+  },
+  "type": "generate_image"
+}

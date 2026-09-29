@@ -1,0 +1,12 @@
+[
+  {
+    "mesh": "SM_OH_UpperWallInfillA",
+    "triangles": 454,
+    "nonmanifold": 0
+  },
+  {
+    "mesh": "SM_OH_UpperWallInfillB",
+    "triangles": 462,
+    "nonmanifold": 0
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "id": "17",
+  "name": "Shrub",
+  "mesh": "SM_OH_Clean_17_Shrub",
+  "source": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\OvergrownHall\\TripoReplacement\\v002\\17_Shrub\\prepared.blend",
+  "source_triangles": 14970,
+  "triangles": 14970,
+  "budget": 15000,
+  "dimensions_m": [
+    1.446337878704071,
+    1.2566995024681091,
+    1.190655590267852
+  ],
+  "boundary_edges": 38,
+  "basecolor": null,
+  "organic": true,
+  "edits": [
+    "bounded local spike smoothing; original topology and UV retained"
+  ]
+}

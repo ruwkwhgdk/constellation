@@ -1,0 +1,11 @@
+{
+  "mesh": "SM_OH_ShoreSlab",
+  "triangles": 532,
+  "boundary_edges": 0,
+  "nonmanifold_edges": 0,
+  "dimensions_m": [
+    2.001382350921631,
+    1.9994826316833496,
+    0.15033036470413208
+  ]
+}

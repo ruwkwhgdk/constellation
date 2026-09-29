@@ -1,0 +1,9 @@
+{
+  "file": {
+    "type": "png",
+    "file_token": "237e81e0-1047-4330-8532-8145f1e8bcd2"
+  },
+  "prompt": "Generate a matrix of individual modular pieces of this subway space. Supplement the reference kit with a separate 2x3 sheet of SIX missing connector modules, labels 17-22. Gray background, isolated realistic game assets, same worn metal and white tile materials, consistent isometric studio views. 17: pair of smooth metal handrail bends transitioning from an ascending 26.6-degree slope into horizontal. 18: pair transitioning from horizontal into descending 26.6-degree slope. 19: pair of SLOPED handrail terminal returns curving into the wall, brackets separate, no wall. All rails use identical round tube diameter and maintain vertical pair spacing. 20: white small-tiled OUTSIDE wall corner, show convex external corner, not an inside corner. 21: a narrow tiled vertical wall END CAP showing finished exposed wall thickness. 22: dark narrow skirting trim with straight and corner variants. No full staircase, no doors, no people, no arrows, no extra modules. Show complete objects, no clipping.",
+  "type": "generate_image",
+  "model_version": "gpt_image_2"
+}

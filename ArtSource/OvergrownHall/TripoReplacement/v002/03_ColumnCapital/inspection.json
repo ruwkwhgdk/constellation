@@ -1,0 +1,21 @@
+{
+  "id": "03",
+  "name": "ColumnCapital",
+  "mesh": "SM_OH_T_03_ColumnCapital",
+  "source_triangles": 28378,
+  "triangles": 7970,
+  "budget": 8000,
+  "dimensions_m": [
+    0.9499752521514893,
+    0.9999603629112244,
+    0.4998127520084381
+  ],
+  "boundary_edges": 0,
+  "uv_layers": 1,
+  "edits": [],
+  "textures": [
+    "basecolor.png",
+    "normal.png",
+    "rm.png"
+  ]
+}

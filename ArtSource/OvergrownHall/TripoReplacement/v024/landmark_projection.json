@@ -1,0 +1,49 @@
+{
+  "method": "Pinhole projection of unchanged reference camera; reference landmarks visually estimated after letterbox normalization. This is an anchor check, not image similarity.",
+  "tolerance_px": 20,
+  "all_within_tolerance": true,
+  "landmarks": [
+    {
+      "feature": "main window vertical",
+      "target_pixel": 393,
+      "projected_pixel": 395.12,
+      "difference_px": 2.12
+    },
+    {
+      "feature": "main window vertical",
+      "target_pixel": 537,
+      "projected_pixel": 532.14,
+      "difference_px": 4.86
+    },
+    {
+      "feature": "main window vertical",
+      "target_pixel": 668,
+      "projected_pixel": 664.86,
+      "difference_px": 3.14
+    },
+    {
+      "feature": "main window vertical",
+      "target_pixel": 821,
+      "projected_pixel": 813.9,
+      "difference_px": 7.1
+    },
+    {
+      "feature": "rear window horizontal",
+      "target_pixel": 153,
+      "projected_pixel": 151.2,
+      "difference_px": 1.8
+    },
+    {
+      "feature": "rear window horizontal",
+      "target_pixel": 210,
+      "projected_pixel": 211.74,
+      "difference_px": 1.74
+    },
+    {
+      "feature": "rear window horizontal",
+      "target_pixel": 368,
+      "projected_pixel": 363.41,
+      "difference_px": 4.59
+    }
+  ]
+}

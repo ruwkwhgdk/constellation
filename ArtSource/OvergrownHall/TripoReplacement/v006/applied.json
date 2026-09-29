@@ -1,0 +1,822 @@
+{
+  "map": "/Game/Environment/OvergrownHall/TripoFull/Maps/L_OvergrownHall_TripoFull",
+  "moss_instances": {
+    "05": 24,
+    "09": 18,
+    "01": 10,
+    "02": 55,
+    "03": 10,
+    "26": 18,
+    "13": 163,
+    "04": 8,
+    "12": 1
+  },
+  "foliage": [
+    {
+      "label": "OH_Growth_Vine_000",
+      "kind": "Vine",
+      "position": [
+        -602,
+        603.4924416698245,
+        106.95028966015275
+      ],
+      "scale": [
+        1.2433300036292603,
+        0.6,
+        1.1031762372736869
+      ],
+      "yaw": 90
+    },
+    {
+      "label": "OH_Growth_Vine_001",
+      "kind": "Vine",
+      "position": [
+        -602,
+        611.2875831450656,
+        314.0370471121585
+      ],
+      "scale": [
+        1.0877579735874296,
+        0.6,
+        1.4204938405005845
+      ],
+      "yaw": 90
+    },
+    {
+      "label": "OH_Growth_Vine_002",
+      "kind": "Vine",
+      "position": [
+        -602,
+        602.4446730151906,
+        517.2439813390703
+      ],
+      "scale": [
+        0.8859583220284493,
+        0.6,
+        0.9612367720716843
+      ],
+      "yaw": 90
+    },
+    {
+      "label": "OH_Growth_Leaf_003",
+      "kind": "Leaf",
+      "position": [
+        -593,
+        600,
+        45
+      ],
+      "scale": [
+        0.4,
+        0.4,
+        0.5
+      ],
+      "yaw": -9.572535032546064
+    },
+    {
+      "label": "OH_Growth_Vine_004",
+      "kind": "Vine",
+      "position": [
+        -602,
+        991.6189727917113,
+        67.37508547229152
+      ],
+      "scale": [
+        1.0751075193635513,
+        0.6,
+        1.4147692021594747
+      ],
+      "yaw": 90
+    },
+    {
+      "label": "OH_Growth_Vine_005",
+      "kind": "Vine",
+      "position": [
+        -602,
+        1010.9251173436951,
+        322.2475756204663
+      ],
+      "scale": [
+        1.3046330311684398,
+        0.6,
+        1.1675476536907707
+      ],
+      "yaw": 90
+    },
+    {
+      "label": "OH_Growth_Leaf_006",
+      "kind": "Leaf",
+      "position": [
+        -593,
+        1000,
+        45
+      ],
+      "scale": [
+        0.4,
+        0.4,
+        0.5
+      ],
+      "yaw": 4.173654646212576
+    },
+    {
+      "label": "OH_Growth_Vine_007",
+      "kind": "Vine",
+      "position": [
+        -602,
+        1790.1590007548348,
+        105.08940922282795
+      ],
+      "scale": [
+        1.2431857621619296,
+        0.6,
+        1.2899822548374957
+      ],
+      "yaw": 90
+    },
+    {
+      "label": "OH_Growth_Vine_008",
+      "kind": "Vine",
+      "position": [
+        -602,
+        1791.6645447257413,
+        327.28421372206526
+      ],
+      "scale": [
+        0.830554395254863,
+        0.6,
+        1.4152949885129233
+      ],
+      "yaw": 90
+    },
+    {
+      "label": "OH_Growth_Leaf_009",
+      "kind": "Leaf",
+      "position": [
+        -593,
+        1800,
+        45
+      ],
+      "scale": [
+        0.4,
+        0.4,
+        0.5
+      ],
+      "yaw": -17.900686119565723
+    },
+    {
+      "label": "OH_Growth_Vine_010",
+      "kind": "Vine",
+      "position": [
+        602,
+        1005.9923321471138,
+        87.1525309635935
+      ],
+      "scale": [
+        1.0555944116786335,
+        0.6,
+        1.042756160228765
+      ],
+      "yaw": 90
+    },
+    {
+      "label": "OH_Growth_Vine_011",
+      "kind": "Vine",
+      "position": [
+        602,
+        998.5455972868115,
+        305.19987149276517
+      ],
+      "scale": [
+        0.9249689162597109,
+        0.6,
+        1.2034138372576704
+      ],
+      "yaw": 90
+    },
+    {
+      "label": "OH_Growth_Leaf_012",
+      "kind": "Leaf",
+      "position": [
+        593,
+        1000,
+        45
+      ],
+      "scale": [
+        0.4,
+        0.4,
+        0.5
+      ],
+      "yaw": 13.547166306462714
+    },
+    {
+      "label": "OH_Growth_Vine_013",
+      "kind": "Vine",
+      "position": [
+        602,
+        1404.5414505620986,
+        75.33324175838946
+      ],
+      "scale": [
+        1.2753831902436048,
+        0.6,
+        0.9677422265098294
+      ],
+      "yaw": 90
+    },
+    {
+      "label": "OH_Growth_Vine_014",
+      "kind": "Vine",
+      "position": [
+        602,
+        1404.0486676151374,
+        295.80671109549803
+      ],
+      "scale": [
+        1.1881794965177785,
+        0.6,
+        1.1776423028626672
+      ],
+      "yaw": 90
+    },
+    {
+      "label": "OH_Growth_Vine_015",
+      "kind": "Vine",
+      "position": [
+        602,
+        1397.4790915724095,
+        506.22076201805345
+      ],
+      "scale": [
+        1.0162442827719047,
+        0.6,
+        0.9793210559682831
+      ],
+      "yaw": 90
+    },
+    {
+      "label": "OH_Growth_Leaf_016",
+      "kind": "Leaf",
+      "position": [
+        593,
+        1400,
+        45
+      ],
+      "scale": [
+        0.4,
+        0.4,
+        0.5
+      ],
+      "yaw": 13.980649722368085
+    },
+    {
+      "label": "OH_Growth_Vine_017",
+      "kind": "Vine",
+      "position": [
+        602,
+        1811.3114889360247,
+        73.33323775920627
+      ],
+      "scale": [
+        1.2105166945442654,
+        0.6,
+        1.0418047581234056
+      ],
+      "yaw": 90
+    },
+    {
+      "label": "OH_Growth_Vine_018",
+      "kind": "Vine",
+      "position": [
+        602,
+        1797.7204644610708,
+        301.32735596995633
+      ],
+      "scale": [
+        1.1379055852059263,
+        0.6,
+        1.149051453090667
+      ],
+      "yaw": 90
+    },
+    {
+      "label": "OH_Growth_Leaf_019",
+      "kind": "Leaf",
+      "position": [
+        593,
+        1800,
+        45
+      ],
+      "scale": [
+        0.4,
+        0.4,
+        0.5
+      ],
+      "yaw": 23.329382283154857
+    },
+    {
+      "label": "OH_Growth_Vine_020",
+      "kind": "Vine",
+      "position": [
+        -485,
+        1918,
+        155.7874775311818
+      ],
+      "scale": [
+        1.4868363549802446,
+        0.65,
+        0.521062612344091
+      ],
+      "yaw": 0
+    },
+    {
+      "label": "OH_Growth_Leaf_021",
+      "kind": "Leaf",
+      "position": [
+        -485,
+        1910,
+        248
+      ],
+      "scale": [
+        0.38,
+        0.24,
+        0.28
+      ],
+      "yaw": 8.219103207781721
+    },
+    {
+      "label": "OH_Growth_Vine_022",
+      "kind": "Vine",
+      "position": [
+        -405,
+        1918,
+        133.6741016081742
+      ],
+      "scale": [
+        1.329221444919524,
+        0.65,
+        0.631629491959129
+      ],
+      "yaw": 0
+    },
+    {
+      "label": "OH_Growth_Leaf_023",
+      "kind": "Leaf",
+      "position": [
+        -405,
+        1910,
+        248
+      ],
+      "scale": [
+        0.38,
+        0.24,
+        0.28
+      ],
+      "yaw": -8.831381799974219
+    },
+    {
+      "label": "OH_Growth_Vine_024",
+      "kind": "Vine",
+      "position": [
+        -325,
+        1918,
+        142.18315998392188
+      ],
+      "scale": [
+        1.4694763688228014,
+        0.65,
+        0.5890842000803906
+      ],
+      "yaw": 0
+    },
+    {
+      "label": "OH_Growth_Leaf_025",
+      "kind": "Leaf",
+      "position": [
+        -325,
+        1910,
+        248
+      ],
+      "scale": [
+        0.38,
+        0.24,
+        0.28
+      ],
+      "yaw": -4.251830859778585
+    },
+    {
+      "label": "OH_Growth_Vine_026",
+      "kind": "Vine",
+      "position": [
+        -215,
+        1918,
+        156.4372290978983
+      ],
+      "scale": [
+        1.2313842972852584,
+        0.65,
+        0.5178138545105084
+      ],
+      "yaw": 0
+    },
+    {
+      "label": "OH_Growth_Leaf_027",
+      "kind": "Leaf",
+      "position": [
+        -215,
+        1910,
+        248
+      ],
+      "scale": [
+        0.38,
+        0.24,
+        0.28
+      ],
+      "yaw": -5.56450038365218
+    },
+    {
+      "label": "OH_Growth_Vine_028",
+      "kind": "Vine",
+      "position": [
+        -110,
+        1918,
+        153.4921091474921
+      ],
+      "scale": [
+        1.4836993401207454,
+        0.65,
+        0.5325394542625395
+      ],
+      "yaw": 0
+    },
+    {
+      "label": "OH_Growth_Leaf_029",
+      "kind": "Leaf",
+      "position": [
+        -110,
+        1910,
+        248
+      ],
+      "scale": [
+        0.38,
+        0.24,
+        0.28
+      ],
+      "yaw": 1.887063018242717
+    },
+    {
+      "label": "OH_Growth_Vine_030",
+      "kind": "Vine",
+      "position": [
+        35,
+        1918,
+        62.285223959131
+      ],
+      "scale": [
+        1.3018429063372676,
+        0.65,
+        0.988573880204345
+      ],
+      "yaw": 0
+    },
+    {
+      "label": "OH_Growth_Leaf_031",
+      "kind": "Leaf",
+      "position": [
+        35,
+        1910,
+        248
+      ],
+      "scale": [
+        0.38,
+        0.24,
+        0.28
+      ],
+      "yaw": 9.115165461138616
+    },
+    {
+      "label": "OH_Growth_Vine_032",
+      "kind": "Vine",
+      "position": [
+        145,
+        1918,
+        67.16411125762457
+      ],
+      "scale": [
+        1.2348798823491711,
+        0.65,
+        0.9641794437118771
+      ],
+      "yaw": 0
+    },
+    {
+      "label": "OH_Growth_Leaf_033",
+      "kind": "Leaf",
+      "position": [
+        145,
+        1910,
+        248
+      ],
+      "scale": [
+        0.38,
+        0.24,
+        0.28
+      ],
+      "yaw": -10.191667294505432
+    },
+    {
+      "label": "OH_Growth_Vine_034",
+      "kind": "Vine",
+      "position": [
+        280,
+        1918,
+        87.99442999134553
+      ],
+      "scale": [
+        1.323276906586811,
+        0.65,
+        0.8600278500432724
+      ],
+      "yaw": 0
+    },
+    {
+      "label": "OH_Growth_Leaf_035",
+      "kind": "Leaf",
+      "position": [
+        280,
+        1910,
+        248
+      ],
+      "scale": [
+        0.38,
+        0.24,
+        0.28
+      ],
+      "yaw": -8.869169387726863
+    },
+    {
+      "label": "OH_Growth_Vine_036",
+      "kind": "Vine",
+      "position": [
+        400,
+        1918,
+        140.8634822648944
+      ],
+      "scale": [
+        1.6119527623362744,
+        0.65,
+        0.595682588675528
+      ],
+      "yaw": 0
+    },
+    {
+      "label": "OH_Growth_Leaf_037",
+      "kind": "Leaf",
+      "position": [
+        400,
+        1910,
+        248
+      ],
+      "scale": [
+        0.38,
+        0.24,
+        0.28
+      ],
+      "yaw": -0.8929953771446009
+    },
+    {
+      "label": "OH_Growth_Vine_038",
+      "kind": "Vine",
+      "position": [
+        490,
+        1918,
+        95.61500631314934
+      ],
+      "scale": [
+        1.6753244980037203,
+        0.65,
+        0.8219249684342533
+      ],
+      "yaw": 0
+    },
+    {
+      "label": "OH_Growth_Leaf_039",
+      "kind": "Leaf",
+      "position": [
+        490,
+        1910,
+        248
+      ],
+      "scale": [
+        0.38,
+        0.24,
+        0.28
+      ],
+      "yaw": -7.728038221537542
+    },
+    {
+      "label": "OH_Growth_Vine_040",
+      "kind": "Vine",
+      "position": [
+        -500,
+        1938,
+        365
+      ],
+      "scale": [
+        0.48,
+        0.6,
+        0.92
+      ],
+      "yaw": 0
+    },
+    {
+      "label": "OH_Growth_Vine_041",
+      "kind": "Vine",
+      "position": [
+        -500,
+        1938,
+        735
+      ],
+      "scale": [
+        0.48,
+        0.6,
+        0.92
+      ],
+      "yaw": 0
+    },
+    {
+      "label": "OH_Growth_Vine_042",
+      "kind": "Vine",
+      "position": [
+        -262,
+        1938,
+        365
+      ],
+      "scale": [
+        0.48,
+        0.6,
+        0.92
+      ],
+      "yaw": 0
+    },
+    {
+      "label": "OH_Growth_Vine_043",
+      "kind": "Vine",
+      "position": [
+        -262,
+        1938,
+        735
+      ],
+      "scale": [
+        0.48,
+        0.6,
+        0.92
+      ],
+      "yaw": 0
+    },
+    {
+      "label": "OH_Growth_Vine_044",
+      "kind": "Vine",
+      "position": [
+        262,
+        1938,
+        735
+      ],
+      "scale": [
+        0.48,
+        0.6,
+        0.92
+      ],
+      "yaw": 0
+    },
+    {
+      "label": "OH_Growth_Vine_045",
+      "kind": "Vine",
+      "position": [
+        500,
+        1938,
+        365
+      ],
+      "scale": [
+        0.48,
+        0.6,
+        0.92
+      ],
+      "yaw": 0
+    },
+    {
+      "label": "OH_Growth_Vine_046",
+      "kind": "Vine",
+      "position": [
+        500,
+        1938,
+        735
+      ],
+      "scale": [
+        0.48,
+        0.6,
+        0.92
+      ],
+      "yaw": 0
+    },
+    {
+      "label": "OH_Growth_Vine_047",
+      "kind": "Vine",
+      "position": [
+        -603,
+        720,
+        630
+      ],
+      "scale": [
+        1.6,
+        0.6,
+        0.84
+      ],
+      "yaw": 90
+    },
+    {
+      "label": "OH_Growth_Vine_048",
+      "kind": "Vine",
+      "position": [
+        -603,
+        1330,
+        630
+      ],
+      "scale": [
+        1.6,
+        0.6,
+        0.84
+      ],
+      "yaw": 90
+    },
+    {
+      "label": "OH_Growth_Vine_049",
+      "kind": "Vine",
+      "position": [
+        -603,
+        1690,
+        630
+      ],
+      "scale": [
+        1.6,
+        0.6,
+        0.84
+      ],
+      "yaw": 90
+    },
+    {
+      "label": "OH_Growth_Vine_050",
+      "kind": "Vine",
+      "position": [
+        603,
+        720,
+        630
+      ],
+      "scale": [
+        1.6,
+        0.6,
+        0.84
+      ],
+      "yaw": 90
+    },
+    {
+      "label": "OH_Growth_Vine_051",
+      "kind": "Vine",
+      "position": [
+        603,
+        1330,
+        630
+      ],
+      "scale": [
+        1.6,
+        0.6,
+        0.84
+      ],
+      "yaw": 90
+    },
+    {
+      "label": "OH_Growth_Vine_052",
+      "kind": "Vine",
+      "position": [
+        603,
+        1690,
+        630
+      ],
+      "scale": [
+        1.6,
+        0.6,
+        0.84
+      ],
+      "yaw": 90
+    }
+  ],
+  "added_foliage": 53,
+  "water_material": "/Game/Environment/OvergrownHall/TripoFull/GrowthMaterials/M_OH_ReflectivePuddle.M_OH_ReflectivePuddle",
+  "water_model": "Stylized opaque puddle + dynamic planar reflection",
+  "water_roughness": 0.018,
+  "water_collision": "NoCollision",
+  "interactive_water": false,
+  "playtest": false,
+  "water_level_cm": 2.2,
+  "reflection_screen_percentage": 75,
+  "physical_transmission": false,
+  "animated_ripples": false
+}

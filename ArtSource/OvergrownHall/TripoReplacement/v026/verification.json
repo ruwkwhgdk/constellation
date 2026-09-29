@@ -1,0 +1,10 @@
+{
+  "saved_map": true,
+  "actors": 755,
+  "existing_transforms_meshes_preserved": true,
+  "closed_roof": 50,
+  "birds": 28,
+  "tree_shadows_disabled": 10,
+  "planar_screen_percentage": 75,
+  "playtest": false
+}

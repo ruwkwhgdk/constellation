@@ -1,0 +1,14 @@
+{
+  "stage": "detail_pass_01_not_final",
+  "mesh_objects": 1094,
+  "triangles": 134896,
+  "finite_vertices": true,
+  "foliage_proxy_replaced": true,
+  "bird_rig": "pending",
+  "limitations": [
+    "procedural surface variation, not final authored peeling masks",
+    "opaque water approximation",
+    "no foliage wind or LOD",
+    "no runtime traversal validation"
+  ]
+}

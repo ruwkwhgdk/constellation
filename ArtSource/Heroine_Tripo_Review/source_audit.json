@@ -1,0 +1,155 @@
+{
+  "source": "anime character 3d model.zip",
+  "vertices": 26493,
+  "triangles": 51898,
+  "meshes": 1,
+  "armatures": 0,
+  "uv_layers": [
+    "Attribute"
+  ],
+  "materials": 1,
+  "connected_component_vertex_counts": [
+    7895,
+    5801,
+    2106,
+    1866,
+    1453,
+    1449,
+    1002,
+    1000,
+    853,
+    650,
+    175,
+    174,
+    163,
+    141,
+    140,
+    122,
+    120,
+    115,
+    104,
+    104,
+    86,
+    77,
+    77,
+    76,
+    74,
+    73,
+    71,
+    61,
+    56,
+    56,
+    56,
+    55,
+    32,
+    32,
+    25,
+    25,
+    25,
+    17,
+    16,
+    15,
+    15,
+    13,
+    13,
+    7,
+    7
+  ],
+  "boundary_edges": 1442,
+  "nonmanifold_edges": 1651,
+  "zero_area_faces": 10,
+  "original_object_matrix": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      7.549790126404332e-08,
+      -1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      7.549790126404332e-08,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "presentation_rotation": "Imported transform preserved; source file unchanged",
+  "upright_bounds": [
+    [
+      -0.433837890625,
+      -0.08715822547674179,
+      2.930705234049924e-09
+    ],
+    [
+      0.433837890625,
+      0.08715829253196716,
+      0.99951171875
+    ]
+  ],
+  "images": [
+    {
+      "name": "anime_character_3d_model_basecolor",
+      "size": [
+        4096,
+        4096
+      ],
+      "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\source\\anime+character+3d+model.fbm\\anime+character+3d+model_basecolor.jpg"
+    }
+  ],
+  "material_nodes": [
+    {
+      "name": "e2f49127_1db1_4885_a01a_ce9fba0843e8",
+      "nodes": [
+        "BSDF_PRINCIPLED",
+        "OUTPUT_MATERIAL",
+        "NORMAL_MAP",
+        "TEX_IMAGE",
+        "TEX_COORD",
+        "MAPPING"
+      ],
+      "links": [
+        [
+          "BSDF_PRINCIPLED",
+          "BSDF",
+          "OUTPUT_MATERIAL",
+          "Surface"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal",
+          "BSDF_PRINCIPLED",
+          "Normal"
+        ],
+        [
+          "TEX_IMAGE",
+          "Color",
+          "BSDF_PRINCIPLED",
+          "Base Color"
+        ],
+        [
+          "MAPPING",
+          "Vector",
+          "TEX_IMAGE",
+          "Vector"
+        ],
+        [
+          "TEX_COORD",
+          "UV",
+          "MAPPING",
+          "Vector"
+        ]
+      ]
+    }
+  ]
+}

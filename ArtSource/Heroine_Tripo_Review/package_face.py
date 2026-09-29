@@ -1,0 +1,47 @@
+from pathlib import Path
+from PIL import Image,ImageDraw,ImageFont
+import json,zipfile,shutil
+R=Path(__file__).resolve().parent;O=R/'FaceClean'
+report=json.loads((O/'validation.json').read_text())
+assert report['pass'],report
+font=ImageFont.truetype('C:/Windows/Fonts/malgun.ttf',24)
+for name,paths,labels in [
+ ('comparison',[O/'diagnostics/eye_before.png',O/'renders/eye.png'],['이전 보정본','얼굴 경계·조형 수정']),
+ ('clay_comparison',[O/'diagnostics/eye_clay_before.png',O/'renders/eye_clay.png'],['기존 표면 구조','수정한 표면 구조'])]:
+ sheet=Image.new('RGB',(1400,760),(30,30,33));d=ImageDraw.Draw(sheet)
+ for i,(p,label) in enumerate(zip(paths,labels)):
+  sheet.paste(Image.open(p).convert('RGB').resize((700,700),Image.Resampling.LANCZOS),(700*i,60));d.text((700*i+20,16),label,font=font,fill='white')
+ sheet.save(O/'renders'/f'{name}.png')
+text=f'''# Heroine — 얼굴 경계와 세부 조형 정리
+
+## 표시한 부분별 수정
+
+- 헤어핀: 흐릿한 원본 색과 요철을 정리하고 보라색·은색 핀을 별도 메시로 제작했습니다. 핀은 헤어 굴곡을 따라 찌그러지는 대신 곧은 형태를 유지합니다.
+- 눈썹/윗눈꺼풀: 생성 모델의 작은 분리 조각 315면을 제거했습니다. 양쪽 눈 주변의 손상된 피부 영역을 교체하고 기존 피부 경계에 직접 연결했습니다. 눈썹과 위 속눈썹 선을 단순하고 연속된 형태로 정리했습니다.
+- 아랫눈꺼풀: 이전 보정본의 별도 연결 패치를 제거했습니다. 새 눈꺼풀은 주변 피부와 정점을 공유합니다. 얇은 아래 윤곽만 남기고 연결부의 곡률과 노멀을 정리했습니다.
+- 눈 표면: 새 눈 구멍의 외곽에 맞춰 흰자를 다시 만들고, 붉은 홍채를 눈 표면에 맞춰 배치했습니다.
+- 얼굴 옆 머리카락: 피부색이 번진 기존 색 정보를 제거하고 일관된 검정·보라색 계열 재질을 적용했습니다. 이 때문에 원본의 그려진 하이라이트도 단순해졌습니다.
+- 피부: 겹쳐 그려진 선을 제거하기 위해 머리 부분을 깨끗한 피부 재질로 바꾸었습니다. 원본 텍스처의 세부 색감과 볼 홍조는 유지되지 않습니다.
+
+## 검증
+
+- 정면 확대, 텍스처 없는 회색 재질, 얼굴 정면, 두 사선 각도, 전신을 렌더했습니다.
+- 눈 아래 볼의 사선 자국을 추적해 겹친 면을 재연결했습니다. 해당 영역의 8,000개 광선 표본 검사에서 앞쪽 피부 중복 교차가 0건이었습니다.
+- 총 {report['blend']['triangles']:,} 삼각형입니다.
+- FBX 재수입 시 삼각형 수 일치, 유효 좌표, UV 존재, 이미지 로딩을 확인했습니다.
+- 검사한 눈 주변 피부 영역에서 3개 이상의 면이 붙은 엣지는 {report['skin_region_edges_over_two_faces']}개입니다. 눈 구멍의 열린 경계는 별도 눈 표면과 맞춰진 의도된 구성입니다.
+- `validation.json`은 실제 재수입 검사 결과이고 `construction.json`은 교체한 영역의 통계입니다.
+
+## 파일
+
+`Heroine_FaceClean.blend`와 `Heroine_FaceClean.fbx`는 텍스처를 포함합니다. `textures/`에 별도 사본을 두었습니다. `renders/comparison.png`는 같은 카메라와 조명으로 비교한 이미지입니다.
+
+이번 작업은 표시된 얼굴 영역의 외형 정리입니다. 표정 셰이프키·리깅·애니메이션 변형 검증은 포함하지 않습니다. 기존 원본과 이전 보정본은 그대로 보존했습니다.
+'''
+(O/'README.md').write_text(text,encoding='utf-8')
+archive=R/'Heroine_FaceClean_Package.zip'
+with zipfile.ZipFile(archive,'w',zipfile.ZIP_DEFLATED) as z:
+ for p in O.rglob('*'):
+  if p.is_file() and p.suffix!='.blend1':z.write(p,p.relative_to(O))
+with zipfile.ZipFile(archive) as z:assert z.testzip() is None
+print('PACKAGE',archive,'BYTES',archive.stat().st_size)

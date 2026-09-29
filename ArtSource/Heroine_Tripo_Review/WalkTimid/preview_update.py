@@ -1,0 +1,1 @@
+unreal.unregister_slate_post_tick_callback(bridge_handle)

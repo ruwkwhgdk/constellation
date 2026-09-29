@@ -1,0 +1,7 @@
+{
+  "mesh": "/Game/Resources/Characters/PC/player_heroine_new/ReferenceFit/SK_player_heroine_new_ReferenceFit.SK_player_heroine_new_ReferenceFit",
+  "skeleton": "/Game/Resources/Characters/PC/player_heroine_new/ReferenceFit/SKEL_player_heroine_new_ReferenceFit.SKEL_player_heroine_new_ReferenceFit",
+  "animation": "/Game/Resources/Characters/PC/player_heroine_new/ReferenceFit/AS_player_heroine_new_ReferenceFit_PreviewRelaxed.AS_player_heroine_new_ReferenceFit_PreviewRelaxed",
+  "height_cm": 159.99999911151826,
+  "pass": true
+}

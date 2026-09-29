@@ -1,0 +1,124 @@
+{
+  "mesh": "/Game/Resources/Characters/PC/player_heroine_new/SK_player_heroine_new.SK_player_heroine_new",
+  "skeleton": "/Game/Resources/Characters/PC/player_heroine_new/SKEL_player_heroine_new.SKEL_player_heroine_new",
+  "physics_asset": "/Game/Resources/Characters/PC/player_heroine_new/PHYS_player_heroine_new.PHYS_player_heroine_new",
+  "animation": "/Game/Resources/Characters/PC/player_heroine_new/Animations/AS_player_heroine_new_PreviewRelaxed.AS_player_heroine_new_PreviewRelaxed",
+  "height_cm": 159.99999898369424,
+  "materials": [
+    {
+      "slot": "M_Hair",
+      "material": "/Game/Resources/Characters/PC/player_heroine_new/Materials/MI_player_heroine_new_Hair.MI_player_heroine_new_Hair"
+    },
+    {
+      "slot": "M_Cardigan",
+      "material": "/Game/Resources/Characters/PC/player_heroine_new/Materials/MI_player_heroine_new_Cardigan.MI_player_heroine_new_Cardigan"
+    },
+    {
+      "slot": "M_Skin",
+      "material": "/Game/Resources/Characters/PC/player_heroine_new/Materials/MI_player_heroine_new_Skin.MI_player_heroine_new_Skin"
+    },
+    {
+      "slot": "M_Skirt",
+      "material": "/Game/Resources/Characters/PC/player_heroine_new/Materials/MI_player_heroine_new_Skirt.MI_player_heroine_new_Skirt"
+    },
+    {
+      "slot": "M_Stockings",
+      "material": "/Game/Resources/Characters/PC/player_heroine_new/Materials/MI_player_heroine_new_Stockings.MI_player_heroine_new_Stockings"
+    },
+    {
+      "slot": "M_Shoes",
+      "material": "/Game/Resources/Characters/PC/player_heroine_new/Materials/MI_player_heroine_new_Shoes.MI_player_heroine_new_Shoes"
+    },
+    {
+      "slot": "M_Ribbon",
+      "material": "/Game/Resources/Characters/PC/player_heroine_new/Materials/MI_player_heroine_new_Ribbon.MI_player_heroine_new_Ribbon"
+    },
+    {
+      "slot": "M_Shirt",
+      "material": "/Game/Resources/Characters/PC/player_heroine_new/Materials/MI_player_heroine_new_Shirt.MI_player_heroine_new_Shirt"
+    },
+    {
+      "slot": "M_Details",
+      "material": "/Game/Resources/Characters/PC/player_heroine_new/Materials/MI_player_heroine_new_Details.MI_player_heroine_new_Details"
+    },
+    {
+      "slot": "M_Brow_SurfacePreserved",
+      "material": "/Game/Resources/Characters/PC/player_heroine_new/Materials/MI_player_heroine_new_Brow_SurfacePreserved.MI_player_heroine_new_Brow_SurfacePreserved"
+    },
+    {
+      "slot": "M_EyelidPatch_14_2",
+      "material": "/Game/Resources/Characters/PC/player_heroine_new/Materials/MI_player_heroine_new_EyelidPatch_14_2.MI_player_heroine_new_EyelidPatch_14_2"
+    },
+    {
+      "slot": "M_EyelidPatch_14_10",
+      "material": "/Game/Resources/Characters/PC/player_heroine_new/Materials/MI_player_heroine_new_EyelidPatch_14_10.MI_player_heroine_new_EyelidPatch_14_10"
+    },
+    {
+      "slot": "M_EyelidPatch_21_9",
+      "material": "/Game/Resources/Characters/PC/player_heroine_new/Materials/MI_player_heroine_new_EyelidPatch_21_9.MI_player_heroine_new_EyelidPatch_21_9"
+    },
+    {
+      "slot": "M_Pearl",
+      "material": "/Game/Resources/Characters/PC/player_heroine_new/Materials/MI_player_heroine_new_Pearl.MI_player_heroine_new_Pearl"
+    },
+    {
+      "slot": "Ruby_Iris",
+      "material": "/Game/Resources/Characters/PC/player_heroine_new/Materials/MI_player_heroine_new_Ruby_Iris.MI_player_heroine_new_Ruby_Iris"
+    },
+    {
+      "slot": "Lower_Lid",
+      "material": "/Game/Resources/Characters/PC/player_heroine_new/Materials/MI_player_heroine_new_Lower_Lid.MI_player_heroine_new_Lower_Lid"
+    },
+    {
+      "slot": "M_Lid_Transition",
+      "material": "/Game/Resources/Characters/PC/player_heroine_new/Materials/MI_player_heroine_new_Lid_Transition.MI_player_heroine_new_Lid_Transition"
+    },
+    {
+      "slot": "Eye_Sclera",
+      "material": "/Game/Resources/Characters/PC/player_heroine_new/Materials/MI_player_heroine_new_Eye_Sclera.MI_player_heroine_new_Eye_Sclera"
+    }
+  ],
+  "physics_bodies": [
+    "pelvis",
+    "spine_03",
+    "neck_02"
+  ],
+  "assets": [
+    "/Game/Resources/Characters/PC/player_heroine_new/Animations/AS_player_heroine_new_PreviewRelaxed.AS_player_heroine_new_PreviewRelaxed",
+    "/Game/Resources/Characters/PC/player_heroine_new/Materials/M_player_heroine_new.M_player_heroine_new",
+    "/Game/Resources/Characters/PC/player_heroine_new/Materials/MI_player_heroine_new_Brow_SurfacePreserved.MI_player_heroine_new_Brow_SurfacePreserved",
+    "/Game/Resources/Characters/PC/player_heroine_new/Materials/MI_player_heroine_new_Cardigan.MI_player_heroine_new_Cardigan",
+    "/Game/Resources/Characters/PC/player_heroine_new/Materials/MI_player_heroine_new_Details.MI_player_heroine_new_Details",
+    "/Game/Resources/Characters/PC/player_heroine_new/Materials/MI_player_heroine_new_Eye_Sclera.MI_player_heroine_new_Eye_Sclera",
+    "/Game/Resources/Characters/PC/player_heroine_new/Materials/MI_player_heroine_new_EyelidPatch_14_10.MI_player_heroine_new_EyelidPatch_14_10",
+    "/Game/Resources/Characters/PC/player_heroine_new/Materials/MI_player_heroine_new_EyelidPatch_14_2.MI_player_heroine_new_EyelidPatch_14_2",
+    "/Game/Resources/Characters/PC/player_heroine_new/Materials/MI_player_heroine_new_EyelidPatch_21_9.MI_player_heroine_new_EyelidPatch_21_9",
+    "/Game/Resources/Characters/PC/player_heroine_new/Materials/MI_player_heroine_new_Hair.MI_player_heroine_new_Hair",
+    "/Game/Resources/Characters/PC/player_heroine_new/Materials/MI_player_heroine_new_Lid_Transition.MI_player_heroine_new_Lid_Transition",
+    "/Game/Resources/Characters/PC/player_heroine_new/Materials/MI_player_heroine_new_Lower_Lid.MI_player_heroine_new_Lower_Lid",
+    "/Game/Resources/Characters/PC/player_heroine_new/Materials/MI_player_heroine_new_Pearl.MI_player_heroine_new_Pearl",
+    "/Game/Resources/Characters/PC/player_heroine_new/Materials/MI_player_heroine_new_Ribbon.MI_player_heroine_new_Ribbon",
+    "/Game/Resources/Characters/PC/player_heroine_new/Materials/MI_player_heroine_new_Ruby_Iris.MI_player_heroine_new_Ruby_Iris",
+    "/Game/Resources/Characters/PC/player_heroine_new/Materials/MI_player_heroine_new_Shirt.MI_player_heroine_new_Shirt",
+    "/Game/Resources/Characters/PC/player_heroine_new/Materials/MI_player_heroine_new_Shoes.MI_player_heroine_new_Shoes",
+    "/Game/Resources/Characters/PC/player_heroine_new/Materials/MI_player_heroine_new_Skin.MI_player_heroine_new_Skin",
+    "/Game/Resources/Characters/PC/player_heroine_new/Materials/MI_player_heroine_new_Skirt.MI_player_heroine_new_Skirt",
+    "/Game/Resources/Characters/PC/player_heroine_new/Materials/MI_player_heroine_new_Stockings.MI_player_heroine_new_Stockings",
+    "/Game/Resources/Characters/PC/player_heroine_new/PHYS_player_heroine_new.PHYS_player_heroine_new",
+    "/Game/Resources/Characters/PC/player_heroine_new/SK_player_heroine_new.SK_player_heroine_new",
+    "/Game/Resources/Characters/PC/player_heroine_new/SKEL_player_heroine_new.SKEL_player_heroine_new",
+    "/Game/Resources/Characters/PC/player_heroine_new/Textures/T_player_heroine_new_Brow_SurfacePreserved_BC.T_player_heroine_new_Brow_SurfacePreserved_BC",
+    "/Game/Resources/Characters/PC/player_heroine_new/Textures/T_player_heroine_new_CollarEdgeFinal_M_Shirt_BC.T_player_heroine_new_CollarEdgeFinal_M_Shirt_BC",
+    "/Game/Resources/Characters/PC/player_heroine_new/Textures/T_player_heroine_new_EyelidPreserved_14_BC.T_player_heroine_new_EyelidPreserved_14_BC",
+    "/Game/Resources/Characters/PC/player_heroine_new/Textures/T_player_heroine_new_EyelidPreserved_21_BC.T_player_heroine_new_EyelidPreserved_21_BC",
+    "/Game/Resources/Characters/PC/player_heroine_new/Textures/T_player_heroine_new_Heroine_BaseColor_Corrected_BC.T_player_heroine_new_Heroine_BaseColor_Corrected_BC",
+    "/Game/Resources/Characters/PC/player_heroine_new/Textures/T_player_heroine_new_Lid_Transition_BC.T_player_heroine_new_Lid_Transition_BC",
+    "/Game/Resources/Characters/PC/player_heroine_new/Textures/T_player_heroine_new_LocalFinish2_M_Details_BC.T_player_heroine_new_LocalFinish2_M_Details_BC",
+    "/Game/Resources/Characters/PC/player_heroine_new/Textures/T_player_heroine_new_LocalFinish2_M_Ribbon_BC.T_player_heroine_new_LocalFinish2_M_Ribbon_BC",
+    "/Game/Resources/Characters/PC/player_heroine_new/Textures/T_player_heroine_new_LocalFinish2_M_Skin_BC.T_player_heroine_new_LocalFinish2_M_Skin_BC",
+    "/Game/Resources/Characters/PC/player_heroine_new/Textures/T_player_heroine_new_PinHem_M_Skirt_BC.T_player_heroine_new_PinHem_M_Skirt_BC",
+    "/Game/Resources/Characters/PC/player_heroine_new/Textures/T_player_heroine_new_RearNick_M_Hair_BC.T_player_heroine_new_RearNick_M_Hair_BC",
+    "/Game/Resources/Characters/PC/player_heroine_new/Textures/T_player_heroine_new_Ruby_Iris_Refined_BC.T_player_heroine_new_Ruby_Iris_Refined_BC"
+  ],
+  "pass": true
+}

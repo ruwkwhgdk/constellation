@@ -1,0 +1,22 @@
+{
+  "fbx_sha256": "81fdc3716b0f4043f9e56a8bd77abdf305059df17c48f4e4769a8c06992d97ce",
+  "imported_paths": [
+    "/Game/RigValidationFinal/SK_Heroine_Skeleton.SK_Heroine_Skeleton",
+    "/Game/RigValidationFinal/SK_Heroine.SK_Heroine"
+  ],
+  "objects": [
+    {
+      "path": "/Game/RigValidationFinal/SK_Heroine_Skeleton.SK_Heroine_Skeleton",
+      "class": "Skeleton"
+    },
+    {
+      "path": "/Game/RigValidationFinal/SK_Heroine.SK_Heroine",
+      "class": "SkeletalMesh",
+      "bounds_origin": "<Struct 'Vector' (0x000001CB1215A140) {x: -0.010580, y: 0.000000, z: 80.001969}>",
+      "bounds_extent": "<Struct 'Vector' (0x000001CB1215A158) {x: 13.941731, y: 69.411125, z: 79.999999}>",
+      "height_cm": 159.99999898369424,
+      "skeleton": "/Game/RigValidationFinal/SK_Heroine_Skeleton.SK_Heroine_Skeleton"
+    }
+  ],
+  "pass": true
+}

@@ -1,0 +1,13 @@
+{
+  "world": "/Game/Resources/Characters/PC/player_heroine_new/Preview/L_player_heroine_new_Preview.L_player_heroine_new_Preview",
+  "component": "/Game/Resources/Characters/PC/player_heroine_new/Preview/L_player_heroine_new_Preview.L_player_heroine_new_Preview:PersistentLevel.SkeletalMeshActor_0.SkeletalMeshComponent0",
+  "animation": "<Struct 'SingleAnimationPlayData' (0x000001E047161F30) {anim_to_play: \"/Script/Engine.AnimSequence'/Game/Resources/Characters/PC/player_heroine_new/Animations/AS_player_heroine_new_PreviewRelaxed.AS_player_heroine_new_PreviewRelaxed'\", saved_looping: True, saved_playing: True, saved_position: 0.000000, saved_play_rate: 1.000000}>",
+  "playing": true,
+  "position": 0.01600000075995922,
+  "pose": {
+    "root": "<Struct 'Transform' (0x000001E0C31592F0) {rotation: {x: 0.000000, y: -0.000000, z: 0.707107, w: -0.707107}, translation: {x: 0.000000, y: -0.000000, z: 0.000000}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+    "pelvis": "<Struct 'Transform' (0x000001E0C31592F0) {rotation: {x: 0.725451, y: -0.000000, z: 0.000000, w: -0.688274}, translation: {x: -0.000000, y: -0.012806, z: 0.885243}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+    "upperarm_l": "<Struct 'Transform' (0x000001E0C31592F0) {rotation: {x: 0.416790, y: 0.608892, z: 0.256226, w: 0.624408}, translation: {x: 0.000000, y: -0.098498, z: 0.000000}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+    "upperarm_r": "<Struct 'Transform' (0x000001E0C31592F0) {rotation: {x: 0.416790, y: -0.608892, z: -0.256226, w: 0.624407}, translation: {x: -0.000000, y: -0.098498, z: 0.000000}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>"
+  }
+}

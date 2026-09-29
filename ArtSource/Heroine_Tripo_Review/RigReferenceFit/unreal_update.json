@@ -1,0 +1,14 @@
+{
+  "mesh": "/Game/Resources/Characters/PC/player_heroine_new/SK_player_heroine_new.SK_player_heroine_new",
+  "skeleton": "/Game/Resources/Characters/PC/player_heroine_new/SKEL_player_heroine_new.SKEL_player_heroine_new",
+  "height_cm": 159.99999911151826,
+  "materials": 18,
+  "source": "C:/Users/User/Documents/UnrealProjects/Constellation/ArtSource/Heroine_Tripo_Review/RigReferenceFit/Delivery/Heroine_Skeletal.fbx",
+  "source_sha256": "befa6d892257e163d11ea88e2402bd5e7339e489f112a9e5efe4971a818b8ad6",
+  "reference_source": "C:/Users/User/Desktop/\ud3ec\ud2b8\ud3f4\ub9ac\uc624/Project Constellation/modeling/player_heroine/Player_Heroine.fbx",
+  "imported": [
+    "/Game/Resources/Characters/PC/player_heroine_new/SK_player_heroine_new.SK_player_heroine_new",
+    "/Game/Resources/Characters/PC/player_heroine_new/Animations/AS_player_heroine_new_PreviewRelaxed.AS_player_heroine_new_PreviewRelaxed"
+  ],
+  "pass": true
+}

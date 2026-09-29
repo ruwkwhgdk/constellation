@@ -1,0 +1,22 @@
+{
+  "walk": "/Game/Resources/Characters/CommonAnimation/Walk.Walk",
+  "skeleton": "/Game/Resources/Characters/PC/Player_Heroine/Player_Heroine_Skeleton.Player_Heroine_Skeleton",
+  "length": 0.9666666388511658,
+  "source": "C:/Users/User/Desktop/\ud3ec\ud2b8\ud3f4\ub9ac\uc624/Project Constellation/modeling/animation/Walk.fbx",
+  "abp_dependencies": [
+    "/Script/AnimGraph",
+    "/Script/AnimGraphRuntime",
+    "/Engine/EditorBlueprintResources/StandardMacros",
+    "/Game/Blueprints/Character/PC/BP_Player_Heroine",
+    "/Game/Blueprints/System/ActorComponent/Ac_Attack",
+    "/Game/Blueprints/System/ActorComponent/Ac_ComboAttack",
+    "/Game/Blueprints/System/ActorComponent/Ac_Dodge",
+    "/Game/Resources/Characters/CommonAnimation/BS_Move",
+    "/Game/Resources/Characters/CommonAnimation/Climbing_Ladder",
+    "/Game/Resources/Characters/PC/Player_Heroine/Player_Heroine_Skeleton",
+    "/Game/Resources/Characters/PC/Player_Heroine/Animation/Jump",
+    "/Game/Resources/Characters/PC/Player_Heroine/Animation/Pushing"
+  ],
+  "blend_samples": "[{}, {}, {}]",
+  "export_ok": true
+}

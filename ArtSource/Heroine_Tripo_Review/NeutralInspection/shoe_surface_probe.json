@@ -1,0 +1,62 @@
+[
+  {
+    "pixel": [
+      310,
+      665
+    ],
+    "material": "M_Shoes",
+    "metallic": 0.0,
+    "roughness": 0.4699999988079071,
+    "specular": 0.3400000035762787
+  },
+  {
+    "pixel": [
+      298,
+      530
+    ],
+    "material": "M_Shoes",
+    "metallic": 0.0,
+    "roughness": 0.4699999988079071,
+    "specular": 0.3400000035762787
+  },
+  {
+    "pixel": [
+      720,
+      538
+    ],
+    "material": "M_Shoes",
+    "metallic": 0.0,
+    "roughness": 0.4699999988079071,
+    "specular": 0.3400000035762787
+  },
+  {
+    "pixel": [
+      704,
+      666
+    ],
+    "material": "M_Shoes",
+    "metallic": 0.0,
+    "roughness": 0.4699999988079071,
+    "specular": 0.3400000035762787
+  },
+  {
+    "pixel": [
+      303,
+      710
+    ],
+    "material": "M_Shoes",
+    "metallic": 0.0,
+    "roughness": 0.4699999988079071,
+    "specular": 0.3400000035762787
+  },
+  {
+    "pixel": [
+      322,
+      592
+    ],
+    "material": "M_Shoes",
+    "metallic": 0.0,
+    "roughness": 0.4699999988079071,
+    "specular": 0.3400000035762787
+  }
+]

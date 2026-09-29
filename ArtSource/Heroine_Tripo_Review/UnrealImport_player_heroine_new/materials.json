@@ -1,0 +1,352 @@
+{
+  "materials": {
+    "Eye_Sclera": {
+      "material_name": "Eye_Sclera",
+      "base_color": [
+        0.6299999952316284,
+        0.5199999809265137,
+        0.47999998927116394,
+        1.0
+      ],
+      "roughness": 0.6499999761581421,
+      "metallic": 0.0,
+      "specular": 0.23000000417232513,
+      "two_sided": true,
+      "links": {}
+    },
+    "Lower_Lid": {
+      "material_name": "Lower_Lid",
+      "base_color": [
+        0.20000000298023224,
+        0.07500000298023224,
+        0.07500000298023224,
+        1.0
+      ],
+      "roughness": 0.6499999761581421,
+      "metallic": 0.0,
+      "specular": 0.23000000417232513,
+      "two_sided": true,
+      "links": {}
+    },
+    "M_Brow_SurfacePreserved": {
+      "material_name": "M_Brow_SurfacePreserved",
+      "base_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.7200000286102295,
+      "metallic": 0.0,
+      "specular": 0.23000000417232513,
+      "two_sided": true,
+      "links": {
+        "Base Color": "T_player_heroine_new_Brow_SurfacePreserved_BC"
+      }
+    },
+    "M_Cardigan": {
+      "material_name": "M_Cardigan",
+      "base_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.9100000262260437,
+      "metallic": 0.0,
+      "specular": 0.17000000178813934,
+      "two_sided": true,
+      "links": {
+        "Base Color": "T_player_heroine_new_Heroine_BaseColor_Corrected_BC"
+      }
+    },
+    "M_Details": {
+      "material_name": "M_Details",
+      "base_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.6800000071525574,
+      "metallic": 0.0,
+      "specular": 0.23000000417232513,
+      "two_sided": true,
+      "links": {
+        "Base Color": "T_player_heroine_new_LocalFinish2_M_Details_BC"
+      }
+    },
+    "M_EyelidPatch_14_10": {
+      "material_name": "M_EyelidPatch_14_10",
+      "base_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.7200000286102295,
+      "metallic": 0.0,
+      "specular": 0.23000000417232513,
+      "two_sided": true,
+      "links": {
+        "Base Color": "T_player_heroine_new_EyelidPreserved_14_BC"
+      }
+    },
+    "M_EyelidPatch_14_2": {
+      "material_name": "M_EyelidPatch_14_2",
+      "base_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.7200000286102295,
+      "metallic": 0.0,
+      "specular": 0.23000000417232513,
+      "two_sided": true,
+      "links": {
+        "Base Color": "T_player_heroine_new_EyelidPreserved_14_BC"
+      }
+    },
+    "M_EyelidPatch_21_9": {
+      "material_name": "M_EyelidPatch_21_9",
+      "base_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.6800000071525574,
+      "metallic": 0.0,
+      "specular": 0.23000000417232513,
+      "two_sided": true,
+      "links": {
+        "Base Color": "T_player_heroine_new_EyelidPreserved_21_BC"
+      }
+    },
+    "M_Eyes": {
+      "material_name": "M_Eyes",
+      "base_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.3400000035762787,
+      "metallic": 0.0,
+      "specular": 0.3499999940395355,
+      "two_sided": true,
+      "links": {
+        "Base Color": "T_player_heroine_new_Heroine_BaseColor_Corrected_BC"
+      }
+    },
+    "M_Hair": {
+      "material_name": "M_Hair",
+      "base_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.6200000047683716,
+      "metallic": 0.0,
+      "specular": 0.23999999463558197,
+      "two_sided": true,
+      "links": {
+        "Base Color": "T_player_heroine_new_RearNick_M_Hair_BC"
+      }
+    },
+    "M_Lid_Transition": {
+      "material_name": "M_Lid_Transition",
+      "base_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.7200000286102295,
+      "metallic": 0.0,
+      "specular": 0.23000000417232513,
+      "two_sided": true,
+      "links": {
+        "Base Color": "T_player_heroine_new_Lid_Transition_BC"
+      }
+    },
+    "M_Pearl": {
+      "material_name": "M_Pearl",
+      "base_color": [
+        0.7200000286102295,
+        0.6800000071525574,
+        0.6200000047683716,
+        1.0
+      ],
+      "roughness": 0.3400000035762787,
+      "metallic": 0.0,
+      "specular": 0.30000001192092896,
+      "two_sided": true,
+      "links": {}
+    },
+    "M_Ribbon": {
+      "material_name": "M_Ribbon",
+      "base_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.6700000166893005,
+      "metallic": 0.0,
+      "specular": 0.25,
+      "two_sided": true,
+      "links": {
+        "Base Color": "T_player_heroine_new_LocalFinish2_M_Ribbon_BC"
+      }
+    },
+    "M_Shirt": {
+      "material_name": "M_Shirt",
+      "base_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.8700000047683716,
+      "metallic": 0.0,
+      "specular": 0.18000000715255737,
+      "two_sided": true,
+      "links": {
+        "Base Color": "T_player_heroine_new_CollarEdgeFinal_M_Shirt_BC"
+      }
+    },
+    "M_Shoes": {
+      "material_name": "M_Shoes",
+      "base_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.5400000214576721,
+      "metallic": 0.0,
+      "specular": 0.2800000011920929,
+      "two_sided": true,
+      "links": {
+        "Base Color": "T_player_heroine_new_Heroine_BaseColor_Corrected_BC"
+      }
+    },
+    "M_Skin": {
+      "material_name": "M_Skin",
+      "base_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.7200000286102295,
+      "metallic": 0.0,
+      "specular": 0.23000000417232513,
+      "two_sided": true,
+      "links": {
+        "Base Color": "T_player_heroine_new_LocalFinish2_M_Skin_BC"
+      }
+    },
+    "M_Skirt": {
+      "material_name": "M_Skirt",
+      "base_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.8799999952316284,
+      "metallic": 0.0,
+      "specular": 0.1899999976158142,
+      "two_sided": true,
+      "links": {
+        "Base Color": "T_player_heroine_new_PinHem_M_Skirt_BC"
+      }
+    },
+    "M_Stockings": {
+      "material_name": "M_Stockings",
+      "base_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.7599999904632568,
+      "metallic": 0.0,
+      "specular": 0.27000001072883606,
+      "two_sided": true,
+      "links": {
+        "Base Color": "T_player_heroine_new_Heroine_BaseColor_Corrected_BC"
+      }
+    },
+    "Ruby_Iris": {
+      "material_name": "Ruby_Iris",
+      "base_color": [
+        0.1599999964237213,
+        0.02500000037252903,
+        0.03999999910593033,
+        1.0
+      ],
+      "roughness": 0.44999998807907104,
+      "metallic": 0.0,
+      "specular": 0.23000000417232513,
+      "two_sided": true,
+      "links": {
+        "Base Color": "T_player_heroine_new_Ruby_Iris_Refined_BC"
+      }
+    }
+  },
+  "textures": {
+    "T_player_heroine_new_Brow_SurfacePreserved_BC": {
+      "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\UnrealImport_player_heroine_new\\textures\\T_player_heroine_new_Brow_SurfacePreserved_BC.png",
+      "srgb": true
+    },
+    "T_player_heroine_new_Heroine_BaseColor_Corrected_BC": {
+      "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\UnrealImport_player_heroine_new\\textures\\T_player_heroine_new_Heroine_BaseColor_Corrected_BC.png",
+      "srgb": true
+    },
+    "T_player_heroine_new_LocalFinish2_M_Details_BC": {
+      "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\UnrealImport_player_heroine_new\\textures\\T_player_heroine_new_LocalFinish2_M_Details_BC.png",
+      "srgb": true
+    },
+    "T_player_heroine_new_EyelidPreserved_14_BC": {
+      "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\UnrealImport_player_heroine_new\\textures\\T_player_heroine_new_EyelidPreserved_14_BC.png",
+      "srgb": true
+    },
+    "T_player_heroine_new_EyelidPreserved_21_BC": {
+      "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\UnrealImport_player_heroine_new\\textures\\T_player_heroine_new_EyelidPreserved_21_BC.png",
+      "srgb": true
+    },
+    "T_player_heroine_new_RearNick_M_Hair_BC": {
+      "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\UnrealImport_player_heroine_new\\textures\\T_player_heroine_new_RearNick_M_Hair_BC.png",
+      "srgb": true
+    },
+    "T_player_heroine_new_Lid_Transition_BC": {
+      "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\UnrealImport_player_heroine_new\\textures\\T_player_heroine_new_Lid_Transition_BC.png",
+      "srgb": true
+    },
+    "T_player_heroine_new_LocalFinish2_M_Ribbon_BC": {
+      "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\UnrealImport_player_heroine_new\\textures\\T_player_heroine_new_LocalFinish2_M_Ribbon_BC.png",
+      "srgb": true
+    },
+    "T_player_heroine_new_CollarEdgeFinal_M_Shirt_BC": {
+      "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\UnrealImport_player_heroine_new\\textures\\T_player_heroine_new_CollarEdgeFinal_M_Shirt_BC.png",
+      "srgb": true
+    },
+    "T_player_heroine_new_LocalFinish2_M_Skin_BC": {
+      "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\UnrealImport_player_heroine_new\\textures\\T_player_heroine_new_LocalFinish2_M_Skin_BC.png",
+      "srgb": true
+    },
+    "T_player_heroine_new_PinHem_M_Skirt_BC": {
+      "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\UnrealImport_player_heroine_new\\textures\\T_player_heroine_new_PinHem_M_Skirt_BC.png",
+      "srgb": true
+    },
+    "T_player_heroine_new_Ruby_Iris_Refined_BC": {
+      "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\UnrealImport_player_heroine_new\\textures\\T_player_heroine_new_Ruby_Iris_Refined_BC.png",
+      "srgb": true
+    }
+  }
+}

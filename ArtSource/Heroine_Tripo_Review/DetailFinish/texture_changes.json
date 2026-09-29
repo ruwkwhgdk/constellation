@@ -1,0 +1,18 @@
+{
+  "M_Ribbon": {
+    "changed_texels": 1418,
+    "candidates": 1418
+  },
+  "M_Shirt": {
+    "changed_texels": 27089,
+    "candidates": 68166
+  },
+  "M_Skirt": {
+    "changed_texels": 5154,
+    "candidates": 5154
+  },
+  "M_Hair": {
+    "changed_texels": 421,
+    "candidates": 421
+  }
+}

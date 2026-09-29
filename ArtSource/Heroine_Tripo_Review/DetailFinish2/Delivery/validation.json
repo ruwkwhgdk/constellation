@@ -1,0 +1,16 @@
+{
+  "source_sha256": "780fd9a519415d58d3c6a93b5f18286b1f602dac46498e7d212fb6095d49b8b9",
+  "selected_stage": "polished_stage.blend",
+  "protected_meshes_unchanged": true,
+  "mouth_vertices_unchanged": true,
+  "body_vertices_before": 26724,
+  "body_vertices_after": 26724,
+  "body_faces_before": 29525,
+  "body_faces_after": 29527,
+  "unexpected_uv_changed_faces": [],
+  "triangles": 70030,
+  "fbx_triangles": 70030,
+  "missing_images": [],
+  "source_unchanged": true,
+  "pass": true
+}

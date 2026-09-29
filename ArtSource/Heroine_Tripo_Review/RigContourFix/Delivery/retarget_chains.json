@@ -1,0 +1,132 @@
+{
+  "retarget_root": "pelvis",
+  "coordinate_system": {
+    "forward": "+X",
+    "up": "+Z",
+    "height_cm": 160
+  },
+  "chains": {
+    "Spine": [
+      "spine_01",
+      "spine_03"
+    ],
+    "Neck": [
+      "neck_01",
+      "head"
+    ],
+    "Arm_l": [
+      "upperarm_l",
+      "hand_l"
+    ],
+    "Leg_l": [
+      "thigh_l",
+      "ball_l"
+    ],
+    "Clavicle_l": [
+      "clavicle_l",
+      "clavicle_l"
+    ],
+    "thumb_l": [
+      "thumb_01_l",
+      "thumb_03_l"
+    ],
+    "index_l": [
+      "index_01_l",
+      "index_03_l"
+    ],
+    "middle_l": [
+      "middle_01_l",
+      "middle_03_l"
+    ],
+    "ring_l": [
+      "ring_01_l",
+      "ring_03_l"
+    ],
+    "pinky_l": [
+      "pinky_01_l",
+      "pinky_03_l"
+    ],
+    "Arm_r": [
+      "upperarm_r",
+      "hand_r"
+    ],
+    "Leg_r": [
+      "thigh_r",
+      "ball_r"
+    ],
+    "Clavicle_r": [
+      "clavicle_r",
+      "clavicle_r"
+    ],
+    "thumb_r": [
+      "thumb_01_r",
+      "thumb_03_r"
+    ],
+    "index_r": [
+      "index_01_r",
+      "index_03_r"
+    ],
+    "middle_r": [
+      "middle_01_r",
+      "middle_03_r"
+    ],
+    "ring_r": [
+      "ring_01_r",
+      "ring_03_r"
+    ],
+    "pinky_r": [
+      "pinky_01_r",
+      "pinky_03_r"
+    ]
+  },
+  "secondary_chains": {
+    "skirt_00": [
+      "skirt_00_01",
+      "skirt_00_02"
+    ],
+    "skirt_01": [
+      "skirt_01_01",
+      "skirt_01_02"
+    ],
+    "skirt_02": [
+      "skirt_02_01",
+      "skirt_02_02"
+    ],
+    "skirt_03": [
+      "skirt_03_01",
+      "skirt_03_02"
+    ],
+    "skirt_04": [
+      "skirt_04_01",
+      "skirt_04_02"
+    ],
+    "skirt_05": [
+      "skirt_05_01",
+      "skirt_05_02"
+    ],
+    "skirt_06": [
+      "skirt_06_01",
+      "skirt_06_02"
+    ],
+    "skirt_07": [
+      "skirt_07_01",
+      "skirt_07_02"
+    ],
+    "hair_side_l": [
+      "hair_side_l_01",
+      "hair_side_l_02"
+    ],
+    "hair_side_r": [
+      "hair_side_r_01",
+      "hair_side_r_02"
+    ],
+    "hair_back_l": [
+      "hair_back_l_01",
+      "hair_back_l_02"
+    ],
+    "hair_back_r": [
+      "hair_back_r_01",
+      "hair_back_r_02"
+    ]
+  }
+}

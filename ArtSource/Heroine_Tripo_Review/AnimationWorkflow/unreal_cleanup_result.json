@@ -1,0 +1,19 @@
+{
+  "deleted": [
+    "/Game/Resources/Characters/PC/player_heroine_new/Preview/L_player_heroine_new_Run_Natural",
+    "/Game/Resources/Characters/PC/player_heroine_new/Preview/L_player_heroine_new_Run_Polish"
+  ],
+  "retired_targets": [
+    "/Game/Resources/Characters/PC/player_heroine_new/Animations/AS_player_heroine_new_Run_Natural",
+    "/Game/Resources/Characters/PC/player_heroine_new/Animations/AS_player_heroine_new_Run_Polish",
+    "/Game/Resources/Characters/PC/player_heroine_new/Animations/AS_player_heroine_new_Run_Retarget",
+    "/Game/Resources/Characters/PC/player_heroine_new/Preview/L_player_heroine_new_Run_Natural",
+    "/Game/Resources/Characters/PC/player_heroine_new/Preview/L_player_heroine_new_Run_Polish"
+  ],
+  "remaining_maps": [
+    "/Game/Resources/Characters/PC/player_heroine_new/Preview/L_player_heroine_new_Run_Natural",
+    "/Game/Resources/Characters/PC/player_heroine_new/Preview/L_player_heroine_new_Run_Polish"
+  ],
+  "mesh_source": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunSoft\\SK_player_heroine_new_RunPreview.fbx",
+  "latest_and_walk_preserved": true
+}

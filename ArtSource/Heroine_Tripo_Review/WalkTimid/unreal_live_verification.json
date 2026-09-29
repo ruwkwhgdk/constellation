@@ -1,0 +1,7 @@
+{
+  "pass": true,
+  "animated_foot_delta_cm": 12.561041297970553,
+  "mode": "Simulate In Editor",
+  "mesh": "/Game/Resources/Characters/PC/player_heroine_new/SK_player_heroine_new_WalkPreview.SK_player_heroine_new_WalkPreview",
+  "animation": "/Game/Resources/Characters/PC/player_heroine_new/Animations/AS_player_heroine_new_Walk_Timid.AS_player_heroine_new_Walk_Timid"
+}

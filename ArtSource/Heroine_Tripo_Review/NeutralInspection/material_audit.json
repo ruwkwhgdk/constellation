@@ -1,0 +1,37 @@
+{
+  "M_Shoes": {
+    "Metallic": 0.0,
+    "Roughness": 0.4699999988079071,
+    "Specular IOR Level": 0.3400000035762787,
+    "Coat Weight": 0.0,
+    "Subsurface Weight": 0.0
+  },
+  "M_Stockings": {
+    "Metallic": 0.0,
+    "Roughness": 0.7599999904632568,
+    "Specular IOR Level": 0.27000001072883606,
+    "Coat Weight": 0.0,
+    "Subsurface Weight": 0.0
+  },
+  "M_Skin": {
+    "Metallic": 0.0,
+    "Roughness": 0.7200000286102295,
+    "Specular IOR Level": 0.23000000417232513,
+    "Coat Weight": 0.0,
+    "Subsurface Weight": 0.0
+  },
+  "M_Hair": {
+    "Metallic": 0.0,
+    "Roughness": 0.6200000047683716,
+    "Specular IOR Level": 0.23999999463558197,
+    "Coat Weight": 0.0,
+    "Subsurface Weight": 0.0
+  },
+  "M_Cardigan": {
+    "Metallic": 0.0,
+    "Roughness": 0.9100000262260437,
+    "Specular IOR Level": 0.17000000178813934,
+    "Coat Weight": 0.0,
+    "Subsurface Weight": 0.0
+  }
+}

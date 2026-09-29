@@ -1,0 +1,12 @@
+{
+  "removed_faces": 134,
+  "local_patch_faces": 775,
+  "perimeter_vertices": 23,
+  "bounds": [
+    -0.03022929128706455,
+    -0.004438664424419403,
+    0.8855421875,
+    0.908403125
+  ],
+  "appearance": "Original eye surface art retained; local inner-corner topology repaired."
+}

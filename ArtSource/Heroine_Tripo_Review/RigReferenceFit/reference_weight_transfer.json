@@ -1,0 +1,5 @@
+{
+  "vertices": 992,
+  "max_nearest_distance_m_source": 0.0365823395550251,
+  "method": "8-neighbor existing-model weights blended locally; hand/finger weights retained"
+}

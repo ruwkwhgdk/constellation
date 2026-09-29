@@ -1,0 +1,39 @@
+{
+  "export_ok": true,
+  "bounds": "<Struct 'BoxSphereBounds' (0x00000265510B6B00) {origin: {x: -0.096200, y: -0.091097, z: -0.101601}, box_extent: {x: 24.363700, y: 10.115002, z: 94.938011}, sphere_radius: 94.938347}>",
+  "notifies": [
+    {
+      "time": 0.4415908753871918,
+      "duration": 0.0,
+      "notify_name": "Hitbox On",
+      "notify": "None",
+      "notify_state_class": "None"
+    },
+    {
+      "time": 0.6012216806411743,
+      "duration": 0.0,
+      "notify_name": "Hitbox Off",
+      "notify": "None",
+      "notify_state_class": "None"
+    },
+    {
+      "time": 0.8355045914649963,
+      "duration": 0.0,
+      "notify_name": "ComboWindow Open",
+      "notify": "None",
+      "notify_state_class": "None"
+    },
+    {
+      "time": 1.197393774986267,
+      "duration": 0.0,
+      "notify_name": "End Attack",
+      "notify": "None",
+      "notify_state_class": "None"
+    }
+  ],
+  "sections": [
+    "Default"
+  ],
+  "blend_in": 0.25,
+  "blend_out": 0.25
+}

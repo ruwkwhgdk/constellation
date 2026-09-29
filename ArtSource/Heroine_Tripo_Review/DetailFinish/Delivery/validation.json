@@ -1,0 +1,13 @@
+{
+  "source_sha256": "272421563b0c1eed69fd1ade84d0a3322da17acde3a8a2f58199d74615c36b7a",
+  "body_topology_unchanged": true,
+  "body_uv_unchanged": true,
+  "protected_eye_meshes_unchanged": true,
+  "mouth_extreme_corners_unchanged": true,
+  "body_modified_vertices": 639,
+  "triangles": 70024,
+  "fbx_triangles": 70024,
+  "missing_images": [],
+  "source_unchanged": true,
+  "pass": true
+}

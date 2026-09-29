@@ -1,0 +1,19 @@
+{
+  "protected_objects_unchanged": {
+    "Heroine_Pearl_Bracelet": true,
+    "Sclera_-1": true,
+    "Lower_Eyelid_-1": true,
+    "Iris_Surface_-1": true,
+    "Sclera_1": true,
+    "Lower_Eyelid_1": true,
+    "Lower_Lid_Skin_1": true,
+    "Iris_Surface_1": true
+  },
+  "blend_triangles": 62296,
+  "mesh_objects": 10,
+  "source_version": "BoundaryLocal",
+  "scope": "local forehead topology, marked corner sculpt, local hair/skin texture retouch, lower lid band end fitting",
+  "fbx_triangles": 62296,
+  "missing_images": [],
+  "data_checks_pass": true
+}

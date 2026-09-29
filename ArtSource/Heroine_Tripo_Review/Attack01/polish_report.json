@@ -1,0 +1,519 @@
+{
+  "feet": [
+    {
+      "frame": 1,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.0,
+        "R": 0.0
+      }
+    },
+    {
+      "frame": 2,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 3.712918162322679e-07,
+        "R": 0.0
+      }
+    },
+    {
+      "frame": 3,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 7.550430893851595e-07,
+        "R": 2.716161608788814e-07
+      }
+    },
+    {
+      "frame": 4,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.00012536705553531648,
+        "R": 7.491248473525047e-07
+      }
+    },
+    {
+      "frame": 5,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.0009013071460723784,
+        "R": 2.23896440862681e-06
+      }
+    },
+    {
+      "frame": 6,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.0019211392369121313,
+        "R": 2.491891384124756e-06
+      }
+    },
+    {
+      "frame": 7,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.003523191159114242,
+        "R": 4.794399023053709e-06
+      }
+    },
+    {
+      "frame": 8,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.005418025367602707,
+        "R": 6.604758113622738e-06
+      }
+    },
+    {
+      "frame": 9,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.012043592020228503,
+        "R": 7.596219398081157e-06
+      }
+    },
+    {
+      "frame": 10,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.025121651009395708,
+        "R": 7.697452485570654e-06
+      }
+    },
+    {
+      "frame": 11,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.0283639194162935,
+        "R": 5.533556304872036e-06
+      }
+    },
+    {
+      "frame": 12,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.026496347122520213,
+        "R": 4.523094348609375e-06
+      }
+    },
+    {
+      "frame": 13,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.02032583223122358,
+        "R": 4.7757098376727736e-06
+      }
+    },
+    {
+      "frame": 14,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.013683800406277171,
+        "R": 4.906534135339323e-06
+      }
+    },
+    {
+      "frame": 15,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.008076963805526492,
+        "R": 5.332647562026977e-06
+      }
+    },
+    {
+      "frame": 16,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.005440904668346048,
+        "R": 5.926029197871685e-06
+      }
+    },
+    {
+      "frame": 17,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.005076493587195874,
+        "R": 3.462171591817245e-06
+      }
+    },
+    {
+      "frame": 18,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.004656973705112935,
+        "R": 0.0019992267027571765
+      }
+    },
+    {
+      "frame": 19,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.0029740789081677843,
+        "R": 0.004697564746841783
+      }
+    },
+    {
+      "frame": 20,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.0006984911718592095,
+        "R": 0.00820345345813035
+      }
+    },
+    {
+      "frame": 21,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.000321703177690506,
+        "R": 0.012562001365944743
+      }
+    },
+    {
+      "frame": 22,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.00028589345255494584,
+        "R": 0.01706065991615504
+      }
+    },
+    {
+      "frame": 23,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.00027947434034943813,
+        "R": 0.0190630329432711
+      }
+    },
+    {
+      "frame": 24,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.0002708922664225148,
+        "R": 0.019640239089168607
+      }
+    },
+    {
+      "frame": 25,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.0010500039117187269,
+        "R": 0.019550349091269074
+      }
+    },
+    {
+      "frame": 26,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.0003412863291054964,
+        "R": 0.019358941930271684
+      }
+    },
+    {
+      "frame": 27,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.0003896259070932866,
+        "R": 0.019372777222722768
+      }
+    },
+    {
+      "frame": 28,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.0004214959519505501,
+        "R": 0.019381800984397526
+      }
+    },
+    {
+      "frame": 29,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.00042738865210115905,
+        "R": 0.0193868405232355
+      }
+    },
+    {
+      "frame": 30,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.00043659369887411584,
+        "R": 0.019391365797989068
+      }
+    },
+    {
+      "frame": 31,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.0004459738010168076,
+        "R": 0.01939734976366162
+      }
+    },
+    {
+      "frame": 32,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.0004521524457037449,
+        "R": 0.019400925939284268
+      }
+    },
+    {
+      "frame": 33,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.0004543864263296127,
+        "R": 0.01940334245095402
+      }
+    },
+    {
+      "frame": 34,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.0004526240361481905,
+        "R": 0.01940414515146613
+      }
+    },
+    {
+      "frame": 35,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.000449198931440711,
+        "R": 0.01940242200857401
+      }
+    },
+    {
+      "frame": 36,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.0004453196795284748,
+        "R": 0.019402550029493867
+      }
+    },
+    {
+      "frame": 37,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.0004402312373220921,
+        "R": 0.019484935073517264
+      }
+    },
+    {
+      "frame": 38,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.0004290357923060655,
+        "R": 0.019927825158946217
+      }
+    },
+    {
+      "frame": 39,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.00042399946567183355,
+        "R": 0.01991451004882157
+      }
+    },
+    {
+      "frame": 40,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.0004264913959917612,
+        "R": 0.01918333740997314
+      }
+    },
+    {
+      "frame": 41,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.00043244867117144166,
+        "R": 0.016085431435145438
+      }
+    },
+    {
+      "frame": 42,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.0004376117143761367,
+        "R": 0.01562943119765819
+      }
+    },
+    {
+      "frame": 43,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.00044155910394340754,
+        "R": 0.015937798395633706
+      }
+    },
+    {
+      "frame": 44,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.00044529110064916316,
+        "R": 0.007249805379480111
+      }
+    },
+    {
+      "frame": 45,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.00044778306990489366,
+        "R": 0.0013120233316384355
+      }
+    },
+    {
+      "frame": 46,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.0007362881998415105,
+        "R": 3.966993744019419e-05
+      }
+    },
+    {
+      "frame": 47,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.0017295806935131689,
+        "R": 0.0
+      }
+    },
+    {
+      "frame": 48,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.00496434476950764,
+        "R": 0.0
+      }
+    },
+    {
+      "frame": 49,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.005396801305711269,
+        "R": 0.0
+      }
+    },
+    {
+      "frame": 50,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.006058450797915449,
+        "R": 1.8587952293433844e-07
+      }
+    },
+    {
+      "frame": 51,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.006291409001797438,
+        "R": 1.1961078643798829e-06
+      }
+    },
+    {
+      "frame": 52,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.004733945738077187,
+        "R": 3.1671939492132815e-06
+      }
+    },
+    {
+      "frame": 53,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.001595822193741789,
+        "R": 3.2843128442717867e-06
+      }
+    },
+    {
+      "frame": 54,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.00030269503021240697,
+        "R": 3.022664248938687e-06
+      }
+    },
+    {
+      "frame": 55,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 7.21651744841601e-06,
+        "R": 1.9885293245269135e-06
+      }
+    },
+    {
+      "frame": 56,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 1.245945692062378e-07,
+        "R": 1.3674253970384597e-06
+      }
+    },
+    {
+      "frame": 57,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 2.7161616086727766e-07,
+        "R": 3.7876749038000063e-07
+      }
+    },
+    {
+      "frame": 58,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 7.475674152374268e-08,
+        "R": 0.0
+      }
+    },
+    {
+      "frame": 59,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.0,
+        "R": 0.0
+      }
+    },
+    {
+      "frame": 60,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 0.0,
+        "R": 0.0
+      }
+    },
+    {
+      "frame": 61,
+      "extra_pelvis_drop_m": 0.0,
+      "reference_foot_lift_m": {
+        "L": 2.7410805225372315e-07,
+        "R": 0.0
+      }
+    }
+  ],
+  "sword_scale": 0.5,
+  "sword_hand_offset": [
+    [
+      -9.892135858535767e-05,
+      0.3123595714569092,
+      -0.0006589330732822418,
+      -0.010682027786970139
+    ],
+    [
+      0.30896657705307007,
+      9.499490261077881e-07,
+      -0.04591968283057213,
+      0.0811680406332016
+    ],
+    [
+      -0.04591963812708855,
+      -0.0006662671221420169,
+      -0.30896586179733276,
+      0.1875278651714325
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ]
+}

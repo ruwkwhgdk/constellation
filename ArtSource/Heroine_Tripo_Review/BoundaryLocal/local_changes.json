@@ -1,0 +1,11 @@
+{
+  "baseline": "DetailPreserved",
+  "body_modified_vertices": 152,
+  "max_body_displacement": 0.0006499998205599167,
+  "body_front_outline_unchanged": true,
+  "marked_hair_vertices": 1089,
+  "removed_corner_fragment_faces": 31,
+  "geometry_replacements": false,
+  "iris_edited": false,
+  "material_replacement": false
+}

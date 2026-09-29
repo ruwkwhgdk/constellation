@@ -1,0 +1,109 @@
+Triggers an animation notify.  Each AnimNotifyEvent contains an AnimNotify object
+which has its Notify method called and passed to the animation.
+
+
+
+**C++ Source:**
+
+
+
+- **Module**: Engine
+
+- **File**: AnimTypes.h
+
+
+
+**Editor Properties:** (see get_editor_property/set_editor_property)
+
+
+
+- ``can_be_filtered_via_request`` (bool):  [Read-Write] Allow notify event to be filtered if requested at runtime (e. g. via an Anim Graph Message)
+
+- ``link_method`` (AnimLinkMethod):  [Read-Write] The method we are using to calculate our times
+
+- ``linked_sequence`` (AnimSequenceBase):  [Read-Only] The Animation Sequence that this montage element will link to, when the sequence changes
+
+  in either length or rate; the element will correctly place itself in relation to the sequence
+
+- ``montage_tick_type`` (MontageNotifyTickType):  [Read-Write]
+
+- ``notify`` (AnimNotify):  [Read-Write]
+
+- ``notify_filter_lod`` (int32):  [Read-Write] LOD to start filtering this notify from.
+
+- ``notify_filter_type`` (NotifyFilterType):  [Read-Write] Defines a method for filtering notifies (stopping them triggering) e.g. by looking at the meshes current LOD
+
+- ``notify_name`` (Name):  [Read-Write]
+
+- ``notify_state_class`` (AnimNotifyState):  [Read-Write]
+
+- ``notify_trigger_chance`` (float):  [Read-Write] Defines the chance of this notify triggering, 0 = No Chance, 1 = Always triggers
+
+- ``slot_index`` (int32):  [Read-Write] The slot index we are currently using within LinkedMontage
+
+- ``trigger_on_dedicated_server`` (bool):  [Read-Write] If disabled this notify will be skipped on dedicated servers
+
+- ``trigger_on_follower`` (bool):  [Read-Write] If enabled this notify will trigger when the animation is a follower in a sync group (by default only the sync group leaders notifies trigger
+
+- ``trigger_weight_threshold`` (float):  [Read-Write]
+X.add_animation_notify_event_from_source(animation_sequence_base, start_time, notify_event, notify_track_name) -> AnimNotify
+
+Experimental: Adds a custom animation notify event to the specified animation sequence at the given time and on the specified notify track.
+
+A new notify event will be created using relevant data copied from the provided NotifyEvent. The UAnimNotify is extracted from
+NotifyEvent and, if it is not already owned by the animation sequence (not part of its outer), it will be automatically duplicated.
+Only properties exposed to Blueprints in the NotifyEvent (such as TriggerWeightThreshold and NotifyTriggerChance) will be copied.
+
+
+
+Args:
+
+    animation_sequence_base (AnimSequenceBase): The animation sequence to which the new notify event will be added.
+
+    start_time (float): The time (in seconds) within the sequence where the notify should be placed.
+
+    notify_event (AnimNotifyEvent): The source notify event used to initialize the new one. Its UAnimNotify will be extracted and validated.
+
+    notify_track_name (Name): The name of the notify track to add the notify to.
+
+
+
+Returns:
+
+    AnimNotify: The UAnimNotify used in the new notify event (original or duplicated).
+X.add_animation_notify_event(animation_sequence_base, notify_track_name, start_time, notify_class) -> AnimNotify
+
+Adds an Animation Notify Event to Notify track in the given Animation with the given Notify creation data
+
+
+
+Args:
+
+    animation_sequence_base (AnimSequenceBase):
+
+    notify_track_name (Name):
+
+    start_time (float):
+
+    notify_class (type(Class)):
+
+
+
+Returns:
+
+    AnimNotify:
+X.add_animation_notify_event_object(animation_sequence_base, start_time, notify, notify_track_name) -> None
+
+Adds the specific Animation Notify to the Animation Sequence (requires Notify's outer to be the Animation Sequence)
+
+
+
+Args:
+
+    animation_sequence_base (AnimSequenceBase):
+
+    start_time (float):
+
+    notify (AnimNotify):
+
+    notify_track_name (Name):

@@ -1,0 +1,351 @@
+{
+  "source": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\NeutralExpression\\Heroine_NeutralExpression.blend",
+  "source_sha256": "272421563b0c1eed69fd1ade84d0a3322da17acde3a8a2f58199d74615c36b7a",
+  "objects": [
+    {
+      "name": "Heroine_NeutralExpression",
+      "vertices": 26724,
+      "triangles": 52500,
+      "bounds": [
+        [
+          -0.4336753785610199,
+          0.4336753785610199
+        ],
+        [
+          -0.08702610433101654,
+          0.08715829253196716
+        ],
+        [
+          1.2302589311730117e-05,
+          0.99951171875
+        ]
+      ],
+      "boundary_edges": 1333,
+      "edges_more_than_two_faces": 196,
+      "loose_vertices": 0,
+      "loose_edges": 5,
+      "zero_area_faces": 0,
+      "uv_layers": 1,
+      "shape_keys": [],
+      "modifiers": [],
+      "materials": [
+        "M_Hair",
+        "M_Cardigan",
+        "M_Skin",
+        "M_Skirt",
+        "M_Stockings",
+        "M_Shoes",
+        "M_Ribbon",
+        "M_Shirt",
+        "M_Eyes",
+        "M_Details",
+        "M_Brow_SurfacePreserved"
+      ]
+    },
+    {
+      "name": "Heroine_Pearl_Bracelet",
+      "vertices": 1204,
+      "triangles": 2352,
+      "bounds": [
+        [
+          -0.0017999997362494469,
+          0.0017999998526647687
+        ],
+        [
+          -0.050010159611701965,
+          0.0017999997362494469
+        ],
+        [
+          -0.014351843856275082,
+          0.014351843856275082
+        ]
+      ],
+      "boundary_edges": 0,
+      "edges_more_than_two_faces": 0,
+      "loose_vertices": 0,
+      "loose_edges": 0,
+      "zero_area_faces": 0,
+      "uv_layers": 1,
+      "shape_keys": [],
+      "modifiers": [],
+      "materials": [
+        "M_Pearl"
+      ]
+    },
+    {
+      "name": "Sclera_-1",
+      "vertices": 637,
+      "triangles": 1152,
+      "bounds": [
+        [
+          -0.04699999839067459,
+          -0.014000000432133675
+        ],
+        [
+          -0.05262131989002228,
+          -0.04600000008940697
+        ],
+        [
+          0.8869788646697998,
+          0.903049111366272
+        ]
+      ],
+      "boundary_edges": 120,
+      "edges_more_than_two_faces": 0,
+      "loose_vertices": 0,
+      "loose_edges": 0,
+      "zero_area_faces": 0,
+      "uv_layers": 1,
+      "shape_keys": [],
+      "modifiers": [],
+      "materials": [
+        "Eye_Sclera"
+      ]
+    },
+    {
+      "name": "Lower_Eyelid_-1",
+      "vertices": 392,
+      "triangles": 780,
+      "bounds": [
+        [
+          -0.04707176610827446,
+          -0.013929134234786034
+        ],
+        [
+          -0.04654000326991081,
+          -0.046059999614953995
+        ],
+        [
+          0.8867390751838684,
+          0.9000353217124939
+        ]
+      ],
+      "boundary_edges": 0,
+      "edges_more_than_two_faces": 0,
+      "loose_vertices": 0,
+      "loose_edges": 0,
+      "zero_area_faces": 0,
+      "uv_layers": 1,
+      "shape_keys": [],
+      "modifiers": [],
+      "materials": [
+        "Lower_Lid"
+      ]
+    },
+    {
+      "name": "Lower_Lid_Skin_-1",
+      "vertices": 196,
+      "triangles": 288,
+      "bounds": [
+        [
+          -0.04699999839067459,
+          -0.014000000432133675
+        ],
+        [
+          -0.05268478021025658,
+          -0.04040401801466942
+        ],
+        [
+          0.8840819001197815,
+          0.8999999761581421
+        ]
+      ],
+      "boundary_edges": 102,
+      "edges_more_than_two_faces": 0,
+      "loose_vertices": 0,
+      "loose_edges": 0,
+      "zero_area_faces": 0,
+      "uv_layers": 1,
+      "shape_keys": [],
+      "modifiers": [],
+      "materials": [
+        "M_Skin"
+      ]
+    },
+    {
+      "name": "Iris_Surface_-1",
+      "vertices": 798,
+      "triangles": 1502,
+      "bounds": [
+        [
+          -0.03350000083446503,
+          -0.020500000566244125
+        ],
+        [
+          -0.052880436182022095,
+          -0.04666827619075775
+        ],
+        [
+          0.8880000114440918,
+          0.9039999842643738
+        ]
+      ],
+      "boundary_edges": 94,
+      "edges_more_than_two_faces": 0,
+      "loose_vertices": 0,
+      "loose_edges": 0,
+      "zero_area_faces": 0,
+      "uv_layers": 1,
+      "shape_keys": [],
+      "modifiers": [],
+      "materials": [
+        "Ruby_Iris"
+      ]
+    },
+    {
+      "name": "Sclera_1",
+      "vertices": 637,
+      "triangles": 1152,
+      "bounds": [
+        [
+          0.014000000432133675,
+          0.04699999839067459
+        ],
+        [
+          -0.05262131989002228,
+          -0.04600000008940697
+        ],
+        [
+          0.8869788646697998,
+          0.903049111366272
+        ]
+      ],
+      "boundary_edges": 120,
+      "edges_more_than_two_faces": 0,
+      "loose_vertices": 0,
+      "loose_edges": 0,
+      "zero_area_faces": 0,
+      "uv_layers": 1,
+      "shape_keys": [],
+      "modifiers": [],
+      "materials": [
+        "Eye_Sclera"
+      ]
+    },
+    {
+      "name": "Lower_Eyelid_1",
+      "vertices": 392,
+      "triangles": 780,
+      "bounds": [
+        [
+          0.013929134234786034,
+          0.04707176610827446
+        ],
+        [
+          -0.04654000326991081,
+          -0.046059999614953995
+        ],
+        [
+          0.8867390751838684,
+          0.9000353217124939
+        ]
+      ],
+      "boundary_edges": 0,
+      "edges_more_than_two_faces": 0,
+      "loose_vertices": 0,
+      "loose_edges": 0,
+      "zero_area_faces": 0,
+      "uv_layers": 1,
+      "shape_keys": [],
+      "modifiers": [],
+      "materials": [
+        "Lower_Lid"
+      ]
+    },
+    {
+      "name": "Lower_Lid_Skin_1",
+      "vertices": 196,
+      "triangles": 288,
+      "bounds": [
+        [
+          0.014000000432133675,
+          0.04699999839067459
+        ],
+        [
+          -0.053022563457489014,
+          -0.04043322801589966
+        ],
+        [
+          0.8840819001197815,
+          0.8999999761581421
+        ]
+      ],
+      "boundary_edges": 102,
+      "edges_more_than_two_faces": 0,
+      "loose_vertices": 0,
+      "loose_edges": 0,
+      "zero_area_faces": 0,
+      "uv_layers": 1,
+      "shape_keys": [],
+      "modifiers": [],
+      "materials": [
+        "M_Skin"
+      ]
+    },
+    {
+      "name": "Iris_Surface_1",
+      "vertices": 798,
+      "triangles": 1502,
+      "bounds": [
+        [
+          0.020500000566244125,
+          0.03350000083446503
+        ],
+        [
+          -0.052880436182022095,
+          -0.04666827619075775
+        ],
+        [
+          0.8880000114440918,
+          0.9039999842643738
+        ]
+      ],
+      "boundary_edges": 94,
+      "edges_more_than_two_faces": 0,
+      "loose_vertices": 0,
+      "loose_edges": 0,
+      "zero_area_faces": 0,
+      "uv_layers": 1,
+      "shape_keys": [],
+      "modifiers": [],
+      "materials": [
+        "Ruby_Iris"
+      ]
+    }
+  ],
+  "armatures": [],
+  "images": [
+    {
+      "name": "T_Brow_SurfacePreserved",
+      "size": [
+        768,
+        768
+      ],
+      "packed": true
+    },
+    {
+      "name": "T_Contour_DetailRetouch",
+      "size": [
+        4096,
+        4096
+      ],
+      "packed": true
+    },
+    {
+      "name": "T_Heroine_BaseColor_Corrected",
+      "size": [
+        4096,
+        4096
+      ],
+      "packed": true
+    },
+    {
+      "name": "T_Ruby_Iris_Refined",
+      "size": [
+        512,
+        512
+      ],
+      "packed": true
+    }
+  ]
+}

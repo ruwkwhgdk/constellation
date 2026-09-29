@@ -1,0 +1,19 @@
+{
+  "blend": {
+    "triangles": 63602,
+    "mesh_objects": 10,
+    "finite_coordinates": true,
+    "missing_uv": [],
+    "missing_images": []
+  },
+  "skin_region_edges_over_two_faces": 0,
+  "skin_region_boundary_edges": 246,
+  "fbx": {
+    "triangles": 63602,
+    "mesh_objects": 10,
+    "finite_coordinates": true,
+    "missing_uv": [],
+    "missing_images": []
+  },
+  "pass": true
+}

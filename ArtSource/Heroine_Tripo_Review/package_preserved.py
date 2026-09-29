@@ -1,0 +1,30 @@
+from pathlib import Path
+from PIL import Image,ImageDraw,ImageFont
+import json,zipfile
+R=Path(__file__).resolve().parent;O=R/'DetailPreserved'
+r=json.loads((O/'validation.json').read_text());assert r['pass']
+font=ImageFont.truetype('C:/Windows/Fonts/malgun.ttf',23)
+sheet=Image.new('RGB',(1400,760),(30,30,33));draw=ImageDraw.Draw(sheet)
+for i,(path,label) in enumerate([(R/'FaceClean/renders/eye.png','단순화했던 버전'),(O/'renders/eye.png','기존 눈 표현 복원')]):
+ sheet.paste(Image.open(path).convert('RGB').resize((700,700),Image.Resampling.LANCZOS),(700*i,60));draw.text((700*i+20,16),label,font=font,fill='white')
+sheet.save(O/'renders/comparison.png')
+(O/'README.md').write_text(f'''# 눈 디테일 보존·복원본
+
+사용자가 첨부한 이미지에 해당하는 `Refined/Heroine_Refined.blend`를 기준으로 복원했습니다. `FaceClean`에서 바꿨던 단색 눈썹, 새 눈꺼풀, 피부와 헤어 재질을 이번 버전에 사용하지 않았습니다.
+
+눈썹의 기존 색 변화와 윗눈꺼풀·속눈썹의 두께, 텍스처, 주변 피부 음영을 유지합니다. 홍채는 첨부 이미지에 보이는 Refined 버전 그대로입니다. Tripo 최초 홍채로 교체한 것은 아닙니다.
+
+기존 눈썹/윗속눈썹 영역의 정점 {r['modified_vertices']}개에 깊이 방향으로만 아주 작은 평활화를 적용했습니다. 최대 이동은 {r['max_vertex_displacement']:.8f} 모델 단위입니다. 정면의 x/z 윤곽 좌표는 바꾸지 않았습니다.
+
+검증: 메시 연결 구조·UV·재질과 재질 할당은 기준 파일과 동일합니다. 텍스처 편집이나 새 형상 추가는 없습니다. FBX 재수입 시 {r['fbx_triangles']:,} 삼각형과 이미지 로딩을 확인했습니다. 텍스처는 Blender/FBX에 포함되어 있습니다.
+
+이번 결과는 기존 표현을 복원하는 것이 우선입니다. 이전 버전의 흐린 텍스처 경계와 눈 아래 연결부 문제 일부는 남아 있습니다. 모두 해결된 완성본으로 표현하지 않습니다.
+
+후속 기준: 원본의 애니메 표현과 인상을 보존합니다. 큰 형태·재질·텍스처 교체는 변경 이유, 보존할 특징, 예상되는 인상 변화와 범위를 설명하고 사용자 확인 후 진행합니다. 상세 기준은 상위 폴더의 ART_DIRECTION.md에 기록했습니다.
+''',encoding='utf-8')
+archive=R/'Heroine_DetailPreserved_Package.zip'
+with zipfile.ZipFile(archive,'w',zipfile.ZIP_DEFLATED) as z:
+ for p in O.rglob('*'):
+  if p.is_file() and p.suffix!='.blend1':z.write(p,p.relative_to(O))
+with zipfile.ZipFile(archive) as z:assert z.testzip() is None
+print(archive)

@@ -1,0 +1,15 @@
+{
+  "baked_pose_roundtrip_max_m": {
+    "Iris_Surface_1_Game": 2.467143644935277e-07,
+    "Heroine_Pearl_Bracelet_Game": 7.495521003875183e-07,
+    "Lower_Eyelid_1_Game": 2.4578449142609315e-07,
+    "Lower_Lid_Skin_1_Game": 2.4578449142609315e-07,
+    "Sclera_1_Game": 2.467143644935277e-07,
+    "Iris_Surface_-1_Game": 2.453323588724743e-07,
+    "Heroine_DetailFinish2_Game": 6.871464393043425e-06,
+    "Lower_Eyelid_-1_Game": 2.443120195039228e-07,
+    "Lower_Lid_Skin_-1_Game": 2.450564409173239e-07,
+    "Sclera_-1_Game": 2.453323588724743e-07
+  },
+  "pass": true
+}

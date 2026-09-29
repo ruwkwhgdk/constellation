@@ -1,0 +1,140 @@
+[
+  {
+    "source": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunSoft\\Heroine_Run_Soft.blend",
+    "images": [
+      {
+        "name": "T_Brow_SurfacePreserved",
+        "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\DetailFinish2\\Delivery\\textures\\T_Brow_SurfacePreserved.png",
+        "packed": true,
+        "exists": true
+      },
+      {
+        "name": "T_Brow_SurfacePreserved.001",
+        "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\DetailFinish2\\Delivery\\textures\\T_Brow_SurfacePreserved.png",
+        "packed": true,
+        "exists": true
+      },
+      {
+        "name": "T_CollarEdgeFinal_M_Shirt",
+        "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\DetailFinish2\\Delivery\\textures\\T_CollarEdgeFinal_M_Shirt.png",
+        "packed": true,
+        "exists": true
+      },
+      {
+        "name": "T_CollarEdgeFinal_M_Shirt.001",
+        "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\DetailFinish2\\Delivery\\textures\\T_CollarEdgeFinal_M_Shirt.png",
+        "packed": true,
+        "exists": true
+      },
+      {
+        "name": "T_EyelidPreserved_14",
+        "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\DetailFinish2\\Delivery\\textures\\T_EyelidPreserved_14.png",
+        "packed": true,
+        "exists": true
+      },
+      {
+        "name": "T_EyelidPreserved_14.001",
+        "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\DetailFinish2\\Delivery\\textures\\T_EyelidPreserved_14.png",
+        "packed": true,
+        "exists": true
+      },
+      {
+        "name": "T_EyelidPreserved_21",
+        "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\DetailFinish2\\Delivery\\textures\\T_EyelidPreserved_21.png",
+        "packed": true,
+        "exists": true
+      },
+      {
+        "name": "T_EyelidPreserved_21.001",
+        "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\DetailFinish2\\Delivery\\textures\\T_EyelidPreserved_21.png",
+        "packed": true,
+        "exists": true
+      },
+      {
+        "name": "T_Heroine_BaseColor_Corrected",
+        "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\DetailFinish2\\Delivery\\textures\\T_Heroine_BaseColor_Corrected.png",
+        "packed": true,
+        "exists": true
+      },
+      {
+        "name": "T_Heroine_BaseColor_Corrected.001",
+        "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\DetailFinish2\\Delivery\\textures\\T_Heroine_BaseColor_Corrected.png",
+        "packed": true,
+        "exists": true
+      },
+      {
+        "name": "T_Lid_Transition",
+        "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\DetailFinish2\\Delivery\\textures\\T_Lid_Transition.png",
+        "packed": true,
+        "exists": true
+      },
+      {
+        "name": "T_LocalFinish2_M_Details",
+        "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\DetailFinish2\\Delivery\\textures\\T_LocalFinish2_M_Details.png",
+        "packed": true,
+        "exists": true
+      },
+      {
+        "name": "T_LocalFinish2_M_Details.001",
+        "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\DetailFinish2\\Delivery\\textures\\T_LocalFinish2_M_Details.png",
+        "packed": true,
+        "exists": true
+      },
+      {
+        "name": "T_LocalFinish2_M_Ribbon",
+        "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\DetailFinish2\\Delivery\\textures\\T_LocalFinish2_M_Ribbon.png",
+        "packed": true,
+        "exists": true
+      },
+      {
+        "name": "T_LocalFinish2_M_Ribbon.001",
+        "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\DetailFinish2\\Delivery\\textures\\T_LocalFinish2_M_Ribbon.png",
+        "packed": true,
+        "exists": true
+      },
+      {
+        "name": "T_LocalFinish2_M_Skin",
+        "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\DetailFinish2\\Delivery\\textures\\T_LocalFinish2_M_Skin.png",
+        "packed": true,
+        "exists": true
+      },
+      {
+        "name": "T_LocalFinish2_M_Skin.001",
+        "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\DetailFinish2\\Delivery\\textures\\T_LocalFinish2_M_Skin.png",
+        "packed": true,
+        "exists": true
+      },
+      {
+        "name": "T_PinHem_M_Skirt",
+        "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\DetailFinish2\\Delivery\\textures\\T_PinHem_M_Skirt.png",
+        "packed": true,
+        "exists": true
+      },
+      {
+        "name": "T_PinHem_M_Skirt.001",
+        "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\DetailFinish2\\Delivery\\textures\\T_PinHem_M_Skirt.png",
+        "packed": true,
+        "exists": true
+      },
+      {
+        "name": "T_RearNick_M_Hair",
+        "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\DetailFinish2\\Delivery\\textures\\T_RearNick_M_Hair.png",
+        "packed": true,
+        "exists": true
+      },
+      {
+        "name": "T_RearNick_M_Hair.001",
+        "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\DetailFinish2\\Delivery\\textures\\T_RearNick_M_Hair.png",
+        "packed": true,
+        "exists": true
+      },
+      {
+        "name": "T_Ruby_Iris_Refined",
+        "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\DetailFinish2\\Delivery\\textures\\T_Ruby_Iris_Refined.png",
+        "packed": true,
+        "exists": true
+      }
+    ],
+    "libraries": []
+  }
+]

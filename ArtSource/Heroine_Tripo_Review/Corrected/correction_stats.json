@@ -1,0 +1,16 @@
+{
+  "source_triangles": 51898,
+  "corrected_body_triangles": 51764,
+  "corrected_triangles": 54116,
+  "vertices": 27611,
+  "degenerate_faces_removed": 9,
+  "under_eye_fragment_faces_removed": 118,
+  "max_displacement_normalized_units": 0.0026217425837810593,
+  "material_slots": 11,
+  "uv_layers": [
+    "Attribute"
+  ],
+  "rigged": false,
+  "source_texture_unchanged": true,
+  "color_correction": "Warm color contamination masked only in Hair and Ribbon materials, then baked to original UV layout."
+}

@@ -1,0 +1,30 @@
+{
+  "pass": true,
+  "sequence": "/Game/Resources/Characters/PC/player_heroine_new/Animations/AS_player_heroine_new_Attack01_Horizontal.AS_player_heroine_new_Attack01_Horizontal",
+  "montage": "/Game/Resources/Characters/PC/player_heroine_new/Animations/AM_player_heroine_new_Attack01_Horizontal.AM_player_heroine_new_Attack01_Horizontal",
+  "duration_s": 1.0,
+  "montage_duration_s": 1.0,
+  "notifies": [
+    {
+      "name": "Hitbox On",
+      "time": 0.3499999940395355
+    },
+    {
+      "name": "Hitbox Off",
+      "time": 0.5
+    },
+    {
+      "name": "ComboWindow Open",
+      "time": 0.5
+    },
+    {
+      "name": "ComboWindow Close",
+      "time": 0.6499999761581421
+    },
+    {
+      "name": "End Attack",
+      "time": 0.9900000095367432
+    }
+  ],
+  "source_sha256": "6ae435dcac565c5df21929b677c832f86125f65cbd4acc6d9641d864e530d905"
+}

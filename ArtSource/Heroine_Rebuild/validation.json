@@ -1,0 +1,43 @@
+{
+  "triangles": 70753,
+  "meshes": 1,
+  "bones": 41,
+  "unweighted": 0,
+  "bad_weight_sums": 0,
+  "over_four_weights": 0,
+  "nonfinite_vertices": 0,
+  "missing_uv": [],
+  "missing_images": [],
+  "skeleton_hierarchy_mismatch": [],
+  "material_slots": 24,
+  "max_rest_bone_head_error_m": 3.041306557042275e-07,
+  "rest_bounds": [
+    [
+      -0.7481200098991394,
+      0.7481197714805603
+    ],
+    [
+      -0.13490311801433563,
+      0.15542808175086975
+    ],
+    [
+      -0.9506195187568665,
+      0.9609952569007874
+    ]
+  ],
+  "posed_bounds": [
+    [
+      -0.3511381447315216,
+      0.35247957706451416
+    ],
+    [
+      -0.13490311801433563,
+      0.15542808175086975
+    ],
+    [
+      -0.9506195187568665,
+      0.9609952569007874
+    ]
+  ],
+  "checks_pass": true
+}

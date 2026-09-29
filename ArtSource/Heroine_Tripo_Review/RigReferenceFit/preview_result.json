@@ -1,0 +1,13 @@
+{
+  "map": "/Game/Resources/Characters/PC/player_heroine_new/Preview/L_player_heroine_new_ReferenceFit",
+  "physics_bodies": [
+    "pelvis",
+    "spine_03",
+    "neck_02"
+  ],
+  "animation": "/Game/Resources/Characters/PC/player_heroine_new/Animations/AS_player_heroine_new_PreviewRelaxed.AS_player_heroine_new_PreviewRelaxed",
+  "height_cm": 159.99999911151826,
+  "upperarm_l": "<Struct 'Vector' (0x000001A9F8F30240) {x: -0.480062, y: -11.407915, z: 128.057241}>",
+  "head": "<Struct 'Vector' (0x000001A9F8F30240) {x: -0.427397, y: -0.000000, z: 137.562274}>",
+  "asset_source": "C:/Users/User/Documents/UnrealProjects/Constellation/ArtSource/Heroine_Tripo_Review/RigReferenceFit/Delivery/Heroine_Skeletal.fbx"
+}

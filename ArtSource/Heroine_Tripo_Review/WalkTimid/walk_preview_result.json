@@ -1,0 +1,13 @@
+{
+  "map": "/Game/Resources/Characters/PC/player_heroine_new/Preview/L_player_heroine_new_Walk_Timid",
+  "physics_bodies": [
+    "pelvis",
+    "spine_03",
+    "neck_02"
+  ],
+  "animation": "/Game/Resources/Characters/PC/player_heroine_new/Animations/AS_player_heroine_new_Walk_Timid.AS_player_heroine_new_Walk_Timid",
+  "height_cm": 159.99999911151826,
+  "upperarm_l": "<Struct 'Vector' (0x00000238F0E0AF40) {x: 0.194778, y: -11.472753, z: 125.237819}>",
+  "head": "<Struct 'Vector' (0x00000238F0E0AF40) {x: 0.686526, y: -0.064798, z: 134.730284}>",
+  "asset_source": "C:/Users/User/Documents/UnrealProjects/Constellation/ArtSource/Heroine_Tripo_Review/WalkTimid/SK_player_heroine_new_WalkPreview.fbx"
+}

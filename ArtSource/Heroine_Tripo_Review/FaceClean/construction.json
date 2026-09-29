@@ -1,0 +1,23 @@
+{
+  "removed_floating_faces": 315,
+  "sockets": [
+    {
+      "side": -1,
+      "removed_faces": 496,
+      "perimeter_vertices": 123,
+      "depth_range": [
+        -0.05543478950858116,
+        -0.030805157497525215
+      ]
+    },
+    {
+      "side": 1,
+      "removed_faces": 456,
+      "perimeter_vertices": 123,
+      "depth_range": [
+        -0.05545111373066902,
+        -0.030803905799984932
+      ]
+    }
+  ]
+}

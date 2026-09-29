@@ -1,0 +1,25 @@
+{
+  "blend_triangles": 54116,
+  "retained_polygon_uvs_match_source": true,
+  "finite_coordinates": true,
+  "body_material_face_counts": {
+    "M_Hair": 8745,
+    "M_Cardigan": 5395,
+    "M_Skin": 5550,
+    "M_Skirt": 2010,
+    "M_Stockings": 1010,
+    "M_Shoes": 2061,
+    "M_Ribbon": 1062,
+    "M_Shirt": 1448,
+    "M_Eyes": 384,
+    "M_Details": 884
+  },
+  "armatures": 0,
+  "original_unchanged_.fbx": true,
+  "original_unchanged_.jpg": true,
+  "fbx_meshes": 2,
+  "fbx_triangles": 54116,
+  "fbx_missing_uv": [],
+  "missing_images": [],
+  "pass": true
+}

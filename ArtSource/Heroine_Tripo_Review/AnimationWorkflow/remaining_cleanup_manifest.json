@@ -1,0 +1,290 @@
+[
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\AS_player_heroine_new_Run_Polish.fbx",
+    "bytes": 762604
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\cloth_clearance.json",
+    "bytes": 14477
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\contact_before.json",
+    "bytes": 17713
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\contact_design.json",
+    "bytes": 2225
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\encode_preview.py",
+    "bytes": 663
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\export_polish.py",
+    "bytes": 1605
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\export.log",
+    "bytes": 1429
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\garment_weights.json",
+    "bytes": 21417
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\Heroine_Run_Polish.blend",
+    "bytes": 192059635
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\Heroine_Run_Polish.blend1",
+    "bytes": 98014142
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\import_polish_unreal.py",
+    "bytes": 4485
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\import_unreal.log",
+    "bytes": 35409
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\inspect_speed_unreal.py",
+    "bytes": 923
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\inspect_speed.log",
+    "bytes": 30735
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\polish_cloth.py",
+    "bytes": 4533
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\polish_contact.py",
+    "bytes": 2350
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\preview_unreal.py",
+    "bytes": 5488
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\project_speed.json",
+    "bytes": 545
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\README.md",
+    "bytes": 4210
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\render_all.log",
+    "bytes": 3899
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\render_polish.py",
+    "bytes": 1396
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\Run_Polish_KeyPoses.jpg",
+    "bytes": 195465
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\Run_Polish_Preview.gif",
+    "bytes": 1012267
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\run_preview_result.json",
+    "bytes": 474
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\SK_player_heroine_new_RunPreview.fbx",
+    "bytes": 3388988
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\unreal_import.json",
+    "bytes": 997
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\unreal_live_verification.json",
+    "bytes": 463
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\unreal_run_polish.png",
+    "bytes": 674567
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\unreal_verification.json",
+    "bytes": 10371
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\validate_polish.py",
+    "bytes": 3667
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\validate.log",
+    "bytes": 1059
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\validation.json",
+    "bytes": 55705
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\verify_assets_unreal.py",
+    "bytes": 1700
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\verify_unreal.log",
+    "bytes": 30211
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\frames\\001.png",
+    "bytes": 272694
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\frames\\002.png",
+    "bytes": 273451
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\frames\\003.png",
+    "bytes": 274289
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\frames\\004.png",
+    "bytes": 275004
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\frames\\005.png",
+    "bytes": 276714
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\frames\\006.png",
+    "bytes": 276801
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\frames\\007.png",
+    "bytes": 277085
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\frames\\008.png",
+    "bytes": 277868
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\frames\\009.png",
+    "bytes": 275234
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\frames\\010.png",
+    "bytes": 274052
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\frames\\011.png",
+    "bytes": 273026
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\frames\\012.png",
+    "bytes": 273378
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\frames\\013.png",
+    "bytes": 272452
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\frames\\014.png",
+    "bytes": 271487
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\frames\\015.png",
+    "bytes": 274531
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\frames\\016.png",
+    "bytes": 274815
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\frames\\017.png",
+    "bytes": 273066
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\frames\\018.png",
+    "bytes": 272422
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\frames\\019.png",
+    "bytes": 270965
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\frames\\020.png",
+    "bytes": 269281
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\frames\\021.png",
+    "bytes": 269712
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\frames\\022.png",
+    "bytes": 272618
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\frames\\023.png",
+    "bytes": 273411
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\frames\\024.png",
+    "bytes": 273020
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\SK_player_heroine_new_RunPreview.fbm\\T_Brow_SurfacePreserved.png",
+    "bytes": 357763
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\SK_player_heroine_new_RunPreview.fbm\\T_CollarEdgeFinal_M_Shirt.png",
+    "bytes": 13746321
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\SK_player_heroine_new_RunPreview.fbm\\T_EyelidPreserved_14.png",
+    "bytes": 246026
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\SK_player_heroine_new_RunPreview.fbm\\T_EyelidPreserved_21.png",
+    "bytes": 50284
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\SK_player_heroine_new_RunPreview.fbm\\T_Heroine_BaseColor_Corrected.png",
+    "bytes": 13747057
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\SK_player_heroine_new_RunPreview.fbm\\T_Lid_Transition.png",
+    "bytes": 16492
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\SK_player_heroine_new_RunPreview.fbm\\T_LocalFinish2_M_Details.png",
+    "bytes": 13747326
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\SK_player_heroine_new_RunPreview.fbm\\T_LocalFinish2_M_Ribbon.png",
+    "bytes": 13744427
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\SK_player_heroine_new_RunPreview.fbm\\T_LocalFinish2_M_Skin.png",
+    "bytes": 12644550
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\SK_player_heroine_new_RunPreview.fbm\\T_PinHem_M_Skirt.png",
+    "bytes": 13748037
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\SK_player_heroine_new_RunPreview.fbm\\T_RearNick_M_Hair.png",
+    "bytes": 12644630
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\Heroine_Tripo_Review\\RunPolish\\SK_player_heroine_new_RunPreview.fbm\\T_Ruby_Iris_Refined.png",
+    "bytes": 187647
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\Content\\Resources\\Characters\\PC\\player_heroine_new\\Preview\\L_player_heroine_new_Run_Natural.umap",
+    "bytes": 24794
+  },
+  {
+    "path": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\Content\\Resources\\Characters\\PC\\player_heroine_new\\Preview\\L_player_heroine_new_Run_Polish.umap",
+    "bytes": 24772
+  }
+]

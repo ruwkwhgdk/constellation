@@ -1,0 +1,14 @@
+{
+  "duration_s": 1.0,
+  "fps": 60,
+  "play_rate": 1.0,
+  "root_motion": false,
+  "hitbox_on_s": 0.35,
+  "hitbox_off_s": 0.5,
+  "combo_window_open_s": 0.5,
+  "combo_window_close_s": 0.65,
+  "handoff_pose_s": 0.5,
+  "end_attack_s": 0.99,
+  "suggested_next_attack_blend_s": 0.08,
+  "integration": "New review assets only. Existing attack blueprint, damage and input logic unchanged. Attack02/03 not authored yet."
+}

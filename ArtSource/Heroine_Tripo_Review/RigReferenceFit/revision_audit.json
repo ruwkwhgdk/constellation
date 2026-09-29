@@ -1,0 +1,49 @@
+{
+  "before": {
+    "height_cm": 159.99999993728125,
+    "head_width_cm": 28.764398396015167,
+    "head_depth_cm": 27.748265862464905,
+    "shoulder_height_cm": 124.5423436164856,
+    "shoulder_joint_span_cm": 24.332179129123688,
+    "textures": {
+      "T_Brow_SurfacePreserved": "e443e7bf7bc78d073dfd782eeb178328918c707d62950f5efb3758f8777af2e6",
+      "T_CollarEdgeFinal_M_Shirt": "200fc39556c4cca9019e0cd7c1e8059a3e3f9a0e4023f4200a0ceb9861f0359e",
+      "T_EyelidPreserved_14": "4815101319e2195a352eb6981139cfdb450cef15bb630ee964e9111144aee588",
+      "T_EyelidPreserved_21": "cd281bd3abebb18009afa17dffa19c316c1ece4908cc6e64b12643694c1df430",
+      "T_Heroine_BaseColor_Corrected": "24471840e49dd8c241074412f685e019763b3b3d2c3edaaf5dc9073eb6ce0204",
+      "T_Lid_Transition": "97b82243d3a14318333722d639a8d4d448d45ba13fb38573d38ddb3d1231c4bb",
+      "T_LocalFinish2_M_Details": "e421228341349042ffeddbb8025ce00b04a5b11cf745211c3c063b734466774f",
+      "T_LocalFinish2_M_Ribbon": "6aa02d46b160b8fda942eb3dddd888919183f330c18435f2bec7cdf92b5c3060",
+      "T_LocalFinish2_M_Skin": "9e8da588841cc1ed63cd091dae36a2ab820917d6ceb1209be120d8978b8aa020",
+      "T_PinHem_M_Skirt": "0cd635c46b546ecea7950a422b52df6636ad74df8c47c14e4368bd9be39c1057",
+      "T_RearNick_M_Hair": "21cb64bb3bbd9895222908fb89a8a3c952d0137c9b1a157f1101b93c00f45d3a",
+      "T_Ruby_Iris_Refined": "70d99a9373abfdd29e6a537b684ef83a25316de799a07d1b67a8d9284a133cb8"
+    }
+  },
+  "after": {
+    "height_cm": 160.0000000651562,
+    "head_width_cm": 25.59894025325775,
+    "head_depth_cm": 27.095701545476913,
+    "shoulder_height_cm": 128.05722951889038,
+    "shoulder_joint_span_cm": 22.81583398580551,
+    "textures": {
+      "T_Brow_SurfacePreserved": "e443e7bf7bc78d073dfd782eeb178328918c707d62950f5efb3758f8777af2e6",
+      "T_CollarEdgeFinal_M_Shirt": "200fc39556c4cca9019e0cd7c1e8059a3e3f9a0e4023f4200a0ceb9861f0359e",
+      "T_EyelidPreserved_14": "4815101319e2195a352eb6981139cfdb450cef15bb630ee964e9111144aee588",
+      "T_EyelidPreserved_21": "cd281bd3abebb18009afa17dffa19c316c1ece4908cc6e64b12643694c1df430",
+      "T_Heroine_BaseColor_Corrected": "24471840e49dd8c241074412f685e019763b3b3d2c3edaaf5dc9073eb6ce0204",
+      "T_Lid_Transition": "97b82243d3a14318333722d639a8d4d448d45ba13fb38573d38ddb3d1231c4bb",
+      "T_LocalFinish2_M_Details": "e421228341349042ffeddbb8025ce00b04a5b11cf745211c3c063b734466774f",
+      "T_LocalFinish2_M_Ribbon": "6aa02d46b160b8fda942eb3dddd888919183f330c18435f2bec7cdf92b5c3060",
+      "T_LocalFinish2_M_Skin": "9e8da588841cc1ed63cd091dae36a2ab820917d6ceb1209be120d8978b8aa020",
+      "T_PinHem_M_Skirt": "0cd635c46b546ecea7950a422b52df6636ad74df8c47c14e4368bd9be39c1057",
+      "T_RearNick_M_Hair": "21cb64bb3bbd9895222908fb89a8a3c952d0137c9b1a157f1101b93c00f45d3a",
+      "T_Ruby_Iris_Refined": "70d99a9373abfdd29e6a537b684ef83a25316de799a07d1b67a8d9284a133cb8"
+    }
+  },
+  "uv_topology_materials_identical": true,
+  "original_textures_preserved": true,
+  "reference_head_width_cm": 25.4281140864,
+  "reference_shoulder_height_cm": 128.01648159450136,
+  "pass": true
+}

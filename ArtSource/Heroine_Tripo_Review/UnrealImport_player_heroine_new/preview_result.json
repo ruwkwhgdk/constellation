@@ -1,0 +1,10 @@
+{
+  "map": "/Game/Resources/Characters/PC/player_heroine_new/Preview/L_player_heroine_new_Preview",
+  "physics_bodies": [
+    "pelvis",
+    "spine_03",
+    "neck_02"
+  ],
+  "animation": "/Game/Resources/Characters/PC/player_heroine_new/Animations/AS_player_heroine_new_PreviewRelaxed.AS_player_heroine_new_PreviewRelaxed",
+  "height_cm": 159.99999898369424
+}

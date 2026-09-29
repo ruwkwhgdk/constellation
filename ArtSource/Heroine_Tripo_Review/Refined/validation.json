@@ -1,0 +1,17 @@
+{
+  "blend": {
+    "triangles": 61038,
+    "mesh_objects": 10,
+    "missing_uv": [],
+    "missing_images": [],
+    "finite": true
+  },
+  "fbx": {
+    "triangles": 61038,
+    "mesh_objects": 10,
+    "missing_uv": [],
+    "missing_images": [],
+    "finite": true
+  },
+  "pass": true
+}

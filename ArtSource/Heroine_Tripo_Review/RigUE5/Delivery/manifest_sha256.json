@@ -1,0 +1,19 @@
+{
+  "baked_pose_validation.json": "e7c2ec51132ea0028c3674514d39303fcb7a7fa50b79c36182918d4dbdf8a7cc",
+  "bone_mapping.json": "24bc5de6cc8de2ed5ca238ab73b40d2f3d19d7de470323d43b85952eacbcb791",
+  "control_validation.json": "3386d224f0d380c6f34d0e25ff1b778706781b366cbf63f88467054b8b601605",
+  "export_game_rig.py": "a576699b2e937bc3d9401a2023632a8bb835a02db9752d53753fbafab59c860d",
+  "Heroine_AnimationRig.blend": "6fd6924c13f7334ddaa3960b4a23ff8058436f15f9088394529daf684b4691ae",
+  "Heroine_GameSkeleton.blend": "e401f8c4499e7d4cb9ded31ff7be4161c32808f2d582c0499c489ce2a4bfdca4",
+  "Heroine_Skeletal.fbx": "81fdc3716b0f4043f9e56a8bd77abdf305059df17c48f4e4769a8c06992d97ce",
+  "README_KO.md": "4bfac6f9d5804feadeca4cf402dd67532815f506473ef8bdf5116029bbc4ffa3",
+  "retarget_chains.json": "e1460e06105ae888f007f7cacbf44dc47d58e06e5b4a7bd72ed69a8d9fb1d085",
+  "surface_preservation.json": "af55aa3614fb40c7df8a47099dece805b680128d7948fd871d05c54a23954c35",
+  "unreal_validation.json": "e8328f80727b66de2786f37da486170b4c729d4f6b782cc0321e95fc1d17d403",
+  "validation.json": "6ef663cfa8f3a4240096249d2cae01ad4ab547cb35995ea5c426a1ee1f13d1b1",
+  "renders/bend.png": "4a26c5dd5fe01e320e1a2eeae38542a0700cec23918814a21543f68efdbcd224",
+  "renders/hand.png": "a21234bc231b68753558190899a0f82a518b85d899f2afe91a6b34b083f6d053",
+  "renders/relaxed.png": "6075a4809df5e1a21c9ce766e0ec4455065be1ac3705981938ebe1cf82bab303",
+  "renders/rest.png": "40b06b912fd7737b1c86a82ef9acf8a854187d319afbf60cf04d58ae217ae928",
+  "renders/squat.png": "1b3c010a2f8db6f3abc0dcb4e06828e070052290cfa50143264d4415cc36ec5d"
+}

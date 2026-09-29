@@ -1,0 +1,10 @@
+{
+  "sequence_length": 1.0,
+  "old_length": 1.0,
+  "dynamic_length": 1.0,
+  "dynamic_tracks": "[{slot_name: \"DefaultSlot\", anim_track: {anim_segments: ((CachedPlayLength=1.000000,AnimReference=\"/Script/Engine.AnimSequence'/Game/Resources/Characters/PC/player_heroine_new/Animations/AS_player_heroine_new_Attack01_Horizontal.AS_player_heroine_new_Attack01_Horizontal'\",AnimEndTime=1.000000))}}]",
+  "methods": [
+    "get_play_length",
+    "sequence_length"
+  ]
+}

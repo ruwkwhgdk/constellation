@@ -1,0 +1,7 @@
+{
+  "protected_body_components_exact": true,
+  "uv_exact": true,
+  "topology_and_materials_exact": true,
+  "packed_textures_exact": true,
+  "pass": true
+}

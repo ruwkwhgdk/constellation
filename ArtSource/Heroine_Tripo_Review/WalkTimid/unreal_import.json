@@ -1,0 +1,84 @@
+{
+  "pass": true,
+  "asset": "/Game/Resources/Characters/PC/player_heroine_new/Animations/AS_player_heroine_new_Walk_Timid.AS_player_heroine_new_Walk_Timid",
+  "preview_mesh": "/Game/Resources/Characters/PC/player_heroine_new/SK_player_heroine_new_WalkPreview.SK_player_heroine_new_WalkPreview",
+  "height_cm": 159.99999911151826,
+  "skeleton": "/Game/Resources/Characters/PC/player_heroine_new/SKEL_player_heroine_new.SKEL_player_heroine_new",
+  "duration_s": 1.3333333730697632,
+  "sync_markers": [
+    {
+      "name": "LeftPlant",
+      "time": 0.0
+    },
+    {
+      "name": "RightPlant",
+      "time": 0.6666666865348816
+    }
+  ],
+  "source": "C:/Users/User/Documents/UnrealProjects/Constellation/ArtSource/Heroine_Tripo_Review/WalkTimid/AS_player_heroine_new_Walk_Timid.fbx",
+  "source_sha256": "86a7416af4f12d585e967af08a9e882f38627d74bc0a88fe23f05b5addb4da94",
+  "reference_blend_dependencies": [
+    "/Game/Resources/Characters/CommonAnimation/Idle",
+    "/Game/Resources/Characters/CommonAnimation/Walk",
+    "/Game/Resources/Characters/CommonAnimation/Run",
+    "/Game/Resources/Characters/PC/Player_Heroine/Player_Heroine_Skeleton"
+  ],
+  "pose_samples": {
+    "root": [
+      "<Struct 'Transform' (0x00000236A4137930) {rotation: {x: 0.000000, y: -0.000000, z: 0.707107, w: -0.707107}, translation: {x: 0.000000, y: -0.000000, z: 0.000000}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+      "<Struct 'Transform' (0x00000236A4137930) {rotation: {x: 0.000000, y: -0.000000, z: 0.707107, w: -0.707107}, translation: {x: 0.000000, y: -0.000000, z: 0.000000}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+      "<Struct 'Transform' (0x00000236A4137930) {rotation: {x: 0.000000, y: -0.000000, z: 0.707107, w: -0.707107}, translation: {x: 0.000000, y: -0.000000, z: 0.000000}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+      "<Struct 'Transform' (0x00000236A4137930) {rotation: {x: 0.000000, y: -0.000000, z: 0.707107, w: -0.707107}, translation: {x: 0.000000, y: -0.000000, z: 0.000000}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+      "<Struct 'Transform' (0x00000236A4137930) {rotation: {x: 0.000000, y: -0.000000, z: 0.707107, w: -0.707107}, translation: {x: 0.000000, y: -0.000000, z: 0.000000}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>"
+    ],
+    "pelvis": [
+      "<Struct 'Transform' (0x00000236A4137930) {rotation: {x: -0.727931, y: 0.000000, z: -0.000000, w: 0.685651}, translation: {x: 0.000650, y: -0.013126, z: 0.900019}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+      "<Struct 'Transform' (0x00000236A4137930) {rotation: {x: -0.727860, y: 0.010163, z: -0.009573, w: 0.685584}, translation: {x: 0.002321, y: -0.013126, z: 0.905501}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+      "<Struct 'Transform' (0x00000236A4137930) {rotation: {x: -0.727931, y: 0.000000, z: -0.000000, w: 0.685651}, translation: {x: -0.000542, y: -0.013126, z: 0.899611}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+      "<Struct 'Transform' (0x00000236A4137930) {rotation: {x: -0.727860, y: -0.010163, z: 0.009572, w: 0.685584}, translation: {x: -0.002214, y: -0.013126, z: 0.905701}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+      "<Struct 'Transform' (0x00000236A4137930) {rotation: {x: -0.727931, y: 0.000000, z: -0.000000, w: 0.685651}, translation: {x: 0.000650, y: -0.013126, z: 0.900019}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>"
+    ],
+    "thigh_l": [
+      "<Struct 'Transform' (0x00000236A4137930) {rotation: {x: -0.975567, y: -0.001350, z: -0.046708, w: 0.214675}, translation: {x: 0.070549, y: 0.004187, z: 0.007306}, scale3d: {x: 1.000000, y: 0.999999, z: 0.999999}}>",
+      "<Struct 'Transform' (0x00000236A4137930) {rotation: {x: -0.985088, y: -0.009658, z: -0.047666, w: 0.165032}, translation: {x: 0.070549, y: 0.004187, z: 0.007306}, scale3d: {x: 1.000000, y: 0.999999, z: 0.999999}}>",
+      "<Struct 'Transform' (0x00000236A4137930) {rotation: {x: -0.997229, y: -0.011740, z: -0.048447, w: 0.055227}, translation: {x: 0.070549, y: 0.004187, z: 0.007306}, scale3d: {x: 1.000000, y: 0.999999, z: 0.999999}}>",
+      "<Struct 'Transform' (0x00000236A4137930) {rotation: {x: -0.989037, y: -0.013986, z: -0.048117, w: 0.138906}, translation: {x: 0.070549, y: 0.004187, z: 0.007306}, scale3d: {x: 1.000000, y: 0.999999, z: 0.999999}}>",
+      "<Struct 'Transform' (0x00000236A4137930) {rotation: {x: -0.975567, y: -0.001350, z: -0.046708, w: 0.214675}, translation: {x: 0.070549, y: 0.004187, z: 0.007306}, scale3d: {x: 1.000000, y: 0.999999, z: 0.999999}}>"
+    ],
+    "calf_l": [
+      "<Struct 'Transform' (0x00000236A4137930) {rotation: {x: -0.142247, y: 0.000350, z: 0.000050, w: 0.989831}, translation: {x: 0.000000, y: -0.214785, z: -0.000001}, scale3d: {x: 1.000000, y: 0.999999, z: 1.000002}}>",
+      "<Struct 'Transform' (0x00000236A4137930) {rotation: {x: -0.236569, y: -0.000264, z: -0.000064, w: 0.971615}, translation: {x: 0.000000, y: -0.214785, z: -0.000001}, scale3d: {x: 1.000000, y: 0.999999, z: 1.000002}}>",
+      "<Struct 'Transform' (0x00000236A4137930) {rotation: {x: -0.217661, y: -0.000730, z: -0.000163, w: 0.976024}, translation: {x: 0.000000, y: -0.214785, z: -0.000001}, scale3d: {x: 1.000000, y: 0.999999, z: 1.000002}}>",
+      "<Struct 'Transform' (0x00000236A4137930) {rotation: {x: -0.338767, y: -0.000900, z: -0.000324, w: 0.940870}, translation: {x: 0.000000, y: -0.214785, z: -0.000001}, scale3d: {x: 1.000000, y: 0.999999, z: 1.000002}}>",
+      "<Struct 'Transform' (0x00000236A4137930) {rotation: {x: -0.142247, y: 0.000350, z: 0.000050, w: 0.989831}, translation: {x: 0.000000, y: -0.214785, z: -0.000001}, scale3d: {x: 1.000000, y: 0.999999, z: 1.000002}}>"
+    ],
+    "foot_l": [
+      "<Struct 'Transform' (0x00000236A4137930) {rotation: {x: 0.449401, y: -0.043441, z: 0.019333, w: 0.892064}, translation: {x: 0.000000, y: -0.202807, z: -0.000001}, scale3d: {x: 1.000000, y: 1.000005, z: 0.999995}}>",
+      "<Struct 'Transform' (0x00000236A4137930) {rotation: {x: 0.546259, y: -0.035606, z: 0.020171, w: 0.836616}, translation: {x: 0.000000, y: -0.202807, z: -0.000001}, scale3d: {x: 1.000000, y: 1.000005, z: 0.999995}}>",
+      "<Struct 'Transform' (0x00000236A4137930) {rotation: {x: 0.618285, y: -0.041532, z: 0.023974, w: 0.784490}, translation: {x: 0.000000, y: -0.202807, z: -0.000001}, scale3d: {x: 1.000000, y: 1.000005, z: 0.999995}}>",
+      "<Struct 'Transform' (0x00000236A4137930) {rotation: {x: 0.620202, y: -0.050579, z: 0.016182, w: 0.782643}, translation: {x: 0.000000, y: -0.202807, z: -0.000001}, scale3d: {x: 1.000000, y: 1.000005, z: 0.999995}}>",
+      "<Struct 'Transform' (0x00000236A4137930) {rotation: {x: 0.449401, y: -0.043441, z: 0.019333, w: 0.892064}, translation: {x: 0.000000, y: -0.202807, z: -0.000001}, scale3d: {x: 1.000000, y: 1.000005, z: 0.999995}}>"
+    ],
+    "thigh_r": [
+      "<Struct 'Transform' (0x00000236A4137930) {rotation: {x: -0.997287, y: 0.011624, z: 0.048444, w: 0.054193}, translation: {x: -0.070549, y: 0.004187, z: 0.007306}, scale3d: {x: 0.999999, y: 0.999999, z: 0.999999}}>",
+      "<Struct 'Transform' (0x00000236A4137930) {rotation: {x: -0.988990, y: 0.013943, z: 0.048111, w: 0.139246}, translation: {x: -0.070549, y: 0.004187, z: 0.007306}, scale3d: {x: 0.999999, y: 0.999999, z: 0.999999}}>",
+      "<Struct 'Transform' (0x00000236A4137930) {rotation: {x: -0.975238, y: 0.001362, z: 0.046691, w: 0.216168}, translation: {x: -0.070549, y: 0.004187, z: 0.007306}, scale3d: {x: 0.999999, y: 0.999999, z: 0.999999}}>",
+      "<Struct 'Transform' (0x00000236A4137930) {rotation: {x: -0.985172, y: 0.009575, z: 0.047665, w: 0.164538}, translation: {x: -0.070549, y: 0.004187, z: 0.007306}, scale3d: {x: 0.999999, y: 0.999999, z: 0.999999}}>",
+      "<Struct 'Transform' (0x00000236A4137930) {rotation: {x: -0.997287, y: 0.011624, z: 0.048444, w: 0.054193}, translation: {x: -0.070549, y: 0.004187, z: 0.007306}, scale3d: {x: 0.999999, y: 0.999999, z: 0.999999}}>"
+    ],
+    "foot_r": [
+      "<Struct 'Transform' (0x00000236A4137930) {rotation: {x: 0.617362, y: 0.041096, z: -0.024297, w: 0.785229}, translation: {x: 0.000000, y: -0.202807, z: -0.000000}, scale3d: {x: 1.000000, y: 1.000001, z: 0.999999}}>",
+      "<Struct 'Transform' (0x00000236A4137930) {rotation: {x: 0.620513, y: 0.050153, z: -0.016414, w: 0.782419}, translation: {x: 0.000000, y: -0.202807, z: -0.000000}, scale3d: {x: 1.000000, y: 1.000001, z: 0.999999}}>",
+      "<Struct 'Transform' (0x00000236A4137930) {rotation: {x: 0.450667, y: 0.042980, z: -0.019437, w: 0.891445}, translation: {x: 0.000000, y: -0.202807, z: -0.000000}, scale3d: {x: 1.000000, y: 1.000001, z: 0.999999}}>",
+      "<Struct 'Transform' (0x00000236A4137930) {rotation: {x: 0.545829, y: 0.035155, z: -0.020418, w: 0.836909}, translation: {x: 0.000000, y: -0.202807, z: -0.000000}, scale3d: {x: 1.000000, y: 1.000001, z: 0.999999}}>",
+      "<Struct 'Transform' (0x00000236A4137930) {rotation: {x: 0.617362, y: 0.041096, z: -0.024297, w: 0.785229}, translation: {x: 0.000000, y: -0.202807, z: -0.000000}, scale3d: {x: 1.000000, y: 1.000001, z: 0.999999}}>"
+    ],
+    "head": [
+      "<Struct 'Transform' (0x00000236A4137930) {rotation: {x: 0.017268, y: 0.000000, z: 0.000000, w: -0.999851}, translation: {x: 0.000000, y: -0.034234, z: -0.000000}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+      "<Struct 'Transform' (0x00000236A4137930) {rotation: {x: 0.017268, y: 0.000000, z: 0.000000, w: -0.999851}, translation: {x: 0.000000, y: -0.034234, z: -0.000000}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+      "<Struct 'Transform' (0x00000236A4137930) {rotation: {x: 0.017268, y: 0.000000, z: 0.000000, w: -0.999851}, translation: {x: 0.000000, y: -0.034234, z: -0.000000}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+      "<Struct 'Transform' (0x00000236A4137930) {rotation: {x: 0.017268, y: 0.000000, z: 0.000000, w: -0.999851}, translation: {x: 0.000000, y: -0.034234, z: -0.000000}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+      "<Struct 'Transform' (0x00000236A4137930) {rotation: {x: 0.017268, y: 0.000000, z: 0.000000, w: -0.999851}, translation: {x: 0.000000, y: -0.034234, z: -0.000000}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>"
+    ]
+  }
+}

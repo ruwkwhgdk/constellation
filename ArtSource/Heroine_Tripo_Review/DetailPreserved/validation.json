@@ -1,0 +1,15 @@
+{
+  "baseline": "Refined/Heroine_Refined.blend",
+  "topology_unchanged": true,
+  "uv_unchanged": true,
+  "materials_unchanged": true,
+  "texture_edits": false,
+  "new_geometry": false,
+  "modified_vertices": 393,
+  "max_vertex_displacement": 5.9999525084431e-05,
+  "projected_eye_outline_unchanged": true,
+  "blend_triangles": 61038,
+  "fbx_triangles": 61038,
+  "missing_images": [],
+  "pass": true
+}

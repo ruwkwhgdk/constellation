@@ -1,0 +1,10 @@
+{
+  "protected_geometry_exact": true,
+  "uv_and_topology_exact": true,
+  "eye_front_projection_xz_exact": true,
+  "packed_textures_exact": true,
+  "protected_body_vertex_count": 17584,
+  "max_eye_depth_change_cm": 1.9757518900569526,
+  "shoulder_joint_span_cm": 24.3321752,
+  "pass": true
+}

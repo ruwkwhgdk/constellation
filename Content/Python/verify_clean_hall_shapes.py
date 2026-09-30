@@ -1,9 +1,10 @@
+from resource_paths import loads as load_current_json, load as load_current_json_file
 import unreal as u,json,runpy
 from pathlib import Path
 ROOT=Path(u.Paths.project_dir());OUT=ROOT/'ArtSource/OvergrownHall/TripoReplacement/v005'
-D='/Game/Environment/OvergrownHall/TripoFull';MAP=D+'/Maps/L_OvergrownHall_TripoFull'
+D='/Game/Constellation/Environments/OvergrownHall/TripoFull';MAP='/Game/Constellation/Worlds/OvergrownHall/Maps/L_OvergrownHall_TripoFull'
 runpy.run_path(str(ROOT/'Content/Python/verify_tripo_full_hall.py'))
-rows=json.loads((OUT/'shape_manifest.json').read_text());expected={r['id']:r for r in rows}
+rows=load_current_json((OUT/'shape_manifest.json').read_text());expected={r['id']:r for r in rows}
 E=u.EditorAssetLibrary;SM=u.get_editor_subsystem(u.StaticMeshEditorSubsystem)
 for row in rows:
     mesh=E.load_asset(D+'/Meshes/'+row['mesh']);extent=mesh.get_bounds().box_extent*2

@@ -10,7 +10,7 @@ class UQuestDefinition;
 
 /**
  * The full catalog of quests in the game. Author a single instance of this asset
- * (by convention at /Game/Data/Quests/DA_QuestDatabase) and list every UQuestDefinition in it;
+ * (by convention at /Game/Constellation/Gameplay/Quests/Data/DA_QuestDatabase) and list every UQuestDefinition in it;
  * UQuestSubsystem auto-loads it from that path on startup.
  */
 UCLASS(BlueprintType)

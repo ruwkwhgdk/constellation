@@ -1,11 +1,12 @@
 """Import only the isolated OvergrownHall blockout, preserving other levels."""
+from resource_paths import loads as load_current_json, load as load_current_json_file
 import unreal as u, json, math
 from pathlib import Path
 ROOT=Path(u.Paths.project_dir()); SRC=Path(globals().get('SOURCE_DIR',ROOT/'ArtSource/OvergrownHall/Blockout/v002'))
-DEST=globals().get('DESTINATION','/Game/Environment/OvergrownHall/Blockout'); MAP=DEST+'/Maps/'+globals().get('MAP_NAME','L_OvergrownHall_Blockout')
+DEST=globals().get('DESTINATION','/Game/Constellation/Environments/OvergrownHall/Blockout'); MAP=DEST+'/Maps/'+globals().get('MAP_NAME','L_OvergrownHall_Blockout')
 E=u.EditorAssetLibrary; AT=u.AssetToolsHelpers.get_asset_tools(); M=u.MaterialEditingLibrary
 A=u.get_editor_subsystem(u.EditorActorSubsystem); L=u.get_editor_subsystem(u.LevelEditorSubsystem)
-spec=json.loads((SRC/'unreal_manifest.json').read_text())
+spec=load_current_json((SRC/'unreal_manifest.json').read_text())
 world=u.get_editor_subsystem(u.UnrealEditorSubsystem).get_editor_world()
 u.SystemLibrary.execute_console_command(world,'Interchange.FeatureFlags.Import.FBX 0')
 materials={}
@@ -71,7 +72,7 @@ pp.set_editor_property('settings',settings)
 import runpy
 runpy.run_path(str(ROOT/'Content/Python/hall_exposure_settings.py'))['apply_hall_exposure'](pp)
 ws=u.get_editor_subsystem(u.UnrealEditorSubsystem).get_editor_world().get_world_settings()
-mode=E.load_blueprint_class('/Game/Blueprints/System/BP_GameMode'); assert mode; ws.set_editor_property('default_game_mode',mode)
+mode=E.load_blueprint_class('/Game/Constellation/Core/BP_GameMode'); assert mode; ws.set_editor_property('default_game_mode',mode)
 assert L.save_current_level(); assert E.save_directory(DEST,only_if_is_dirty=True,recursive=True)
 report=dict(status='import_and_bounds_pass',map=MAP,mesh_categories=len(checks),assets=checks,player_start_cm=[0,400,110],collision='static architecture complex; water and vegetation disabled',playtest='not_run',visual_verification='pending',bird_rig='not_created',materials='procedural first detail pass' if any(s.get('surface_detail') for s in spec['materials'].values()) else 'temporary blockout')
 (SRC/'unreal_import.json').write_text(json.dumps(report,indent=2))

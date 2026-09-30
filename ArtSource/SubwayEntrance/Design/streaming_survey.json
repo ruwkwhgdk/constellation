@@ -1,0 +1,2682 @@
+{
+  "/Game/Levels/L_StartIsland": {
+    "settings": {
+      "default_game_mode": "None",
+      "world_partition": "None",
+      "enable_world_bounds_checks": "True",
+      "kill_z": "-1048575.0"
+    },
+    "special": [
+      {
+        "label": "SunSky",
+        "class": "SunSky_C",
+        "location": "<Struct 'Vector' (0x000001C959251E10) {x: 20.000000, y: -350.000000, z: 520.000000}>",
+        "export": "/Game/Levels/L_StartIsland.L_StartIsland:PersistentLevel.SunSky_C_0"
+      },
+      {
+        "label": "PostProcessVolume",
+        "class": "PostProcessVolume",
+        "location": "<Struct 'Vector' (0x000001C959252680) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+        "export": "/Game/Levels/L_StartIsland.L_StartIsland:PersistentLevel.PostProcessVolume_0"
+      },
+      {
+        "label": "SE_Light_00",
+        "class": "RectLight",
+        "location": "<Struct 'Vector' (0x000001C96CDBA680) {x: 3900.000000, y: -19200.000000, z: 10280.000000}>",
+        "export": "/Game/Levels/L_StartIsland.L_StartIsland:PersistentLevel.RectLight_0"
+      },
+      {
+        "label": "SE_Light_01",
+        "class": "RectLight",
+        "location": "<Struct 'Vector' (0x000001C96CDBA680) {x: 3900.000000, y: -19520.000000, z: 10280.000000}>",
+        "export": "/Game/Levels/L_StartIsland.L_StartIsland:PersistentLevel.RectLight_1"
+      },
+      {
+        "label": "SE_Light_02",
+        "class": "RectLight",
+        "location": "<Struct 'Vector' (0x000001C96CDBA680) {x: 3900.000000, y: -19770.000000, z: 10280.000000}>",
+        "export": "/Game/Levels/L_StartIsland.L_StartIsland:PersistentLevel.RectLight_2"
+      }
+    ],
+    "actors": [
+      {
+        "label": "start_island_north",
+        "class": "Landscape",
+        "location": "<Struct 'Vector' (0x000001C959251E10) {x: -50400.000000, y: -50400.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SunSky",
+        "class": "SunSky_C",
+        "location": "<Struct 'Vector' (0x000001C959251E10) {x: 20.000000, y: -350.000000, z: 520.000000}>",
+        "export": "/Game/Levels/L_StartIsland.L_StartIsland:PersistentLevel.SunSky_C_0"
+      },
+      {
+        "label": "PostProcessVolume",
+        "class": "PostProcessVolume",
+        "location": "<Struct 'Vector' (0x000001C959252680) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+        "export": "/Game/Levels/L_StartIsland.L_StartIsland:PersistentLevel.PostProcessVolume_0"
+      },
+      {
+        "label": "Goblin_Town_1",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C959252680) {x: -35300.000000, y: -22800.000000, z: 6400.000000}>"
+      },
+      {
+        "label": "Goblin_Town_2",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C959252680) {x: -35300.000000, y: -25400.000000, z: 6400.000000}>"
+      },
+      {
+        "label": "Goblin_Town_3",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C959252680) {x: -32700.000000, y: -25400.000000, z: 6400.000000}>"
+      },
+      {
+        "label": "Goblin_Town_4",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C959252680) {x: -30300.000000, y: -24000.000000, z: 6400.000000}>"
+      },
+      {
+        "label": "coffee_truck",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C959252680) {x: 10500.000000, y: 21100.000000, z: -320.000000}>"
+      },
+      {
+        "label": "skyship",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C959252680) {x: 10600.000000, y: -4000.000000, z: -4400.000000}>"
+      },
+      {
+        "label": "Box",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C959252680) {x: 43750.000000, y: 36350.000000, z: -6700.000000}>"
+      },
+      {
+        "label": "Box2",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C959252680) {x: 42850.000000, y: 37650.000000, z: -6700.000000}>"
+      },
+      {
+        "label": "Box3",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C959252680) {x: 44650.000000, y: 35050.000000, z: -6700.000000}>"
+      },
+      {
+        "label": "wooden_bridge",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C959252680) {x: 1900.000000, y: 15400.000000, z: -2900.000000}>"
+      },
+      {
+        "label": "wooden_bridge2",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C959252680) {x: 100.000000, y: 15400.000000, z: -2900.000000}>"
+      },
+      {
+        "label": "wooden_bridge3",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C959252680) {x: -1700.000000, y: 15400.000000, z: -2900.000000}>"
+      },
+      {
+        "label": "WaterZone",
+        "class": "WaterZone",
+        "location": "<Struct 'Vector' (0x000001C959252680) {x: 0.000000, y: 0.000000, z: 0.000000}>"
+      },
+      {
+        "label": "WaterBodyLake",
+        "class": "WaterBodyLake",
+        "location": "<Struct 'Vector' (0x000001C959252680) {x: -19800.000000, y: 13900.000000, z: -5300.000000}>"
+      },
+      {
+        "label": "Landscape_WaterBrushManager",
+        "class": "WaterBrushManager",
+        "location": "<Struct 'Vector' (0x000001C9592BC8D0) {x: 0.000000, y: 0.000000, z: -314.414062}>"
+      },
+      {
+        "label": "sky_island",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C9592BC8D0) {x: 3900.000000, y: -19500.000000, z: 10000.000000}>"
+      },
+      {
+        "label": "skyship_end",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C9592BC8D0) {x: 4600.000000, y: -13700.000000, z: 9700.000000}>"
+      },
+      {
+        "label": "SM_Pile_Of_Stones",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C9592BC880) {x: -22400.000000, y: -8300.000000, z: -2100.000000}>"
+      },
+      {
+        "label": "SM_Pile_Of_Stones2",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C9592BC830) {x: -23600.000000, y: -7600.000000, z: -2200.000000}>"
+      },
+      {
+        "label": "SM_Pile_Of_Stones3",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C9592BC7E0) {x: -23400.000000, y: -8800.000000, z: -1800.000000}>"
+      },
+      {
+        "label": "WaterBodyLake2",
+        "class": "WaterBodyLake",
+        "location": "<Struct 'Vector' (0x000001C9592BC7E0) {x: 13300.000000, y: 27000.000000, z: 300.000000}>"
+      },
+      {
+        "label": "BP_Chest",
+        "class": "BP_Chest_C",
+        "location": "<Struct 'Vector' (0x000001C9592BC7E0) {x: 12750.000000, y: 26500.000000, z: 530.000000}>"
+      },
+      {
+        "label": "SM_School_Girl_Statue",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CD2AD10) {x: 10320.000000, y: 31040.000000, z: 400.000000}>"
+      },
+      {
+        "label": "Clock_Tower_Ruin",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CD2AAE0) {x: 5800.000000, y: 33800.000000, z: 510.000000}>"
+      },
+      {
+        "label": "BP_BreakablePillarStructureA0",
+        "class": "BP_BreakablePillarStructureA_C",
+        "location": "<Struct 'Vector' (0x000001C96CD2AB30) {x: 18420.000000, y: 23660.000000, z: -1073.000000}>"
+      },
+      {
+        "label": "BP_Gunpowder_Barrel1",
+        "class": "BP_Gunpowder_Barrel_C",
+        "location": "<Struct 'Vector' (0x000001C96CD2A860) {x: 18800.000000, y: 22200.000000, z: 1480.000000}>"
+      },
+      {
+        "label": "WaterBodyOcean",
+        "class": "WaterBodyOcean",
+        "location": "<Struct 'Vector' (0x000001C96CD2A860) {x: -22200.000000, y: 21400.000000, z: -5400.000000}>"
+      },
+      {
+        "label": "BP_Gunpowder_Barrel2",
+        "class": "BP_Gunpowder_Barrel_C",
+        "location": "<Struct 'Vector' (0x000001C96CD29640) {x: 18900.000000, y: 22100.000000, z: 1480.000000}>"
+      },
+      {
+        "label": "BP_Gunpowder_Barrel3",
+        "class": "BP_Gunpowder_Barrel_C",
+        "location": "<Struct 'Vector' (0x000001C96CD29C80) {x: 18600.000000, y: 22000.000000, z: 1480.000000}>"
+      },
+      {
+        "label": "BP_Gunpowder_Barrel4",
+        "class": "BP_Gunpowder_Barrel_C",
+        "location": "<Struct 'Vector' (0x000001C96CD2A8B0) {x: 19000.000000, y: 22400.000000, z: 1480.000000}>"
+      },
+      {
+        "label": "BP_Kiosk_Reset",
+        "class": "BP_Kiosk_Reset_C",
+        "location": "<Struct 'Vector' (0x000001C96CD56540) {x: 19300.000000, y: 21900.000000, z: 1525.000000}>"
+      },
+      {
+        "label": "start_island_south",
+        "class": "Landscape",
+        "location": "<Struct 'Vector' (0x000001C96CD55B90) {x: -50436.000000, y: 50377.000000, z: -6776.000000}>"
+      },
+      {
+        "label": "wooden_bridge4",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CD55B90) {x: -39900.000000, y: 47250.000000, z: -5030.000000}>"
+      },
+      {
+        "label": "BP_Spline",
+        "class": "BP_Spline_C",
+        "location": "<Struct 'Vector' (0x000001C96CD55B90) {x: -8900.000000, y: 38300.000000, z: 10.000000}>"
+      },
+      {
+        "label": "BP_Spline2",
+        "class": "BP_Spline_C",
+        "location": "<Struct 'Vector' (0x000001C96CD55B90) {x: 22270.000000, y: 50400.000000, z: 2000.000000}>"
+      },
+      {
+        "label": "wooden_bridge5",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CD55B90) {x: 22550.000000, y: 78950.000000, z: -960.000000}>"
+      },
+      {
+        "label": "SM_Dummy_Cylinder_Default",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CD55B40) {x: 24070.000000, y: 80790.000000, z: -6000.000000}>"
+      },
+      {
+        "label": "SM_Costco",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CD55B40) {x: 19890.000000, y: 103540.000000, z: 2480.000000}>"
+      },
+      {
+        "label": "BP_School_Girl_Statue",
+        "class": "BP_School_Girl_Statue_C",
+        "location": "<Struct 'Vector' (0x000001C96CD56900) {x: 29040.000000, y: 83430.000000, z: -10.000000}>"
+      },
+      {
+        "label": "wooden_bridge6",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CD56900) {x: 25530.000000, y: 82550.000000, z: -750.000000}>"
+      },
+      {
+        "label": "subway_station2",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CD56900) {x: 13340.000000, y: 95300.000000, z: -1470.000000}>"
+      },
+      {
+        "label": "SM_Dummy_Cube_Default",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CD56810) {x: 26240.000000, y: 88090.000000, z: 3300.000000}>"
+      },
+      {
+        "label": "SM_Dummy_Cube_Default2",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CD55AF0) {x: 27020.000000, y: 86750.000000, z: 3500.000000}>"
+      },
+      {
+        "label": "SM_Dummy_Cube_Default3",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CD54830) {x: 25690.000000, y: 88400.000000, z: 7500.000000}>"
+      },
+      {
+        "label": "SM_Dummy_Cube_Default4",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CD54790) {x: 27670.000000, y: 85700.000000, z: 3700.000000}>"
+      },
+      {
+        "label": "SM_Lighthouse",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CD54790) {x: 29523.906994, y: 89730.000038, z: 8000.000000}>"
+      },
+      {
+        "label": "BP_MovingPlatform",
+        "class": "BP_MovingPlatform_C",
+        "location": "<Struct 'Vector' (0x000001C96CD548D0) {x: -15200.000000, y: -12600.000000, z: 3700.000000}>"
+      },
+      {
+        "label": "BP_MovingPlatform2",
+        "class": "BP_MovingPlatform_C",
+        "location": "<Struct 'Vector' (0x000001C96CDB8830) {x: 100.000000, y: -16000.000000, z: 9900.000000}>"
+      },
+      {
+        "label": "BP_MovingPlatform3",
+        "class": "BP_MovingPlatform_C",
+        "location": "<Struct 'Vector' (0x000001C96CDB88D0) {x: 24550.000000, y: 87670.000000, z: -790.000000}>"
+      },
+      {
+        "label": "InstancedFoliageActorForest",
+        "class": "InstancedFoliageActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB8970) {x: 0.000000, y: 0.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SM_Playground",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB8970) {x: -6870.000000, y: 29146.094017, z: -3992.032013}>"
+      },
+      {
+        "label": "SM_Bush_A",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB8970) {x: 10960.000000, y: 29600.000000, z: 350.000000}>"
+      },
+      {
+        "label": "BP_StartIsland_AbilityUnlock0",
+        "class": "BP_StartIsland_AbilityUnlock_C",
+        "location": "<Struct 'Vector' (0x000001C96CDB8A10) {x: 0.000000, y: 0.000000, z: 0.000000}>"
+      },
+      {
+        "label": "BP_Chest2",
+        "class": "BP_Chest_C",
+        "location": "<Struct 'Vector' (0x000001C96CDB8A10) {x: 18450.000000, y: 23690.000000, z: -490.000000}>"
+      },
+      {
+        "label": "PCG_ApartmentPrototype_v2",
+        "class": "PCGVolume",
+        "location": "<Struct 'Vector' (0x000001C96CDB8A60) {x: 47030.000000, y: 50000.000000, z: 0.000000}>"
+      },
+      {
+        "label": "PCGWorldActor0",
+        "class": "PCGWorldActor",
+        "location": "<Struct 'Vector' (0x000001C96ACF2B80) {x: 0.000000, y: 0.000000, z: 0.000000}>"
+      },
+      {
+        "label": "PlayerStart",
+        "class": "PlayerStart",
+        "location": "<Struct 'Vector' (0x000001C96ACF2B80) {x: 5800.000000, y: 33790.000000, z: 630.000000}>"
+      },
+      {
+        "label": "BP_Guardrail",
+        "class": "BP_Guardrail_C",
+        "location": "<Struct 'Vector' (0x000001C96ACF2B80) {x: 3038.459529, y: 34888.332846, z: 510.000000}>"
+      },
+      {
+        "label": "BP_Guardrail2",
+        "class": "BP_Guardrail_C",
+        "location": "<Struct 'Vector' (0x000001C96ACF2B80) {x: 3267.251025, y: 34694.285297, z: 510.000000}>"
+      },
+      {
+        "label": "BP_Guardrail3",
+        "class": "BP_Guardrail_C",
+        "location": "<Struct 'Vector' (0x000001C96ACF2B80) {x: 3496.042521, y: 34500.237747, z: 510.000000}>"
+      },
+      {
+        "label": "BP_Guardrail4",
+        "class": "BP_Guardrail_C",
+        "location": "<Struct 'Vector' (0x000001C96ACF2B80) {x: 3724.834017, y: 34306.190198, z: 510.000000}>"
+      },
+      {
+        "label": "BP_Guardrail5",
+        "class": "BP_Guardrail_C",
+        "location": "<Struct 'Vector' (0x000001C96ACF2B80) {x: 3953.625513, y: 34112.142648, z: 510.000000}>"
+      },
+      {
+        "label": "BP_Guardrail6",
+        "class": "BP_Guardrail_C",
+        "location": "<Struct 'Vector' (0x000001C96ACF2B80) {x: 4182.417008, y: 33918.095099, z: 510.000000}>"
+      },
+      {
+        "label": "BP_Guardrail7",
+        "class": "BP_Guardrail_C",
+        "location": "<Struct 'Vector' (0x000001C96ACF2B80) {x: 4411.208504, y: 33724.047549, z: 510.000000}>"
+      },
+      {
+        "label": "BP_Guardrail8",
+        "class": "BP_Guardrail_C",
+        "location": "<Struct 'Vector' (0x000001C96ACF2B80) {x: 4660.000000, y: 33550.000000, z: 550.000000}>"
+      },
+      {
+        "label": "BP_Guardrail9",
+        "class": "BP_Guardrail_C",
+        "location": "<Struct 'Vector' (0x000001C96ACF2B80) {x: 5868.259288, y: 32848.405464, z: 510.000000}>"
+      },
+      {
+        "label": "BP_Guardrail10",
+        "class": "BP_Guardrail_C",
+        "location": "<Struct 'Vector' (0x000001C96ACF2B80) {x: 6162.575694, y: 32790.286159, z: 510.000000}>"
+      },
+      {
+        "label": "BP_Guardrail11",
+        "class": "BP_Guardrail_C",
+        "location": "<Struct 'Vector' (0x000001C96ACF2B80) {x: 6456.892098, y: 32732.166854, z: 510.000000}>"
+      },
+      {
+        "label": "BP_Guardrail12",
+        "class": "BP_Guardrail_C",
+        "location": "<Struct 'Vector' (0x000001C96ACF2B80) {x: 6751.208504, y: 32674.047549, z: 510.000000}>"
+      },
+      {
+        "label": "BP_Guardrail13",
+        "class": "BP_Guardrail_C",
+        "location": "<Struct 'Vector' (0x000001C96ACF2B80) {x: 7024.094790, y: 32536.936256, z: 510.000000}>"
+      },
+      {
+        "label": "BP_Guardrail15",
+        "class": "BP_Guardrail_C",
+        "location": "<Struct 'Vector' (0x000001C96ACF2B80) {x: 7475.503932, y: 32141.677118, z: 470.000000}>"
+      },
+      {
+        "label": "BP_Guardrail16",
+        "class": "BP_Guardrail_C",
+        "location": "<Struct 'Vector' (0x000001C96ACF2B80) {x: 7701.208504, y: 31944.047549, z: 470.000000}>"
+      },
+      {
+        "label": "BP_Guardrail17",
+        "class": "BP_Guardrail_C",
+        "location": "<Struct 'Vector' (0x000001C96ACF2B80) {x: 7924.094790, y: 31736.936256, z: 470.000000}>"
+      },
+      {
+        "label": "BP_Guardrail19",
+        "class": "BP_Guardrail_C",
+        "location": "<Struct 'Vector' (0x000001C96ACF2B80) {x: 8348.378721, y: 31285.090711, z: 450.000000}>"
+      },
+      {
+        "label": "BP_Guardrail20",
+        "class": "BP_Guardrail_C",
+        "location": "<Struct 'Vector' (0x000001C96ACF2B80) {x: 8561.208504, y: 31054.047549, z: 440.000000}>"
+      },
+      {
+        "label": "BP_AbandonedCar",
+        "class": "BP_AbandonedCar_C",
+        "location": "<Struct 'Vector' (0x000001C96CDB8A60) {x: 1560.000000, y: 21970.000000, z: -3910.000000}>"
+      },
+      {
+        "label": "BP_Guardrail21",
+        "class": "BP_Guardrail_C",
+        "location": "<Struct 'Vector' (0x000001C96CDB8A60) {x: 8791.208504, y: 30844.047549, z: 430.000000}>"
+      },
+      {
+        "label": "BP_Guardrail22",
+        "class": "BP_Guardrail_C",
+        "location": "<Struct 'Vector' (0x000001C96CDB8A60) {x: 9081.208504, y: 30654.047549, z: 410.000000}>"
+      },
+      {
+        "label": "BP_Guardrail23",
+        "class": "BP_Guardrail_C",
+        "location": "<Struct 'Vector' (0x000001C96CDB8A60) {x: 9411.208504, y: 30334.047549, z: 390.000000}>"
+      },
+      {
+        "label": "BP_Guardrail24",
+        "class": "BP_Guardrail_C",
+        "location": "<Struct 'Vector' (0x000001C96CDB8A60) {x: 9631.208504, y: 29994.047549, z: 360.000000}>"
+      },
+      {
+        "label": "BP_Guardrail25",
+        "class": "BP_Guardrail_C",
+        "location": "<Struct 'Vector' (0x000001C96CDB8A60) {x: 9769.490922, y: 29722.606135, z: 340.000000}>"
+      },
+      {
+        "label": "BP_Guardrail26",
+        "class": "BP_Guardrail_C",
+        "location": "<Struct 'Vector' (0x000001C96CDB8A60) {x: 10041.208504, y: 29299.968790, z: 320.000000}>"
+      },
+      {
+        "label": "BP_Guardrail27",
+        "class": "BP_Guardrail_C",
+        "location": "<Struct 'Vector' (0x000001C96CDB8A60) {x: 10231.208504, y: 29019.968790, z: 290.000000}>"
+      },
+      {
+        "label": "BP_Guardrail28",
+        "class": "BP_Guardrail_C",
+        "location": "<Struct 'Vector' (0x000001C96CDB8A60) {x: 10381.208504, y: 28749.968790, z: 250.000000}>"
+      },
+      {
+        "label": "BP_Guardrail29",
+        "class": "BP_Guardrail_C",
+        "location": "<Struct 'Vector' (0x000001C96CDB8A60) {x: 10621.208504, y: 28299.968790, z: 180.000000}>"
+      },
+      {
+        "label": "BP_Guardrail30",
+        "class": "BP_Guardrail_C",
+        "location": "<Struct 'Vector' (0x000001C96CDB8A60) {x: 10701.208504, y: 28009.968790, z: 130.000000}>"
+      },
+      {
+        "label": "BP_Guardrail31",
+        "class": "BP_Guardrail_C",
+        "location": "<Struct 'Vector' (0x000001C96CDB8A60) {x: 10591.208504, y: 27229.968790, z: -15.000000}>"
+      },
+      {
+        "label": "BP_Guardrail32",
+        "class": "BP_Guardrail_C",
+        "location": "<Struct 'Vector' (0x000001C96CDB8A60) {x: 10491.208504, y: 26939.968790, z: -80.000000}>"
+      },
+      {
+        "label": "BP_Guardrail33",
+        "class": "BP_Guardrail_C",
+        "location": "<Struct 'Vector' (0x000001C96CDB8A60) {x: 10371.208504, y: 26659.968790, z: -140.000000}>"
+      },
+      {
+        "label": "BP_Guardrail34",
+        "class": "BP_Guardrail_C",
+        "location": "<Struct 'Vector' (0x000001C96CDB8A60) {x: 10031.208504, y: 26069.968790, z: -270.000000}>"
+      },
+      {
+        "label": "BP_Guardrail35",
+        "class": "BP_Guardrail_C",
+        "location": "<Struct 'Vector' (0x000001C96CDB8A60) {x: 9831.208504, y: 25839.968790, z: -320.000000}>"
+      },
+      {
+        "label": "BP_Golf_Ball",
+        "class": "BP_Golf_Ball_C",
+        "location": "<Struct 'Vector' (0x000001C96CDB8A60) {x: 26630.000000, y: 20670.000000, z: 1420.000000}>"
+      },
+      {
+        "label": "BP_Kiosk_Reset0",
+        "class": "BP_Kiosk_Reset_C",
+        "location": "<Struct 'Vector' (0x000001C96CDB8AB0) {x: 26510.000000, y: 20350.000000, z: 1435.000000}>"
+      },
+      {
+        "label": "SM_Flag_Red",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB8AB0) {x: 43619.611950, y: 26829.983795, z: -385.202797}>"
+      },
+      {
+        "label": "SM_Bicycle_Old",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB8AB0) {x: 31460.000000, y: 39370.000000, z: 5802.000000}>"
+      },
+      {
+        "label": "BP_Bench",
+        "class": "BP_Bench_C",
+        "location": "<Struct 'Vector' (0x000001C96CDB8AB0) {x: 9230.000000, y: 22230.000000, z: -510.000000}>"
+      },
+      {
+        "label": "BP_Bench2",
+        "class": "BP_Bench_C",
+        "location": "<Struct 'Vector' (0x000001C96CDB8AB0) {x: 9420.000000, y: 22040.000000, z: -510.000000}>"
+      },
+      {
+        "label": "BP_Subway_Station",
+        "class": "BP_Subway_Station_C",
+        "location": "<Struct 'Vector' (0x000001C96CDB8B50) {x: -12000.000000, y: 13400.000000, z: -4970.000000}>"
+      },
+      {
+        "label": "SM_Dummy_Cube_Default5",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB8BA0) {x: -36670.000000, y: 20270.000000, z: -4430.000000}>"
+      },
+      {
+        "label": "SM_Table_Wooden",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB8BA0) {x: 9440.000000, y: 22250.000000, z: -482.000000}>"
+      },
+      {
+        "label": "SM_Talking_Tree",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB8BA0) {x: 7020.195299, y: 27870.097649, z: -3880.000000}>"
+      },
+      {
+        "label": "BP_Coin_Locker",
+        "class": "BP_Coin_Locker_C",
+        "location": "<Struct 'Vector' (0x000001C96CDB8BF0) {x: -1750.000000, y: 21670.000000, z: -3910.000000}>"
+      },
+      {
+        "label": "SM_Table_Wooden2",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB8C40) {x: 9790.000000, y: 22610.000000, z: -490.000000}>"
+      },
+      {
+        "label": "BP_Bench3",
+        "class": "BP_Bench_C",
+        "location": "<Struct 'Vector' (0x000001C96CDB8C40) {x: 9560.000000, y: 22580.000000, z: -515.000000}>"
+      },
+      {
+        "label": "BP_Bench4",
+        "class": "BP_Bench_C",
+        "location": "<Struct 'Vector' (0x000001C96CDB8C40) {x: 9750.000000, y: 22390.000000, z: -534.000000}>"
+      },
+      {
+        "label": "OldKoreanBuildingB_Blockout_Fixed",
+        "class": "BP_OldKoreanBuildingB_Blockout_C",
+        "location": "<Struct 'Vector' (0x000001C96CDB8C40) {x: -11180.000000, y: 27650.000000, z: -3910.000000}>"
+      },
+      {
+        "label": "SM_Wall_Corner_200_00",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB8C90) {x: 11950.000000, y: 2100.000000, z: -4170.000000}>"
+      },
+      {
+        "label": "SM_Wall_Corner_200_01",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB8CE0) {x: 11950.000000, y: 2100.000000, z: -3870.000000}>"
+      },
+      {
+        "label": "SM_Wall_Corner_200_02",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB8D30) {x: 12750.000000, y: 2100.000000, z: -4170.000000}>"
+      },
+      {
+        "label": "SM_Wall_Corner_200_03",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB8D80) {x: 12750.000000, y: 2100.000000, z: -3870.000000}>"
+      },
+      {
+        "label": "SM_Wall_Corner_200_04",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB8DD0) {x: 12750.000000, y: 1700.000000, z: -4170.000000}>"
+      },
+      {
+        "label": "SM_Wall_Corner_200_05",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB8E20) {x: 12750.000000, y: 1700.000000, z: -3870.000000}>"
+      },
+      {
+        "label": "SM_Wall_Corner_200_06",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB8E70) {x: 11950.000000, y: 1700.000000, z: -4170.000000}>"
+      },
+      {
+        "label": "SM_Wall_Corner_200_07",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB8EC0) {x: 11950.000000, y: 1700.000000, z: -3870.000000}>"
+      },
+      {
+        "label": "SM_Shopfront_Door_200_00",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB8F10) {x: 12250.000000, y: 2100.000000, z: -4170.000000}>"
+      },
+      {
+        "label": "SM_Wall_Window_200_00",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB8F60) {x: 12450.000000, y: 2100.000000, z: -4170.000000}>"
+      },
+      {
+        "label": "SM_Wall_Door_200_00",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB8FB0) {x: 12450.000000, y: 1700.000000, z: -4170.000000}>"
+      },
+      {
+        "label": "SM_Wall_Straight_200_00",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB9000) {x: 12250.000000, y: 1700.000000, z: -4170.000000}>"
+      },
+      {
+        "label": "SM_Wall_Window_200_01",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB9050) {x: 12250.000000, y: 2100.000000, z: -3870.000000}>"
+      },
+      {
+        "label": "SM_Wall_Window_200_02",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB90A0) {x: 12450.000000, y: 2100.000000, z: -3870.000000}>"
+      },
+      {
+        "label": "SM_Wall_Straight_200_01",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB90F0) {x: 12450.000000, y: 1700.000000, z: -3870.000000}>"
+      },
+      {
+        "label": "SM_Wall_Straight_200_02",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB9140) {x: 12250.000000, y: 1700.000000, z: -3870.000000}>"
+      },
+      {
+        "label": "SM_Slab_Straight_200_00",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB9190) {x: 11950.000000, y: 2100.000000, z: -4170.000000}>"
+      },
+      {
+        "label": "SM_Slab_Straight_200_01",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB91E0) {x: 11950.000000, y: 1900.000000, z: -4170.000000}>"
+      },
+      {
+        "label": "SM_Slab_Straight_200_02",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB9230) {x: 12150.000000, y: 2100.000000, z: -4170.000000}>"
+      },
+      {
+        "label": "SM_Slab_Straight_200_03",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB9280) {x: 12150.000000, y: 1900.000000, z: -4170.000000}>"
+      },
+      {
+        "label": "SM_Slab_Straight_200_04",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB92D0) {x: 12350.000000, y: 2100.000000, z: -4170.000000}>"
+      },
+      {
+        "label": "SM_Slab_Straight_200_05",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB9320) {x: 12350.000000, y: 1900.000000, z: -4170.000000}>"
+      },
+      {
+        "label": "SM_Slab_Straight_200_06",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB9370) {x: 12550.000000, y: 2100.000000, z: -4170.000000}>"
+      },
+      {
+        "label": "SM_Slab_Straight_200_07",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB93C0) {x: 12550.000000, y: 1900.000000, z: -4170.000000}>"
+      },
+      {
+        "label": "SM_Slab_Straight_200_08",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB9410) {x: 11950.000000, y: 2100.000000, z: -3870.000000}>"
+      },
+      {
+        "label": "SM_Slab_Straight_200_09",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB9460) {x: 11950.000000, y: 1900.000000, z: -3870.000000}>"
+      },
+      {
+        "label": "SM_Slab_Straight_200_10",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB94B0) {x: 12150.000000, y: 2100.000000, z: -3870.000000}>"
+      },
+      {
+        "label": "SM_Slab_Straight_200_11",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB9500) {x: 12350.000000, y: 2100.000000, z: -3870.000000}>"
+      },
+      {
+        "label": "SM_Slab_Straight_200_12",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB9550) {x: 12550.000000, y: 2100.000000, z: -3870.000000}>"
+      },
+      {
+        "label": "SM_Slab_Straight_200_13",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB95A0) {x: 12550.000000, y: 1900.000000, z: -3870.000000}>"
+      },
+      {
+        "label": "SM_Slab_Corner_200_00",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB95F0) {x: 12150.000000, y: 1900.000000, z: -3570.000000}>"
+      },
+      {
+        "label": "SM_Slab_Corner_200_01",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB9640) {x: 12150.000000, y: 1900.000000, z: -3570.000000}>"
+      },
+      {
+        "label": "SM_Slab_Straight_200_14",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB9690) {x: 12150.000000, y: 1900.000000, z: -3570.000000}>"
+      },
+      {
+        "label": "SM_Slab_Straight_200_15",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB96E0) {x: 12350.000000, y: 1900.000000, z: -3570.000000}>"
+      },
+      {
+        "label": "SM_Slab_Corner_200_02",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB9730) {x: 12550.000000, y: 1900.000000, z: -3570.000000}>"
+      },
+      {
+        "label": "SM_Slab_Corner_200_03",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB9780) {x: 12550.000000, y: 1900.000000, z: -3570.000000}>"
+      },
+      {
+        "label": "SM_Stair_Interior_300_00",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB97D0) {x: 12160.000000, y: 1849.000000, z: -4170.000000}>"
+      },
+      {
+        "label": "SM_Stair_Interior_300_01",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB9820) {x: 12160.000000, y: 2029.000000, z: -3870.000000}>"
+      },
+      {
+        "label": "Furn_Railing_200_00",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB9870) {x: 12250.000000, y: 1900.000000, z: -3870.000000}>"
+      },
+      {
+        "label": "Furn_Railing_200_01",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB98C0) {x: 12450.000000, y: 1900.000000, z: -3870.000000}>"
+      },
+      {
+        "label": "Furn_Railing_200_02",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB9910) {x: 12150.000000, y: 1800.000000, z: -3870.000000}>"
+      },
+      {
+        "label": "Furn_Railing_200_03",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB9960) {x: 12250.000000, y: 1900.000000, z: -3570.000000}>"
+      },
+      {
+        "label": "Furn_Railing_200_04",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB99B0) {x: 12450.000000, y: 1900.000000, z: -3570.000000}>"
+      },
+      {
+        "label": "Furn_Railing_200_05",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB9A00) {x: 12150.000000, y: 2000.000000, z: -3570.000000}>"
+      },
+      {
+        "label": "Furn_Railing_200_06",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB9A50) {x: 12050.000000, y: 2100.000000, z: -3570.000000}>"
+      },
+      {
+        "label": "Furn_Railing_200_07",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB9AA0) {x: 12250.000000, y: 2100.000000, z: -3570.000000}>"
+      },
+      {
+        "label": "Furn_Railing_200_08",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB9AF0) {x: 12450.000000, y: 2100.000000, z: -3570.000000}>"
+      },
+      {
+        "label": "Furn_Railing_200_09",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB9B40) {x: 12650.000000, y: 2100.000000, z: -3570.000000}>"
+      },
+      {
+        "label": "Furn_Railing_200_10",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB9B90) {x: 12450.000000, y: 1700.000000, z: -3570.000000}>"
+      },
+      {
+        "label": "Furn_Railing_200_11",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB9BE0) {x: 12250.000000, y: 1700.000000, z: -3570.000000}>"
+      },
+      {
+        "label": "Furn_Railing_200_12",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB9C30) {x: 12050.000000, y: 1700.000000, z: -3570.000000}>"
+      },
+      {
+        "label": "Furn_Railing_200_13",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB9C80) {x: 12750.000000, y: 2000.000000, z: -3570.000000}>"
+      },
+      {
+        "label": "Furn_Railing_200_14",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB9CD0) {x: 12750.000000, y: 1800.000000, z: -3570.000000}>"
+      },
+      {
+        "label": "Furn_Railing_200_15",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB9D20) {x: 11950.000000, y: 1800.000000, z: -3570.000000}>"
+      },
+      {
+        "label": "Furn_Railing_200_16",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB9D70) {x: 11950.000000, y: 2000.000000, z: -3570.000000}>"
+      },
+      {
+        "label": "Furn_Pergola_200_00",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB9DC0) {x: 11950.000000, y: 1900.000000, z: -3570.000000}>"
+      },
+      {
+        "label": "Deco_Floor_Tile_100_00",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB9E10) {x: 12150.000000, y: 1900.000000, z: -3569.500000}>"
+      },
+      {
+        "label": "Deco_Floor_Tile_100_01",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB9E60) {x: 12150.000000, y: 1800.000000, z: -3569.500000}>"
+      },
+      {
+        "label": "Deco_Floor_Tile_100_02",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB9EB0) {x: 12250.000000, y: 1900.000000, z: -3569.500000}>"
+      },
+      {
+        "label": "Deco_Floor_Tile_100_03",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB9F00) {x: 12250.000000, y: 1800.000000, z: -3569.500000}>"
+      },
+      {
+        "label": "Veg_Potted_Plant_Round_00",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB9F50) {x: 12050.000000, y: 1750.000000, z: -3570.000000}>"
+      },
+      {
+        "label": "Veg_Potted_Plant_Round_01",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB9FA0) {x: 12650.000000, y: 1750.000000, z: -3570.000000}>"
+      },
+      {
+        "label": "Veg_Potted_Plant_Round_02",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDB9FF0) {x: 12380.000000, y: 1740.000000, z: -3570.000000}>"
+      },
+      {
+        "label": "SM_Wall_Partition_Door_200_00",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBA040) {x: 12050.000000, y: 1900.000000, z: -4170.000000}>"
+      },
+      {
+        "label": "SM_Wall_Partition_200_00",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBA090) {x: 12650.000000, y: 1900.000000, z: -4170.000000}>"
+      },
+      {
+        "label": "SM_Wall_Partition_Door_200_01",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBA0E0) {x: 12050.000000, y: 1900.000000, z: -3870.000000}>"
+      },
+      {
+        "label": "SM_Wall_Partition_Door_200_02",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBA130) {x: 12650.000000, y: 1900.000000, z: -3870.000000}>"
+      },
+      {
+        "label": "Deco_Curtain_100_00",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBA180) {x: 12450.000000, y: 2100.000000, z: -3950.000000}>"
+      },
+      {
+        "label": "Deco_Curtain_100_01",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBA1D0) {x: 12250.000000, y: 2100.000000, z: -3650.000000}>"
+      },
+      {
+        "label": "Deco_Curtain_100_02",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBA220) {x: 12450.000000, y: 2100.000000, z: -3650.000000}>"
+      },
+      {
+        "label": "Deco_Awning_200_00",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBA270) {x: 12250.000000, y: 2100.000000, z: -4170.000000}>"
+      },
+      {
+        "label": "Deco_Barber_Pole_00",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBA2C0) {x: 12110.000000, y: 2135.000000, z: -4170.000000}>"
+      },
+      {
+        "label": "Veg_Potted_Plant_Round_03",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBA310) {x: 12180.000000, y: 2135.000000, z: -4170.000000}>"
+      },
+      {
+        "label": "Veg_Potted_Plant_Round_04",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBA360) {x: 12340.000000, y: 2135.000000, z: -4170.000000}>"
+      },
+      {
+        "label": "Furn_Sandbox_Planter_00",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBA3B0) {x: 12560.000000, y: 2225.000000, z: -4170.000000}>"
+      },
+      {
+        "label": "Prop_AC_Unit_00",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBA3B0) {x: 12750.000000, y: 2000.000000, z: -3810.000000}>"
+      },
+      {
+        "label": "Prop_MeterBox_00",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBA400) {x: 12750.000000, y: 1800.000000, z: -4050.000000}>"
+      },
+      {
+        "label": "Deco_GasPipe_200_00",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBA450) {x: 11950.000000, y: 2050.000000, z: -4170.000000}>"
+      },
+      {
+        "label": "Deco_Gutter_200_00",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBA4A0) {x: 11950.000000, y: 1800.000000, z: -4170.000000}>"
+      },
+      {
+        "label": "Furn_Stair_Steel_600_00",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBA4F0) {x: 11960.000000, y: 1658.000000, z: -4170.000000}>"
+      },
+      {
+        "label": "SM_Door_Leaf_100_00",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBA540) {x: 12400.000000, y: 1720.000000, z: -4170.000000}>"
+      },
+      {
+        "label": "Prop_Drum_Barrel_00",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBA590) {x: 11900.000000, y: 1970.000000, z: -4170.000000}>"
+      },
+      {
+        "label": "Prop_Bucket_00",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBA590) {x: 11900.000000, y: 1910.000000, z: -4170.000000}>"
+      },
+      {
+        "label": "Prop_HandTruck_00",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBA5E0) {x: 11900.000000, y: 1840.000000, z: -4170.000000}>"
+      },
+      {
+        "label": "SE_EntranceRoot",
+        "class": "TargetPoint",
+        "location": "<Struct 'Vector' (0x000001C96CDBA5E0) {x: 3900.000000, y: -19500.000000, z: 10530.000000}>"
+      },
+      {
+        "label": "SE_TravelToInterior",
+        "class": "SubwayTravelVolume",
+        "location": "<Struct 'Vector' (0x000001C96CDBA680) {x: 3900.000000, y: -19760.000000, z: 9860.000000}>"
+      },
+      {
+        "label": "SE_Light_00",
+        "class": "RectLight",
+        "location": "<Struct 'Vector' (0x000001C96CDBA680) {x: 3900.000000, y: -19200.000000, z: 10280.000000}>",
+        "export": "/Game/Levels/L_StartIsland.L_StartIsland:PersistentLevel.RectLight_0"
+      },
+      {
+        "label": "SE_Light_01",
+        "class": "RectLight",
+        "location": "<Struct 'Vector' (0x000001C96CDBA680) {x: 3900.000000, y: -19520.000000, z: 10280.000000}>",
+        "export": "/Game/Levels/L_StartIsland.L_StartIsland:PersistentLevel.RectLight_1"
+      },
+      {
+        "label": "SE_Light_02",
+        "class": "RectLight",
+        "location": "<Struct 'Vector' (0x000001C96CDBA680) {x: 3900.000000, y: -19770.000000, z: 10280.000000}>",
+        "export": "/Game/Levels/L_StartIsland.L_StartIsland:PersistentLevel.RectLight_2"
+      },
+      {
+        "label": "BP_NPC_Little_Girl",
+        "class": "BP_NPC_Little_Girl_C",
+        "location": "<Struct 'Vector' (0x000001C96CDBA720) {x: 10931.000000, y: 29456.000000, z: 400.000000}>"
+      },
+      {
+        "label": "BP_NPC_Little_Girl2",
+        "class": "BP_NPC_Little_Girl_C",
+        "location": "<Struct 'Vector' (0x000001C96CDBA7C0) {x: 10631.000000, y: 21456.000000, z: -495.000000}>"
+      },
+      {
+        "label": "BP_Monster_RedPanda1",
+        "class": "BP_Monster_RedPanda_C",
+        "location": "<Struct 'Vector' (0x000001C96CDBA860) {x: 13950.000000, y: 29530.000000, z: 1108.000000}>"
+      },
+      {
+        "label": "BP_Monster_RedPanda2",
+        "class": "BP_Monster_RedPanda_C",
+        "location": "<Struct 'Vector' (0x000001C96CDBA900) {x: 13510.000000, y: 29080.000000, z: 1108.000000}>"
+      },
+      {
+        "label": "BP_Monster_RedPanda3",
+        "class": "BP_Monster_RedPanda_C",
+        "location": "<Struct 'Vector' (0x000001C96CDBA9A0) {x: 13910.000000, y: 29080.000000, z: 1108.000000}>"
+      },
+      {
+        "label": "BP_Monster_RedPanda4",
+        "class": "BP_Monster_RedPanda_C",
+        "location": "<Struct 'Vector' (0x000001C96CDBAA40) {x: 14390.000000, y: 29550.000000, z: 1108.000000}>"
+      },
+      {
+        "label": "BP_Monster_RedPanda5",
+        "class": "BP_Monster_RedPanda_C",
+        "location": "<Struct 'Vector' (0x000001C96CDBAAE0) {x: 14390.000000, y: 29940.000000, z: 1108.000000}>"
+      },
+      {
+        "label": "BP_Monster_RedPanda6",
+        "class": "BP_Monster_RedPanda_C",
+        "location": "<Struct 'Vector' (0x000001C96CDBAB80) {x: 19271.509143, y: 21423.417376, z: 1598.000000}>"
+      },
+      {
+        "label": "BP_Monster_RedPanda7",
+        "class": "BP_Monster_RedPanda_C",
+        "location": "<Struct 'Vector' (0x000001C96CDBAC20) {x: 18642.298755, y: 21409.478666, z: 1598.000000}>"
+      },
+      {
+        "label": "BP_Monster_RedPanda8",
+        "class": "BP_Monster_RedPanda_C",
+        "location": "<Struct 'Vector' (0x000001C96CDBACC0) {x: 18928.211393, y: 21129.739568, z: 1598.000000}>"
+      },
+      {
+        "label": "BP_Monster_RedPanda9",
+        "class": "BP_Monster_RedPanda_C",
+        "location": "<Struct 'Vector' (0x000001C96CDBAD60) {x: 19600.000000, y: 21130.000000, z: 1598.000000}>"
+      },
+      {
+        "label": "SE_E01",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBAD60) {x: 3900.000000, y: -19500.000000, z: 10000.000000}>"
+      },
+      {
+        "label": "SE_E02",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBAD60) {x: 3900.000000, y: -19500.000000, z: 10000.000000}>"
+      },
+      {
+        "label": "SE_E03",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBAD60) {x: 3900.000000, y: -19500.000000, z: 10000.000000}>"
+      },
+      {
+        "label": "SE_E04",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBAD60) {x: 3900.000000, y: -19500.000000, z: 10000.000000}>"
+      },
+      {
+        "label": "SE_E05",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBAD60) {x: 3900.000000, y: -19500.000000, z: 10000.000000}>"
+      },
+      {
+        "label": "SE_E06",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBAD60) {x: 3900.000000, y: -19500.000000, z: 10000.000000}>"
+      },
+      {
+        "label": "SE_E07",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBAD60) {x: 3900.000000, y: -19500.000000, z: 10000.000000}>"
+      },
+      {
+        "label": "SE_E08",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBAD60) {x: 3900.000000, y: -19500.000000, z: 10000.000000}>"
+      },
+      {
+        "label": "SE_E09",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBAD60) {x: 3900.000000, y: -19500.000000, z: 10000.000000}>"
+      },
+      {
+        "label": "SE_E10",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBAD60) {x: 3900.000000, y: -19500.000000, z: 10000.000000}>"
+      },
+      {
+        "label": "SE_E11",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBAD60) {x: 3900.000000, y: -19500.000000, z: 10000.000000}>"
+      },
+      {
+        "label": "SE_E12",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBAD60) {x: 3900.000000, y: -19500.000000, z: 10000.000000}>"
+      },
+      {
+        "label": "SE_E13",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBAD60) {x: 3900.000000, y: -19500.000000, z: 10000.000000}>"
+      },
+      {
+        "label": "StaticMeshActor0",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBADB0) {x: 18500.000000, y: 23700.000000, z: -685.000000}>"
+      },
+      {
+        "label": "StaticMeshActor0",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBAE00) {x: 18800.000000, y: 23400.000000, z: -1170.000000}>"
+      },
+      {
+        "label": "StaticMeshActor0",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBAE50) {x: 18600.000000, y: 24100.000000, z: -1270.000000}>"
+      },
+      {
+        "label": "StaticMeshActor0",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBAEA0) {x: 18200.000000, y: 23200.000000, z: -1070.000000}>"
+      },
+      {
+        "label": "StaticMeshActor0",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBAEF0) {x: 18000.000000, y: 23900.000000, z: -1170.000000}>"
+      }
+    ]
+  },
+  "/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_PlayScale2": {
+    "settings": {
+      "default_game_mode": "None",
+      "world_partition": "None",
+      "enable_world_bounds_checks": "True",
+      "kill_z": "-1048575.0"
+    },
+    "special": [
+      {
+        "label": "SWScene_Light_Ceiling",
+        "class": "RectLight",
+        "location": "<Struct 'Vector' (0x000001C96CDE2770) {x: 200.000000, y: 110.000000, z: 625.000000}>",
+        "export": "/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_PlayScale2.L_Stairwell_PlayScale2:PersistentLevel.RectLight_4"
+      },
+      {
+        "label": "SWScene_Light_LeftWall",
+        "class": "RectLight",
+        "location": "<Struct 'Vector' (0x000001C96CDE2860) {x: 220.000000, y: -220.000000, z: 636.000000}>",
+        "export": "/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_PlayScale2.L_Stairwell_PlayScale2:PersistentLevel.RectLight_5"
+      },
+      {
+        "label": "SWScene_Light_RightWall",
+        "class": "RectLight",
+        "location": "<Struct 'Vector' (0x000001C96CDE2900) {x: 130.000000, y: 220.000000, z: 636.000000}>",
+        "export": "/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_PlayScale2.L_Stairwell_PlayScale2:PersistentLevel.RectLight_6"
+      },
+      {
+        "label": "SWScene_Light_Beyond",
+        "class": "RectLight",
+        "location": "<Struct 'Vector' (0x000001C96CDE2A40) {x: 1240.000000, y: 480.000000, z: 405.000000}>",
+        "export": "/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_PlayScale2.L_Stairwell_PlayScale2:PersistentLevel.RectLight_7"
+      },
+      {
+        "label": "SWScene_LandingBounce",
+        "class": "PointLight",
+        "location": "<Struct 'Vector' (0x000001C96CDE2A90) {x: 490.000000, y: 80.000000, z: 340.000000}>",
+        "export": "/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_PlayScale2.L_Stairwell_PlayScale2:PersistentLevel.PointLight_1"
+      },
+      {
+        "label": "SWScene_Exposure",
+        "class": "PostProcessVolume",
+        "location": "<Struct 'Vector' (0x000001C96CDE2B80) {x: 400.000000, y: 0.000000, z: 200.000000}>",
+        "export": "/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_PlayScale2.L_Stairwell_PlayScale2:PersistentLevel.PostProcessVolume_1"
+      },
+      {
+        "label": "SWScene_Detail_CeilingBounce",
+        "class": "RectLight",
+        "location": "<Struct 'Vector' (0x000001C96CDE2E00) {x: 130.000000, y: 30.000000, z: 584.000000}>",
+        "export": "/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_PlayScale2.L_Stairwell_PlayScale2:PersistentLevel.RectLight_1"
+      },
+      {
+        "label": "SWScene_Finish_RearBounce",
+        "class": "PointLight",
+        "location": "<Struct 'Vector' (0x000001C96CDE2E50) {x: 890.000000, y: 480.000000, z: 230.000000}>",
+        "export": "/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_PlayScale2.L_Stairwell_PlayScale2:PersistentLevel.PointLight_0"
+      }
+    ],
+    "actors": [
+      {
+        "label": "SWScene_MainStairsNear",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBAF40) {x: 0.000000, y: -240.000000, z: 180.000000}>"
+      },
+      {
+        "label": "SWScene_MainStairsFar",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBAF90) {x: 360.000000, y: -240.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_MainNosing0",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBAFE0) {x: 360.000000, y: -240.000000, z: 30.000000}>"
+      },
+      {
+        "label": "SWScene_MainNosing1",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB030) {x: 300.000000, y: -240.000000, z: 60.000000}>"
+      },
+      {
+        "label": "SWScene_MainNosing2",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB080) {x: 240.000000, y: -240.000000, z: 90.000000}>"
+      },
+      {
+        "label": "SWScene_MainNosing3",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB0D0) {x: 180.000000, y: -240.000000, z: 120.000000}>"
+      },
+      {
+        "label": "SWScene_MainNosing4",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB120) {x: 120.000000, y: -240.000000, z: 150.000000}>"
+      },
+      {
+        "label": "SWScene_MainNosing5",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB170) {x: 60.000000, y: -240.000000, z: 180.000000}>"
+      },
+      {
+        "label": "SWScene_MainNosing6",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB1C0) {x: 0.000000, y: -240.000000, z: 210.000000}>"
+      },
+      {
+        "label": "SWScene_MainNosing7",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB210) {x: -60.000000, y: -240.000000, z: 240.000000}>"
+      },
+      {
+        "label": "SWScene_MainNosing8",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB260) {x: -120.000000, y: -240.000000, z: 270.000000}>"
+      },
+      {
+        "label": "SWScene_MainNosing9",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB2B0) {x: -180.000000, y: -240.000000, z: 300.000000}>"
+      },
+      {
+        "label": "SWScene_MainNosing10",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB300) {x: -240.000000, y: -240.000000, z: 330.000000}>"
+      },
+      {
+        "label": "SWScene_MainNosing11",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB350) {x: -300.000000, y: -240.000000, z: 360.000000}>"
+      },
+      {
+        "label": "SWScene_UpperLanding",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB3A0) {x: -720.000000, y: -120.000000, z: 360.000000}>"
+      },
+      {
+        "label": "SWScene_UpperLanding_Tile_0_1",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB3F0) {x: -720.000000, y: 0.000000, z: 360.000000}>"
+      },
+      {
+        "label": "SWScene_UpperLanding_Tile_0_2",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB440) {x: -720.000000, y: 120.000000, z: 360.000000}>"
+      },
+      {
+        "label": "SWScene_UpperLanding_Tile_0_3",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB490) {x: -720.000000, y: 240.000000, z: 360.000000}>"
+      },
+      {
+        "label": "SWScene_UpperLanding_Tile_1_0",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB4E0) {x: -600.000000, y: -120.000000, z: 360.000000}>"
+      },
+      {
+        "label": "SWScene_UpperLanding_Tile_1_1",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB530) {x: -600.000000, y: 0.000000, z: 360.000000}>"
+      },
+      {
+        "label": "SWScene_UpperLanding_Tile_1_2",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB580) {x: -600.000000, y: 120.000000, z: 360.000000}>"
+      },
+      {
+        "label": "SWScene_UpperLanding_Tile_1_3",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB5D0) {x: -600.000000, y: 240.000000, z: 360.000000}>"
+      },
+      {
+        "label": "SWScene_UpperLanding_Tile_2_0",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB620) {x: -480.000000, y: -120.000000, z: 360.000000}>"
+      },
+      {
+        "label": "SWScene_UpperLanding_Tile_2_1",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB670) {x: -480.000000, y: 0.000000, z: 360.000000}>"
+      },
+      {
+        "label": "SWScene_UpperLanding_Tile_2_2",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB6C0) {x: -480.000000, y: 120.000000, z: 360.000000}>"
+      },
+      {
+        "label": "SWScene_UpperLanding_Tile_2_3",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB710) {x: -480.000000, y: 240.000000, z: 360.000000}>"
+      },
+      {
+        "label": "SWScene_MiddleLandingLeft",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB760) {x: 360.000000, y: -120.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_MiddleLandingLeft_Tile_0_1",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB760) {x: 360.000000, y: 0.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_MiddleLandingLeft_Tile_0_2",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB760) {x: 360.000000, y: 120.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_MiddleLandingLeft_Tile_0_3",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB760) {x: 360.000000, y: 240.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_MiddleLandingLeft_Tile_1_0",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB760) {x: 480.000000, y: -120.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_MiddleLandingLeft_Tile_1_1",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB760) {x: 480.000000, y: 0.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_MiddleLandingLeft_Tile_1_2",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB760) {x: 480.000000, y: 120.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_MiddleLandingLeft_Tile_1_3",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB760) {x: 480.000000, y: 240.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_MiddleLandingLeft_Tile_2_0",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB760) {x: 600.000000, y: -120.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_MiddleLandingLeft_Tile_2_1",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB760) {x: 600.000000, y: 0.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_MiddleLandingLeft_Tile_2_2",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB760) {x: 600.000000, y: 120.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_MiddleLandingLeft_Tile_2_3",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB760) {x: 600.000000, y: 240.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_MiddleLandingRight",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB7B0) {x: 360.000000, y: 360.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_MiddleLandingRight_Tile_0_1",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB7B0) {x: 360.000000, y: 480.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_MiddleLandingRight_Tile_0_2",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB7B0) {x: 360.000000, y: 600.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_MiddleLandingRight_Tile_0_3",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB7B0) {x: 360.000000, y: 720.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_MiddleLandingRight_Tile_1_0",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB7B0) {x: 480.000000, y: 360.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_MiddleLandingRight_Tile_1_1",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB7B0) {x: 480.000000, y: 480.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_MiddleLandingRight_Tile_1_2",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB7B0) {x: 480.000000, y: 600.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_MiddleLandingRight_Tile_1_3",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB7B0) {x: 480.000000, y: 720.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_MiddleLandingRight_Tile_2_0",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB7B0) {x: 600.000000, y: 360.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_MiddleLandingRight_Tile_2_1",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB7B0) {x: 600.000000, y: 480.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_MiddleLandingRight_Tile_2_2",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB7B0) {x: 600.000000, y: 600.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_MiddleLandingRight_Tile_2_3",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB7B0) {x: 600.000000, y: 720.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_MiddleLandingExtension",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB800) {x: 360.000000, y: 840.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_MiddleLandingExtension_Tile_0_1",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB800) {x: 360.000000, y: 960.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_MiddleLandingExtension_Tile_1_0",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB800) {x: 480.000000, y: 840.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_MiddleLandingExtension_Tile_1_1",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB800) {x: 480.000000, y: 960.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_MiddleLandingExtension_Tile_2_0",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB800) {x: 600.000000, y: 840.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_MiddleLandingExtension_Tile_2_1",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB800) {x: 600.000000, y: 960.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_TactileMain_0",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB850) {x: 360.000000, y: -120.000000, z: 0.400000}>"
+      },
+      {
+        "label": "SWScene_TactileMain_1",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB8A0) {x: 360.000000, y: 0.000000, z: 0.400000}>"
+      },
+      {
+        "label": "SWScene_TactileMain_2",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB8F0) {x: 360.000000, y: 120.000000, z: 0.400000}>"
+      },
+      {
+        "label": "SWScene_TactileMain_3",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB940) {x: 360.000000, y: 240.000000, z: 0.400000}>"
+      },
+      {
+        "label": "SWScene_TactileNext_0",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB990) {x: 600.000000, y: 360.000000, z: 0.400000}>"
+      },
+      {
+        "label": "SWScene_TactileNext_1",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBB9E0) {x: 600.000000, y: 480.000000, z: 0.400000}>"
+      },
+      {
+        "label": "SWScene_TactileNext_2",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBBA30) {x: 600.000000, y: 600.000000, z: 0.400000}>"
+      },
+      {
+        "label": "SWScene_TactileNext_3",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBBA80) {x: 600.000000, y: 720.000000, z: 0.400000}>"
+      },
+      {
+        "label": "SWScene_NextStairsNear",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBBAD0) {x: 1080.000000, y: 240.000000, z: -180.000000}>"
+      },
+      {
+        "label": "SWScene_NextStairsFar",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBBB20) {x: 1440.000000, y: 240.000000, z: -360.000000}>"
+      },
+      {
+        "label": "SWScene_NextNosing0",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBBB70) {x: 1440.000000, y: 240.000000, z: -330.000000}>"
+      },
+      {
+        "label": "SWScene_NextNosing1",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBBBC0) {x: 1380.000000, y: 240.000000, z: -300.000000}>"
+      },
+      {
+        "label": "SWScene_NextNosing2",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBBC10) {x: 1320.000000, y: 240.000000, z: -270.000000}>"
+      },
+      {
+        "label": "SWScene_NextNosing3",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBBC60) {x: 1260.000000, y: 240.000000, z: -240.000000}>"
+      },
+      {
+        "label": "SWScene_NextNosing4",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBBCB0) {x: 1200.000000, y: 240.000000, z: -210.000000}>"
+      },
+      {
+        "label": "SWScene_NextNosing5",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBBD00) {x: 1140.000000, y: 240.000000, z: -180.000000}>"
+      },
+      {
+        "label": "SWScene_NextNosing6",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBBD50) {x: 1080.000000, y: 240.000000, z: -150.000000}>"
+      },
+      {
+        "label": "SWScene_NextNosing7",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBBDA0) {x: 1020.000000, y: 240.000000, z: -120.000000}>"
+      },
+      {
+        "label": "SWScene_NextNosing8",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBBDF0) {x: 960.000000, y: 240.000000, z: -90.000000}>"
+      },
+      {
+        "label": "SWScene_NextNosing9",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBBE40) {x: 900.000000, y: 240.000000, z: -60.000000}>"
+      },
+      {
+        "label": "SWScene_NextNosing10",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBBE90) {x: 840.000000, y: 240.000000, z: -30.000000}>"
+      },
+      {
+        "label": "SWScene_NextNosing11",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBBEE0) {x: 780.000000, y: 240.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_LowerLanding",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBBF30) {x: 1440.000000, y: 360.000000, z: -360.000000}>"
+      },
+      {
+        "label": "SWScene_LowerLanding_Tile_0_1",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBBF80) {x: 1440.000000, y: 480.000000, z: -360.000000}>"
+      },
+      {
+        "label": "SWScene_LowerLanding_Tile_0_2",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDBBFD0) {x: 1440.000000, y: 600.000000, z: -360.000000}>"
+      },
+      {
+        "label": "SWScene_LowerLanding_Tile_0_3",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE0060) {x: 1440.000000, y: 720.000000, z: -360.000000}>"
+      },
+      {
+        "label": "SWScene_LowerLanding_Tile_1_0",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE00B0) {x: 1560.000000, y: 360.000000, z: -360.000000}>"
+      },
+      {
+        "label": "SWScene_LowerLanding_Tile_1_1",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE0100) {x: 1560.000000, y: 480.000000, z: -360.000000}>"
+      },
+      {
+        "label": "SWScene_LowerLanding_Tile_1_2",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE0150) {x: 1560.000000, y: 600.000000, z: -360.000000}>"
+      },
+      {
+        "label": "SWScene_LowerLanding_Tile_1_3",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE01A0) {x: 1560.000000, y: 720.000000, z: -360.000000}>"
+      },
+      {
+        "label": "SWScene_LowerLanding_Tile_2_0",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE01F0) {x: 1680.000000, y: 360.000000, z: -360.000000}>"
+      },
+      {
+        "label": "SWScene_LowerLanding_Tile_2_1",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE0240) {x: 1680.000000, y: 480.000000, z: -360.000000}>"
+      },
+      {
+        "label": "SWScene_LowerLanding_Tile_2_2",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE0290) {x: 1680.000000, y: 600.000000, z: -360.000000}>"
+      },
+      {
+        "label": "SWScene_LowerLanding_Tile_2_3",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE02E0) {x: 1680.000000, y: 720.000000, z: -360.000000}>"
+      },
+      {
+        "label": "SWScene_LeftWall_0_-30",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE0330) {x: -720.000000, y: -240.000000, z: -60.000000}>"
+      },
+      {
+        "label": "SWScene_LeftWall_0_210",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE0380) {x: -720.000000, y: -240.000000, z: 420.000000}>"
+      },
+      {
+        "label": "SWScene_LeftWall_1_-30",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE03D0) {x: -480.000000, y: -240.000000, z: -60.000000}>"
+      },
+      {
+        "label": "SWScene_LeftWall_1_210",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE0420) {x: -480.000000, y: -240.000000, z: 420.000000}>"
+      },
+      {
+        "label": "SWScene_LeftWall_2_-30",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE0470) {x: -240.000000, y: -240.000000, z: -60.000000}>"
+      },
+      {
+        "label": "SWScene_LeftWall_2_210",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE04C0) {x: -240.000000, y: -240.000000, z: 420.000000}>"
+      },
+      {
+        "label": "SWScene_LeftWall_3_-30",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE0510) {x: 0.000000, y: -240.000000, z: -60.000000}>"
+      },
+      {
+        "label": "SWScene_LeftWall_3_210",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE0560) {x: 0.000000, y: -240.000000, z: 420.000000}>"
+      },
+      {
+        "label": "SWScene_LeftWall_4_-30",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE05B0) {x: 240.000000, y: -240.000000, z: -60.000000}>"
+      },
+      {
+        "label": "SWScene_LeftWall_4_210",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE0600) {x: 240.000000, y: -240.000000, z: 420.000000}>"
+      },
+      {
+        "label": "SWScene_LeftWall_5_-30",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE0650) {x: 480.000000, y: -240.000000, z: -60.000000}>"
+      },
+      {
+        "label": "SWScene_LeftWall_5_210",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE06A0) {x: 480.000000, y: -240.000000, z: 420.000000}>"
+      },
+      {
+        "label": "SWScene_MainRightWall_0_-30",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE06F0) {x: -360.000000, y: 240.000000, z: -60.000000}>"
+      },
+      {
+        "label": "SWScene_MainRightWall_0_210",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE0740) {x: -360.000000, y: 240.000000, z: 420.000000}>"
+      },
+      {
+        "label": "SWScene_MainRightWall_1_-30",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE0790) {x: -120.000000, y: 240.000000, z: -60.000000}>"
+      },
+      {
+        "label": "SWScene_MainRightWall_1_210",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE07E0) {x: -120.000000, y: 240.000000, z: 420.000000}>"
+      },
+      {
+        "label": "SWScene_MainRightWall_2_-30",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE0830) {x: 120.000000, y: 240.000000, z: -60.000000}>"
+      },
+      {
+        "label": "SWScene_MainRightWall_2_210",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE0880) {x: 120.000000, y: 240.000000, z: 420.000000}>"
+      },
+      {
+        "label": "SWScene_FarRightWall_0_-210",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE08D0) {x: 600.000000, y: 960.000000, z: -420.000000}>"
+      },
+      {
+        "label": "SWScene_FarRightWall_0_30",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE0920) {x: 600.000000, y: 960.000000, z: 60.000000}>"
+      },
+      {
+        "label": "SWScene_FarRightWall_1_-210",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE0970) {x: 840.000000, y: 960.000000, z: -420.000000}>"
+      },
+      {
+        "label": "SWScene_FarRightWall_1_30",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE09C0) {x: 840.000000, y: 960.000000, z: 60.000000}>"
+      },
+      {
+        "label": "SWScene_FarRightWall_2_-210",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE0A10) {x: 1080.000000, y: 960.000000, z: -420.000000}>"
+      },
+      {
+        "label": "SWScene_FarRightWall_2_30",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE0A60) {x: 1080.000000, y: 960.000000, z: 60.000000}>"
+      },
+      {
+        "label": "SWScene_FarRightWall_3_-210",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE0AB0) {x: 1320.000000, y: 960.000000, z: -420.000000}>"
+      },
+      {
+        "label": "SWScene_FarRightWall_3_30",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE0B00) {x: 1320.000000, y: 960.000000, z: 60.000000}>"
+      },
+      {
+        "label": "SWScene_FarRightWall_4_-210",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE0B50) {x: 1560.000000, y: 960.000000, z: -420.000000}>"
+      },
+      {
+        "label": "SWScene_FarRightWall_4_30",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE0BA0) {x: 1560.000000, y: 960.000000, z: 60.000000}>"
+      },
+      {
+        "label": "SWScene_FarRightWall_5_-210",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE0BF0) {x: 1800.000000, y: 960.000000, z: -420.000000}>"
+      },
+      {
+        "label": "SWScene_FarRightWall_5_30",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE0C40) {x: 1800.000000, y: 960.000000, z: 60.000000}>"
+      },
+      {
+        "label": "SWScene_FarRightWall_6_-210",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE0C90) {x: 2040.000000, y: 960.000000, z: -420.000000}>"
+      },
+      {
+        "label": "SWScene_FarRightWall_6_30",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE0CE0) {x: 2040.000000, y: 960.000000, z: 60.000000}>"
+      },
+      {
+        "label": "SWScene_NextDivider_0_-210",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE0D30) {x: 720.000000, y: 240.000000, z: -420.000000}>"
+      },
+      {
+        "label": "SWScene_NextDivider_0_30",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE0D80) {x: 720.000000, y: 240.000000, z: 60.000000}>"
+      },
+      {
+        "label": "SWScene_NextDivider_1_-210",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE0DD0) {x: 960.000000, y: 240.000000, z: -420.000000}>"
+      },
+      {
+        "label": "SWScene_NextDivider_1_30",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE0E20) {x: 960.000000, y: 240.000000, z: 60.000000}>"
+      },
+      {
+        "label": "SWScene_NextDivider_2_-210",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE0E70) {x: 1200.000000, y: 240.000000, z: -420.000000}>"
+      },
+      {
+        "label": "SWScene_NextDivider_2_30",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE0EC0) {x: 1200.000000, y: 240.000000, z: 60.000000}>"
+      },
+      {
+        "label": "SWScene_NextDivider_3_-210",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE0F10) {x: 1440.000000, y: 240.000000, z: -420.000000}>"
+      },
+      {
+        "label": "SWScene_NextDivider_3_30",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE0F60) {x: 1440.000000, y: 240.000000, z: 60.000000}>"
+      },
+      {
+        "label": "SWScene_NextDivider_4_-210",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE0FB0) {x: 1680.000000, y: 240.000000, z: -420.000000}>"
+      },
+      {
+        "label": "SWScene_NextDivider_4_30",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE1000) {x: 1680.000000, y: 240.000000, z: 60.000000}>"
+      },
+      {
+        "label": "SWScene_NextOuter_0_-210",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE1050) {x: 960.000000, y: 720.000000, z: -420.000000}>"
+      },
+      {
+        "label": "SWScene_NextOuter_0_30",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE10A0) {x: 960.000000, y: 720.000000, z: 60.000000}>"
+      },
+      {
+        "label": "SWScene_NextOuter_1_-210",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE10F0) {x: 1200.000000, y: 720.000000, z: -420.000000}>"
+      },
+      {
+        "label": "SWScene_NextOuter_1_30",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE1140) {x: 1200.000000, y: 720.000000, z: 60.000000}>"
+      },
+      {
+        "label": "SWScene_NextOuter_2_-210",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE1190) {x: 1440.000000, y: 720.000000, z: -420.000000}>"
+      },
+      {
+        "label": "SWScene_NextOuter_2_30",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE11E0) {x: 1440.000000, y: 720.000000, z: 60.000000}>"
+      },
+      {
+        "label": "SWScene_NextOuter_3_-210",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE1230) {x: 1680.000000, y: 720.000000, z: -420.000000}>"
+      },
+      {
+        "label": "SWScene_NextOuter_3_30",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE1280) {x: 1680.000000, y: 720.000000, z: 60.000000}>"
+      },
+      {
+        "label": "SWScene_NextOuter_4_-210",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE12D0) {x: 1920.000000, y: 720.000000, z: -420.000000}>"
+      },
+      {
+        "label": "SWScene_NextOuter_4_30",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE1320) {x: 1920.000000, y: 720.000000, z: 60.000000}>"
+      },
+      {
+        "label": "SWScene_LandingBackWall",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE1370) {x: 720.000000, y: 720.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_SideFloor_60_180",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE13C0) {x: 120.000000, y: 360.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_SideFloor_60_240",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE1410) {x: 120.000000, y: 480.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_SideFloor_60_300",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE1460) {x: 120.000000, y: 600.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_SideFloor_60_360",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE14B0) {x: 120.000000, y: 720.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_SideFloor_60_420",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE1500) {x: 120.000000, y: 840.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_SideFloor_60_480",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE1550) {x: 120.000000, y: 960.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_SideFloor_120_180",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE15A0) {x: 240.000000, y: 360.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_SideFloor_120_240",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE15F0) {x: 240.000000, y: 480.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_SideFloor_120_300",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE1640) {x: 240.000000, y: 600.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_SideFloor_120_360",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE1690) {x: 240.000000, y: 720.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_SideFloor_120_420",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE16E0) {x: 240.000000, y: 840.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_SideFloor_120_480",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE1730) {x: 240.000000, y: 960.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_DoorFrame",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE1780) {x: 718.000000, y: 40.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_DoorLeaf",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE17D0) {x: 718.000000, y: 40.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_Ceiling_Slope_0_-120",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE1820) {x: -720.000000, y: -240.000000, z: 1100.000000}>"
+      },
+      {
+        "label": "SWScene_Ceiling_Slope_0_0",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE1870) {x: -720.000000, y: 0.000000, z: 1100.000000}>"
+      },
+      {
+        "label": "SWScene_Ceiling_Slope_0_120",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE18C0) {x: -720.000000, y: 240.000000, z: 1100.000000}>"
+      },
+      {
+        "label": "SWScene_Ceiling_Slope_0_240",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE1910) {x: -720.000000, y: 480.000000, z: 1100.000000}>"
+      },
+      {
+        "label": "SWScene_Ceiling_Slope_0_360",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE1960) {x: -720.000000, y: 720.000000, z: 1100.000000}>"
+      },
+      {
+        "label": "SWScene_Ceiling_Slope_0_480",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE19B0) {x: -720.000000, y: 960.000000, z: 1100.000000}>"
+      },
+      {
+        "label": "SWScene_Ceiling_Slope_1_-120",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE1A00) {x: -505.337474, y: -240.000000, z: 992.668738}>"
+      },
+      {
+        "label": "SWScene_Ceiling_Slope_1_0",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE1A50) {x: -505.337474, y: 0.000000, z: 992.668738}>"
+      },
+      {
+        "label": "SWScene_Ceiling_Slope_1_120",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE1AA0) {x: -505.337474, y: 240.000000, z: 992.668738}>"
+      },
+      {
+        "label": "SWScene_Ceiling_Slope_1_240",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE1AF0) {x: -505.337474, y: 480.000000, z: 992.668738}>"
+      },
+      {
+        "label": "SWScene_Ceiling_Slope_1_360",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE1B40) {x: -505.337474, y: 720.000000, z: 992.668738}>"
+      },
+      {
+        "label": "SWScene_Ceiling_Slope_1_480",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE1B90) {x: -505.337474, y: 960.000000, z: 992.668738}>"
+      },
+      {
+        "label": "SWScene_Ceiling_Slope_2_-120",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE1BE0) {x: -290.674948, y: -240.000000, z: 885.337476}>"
+      },
+      {
+        "label": "SWScene_Ceiling_Slope_2_0",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE1C30) {x: -290.674948, y: 0.000000, z: 885.337476}>"
+      },
+      {
+        "label": "SWScene_Ceiling_Slope_2_120",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE1C80) {x: -290.674948, y: 240.000000, z: 885.337476}>"
+      },
+      {
+        "label": "SWScene_Ceiling_Slope_2_240",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE1CD0) {x: -290.674948, y: 480.000000, z: 885.337476}>"
+      },
+      {
+        "label": "SWScene_Ceiling_Slope_2_360",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE1D20) {x: -290.674948, y: 720.000000, z: 885.337476}>"
+      },
+      {
+        "label": "SWScene_Ceiling_Slope_2_480",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE1D70) {x: -290.674948, y: 960.000000, z: 885.337476}>"
+      },
+      {
+        "label": "SWScene_Ceiling_Slope_3_-120",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE1DC0) {x: -76.012422, y: -240.000000, z: 778.006214}>"
+      },
+      {
+        "label": "SWScene_Ceiling_Slope_3_0",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE1E10) {x: -76.012422, y: 0.000000, z: 778.006214}>"
+      },
+      {
+        "label": "SWScene_Ceiling_Slope_3_120",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE1E60) {x: -76.012422, y: 240.000000, z: 778.006214}>"
+      },
+      {
+        "label": "SWScene_Ceiling_Slope_3_240",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE1EB0) {x: -76.012422, y: 480.000000, z: 778.006214}>"
+      },
+      {
+        "label": "SWScene_Ceiling_Slope_3_360",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE1F00) {x: -76.012422, y: 720.000000, z: 778.006214}>"
+      },
+      {
+        "label": "SWScene_Ceiling_Slope_3_480",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE1F50) {x: -76.012422, y: 960.000000, z: 778.006214}>"
+      },
+      {
+        "label": "SWScene_Ceiling_Slope_4_-120",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE1FA0) {x: 138.650104, y: -240.000000, z: 670.674952}>"
+      },
+      {
+        "label": "SWScene_Ceiling_Slope_4_0",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE1FF0) {x: 138.650104, y: 0.000000, z: 670.674952}>"
+      },
+      {
+        "label": "SWScene_Ceiling_Slope_4_120",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE2040) {x: 138.650104, y: 240.000000, z: 670.674952}>"
+      },
+      {
+        "label": "SWScene_Ceiling_Slope_4_240",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE2090) {x: 138.650104, y: 480.000000, z: 670.674952}>"
+      },
+      {
+        "label": "SWScene_Ceiling_Slope_4_360",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE20E0) {x: 138.650104, y: 720.000000, z: 670.674952}>"
+      },
+      {
+        "label": "SWScene_Ceiling_Slope_4_480",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE2130) {x: 138.650104, y: 960.000000, z: 670.674952}>"
+      },
+      {
+        "label": "SWScene_Ceiling_Landing_196_-120",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE2130) {x: 392.000000, y: -240.000000, z: 570.000000}>"
+      },
+      {
+        "label": "SWScene_Ceiling_Landing_196_0",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE2180) {x: 392.000000, y: 0.000000, z: 570.000000}>"
+      },
+      {
+        "label": "SWScene_Ceiling_Landing_196_120",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE21D0) {x: 392.000000, y: 240.000000, z: 570.000000}>"
+      },
+      {
+        "label": "SWScene_Ceiling_Landing_196_240",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE2220) {x: 392.000000, y: 480.000000, z: 570.000000}>"
+      },
+      {
+        "label": "SWScene_Ceiling_Landing_196_360",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE2270) {x: 392.000000, y: 720.000000, z: 570.000000}>"
+      },
+      {
+        "label": "SWScene_Ceiling_Landing_196_480",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE22C0) {x: 392.000000, y: 960.000000, z: 570.000000}>"
+      },
+      {
+        "label": "SWScene_Ceiling_Landing_316_-120",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE22C0) {x: 632.000000, y: -240.000000, z: 570.000000}>"
+      },
+      {
+        "label": "SWScene_Ceiling_Landing_316_0",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE2310) {x: 632.000000, y: 0.000000, z: 570.000000}>"
+      },
+      {
+        "label": "SWScene_Ceiling_Landing_316_120",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE2360) {x: 632.000000, y: 240.000000, z: 570.000000}>"
+      },
+      {
+        "label": "SWScene_Ceiling_Landing_316_240",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE23B0) {x: 632.000000, y: 480.000000, z: 570.000000}>"
+      },
+      {
+        "label": "SWScene_Ceiling_Landing_316_360",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE2400) {x: 632.000000, y: 720.000000, z: 570.000000}>"
+      },
+      {
+        "label": "SWScene_Ceiling_Landing_316_480",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE2450) {x: 632.000000, y: 960.000000, z: 570.000000}>"
+      },
+      {
+        "label": "SWScene_CrossBeam",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE24A0) {x: 344.000000, y: -240.000000, z: 520.000000}>"
+      },
+      {
+        "label": "SWScene_LeftSkirt-300",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE24F0) {x: -600.000000, y: -238.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_LeftSkirt-180",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE2540) {x: -360.000000, y: -238.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_LeftSkirt-60",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE2590) {x: -120.000000, y: -238.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_LeftSkirt60",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE25E0) {x: 120.000000, y: -238.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_LeftSkirt180",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE2630) {x: 360.000000, y: -238.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_Lamp_Ceiling",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE2680) {x: 200.000000, y: 110.000000, z: 640.000000}>"
+      },
+      {
+        "label": "SWScene_LuminousStrip_Ceiling-1",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE26D0) {x: 203.025000, y: 110.000000, z: 635.185000}>"
+      },
+      {
+        "label": "SWScene_LuminousStrip_Ceiling1",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE2720) {x: 196.975000, y: 110.000000, z: 635.185000}>"
+      },
+      {
+        "label": "SWScene_Light_Ceiling",
+        "class": "RectLight",
+        "location": "<Struct 'Vector' (0x000001C96CDE2770) {x: 200.000000, y: 110.000000, z: 625.000000}>",
+        "export": "/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_PlayScale2.L_Stairwell_PlayScale2:PersistentLevel.RectLight_4"
+      },
+      {
+        "label": "SWScene_Lamp_LeftWall",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE27C0) {x: 220.000000, y: -235.000000, z: 636.000000}>"
+      },
+      {
+        "label": "SWScene_LuminousStrip_LeftWall-1",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE27C0) {x: 220.000000, y: -230.185000, z: 632.975000}>"
+      },
+      {
+        "label": "SWScene_LuminousStrip_LeftWall1",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE2810) {x: 220.000000, y: -230.185000, z: 639.025000}>"
+      },
+      {
+        "label": "SWScene_Light_LeftWall",
+        "class": "RectLight",
+        "location": "<Struct 'Vector' (0x000001C96CDE2860) {x: 220.000000, y: -220.000000, z: 636.000000}>",
+        "export": "/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_PlayScale2.L_Stairwell_PlayScale2:PersistentLevel.RectLight_5"
+      },
+      {
+        "label": "SWScene_Lamp_RightWall",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE28B0) {x: 130.000000, y: 235.000000, z: 636.000000}>"
+      },
+      {
+        "label": "SWScene_LuminousStrip_RightWall-1",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE28B0) {x: 130.000000, y: 230.185000, z: 639.025000}>"
+      },
+      {
+        "label": "SWScene_LuminousStrip_RightWall1",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE28B0) {x: 130.000000, y: 230.185000, z: 632.975000}>"
+      },
+      {
+        "label": "SWScene_Light_RightWall",
+        "class": "RectLight",
+        "location": "<Struct 'Vector' (0x000001C96CDE2900) {x: 130.000000, y: 220.000000, z: 636.000000}>",
+        "export": "/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_PlayScale2.L_Stairwell_PlayScale2:PersistentLevel.RectLight_6"
+      },
+      {
+        "label": "SWScene_Lamp_Beyond",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE2950) {x: 1240.000000, y: 480.000000, z: 420.000000}>"
+      },
+      {
+        "label": "SWScene_LuminousStrip_Beyond-1",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE29A0) {x: 1245.500000, y: 480.000000, z: 409.300000}>"
+      },
+      {
+        "label": "SWScene_LuminousStrip_Beyond1",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE29F0) {x: 1234.500000, y: 480.000000, z: 409.300000}>"
+      },
+      {
+        "label": "SWScene_Light_Beyond",
+        "class": "RectLight",
+        "location": "<Struct 'Vector' (0x000001C96CDE2A40) {x: 1240.000000, y: 480.000000, z: 405.000000}>",
+        "export": "/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_PlayScale2.L_Stairwell_PlayScale2:PersistentLevel.RectLight_7"
+      },
+      {
+        "label": "SWScene_LandingBounce",
+        "class": "PointLight",
+        "location": "<Struct 'Vector' (0x000001C96CDE2A90) {x: 490.000000, y: 80.000000, z: 340.000000}>",
+        "export": "/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_PlayScale2.L_Stairwell_PlayScale2:PersistentLevel.PointLight_1"
+      },
+      {
+        "label": "SWScene_ReferenceCamera",
+        "class": "CameraActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE2AE0) {x: -200.000000, y: -80.000000, z: 620.000000}>"
+      },
+      {
+        "label": "SWScene_Exposure",
+        "class": "PostProcessVolume",
+        "location": "<Struct 'Vector' (0x000001C96CDE2B80) {x: 400.000000, y: 0.000000, z: 200.000000}>",
+        "export": "/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_PlayScale2.L_Stairwell_PlayScale2:PersistentLevel.PostProcessVolume_1"
+      },
+      {
+        "label": "SWScene_PlayerStart",
+        "class": "PlayerStart",
+        "location": "<Struct 'Vector' (0x000001C96CDE2BD0) {x: -540.000000, y: 0.000000, z: 460.000000}>"
+      },
+      {
+        "label": "SWScene_Detail_LandingRotatedTiles",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE2BD0) {x: 540.000000, y: 360.000000, z: -0.840000}>"
+      },
+      {
+        "label": "SWScene_Detail_RightWall_-30",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE2C20) {x: 240.000000, y: 240.000000, z: -60.000000}>"
+      },
+      {
+        "label": "SWScene_Detail_RightWall_210",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE2C70) {x: 240.000000, y: 240.000000, z: 420.000000}>"
+      },
+      {
+        "label": "SWScene_Detail_DoorSideServicePanel",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE2C70) {x: 684.000000, y: 164.000000, z: 228.000000}>"
+      },
+      {
+        "label": "SWScene_Detail_DoorSidePanelReveal51",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE2C70) {x: 678.000000, y: 102.000000, z: 228.000000}>"
+      },
+      {
+        "label": "SWScene_Detail_DoorSidePanelReveal113",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE2C70) {x: 678.000000, y: 226.000000, z: 228.000000}>"
+      },
+      {
+        "label": "SWScene_Detail_DoorSidePier",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE2CC0) {x: 690.000000, y: 238.000000, z: 240.000000}>"
+      },
+      {
+        "label": "SWScene_Detail_RearServicePanel395",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE2CC0) {x: 790.000000, y: 708.000000, z: 136.000000}>"
+      },
+      {
+        "label": "SWScene_Detail_RearPier395",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE2D10) {x: 692.000000, y: 698.000000, z: 136.000000}>"
+      },
+      {
+        "label": "SWScene_Detail_RearServicePanel495",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE2D10) {x: 990.000000, y: 708.000000, z: 136.000000}>"
+      },
+      {
+        "label": "SWScene_Detail_RearPier495",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE2D60) {x: 892.000000, y: 698.000000, z: 136.000000}>"
+      },
+      {
+        "label": "SWScene_Detail_RearServicePanel595",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE2D60) {x: 1190.000000, y: 708.000000, z: 136.000000}>"
+      },
+      {
+        "label": "SWScene_Detail_RearPier595",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE2DB0) {x: 1092.000000, y: 698.000000, z: 136.000000}>"
+      },
+      {
+        "label": "SWScene_Detail_CeilingBounce",
+        "class": "RectLight",
+        "location": "<Struct 'Vector' (0x000001C96CDE2E00) {x: 130.000000, y: 30.000000, z: 584.000000}>",
+        "export": "/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_PlayScale2.L_Stairwell_PlayScale2:PersistentLevel.RectLight_1"
+      },
+      {
+        "label": "SWScene_Finish_RearBounce",
+        "class": "PointLight",
+        "location": "<Struct 'Vector' (0x000001C96CDE2E50) {x: 890.000000, y: 480.000000, z: 230.000000}>",
+        "export": "/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_PlayScale2.L_Stairwell_PlayScale2:PersistentLevel.PointLight_0"
+      },
+      {
+        "label": "SWScale2_MainRail_-232_0",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE2EA0) {x: 360.000000, y: -232.000000, z: 65.000000}>"
+      },
+      {
+        "label": "SWScale2_MainRail_-232_1",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE2EF0) {x: 240.000000, y: -232.000000, z: 125.000000}>"
+      },
+      {
+        "label": "SWScale2_MainRail_-232_2",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE2F40) {x: 120.000000, y: -232.000000, z: 185.000000}>"
+      },
+      {
+        "label": "SWScale2_MainRail_-232_3",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE2F90) {x: 0.000000, y: -232.000000, z: 245.000000}>"
+      },
+      {
+        "label": "SWScale2_MainRail_-232_4",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE2FE0) {x: -120.000000, y: -232.000000, z: 305.000000}>"
+      },
+      {
+        "label": "SWScale2_MainRail_-232_5",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE3030) {x: -240.000000, y: -232.000000, z: 365.000000}>"
+      },
+      {
+        "label": "SWScale2_MainRail_232_0",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE3080) {x: 360.000000, y: 232.000000, z: 65.000000}>"
+      },
+      {
+        "label": "SWScale2_MainRail_232_1",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE30D0) {x: 240.000000, y: 232.000000, z: 125.000000}>"
+      },
+      {
+        "label": "SWScale2_MainRail_232_2",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE3120) {x: 120.000000, y: 232.000000, z: 185.000000}>"
+      },
+      {
+        "label": "SWScale2_MainRail_232_3",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE3170) {x: 0.000000, y: 232.000000, z: 245.000000}>"
+      },
+      {
+        "label": "SWScale2_MainRail_232_4",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE31C0) {x: -120.000000, y: 232.000000, z: 305.000000}>"
+      },
+      {
+        "label": "SWScale2_MainRail_232_5",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE3210) {x: -240.000000, y: 232.000000, z: 365.000000}>"
+      },
+      {
+        "label": "SWScale2_NextRail_248_0",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE3260) {x: 1440.000000, y: 248.000000, z: -295.000000}>"
+      },
+      {
+        "label": "SWScale2_NextRail_248_1",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE32B0) {x: 1320.000000, y: 248.000000, z: -235.000000}>"
+      },
+      {
+        "label": "SWScale2_NextRail_248_2",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE3300) {x: 1200.000000, y: 248.000000, z: -175.000000}>"
+      },
+      {
+        "label": "SWScale2_NextRail_248_3",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE3350) {x: 1080.000000, y: 248.000000, z: -115.000000}>"
+      },
+      {
+        "label": "SWScale2_NextRail_248_4",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE33A0) {x: 960.000000, y: 248.000000, z: -55.000000}>"
+      },
+      {
+        "label": "SWScale2_NextRail_248_5",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE33F0) {x: 840.000000, y: 248.000000, z: 5.000000}>"
+      },
+      {
+        "label": "SWScale2_NextRail_712_0",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE3440) {x: 1440.000000, y: 712.000000, z: -295.000000}>"
+      },
+      {
+        "label": "SWScale2_NextRail_712_1",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE3490) {x: 1320.000000, y: 712.000000, z: -235.000000}>"
+      },
+      {
+        "label": "SWScale2_NextRail_712_2",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE34E0) {x: 1200.000000, y: 712.000000, z: -175.000000}>"
+      },
+      {
+        "label": "SWScale2_NextRail_712_3",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE3530) {x: 1080.000000, y: 712.000000, z: -115.000000}>"
+      },
+      {
+        "label": "SWScale2_NextRail_712_4",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE3580) {x: 960.000000, y: 712.000000, z: -55.000000}>"
+      },
+      {
+        "label": "SWScale2_NextRail_712_5",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE35D0) {x: 840.000000, y: 712.000000, z: 5.000000}>"
+      },
+      {
+        "label": "SWScale2_LandingRail_-232_0",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE3620) {x: 360.000000, y: -232.000000, z: 65.000000}>"
+      },
+      {
+        "label": "SWScale2_LandingRail_-232_1",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE3670) {x: 480.000000, y: -232.000000, z: 65.000000}>"
+      },
+      {
+        "label": "SWScale2_LandingRail_-232_2",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE36C0) {x: 600.000000, y: -232.000000, z: 65.000000}>"
+      },
+      {
+        "label": "SWScale2_LandingEnd_-232",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE3710) {x: 720.000000, y: -232.000000, z: 65.000000}>"
+      },
+      {
+        "label": "SWScale2_LandingRail_952_0",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE3760) {x: 360.000000, y: 952.000000, z: 65.000000}>"
+      },
+      {
+        "label": "SWScale2_LandingRail_952_1",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE37B0) {x: 480.000000, y: 952.000000, z: 65.000000}>"
+      },
+      {
+        "label": "SWScale2_LandingRail_952_2",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE3800) {x: 600.000000, y: 952.000000, z: 65.000000}>"
+      },
+      {
+        "label": "SWScale2_LandingEnd_952",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE3850) {x: 720.000000, y: 952.000000, z: 65.000000}>"
+      },
+      {
+        "label": "SWScene_DoorWallLeft",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE38A0) {x: 720.000000, y: -140.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_DoorWallRight",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE38F0) {x: 720.000000, y: 90.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_DoorSideTrim-130",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE3940) {x: 720.000000, y: -260.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_DoorSideTrim-115",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE3990) {x: 720.000000, y: -230.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_DoorSideTrim-100",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE39E0) {x: 720.000000, y: -200.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_DoorSideTrim-85",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE3A30) {x: 720.000000, y: -170.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_DoorSideTrim60",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE3A80) {x: 720.000000, y: 120.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_DoorSideTrim75",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE3AD0) {x: 720.000000, y: 150.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_DoorSideTrim90",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE3B20) {x: 720.000000, y: 180.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_DoorSideTrim105",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE3B70) {x: 720.000000, y: 210.000000, z: 0.000000}>"
+      },
+      {
+        "label": "SWScene_DoorWallOver",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE3BC0) {x: 720.000000, y: -240.000000, z: 430.000000}>"
+      },
+      {
+        "label": "SE_TravelToExterior",
+        "class": "SubwayTravelVolume",
+        "location": "<Struct 'Vector' (0x000001C96CDE3C60) {x: -668.000000, y: 0.000000, z: 460.000000}>"
+      },
+      {
+        "label": "SWScene_Detail_DoorPushBar70",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE3CB0) {x: 706.000000, y: -10.500000, z: 70.000000}>"
+      },
+      {
+        "label": "SWScene_Detail_DoorPushBar95",
+        "class": "StaticMeshActor",
+        "location": "<Struct 'Vector' (0x000001C96CDE3D00) {x: 706.000000, y: -10.500000, z: 95.000000}>"
+      }
+    ]
+  }
+}

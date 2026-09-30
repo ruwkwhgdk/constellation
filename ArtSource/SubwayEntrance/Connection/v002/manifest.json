@@ -1,0 +1,55 @@
+{
+  "assets": [
+    {
+      "name": "SM_SE_E09_DarkEntry",
+      "triangles": 9684,
+      "hulls": 0,
+      "dimensions_cm": [
+        476.0000228881836,
+        759.9999904632568,
+        397.00002670288086
+      ]
+    },
+    {
+      "name": "SM_SE_ExteriorDarkTunnel",
+      "triangles": 144,
+      "hulls": 12,
+      "dimensions_cm": [
+        1307.9999923706055,
+        869.0000534057617,
+        454.9999713897705
+      ]
+    },
+    {
+      "name": "SM_SE_InteriorDarkTunnel",
+      "triangles": 108,
+      "hulls": 9,
+      "dimensions_cm": [
+        1014.0000343322754,
+        1468.0000305175781,
+        339.99998569488525
+      ]
+    },
+    {
+      "name": "SM_SE_IslandDarkTunnel",
+      "triangles": 112,
+      "hulls": 0,
+      "dimensions_cm": [
+        9000.0,
+        9000.0,
+        3000.0
+      ]
+    }
+  ],
+  "non_manifold_island": 0,
+  "exterior_portal": [
+    4700,
+    -20500,
+    9640
+  ],
+  "interior_portal": [
+    -1500,
+    -800,
+    360
+  ]
+}

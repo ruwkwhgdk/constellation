@@ -12,7 +12,7 @@
 import traceback
 import unreal
 
-DEST = "/Game/Environment/OldKoreanBuildingA"
+DEST = "/Game/Constellation/Environments/KoreanBuildings/BuildingA"
 MESH_DIR = DEST + "/Meshes"
 MAT_DIR = DEST + "/Materials"
 

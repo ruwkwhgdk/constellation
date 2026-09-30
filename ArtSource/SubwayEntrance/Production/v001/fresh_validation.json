@@ -1,0 +1,58 @@
+{
+  "fresh_load": true,
+  "modules": [
+    "SM_SE_E01",
+    "SM_SE_E02",
+    "SM_SE_E03",
+    "SM_SE_E04",
+    "SM_SE_E05",
+    "SM_SE_E06",
+    "SM_SE_E07",
+    "SM_SE_E08",
+    "SM_SE_E09",
+    "SM_SE_E10",
+    "SM_SE_E11",
+    "SM_SE_E12",
+    "SM_SE_E13"
+  ],
+  "reciprocal_volumes_present": true,
+  "dummy_removed": true,
+  "other_dummy_preserved": true,
+  "play_tested": false,
+  "screenshots": [
+    {
+      "name": "unreal_exterior",
+      "refreshed": true
+    },
+    {
+      "name": "unreal_descent",
+      "refreshed": true
+    }
+  ],
+  "fresh_collision_traces": [
+    {
+      "x": 3900,
+      "y": -19770,
+      "z": 9760.000008940697,
+      "passed": true
+    },
+    {
+      "x": 3900,
+      "y": -19520,
+      "z": 9850.666651725769,
+      "passed": true
+    },
+    {
+      "x": 4200,
+      "y": -19520,
+      "z": 10000.000001341105,
+      "passed": true
+    },
+    {
+      "x": 3900,
+      "y": -18800,
+      "z": 10000.000001341105,
+      "passed": true
+    }
+  ]
+}

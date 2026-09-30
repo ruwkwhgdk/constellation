@@ -1,20 +1,21 @@
 """Assemble adopted kit into a separate reference-scene map. Units: centimeters."""
+from resource_paths import loads as load_current_json, load as load_current_json_file
 import unreal as u
 import json, math
 from pathlib import Path
 ROOT=Path(u.Paths.project_dir())/'ArtSource/Stairwell_Modular'
 OUT=ROOT/'Scene/v001'; OUT.mkdir(parents=True,exist_ok=True)
-KIT='/Game/Environment/StairwellModular/ReviewKit'
-DEST='/Game/Environment/StairwellModular/Scene'
+KIT='/Game/Constellation/Environments/Stairwell/ReviewKit'
+DEST='/Game/Constellation/Environments/Stairwell/Scene'
 E=u.EditorAssetLibrary; A=u.get_editor_subsystem(u.EditorActorSubsystem); L=u.get_editor_subsystem(u.LevelEditorSubsystem)
-MAP=DEST+'/Maps/L_Stairwell_Reference'
+MAP='/Game/Constellation/Review/Stairwell/Maps/L_Stairwell_Reference'
 # Maintained source rebuild; retired intermediate backups are not recreated.
 assert L.load_level(MAP) if E.does_asset_exist(MAP) else L.new_level(MAP)
 for a in A.get_all_level_actors():
     if str(a.get_actor_label()).startswith('SWScene_'): A.destroy_actor(a)
 records=[]
 M=u.MaterialEditingLibrary; AT=u.AssetToolsHelpers.get_asset_tools(); scene_materials={}
-spec=json.loads((ROOT/'Production/v001/reports/material_spec.json').read_text(encoding='utf-8-sig'))
+spec=load_current_json((ROOT/'Production/v001/reports/material_spec.json').read_text(encoding='utf-8-sig'))
 for name,s in spec.items():
     path=DEST+'/Materials/'+name
     mat=E.load_asset(path) if E.does_asset_exist(path) else AT.create_asset(name,DEST+'/Materials',u.Material,u.MaterialFactoryNew())
@@ -92,7 +93,7 @@ spawn('DoorWallLeft','21_WallEndCap',(360,-70,0),90)
 spawn('DoorWallRight','21_WallEndCap',(360,45,0),90)
 for y in [-130,-115,-100,-85,60,75,90,105]: spawn('DoorSideTrim'+str(y),'21_WallEndCap',(360,y,0),90)
 spawn('DoorWallOver','08_Beam140',(360,-120,215),90,(240/140,1,8.6))
-doorbase='/Game/Environment/StairwellModular/Meshes/'
+doorbase='/Game/Constellation/Environments/Stairwell/Meshes/'
 spawn('DoorFrame',doorbase+'SM_Stairwell_DoorFrame13',(358,45,0),90)
 spawn('DoorLeaf',doorbase+'SM_Stairwell_DoorLeaf14',(358,45,0),90)
 # Ceiling and the dark cross-beam seen above the landing.
@@ -132,7 +133,7 @@ for name,pos,yaw,watts in [('Ceiling',(-30,0,374),90,2400),('LeftWall',(-80,-108
 # Soft fill approximates bounce for deterministic preview, independent of baked lighting.
 fill=actor(u.PointLight,'LandingBounce',(245,40,170)); fc=fill.get_component_by_class(u.PointLightComponent); fc.set_mobility(u.ComponentMobility.MOVABLE); fc.set_intensity(700); fc.set_light_color(u.LinearColor(.48,.68,.76,1)); fc.set_editor_property('attenuation_radius',550)
 camera_config_path=OUT/'camera_revision.json'
-camera_config=json.loads(camera_config_path.read_text(encoding='utf-8')) if camera_config_path.exists() else dict(position=[-160,-60,330],rotation=[-30,18,0],fov=68,aspect=1080/1579)
+camera_config=load_current_json(camera_config_path.read_text(encoding='utf-8')) if camera_config_path.exists() else dict(position=[-160,-60,330],rotation=[-30,18,0],fov=68,aspect=1080/1579)
 camera=actor(u.CameraActor,'ReferenceCamera',camera_config['position'],camera_config['rotation'])
 cc=camera.get_component_by_class(u.CameraComponent); cc.set_field_of_view(camera_config['fov']); cc.set_aspect_ratio(camera_config['aspect'])
 cc.set_editor_property('constrain_aspect_ratio',True)

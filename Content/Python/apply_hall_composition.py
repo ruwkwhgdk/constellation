@@ -1,7 +1,7 @@
 """v018: camera-only reference composition; no world or gameplay-camera edits."""
 import unreal as u,json,runpy,hashlib
 from pathlib import Path
-ROOT=Path(u.Paths.project_dir());OUT=ROOT/'ArtSource/OvergrownHall/TripoReplacement/v018';MAP='/Game/Environment/OvergrownHall/TripoFull/Maps/L_OvergrownHall_TripoFull'
+ROOT=Path(u.Paths.project_dir());OUT=ROOT/'ArtSource/OvergrownHall/TripoReplacement/v018';MAP='/Game/Constellation/Worlds/OvergrownHall/Maps/L_OvergrownHall_TripoFull'
 L=u.get_editor_subsystem(u.LevelEditorSubsystem);A=u.get_editor_subsystem(u.EditorActorSubsystem);assert L.load_level(MAP)
 actors={a.get_actor_label():a for a in A.get_all_level_actors()};cam=actors['OH_ReferenceCamera'];cc=cam.get_component_by_class(u.CameraComponent)
 def scene_signature():

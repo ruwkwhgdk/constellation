@@ -1,7 +1,8 @@
 """v023: final balance of v022 light/reflection plus layered rear-wall foliage."""
+from resource_paths import loads as load_current_json, load as load_current_json_file
 import unreal as u,json,runpy
 from pathlib import Path
-ROOT=Path(u.Paths.project_dir());OUT=ROOT/'ArtSource/OvergrownHall/TripoReplacement/v023';OUT.mkdir(parents=True,exist_ok=True);D='/Game/Environment/OvergrownHall/TripoFull';MAP=D+'/Maps/L_OvergrownHall_TripoFull'
+ROOT=Path(u.Paths.project_dir());OUT=ROOT/'ArtSource/OvergrownHall/TripoReplacement/v023';OUT.mkdir(parents=True,exist_ok=True);D='/Game/Constellation/Environments/OvergrownHall/TripoFull';MAP='/Game/Constellation/Worlds/OvergrownHall/Maps/L_OvergrownHall_TripoFull'
 E=u.EditorAssetLibrary;ML=u.MaterialEditingLibrary;A=u.get_editor_subsystem(u.EditorActorSubsystem);L=u.get_editor_subsystem(u.LevelEditorSubsystem)
 assert L.load_level(MAP);actors={a.get_actor_label():a for a in A.get_all_level_actors()}
 if not (OUT/'baseline.json').exists():
@@ -30,7 +31,7 @@ mesh=E.load_asset(D+'/FoliageRuntime/SM_OH_PaintedCrown_Runtime');mat=E.load_ass
 for i,(x,z,width,height,depth) in enumerate([(-465,120,235,210,140),(-295,135,210,260,125),(210,135,240,240,130),(470,100,185,185,120)]):
     center=u.Vector(x,1960-depth*.5,z);a=A.spawn_actor_from_class(u.StaticMeshActor,center,u.Rotator());a.set_actor_label('OH_FinalWallGrowth_%02d'%i);c=a.static_mesh_component;c.set_static_mesh(mesh);c.set_material(0,mat);a.set_actor_scale3d(u.Vector(width/size.x,depth/size.y,height/size.z));actual,_=a.get_actor_bounds(False);a.set_actor_location(a.get_actor_location()+center-actual,False,False);c.set_collision_profile_name('NoCollision');c.set_cast_shadow(False);added.append(a.get_actor_label())
 moved=[]
-baseline=json.loads((OUT/'baseline.json').read_text())
+baseline=load_current_json((OUT/'baseline.json').read_text())
 for n,a in actors.items():
     if n.startswith('OH_Tripo_Tree_'):
         p=baseline[n]['position'];a.modify();a.set_actor_location(u.Vector(1600 if p[0]>0 else -1600,p[1],p[2]),False,False);moved.append(n)

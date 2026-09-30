@@ -2,16 +2,17 @@
 import unreal as u, time
 from pathlib import Path
 ROOT=Path(u.Paths.project_dir()); OUT=ROOT/'ArtSource/Stairwell_Modular/Scene/v002'
-BASE='/Game/Environment/StairwellModular/Scene/Maps/'
+SOURCE_MAP='/Game/Constellation/Review/Stairwell/Maps/L_Stairwell_Reference'
+PLAY_MAP='/Game/Constellation/Worlds/Stairwell/Maps/L_Stairwell_PlayScale2'
 L=u.get_editor_subsystem(u.LevelEditorSubsystem); A=u.get_editor_subsystem(u.EditorActorSubsystem); E=u.EditorAssetLibrary
-assert L.load_level(BASE+'L_Stairwell_Reference')
+assert L.load_level(SOURCE_MAP)
 records=[]
 for a in A.get_all_level_actors():
     n=a.get_actor_label().removeprefix('SWScene_')
     if not n.startswith(('DoorWall','DoorSideTrim')): continue
     c=a.static_mesh_component
     records.append((a.get_actor_label(),a.get_actor_location()*2,a.get_actor_rotation(),a.get_actor_scale3d()*2,c.static_mesh.get_path_name(),[c.get_material(i).get_path_name() if c.get_material(i) else None for i in range(c.get_num_materials())]))
-assert L.load_level(BASE+'L_Stairwell_PlayScale2')
+assert L.load_level(PLAY_MAP)
 for a in A.get_all_level_actors():
     if a.get_actor_label().startswith(('SWScale2_DoorInfill','SWScene_DoorWall','SWScene_DoorSideTrim')): A.destroy_actor(a)
 for name,pos,rot,scale,mesh,materials in records:

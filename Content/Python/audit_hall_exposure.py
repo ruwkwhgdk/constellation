@@ -1,7 +1,7 @@
 import unreal as u,json
 from pathlib import Path
 L=u.get_editor_subsystem(u.LevelEditorSubsystem); A=u.get_editor_subsystem(u.EditorActorSubsystem)
-assert L.load_level('/Game/Environment/OvergrownHall/Scene/Maps/L_OvergrownHall_Layout')
+assert L.load_level('/Game/Constellation/Environments/OvergrownHall/Scene/Maps/L_OvergrownHall_Layout')
 out={'extended_luminance':u.SystemLibrary.get_console_variable_int_value('r.DefaultFeature.AutoExposure.ExtendDefaultLuminanceRange'),'actors':[]}
 for a in A.get_all_level_actors():
     if isinstance(a,u.PostProcessVolume):

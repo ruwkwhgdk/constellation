@@ -1,0 +1,26 @@
+{
+  "baseline_head": "3131bf5396a5bd8725bc0a33eb89047826c50b93",
+  "work_in_place": true,
+  "plan": "docs/superpowers/plans/2026-09-30-resource-organization-plan.md",
+  "ledger": ".superpowers/sdd/2026-09-30-resource-organization-plan/progress.md",
+  "immutable_snapshot": "Saved/ResourceOrganization/20260930/recovery.json",
+  "original_registry": "Saved/ResourceOrganization/20260930/registry.json",
+  "current_registry": "Saved/ResourceOrganization/20260930/registry_final.json",
+  "core_code": [
+    "tools/resource_organization.py",
+    "Content/Python/organize_resources.py",
+    "Content/Python/resource_paths.py",
+    "Tests/test_resource_organization.py",
+    "Tests/test_resource_paths.py",
+    "Plugins/ConstellationResourceTools"
+  ],
+  "active_consumer_list": "Saved/ResourceOrganization/20260930/applied_consumers.json",
+  "packaging_log": "Saved/ResourceOrganization/20260930/package.console.txt",
+  "constraints": [
+    "Read-only review; no agents spawned by reviewer",
+    "Do not git-reset, commit, checkout, stage, or alter user changes",
+    "Binary git diffs can trigger LFS writes into read-only .git; compare text recovery copies and evidence reports instead",
+    "Prior 232-package unused asset cleanup is preserved; never resurrect deleted resources",
+    "Manual environment play/visual review belongs to user under maintained workflows"
+  ]
+}

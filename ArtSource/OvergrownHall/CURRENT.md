@@ -7,7 +7,7 @@
 
 ## 최신 유지 상태 · 원화 시각 기준 통과 (v028, 2026-09-29 22:27 KST)
 
-유지 맵 `/Game/Environment/OvergrownHall/TripoFull/Maps/L_OvergrownHall_TripoFull`. 최신 비교 **`TripoReplacement/v028/review.html`**, 실제 렌더 `TripoReplacement/v028/unreal_acceptance.png`. 판정 근거는 `REFERENCE_ACCEPTANCE.md`. v023의 성급한 통과 판정은 철회했고 v024–028 실제 보정 후 다시 판정했다.
+유지 맵 `/Game/Constellation/Worlds/OvergrownHall/Maps/L_OvergrownHall_TripoFull`. 최신 비교 **`TripoReplacement/v028/review.html`**, 실제 렌더 `TripoReplacement/v028/unreal_acceptance.png`. 판정 근거는 `REFERENCE_ACCEPTANCE.md`. v023의 성급한 통과 판정은 철회했고 v024–028 실제 보정 후 다시 판정했다.
 
 후면 창을 큰3칸+좌측 부분 창으로 보정하고 창/층 사이 띠·기둥 경계를 수정. 측면 상부 벽8개, 중간 보4개 재배치와 부착 잎4개, 후면 관목4개 교체·창 띠 잎3개, 하부 벽6개 색면 보정. 청록 수면과 우측 국소 채광을 보강하고 좌측 직사광 대비를 낮춘 뒤 기둥55개의 청록 중간 밝기를 복원했다. 최종755액터, 닫힌 천장50, 비둘기28/애니메이션140섹션, 후면 나무 제거 상태와 기준 카메라 유지.
 
@@ -16,7 +16,7 @@
 통과 범위는 고정 카메라의 구도·명암·식생·물·폐허 형태다. 원화의 개별 붓터치·파손·광선/반사 윤곽과 동일하지 않고 사용자 최종 승인을 뜻하지 않는다. 원경·반사 일부와 식생/벽 밝기는 미술용 발광 보조를 사용한다. 직접 플레이는 사용자 담당이며 게임 성능/다른 플레이 시점/날개 충돌은 미검증. 평면 반사 해상도75%의 비용은 새로 측정하지 않았다.
 
 ## 유지 기반 · 원화 재현 판정 재검토 (v023, 2026-09-29)
-유지 맵 `/Game/Environment/OvergrownHall/TripoFull/Maps/L_OvergrownHall_TripoFull`. 최신 비교 `TripoReplacement/v023/review.html`, 실제 렌더 `unreal_reference_final.png` (04:29:56 KST). v021 아치6·지붕틀3 파손/처진 부재6/비둘기28 실루엣, v022 잎127·기둥55 색면, v023 빛·수면 반사 균형/바닥과 이어지는 후면 잎4/측면 나무10을 X±1600으로 이동/창 너머 녹색 원경. 닫힌 천장50, 카메라, 공간 치수, 비둘기 리깅·경로·140애니메이션 섹션 유지. 총739액터. 최신 적용 `Content/Python/balance_hall_reference_final.py`, 저장 검사/촬영 `capture_hall_reference_final.py`. 형태 제작은 `Scripts/build_hall_silhouette_finish.py`(Blender 런처), 적용 `finish_hall_silhouettes.py`; 색면 `finish_hall_color_masses.py`. 이전 단계는 단독 재실행하지 않는다.
+유지 맵 `/Game/Constellation/Worlds/OvergrownHall/Maps/L_OvergrownHall_TripoFull`. 최신 비교 `TripoReplacement/v023/review.html`, 실제 렌더 `unreal_reference_final.png` (04:29:56 KST). v021 아치6·지붕틀3 파손/처진 부재6/비둘기28 실루엣, v022 잎127·기둥55 색면, v023 빛·수면 반사 균형/바닥과 이어지는 후면 잎4/측면 나무10을 X±1600으로 이동/창 너머 녹색 원경. 닫힌 천장50, 카메라, 공간 치수, 비둘기 리깅·경로·140애니메이션 섹션 유지. 총739액터. 최신 적용 `Content/Python/balance_hall_reference_final.py`, 저장 검사/촬영 `capture_hall_reference_final.py`. 형태 제작은 `Scripts/build_hall_silhouette_finish.py`(Blender 런처), 적용 `finish_hall_silhouettes.py`; 색면 `finish_hall_color_masses.py`. 이전 단계는 단독 재실행하지 않는다.
 에이전트의 고정 카메라 시각 판정은 `REFERENCE_ACCEPTANCE.md`: 이전 통과 판정은 재검토로 보류. 큰 후면 창 구성과 중간 구조, 식생 덩어리, 안개광 차이에 대해 추가 보정 진행. 원화와 동일한 붓터치·창 구성·파손 위치는 아니며 사용자 최종 승인을 뜻하지 않는다. 실제 렌더 및 저장 검사 통과, 플레이·게임 성능·날개 충돌 미검증. 수면 일부와 원경·잎 밝기에는 미술용 발광 재질을 사용. 자세한 레시피·한계는 v023/STATUS.md.
 ## 최신 · 채광·식생 간격·잔잔한 수면 (v020, 2026-09-29)
 유지 TripoFull 맵. 비교 `TripoReplacement/v020/review.html`, 실제 렌더 `unreal_atmosphere_finish.png`. 관목16배치 제거·51크기 보정·벽 잎13군집 확장. 좌측 직사광 완화, 우측 스포트 범위/밝기 보정, 벤치 보조광 추가, 원경 좌우 색온도/밝기 차이. 수면 노멀·평면 반사 왜곡을 낮추고 큰 발광 얼룩을 얇은 물결 마스크로 교체. 기존 카메라/공간 치수/천장50/비둘기28 유지. 적용 `Content/Python/refine_hall_light_foliage_water.py`, 조명만 `balance_hall_atmosphere_finish.py`, 저장 검사/실제 촬영 `capture_hall_atmosphere_finish.py`. 최종729액터 및 범위 밖 변환/메시 유지 확인. 03:54 KST 실제 렌더 확인. 플레이 미실행. 건축 측면 아치/천장 부재/비둘기 형태는 별도 보정 후보이며 원화의 따뜻한 광선·식생 붓터치도 완전 일치는 아님. 자세한 레시피·한계는 v020/STATUS.md.
@@ -57,13 +57,13 @@
 유지 TripoFull 레벨, 최신 비교 `TripoReplacement/v008/review.html`. 건축317배치의 이끼를 비대칭9개 습윤 구역 중심으로 바꾸고, 기존 덩굴24+추가식생53의 크기/위치를 불균일하게 보정. Tripo 관목·덩굴·나무3종의 잎 끝을 제한적으로 둥글게 수정하며 UV/토폴로지 유지. 따뜻한 후면 빛과 청록 실내 명암 보정, 노출1024 유지. 제작 `Scripts/soften_hall_foliage.py` → `Content/Python/refine_hall_atmosphere.py`, 검사/촬영 `capture_hall_atmosphere.py`. v008/baseline.json은 재실행 누적 방지용 유지 입력. 세부와 한계는 v008/STATUS.md. 직접 플레이/성능 검증 별도.
 
 ## 최신 · 회화풍 표면 텍스처 (v007, 2026-09-28)
-유지 맵은 `/Game/Environment/OvergrownHall/TripoFull/Maps/L_OvergrownHall_TripoFull`. 최신 검토 `TripoReplacement/v007/review.html`. 새 광물질 색상 텍스처를 건축10종에 월드 좌표로 투영하고 이끼 범위·식생 명암을 보정. 기존532배치+추가식생53배치의 재질585개를 교체했으며 형태·조명·물반사·비둘기는 유지. v006 뒤 `Content/Python/paint_hall_surfaces.py`로 재적용, `capture_hall_pigment.py`로 저장 검사와 실제 렌더. 생성 프롬프트는 v007/TEXTURE_SOURCE.md, 재생성/한계는 STATUS.md. 아래 v006 이전 재질 스크립트는 최신 표현을 덮어쓰므로 단독 재실행하지 않는다. 직접 플레이·성능 측정은 별도.
+유지 맵은 `/Game/Constellation/Worlds/OvergrownHall/Maps/L_OvergrownHall_TripoFull`. 최신 검토 `TripoReplacement/v007/review.html`. 새 광물질 색상 텍스처를 건축10종에 월드 좌표로 투영하고 이끼 범위·식생 명암을 보정. 기존532배치+추가식생53배치의 재질585개를 교체했으며 형태·조명·물반사·비둘기는 유지. v006 뒤 `Content/Python/paint_hall_surfaces.py`로 재적용, `capture_hall_pigment.py`로 저장 검사와 실제 렌더. 생성 프롬프트는 v007/TEXTURE_SOURCE.md, 재생성/한계는 STATUS.md. 아래 v006 이전 재질 스크립트는 최신 표현을 덮어쓰므로 단독 재실행하지 않는다. 직접 플레이·성능 측정은 별도.
 
 ## 최신 · 건축 이끼·덩굴과 수면 (v006)
 유지 맵은 동일한 TripoFull. 최신 검토 `TripoReplacement/v006/review.html`. 기존532개 메시 유지,307개 배치에 이끼 재질,Tripo 덩굴/잎53개 추가. 최종 수면은 동적 평면 반사를 사용하는 불투명 스타일 표현으로 실제 바닥 투과와 잔물결 애니메이션은 생략. `Config/DefaultEngine.ini`의 실제 평면 반사 설정 `r.AllowGlobalClipPlane=1` 사용. 재적용은 v005 다음 `apply_hall_growth_water.py` → `refine_hall_water_reflection.py` → `finalize_hall_reflective_water.py`. 새 프로세스 검증/촬영은 `capture_hall_growth_water.py`; 보고서·제약·재현은 v006/STATUS.md. 물/추가 식생 NoCollision,직접 플레이와 성능 측정은 미실시.
 
 ## 최신 · 형태와 건축 모서리 보정 (v005)
-유지 맵은 `/Game/Environment/OvergrownHall/TripoFull/Maps/L_OvergrownHall_TripoFull`. 검토는 `TripoReplacement/v005/review.html`. 건축·가구16종을 Tripo 원본 기준으로 리토폴로지하고 색을 재투영했으며, 식생·돌무더기5종은 작은 돌기를 보정했다. 532개 배치의 메시·재질,21종 치수,바닥/나무 충돌과 비둘기 시퀀서 검사 기록은 v005/verification.json. 소스는 `Scripts/clean_tripo_shapes.py`, 반입은 `Content/Python/apply_clean_hall_shapes.py`. 재생성 세부 사항은 v005/STATUS.md. v005 뒤에 v004 재질 스크립트만 실행하면 UV가 맞지 않으므로 현재 CleanMaterials를 사용한다. 아래는 이전 단계 이력이다.
+유지 맵은 `/Game/Constellation/Worlds/OvergrownHall/Maps/L_OvergrownHall_TripoFull`. 검토는 `TripoReplacement/v005/review.html`. 건축·가구16종을 Tripo 원본 기준으로 리토폴로지하고 색을 재투영했으며, 식생·돌무더기5종은 작은 돌기를 보정했다. 532개 배치의 메시·재질,21종 치수,바닥/나무 충돌과 비둘기 시퀀서 검사 기록은 v005/verification.json. 소스는 `Scripts/clean_tripo_shapes.py`, 반입은 `Content/Python/apply_clean_hall_shapes.py`. 재생성 세부 사항은 v005/STATUS.md. v005 뒤에 v004 재질 스크립트만 실행하면 UV가 맞지 않으므로 현재 CleanMaterials를 사용한다. 아래는 이전 단계 이력이다.
 
 ## 최신 · 따뜻하고 부드러운 재질 보정 (v004)
 현재 맵은 TripoFull. 최신 검토는 `TripoReplacement/v004/review.html`. 21종 재질을 새로 만들어 532개 배치에 적용하고 미세 텍스처 대비·노멀·반사를 줄였다. 석재/식생 팔레트와 광원 부드러움 보정. 원본 텍스처와 메시 재질 슬롯은 보존. 재생성 순서는 v002 전체 반입 → v003 건축 보정 → `Content/Python/style_tripo_hall.py`. 설정·검증·한계는 v004/STATUS.md와 JSON 보고서에 기록. 실제 플레이/성능 검증은 미실시.
@@ -71,7 +71,7 @@
 ## 원화 비교 보정① · 최신 화면
 현재 레벨은 동일한 TripoFull이다. 최신 검토는 `TripoReplacement/v003/review.html`이며 창틀8개·측면아치8개·주두 축소·지붕잔해14개를 보정했다. 소스와 재적용 순서는 v003/STATUS.md. v002 전체 반입 뒤에는 refine_tripo_hall_structure.py를 다시 실행해야 한다. 카메라·식생·조명·수면·새 연출은 다음 단계다.
 ## 최신 유지 작업본 · 전체 Tripo 전환 (2026-09-25)
-- 현재 Unreal 레벨: `/Game/Environment/OvergrownHall/TripoFull/Maps/L_OvergrownHall_TripoFull`.
+- 현재 Unreal 레벨: `/Game/Constellation/Worlds/OvergrownHall/Maps/L_OvergrownHall_TripoFull`.
 - 검토: `TripoReplacement/v002/review.html`. 재생성/검증: 같은 폴더 `STATUS.md`.
 - 신규19종 + 유지 Tripo 기둥·나무·비둘기. 새 모듈499배치, 기존Tripo 나무19그루, 비둘기12마리. 이전 시각용 메시0 확인(물 효과 제외).
 - 원본114파일/해시,19개 보정Blend/FBX/2K PBR,모듈명세·배치JSON 보존.
@@ -96,8 +96,8 @@
 5. Content/Python/verify_overgrown_hall_detail.py: 저장 레벨 재검사. 공통 검증은 verify_overgrown_hall_blockout.py.
 
 ## Unreal 경로
-- 치수 블록아웃: /Game/Environment/OvergrownHall/Blockout/Maps/L_OvergrownHall_Blockout
-- 외형 보강본: /Game/Environment/OvergrownHall/Production/Maps/L_OvergrownHall_Detail
+- 치수 블록아웃: /Game/Constellation/Environments/OvergrownHall/Blockout/Maps/L_OvergrownHall_Blockout
+- 외형 보강본: /Game/Constellation/Environments/OvergrownHall/Production/Maps/L_OvergrownHall_Detail
 - 두 레벨은 독립적이다. 기존 블록아웃 플레이 도우미는 계속 블록아웃을 연다.
 - 구조는 정적 complex collision. 물과 식생은 NoCollision 프로필. 시작 Pawn은 BP_Player_Heroine.
 
@@ -120,7 +120,7 @@
 ## 비둘기 유지 소스
 - Scripts/build_pigeon.py → Bird/v001/pigeon_rig.blend 및 스켈레탈/애니메이션 FBX.
 - Scripts/render_pigeon_preview.py → 실제24프레임 렌더. Bird/v001/review.html에서 재생.
-- Content/Python/import_overgrown_pigeon.py 및 verify_overgrown_pigeon.py → /Game/Environment/OvergrownHall/Bird/Meshes 및 Clips.
+- Content/Python/import_overgrown_pigeon.py 및 verify_overgrown_pigeon.py → /Game/Constellation/Environments/OvergrownHall/Bird/Meshes 및 Clips.
 - Fly0.5초, Glide1초 고정 자세, 전환각0.25초. 지정 위상에서만 끝점 연결 검증; 임의 위상 전환은 상태 제어 추가 필요.
 - 가까운 시점의 몸통 연결/깃 배열 다듬기, 경로 배치, 실제 UE 재생·화면 검토가 남았다.
 
@@ -139,7 +139,7 @@ Tripo 교체 후보 생성·다운로드·실측 완료: Bird/Tripo_v001/review.
 사용자가 Tripo_v001 외형을 채택했다. 유지 원본은 Bird/Tripo_v001/OH_Pigeon_Tripo_v001.glb, 현재 리그는 Bird/Tripo_Rig_v001/pigeon_rig.blend이다. 이전 Bird/v001은 미채택 참고본이다.
 - Scripts/rig_tripo_pigeon.py → 원본 UV/19038삼각형/2K PBR 보존, 17본과4클립. 원본 자세 날개 폭68cm로 균일 축소.
 - Scripts/render_tripo_pigeon_preview.py → 실제24프레임. Bird/Tripo_Rig_v001/review.html.
-- Content/Python/import_overgrown_tripo_pigeon.py 및 verify_overgrown_tripo_pigeon.py → /Game/Environment/OvergrownHall/Bird/Tripo.
+- Content/Python/import_overgrown_tripo_pigeon.py 및 verify_overgrown_tripo_pigeon.py → /Game/Constellation/Environments/OvergrownHall/Bird/Tripo.
 - GLTF roughness=G/metallic=B 채널 유지, Unreal normal green 반전.
 - 루프·전환 끝점 검사 통과. 전환은 지정 위상용. 비행 경로/상태 제어 및 실제 Unreal 화면 검토는 아직 남음.
 
@@ -154,7 +154,7 @@ Tripo 리그 검증 완료: 별도 UE 프로세스에서 전용 스켈레톤·4�
 - 비행 위치/회전은 Sequencer 편집 가능. 다시 제작하면 OH_Flock_ 접두사 액터와 해당 시퀀스만 교체됨.
 
 ## 최신 원화 배치 (2026-09-25)
-현재 작업 레벨: /Game/Environment/OvergrownHall/Scene/Maps/L_OvergrownHall_Layout
+현재 작업 레벨: /Game/Constellation/Environments/OvergrownHall/Scene/Maps/L_OvergrownHall_Layout
 현재 검토: Scene/v001/review.html. Production 상세 레벨은 이전 배치로 보존.
 1. Scripts/build_hall_layout.py: Production 소스를 읽어 창/기둥/벤치/식생/물가 배치. Scene/v001/overgrown_hall_layout.blend.
 2. Scripts/export_hall_layout.py: 공통 exporter의 SOURCE_DIR/SOURCE_BLEND 인자로 내보내기.
@@ -184,7 +184,7 @@ fix_hall_exposure.py로 현재 Scene 레벨에 적용. 최초 저장은 사용�
 사용자가 Blender 절차적 나무·기둥 품질을 부적합으로 판단. TripoReplacement/v001/STATUS.md 기준으로 Tripo 생성→Blender 보정→Unreal 실제 교체를 진행한다. 기존 배치와 캐릭터 스케일은 유지하며 기존 저품질 외형을 새 채택 모델로 간주하지 않는다.
 
 ### Tripo 교체 검토본
-사용자 제공 FBX를 Blender 보정 후 검토맵 `/Game/Environment/OvergrownHall/TripoReplacement/Maps/L_OvergrownHall_TripoReview`에 적용. 기둥30구간/나무19그루. 상세: TripoReplacement/v001/STATUS.md 및 review.html. 나무 잎 외형/기둥 접합/남은 구조는 최종 승인 대기. 유지 Layout은 아직 기존 맵이며 검토본으로 자동 전환하지 않음.
+사용자 제공 FBX를 Blender 보정 후 검토맵 `/Game/Constellation/Environments/OvergrownHall/TripoReplacement/Maps/L_OvergrownHall_TripoReview`에 적용. 기둥30구간/나무19그루. 상세: TripoReplacement/v001/STATUS.md 및 review.html. 나무 잎 외형/기둥 접합/남은 구조는 최종 승인 대기. 유지 Layout은 아직 기존 맵이며 검토본으로 자동 전환하지 않음.
 
 ### 전체 Tripo 전환 (사용자 요청 2026-09-25)
 남은 모델19종 모두 Tripo 생성 완료. 작업 IDs/상태: TripoReplacement/v002/jobs.csv, STATUS.md, review.html. 기존02/19/20 Tripo는 유지. 현재 다운로드 단계가 막혀 신규19종 Blender 보정/Unreal 적용은 미완료. 사용자 요청으로 자동 다운로드를 우선 조사했으며 FBX 및 공식 Bridge ZIP 링크 모두 로컬파일 미확보. v001 검토맵과 유지 Layout을 완료본으로 바꾸지 않음.

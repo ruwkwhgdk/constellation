@@ -2,9 +2,9 @@
 import unreal as u, json
 from pathlib import Path
 E=u.EditorAssetLibrary
-path='/Game/Blueprints/Character/PC/BP_Player_Heroine'
+path='/Game/Constellation/Characters/Heroine/Blueprints/BP_Player_Heroine'
 bp=E.load_asset(path)
-backup='/Game/Blueprints/Character/PC/CameraBackups/BP_Player_Heroine_BeforeStairCamera'
+backup='/Game/Constellation/Characters/Heroine/Blueprints/CameraBackups/BP_Player_Heroine_BeforeStairCamera'
 if not E.does_asset_exist(backup):
     assert E.duplicate_asset(path,backup); assert E.save_asset(backup,only_if_is_dirty=False)
 sub=u.get_engine_subsystem(u.SubobjectDataSubsystem); lib=u.SubobjectDataBlueprintFunctionLibrary

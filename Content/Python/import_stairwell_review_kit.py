@@ -1,11 +1,12 @@
 """Import generated kit to isolated review assets; no existing gameplay map edits."""
+from resource_paths import loads as load_current_json, load as load_current_json_file
 import unreal as u
 import json
 from pathlib import Path
 SRC=Path(u.Paths.project_dir())/'ArtSource/Stairwell_Modular/Production/v001'
-DEST='/Game/Environment/StairwellModular/ReviewKit'
-report=json.loads((SRC/'reports/asset_manifest.json').read_text(encoding='utf-8'))
-spec=json.loads((SRC/'reports/material_spec.json').read_text(encoding='utf-8'))
+DEST='/Game/Constellation/Environments/Stairwell/ReviewKit'
+report=load_current_json((SRC/'reports/asset_manifest.json').read_text(encoding='utf-8'))
+spec=load_current_json((SRC/'reports/material_spec.json').read_text(encoding='utf-8'))
 AT=u.AssetToolsHelpers.get_asset_tools(); E=u.EditorAssetLibrary; M=u.MaterialEditingLibrary
 world=u.get_editor_subsystem(u.UnrealEditorSubsystem).get_editor_world()
 u.SystemLibrary.execute_console_command(world,'Interchange.FeatureFlags.Import.FBX 0')
@@ -84,9 +85,9 @@ for r,t in zip(rows,tasks):
     (SRC/'reports/unreal_mesh_checks.json').write_text(json.dumps(checks,indent=2),encoding='utf-8')
 for r in report['assets']:
     if r.get('notes',{}).get('existing_unreal_asset'):
-        meshes[r['name']]=E.load_asset('/Game/Environment/StairwellModular/Meshes/'+r['name']); assert meshes[r['name']]
+        meshes[r['name']]=E.load_asset('/Game/Constellation/Environments/Stairwell/Meshes/'+r['name']); assert meshes[r['name']]
 level=u.get_editor_subsystem(u.LevelEditorSubsystem); actors=u.get_editor_subsystem(u.EditorActorSubsystem)
-map_path=DEST+'/Maps/L_Stairwell_KitReview'
+map_path='/Game/Constellation/Review/Stairwell/Maps/L_Stairwell_KitReview'
 if E.does_asset_exist(map_path):
     assert level.load_level(map_path)
     for a in actors.get_all_level_actors():

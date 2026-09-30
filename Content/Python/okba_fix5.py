@@ -23,6 +23,7 @@ fix4 로그에서 확정된 사실
      다시 스폰한다. 원점(0,0,0) 기준으로 복구하므로, 건물을 다른 자리에 두려면
      복구 후에 아웃라이너에서 폴더째 선택해 한 번에 옮기면 된다.
 """
+from resource_paths import loads as load_current_json, load as load_current_json_file
 import json
 import os
 import traceback
@@ -31,7 +32,7 @@ import unreal
 SRC = r"C:\Users\User\Documents\UnrealProjects\Constellation\ArtSource\OldKoreanBuildingA"
 FBX_DIR = os.path.join(SRC, "fbx")
 MANIFEST = os.path.join(SRC, "placements.json")
-DEST = "/Game/Environment/OldKoreanBuildingA"
+DEST = "/Game/Constellation/Environments/KoreanBuildings/BuildingA"
 MESH_DIR = DEST + "/Meshes"
 MAT_DIR = DEST + "/Materials"
 
@@ -287,7 +288,7 @@ def replace_actors():
         P("[FIX5]   manifest not found: %s" % MANIFEST)
         return
     with open(MANIFEST) as fh:
-        placements = json.load(fh)["placements"]
+        placements = load_current_json_file(fh)["placements"]
 
     eas = unreal.get_editor_subsystem(unreal.EditorActorSubsystem)
     have = {}

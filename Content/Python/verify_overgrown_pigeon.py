@@ -1,7 +1,8 @@
+from resource_paths import loads as load_current_json, load as load_current_json_file
 import unreal as u,json
 from pathlib import Path
 OUT=Path(u.Paths.project_dir())/'ArtSource/OvergrownHall/Bird/v001'
-report=json.loads((OUT/'unreal_import.json').read_text())
+report=load_current_json((OUT/'unreal_import.json').read_text())
 E=u.EditorAssetLibrary; mesh=E.load_asset(report['mesh']); skeleton=E.load_asset(report['skeleton'])
 assert isinstance(mesh,u.SkeletalMesh) and mesh.get_editor_property('skeleton')==skeleton
 for row,expected in zip(report['clips'],[.5,1,.25,.25]):
@@ -14,7 +15,7 @@ poses=[u.AnimationLibrary.get_bone_pose_for_time(fly,'shoulder_L',t,False) for t
 qs=[p.rotation for p in poses]
 dot=abs(sum(getattr(qs[0],key)*getattr(qs[1],key) for key in ['x','y','z','w']))
 assert dot<.99,dot
-wrong='/Game/Environment/OvergrownHall/Bird/Animations/A_OH_Pigeon_Fly'
+wrong='/Game/Constellation/Environments/OvergrownHall/Bird/Animations/A_OH_Pigeon_Fly'
 registry=u.AssetRegistryHelpers.get_asset_registry(); registry.search_all_assets(True)
 options=u.AssetRegistryDependencyOptions(include_soft_package_references=True,include_hard_package_references=True,include_searchable_names=True,include_soft_management_references=True,include_hard_management_references=True)
 refs=[str(p) for p in registry.get_referencers(wrong,options)]

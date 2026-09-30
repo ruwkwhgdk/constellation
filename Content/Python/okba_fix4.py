@@ -29,7 +29,7 @@ import traceback
 import unreal
 
 SRC = r"C:\Users\User\Documents\UnrealProjects\Constellation\ArtSource\OldKoreanBuildingA\fbx"
-DEST = "/Game/Environment/OldKoreanBuildingA"
+DEST = "/Game/Constellation/Environments/KoreanBuildings/BuildingA"
 MESH_DIR = DEST + "/Meshes"
 MAT_DIR = DEST + "/Materials"
 

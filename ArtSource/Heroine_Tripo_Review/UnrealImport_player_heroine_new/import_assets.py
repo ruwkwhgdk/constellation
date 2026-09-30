@@ -1,6 +1,6 @@
 import unreal,json,re,hashlib
 from pathlib import Path
-P=Path(__file__).resolve().parent;BASE='/Game/Resources/Characters/PC/player_heroine_new';N='player_heroine_new'
+P=Path(__file__).resolve().parent;BASE='/Game/Constellation/Characters/Heroine/Refined';N='player_heroine_new'
 source=P.parent/'RigContourFix/Delivery/Heroine_Skeletal.fbx';data=json.loads((P/'materials.json').read_text())
 asset=unreal.EditorAssetLibrary;at=unreal.AssetToolsHelpers.get_asset_tools();lib=unreal.MaterialEditingLibrary
 def load(p):return unreal.load_asset(p)

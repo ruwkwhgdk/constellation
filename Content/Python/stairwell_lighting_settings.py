@@ -1,7 +1,8 @@
+from resource_paths import loads as load_current_json, load as load_current_json_file
 import unreal as u, json, math
 from pathlib import Path
 def apply_lighting():
-    config=json.loads((Path(u.Paths.project_dir())/'ArtSource/Stairwell_Modular/Scene/v001/lighting_revision.json').read_text())
+    config=load_current_json((Path(u.Paths.project_dir())/'ArtSource/Stairwell_Modular/Scene/v001/lighting_revision.json').read_text())
     actors={a.get_actor_label():a for a in u.get_editor_subsystem(u.EditorActorSubsystem).get_all_level_actors()}
     for name,c in config['fixtures'].items():
         p=c['position']; yaw=c['yaw']; scale=c['length_scale']; angle=math.radians(yaw)

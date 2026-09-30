@@ -14,8 +14,9 @@ def preview_bridge(delta):
   try:exec(compile(request.read_text(encoding='utf-8-sig'),str(request),'exec'),globals())
   except Exception:(P/'preview_update_error.txt').write_text(traceback.format_exc())
 bridge_handle=unreal.register_slate_post_tick_callback(preview_bridge)
-B='/Game/Resources/Characters/PC/player_heroine_new'
+B='/Game/Constellation/Characters/Heroine/Refined'
 N='player_heroine_new'
+PREVIEW_MAP='/Game/Constellation/Review/Heroine/Maps/L_player_heroine_new_ReferenceFit'
 level=unreal.get_editor_subsystem(unreal.LevelEditorSubsystem)
 actors=unreal.get_editor_subsystem(unreal.EditorActorSubsystem)
 world=unreal.EditorLoadingAndSavingUtils.new_blank_map(False)
@@ -61,7 +62,7 @@ settings.set_editor_property('override_auto_exposure_bias',True)
 settings.set_editor_property('auto_exposure_bias',3.0)
 camera.camera_component.set_editor_property('post_process_settings',settings)
 unreal.EditorLevelLibrary.set_level_viewport_camera_info(campos,rot)
-assert unreal.EditorLoadingAndSavingUtils.save_map(world,B+'/Preview/L_'+N+'_ReferenceFit')
+assert unreal.EditorLoadingAndSavingUtils.save_map(world,PREVIEW_MAP)
 unreal.EditorAssetLibrary.sync_browser_to_objects([B+'/SK_'+N])
 start=time.time(); state={'capture':False}
 def tick(delta):
@@ -73,7 +74,7 @@ def tick(delta):
   if elapsed>45:
    helper=unreal.get_default_object(unreal.load_class(None,'/Script/PhysicsToolsets.PhysicsAssetToolset'))
    bodies=helper.call_method('GetBodyNames',args=(mesh.get_editor_property('physics_asset'),))
-   (P/'preview_result.json').write_text(json.dumps({'map':B+'/Preview/L_'+N+'_ReferenceFit','physics_bodies':list(bodies),'animation':anim.get_path_name(),'height_cm':mesh.get_bounds().box_extent.z*2,'upperarm_l':str(comp.get_socket_location('upperarm_l')),'head':str(comp.get_socket_location('head')),'asset_source':mesh.get_editor_property('asset_import_data').get_first_filename()},indent=2))
+   (P/'preview_result.json').write_text(json.dumps({'map':PREVIEW_MAP,'physics_bodies':list(bodies),'animation':anim.get_path_name(),'height_cm':mesh.get_bounds().box_extent.z*2,'upperarm_l':str(comp.get_socket_location('upperarm_l')),'head':str(comp.get_socket_location('head')),'asset_source':mesh.get_editor_property('asset_import_data').get_first_filename()},indent=2))
    unreal.unregister_slate_post_tick_callback(handle)
  except Exception:
   (P/'preview_error.txt').write_text(traceback.format_exc())

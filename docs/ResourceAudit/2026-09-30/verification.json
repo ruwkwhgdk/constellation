@@ -1,0 +1,10 @@
+{
+  "coverage_packages": 3779,
+  "candidate_count": 356,
+  "asset_files_unchanged_after_inventory": true,
+  "modified_after_audit_start": [],
+  "candidate_external_referencers": 0,
+  "unreal_commandlet_exit": 0,
+  "source_data": "Saved/ResourceAudit/20260930/registry.json",
+  "scope": "Saved disk state; not an in-game usage trace; no asset writes or deletion"
+}

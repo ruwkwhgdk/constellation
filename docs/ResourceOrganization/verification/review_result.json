@@ -1,0 +1,21 @@
+{
+  "critical_findings": 0,
+  "important_findings": 3,
+  "fixed": [
+    "Heroine preview save/report map paths now match manifest",
+    "Stairwell doorway recipe uses separate reference and playable map constants",
+    "Six maintained workflow/index documents point to current map packages"
+  ],
+  "regression": {
+    "before": "3 tests, 5 subcase failures",
+    "after": "14 tests passed"
+  },
+  "deferred_findings": [],
+  "declined_to_judge_rulings": {
+    "manual_visual_and_play": "Remain user-owned under existing workflows",
+    "dcc_loading_reimport": "No DCC source relocation; not claimed verified",
+    "retired_recipes": "Historical inputs preserved; not treated as maintained runnable entry points",
+    "packaged_behavior": "Pending Cook and smoke, retained completion gate",
+    "existing_subway_implementation": "Original user work preserved; existing transition tests run"
+  }
+}

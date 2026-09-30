@@ -1,10 +1,11 @@
+from resource_paths import loads as load_current_json, load as load_current_json_file
 import unreal as u,json,runpy
 from pathlib import Path
-ROOT=Path(u.Paths.project_dir());OUT=ROOT/'ArtSource/OvergrownHall/TripoReplacement/v008';D='/Game/Environment/OvergrownHall/TripoFull'
+ROOT=Path(u.Paths.project_dir());OUT=ROOT/'ArtSource/OvergrownHall/TripoReplacement/v008';D='/Game/Constellation/Environments/OvergrownHall/TripoFull'
 runpy.run_path(str(ROOT/'Content/Python/verify_tripo_full_hall.py'))
-expected={r['id']:r['mesh'] for r in json.loads((OUT.parent/'v005/shape_manifest.json').read_text())}
-expected.update({r['id']:r['mesh'] for r in json.loads((OUT/'foliage_shapes.json').read_text())})
-report=json.loads((OUT/'applied.json').read_text());actors={a.get_actor_label():a for a in u.get_editor_subsystem(u.EditorActorSubsystem).get_all_level_actors()}
+expected={r['id']:r['mesh'] for r in load_current_json((OUT.parent/'v005/shape_manifest.json').read_text())}
+expected.update({r['id']:r['mesh'] for r in load_current_json((OUT/'foliage_shapes.json').read_text())})
+report=load_current_json((OUT/'applied.json').read_text());actors={a.get_actor_label():a for a in u.get_editor_subsystem(u.EditorActorSubsystem).get_all_level_actors()}
 existing=growth=moss=0
 for name,a in actors.items():
     key=name.split('_')[2] if name.startswith('OH_FULL_') else '19' if name.startswith('OH_Tripo_Tree_') else '26' if name.startswith('OH_STRUCTURE_Roof_') else None
@@ -30,7 +31,7 @@ assert abs(actors['OH_Sky'].get_component_by_class(u.SkyLightComponent).get_edit
 assert len(report['growth'])==77
 (OUT/'verification.json').write_text(json.dumps(dict(existing_instances=existing,growth_instances=growth,varied_placements=len(report['growth']),moss_instances=moss,foliage_shapes=3,tree_collision=True,water_preserved=True,flock='passed',saved_lighting_verified=True,playtest=False),indent=2))
 u.log('HALL_ATMOSPHERE_VERIFIED')
-script=(ROOT/'Content/Python/capture_hall_exposure.py').read_text().replace('ArtSource/OvergrownHall/Scene/v001','ArtSource/OvergrownHall/TripoReplacement/v008').replace('/Game/Environment/OvergrownHall/Scene/Maps/L_OvergrownHall_Layout',D+'/Maps/L_OvergrownHall_TripoFull').replace('unreal_exposure_fixed.png','unreal_atmosphere.png')
+script=(ROOT/'Content/Python/capture_hall_exposure.py').read_text().replace('ArtSource/OvergrownHall/Scene/v001','ArtSource/OvergrownHall/TripoReplacement/v008').replace('/Game/Constellation/Environments/OvergrownHall/Scene/Maps/L_OvergrownHall_Layout','/Game/Constellation/Worlds/OvergrownHall/Maps/L_OvergrownHall_TripoFull').replace('unreal_exposure_fixed.png','unreal_atmosphere.png')
 script=script.replace('pp=next',"u.EditorLevelLibrary.set_level_viewport_camera_info(cam.get_actor_location(),cam.get_actor_rotation())\nu.EditorLevelLibrary.pilot_level_actor(cam)\npp=next")
 script=script.replace("'r.ScreenPercentage 100'","'ShowFlag.ReflectionEnvironment 1'")
 exec(compile(script,'capture_atmosphere','exec'),globals())

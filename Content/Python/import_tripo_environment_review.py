@@ -1,8 +1,9 @@
 """Apply candidate Tripo replacements to a review copy of the maintained hall."""
+from resource_paths import loads as load_current_json, load as load_current_json_file
 import unreal as u,json,math,runpy
 from pathlib import Path
 ROOT=Path(u.Paths.project_dir()); SRC=ROOT/'ArtSource/OvergrownHall/TripoReplacement/v001'
-D='/Game/Environment/OvergrownHall/TripoReplacement'; MAP=D+'/Maps/L_OvergrownHall_TripoReview'
+D='/Game/Constellation/Environments/OvergrownHall/TripoReplacement'; MAP=D+'/Maps/L_OvergrownHall_TripoReview'
 E=u.EditorAssetLibrary; AT=u.AssetToolsHelpers.get_asset_tools(); ML=u.MaterialEditingLibrary
 A=u.get_editor_subsystem(u.EditorActorSubsystem); L=u.get_editor_subsystem(u.LevelEditorSubsystem)
 world=u.get_editor_subsystem(u.UnrealEditorSubsystem).get_editor_world()
@@ -15,7 +16,7 @@ def import_mesh(file):
     AT.import_asset_tasks([task]); mesh=E.load_asset(task.imported_object_paths[0]); assert isinstance(mesh,u.StaticMesh); return mesh
 meshes={}
 for kind in ['Pillar','Tree']:
-    folder=SRC/kind; info=json.loads((folder/'inspection.json').read_text())
+    folder=SRC/kind; info=load_current_json((folder/'inspection.json').read_text())
     meshes[kind]=import_mesh(folder/('SM_OH_Tripo_'+kind+'.fbx'))
     name='M_OH_Tripo_'+kind; path=D+'/Materials/'+name
     mat=E.load_asset(path) if E.does_asset_exist(path) else AT.create_asset(name,D+'/Materials',u.Material,u.MaterialFactoryNew())
@@ -35,10 +36,10 @@ for kind in ['Pillar','Tree']:
     ML.recompile_material(mat); E.save_loaded_asset(mat,only_if_is_dirty=False)
     meshes[kind].set_material(0,mat); E.save_loaded_asset(meshes[kind],only_if_is_dirty=False)
 remaining=import_mesh(SRC/'SM_OH_RemainingPiers.fbx')
-placements=json.loads((SRC/'placements.json').read_text())
-for i,n in enumerate(placements['remaining_materials']):remaining.set_material(i,E.load_asset('/Game/Environment/OvergrownHall/Scene/Materials/M_'+n))
+placements=load_current_json((SRC/'placements.json').read_text())
+for i,n in enumerate(placements['remaining_materials']):remaining.set_material(i,E.load_asset('/Game/Constellation/Environments/OvergrownHall/Scene/Materials/M_'+n))
 remaining.get_editor_property('body_setup').set_editor_property('collision_trace_flag',u.CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE); E.save_loaded_asset(remaining,only_if_is_dirty=False)
-if not E.does_asset_exist(MAP):assert E.duplicate_asset('/Game/Environment/OvergrownHall/Scene/Maps/L_OvergrownHall_Layout',MAP)
+if not E.does_asset_exist(MAP):assert E.duplicate_asset('/Game/Constellation/Environments/OvergrownHall/Scene/Maps/L_OvergrownHall_Layout',MAP)
 assert L.load_level(MAP)
 actors={a.get_actor_label():a for a in A.get_all_level_actors()}
 for label,a in actors.items():

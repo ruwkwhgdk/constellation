@@ -1,6 +1,6 @@
 import unreal,json,hashlib
 from pathlib import Path
-P=Path(__file__).resolve().parent;B='/Game/Resources/Characters/PC/player_heroine_new';A=B+'/Animations'
+P=Path(__file__).resolve().parent;B='/Game/Constellation/Characters/Heroine/Refined';A=B+'/Animations'
 skel=unreal.load_asset(B+'/SKEL_player_heroine_new');mesh=unreal.load_asset(B+'/SK_player_heroine_new_RunPreview')
 opt=unreal.FbxImportUI();opt.import_mesh=False;opt.import_as_skeletal=True;opt.import_animations=True;opt.mesh_type_to_import=unreal.FBXImportType.FBXIT_ANIMATION;opt.automated_import_should_detect_type=False;opt.skeleton=skel;opt.import_materials=False;opt.import_textures=False;opt.create_physics_asset=False
 opt.anim_sequence_import_data.import_uniform_scale=100.;opt.anim_sequence_import_data.set_editor_property('use_default_sample_rate',False);opt.anim_sequence_import_data.set_editor_property('custom_sample_rate',60)

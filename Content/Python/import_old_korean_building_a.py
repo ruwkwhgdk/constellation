@@ -1,5 +1,5 @@
 # C:\Users\User\Documents\UnrealProjects\Constellation\Content\Python\import_old_korean_building_a.py
-"""OldKoreanBuildingA 모듈러 키트를 /Game/Environment/OldKoreanBuildingA 로 임포트한다.
+"""OldKoreanBuildingA 모듈러 키트를 /Game/Constellation/Environments/KoreanBuildings/BuildingA 로 임포트한다.
 
 언리얼 에디터 Python 콘솔에서:
     import import_old_korean_building_a
@@ -16,6 +16,7 @@
   - Import Materials = False. FBX가 실어오는 머티리얼 대신 여기서 UE
     머티리얼을 BaseColor/Normal/Roughness까지 직접 배선해 만든다.
 """
+from resource_paths import loads as load_current_json, load as load_current_json_file
 
 import json
 import os
@@ -23,7 +24,7 @@ import unreal
 
 # ---------------------------------------------------------------------------
 SRC = r"C:\Users\User\Documents\UnrealProjects\Constellation\ArtSource\OldKoreanBuildingA"
-DEST = "/Game/Environment/OldKoreanBuildingA"
+DEST = "/Game/Constellation/Environments/KoreanBuildings/BuildingA"
 MESH_DIR = DEST + "/Meshes"
 TEX_DIR = DEST + "/Textures"
 MAT_DIR = DEST + "/Materials"
@@ -258,7 +259,7 @@ def assemble(origin=(0.0, 0.0, 0.0)):
     """placements.json 을 읽어 현재 레벨에 84개 액터를 배치한다."""
     manifest = os.path.join(SRC, "placements.json")
     with open(manifest, "r") as fh:
-        data = json.load(fh)
+        data = load_current_json_file(fh)
 
     subsys = unreal.get_editor_subsystem(unreal.EditorActorSubsystem)
     spawned = 0

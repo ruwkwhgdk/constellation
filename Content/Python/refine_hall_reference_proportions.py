@@ -1,7 +1,8 @@
 """v024: reference elevation proportions, side cross-members and directed light."""
+from resource_paths import loads as load_current_json, load as load_current_json_file
 import unreal as u,json,runpy
 from pathlib import Path
-ROOT=Path(u.Paths.project_dir());OUT=ROOT/'ArtSource/OvergrownHall/TripoReplacement/v024';OUT.mkdir(parents=True,exist_ok=True);D='/Game/Environment/OvergrownHall/TripoFull';MAP=D+'/Maps/L_OvergrownHall_TripoFull'
+ROOT=Path(u.Paths.project_dir());OUT=ROOT/'ArtSource/OvergrownHall/TripoReplacement/v024';OUT.mkdir(parents=True,exist_ok=True);D='/Game/Constellation/Environments/OvergrownHall/TripoFull';MAP='/Game/Constellation/Worlds/OvergrownHall/Maps/L_OvergrownHall_TripoFull'
 E=u.EditorAssetLibrary;A=u.get_editor_subsystem(u.EditorActorSubsystem);L=u.get_editor_subsystem(u.LevelEditorSubsystem)
 assert L.load_level(MAP);actors={a.get_actor_label():a for a in A.get_all_level_actors()}
 if not (OUT/'baseline.json').exists():
@@ -10,7 +11,7 @@ if not (OUT/'baseline.json').exists():
         p=a.get_actor_location();s=a.get_actor_scale3d();r=a.get_actor_rotation();rows[n]=dict(position=[p.x,p.y,p.z],scale=[s.x,s.y,s.z],rotation=[r.pitch,r.yaw,r.roll])
         if isinstance(a,u.StaticMeshActor):rows[n].update(mesh=a.static_mesh_component.static_mesh.get_path_name() if a.static_mesh_component.static_mesh else None,materials=[a.static_mesh_component.get_material(i).get_path_name() if a.static_mesh_component.get_material(i) else None for i in range(a.static_mesh_component.get_num_materials())])
     (OUT/'baseline.json').write_text(json.dumps(rows,indent=2))
-base=json.loads((OUT/'baseline.json').read_text());changed=[]
+base=load_current_json((OUT/'baseline.json').read_text());changed=[]
 for n,a in actors.items():
     if n.startswith('OH_ReferenceProportion_'):A.destroy_actor(a)
 actors={a.get_actor_label():a for a in A.get_all_level_actors()}
@@ -46,7 +47,7 @@ for i,n in enumerate(members):
     center,extent=actors[n].get_actor_bounds(False);target=center+u.Vector(0,25,extent.z*.6);a=A.spawn_actor_from_class(u.StaticMeshActor,target,u.Rotator());a.set_actor_label('OH_ReferenceProportion_BeamLeaves_%02d'%i);c=a.static_mesh_component;c.set_static_mesh(mesh);c.set_material(0,mat);a.set_actor_scale3d(u.Vector(65/size.x,(210 if i%2==0 else 155)/size.y,80/size.z));actual,_=a.get_actor_bounds(False);a.set_actor_location(a.get_actor_location()+target-actual,False,False);c.set_collision_profile_name('NoCollision');c.set_cast_shadow(False);added.append(a.get_actor_label())
 # The reference has a substantial upper side wall, not sky above every broken arch.
 u.SystemLibrary.execute_console_command(u.get_editor_subsystem(u.UnrealEditorSubsystem).get_editor_world(),'Interchange.FeatureFlags.Import.FBX 0');infill=[]
-for row in json.loads((OUT/'upper_wall_assets.json').read_text()):
+for row in load_current_json((OUT/'upper_wall_assets.json').read_text()):
     opts=u.FbxImportUI();opts.automated_import_should_detect_type=False;opts.import_mesh=True;opts.import_as_skeletal=False;opts.import_materials=False;opts.import_textures=False;opts.mesh_type_to_import=u.FBXImportType.FBXIT_STATIC_MESH;opts.static_mesh_import_data.combine_meshes=True;opts.static_mesh_import_data.auto_generate_collision=False;opts.static_mesh_import_data.convert_scene_unit=True;opts.static_mesh_import_data.normal_import_method=u.FBXNormalImportMethod.FBXNIM_IMPORT_NORMALS
     t=u.AssetImportTask();t.filename=str(OUT/(row['mesh']+'.fbx'));t.destination_path=D+'/Meshes';t.automated=True;t.save=True;t.replace_existing=True;t.options=opts;t.factory=u.FbxFactory();u.AssetToolsHelpers.get_asset_tools().import_asset_tasks([t]);m=E.load_asset(t.imported_object_paths[0]);m.get_editor_property('body_setup').set_editor_property('collision_trace_flag',u.CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE);assert E.save_loaded_asset(m,only_if_is_dirty=False);infill.append(m)
 for side in [-1,1]:

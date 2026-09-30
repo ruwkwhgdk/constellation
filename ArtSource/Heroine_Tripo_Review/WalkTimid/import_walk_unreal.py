@@ -1,7 +1,7 @@
 import unreal,json,hashlib
 from pathlib import Path
 P=Path(__file__).resolve().parent
-B='/Game/Resources/Characters/PC/player_heroine_new'
+B='/Game/Constellation/Characters/Heroine/Refined'
 skel=unreal.load_asset(B+'/SKEL_player_heroine_new')
 canonical=unreal.load_asset(B+'/SK_player_heroine_new')
 mo=unreal.FbxImportUI();mo.import_as_skeletal=True;mo.import_mesh=True;mo.import_animations=False;mo.import_materials=False;mo.import_textures=False;mo.create_physics_asset=False;mo.skeleton=skel;mo.mesh_type_to_import=unreal.FBXImportType.FBXIT_SKELETAL_MESH;mo.automated_import_should_detect_type=False
@@ -34,12 +34,12 @@ lib.add_animation_sync_marker(a,'LeftPlant',0.0,'Default')
 lib.add_animation_sync_marker(a,'RightPlant',2/3,'Default')
 assert len(lib.get_animation_sync_markers(a))==2
 unreal.EditorAssetLibrary.set_metadata_tag(a,'SuggestedSpeedCmPerSecond','48')
-unreal.EditorAssetLibrary.set_metadata_tag(a,'ReferenceAnimation','/Game/Resources/Characters/CommonAnimation/Walk')
+unreal.EditorAssetLibrary.set_metadata_tag(a,'ReferenceAnimation','/Game/Constellation/Characters/Shared/Animations/Walk')
 unreal.EditorAssetLibrary.set_metadata_tag(a,'Style','Timid careful walk; short stride; in-place')
 assert unreal.EditorAssetLibrary.save_loaded_asset(a,only_if_is_dirty=False)
-bs=unreal.load_asset('/Game/Resources/Characters/CommonAnimation/BS_Move')
+bs=unreal.load_asset('/Game/Constellation/Characters/Shared/Animations/BS_Move')
 registry=unreal.AssetRegistryHelpers.get_asset_registry()
-samples=[str(x) for x in registry.get_dependencies('/Game/Resources/Characters/CommonAnimation/BS_Move',unreal.AssetRegistryDependencyOptions(include_hard_package_references=True))]
+samples=[str(x) for x in registry.get_dependencies('/Game/Constellation/Characters/Shared/Animations/BS_Move',unreal.AssetRegistryDependencyOptions(include_hard_package_references=True))]
 report={'asset':a.get_path_name(),'skeleton':a.get_editor_property('skeleton').get_path_name(),'duration_s':a.sequence_length,'source':a.get_editor_property('asset_import_data').get_first_filename(),'source_sha256':hashlib.sha256((P/'AS_player_heroine_new_Walk_Timid.fbx').read_bytes()).hexdigest(),'reference_blend_samples':samples}
 assert abs(a.sequence_length-4/3)<.001
 report['pass']=True;(P/'unreal_import.json').write_text(json.dumps(report,indent=2));print('WALK_IMPORTED',report)

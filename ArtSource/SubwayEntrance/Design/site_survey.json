@@ -1,0 +1,5305 @@
+{
+  "map": "/Game/Levels/L_StartIsland",
+  "saved": false,
+  "map_sha256": "b92d244ba6e5504cef4929dd71dbac1daf623b68a974473ed73c712d1e9218db",
+  "map_unchanged": true,
+  "scope": "Loaded editor world only; unloaded streamed/partitioned actors may be absent. This is not a placement or gameplay approval.",
+  "actors": [
+    {
+      "label": "start_island_north",
+      "class_name": "Landscape",
+      "position": [
+        -50400.0,
+        -50400.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        0.0,
+        0.0,
+        -228.984375
+      ],
+      "bounds_extent": [
+        50400.0,
+        50400.0,
+        7326.5625
+      ]
+    },
+    {
+      "label": "SunSky",
+      "class_name": "SunSky_C",
+      "position": [
+        20.0,
+        -350.0,
+        520.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        19.89611053466797,
+        -351.7935028076172,
+        594.9856317043304
+      ],
+      "bounds_extent": [
+        125.07614898681646,
+        123.85656738281256,
+        75.01436829566956
+      ]
+    },
+    {
+      "label": "PostProcessVolume",
+      "class_name": "PostProcessVolume",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_extent": [
+        100.0,
+        100.0,
+        100.0
+      ]
+    },
+    {
+      "label": "Goblin_Town_1",
+      "class_name": "StaticMeshActor",
+      "position": [
+        -35300.0,
+        -22800.0,
+        6400.0
+      ],
+      "rotation": [
+        1.4038985481526556,
+        0.04593313244073272,
+        1.8741381185973087
+      ],
+      "bounds_center": [
+        -35312.55081220155,
+        -22783.265583731263,
+        6911.572513359764
+      ],
+      "bounds_extent": [
+        1036.2431040805168,
+        1041.0076649221883,
+        570.1396112705434
+      ],
+      "mesh": "/Game/Levels/_GENERATED/User/Box_AF8A1787.Box_AF8A1787",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "Goblin_Town_2",
+      "class_name": "StaticMeshActor",
+      "position": [
+        -35300.0,
+        -25400.0,
+        6400.0
+      ],
+      "rotation": [
+        1.4038990000000007,
+        0.04593300000000002,
+        1.8741380000000003
+      ],
+      "bounds_center": [
+        -35312.55081619724,
+        -25383.265584764715,
+        6911.57251329554
+      ],
+      "bounds_extent": [
+        1036.2431104580537,
+        1041.0076615917715,
+        570.1396171550969
+      ],
+      "mesh": "/Game/Levels/_GENERATED/User/Box_AF8A1787.Box_AF8A1787",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "Goblin_Town_3",
+      "class_name": "StaticMeshActor",
+      "position": [
+        -32700.0,
+        -25400.0,
+        6400.0
+      ],
+      "rotation": [
+        1.4038990000000007,
+        0.04593300000000002,
+        1.8741380000000003
+      ],
+      "bounds_center": [
+        -32712.55081619724,
+        -25383.265584764715,
+        6911.57251329554
+      ],
+      "bounds_extent": [
+        1036.243110458052,
+        1041.0076615917715,
+        570.1396171550969
+      ],
+      "mesh": "/Game/Levels/_GENERATED/User/Box_AF8A1787.Box_AF8A1787",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "Goblin_Town_4",
+      "class_name": "StaticMeshActor",
+      "position": [
+        -30300.0,
+        -24000.0,
+        6400.0
+      ],
+      "rotation": [
+        1.4038990000000007,
+        0.04593300000000002,
+        1.8741380000000003
+      ],
+      "bounds_center": [
+        -30312.550816197243,
+        -23983.265584764715,
+        6911.57251329554
+      ],
+      "bounds_extent": [
+        1036.2431104580537,
+        1041.0076615917715,
+        570.1396171550969
+      ],
+      "mesh": "/Game/Levels/_GENERATED/User/Box_AF8A1787.Box_AF8A1787",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "coffee_truck",
+      "class_name": "StaticMeshActor",
+      "position": [
+        10500.0,
+        21100.0,
+        -320.0
+      ],
+      "rotation": [
+        -1.8913655913503935,
+        -0.3231893919256095,
+        -4.62216617026968
+      ],
+      "bounds_center": [
+        10499.881360789162,
+        21101.288869096228,
+        -323.81277106523464
+      ],
+      "bounds_extent": [
+        511.0344731061923,
+        281.68552538372387,
+        319.3163114990044
+      ],
+      "mesh": "/Game/Resources/Environments/Props/StartIsland/CoffeeTruck/coffee_truck.coffee_truck",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "subway_station",
+      "class_name": "StaticMeshActor",
+      "position": [
+        3900.0,
+        -19500.0,
+        10530.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        3897.0703125,
+        -19500.0,
+        10530.000057220459
+      ],
+      "bounds_extent": [
+        788.0859375,
+        1500.0,
+        618.1640625
+      ],
+      "mesh": "/Game/Resources/Environments/Props/StartIsland/SubwayStation/subway_station.subway_station",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "skyship",
+      "class_name": "StaticMeshActor",
+      "position": [
+        10600.0,
+        -4000.0,
+        -4400.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        10600.0,
+        -3997.55859375,
+        -4390.234375
+      ],
+      "bounds_extent": [
+        2500.0,
+        891.11328125,
+        996.09375
+      ],
+      "mesh": "/Game/Resources/Environments/Props/StartIsland/Skyship/skyship.skyship",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "Box",
+      "class_name": "StaticMeshActor",
+      "position": [
+        43750.0,
+        36350.0,
+        -6700.0
+      ],
+      "rotation": [
+        7.024057319276807e-15,
+        -56.366803406255855,
+        1.1443764886929298e-14
+      ],
+      "bounds_center": [
+        43750.0,
+        36350.0,
+        -5200.0
+      ],
+      "bounds_extent": [
+        776.1394225519252,
+        887.6299941593606,
+        1500.0
+      ],
+      "mesh": "/Game/Levels/_GENERATED/User/Box_81519F4C.Box_81519F4C",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "Box2",
+      "class_name": "StaticMeshActor",
+      "position": [
+        42850.0,
+        37650.0,
+        -6700.0
+      ],
+      "rotation": [
+        0.0,
+        -56.36680299999998,
+        0.0
+      ],
+      "bounds_center": [
+        42850.0,
+        37650.0,
+        -5200.0
+      ],
+      "bounds_extent": [
+        776.1394257038701,
+        887.6299933789924,
+        1500.0
+      ],
+      "mesh": "/Game/Levels/_GENERATED/User/Box_81519F4C.Box_81519F4C",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "Box3",
+      "class_name": "StaticMeshActor",
+      "position": [
+        44650.0,
+        35050.0,
+        -6700.0
+      ],
+      "rotation": [
+        0.0,
+        -56.36680299999998,
+        0.0
+      ],
+      "bounds_center": [
+        44650.0,
+        35050.0,
+        -5200.0
+      ],
+      "bounds_extent": [
+        776.1394257038701,
+        887.6299933789924,
+        1500.0
+      ],
+      "mesh": "/Game/Levels/_GENERATED/User/Box_81519F4C.Box_81519F4C",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "wooden_bridge",
+      "class_name": "StaticMeshActor",
+      "position": [
+        1900.0,
+        15400.0,
+        -2900.0
+      ],
+      "rotation": [
+        11.415239001675252,
+        1.130267319248373e-15,
+        6.160406445599923e-15
+      ],
+      "bounds_center": [
+        1899.9999999999998,
+        15396.09375,
+        -2900.0
+      ],
+      "bounds_extent": [
+        1043.2276415325023,
+        337.890625,
+        509.9798464958667
+      ],
+      "mesh": "/Game/Resources/Environments/Props/StartIsland/WoodenBridge/wooden_bridge.wooden_bridge",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "wooden_bridge2",
+      "class_name": "StaticMeshActor",
+      "position": [
+        100.0,
+        15400.0,
+        -2900.0
+      ],
+      "rotation": [
+        11.415238999999998,
+        0.0,
+        -0.0
+      ],
+      "bounds_center": [
+        100.0,
+        15396.09375,
+        -2900.0
+      ],
+      "bounds_extent": [
+        1043.227641529165,
+        337.890625,
+        509.9798464690484
+      ],
+      "mesh": "/Game/Resources/Environments/Props/StartIsland/WoodenBridge/wooden_bridge.wooden_bridge",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "wooden_bridge3",
+      "class_name": "StaticMeshActor",
+      "position": [
+        -1700.0,
+        15400.0,
+        -2900.0
+      ],
+      "rotation": [
+        11.415238999999998,
+        0.0,
+        -0.0
+      ],
+      "bounds_center": [
+        -1700.0,
+        15396.09375,
+        -2900.0
+      ],
+      "bounds_extent": [
+        1043.2276415291653,
+        337.890625,
+        509.9798464690484
+      ],
+      "mesh": "/Game/Resources/Environments/Props/StartIsland/WoodenBridge/wooden_bridge.wooden_bridge",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "WaterZone",
+      "class_name": "WaterZone",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_extent": [
+        4051200.0,
+        4051200.0,
+        51200.0
+      ]
+    },
+    {
+      "label": "WaterBodyLake",
+      "class_name": "WaterBodyLake",
+      "position": [
+        -19800.0,
+        13900.0,
+        -5300.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        -15054.536630363085,
+        15096.451501112413,
+        -5625.0
+      ],
+      "bounds_extent": [
+        8446.45159628938,
+        5894.468587337815,
+        325.0
+      ]
+    },
+    {
+      "label": "Landscape_WaterBrushManager",
+      "class_name": "WaterBrushManager",
+      "position": [
+        0.0,
+        0.0,
+        -314.4140625
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        0.0,
+        0.0,
+        -239.4140625
+      ],
+      "bounds_extent": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "label": "sky_island",
+      "class_name": "StaticMeshActor",
+      "position": [
+        4100.0,
+        -18700.0,
+        10000.0
+      ],
+      "rotation": [
+        7.016709298534872e-15,
+        180.0,
+        180.0
+      ],
+      "bounds_center": [
+        4100.0,
+        -18700.0,
+        8500.000000000002
+      ],
+      "bounds_extent": [
+        4499.9999999999945,
+        4500.0,
+        1499.9999999999986
+      ],
+      "mesh": "/Game/Resources/Environments/Architecture/Dummy/SM_Dummy_Cone_Large.SM_Dummy_Cone_Large",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "skyship_end",
+      "class_name": "StaticMeshActor",
+      "position": [
+        4600.0,
+        -13700.0,
+        9700.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        4600.0,
+        -13697.55859375,
+        9709.765625
+      ],
+      "bounds_extent": [
+        2500.0,
+        891.11328125,
+        996.09375
+      ],
+      "mesh": "/Game/Resources/Environments/Props/StartIsland/Skyship/skyship.skyship",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Pile_Of_Stones",
+      "class_name": "StaticMeshActor",
+      "position": [
+        -22400.0,
+        -8300.0,
+        -2100.0
+      ],
+      "rotation": [
+        -1.2889056639462526,
+        -0.07395320773269985,
+        6.567414036488277
+      ],
+      "bounds_center": [
+        -22401.374688450873,
+        -8300.058290508658,
+        -2102.034245020335
+      ],
+      "bounds_extent": [
+        947.1705486385872,
+        980.8544629314438,
+        454.21120543536836
+      ],
+      "mesh": "/Game/Resources/Environments/Props/Common/SM_Pile_Of_Stones/SM_Pile_Of_Stones.SM_Pile_Of_Stones",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Pile_Of_Stones2",
+      "class_name": "StaticMeshActor",
+      "position": [
+        -23600.0,
+        -7600.0,
+        -2200.0
+      ],
+      "rotation": [
+        0.5388120066306891,
+        0.022333978688626594,
+        4.747114734878553
+      ],
+      "bounds_center": [
+        -23601.30902586825,
+        -7599.9949613974895,
+        -2202.077918384312
+      ],
+      "bounds_extent": [
+        942.2344223444306,
+        972.651809992205,
+        413.05172652045223
+      ],
+      "mesh": "/Game/Resources/Environments/Props/Common/SM_Pile_Of_Stones/SM_Pile_Of_Stones.SM_Pile_Of_Stones",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Pile_Of_Stones3",
+      "class_name": "StaticMeshActor",
+      "position": [
+        -23400.0,
+        -8800.0,
+        -1800.0
+      ],
+      "rotation": [
+        0.5388120000000001,
+        0.022334000000000007,
+        4.747115000000001
+      ],
+      "bounds_center": [
+        -23401.30902586849,
+        -8799.994961407534,
+        -1802.0779183841862
+      ],
+      "bounds_extent": [
+        942.2344219976985,
+        972.6518114845026,
+        413.0517306607255
+      ],
+      "mesh": "/Game/Resources/Environments/Props/Common/SM_Pile_Of_Stones/SM_Pile_Of_Stones.SM_Pile_Of_Stones",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "WaterBodyLake2",
+      "class_name": "WaterBodyLake",
+      "position": [
+        13300.0,
+        27000.0,
+        300.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        13304.72306321325,
+        26551.86190117771,
+        -25.0
+      ],
+      "bounds_extent": [
+        1438.2902042687201,
+        1552.8629606563154,
+        325.0
+      ]
+    },
+    {
+      "label": "BP_Chest",
+      "class_name": "BP_Chest_C",
+      "position": [
+        12750.0,
+        26500.0,
+        530.0
+      ],
+      "rotation": [
+        0.0,
+        180.0,
+        -0.0
+      ],
+      "bounds_center": [
+        12750.0,
+        26500.0,
+        530.0
+      ],
+      "bounds_extent": [
+        105.0,
+        75.0,
+        75.0
+      ]
+    },
+    {
+      "label": "SM_School_Girl_Statue",
+      "class_name": "StaticMeshActor",
+      "position": [
+        10320.0,
+        31040.0,
+        400.0
+      ],
+      "rotation": [
+        2.261864426568251e-14,
+        -137.55172062121576,
+        1.3310404867799978e-14
+      ],
+      "bounds_center": [
+        10319.99248168451,
+        31039.91024163439,
+        595.6274115881205
+      ],
+      "bounds_extent": [
+        118.06846402912925,
+        118.52625325822373,
+        195.6274101892233
+      ],
+      "mesh": "/Game/Resources/Environments/Props/AbandonedSchool/SM_School_Girl_Statue/SM_School_Girl_Statue.SM_School_Girl_Statue",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "Clock_Tower_Ruin",
+      "class_name": "StaticMeshActor",
+      "position": [
+        5800.0,
+        33800.0,
+        510.0
+      ],
+      "rotation": [
+        4.073858690352931e-15,
+        -37.59716497304873,
+        9.330633312097177e-15
+      ],
+      "bounds_center": [
+        5799.999944143131,
+        33799.99992746095,
+        515.0
+      ],
+      "bounds_extent": [
+        841.4555316147353,
+        841.4555482969154,
+        5.000000000000114
+      ],
+      "mesh": "/Game/Resources/Environments/Architecture/Dummy/SM_Dummy_Cube_Default.SM_Dummy_Cube_Default",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "BP_BreakablePillarStructureA0",
+      "class_name": "BP_BreakablePillarStructureA_C",
+      "position": [
+        18420.0,
+        23660.0,
+        -1073.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_extent": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "label": "BP_Gunpowder_Barrel1",
+      "class_name": "BP_Gunpowder_Barrel_C",
+      "position": [
+        18800.0,
+        22200.0,
+        1480.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        18799.912114524843,
+        22200.0,
+        1540.0
+      ],
+      "bounds_extent": [
+        31.025385475157236,
+        30.937496566773916,
+        60.0
+      ]
+    },
+    {
+      "label": "WaterBodyOcean",
+      "class_name": "WaterBodyOcean",
+      "position": [
+        -22200.0,
+        21400.0,
+        -5400.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        -11100.0,
+        10700.0,
+        -14400.0
+      ],
+      "bounds_extent": [
+        62300.0,
+        61900.0,
+        11000.0
+      ]
+    },
+    {
+      "label": "BP_Gunpowder_Barrel2",
+      "class_name": "BP_Gunpowder_Barrel_C",
+      "position": [
+        18900.0,
+        22100.0,
+        1480.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        18899.912114524843,
+        22100.0,
+        1540.0
+      ],
+      "bounds_extent": [
+        31.025385475157236,
+        30.937496566773916,
+        60.0
+      ]
+    },
+    {
+      "label": "BP_Gunpowder_Barrel3",
+      "class_name": "BP_Gunpowder_Barrel_C",
+      "position": [
+        18600.0,
+        22000.0,
+        1480.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        18599.912114524843,
+        22000.0,
+        1540.0
+      ],
+      "bounds_extent": [
+        31.025385475157236,
+        30.937496566773916,
+        60.0
+      ]
+    },
+    {
+      "label": "BP_Gunpowder_Barrel4",
+      "class_name": "BP_Gunpowder_Barrel_C",
+      "position": [
+        19000.0,
+        22400.0,
+        1480.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        18999.912114524843,
+        22400.0,
+        1540.0
+      ],
+      "bounds_extent": [
+        31.025385475157236,
+        30.937496566773916,
+        60.0
+      ]
+    },
+    {
+      "label": "BP_Kiosk_Reset",
+      "class_name": "BP_Kiosk_Reset_C",
+      "position": [
+        19300.0,
+        21900.0,
+        1525.0
+      ],
+      "rotation": [
+        2.5890646916492564e-14,
+        180.0,
+        1.614305643920269e-14
+      ],
+      "bounds_center": [
+        19300.0,
+        21900.0,
+        1585.0
+      ],
+      "bounds_extent": [
+        34.42379951477051,
+        32.0,
+        75.0
+      ]
+    },
+    {
+      "label": "start_island_south",
+      "class_name": "Landscape",
+      "position": [
+        -50436.0,
+        50377.0,
+        -6776.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        -36.0,
+        100777.0,
+        561.890625
+      ],
+      "bounds_extent": [
+        50400.0,
+        50400.0,
+        7437.890625
+      ]
+    },
+    {
+      "label": "wooden_bridge4",
+      "class_name": "StaticMeshActor",
+      "position": [
+        -39900.0,
+        47250.0,
+        -5030.0
+      ],
+      "rotation": [
+        9.98857456189472,
+        90.00000000000006,
+        1.453277868128428e-14
+      ],
+      "bounds_center": [
+        -39896.09375,
+        47250.0,
+        -5030.0
+      ],
+      "bounds_extent": [
+        337.890625,
+        1040.0623683468002,
+        486.98560947807437
+      ],
+      "mesh": "/Game/Resources/Environments/Props/StartIsland/WoodenBridge/wooden_bridge.wooden_bridge",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "BP_Spline",
+      "class_name": "BP_Spline_C",
+      "position": [
+        -8900.0,
+        38300.0,
+        10.0
+      ],
+      "rotation": [
+        2.0542117737293486e-15,
+        19.99999999999999,
+        4.385237077511575e-15
+      ],
+      "bounds_center": [
+        9905.902151929118,
+        37219.72042086996,
+        1571.641639642593
+      ],
+      "bounds_extent": [
+        19216.972935279195,
+        13154.780226492789,
+        2438.359336786144
+      ]
+    },
+    {
+      "label": "BP_Spline2",
+      "class_name": "BP_Spline_C",
+      "position": [
+        22270.0,
+        50400.0,
+        2000.0
+      ],
+      "rotation": [
+        0.0,
+        89.99999999999999,
+        -0.0
+      ],
+      "bounds_center": [
+        19458.987576608848,
+        57012.4784064895,
+        495.94341681674405
+      ],
+      "bounds_extent": [
+        4089.3615368545143,
+        6619.453541152521,
+        1505.9434179188797
+      ]
+    },
+    {
+      "label": "wooden_bridge5",
+      "class_name": "StaticMeshActor",
+      "position": [
+        22550.0,
+        78950.0,
+        -960.0
+      ],
+      "rotation": [
+        5.0,
+        -130.77575661377148,
+        2.873433495279996e-14
+      ],
+      "bounds_center": [
+        22547.041908329214,
+        78952.55117281455,
+        -960.0
+      ],
+      "bounds_extent": [
+        924.6114005083946,
+        996.0781670273136,
+        404.30368321136615
+      ],
+      "mesh": "/Game/Resources/Environments/Props/StartIsland/WoodenBridge/wooden_bridge.wooden_bridge",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Dummy_Cylinder_Default",
+      "class_name": "StaticMeshActor",
+      "position": [
+        24070.0,
+        80790.0,
+        -6000.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        24070.0,
+        80790.0,
+        -3465.0
+      ],
+      "bounds_extent": [
+        1500.0,
+        1500.0,
+        2535.0
+      ],
+      "mesh": "/Game/Resources/Environments/Architecture/Dummy/SM_Dummy_Cylinder_Default.SM_Dummy_Cylinder_Default",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Costco",
+      "class_name": "StaticMeshActor",
+      "position": [
+        19890.0,
+        103540.0,
+        2480.0
+      ],
+      "rotation": [
+        2.5517114506809318e-14,
+        -176.19302809130318,
+        1.4334991592584276e-14
+      ],
+      "bounds_center": [
+        19883.488200246884,
+        103542.32072324147,
+        2481.0095405578613
+      ],
+      "bounds_extent": [
+        2966.9630284087943,
+        2095.407728554579,
+        512.8875732421893
+      ],
+      "mesh": "/Game/Resources/Environments/Props/StartIsland/Costco/SM_Costco.SM_Costco",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "BP_School_Girl_Statue",
+      "class_name": "BP_School_Girl_Statue_C",
+      "position": [
+        29040.0,
+        83430.0,
+        -10.0
+      ],
+      "rotation": [
+        2.993313387975666e-14,
+        154.7932211703485,
+        2.546511973860029e-14
+      ],
+      "bounds_center": [
+        29040.0,
+        83430.0,
+        310.00000000000006
+      ],
+      "bounds_extent": [
+        266.13260244928097,
+        266.13260244928824,
+        320.0000000000002
+      ]
+    },
+    {
+      "label": "wooden_bridge6",
+      "class_name": "StaticMeshActor",
+      "position": [
+        25530.0,
+        82550.0,
+        -750.0
+      ],
+      "rotation": [
+        4.999999999999999,
+        -130.77575699999997,
+        -0.0
+      ],
+      "bounds_center": [
+        25527.041908346415,
+        82552.5511728345,
+        -750.0
+      ],
+      "bounds_extent": [
+        924.6114042477748,
+        996.0781642442307,
+        404.303683211366
+      ],
+      "mesh": "/Game/Resources/Environments/Props/StartIsland/WoodenBridge/wooden_bridge.wooden_bridge",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "subway_station2",
+      "class_name": "StaticMeshActor",
+      "position": [
+        13340.0,
+        95300.0,
+        -1470.0
+      ],
+      "rotation": [
+        3.136277173030621e-14,
+        -138.3221866860143,
+        2.9065841849553226e-14
+      ],
+      "bounds_center": [
+        13342.188171066202,
+        95301.94806987367,
+        -1469.999942779541
+      ],
+      "bounds_extent": [
+        1586.0297921260935,
+        1644.374381912261,
+        618.164062500001
+      ],
+      "mesh": "/Game/Resources/Environments/Props/StartIsland/SubwayStation/subway_station.subway_station",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Dummy_Cube_Default",
+      "class_name": "StaticMeshActor",
+      "position": [
+        26240.0,
+        88090.0,
+        3300.0
+      ],
+      "rotation": [
+        1.1856141091695445e-14,
+        44.99999999999997,
+        7.569890388293079e-15
+      ],
+      "bounds_center": [
+        26240.0001618439,
+        88089.9998381561,
+        3550.0
+      ],
+      "bounds_extent": [
+        1767.7671148102672,
+        1767.7671148102672,
+        250.00000000000045
+      ],
+      "mesh": "/Game/Resources/Environments/Architecture/Dummy/SM_Dummy_Cube_Default.SM_Dummy_Cube_Default",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Dummy_Cube_Default2",
+      "class_name": "StaticMeshActor",
+      "position": [
+        27020.0,
+        86750.0,
+        3500.0
+      ],
+      "rotation": [
+        0.0,
+        45.0,
+        -0.0
+      ],
+      "bounds_center": [
+        27020.00006473756,
+        86749.99993526244,
+        3750.0
+      ],
+      "bounds_extent": [
+        848.5282021614148,
+        848.5282021614112,
+        250.0
+      ],
+      "mesh": "/Game/Resources/Environments/Architecture/Dummy/SM_Dummy_Cube_Default.SM_Dummy_Cube_Default",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Dummy_Cube_Default3",
+      "class_name": "StaticMeshActor",
+      "position": [
+        25690.0,
+        88400.0,
+        7500.0
+      ],
+      "rotation": [
+        0.0,
+        45.0,
+        -0.0
+      ],
+      "bounds_center": [
+        25690.000107895932,
+        88399.99989210407,
+        7750.0
+      ],
+      "bounds_extent": [
+        1272.792314031718,
+        1272.7923140317143,
+        250.0
+      ],
+      "mesh": "/Game/Resources/Environments/Architecture/Dummy/SM_Dummy_Cube_Default.SM_Dummy_Cube_Default",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Dummy_Cube_Default4",
+      "class_name": "StaticMeshActor",
+      "position": [
+        27670.0,
+        85700.0,
+        3700.0
+      ],
+      "rotation": [
+        0.0,
+        45.0,
+        -0.0
+      ],
+      "bounds_center": [
+        27670.00006473756,
+        85699.99993526244,
+        3950.0
+      ],
+      "bounds_extent": [
+        848.5282021614148,
+        848.5282021614112,
+        250.0
+      ],
+      "mesh": "/Game/Resources/Environments/Architecture/Dummy/SM_Dummy_Cube_Default.SM_Dummy_Cube_Default",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Lighthouse",
+      "class_name": "StaticMeshActor",
+      "position": [
+        29523.906993865967,
+        89730.00003814697,
+        8000.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        29523.906993865967,
+        89730.00003814697,
+        10500.0
+      ],
+      "bounds_extent": [
+        1298.8273620605469,
+        1318.3599472045898,
+        2500.0
+      ],
+      "mesh": "/Game/Resources/Environments/Props/StartIsland/Lighthouse/SM_Lighthouse.SM_Lighthouse",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "BP_MovingPlatform",
+      "class_name": "BP_MovingPlatform_C",
+      "position": [
+        -15200.0,
+        -12600.0,
+        3700.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        -15200.0,
+        -12600.000076293945,
+        3750.0
+      ],
+      "bounds_extent": [
+        500.0,
+        500.0000762939453,
+        50.0
+      ]
+    },
+    {
+      "label": "BP_MovingPlatform2",
+      "class_name": "BP_MovingPlatform_C",
+      "position": [
+        100.0,
+        -16000.0,
+        9900.0
+      ],
+      "rotation": [
+        0.0,
+        -30.80422944085747,
+        0.0
+      ],
+      "bounds_center": [
+        99.99996092939227,
+        -16000.000065530556,
+        9950.0
+      ],
+      "bounds_extent": [
+        685.5142224067806,
+        685.5142488667288,
+        50.0
+      ]
+    },
+    {
+      "label": "BP_MovingPlatform3",
+      "class_name": "BP_MovingPlatform_C",
+      "position": [
+        24550.0,
+        87670.0,
+        -790.0
+      ],
+      "rotation": [
+        0.0,
+        45.00000000000006,
+        -0.0
+      ],
+      "bounds_center": [
+        24550.000053947966,
+        87669.99994605203,
+        -740.0
+      ],
+      "bounds_extent": [
+        707.106835134513,
+        707.1068351345166,
+        50.0
+      ]
+    },
+    {
+      "label": "InstancedFoliageActorForest",
+      "class_name": "InstancedFoliageActor",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_extent": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "label": "SM_Playground",
+      "class_name": "StaticMeshActor",
+      "position": [
+        -6870.0,
+        29146.09401702881,
+        -3992.032012939453
+      ],
+      "rotation": [
+        4.706521720500589e-14,
+        -147.87806960123086,
+        2.4178325438693094e-14
+      ],
+      "bounds_center": [
+        -6869.999999999999,
+        29146.09401702881,
+        -3161.9540405273438
+      ],
+      "bounds_extent": [
+        1366.178749317568,
+        1358.791206295049,
+        830.0779724121107
+      ],
+      "mesh": "/Game/Resources/Environments/Props/StartIsland/Playground/SM_Playground.SM_Playground",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Bush_A",
+      "class_name": "StaticMeshActor",
+      "position": [
+        10960.0,
+        29600.0,
+        350.0
+      ],
+      "rotation": [
+        -1.2072292007680976,
+        0.07479224198584311,
+        -7.090041237503386
+      ],
+      "bounds_center": [
+        10961.872302383623,
+        29589.03365746735,
+        438.16799823828285
+      ],
+      "bounds_extent": [
+        101.98052859281415,
+        110.33244616453521,
+        102.61501451264326
+      ],
+      "mesh": "/Game/Resources/Environments/Props/StartIsland/Bush/SM_Bush_A.SM_Bush_A",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "BP_StartIsland_AbilityUnlock0",
+      "class_name": "BP_StartIsland_AbilityUnlock_C",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_extent": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "label": "BP_Chest2",
+      "class_name": "BP_Chest_C",
+      "position": [
+        18450.0,
+        23690.0,
+        -490.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        18450.0,
+        23690.0,
+        -490.0
+      ],
+      "bounds_extent": [
+        105.0,
+        75.0,
+        75.0
+      ]
+    },
+    {
+      "label": "PCG_ApartmentPrototype_v2",
+      "class_name": "PCGVolume",
+      "position": [
+        47030.0,
+        50000.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        23565.0,
+        25050.0,
+        0.0
+      ],
+      "bounds_extent": [
+        23565.0,
+        25050.0,
+        100.0
+      ]
+    },
+    {
+      "label": "PCGWorldActor0",
+      "class_name": "PCGWorldActor",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_extent": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "label": "PlayerStart",
+      "class_name": "PlayerStart",
+      "position": [
+        5800.0,
+        33790.0,
+        630.0
+      ],
+      "rotation": [
+        2.4180665291781626e-14,
+        -130.90794583973226,
+        1.6095470024304076e-14
+      ],
+      "bounds_center": [
+        5721.41852440179,
+        33701.326821225695,
+        630.0
+      ],
+      "bounds_extent": [
+        139.0424885378925,
+        145.09751044354562,
+        92.0
+      ]
+    },
+    {
+      "label": "BP_Guardrail",
+      "class_name": "BP_Guardrail_C",
+      "position": [
+        3038.4595292105214,
+        34888.33284596354,
+        510.0
+      ],
+      "rotation": [
+        3.6935943742143554e-15,
+        -40.0965598236703,
+        9.057367414303382e-15
+      ],
+      "bounds_center": [
+        3038.4595292105214,
+        34888.33284596354,
+        570.4284118652344
+      ],
+      "bounds_extent": [
+        141.92496732401196,
+        129.0251213106094,
+        60.428411865234466
+      ]
+    },
+    {
+      "label": "BP_Guardrail2",
+      "class_name": "BP_Guardrail_C",
+      "position": [
+        3267.2510250375894,
+        34694.28529654018,
+        510.0
+      ],
+      "rotation": [
+        4.731775412102159e-16,
+        -40.09655976366451,
+        5.974259205794254e-16
+      ],
+      "bounds_center": [
+        3267.2510250375894,
+        34694.28529654018,
+        570.4284118652344
+      ],
+      "bounds_extent": [
+        141.92496739057788,
+        129.0251212196963,
+        60.428411865234466
+      ]
+    },
+    {
+      "label": "BP_Guardrail3",
+      "class_name": "BP_Guardrail_C",
+      "position": [
+        3496.0425208646575,
+        34500.237747116815,
+        510.0
+      ],
+      "rotation": [
+        4.731775412102159e-16,
+        -40.09655976366451,
+        5.974259205794254e-16
+      ],
+      "bounds_center": [
+        3496.0425208646575,
+        34500.237747116815,
+        570.4284118652344
+      ],
+      "bounds_extent": [
+        141.92496739057788,
+        129.0251212196963,
+        60.428411865234466
+      ]
+    },
+    {
+      "label": "BP_Guardrail4",
+      "class_name": "BP_Guardrail_C",
+      "position": [
+        3724.834016691726,
+        34306.190197693446,
+        510.0
+      ],
+      "rotation": [
+        4.731775412102159e-16,
+        -40.09655976366451,
+        5.974259205794254e-16
+      ],
+      "bounds_center": [
+        3724.834016691726,
+        34306.190197693446,
+        570.4284118652344
+      ],
+      "bounds_extent": [
+        141.92496739057788,
+        129.0251212196963,
+        60.428411865234466
+      ]
+    },
+    {
+      "label": "BP_Guardrail5",
+      "class_name": "BP_Guardrail_C",
+      "position": [
+        3953.6255125187954,
+        34112.142648270084,
+        510.0
+      ],
+      "rotation": [
+        4.731775412102159e-16,
+        -40.09655976366451,
+        5.974259205794254e-16
+      ],
+      "bounds_center": [
+        3953.6255125187954,
+        34112.142648270084,
+        570.4284118652344
+      ],
+      "bounds_extent": [
+        141.92496739057788,
+        129.0251212196963,
+        60.428411865234466
+      ]
+    },
+    {
+      "label": "BP_Guardrail6",
+      "class_name": "BP_Guardrail_C",
+      "position": [
+        4182.417008345863,
+        33918.09509884673,
+        510.0
+      ],
+      "rotation": [
+        4.731775412102159e-16,
+        -40.09655976366451,
+        5.974259205794254e-16
+      ],
+      "bounds_center": [
+        4182.417008345863,
+        33918.09509884673,
+        570.4284118652344
+      ],
+      "bounds_extent": [
+        141.92496739057788,
+        129.0251212196963,
+        60.428411865234466
+      ]
+    },
+    {
+      "label": "BP_Guardrail7",
+      "class_name": "BP_Guardrail_C",
+      "position": [
+        4411.2085041729315,
+        33724.04754942336,
+        510.0
+      ],
+      "rotation": [
+        4.731775412102159e-16,
+        -40.09655976366451,
+        5.974259205794254e-16
+      ],
+      "bounds_center": [
+        4411.2085041729315,
+        33724.04754942336,
+        570.4284118652344
+      ],
+      "bounds_extent": [
+        141.92496739057788,
+        129.0251212196963,
+        60.428411865234466
+      ]
+    },
+    {
+      "label": "BP_Guardrail8",
+      "class_name": "BP_Guardrail_C",
+      "position": [
+        4660.0,
+        33550.0,
+        550.0
+      ],
+      "rotation": [
+        0.0,
+        -40.09655976366451,
+        -122.99999999999999
+      ],
+      "bounds_center": [
+        4627.358444555055,
+        33511.232182551255,
+        517.0883280742282
+      ],
+      "bounds_extent": [
+        162.01668116595283,
+        152.8877062362153,
+        68.79854242056925
+      ]
+    },
+    {
+      "label": "BP_Guardrail9",
+      "class_name": "BP_Guardrail_C",
+      "position": [
+        5868.259288212319,
+        32848.40546401726,
+        510.0
+      ],
+      "rotation": [
+        3.66381799110733e-16,
+        -10.964503985982496,
+        1.780228987105662e-15
+      ],
+      "bounds_center": [
+        5868.259288212319,
+        32848.40546401726,
+        570.4284118652344
+      ],
+      "bounds_extent": [
+        154.91378337250444,
+        70.44488675765751,
+        60.428411865234466
+      ]
+    },
+    {
+      "label": "BP_Guardrail10",
+      "class_name": "BP_Guardrail_C",
+      "position": [
+        6162.575693928321,
+        32790.286158882605,
+        510.0
+      ],
+      "rotation": [
+        3.66381799110733e-16,
+        -10.964503985982496,
+        1.780228987105662e-15
+      ],
+      "bounds_center": [
+        6162.575693928321,
+        32790.286158882605,
+        570.4284118652344
+      ],
+      "bounds_extent": [
+        154.91378337250444,
+        70.44488675765933,
+        60.428411865234466
+      ]
+    },
+    {
+      "label": "BP_Guardrail11",
+      "class_name": "BP_Guardrail_C",
+      "position": [
+        6456.892098283999,
+        32732.166854134644,
+        510.0
+      ],
+      "rotation": [
+        3.66381799110733e-16,
+        -10.964503985982496,
+        1.780228987105662e-15
+      ],
+      "bounds_center": [
+        6456.892098283999,
+        32732.166854134644,
+        570.4284118652344
+      ],
+      "bounds_extent": [
+        154.91378337250444,
+        70.44488675765933,
+        60.428411865234466
+      ]
+    },
+    {
+      "label": "BP_Guardrail12",
+      "class_name": "BP_Guardrail_C",
+      "position": [
+        6751.208504,
+        32674.047549000003,
+        510.0
+      ],
+      "rotation": [
+        3.66381799110733e-16,
+        -10.964503985982496,
+        1.780228987105662e-15
+      ],
+      "bounds_center": [
+        6751.208504,
+        32674.047549000003,
+        570.4284118652344
+      ],
+      "bounds_extent": [
+        154.91378337250444,
+        70.44488675766115,
+        60.428411865234466
+      ]
+    },
+    {
+      "label": "BP_Guardrail13",
+      "class_name": "BP_Guardrail_C",
+      "position": [
+        7024.094790062211,
+        32536.93625605684,
+        510.0
+      ],
+      "rotation": [
+        4.357671494022241e-15,
+        -40.99967164287384,
+        7.473484767687108e-15
+      ],
+      "bounds_center": [
+        7024.094790062211,
+        32536.93625605684,
+        570.4284118652344
+      ],
+      "bounds_extent": [
+        140.90553547191757,
+        130.37727415907648,
+        60.428411865234466
+      ]
+    },
+    {
+      "label": "BP_Guardrail15",
+      "class_name": "BP_Guardrail_C",
+      "position": [
+        7475.503932110259,
+        32141.677118352633,
+        470.0
+      ],
+      "rotation": [
+        4.357671494022241e-15,
+        -40.99967164287384,
+        7.473484767687108e-15
+      ],
+      "bounds_center": [
+        7475.503932110259,
+        32141.677118352633,
+        530.4284118652344
+      ],
+      "bounds_extent": [
+        140.90553547191757,
+        130.37727415907648,
+        60.428411865234466
+      ]
+    },
+    {
+      "label": "BP_Guardrail16",
+      "class_name": "BP_Guardrail_C",
+      "position": [
+        7701.208504,
+        31944.047549,
+        470.0
+      ],
+      "rotation": [
+        4.357671494022241e-15,
+        -40.99967164287384,
+        7.473484767687108e-15
+      ],
+      "bounds_center": [
+        7701.208504,
+        31944.047549,
+        530.4284118652344
+      ],
+      "bounds_extent": [
+        140.90553547191757,
+        130.37727415907648,
+        60.428411865234466
+      ]
+    },
+    {
+      "label": "BP_Guardrail17",
+      "class_name": "BP_Guardrail_C",
+      "position": [
+        7924.09479,
+        31736.936256,
+        470.0
+      ],
+      "rotation": [
+        1.7091202920323706e-15,
+        -45.68779153295677,
+        1.6316630601027777e-15
+      ],
+      "bounds_center": [
+        7924.09479,
+        31736.936256,
+        530.4284118652344
+      ],
+      "bounds_extent": [
+        135.05708916061303,
+        136.86868080086424,
+        60.428411865234466
+      ]
+    },
+    {
+      "label": "BP_Guardrail19",
+      "class_name": "BP_Guardrail_C",
+      "position": [
+        8348.378721466048,
+        31285.090711486562,
+        450.0
+      ],
+      "rotation": [
+        1.9150260914959345e-15,
+        -47.254328674775564,
+        1.791131686966013e-15
+      ],
+      "bounds_center": [
+        8348.378721466048,
+        31285.090711486562,
+        510.42841186523424
+      ],
+      "bounds_extent": [
+        132.89927588458158,
+        138.83562030097164,
+        60.42841186523444
+      ]
+    },
+    {
+      "label": "BP_Guardrail20",
+      "class_name": "BP_Guardrail_C",
+      "position": [
+        8561.208504,
+        31054.047549,
+        440.0
+      ],
+      "rotation": [
+        1.9150260914959345e-15,
+        -47.254328674775564,
+        1.791131686966013e-15
+      ],
+      "bounds_center": [
+        8561.208504,
+        31054.047549,
+        500.42841186523424
+      ],
+      "bounds_extent": [
+        132.89927588458158,
+        138.83562030097164,
+        60.42841186523444
+      ]
+    },
+    {
+      "label": "BP_AbandonedCar",
+      "class_name": "BP_AbandonedCar_C",
+      "position": [
+        1560.0,
+        21970.0,
+        -3910.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        1560.0,
+        21970.00000190735,
+        -3909.8046884536743
+      ],
+      "bounds_extent": [
+        50.0,
+        31.0546875,
+        28.906250953674316
+      ]
+    },
+    {
+      "label": "BP_Guardrail21",
+      "class_name": "BP_Guardrail_C",
+      "position": [
+        8791.208504,
+        30844.047549,
+        430.0
+      ],
+      "rotation": [
+        6.209363176997201e-16,
+        -37.57747373887637,
+        8.819326673132889e-16
+      ],
+      "bounds_center": [
+        8791.208504,
+        30844.047549,
+        490.4284118652343
+      ],
+      "bounds_extent": [
+        144.58139718051098,
+        125.08518630914114,
+        60.42841186523441
+      ]
+    },
+    {
+      "label": "BP_Guardrail22",
+      "class_name": "BP_Guardrail_C",
+      "position": [
+        9081.208504,
+        30654.047549,
+        410.0
+      ],
+      "rotation": [
+        -5.000000000000003,
+        -37.57747400000002,
+        -0.0
+      ],
+      "bounds_center": [
+        9085.38250554127,
+        30650.835748537444,
+        470.19846351425076
+      ],
+      "bounds_extent": [
+        148.30452154870363,
+        127.9500475329296,
+        73.22861516888065
+      ]
+    },
+    {
+      "label": "BP_Guardrail23",
+      "class_name": "BP_Guardrail_C",
+      "position": [
+        9411.208504,
+        30334.047549,
+        390.0
+      ],
+      "rotation": [
+        -0.9999999999999997,
+        -52.53888712074752,
+        9.940747403552143e-17
+      ],
+      "bounds_center": [
+        9411.849948696945,
+        30333.210426198268,
+        450.41920832541564
+      ],
+      "bounds_extent": [
+        125.52488753444595,
+        145.5164361481875,
+        63.02841680034612
+      ]
+    },
+    {
+      "label": "BP_Guardrail24",
+      "class_name": "BP_Guardrail_C",
+      "position": [
+        9631.208504,
+        29994.047549,
+        360.0
+      ],
+      "rotation": [
+        -4.999999999999998,
+        -64.55952594765463,
+        2.793615898188885e-15
+      ],
+      "bounds_center": [
+        9633.47092964347,
+        29989.29156526521,
+        420.19846351425076
+      ],
+      "bounds_extent": [
+        104.88194863399622,
+        157.63086411468976,
+        73.22861516888065
+      ]
+    },
+    {
+      "label": "BP_Guardrail25",
+      "class_name": "BP_Guardrail_C",
+      "position": [
+        9769.490922294179,
+        29722.606134985508,
+        340.0
+      ],
+      "rotation": [
+        -5.999999999999997,
+        -64.55952556690836,
+        2.398555549362052e-15
+      ],
+      "bounds_center": [
+        9772.204316404739,
+        29716.902142868876,
+        400.0973787023075
+      ],
+      "bounds_extent": [
+        105.22548546206235,
+        158.3530320711725,
+        75.72482545066913
+      ]
+    },
+    {
+      "label": "BP_Guardrail26",
+      "class_name": "BP_Guardrail_C",
+      "position": [
+        10041.208504,
+        29299.968790127423,
+        320.0
+      ],
+      "rotation": [
+        -4.0,
+        -51.83607790019938,
+        -9.341924096914795
+      ],
+      "bounds_center": [
+        10036.066269689976,
+        29290.637332761384,
+        379.4817139151266
+      ],
+      "bounds_extent": [
+        130.79467362356627,
+        152.30123527227988,
+        76.83963586141789
+      ]
+    },
+    {
+      "label": "BP_Guardrail27",
+      "class_name": "BP_Guardrail_C",
+      "position": [
+        10231.208504,
+        29019.96879,
+        290.0
+      ],
+      "rotation": [
+        -8.999999999999998,
+        -61.33267583761838,
+        -9.341924000000004
+      ],
+      "bounds_center": [
+        10227.076528885365,
+        29007.078819899027,
+        348.8928553646575
+      ],
+      "bounds_extent": [
+        112.53788793563217,
+        161.75473204400987,
+        89.14090680527954
+      ]
+    },
+    {
+      "label": "BP_Guardrail28",
+      "class_name": "BP_Guardrail_C",
+      "position": [
+        10381.208504,
+        28749.96879,
+        250.0
+      ],
+      "rotation": [
+        -8.999999999999998,
+        -61.33267599999997,
+        -9.341924000000002
+      ],
+      "bounds_center": [
+        10377.076528848833,
+        28737.078819910737,
+        308.8928553646575
+      ],
+      "bounds_extent": [
+        112.53788765967147,
+        161.7547321265847,
+        89.14090680527953
+      ]
+    },
+    {
+      "label": "BP_Guardrail29",
+      "class_name": "BP_Guardrail_C",
+      "position": [
+        10621.208504,
+        28299.96879,
+        180.0
+      ],
+      "rotation": [
+        -6.999999999999998,
+        -61.33267599999997,
+        -9.341924
+      ],
+      "bounds_center": [
+        10616.08781304253,
+        28288.887193896364,
+        239.18251188035498
+      ],
+      "bounds_extent": [
+        113.75983312728204,
+        160.79425375820574,
+        84.29667378025995
+      ]
+    },
+    {
+      "label": "BP_Guardrail30",
+      "class_name": "BP_Guardrail_C",
+      "position": [
+        10701.208504,
+        28009.96879,
+        130.0
+      ],
+      "rotation": [
+        -9.0,
+        -88.13874790932515,
+        -9.341924000000006
+      ],
+      "bounds_center": [
+        10691.707541767399,
+        28000.327407100922,
+        188.89285536465752
+      ],
+      "bounds_extent": [
+        56.53265143610952,
+        157.51240339766082,
+        89.14090680527954
+      ]
+    },
+    {
+      "label": "BP_Guardrail31",
+      "class_name": "BP_Guardrail_C",
+      "position": [
+        10591.208504,
+        27229.96879,
+        -15.0
+      ],
+      "rotation": [
+        -12.000000000000004,
+        -106.30705046091668,
+        -0.627991502360204
+      ],
+      "bounds_center": [
+        10587.045330003957,
+        27218.097139795584,
+        44.104355713069744
+      ],
+      "bounds_extent": [
+        86.26328230790023,
+        164.3335342388782,
+        90.64677628920455
+      ]
+    },
+    {
+      "label": "BP_Guardrail32",
+      "class_name": "BP_Guardrail_C",
+      "position": [
+        10491.208504,
+        26939.96879,
+        -80.0
+      ],
+      "rotation": [
+        -12.000000000000002,
+        -112.77113448776923,
+        -0.6279920000000063
+      ],
+      "bounds_center": [
+        10485.735281629204,
+        26928.641304231205,
+        -20.89564429255705
+      ],
+      "bounds_extent": [
+        101.4894258500517,
+        162.81760596896493,
+        90.6467766470866
+      ]
+    },
+    {
+      "label": "BP_Guardrail33",
+      "class_name": "BP_Guardrail_C",
+      "position": [
+        10371.208504,
+        26659.96879,
+        -140.0
+      ],
+      "rotation": [
+        -11.48305964238563,
+        -112.72608174755624,
+        -0.8493797214858889
+      ],
+      "bounds_center": [
+        10365.735281725636,
+        26649.22007520554,
+        -80.78765391611987
+      ],
+      "bounds_extent": [
+        101.48942474746036,
+        162.53119475850326,
+        89.5969992122186
+      ]
+    },
+    {
+      "label": "BP_Guardrail34",
+      "class_name": "BP_Guardrail_C",
+      "position": [
+        10031.208504,
+        26069.96879,
+        -270.0
+      ],
+      "rotation": [
+        -8.0,
+        -128.67888029870835,
+        -0.8493799999999966
+      ],
+      "bounds_center": [
+        10025.25389886945,
+        26063.963972890444,
+        -210.16624857344794
+      ],
+      "bounds_extent": [
+        131.82450196487844,
+        148.388990723608,
+        81.26886362353821
+      ]
+    },
+    {
+      "label": "BP_Guardrail35",
+      "class_name": "BP_Guardrail_C",
+      "position": [
+        9831.208504,
+        25839.96879,
+        -320.0
+      ],
+      "rotation": [
+        -8.000000000000002,
+        -128.67887999999996,
+        -0.849379999999997
+      ],
+      "bounds_center": [
+        9825.253898900755,
+        25833.9639728594,
+        -260.16624857344794
+      ],
+      "bounds_extent": [
+        131.82450147078453,
+        148.3889910631733,
+        81.26886362353821
+      ]
+    },
+    {
+      "label": "BP_Golf_Ball",
+      "class_name": "BP_Golf_Ball_C",
+      "position": [
+        26630.0,
+        20670.0,
+        1420.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        26630.0,
+        20670.0,
+        1538.1102943420403
+      ],
+      "bounds_extent": [
+        118.11030578613281,
+        118.11029434204102,
+        118.1102943420417
+      ]
+    },
+    {
+      "label": "BP_Kiosk_Reset0",
+      "class_name": "BP_Kiosk_Reset_C",
+      "position": [
+        26510.0,
+        20350.0,
+        1435.0
+      ],
+      "rotation": [
+        5.8389261266449765e-15,
+        89.99999999999997,
+        2.4896083692396278e-15
+      ],
+      "bounds_center": [
+        26510.0,
+        20350.0,
+        1495.0
+      ],
+      "bounds_extent": [
+        32.0,
+        34.42379951477051,
+        75.0
+      ]
+    },
+    {
+      "label": "SM_Flag_Red",
+      "class_name": "StaticMeshActor",
+      "position": [
+        43619.611949920654,
+        26829.98379468918,
+        -385.20279693603516
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        43579.6320476532,
+        26829.98379468918,
+        -290.0580520629883
+      ],
+      "bounds_extent": [
+        44.21115303039551,
+        5.523101329803467,
+        95.14474487304688
+      ],
+      "mesh": "/Game/Resources/Environments/Props/StartIsland/FlagRed/SM_Flag_Red.SM_Flag_Red",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Bicycle_Old",
+      "class_name": "StaticMeshActor",
+      "position": [
+        31460.0,
+        39370.0,
+        5802.0
+      ],
+      "rotation": [
+        -7.951386703658792e-16,
+        -89.99999999999999,
+        9.000000000000002
+      ],
+      "bounds_center": [
+        31469.042808875416,
+        39370.0,
+        5859.0940482340675
+      ],
+      "bounds_extent": [
+        101.06058303822283,
+        27.54106330871582,
+        71.66823189475235
+      ],
+      "mesh": "/Game/Resources/Environments/Items/Bicycle/SM_Bicycle_Old.SM_Bicycle_Old",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "BP_Bench",
+      "class_name": "BP_Bench_C",
+      "position": [
+        9230.0,
+        22230.0,
+        -510.0
+      ],
+      "rotation": [
+        0.0,
+        -45.0,
+        0.0
+      ],
+      "bounds_center": [
+        9230.0,
+        22230.0,
+        -461.31695556640625
+      ],
+      "bounds_extent": [
+        100.20318959394353,
+        100.20318959394353,
+        48.68304443359375
+      ]
+    },
+    {
+      "label": "BP_Bench2",
+      "class_name": "BP_Bench_C",
+      "position": [
+        9420.0,
+        22040.0,
+        -510.0
+      ],
+      "rotation": [
+        0.0,
+        -45.0,
+        0.0
+      ],
+      "bounds_center": [
+        9420.0,
+        22040.0,
+        -461.31695556640625
+      ],
+      "bounds_extent": [
+        100.20318959394353,
+        100.20318959394353,
+        48.68304443359375
+      ]
+    },
+    {
+      "label": "BP_Subway_Station",
+      "class_name": "BP_Subway_Station_C",
+      "position": [
+        -12000.0,
+        13400.0,
+        -4970.0
+      ],
+      "rotation": [
+        1.421276962294597e-14,
+        -90.00000000000001,
+        1.2809410505284404e-14
+      ],
+      "bounds_center": [
+        -12000.0,
+        13400.0,
+        -4799.269691467285
+      ],
+      "bounds_extent": [
+        260.76841735839844,
+        570.1647033691406,
+        170.73030853271484
+      ]
+    },
+    {
+      "label": "SM_Dummy_Cube_Default5",
+      "class_name": "StaticMeshActor",
+      "position": [
+        -36670.0,
+        20270.0,
+        -4430.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        -36670.0,
+        20269.99984741211,
+        570.0
+      ],
+      "bounds_extent": [
+        1000.0,
+        1000.0001525878906,
+        5000.0
+      ],
+      "mesh": "/Game/Resources/Environments/Architecture/Dummy/SM_Dummy_Cube_Default.SM_Dummy_Cube_Default",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Table_Wooden",
+      "class_name": "StaticMeshActor",
+      "position": [
+        9440.0,
+        22250.0,
+        -482.0
+      ],
+      "rotation": [
+        5.131511697441294e-15,
+        -44.45394980740109,
+        1.0209604111682063e-14
+      ],
+      "bounds_center": [
+        9439.93422665566,
+        22249.900622294692,
+        -482.029052734375
+      ],
+      "bounds_extent": [
+        263.7049920666377,
+        261.03258078932777,
+        27.40615081787115
+      ],
+      "mesh": "/Game/Resources/Environments/Props/StartIsland/TableWooden/SM_Table_Wooden.SM_Table_Wooden",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Talking_Tree",
+      "class_name": "StaticMeshActor",
+      "position": [
+        7020.19529914856,
+        27870.097648620605,
+        -3880.0
+      ],
+      "rotation": [
+        1.5912818890419347e-14,
+        83.117597272579,
+        4.901934769717172e-16
+      ],
+      "bounds_center": [
+        7020.19529914856,
+        27870.097648620605,
+        -2880.0
+      ],
+      "bounds_extent": [
+        593.957691319778,
+        599.0723715855602,
+        1000.0
+      ],
+      "mesh": "/Game/Resources/Environments/Props/StartIsland/TalkingTree/SM_Talking_Tree.SM_Talking_Tree",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "BP_Coin_Locker",
+      "class_name": "BP_Coin_Locker_C",
+      "position": [
+        -1750.0,
+        21670.0,
+        -3910.0
+      ],
+      "rotation": [
+        5.168395832737486e-15,
+        -42.429826096178864,
+        1.0236923805904896e-14
+      ],
+      "bounds_center": [
+        -1750.0,
+        21670.0,
+        -3498.7539672851562
+      ],
+      "bounds_extent": [
+        798.1346949344779,
+        746.7853127986164,
+        411.24603271484375
+      ]
+    },
+    {
+      "label": "SM_Table_Wooden2",
+      "class_name": "StaticMeshActor",
+      "position": [
+        9790.0,
+        22610.0,
+        -490.0
+      ],
+      "rotation": [
+        -2.0,
+        -44.45395000000005,
+        -4.000000000000001
+      ],
+      "bounds_center": [
+        9789.93491041084,
+        22609.903189863664,
+        -490.03791128326
+      ],
+      "bounds_extent": [
+        264.24175033434767,
+        262.64647688003606,
+        43.28024171441811
+      ],
+      "mesh": "/Game/Resources/Environments/Props/StartIsland/TableWooden/SM_Table_Wooden.SM_Table_Wooden",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "BP_Bench3",
+      "class_name": "BP_Bench_C",
+      "position": [
+        9560.0,
+        22580.0,
+        -515.0
+      ],
+      "rotation": [
+        -3.0000000000000004,
+        -45.000000000000014,
+        -1.99057468934487e-16
+      ],
+      "bounds_center": [
+        9561.801618759033,
+        22578.198381240967,
+        -466.38367398684403
+      ],
+      "bounds_extent": [
+        101.91260929548844,
+        101.91260929549026,
+        53.595687048497155
+      ]
+    },
+    {
+      "label": "BP_Bench4",
+      "class_name": "BP_Bench_C",
+      "position": [
+        9750.0,
+        22390.0,
+        -534.0
+      ],
+      "rotation": [
+        -3.0000000000000004,
+        -45.000000000000014,
+        -1.99057468934487e-16
+      ],
+      "bounds_center": [
+        9751.801618759033,
+        22388.198381240967,
+        -485.38367398684403
+      ],
+      "bounds_extent": [
+        101.91260929548844,
+        101.91260929549026,
+        53.595687048497155
+      ]
+    },
+    {
+      "label": "OldKoreanBuildingB_Blockout_Fixed",
+      "class_name": "BP_OldKoreanBuildingB_Blockout_C",
+      "position": [
+        -11180.0,
+        27650.0,
+        -3910.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        -10460.0,
+        27086.0,
+        -3261.0
+      ],
+      "bounds_extent": [
+        758.0,
+        674.0,
+        669.0
+      ]
+    },
+    {
+      "label": "SM_Wall_Corner_200_00",
+      "class_name": "StaticMeshActor",
+      "position": [
+        11950.0,
+        2100.0,
+        -4170.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        12050.0,
+        1999.9999923706055,
+        -4020.000004371139
+      ],
+      "bounds_extent": [
+        100.0,
+        100.00000762939453,
+        150.00000437113886
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/SM_Wall_Corner_200.SM_Wall_Corner_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Wall_Corner_200_01",
+      "class_name": "StaticMeshActor",
+      "position": [
+        11950.0,
+        2100.0,
+        -3870.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        12050.0,
+        1999.9999923706055,
+        -3720.000004371139
+      ],
+      "bounds_extent": [
+        100.0,
+        100.00000762939453,
+        150.00000437113886
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/SM_Wall_Corner_200.SM_Wall_Corner_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Wall_Corner_200_02",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12750.0,
+        2100.0,
+        -4170.0
+      ],
+      "rotation": [
+        0.0,
+        -90.00000000000001,
+        0.0
+      ],
+      "bounds_center": [
+        12649.999992370605,
+        2000.0,
+        -4020.000004371139
+      ],
+      "bounds_extent": [
+        100.00000762939453,
+        100.0,
+        150.00000437113886
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/SM_Wall_Corner_200.SM_Wall_Corner_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Wall_Corner_200_03",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12750.0,
+        2100.0,
+        -3870.0
+      ],
+      "rotation": [
+        0.0,
+        -90.00000000000001,
+        0.0
+      ],
+      "bounds_center": [
+        12649.999992370605,
+        2000.0,
+        -3720.000004371139
+      ],
+      "bounds_extent": [
+        100.00000762939453,
+        100.0,
+        150.00000437113886
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/SM_Wall_Corner_200.SM_Wall_Corner_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Wall_Corner_200_04",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12750.0,
+        1700.0,
+        -4170.0
+      ],
+      "rotation": [
+        0.0,
+        180.0,
+        -0.0
+      ],
+      "bounds_center": [
+        12650.0,
+        1800.0000076293945,
+        -4020.000004371139
+      ],
+      "bounds_extent": [
+        100.0,
+        100.00000762939453,
+        150.00000437113886
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/SM_Wall_Corner_200.SM_Wall_Corner_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Wall_Corner_200_05",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12750.0,
+        1700.0,
+        -3870.0
+      ],
+      "rotation": [
+        0.0,
+        180.0,
+        -0.0
+      ],
+      "bounds_center": [
+        12650.0,
+        1800.0000076293945,
+        -3720.000004371139
+      ],
+      "bounds_extent": [
+        100.0,
+        100.00000762939453,
+        150.00000437113886
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/SM_Wall_Corner_200.SM_Wall_Corner_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Wall_Corner_200_06",
+      "class_name": "StaticMeshActor",
+      "position": [
+        11950.0,
+        1700.0,
+        -4170.0
+      ],
+      "rotation": [
+        0.0,
+        90.00000000000003,
+        -0.0
+      ],
+      "bounds_center": [
+        12050.000007629395,
+        1800.0,
+        -4020.000004371139
+      ],
+      "bounds_extent": [
+        100.00000762939453,
+        100.0,
+        150.00000437113886
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/SM_Wall_Corner_200.SM_Wall_Corner_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Wall_Corner_200_07",
+      "class_name": "StaticMeshActor",
+      "position": [
+        11950.0,
+        1700.0,
+        -3870.0
+      ],
+      "rotation": [
+        0.0,
+        90.00000000000003,
+        -0.0
+      ],
+      "bounds_center": [
+        12050.000007629395,
+        1800.0,
+        -3720.000004371139
+      ],
+      "bounds_extent": [
+        100.00000762939453,
+        100.0,
+        150.00000437113886
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/SM_Wall_Corner_200.SM_Wall_Corner_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Shopfront_Door_200_00",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12250.0,
+        2100.0,
+        -4170.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        12250.0,
+        2089.999994009733,
+        -4020.0000004480416
+      ],
+      "bounds_extent": [
+        100.0,
+        11.000005453824997,
+        150.00000044804165
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/SM_Shopfront_Door_200.SM_Shopfront_Door_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Wall_Window_200_00",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12450.0,
+        2100.0,
+        -4170.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        12450.0,
+        2090.999991416931,
+        -4020.000000437114
+      ],
+      "bounds_extent": [
+        100.0,
+        11.000004768371582,
+        150.00000043711407
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/SM_Wall_Window_200.SM_Wall_Window_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Wall_Door_200_00",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12450.0,
+        1700.0,
+        -4170.0
+      ],
+      "rotation": [
+        0.0,
+        180.0,
+        -0.0
+      ],
+      "bounds_center": [
+        12450.0,
+        1709.000006556511,
+        -4022.5
+      ],
+      "bounds_extent": [
+        100.0,
+        11.000006794929504,
+        152.5
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/SM_Wall_Door_200.SM_Wall_Door_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Wall_Straight_200_00",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12250.0,
+        1700.0,
+        -4170.0
+      ],
+      "rotation": [
+        0.0,
+        180.0,
+        -0.0
+      ],
+      "bounds_center": [
+        12250.0,
+        1710.0000066757202,
+        -4020.000000437114
+      ],
+      "bounds_extent": [
+        100.0,
+        10.000006675720215,
+        150.00000043711407
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/SM_Wall_Straight_200.SM_Wall_Straight_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Wall_Window_200_01",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12250.0,
+        2100.0,
+        -3870.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        12250.0,
+        2090.999991416931,
+        -3720.000000437114
+      ],
+      "bounds_extent": [
+        100.0,
+        11.000004768371582,
+        150.00000043711407
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/SM_Wall_Window_200.SM_Wall_Window_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Wall_Window_200_02",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12450.0,
+        2100.0,
+        -3870.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        12450.0,
+        2090.999991416931,
+        -3720.000000437114
+      ],
+      "bounds_extent": [
+        100.0,
+        11.000004768371582,
+        150.00000043711407
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/SM_Wall_Window_200.SM_Wall_Window_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Wall_Straight_200_01",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12450.0,
+        1700.0,
+        -3870.0
+      ],
+      "rotation": [
+        0.0,
+        180.0,
+        -0.0
+      ],
+      "bounds_center": [
+        12450.0,
+        1710.0000066757202,
+        -3720.000000437114
+      ],
+      "bounds_extent": [
+        100.0,
+        10.000006675720215,
+        150.00000043711407
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/SM_Wall_Straight_200.SM_Wall_Straight_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Wall_Straight_200_02",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12250.0,
+        1700.0,
+        -3870.0
+      ],
+      "rotation": [
+        0.0,
+        180.0,
+        -0.0
+      ],
+      "bounds_center": [
+        12250.0,
+        1710.0000066757202,
+        -3720.000000437114
+      ],
+      "bounds_extent": [
+        100.0,
+        10.000006675720215,
+        150.00000043711407
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/SM_Wall_Straight_200.SM_Wall_Straight_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Slab_Straight_200_00",
+      "class_name": "StaticMeshActor",
+      "position": [
+        11950.0,
+        2100.0,
+        -4170.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        12050.0,
+        2000.0000004371138,
+        -4180.000003814697
+      ],
+      "bounds_extent": [
+        100.0,
+        100.00000043711384,
+        10.000003814697266
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/SM_Slab_Straight_200.SM_Slab_Straight_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Slab_Straight_200_01",
+      "class_name": "StaticMeshActor",
+      "position": [
+        11950.0,
+        1900.0,
+        -4170.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        12050.0,
+        1800.0000004371138,
+        -4180.000003814697
+      ],
+      "bounds_extent": [
+        100.0,
+        100.00000043711384,
+        10.000003814697266
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/SM_Slab_Straight_200.SM_Slab_Straight_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Slab_Straight_200_02",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12150.0,
+        2100.0,
+        -4170.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        12250.0,
+        2000.0000004371138,
+        -4180.000003814697
+      ],
+      "bounds_extent": [
+        100.0,
+        100.00000043711384,
+        10.000003814697266
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/SM_Slab_Straight_200.SM_Slab_Straight_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Slab_Straight_200_03",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12150.0,
+        1900.0,
+        -4170.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        12250.0,
+        1800.0000004371138,
+        -4180.000003814697
+      ],
+      "bounds_extent": [
+        100.0,
+        100.00000043711384,
+        10.000003814697266
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/SM_Slab_Straight_200.SM_Slab_Straight_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Slab_Straight_200_04",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12350.0,
+        2100.0,
+        -4170.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        12450.0,
+        2000.0000004371138,
+        -4180.000003814697
+      ],
+      "bounds_extent": [
+        100.0,
+        100.00000043711384,
+        10.000003814697266
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/SM_Slab_Straight_200.SM_Slab_Straight_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Slab_Straight_200_05",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12350.0,
+        1900.0,
+        -4170.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        12450.0,
+        1800.0000004371138,
+        -4180.000003814697
+      ],
+      "bounds_extent": [
+        100.0,
+        100.00000043711384,
+        10.000003814697266
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/SM_Slab_Straight_200.SM_Slab_Straight_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Slab_Straight_200_06",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12550.0,
+        2100.0,
+        -4170.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        12650.0,
+        2000.0000004371138,
+        -4180.000003814697
+      ],
+      "bounds_extent": [
+        100.0,
+        100.00000043711384,
+        10.000003814697266
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/SM_Slab_Straight_200.SM_Slab_Straight_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Slab_Straight_200_07",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12550.0,
+        1900.0,
+        -4170.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        12650.0,
+        1800.0000004371138,
+        -4180.000003814697
+      ],
+      "bounds_extent": [
+        100.0,
+        100.00000043711384,
+        10.000003814697266
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/SM_Slab_Straight_200.SM_Slab_Straight_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Slab_Straight_200_08",
+      "class_name": "StaticMeshActor",
+      "position": [
+        11950.0,
+        2100.0,
+        -3870.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        12050.0,
+        2000.0000004371138,
+        -3880.0000038146973
+      ],
+      "bounds_extent": [
+        100.0,
+        100.00000043711384,
+        10.000003814697266
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/SM_Slab_Straight_200.SM_Slab_Straight_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Slab_Straight_200_09",
+      "class_name": "StaticMeshActor",
+      "position": [
+        11950.0,
+        1900.0,
+        -3870.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        12050.0,
+        1800.0000004371138,
+        -3880.0000038146973
+      ],
+      "bounds_extent": [
+        100.0,
+        100.00000043711384,
+        10.000003814697266
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/SM_Slab_Straight_200.SM_Slab_Straight_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Slab_Straight_200_10",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12150.0,
+        2100.0,
+        -3870.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        12250.0,
+        2000.0000004371138,
+        -3880.0000038146973
+      ],
+      "bounds_extent": [
+        100.0,
+        100.00000043711384,
+        10.000003814697266
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/SM_Slab_Straight_200.SM_Slab_Straight_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Slab_Straight_200_11",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12350.0,
+        2100.0,
+        -3870.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        12450.0,
+        2000.0000004371138,
+        -3880.0000038146973
+      ],
+      "bounds_extent": [
+        100.0,
+        100.00000043711384,
+        10.000003814697266
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/SM_Slab_Straight_200.SM_Slab_Straight_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Slab_Straight_200_12",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12550.0,
+        2100.0,
+        -3870.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        12650.0,
+        2000.0000004371138,
+        -3880.0000038146973
+      ],
+      "bounds_extent": [
+        100.0,
+        100.00000043711384,
+        10.000003814697266
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/SM_Slab_Straight_200.SM_Slab_Straight_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Slab_Straight_200_13",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12550.0,
+        1900.0,
+        -3870.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        12650.0,
+        1800.0000004371138,
+        -3880.0000038146973
+      ],
+      "bounds_extent": [
+        100.0,
+        100.00000043711384,
+        10.000003814697266
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/SM_Slab_Straight_200.SM_Slab_Straight_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Slab_Corner_200_00",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12150.0,
+        1900.0,
+        -3570.0
+      ],
+      "rotation": [
+        0.0,
+        180.0,
+        -0.0
+      ],
+      "bounds_center": [
+        12050.0,
+        1999.9999995628862,
+        -3575.0000038146973
+      ],
+      "bounds_extent": [
+        100.0,
+        100.00000043711384,
+        15.000003814697266
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/SM_Slab_Corner_200.SM_Slab_Corner_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Slab_Corner_200_01",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12150.0,
+        1900.0,
+        -3570.0
+      ],
+      "rotation": [
+        0.0,
+        -90.00000000000001,
+        0.0
+      ],
+      "bounds_center": [
+        12050.000000437114,
+        1800.0,
+        -3575.0000038146973
+      ],
+      "bounds_extent": [
+        100.00000043711407,
+        100.0,
+        15.000003814697266
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/SM_Slab_Corner_200.SM_Slab_Corner_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Slab_Straight_200_14",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12150.0,
+        1900.0,
+        -3570.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        12250.0,
+        1800.0000004371138,
+        -3580.0000038146973
+      ],
+      "bounds_extent": [
+        100.0,
+        100.00000043711384,
+        10.000003814697266
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/SM_Slab_Straight_200.SM_Slab_Straight_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Slab_Straight_200_15",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12350.0,
+        1900.0,
+        -3570.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        12450.0,
+        1800.0000004371138,
+        -3580.0000038146973
+      ],
+      "bounds_extent": [
+        100.0,
+        100.00000043711384,
+        10.000003814697266
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/SM_Slab_Straight_200.SM_Slab_Straight_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Slab_Corner_200_02",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12550.0,
+        1900.0,
+        -3570.0
+      ],
+      "rotation": [
+        0.0,
+        90.00000000000003,
+        -0.0
+      ],
+      "bounds_center": [
+        12649.999999562886,
+        2000.0,
+        -3575.0000038146973
+      ],
+      "bounds_extent": [
+        100.00000043711407,
+        100.0,
+        15.000003814697266
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/SM_Slab_Corner_200.SM_Slab_Corner_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Slab_Corner_200_03",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12550.0,
+        1900.0,
+        -3570.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        12650.0,
+        1800.0000004371138,
+        -3575.0000038146973
+      ],
+      "bounds_extent": [
+        100.0,
+        100.00000043711384,
+        15.000003814697266
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/SM_Slab_Corner_200.SM_Slab_Corner_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Stair_Interior_300_00",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12160.0,
+        1849.0,
+        -4170.0
+      ],
+      "rotation": [
+        0.0,
+        90.00000000000003,
+        -0.0
+      ],
+      "bounds_center": [
+        12355.0,
+        1849.0,
+        -3972.5000237825097
+      ],
+      "bounds_extent": [
+        195.0,
+        51.0,
+        197.49999326493162
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/SM_Stair_Interior_300.SM_Stair_Interior_300",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Stair_Interior_300_01",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12160.0,
+        2029.0,
+        -3870.0
+      ],
+      "rotation": [
+        0.0,
+        90.00000000000003,
+        -0.0
+      ],
+      "bounds_center": [
+        12355.0,
+        2029.0,
+        -3672.5000237825097
+      ],
+      "bounds_extent": [
+        195.0,
+        51.0,
+        197.49999326493162
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/SM_Stair_Interior_300.SM_Stair_Interior_300",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "Furn_Railing_200_00",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12250.0,
+        1900.0,
+        -3870.0
+      ],
+      "rotation": [
+        0.0,
+        180.0,
+        -0.0
+      ],
+      "bounds_center": [
+        12250.0,
+        1900.0000021457672,
+        -3820.0000000546393
+      ],
+      "bounds_extent": [
+        102.37763977050781,
+        2.500002145767212,
+        50.00000005463926
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/Furn_Railing_200.Furn_Railing_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "Furn_Railing_200_01",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12450.0,
+        1900.0,
+        -3870.0
+      ],
+      "rotation": [
+        0.0,
+        180.0,
+        -0.0
+      ],
+      "bounds_center": [
+        12450.0,
+        1900.0000021457672,
+        -3820.0000000546393
+      ],
+      "bounds_extent": [
+        102.37763977050781,
+        2.500002145767212,
+        50.00000005463926
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/Furn_Railing_200.Furn_Railing_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "Furn_Railing_200_02",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12150.0,
+        1800.0,
+        -3870.0
+      ],
+      "rotation": [
+        0.0,
+        -90.00000000000001,
+        0.0
+      ],
+      "bounds_center": [
+        12149.999997854233,
+        1800.0,
+        -3820.0000000546393
+      ],
+      "bounds_extent": [
+        2.500002145767212,
+        102.37763977050781,
+        50.00000005463926
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/Furn_Railing_200.Furn_Railing_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "Furn_Railing_200_03",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12250.0,
+        1900.0,
+        -3570.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        12250.0,
+        1899.9999978542328,
+        -3520.0000000546393
+      ],
+      "bounds_extent": [
+        102.37763977050781,
+        2.500002145767212,
+        50.00000005463926
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/Furn_Railing_200.Furn_Railing_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "Furn_Railing_200_04",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12450.0,
+        1900.0,
+        -3570.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        12450.0,
+        1899.9999978542328,
+        -3520.0000000546393
+      ],
+      "bounds_extent": [
+        102.37763977050781,
+        2.500002145767212,
+        50.00000005463926
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/Furn_Railing_200.Furn_Railing_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "Furn_Railing_200_05",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12150.0,
+        2000.0,
+        -3570.0
+      ],
+      "rotation": [
+        0.0,
+        -90.00000000000001,
+        0.0
+      ],
+      "bounds_center": [
+        12149.999997854233,
+        2000.0,
+        -3520.0000000546393
+      ],
+      "bounds_extent": [
+        2.500002145767212,
+        102.37763977050781,
+        50.00000005463926
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/Furn_Railing_200.Furn_Railing_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "Furn_Railing_200_06",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12050.0,
+        2100.0,
+        -3570.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        12050.0,
+        2099.999997854233,
+        -3520.0000000546393
+      ],
+      "bounds_extent": [
+        102.37763977050781,
+        2.500002145767212,
+        50.00000005463926
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/Furn_Railing_200.Furn_Railing_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "Furn_Railing_200_07",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12250.0,
+        2100.0,
+        -3570.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        12250.0,
+        2099.999997854233,
+        -3520.0000000546393
+      ],
+      "bounds_extent": [
+        102.37763977050781,
+        2.500002145767212,
+        50.00000005463926
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/Furn_Railing_200.Furn_Railing_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "Furn_Railing_200_08",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12450.0,
+        2100.0,
+        -3570.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        12450.0,
+        2099.999997854233,
+        -3520.0000000546393
+      ],
+      "bounds_extent": [
+        102.37763977050781,
+        2.500002145767212,
+        50.00000005463926
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/Furn_Railing_200.Furn_Railing_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "Furn_Railing_200_09",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12650.0,
+        2100.0,
+        -3570.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        12650.0,
+        2099.999997854233,
+        -3520.0000000546393
+      ],
+      "bounds_extent": [
+        102.37763977050781,
+        2.500002145767212,
+        50.00000005463926
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/Furn_Railing_200.Furn_Railing_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "Furn_Railing_200_10",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12450.0,
+        1700.0,
+        -3570.0
+      ],
+      "rotation": [
+        0.0,
+        180.0,
+        -0.0
+      ],
+      "bounds_center": [
+        12450.0,
+        1700.0000021457672,
+        -3520.0000000546393
+      ],
+      "bounds_extent": [
+        102.37763977050781,
+        2.500002145767212,
+        50.00000005463926
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/Furn_Railing_200.Furn_Railing_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "Furn_Railing_200_11",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12250.0,
+        1700.0,
+        -3570.0
+      ],
+      "rotation": [
+        0.0,
+        180.0,
+        -0.0
+      ],
+      "bounds_center": [
+        12250.0,
+        1700.0000021457672,
+        -3520.0000000546393
+      ],
+      "bounds_extent": [
+        102.37763977050781,
+        2.500002145767212,
+        50.00000005463926
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/Furn_Railing_200.Furn_Railing_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "Furn_Railing_200_12",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12050.0,
+        1700.0,
+        -3570.0
+      ],
+      "rotation": [
+        0.0,
+        180.0,
+        -0.0
+      ],
+      "bounds_center": [
+        12050.0,
+        1700.0000021457672,
+        -3520.0000000546393
+      ],
+      "bounds_extent": [
+        102.37763977050781,
+        2.500002145767212,
+        50.00000005463926
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/Furn_Railing_200.Furn_Railing_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "Furn_Railing_200_13",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12750.0,
+        2000.0,
+        -3570.0
+      ],
+      "rotation": [
+        0.0,
+        -90.00000000000001,
+        0.0
+      ],
+      "bounds_center": [
+        12749.999997854233,
+        2000.0,
+        -3520.0000000546393
+      ],
+      "bounds_extent": [
+        2.500002145767212,
+        102.37763977050781,
+        50.00000005463926
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/Furn_Railing_200.Furn_Railing_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "Furn_Railing_200_14",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12750.0,
+        1800.0,
+        -3570.0
+      ],
+      "rotation": [
+        0.0,
+        -90.00000000000001,
+        0.0
+      ],
+      "bounds_center": [
+        12749.999997854233,
+        1800.0,
+        -3520.0000000546393
+      ],
+      "bounds_extent": [
+        2.500002145767212,
+        102.37763977050781,
+        50.00000005463926
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/Furn_Railing_200.Furn_Railing_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "Furn_Railing_200_15",
+      "class_name": "StaticMeshActor",
+      "position": [
+        11950.0,
+        1800.0,
+        -3570.0
+      ],
+      "rotation": [
+        0.0,
+        90.00000000000003,
+        -0.0
+      ],
+      "bounds_center": [
+        11950.000002145767,
+        1800.0,
+        -3520.0000000546393
+      ],
+      "bounds_extent": [
+        2.500002145767212,
+        102.37763977050781,
+        50.00000005463926
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/Furn_Railing_200.Furn_Railing_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "Furn_Railing_200_16",
+      "class_name": "StaticMeshActor",
+      "position": [
+        11950.0,
+        2000.0,
+        -3570.0
+      ],
+      "rotation": [
+        0.0,
+        90.00000000000003,
+        -0.0
+      ],
+      "bounds_center": [
+        11950.000002145767,
+        2000.0,
+        -3520.0000000546393
+      ],
+      "bounds_extent": [
+        2.500002145767212,
+        102.37763977050781,
+        50.00000005463926
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/Furn_Railing_200.Furn_Railing_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "Furn_Pergola_200_00",
+      "class_name": "StaticMeshActor",
+      "position": [
+        11950.0,
+        1900.0,
+        -3570.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        12050.0,
+        1800.0,
+        -3452.0000118803273
+      ],
+      "bounds_extent": [
+        94.5,
+        94.5,
+        117.99999662153823
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/Furn_Pergola_200.Furn_Pergola_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "Deco_Floor_Tile_100_00",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12150.0,
+        1900.0,
+        -3569.5
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        12200.0,
+        1850.0000001092785,
+        -3572.00000223319
+      ],
+      "bounds_extent": [
+        50.0,
+        50.00000010927852,
+        2.5000020583443074
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/Deco_Floor_Tile_100.Deco_Floor_Tile_100",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "Deco_Floor_Tile_100_01",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12150.0,
+        1800.0,
+        -3569.5
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        12200.0,
+        1750.0000001092785,
+        -3572.00000223319
+      ],
+      "bounds_extent": [
+        50.0,
+        50.00000010927852,
+        2.5000020583443074
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/Deco_Floor_Tile_100.Deco_Floor_Tile_100",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "Deco_Floor_Tile_100_02",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12250.0,
+        1900.0,
+        -3569.5
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        12300.0,
+        1850.0000001092785,
+        -3572.00000223319
+      ],
+      "bounds_extent": [
+        50.0,
+        50.00000010927852,
+        2.5000020583443074
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/Deco_Floor_Tile_100.Deco_Floor_Tile_100",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "Deco_Floor_Tile_100_03",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12250.0,
+        1800.0,
+        -3569.5
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        12300.0,
+        1750.0000001092785,
+        -3572.00000223319
+      ],
+      "bounds_extent": [
+        50.0,
+        50.00000010927852,
+        2.5000020583443074
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/Deco_Floor_Tile_100.Deco_Floor_Tile_100",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "Veg_Potted_Plant_Round_00",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12050.0,
+        1750.0,
+        -3570.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        12050.0,
+        1749.999997138977,
+        -3529.499996534994
+      ],
+      "bounds_extent": [
+        28.53173828125,
+        30.000000953674316,
+        40.50000416438843
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/Veg_Potted_Plant_Round.Veg_Potted_Plant_Round",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "Veg_Potted_Plant_Round_01",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12650.0,
+        1750.0,
+        -3570.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        12650.0,
+        1749.999997138977,
+        -3529.499996534994
+      ],
+      "bounds_extent": [
+        28.53173828125,
+        30.000000953674316,
+        40.50000416438843
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/Veg_Potted_Plant_Round.Veg_Potted_Plant_Round",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "Veg_Potted_Plant_Round_02",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12380.0,
+        1740.0,
+        -3570.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        12380.0,
+        1739.999997138977,
+        -3529.499996534994
+      ],
+      "bounds_extent": [
+        28.53173828125,
+        30.000000953674316,
+        40.50000416438843
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/Veg_Potted_Plant_Round.Veg_Potted_Plant_Round",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Wall_Partition_Door_200_00",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12050.0,
+        1900.0,
+        -4170.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        12050.0,
+        1894.9999948740005,
+        -4020.0000002447837
+      ],
+      "bounds_extent": [
+        100.0,
+        6.2000051736831665,
+        150.00000024478368
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/SM_Wall_Partition_Door_200.SM_Wall_Partition_Door_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Wall_Partition_200_00",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12650.0,
+        1900.0,
+        -4170.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        12650.0,
+        1895.0000002980232,
+        -4020.00000023167
+      ],
+      "bounds_extent": [
+        100.0,
+        5.599999725818634,
+        150.00000023167013
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/SM_Wall_Partition_200.SM_Wall_Partition_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Wall_Partition_Door_200_01",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12050.0,
+        1900.0,
+        -3870.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        12050.0,
+        1894.9999948740005,
+        -3720.0000002447837
+      ],
+      "bounds_extent": [
+        100.0,
+        6.2000051736831665,
+        150.00000024478368
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/SM_Wall_Partition_Door_200.SM_Wall_Partition_Door_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Wall_Partition_Door_200_02",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12650.0,
+        1900.0,
+        -3870.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        12650.0,
+        1894.9999948740005,
+        -3720.0000002447837
+      ],
+      "bounds_extent": [
+        100.0,
+        6.2000051736831665,
+        150.00000024478368
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/SM_Wall_Partition_Door_200.SM_Wall_Partition_Door_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "Deco_Curtain_100_00",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12450.0,
+        2100.0,
+        -3950.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        12450.0,
+        2099.700002670288,
+        -4007.9000029563904
+      ],
+      "bounds_extent": [
+        56.0,
+        2.8000025749206543,
+        62.10000467300415
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/Deco_Curtain_100.Deco_Curtain_100",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "Deco_Curtain_100_01",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12250.0,
+        2100.0,
+        -3650.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        12250.0,
+        2099.700002670288,
+        -3707.9000029563904
+      ],
+      "bounds_extent": [
+        56.0,
+        2.8000025749206543,
+        62.10000467300415
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/Deco_Curtain_100.Deco_Curtain_100",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "Deco_Curtain_100_02",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12450.0,
+        2100.0,
+        -3650.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        12450.0,
+        2099.700002670288,
+        -3707.9000029563904
+      ],
+      "bounds_extent": [
+        56.0,
+        2.8000025749206543,
+        62.10000467300415
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/Deco_Curtain_100.Deco_Curtain_100",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "Deco_Awning_200_00",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12250.0,
+        2100.0,
+        -4170.0
+      ],
+      "rotation": [
+        0.0,
+        180.0,
+        -0.0
+      ],
+      "bounds_center": [
+        12250.0,
+        2141.500008225441,
+        -3981.0000076293945
+      ],
+      "bounds_extent": [
+        100.0,
+        43.49999940395355,
+        20.99999237060547
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/Deco_Awning_200.Deco_Awning_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "Deco_Barber_Pole_00",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12110.0,
+        2135.0,
+        -4170.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        12110.0,
+        2134.9999947547913,
+        -4108.349999904633
+      ],
+      "bounds_extent": [
+        10.610353469848633,
+        10.999999523162842,
+        69.34999990463257
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/Deco_Barber_Pole.Deco_Barber_Pole",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "Veg_Potted_Plant_Round_03",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12180.0,
+        2135.0,
+        -4170.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        12180.0,
+        2134.999997138977,
+        -4129.499996534993
+      ],
+      "bounds_extent": [
+        28.53173828125,
+        30.000000953674316,
+        40.5000041643882
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/Veg_Potted_Plant_Round.Veg_Potted_Plant_Round",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "Veg_Potted_Plant_Round_04",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12340.0,
+        2135.0,
+        -4170.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        12340.0,
+        2134.999997138977,
+        -4129.499996534993
+      ],
+      "bounds_extent": [
+        28.53173828125,
+        30.000000953674316,
+        40.5000041643882
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/Veg_Potted_Plant_Round.Veg_Potted_Plant_Round",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "Furn_Sandbox_Planter_00",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12560.0,
+        2225.0,
+        -4170.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        12630.0,
+        2175.0,
+        -4156.000002185569
+      ],
+      "bounds_extent": [
+        70.0,
+        50.0,
+        14.000002185569429
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/Furn_Sandbox_Planter.Furn_Sandbox_Planter",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "Prop_AC_Unit_00",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12750.0,
+        2000.0,
+        -3810.0
+      ],
+      "rotation": [
+        0.0,
+        90.00000000000003,
+        -0.0
+      ],
+      "bounds_center": [
+        12765.500000953674,
+        2000.0,
+        -3778.500000655671
+      ],
+      "bounds_extent": [
+        15.500000953674316,
+        40.0,
+        31.5000006556711
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/Prop_AC_Unit.Prop_AC_Unit",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "Prop_MeterBox_00",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12750.0,
+        1800.0,
+        -4050.0
+      ],
+      "rotation": [
+        0.0,
+        90.00000000000003,
+        -0.0
+      ],
+      "bounds_center": [
+        12760.75,
+        1800.0,
+        -4022.5000003278356
+      ],
+      "bounds_extent": [
+        10.75,
+        20.0,
+        27.50000032783555
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/Prop_MeterBox.Prop_MeterBox",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "Deco_GasPipe_200_00",
+      "class_name": "StaticMeshActor",
+      "position": [
+        11950.0,
+        2050.0,
+        -4170.0
+      ],
+      "rotation": [
+        0.0,
+        -90.00000000000001,
+        0.0
+      ],
+      "bounds_center": [
+        11945.899998733375,
+        1946.5216905474663,
+        -4098.599998627111
+      ],
+      "bounds_extent": [
+        4.099999496314922,
+        101.52169054746628,
+        71.40000167886865
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/Deco_GasPipe_200.Deco_GasPipe_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "Deco_Gutter_200_00",
+      "class_name": "StaticMeshActor",
+      "position": [
+        11950.0,
+        1800.0,
+        -4170.0
+      ],
+      "rotation": [
+        0.0,
+        -90.00000000000001,
+        0.0
+      ],
+      "bounds_center": [
+        11944.999992275207,
+        1700.0,
+        -4015.0000001857734
+      ],
+      "bounds_extent": [
+        5.00000562664718,
+        100.0,
+        155.0000001857734
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/Deco_Gutter_200.Deco_Gutter_200",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "Furn_Stair_Steel_600_00",
+      "class_name": "StaticMeshActor",
+      "position": [
+        11960.0,
+        1658.0,
+        -4170.0
+      ],
+      "rotation": [
+        0.0,
+        90.00000000000003,
+        -0.0
+      ],
+      "bounds_center": [
+        12350.0,
+        1658.0000000000002,
+        -3842.500030517578
+      ],
+      "bounds_extent": [
+        390.0,
+        47.00000000000023,
+        327.4999694824219
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/Furn_Stair_Steel_600.Furn_Stair_Steel_600",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "SM_Door_Leaf_100_00",
+      "class_name": "StaticMeshActor",
+      "position": [
+        12400.0,
+        1720.0,
+        -4170.0
+      ],
+      "rotation": [
+        0.0,
+        180.0,
+        -0.0
+      ],
+      "bounds_center": [
+        12352.0,
+        1722.250004529953,
+        -4067.0000000983505
+      ],
+      "bounds_extent": [
+        48.0,
+        7.750000238418579,
+        103.00000009835048
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/SM_Door_Leaf_100.SM_Door_Leaf_100",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "Prop_Drum_Barrel_00",
+      "class_name": "StaticMeshActor",
+      "position": [
+        11900.0,
+        1970.0,
+        -4170.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        11900.0,
+        1969.9999980926514,
+        -4125.000000633815
+      ],
+      "bounds_extent": [
+        30.000001907348633,
+        30.000001907348633,
+        45.000000633815034
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/Prop_Drum_Barrel.Prop_Drum_Barrel",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "Prop_Bucket_00",
+      "class_name": "StaticMeshActor",
+      "position": [
+        11900.0,
+        1910.0,
+        -4170.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_center": [
+        11900.0,
+        1909.9999985694885,
+        -4147.500000240412
+      ],
+      "bounds_extent": [
+        14.0,
+        13.999999523162842,
+        22.50000024041219
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/Prop_Bucket.Prop_Bucket",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "Prop_HandTruck_00",
+      "class_name": "StaticMeshActor",
+      "position": [
+        11900.0,
+        1840.0,
+        -4170.0
+      ],
+      "rotation": [
+        0.0,
+        -90.00000000000001,
+        0.0
+      ],
+      "bounds_center": [
+        11899.999999046326,
+        1840.0,
+        -4103.908846512437
+      ],
+      "bounds_extent": [
+        21.999999046325684,
+        28.0,
+        65.90884651243687
+      ],
+      "mesh": "/Game/Environment/OldKoreanBuildingA/Meshes/Prop_HandTruck.Prop_HandTruck",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "BP_NPC_Little_Girl",
+      "class_name": "BP_NPC_Little_Girl_C",
+      "position": [
+        10931.0,
+        29456.0,
+        400.0
+      ],
+      "rotation": [
+        14.999999999999996,
+        0.0,
+        -0.0
+      ],
+      "bounds_center": [
+        11033.096929442414,
+        29456.0,
+        431.05828541230244
+      ],
+      "bounds_extent": [
+        150.4307924751638,
+        80.0,
+        108.33235151542792
+      ]
+    },
+    {
+      "label": "BP_NPC_Little_Girl2",
+      "class_name": "BP_NPC_Little_Girl_C",
+      "position": [
+        10631.0,
+        21456.0,
+        -495.0
+      ],
+      "rotation": [
+        0.0,
+        180.0,
+        -0.0
+      ],
+      "bounds_center": [
+        10527.124814987183,
+        21456.0,
+        -495.0
+      ],
+      "bounds_extent": [
+        136.12481498718262,
+        80.0,
+        80.0
+      ]
+    },
+    {
+      "label": "BP_Monster_RedPanda1",
+      "class_name": "BP_Monster_RedPanda_C",
+      "position": [
+        13950.0,
+        29530.0,
+        1108.0
+      ],
+      "rotation": [
+        2.71046956671183e-14,
+        -139.10117311963725,
+        2.5021265849452642e-14
+      ],
+      "bounds_center": [
+        13911.402921039797,
+        29505.12995879783,
+        1078.8467107120662
+      ],
+      "bounds_extent": [
+        195.18899797747508,
+        192.73338980507287,
+        130.1599364744684
+      ]
+    },
+    {
+      "label": "BP_Monster_RedPanda2",
+      "class_name": "BP_Monster_RedPanda_C",
+      "position": [
+        13510.0,
+        29080.0,
+        1108.0
+      ],
+      "rotation": [
+        0.0,
+        -139.101173,
+        0.0
+      ],
+      "bounds_center": [
+        13471.402921135465,
+        29055.129958679347,
+        1078.8467107120662
+      ],
+      "bounds_extent": [
+        195.18899787130067,
+        192.7333899560199,
+        130.15993647446822
+      ]
+    },
+    {
+      "label": "BP_Monster_RedPanda3",
+      "class_name": "BP_Monster_RedPanda_C",
+      "position": [
+        13910.0,
+        29080.0,
+        1108.0
+      ],
+      "rotation": [
+        0.0,
+        -139.101173,
+        0.0
+      ],
+      "bounds_center": [
+        13871.402921135465,
+        29055.129958679347,
+        1078.8467107120662
+      ],
+      "bounds_extent": [
+        195.18899787130067,
+        192.7333899560199,
+        130.15993647446822
+      ]
+    },
+    {
+      "label": "BP_Monster_RedPanda4",
+      "class_name": "BP_Monster_RedPanda_C",
+      "position": [
+        14390.0,
+        29550.0,
+        1108.0
+      ],
+      "rotation": [
+        0.0,
+        -139.101173,
+        0.0
+      ],
+      "bounds_center": [
+        14351.402921135465,
+        29525.129958679347,
+        1078.8467107120662
+      ],
+      "bounds_extent": [
+        195.18899787130067,
+        192.7333899560199,
+        130.15993647446822
+      ]
+    },
+    {
+      "label": "BP_Monster_RedPanda5",
+      "class_name": "BP_Monster_RedPanda_C",
+      "position": [
+        14390.0,
+        29940.0,
+        1108.0
+      ],
+      "rotation": [
+        0.0,
+        -139.101173,
+        0.0
+      ],
+      "bounds_center": [
+        14351.402921135465,
+        29915.129958679347,
+        1078.8467107120662
+      ],
+      "bounds_extent": [
+        195.18899787130067,
+        192.7333899560199,
+        130.15993647446822
+      ]
+    },
+    {
+      "label": "BP_Monster_RedPanda6",
+      "class_name": "BP_Monster_RedPanda_C",
+      "position": [
+        19271.509142658713,
+        21423.417376178022,
+        1598.0
+      ],
+      "rotation": [
+        3.908023359125388e-15,
+        176.52412971260523,
+        4.910323898507787e-15
+      ],
+      "bounds_center": [
+        19213.55944598466,
+        21432.27041092575,
+        1568.8467107120662
+      ],
+      "bounds_extent": [
+        186.45905827936986,
+        114.76788318453328,
+        130.15993647446817
+      ]
+    },
+    {
+      "label": "BP_Monster_RedPanda7",
+      "class_name": "BP_Monster_RedPanda_C",
+      "position": [
+        18642.298754667867,
+        21409.478665892908,
+        1598.0
+      ],
+      "rotation": [
+        3.908023359125388e-15,
+        176.52412971260523,
+        4.910323898507787e-15
+      ],
+      "bounds_center": [
+        18584.349057993815,
+        21418.331700640636,
+        1568.8467107120662
+      ],
+      "bounds_extent": [
+        186.45905827936986,
+        114.76788318453328,
+        130.15993647446817
+      ]
+    },
+    {
+      "label": "BP_Monster_RedPanda8",
+      "class_name": "BP_Monster_RedPanda_C",
+      "position": [
+        18928.211393238173,
+        21129.73956761425,
+        1598.0
+      ],
+      "rotation": [
+        3.908023359125388e-15,
+        176.52412971260523,
+        4.910323898507787e-15
+      ],
+      "bounds_center": [
+        18870.26169656412,
+        21138.59260236198,
+        1568.8467107120662
+      ],
+      "bounds_extent": [
+        186.45905827936986,
+        114.76788318453328,
+        130.15993647446817
+      ]
+    },
+    {
+      "label": "BP_Monster_RedPanda9",
+      "class_name": "BP_Monster_RedPanda_C",
+      "position": [
+        19600.0,
+        21130.0,
+        1598.0
+      ],
+      "rotation": [
+        3.908023359125388e-15,
+        176.52412971260523,
+        4.910323898507787e-15
+      ],
+      "bounds_center": [
+        19542.050303325945,
+        21138.853034747728,
+        1568.8467107120662
+      ],
+      "bounds_extent": [
+        186.45905827936986,
+        114.76788318453328,
+        130.15993647446817
+      ]
+    },
+    {
+      "label": "StaticMeshActor0",
+      "class_name": "StaticMeshActor",
+      "position": [
+        18500.0,
+        23700.0,
+        -685.0
+      ],
+      "rotation": [
+        -8.729226390970323,
+        14.445343923766774,
+        5.973542368330113
+      ],
+      "bounds_center": [
+        18506.01043946967,
+        23706.921544233614,
+        -635.847514378117
+      ],
+      "bounds_extent": [
+        616.2931438222622,
+        609.7990046912273,
+        176.466866543389
+      ],
+      "mesh": "/Game/Resources/Environments/Architecture/Dummy/SM_Dummy_Cube_Default.SM_Dummy_Cube_Default",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "StaticMeshActor0",
+      "class_name": "StaticMeshActor",
+      "position": [
+        18800.0,
+        23400.0,
+        -1170.0
+      ],
+      "rotation": [
+        -7.148447266000687,
+        -0.4339607934926447,
+        6.939023076500061
+      ],
+      "bounds_center": [
+        18831.11012822999,
+        23429.968472148157,
+        -923.7601766597885
+      ],
+      "bounds_extent": [
+        81.09581375322887,
+        79.9822613230208,
+        258.45554341584136
+      ],
+      "mesh": "/Game/Resources/Environments/Architecture/Dummy/SM_Dummy_Cylinder_Default.SM_Dummy_Cylinder_Default",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "StaticMeshActor0",
+      "class_name": "StaticMeshActor",
+      "position": [
+        18600.0,
+        24100.0,
+        -1270.0
+      ],
+      "rotation": [
+        -7.148446999999973,
+        -0.43396100000001064,
+        6.939023
+      ],
+      "bounds_center": [
+        18631.110127197357,
+        24129.96847171331,
+        -1023.7601764764015
+      ],
+      "bounds_extent": [
+        81.09581253308352,
+        79.982261076344,
+        258.45554330663816
+      ],
+      "mesh": "/Game/Resources/Environments/Architecture/Dummy/SM_Dummy_Cylinder_Default.SM_Dummy_Cylinder_Default",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "StaticMeshActor0",
+      "class_name": "StaticMeshActor",
+      "position": [
+        18200.0,
+        23200.0,
+        -1070.0
+      ],
+      "rotation": [
+        -7.148446999999973,
+        -0.43396100000001064,
+        6.939023
+      ],
+      "bounds_center": [
+        18231.110127197357,
+        23229.96847171331,
+        -823.7601764764015
+      ],
+      "bounds_extent": [
+        81.09581253308352,
+        79.982261076344,
+        258.45554330663816
+      ],
+      "mesh": "/Game/Resources/Environments/Architecture/Dummy/SM_Dummy_Cylinder_Default.SM_Dummy_Cylinder_Default",
+      "collision": "BlockAll"
+    },
+    {
+      "label": "StaticMeshActor0",
+      "class_name": "StaticMeshActor",
+      "position": [
+        18000.0,
+        23900.0,
+        -1170.0
+      ],
+      "rotation": [
+        -7.148446999999973,
+        -0.43396100000001064,
+        6.939023
+      ],
+      "bounds_center": [
+        18031.110127197357,
+        23929.96847171331,
+        -923.7601764764015
+      ],
+      "bounds_extent": [
+        81.09581253308352,
+        79.982261076344,
+        258.45554330663816
+      ],
+      "mesh": "/Game/Resources/Environments/Architecture/Dummy/SM_Dummy_Cylinder_Default.SM_Dummy_Cylinder_Default",
+      "collision": "BlockAll"
+    }
+  ]
+}

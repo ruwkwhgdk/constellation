@@ -1,6 +1,6 @@
 import unreal,json,hashlib
 from pathlib import Path
-P=Path(__file__).resolve().parent; B='/Game/Resources/Characters/PC/player_heroine_new';N='player_heroine_new'
+P=Path(__file__).resolve().parent; B='/Game/Constellation/Characters/Heroine/Refined';N='player_heroine_new'
 mesh=unreal.load_asset(B+'/SK_'+N);skel=unreal.load_asset(B+'/SKEL_'+N);phys=unreal.load_asset(B+'/PHYS_'+N);anim=unreal.load_asset(B+'/Animations/AS_'+N+'_PreviewRelaxed')
 helper=unreal.get_default_object(unreal.load_class(None,'/Script/PhysicsToolsets.PhysicsAssetToolset'))
 body_names=list(helper.call_method('GetBodyNames',args=(phys,)))

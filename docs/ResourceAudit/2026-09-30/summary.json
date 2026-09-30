@@ -1,0 +1,273 @@
+{
+  "generated_utc": "2026-09-30T12:21:56.237000+00:00",
+  "file_count": 31260,
+  "file_bytes": 57666675819,
+  "asset_count": 3779,
+  "asset_bytes": 9122325771,
+  "maps": 27,
+  "totals": {
+    "map_only": {
+      "count": 1520,
+      "bytes": 4698726926
+    },
+    "orphan_external": {
+      "count": 46,
+      "bytes": 180663
+    },
+    "protected": {
+      "count": 223,
+      "bytes": 222667881
+    },
+    "runtime": {
+      "count": 1633,
+      "bytes": 3650816134
+    },
+    "unindexed": {
+      "count": 1,
+      "bytes": 849
+    },
+    "unused_group": {
+      "count": 188,
+      "bytes": 486356894
+    },
+    "unused_leaf": {
+      "count": 124,
+      "bytes": 45276245
+    },
+    "unused_tooling": {
+      "count": 44,
+      "bytes": 18300179
+    }
+  },
+  "candidate_folders": {
+    "/Game/Resources/Environments": {
+      "count": 221,
+      "bytes": 446598774
+    },
+    "/Game/Resources/Characters": {
+      "count": 13,
+      "bytes": 78909616
+    },
+    "/Game/Landscape/Foilage": {
+      "count": 35,
+      "bytes": 53497
+    },
+    "/Game/Resources/Common": {
+      "count": 3,
+      "bytes": 5794699
+    },
+    "/Game/PCG/OpenWorld": {
+      "count": 1,
+      "bytes": 189349
+    },
+    "/Game/Resources/LevelSequence": {
+      "count": 2,
+      "bytes": 29395
+    },
+    "/Game/Data/ST_DynamicMeshData": {
+      "count": 1,
+      "bytes": 10936
+    },
+    "/Game/Landscape/StylizedGrassByMayu": {
+      "count": 2,
+      "bytes": 8952
+    },
+    "/Game/Landscape/Stylized_PBR_Nature": {
+      "count": 35,
+      "bytes": 54309
+    },
+    "/Game/LuosCaves/Sounds": {
+      "count": 6,
+      "bytes": 15688238
+    },
+    "/Game/Blueprints/Actor": {
+      "count": 13,
+      "bytes": 1108140
+    },
+    "/Game/Art/ClockTowerRoof": {
+      "count": 8,
+      "bytes": 1127396
+    },
+    "/Game/Blueprints/System": {
+      "count": 7,
+      "bytes": 269369
+    },
+    "/Game/LuosCaves/BluePrints": {
+      "count": 2,
+      "bytes": 70500
+    },
+    "/Game/Blueprints/Interface": {
+      "count": 1,
+      "bytes": 9245
+    },
+    "/Game/Blueprints/Character": {
+      "count": 3,
+      "bytes": 6336
+    },
+    "/Game/Levels/_GENERATED": {
+      "count": 3,
+      "bytes": 4567
+    }
+  },
+  "folders": {
+    ".gitattributes": {
+      "count": 1,
+      "bytes": 1219
+    },
+    ".gitignore": {
+      "count": 1,
+      "bytes": 785
+    },
+    ".mcp.json": {
+      "count": 1,
+      "bytes": 114
+    },
+    ".vsconfig": {
+      "count": 1,
+      "bytes": 673
+    },
+    "AGENTS.md": {
+      "count": 1,
+      "bytes": 2176
+    },
+    "Automation_Constellation.sln": {
+      "count": 1,
+      "bytes": 53369
+    },
+    "Automation_Constellation.slnx": {
+      "count": 1,
+      "bytes": 8166
+    },
+    "claude_organize_devfiles2.py": {
+      "count": 1,
+      "bytes": 1098
+    },
+    "claude_organize_devfiles2_result.txt": {
+      "count": 1,
+      "bytes": 238
+    },
+    "Constellation.sln": {
+      "count": 1,
+      "bytes": 7713
+    },
+    "Constellation.slnx": {
+      "count": 1,
+      "bytes": 2514
+    },
+    "Constellation.uproject": {
+      "count": 1,
+      "bytes": 951
+    },
+    "LuModularRocksNCaves.png": {
+      "count": 1,
+      "bytes": 113583
+    },
+    "out.txt": {
+      "count": 1,
+      "bytes": 11622
+    },
+    ".claude": {
+      "count": 1,
+      "bytes": 7701
+    },
+    ".codex": {
+      "count": 1,
+      "bytes": 414
+    },
+    ".cursor": {
+      "count": 1,
+      "bytes": 94
+    },
+    ".gemini": {
+      "count": 1,
+      "bytes": 98
+    },
+    ".superpowers": {
+      "count": 23,
+      "bytes": 93664
+    },
+    ".vs": {
+      "count": 76,
+      "bytes": 9300841739
+    },
+    ".vscode": {
+      "count": 1,
+      "bytes": 111
+    },
+    "ArtSource": {
+      "count": 2816,
+      "bytes": 17533212987
+    },
+    "Binaries": {
+      "count": 31,
+      "bytes": 1423680603
+    },
+    "Build": {
+      "count": 2,
+      "bytes": 1106617
+    },
+    "Claude outputs": {
+      "count": 2,
+      "bytes": 25505
+    },
+    "Config": {
+      "count": 4,
+      "bytes": 89742
+    },
+    "Content": {
+      "count": 3920,
+      "bytes": 9123021355
+    },
+    "DerivedDataCache": {
+      "count": 84,
+      "bytes": 3923872
+    },
+    "dev": {
+      "count": 3510,
+      "bytes": 3113309514
+    },
+    "docs": {
+      "count": 18,
+      "bytes": 668731
+    },
+    "Intermediate": {
+      "count": 425,
+      "bytes": 7076500364
+    },
+    "Saved": {
+      "count": 20281,
+      "bytes": 10089852387
+    },
+    "Source": {
+      "count": 39,
+      "bytes": 121019
+    },
+    "Tests": {
+      "count": 2,
+      "bytes": 2589
+    },
+    "tools": {
+      "count": 8,
+      "bytes": 12492
+    }
+  },
+  "candidate_groups": 149,
+  "orphan_owner_maps": [
+    "/Game/ThirdPerson/Maps/ThirdPersonMap"
+  ],
+  "unindexed_packages": [
+    "/Game/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/D/SY/Z4CTQ4LG3YV10EKPD0UE8Q"
+  ],
+  "read_errors": [
+    "[WinError 5] 액세스가 거부되었습니다: 'C:\\\\Users\\\\User\\\\Documents\\\\UnrealProjects\\\\Constellation\\\\Saved\\\\VideoTools\\\\imageio_ffmpeg-0.6.0.dist-info'"
+  ],
+  "protected_prefixes": [
+    "/Game/Environment/",
+    "/Game/Resources/Characters/PC/player_heroine_new/",
+    "/Game/Resources/Characters/CommonAnimation/",
+    "/Game/Resources/Characters/PC/Player_Heroine/"
+  ],
+  "runtime_root_count": 9,
+  "tooling_mention_count": 3778,
+  "rebuildable_cache_bytes": 16381265975
+}

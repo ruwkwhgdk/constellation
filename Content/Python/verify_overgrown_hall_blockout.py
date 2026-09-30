@@ -1,12 +1,13 @@
 """Fresh-process saved map validation, separate from import."""
+from resource_paths import loads as load_current_json, load as load_current_json_file
 import unreal as u,json
 from pathlib import Path
 ROOT=Path(u.Paths.project_dir()); OUT=Path(globals().get('SOURCE_DIR',ROOT/'ArtSource/OvergrownHall/Blockout/v002'))
-MAP=globals().get('MAP_PATH','/Game/Environment/OvergrownHall/Blockout/Maps/L_OvergrownHall_Blockout')
+MAP=globals().get('MAP_PATH','/Game/Constellation/Environments/OvergrownHall/Blockout/Maps/L_OvergrownHall_Blockout')
 L=u.get_editor_subsystem(u.LevelEditorSubsystem); A=u.get_editor_subsystem(u.EditorActorSubsystem)
 assert L.load_level(MAP)
 actors={a.get_actor_label():a for a in A.get_all_level_actors()}
-rows=json.loads((OUT/'unreal_manifest.json').read_text())['assets']
+rows=load_current_json((OUT/'unreal_manifest.json').read_text())['assets']
 for row in rows:
     a=actors['OH_'+row['name']]; c=a.static_mesh_component
     assert c.static_mesh

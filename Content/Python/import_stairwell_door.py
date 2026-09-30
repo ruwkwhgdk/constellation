@@ -3,7 +3,7 @@ import unreal as u
 import json
 from pathlib import Path
 SRC=Path(u.Paths.project_dir())/'ArtSource/Stairwell_Modular/Export/DoorPair'
-DEST='/Game/Environment/StairwellModular'
+DEST='/Game/Constellation/Environments/Stairwell'
 AT=u.AssetToolsHelpers.get_asset_tools(); E=u.EditorAssetLibrary; M=u.MaterialEditingLibrary
 u.SystemLibrary.execute_console_command(u.get_editor_subsystem(u.UnrealEditorSubsystem).get_editor_world(),'Interchange.FeatureFlags.Import.FBX 0')
 def imported(filename,dest,options=None):

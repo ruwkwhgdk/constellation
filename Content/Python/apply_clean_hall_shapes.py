@@ -1,13 +1,14 @@
 """Import source-guided retopology and replace all 532 environment placements."""
+from resource_paths import loads as load_current_json, load as load_current_json_file
 import unreal as u,json,runpy
 from pathlib import Path
 ROOT=Path(u.Paths.project_dir());OUT=ROOT/'ArtSource/OvergrownHall/TripoReplacement/v005'
-D='/Game/Environment/OvergrownHall/TripoFull';MAP=D+'/Maps/L_OvergrownHall_TripoFull'
+D='/Game/Constellation/Environments/OvergrownHall/TripoFull';MAP='/Game/Constellation/Worlds/OvergrownHall/Maps/L_OvergrownHall_TripoFull'
 E=u.EditorAssetLibrary;AT=u.AssetToolsHelpers.get_asset_tools();ML=u.MaterialEditingLibrary
 L=u.get_editor_subsystem(u.LevelEditorSubsystem);A=u.get_editor_subsystem(u.EditorActorSubsystem);SM=u.get_editor_subsystem(u.StaticMeshEditorSubsystem)
 assert L.load_level(MAP)
 u.SystemLibrary.execute_console_command(u.get_editor_subsystem(u.UnrealEditorSubsystem).get_editor_world(),'Interchange.FeatureFlags.Import.FBX 0')
-rows=json.loads((OUT/'shape_manifest.json').read_text());settings=json.loads((OUT.parent/'v004/applied.json').read_text())['materials'];meshes={};mats={}
+rows=load_current_json((OUT/'shape_manifest.json').read_text());settings=load_current_json((OUT.parent/'v004/applied.json').read_text())['materials'];meshes={};mats={}
 for row in rows:
     key=row['id'];folder=OUT/(key+'_'+row['name'])
     opts=u.FbxImportUI();opts.automated_import_should_detect_type=False;opts.import_mesh=True;opts.import_as_skeletal=False;opts.import_materials=False;opts.import_textures=False;opts.mesh_type_to_import=u.FBXImportType.FBXIT_STATIC_MESH
@@ -37,7 +38,7 @@ for row in rows:
     mesh.set_material(0,mat)
     body=mesh.get_editor_property('body_setup')
     if key in ['13','19']:
-        source=E.load_asset(D+'/Meshes/SM_OH_T_13_Floor' if key=='13' else '/Game/Environment/OvergrownHall/TripoReplacement/Meshes/SM_OH_Tripo_Tree')
+        source=E.load_asset(D+'/Meshes/SM_OH_T_13_Floor' if key=='13' else '/Game/Constellation/Environments/OvergrownHall/TripoReplacement/Meshes/SM_OH_Tripo_Tree')
         body.set_editor_property('agg_geom',source.get_editor_property('body_setup').get_editor_property('agg_geom'))
         if key=='19' and SM.get_simple_collision_count(mesh)==0:
             # The original tree FBX's UCX was not retained by its old import.
@@ -62,5 +63,5 @@ assert sum(counts.values())==532,counts
 assert L.save_current_level()
 (OUT/'applied.json').write_text(json.dumps(dict(map=MAP,instances=counts,total=532,architectural_retopology=16,organic_cleanup=5,playtest=False),indent=2))
 runpy.run_path(str(ROOT/'Content/Python/verify_clean_hall_shapes.py'))
-script=(ROOT/'Content/Python/capture_hall_exposure.py').read_text().replace('ArtSource/OvergrownHall/Scene/v001','ArtSource/OvergrownHall/TripoReplacement/v005').replace('/Game/Environment/OvergrownHall/Scene/Maps/L_OvergrownHall_Layout',MAP).replace('unreal_exposure_fixed.png','unreal_clean.png')
+script=(ROOT/'Content/Python/capture_hall_exposure.py').read_text().replace('ArtSource/OvergrownHall/Scene/v001','ArtSource/OvergrownHall/TripoReplacement/v005').replace('/Game/Constellation/Environments/OvergrownHall/Scene/Maps/L_OvergrownHall_Layout',MAP).replace('unreal_exposure_fixed.png','unreal_clean.png')
 exec(compile(script,'capture_clean_hall','exec'),globals())

@@ -1,7 +1,8 @@
+from resource_paths import loads as load_current_json, load as load_current_json_file
 import unreal as u,json
 from pathlib import Path
 OUT=Path(u.Paths.project_dir())/'ArtSource/OvergrownHall/Bird/Tripo_Rig_v001'
-report=json.loads((OUT/'unreal_import.json').read_text())
+report=load_current_json((OUT/'unreal_import.json').read_text())
 E=u.EditorAssetLibrary; mesh=E.load_asset(report['mesh']); skeleton=E.load_asset(report['skeleton'])
 assert isinstance(mesh,u.SkeletalMesh) and mesh.get_editor_property('skeleton')==skeleton
 for row,expected in zip(report['clips'],[.5,1,.25,.25]):

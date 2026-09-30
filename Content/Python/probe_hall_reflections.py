@@ -2,7 +2,7 @@
 import unreal as u,json,time
 from pathlib import Path
 ROOT=Path(u.Paths.project_dir());OUT=ROOT/'ArtSource/OvergrownHall/TripoReplacement/v006'
-L=u.get_editor_subsystem(u.LevelEditorSubsystem);L.load_level('/Game/Environment/OvergrownHall/TripoFull/Maps/L_OvergrownHall_TripoFull')
+L=u.get_editor_subsystem(u.LevelEditorSubsystem);L.load_level('/Game/Constellation/Worlds/OvergrownHall/Maps/L_OvergrownHall_TripoFull')
 actors={a.get_actor_label():a for a in u.get_editor_subsystem(u.EditorActorSubsystem).get_all_level_actors()};cam=actors['OH_ReferenceCamera'];water=actors['OH_SM_OH_Blockout_21'];pc=actors['OH_WaterPlanarReflection'].get_component_by_class(u.PlanarReflectionComponent)
 world=u.get_editor_subsystem(u.UnrealEditorSubsystem).get_editor_world()
 flags={n:u.SystemLibrary.get_console_variable_int_value(n) for n in ['ShowFlag.Translucency','ShowFlag.PlanarReflections','ShowFlag.ReflectionEnvironment','r.AllowGlobalClipPlane','r.ReflectionEnvironment','r.SSR.Quality']}

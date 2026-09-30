@@ -1,7 +1,8 @@
 """v019 complete remaining reference art pass; retain v018 camera and playable scale."""
+from resource_paths import loads as load_current_json, load as load_current_json_file
 import unreal as u,json,random,math,runpy
 from pathlib import Path
-ROOT=Path(u.Paths.project_dir());OUT=ROOT/'ArtSource/OvergrownHall/TripoReplacement/v019';D='/Game/Environment/OvergrownHall/TripoFull';DEST=D+'/ReferenceFinish';MAP=D+'/Maps/L_OvergrownHall_TripoFull'
+ROOT=Path(u.Paths.project_dir());OUT=ROOT/'ArtSource/OvergrownHall/TripoReplacement/v019';D='/Game/Constellation/Environments/OvergrownHall/TripoFull';DEST=D+'/ReferenceFinish';MAP='/Game/Constellation/Worlds/OvergrownHall/Maps/L_OvergrownHall_TripoFull'
 E=u.EditorAssetLibrary;ML=u.MaterialEditingLibrary;AT=u.AssetToolsHelpers.get_asset_tools();A=u.get_editor_subsystem(u.EditorActorSubsystem);L=u.get_editor_subsystem(u.LevelEditorSubsystem)
 assert L.load_level(MAP);actors={a.get_actor_label():a for a in A.get_all_level_actors()}
 if not (OUT/'baseline.json').exists():
@@ -12,7 +13,7 @@ if not (OUT/'baseline.json').exists():
             c=a.static_mesh_component;row.update(mesh=c.static_mesh.get_path_name() if c.static_mesh else None,materials=[c.get_material(i).get_path_name() if c.get_material(i) else None for i in range(c.get_num_materials())])
         baseline[n]=row
     (OUT/'baseline.json').write_text(json.dumps(baseline,indent=2))
-baseline=json.loads((OUT/'baseline.json').read_text())
+baseline=load_current_json((OUT/'baseline.json').read_text())
 for n,a in actors.items():
     if n.startswith('OH_RefFinish_'):A.destroy_actor(a)
 actors={a.get_actor_label():a for a in A.get_all_level_actors()}
@@ -55,7 +56,7 @@ for x,y,z in grass_positions:
     place('Grass',grass,grassmat,(x,y,z),(rng.uniform(.70,1.2),rng.uniform(.65,1.1),rng.uniform(.75,1.35)),(0,rng.uniform(0,360),0))
 # A few elongated, tapering trails attached to existing cluster anchors.
 leaves=E.load_asset(D+'/FoliageRuntime/SM_OH_PaintedCrown_Runtime');leafmat=E.load_asset(D+'/FoliageRuntime/M_OH_LeafWindNear')
-contact_rows=json.loads((OUT.parent/'v017/applied.json').read_text())['contacts']
+contact_rows=load_current_json((OUT.parent/'v017/applied.json').read_text())['contacts']
 for row in contact_rows[::3]:
     center=actors[row['label']].get_actor_bounds(False)[0];side=abs(center.x)>580
     for j in range(1,4):
@@ -86,7 +87,7 @@ backdrop=actors['OH_Painterly_DistantHaze_000'];backdrop.modify();backdrop.stati
 # Selective broad spalls on shafts; reduce ornamental overhang while keeping shaft dimensions.
 u.SystemLibrary.execute_console_command(u.get_editor_subsystem(u.UnrealEditorSubsystem).get_editor_world(),'Interchange.FeatureFlags.Import.FBX 0')
 meshes=[]
-for row in json.loads((OUT/'pillar_meshes.json').read_text()):
+for row in load_current_json((OUT/'pillar_meshes.json').read_text()):
     opts=u.FbxImportUI();opts.automated_import_should_detect_type=False;opts.import_mesh=True;opts.import_as_skeletal=False;opts.import_materials=False;opts.import_textures=False;opts.mesh_type_to_import=u.FBXImportType.FBXIT_STATIC_MESH
     opts.static_mesh_import_data.combine_meshes=True;opts.static_mesh_import_data.auto_generate_collision=False;opts.static_mesh_import_data.convert_scene_unit=True;opts.static_mesh_import_data.normal_import_method=u.FBXNormalImportMethod.FBXNIM_IMPORT_NORMALS
     task=u.AssetImportTask();task.filename=str(OUT/(row['mesh']+'.fbx'));task.destination_path=D+'/Meshes';task.automated=True;task.save=True;task.replace_existing=True;task.options=opts;task.factory=u.FbxFactory();AT.import_asset_tasks([task]);mesh=E.load_asset(task.imported_object_paths[0]);mesh.set_material(0,E.load_asset(D+'/PainterlyFinish/M_OH_Weathered_02'));mesh.get_editor_property('body_setup').set_editor_property('collision_trace_flag',u.CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE);assert E.save_loaded_asset(mesh,only_if_is_dirty=False);meshes.append(mesh)

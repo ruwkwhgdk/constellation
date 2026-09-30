@@ -27,7 +27,7 @@ fix2 로 UCX 14/14 는 해결됐다. 남은 문제 두 가지.
 import traceback
 import unreal
 
-DEST = "/Game/Environment/OldKoreanBuildingA"
+DEST = "/Game/Constellation/Environments/KoreanBuildings/BuildingA"
 MESH_DIR = DEST + "/Meshes"
 TEX_DIR = DEST + "/Textures"
 MAT_DIR = DEST + "/Materials"

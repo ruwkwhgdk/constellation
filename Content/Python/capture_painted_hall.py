@@ -3,7 +3,7 @@ import unreal as u
 import runpy,json
 from pathlib import Path
 ROOT=Path(u.Paths.project_dir())
-MAP='/Game/Environment/OvergrownHall/TripoFull/Maps/L_OvergrownHall_TripoFull'
+MAP='/Game/Constellation/Worlds/OvergrownHall/Maps/L_OvergrownHall_TripoFull'
 OUT=ROOT/'ArtSource/OvergrownHall/TripoReplacement/v004'
 runpy.run_path(str(ROOT/'Content/Python/verify_tripo_full_hall.py'))
 actors=u.get_editor_subsystem(u.EditorActorSubsystem).get_all_level_actors()
@@ -22,5 +22,5 @@ for actor in actors:
 assert count==532
 (OUT/'verification.json').write_text(json.dumps(dict(fresh_process=True,saved_material_overrides=count,geometry_and_collision_checks='passed',saved_color_grade='passed',playtest=False),indent=2))
 script=(ROOT/'Content/Python/capture_hall_exposure.py').read_text()
-script=script.replace("out=root/'ArtSource/OvergrownHall/Scene/v001'","out=root/'ArtSource/OvergrownHall/TripoReplacement/v004'").replace('/Game/Environment/OvergrownHall/Scene/Maps/L_OvergrownHall_Layout',MAP).replace('unreal_exposure_fixed.png','unreal_painted.png')
+script=script.replace("out=root/'ArtSource/OvergrownHall/Scene/v001'","out=root/'ArtSource/OvergrownHall/TripoReplacement/v004'").replace('/Game/Constellation/Environments/OvergrownHall/Scene/Maps/L_OvergrownHall_Layout',MAP).replace('unreal_exposure_fixed.png','unreal_painted.png')
 exec(compile(script,'capture_saved_painted_hall','exec'),globals())

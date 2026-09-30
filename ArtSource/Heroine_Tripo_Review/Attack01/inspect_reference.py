@@ -1,6 +1,6 @@
 import unreal,json
 from pathlib import Path
-P=Path(__file__).resolve().parent;B='/Game/Resources/Characters/PC/Player_Heroine/Animation'
+P=Path(__file__).resolve().parent;B='/Game/Constellation/Characters/Heroine/Base/Animation'
 m=unreal.load_asset(B+'/AM_Sword_Attack_Horizontal');a=unreal.load_asset(B+'/Sword_Attack_Horizontal')
 assert m and a
 report={'montage':m.get_path_name(),'sequence':a.get_path_name(),'length':a.sequence_length,'skeleton':a.get_editor_property('skeleton').get_path_name(),'montage_length':m.sequence_length}

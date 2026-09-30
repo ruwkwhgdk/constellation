@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 SRC=Path(u.Paths.project_dir())/'ArtSource/Stairwell_Modular/Production/v001'
 level=u.get_editor_subsystem(u.LevelEditorSubsystem)
-assert level.load_level('/Game/Environment/StairwellModular/ReviewKit/Maps/L_Stairwell_KitReview')
+assert level.load_level('/Game/Constellation/Review/Stairwell/Maps/L_Stairwell_KitReview')
 actors={str(a.get_actor_label()):a for a in u.get_editor_subsystem(u.EditorActorSubsystem).get_all_level_actors()}
 def bounds(a):
     c,e=a.get_actor_bounds(False); return c-e,c+e

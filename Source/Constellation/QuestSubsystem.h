@@ -24,7 +24,7 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnTrackedQuestChanged, FName, NewTr
  * static helpers below.
  *
  * Quests are authored as UQuestDefinition data assets, cataloged in a single UQuestDatabase asset that
- * this subsystem auto-loads from /Game/Data/Quests/DA_QuestDatabase on Initialize.
+ * this subsystem auto-loads from /Game/Constellation/Gameplay/Quests/Data/DA_QuestDatabase on Initialize.
  */
 UCLASS()
 class CONSTELLATION_API UQuestSubsystem : public UGameInstanceSubsystem

@@ -1,8 +1,9 @@
 """v008 asymmetric moisture islands, varied vines, Tripo leaf cleanup and backlight."""
+from resource_paths import loads as load_current_json, load as load_current_json_file
 import unreal as u,json,random,runpy
 from pathlib import Path
 ROOT=Path(u.Paths.project_dir());OUT=ROOT/'ArtSource/OvergrownHall/TripoReplacement/v008';OUT.mkdir(exist_ok=True)
-D='/Game/Environment/OvergrownHall/TripoFull';MAP=D+'/Maps/L_OvergrownHall_TripoFull'
+D='/Game/Constellation/Environments/OvergrownHall/TripoFull';MAP='/Game/Constellation/Worlds/OvergrownHall/Maps/L_OvergrownHall_TripoFull'
 E=u.EditorAssetLibrary;ML=u.MaterialEditingLibrary;AT=u.AssetToolsHelpers.get_asset_tools()
 A=u.get_editor_subsystem(u.EditorActorSubsystem);L=u.get_editor_subsystem(u.LevelEditorSubsystem);SM=u.get_editor_subsystem(u.StaticMeshEditorSubsystem)
 assert L.load_level(MAP)
@@ -39,7 +40,7 @@ for key in ['01','02','03','04','05','09','11','12','13','26']:
     ML.recompile_material(mat);assert E.save_loaded_asset(mat,only_if_is_dirty=False);materials[key]=mat
 
 u.SystemLibrary.execute_console_command(u.get_editor_subsystem(u.UnrealEditorSubsystem).get_editor_world(),'Interchange.FeatureFlags.Import.FBX 0')
-shapes=json.loads((OUT/'foliage_shapes.json').read_text());meshes={}
+shapes=load_current_json((OUT/'foliage_shapes.json').read_text());meshes={}
 for row in shapes:
     key=row['id'];opts=u.FbxImportUI();opts.automated_import_should_detect_type=False;opts.import_mesh=True;opts.import_as_skeletal=False;opts.import_materials=False;opts.import_textures=False;opts.mesh_type_to_import=u.FBXImportType.FBXIT_STATIC_MESH
     opts.static_mesh_import_data.combine_meshes=True;opts.static_mesh_import_data.auto_generate_collision=False;opts.static_mesh_import_data.convert_scene_unit=True;opts.static_mesh_import_data.normal_import_method=u.FBXNormalImportMethod.FBXNIM_IMPORT_NORMALS
@@ -59,7 +60,7 @@ if not baseline.exists():
         if name.startswith(('OH_Growth_','OH_Tripo_Tree_')) or name in ['OH_Sun','OH_Sky','OH_WindowFill','OH_ReferenceFog']:
             p=a.get_actor_location();r=a.get_actor_rotation();s=a.get_actor_scale3d();record[name]=dict(position=[p.x,p.y,p.z],rotation=[r.pitch,r.yaw,r.roll],scale=[s.x,s.y,s.z])
     baseline.write_text(json.dumps(record,indent=2))
-baseline=json.loads(baseline.read_text());counts={};replaced={}
+baseline=load_current_json(baseline.read_text());counts={};replaced={}
 for name,a in actors.items():
     if name.startswith('OH_FULL_18_') and name not in baseline:
         p=a.get_actor_location();r=a.get_actor_rotation();s=a.get_actor_scale3d()

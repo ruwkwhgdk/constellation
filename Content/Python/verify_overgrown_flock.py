@@ -1,6 +1,6 @@
 import unreal as u, json
 from pathlib import Path
-P=globals().get('FLOCK_DEST','/Game/Environment/OvergrownHall/Production')
+P=globals().get('FLOCK_DEST','/Game/Constellation/Environments/OvergrownHall/Production')
 map_path=P+'/Maps/'+globals().get('FLOCK_MAP','L_OvergrownHall_Detail')
 E=u.EditorAssetLibrary; L=u.get_editor_subsystem(u.LevelEditorSubsystem); A=u.get_editor_subsystem(u.EditorActorSubsystem)
 assert E.does_asset_exist(P+'/Sequences/LS_OvergrownHall_Flock'), 'Flock sequence missing'

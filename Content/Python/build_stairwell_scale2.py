@@ -2,8 +2,8 @@
 import unreal as u, json, time
 from pathlib import Path
 ROOT=Path(u.Paths.project_dir()); OUT=ROOT/'ArtSource/Stairwell_Modular/Scene/v002'; OUT.mkdir(parents=True,exist_ok=True)
-SRC='/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_Reference'
-DST='/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_PlayScale2'
+SRC='/Game/Constellation/Review/Stairwell/Maps/L_Stairwell_Reference'
+DST='/Game/Constellation/Worlds/Stairwell/Maps/L_Stairwell_PlayScale2'
 E=u.EditorAssetLibrary; A=u.get_editor_subsystem(u.EditorActorSubsystem); L=u.get_editor_subsystem(u.LevelEditorSubsystem)
 assert not E.does_asset_exist(DST), 'Destination already exists; do not double-scale again'
 assert E.duplicate_asset(SRC,DST); assert E.save_asset(DST,only_if_is_dirty=False); assert L.load_level(DST)
@@ -44,7 +44,7 @@ def cube(name,pos,size,material):
 wall=actors['DoorWallLeft'].static_mesh_component.get_material(1) or actors['DoorWallLeft'].static_mesh_component.get_material(0)
 # Fill the extra opening created by enlarged architecture around a100x210cm door.
 # User requested no door-sized infill: preserve the doubled structural opening.
-KIT='/Game/Environment/StairwellModular/ReviewKit/Meshes/'
+KIT='/Game/Constellation/Environments/Stairwell/ReviewKit/Meshes/'
 rails=[]
 def rail(name,mesh,pos,yaw=0,mirror=False):
     a=A.spawn_actor_from_class(u.StaticMeshActor,u.Vector(*pos),u.Rotator(yaw=yaw)); a.set_actor_label('SWScale2_'+name)
@@ -69,7 +69,7 @@ for n in ['DoorLeaf','DoorFrame','Lamp_Ceiling','Lamp_LeftWall','Lamp_RightWall'
 close(bounds(actors['MainStairsNear'])[1].x,bounds(actors['MainStairsFar'])[0].x)
 close(bounds(actors['MainStairsFar'])[1].x,bounds(actors['MiddleLandingLeft'])[0].x)
 close(bounds(actors['MainStairsFar'])[0].z,bounds(actors['MiddleLandingLeft'])[1].z)
-pawn=u.get_default_object(u.EditorAssetLibrary.load_blueprint_class('/Game/Blueprints/Character/PC/BP_Player_Heroine'))
+pawn=u.get_default_object(u.EditorAssetLibrary.load_blueprint_class('/Game/Constellation/Characters/Heroine/Blueprints/BP_Player_Heroine'))
 movement=pawn.get_component_by_class(u.CharacterMovementComponent); max_step=movement.get_editor_property('max_step_height'); assert max_step>=30
 assert L.save_current_level()
 report=dict(status='pass',map=DST,architecture_scale=2,stair_width_cm=480,landing_depth_cm=360,step_height_cm=30,tread_depth_cm=60,character_max_step_height_cm=max_step,props_scale_preserved=True,rail_diameter_cm=4,rail_vertical_spacing_cm=25,rail_modules=len(rails),main_rail_clearance_cm=460,stairs_landing_seams=True,playtest='not_run')

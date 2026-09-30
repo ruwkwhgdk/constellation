@@ -1,9 +1,10 @@
+from resource_paths import loads as load_current_json, load as load_current_json_file
 import unreal as u,json,runpy,math
 from pathlib import Path
-ROOT=Path(u.Paths.project_dir());OUT=ROOT/'ArtSource/OvergrownHall/TripoReplacement/v002';D='/Game/Environment/OvergrownHall/TripoFull';MAP=D+'/Maps/L_OvergrownHall_TripoFull'
+ROOT=Path(u.Paths.project_dir());OUT=ROOT/'ArtSource/OvergrownHall/TripoReplacement/v002';D='/Game/Constellation/Environments/OvergrownHall/TripoFull';MAP='/Game/Constellation/Worlds/OvergrownHall/Maps/L_OvergrownHall_TripoFull'
 assert u.get_editor_subsystem(u.LevelEditorSubsystem).load_level(MAP)
 actors={a.get_actor_label():a for a in u.get_editor_subsystem(u.EditorActorSubsystem).get_all_level_actors()}
-rows=json.loads((OUT/'kit_manifest.json').read_text());placements=json.loads((OUT/'placements.json').read_text());counts={};dimensions={}
+rows=load_current_json((OUT/'kit_manifest.json').read_text());placements=load_current_json((OUT/'placements.json').read_text());counts={};dimensions={}
 for row in rows:
     mesh=u.EditorAssetLibrary.load_asset(D+'/Meshes/'+row['mesh']);assert mesh
     b=mesh.get_bounds().box_extent*2;actual=[b.x,b.y,b.z]

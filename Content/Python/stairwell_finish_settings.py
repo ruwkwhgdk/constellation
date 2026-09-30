@@ -2,7 +2,7 @@
 import unreal as u
 def apply_finish():
     E=u.EditorAssetLibrary; M=u.MaterialEditingLibrary; A=u.get_editor_subsystem(u.EditorActorSubsystem); AT=u.AssetToolsHelpers.get_asset_tools()
-    dest='/Game/Environment/StairwellModular/Scene/Materials/Finish'
+    dest='/Game/Constellation/Environments/Stairwell/Scene/Materials/Finish'
     def node(mat,cls): return M.create_material_expression(mat,cls)
     def scalar(mat,value):
         n=node(mat,u.MaterialExpressionConstant); n.r=value; return n
@@ -28,11 +28,11 @@ def apply_finish():
         mul=node(mat,u.MaterialExpressionMultiply); assert M.connect_material_expressions(base,output,mul,'A'); conn(dirt,mul,'B'); M.connect_material_property(mul,'',u.MaterialProperty.MP_BASE_COLOR)
         if mode=='door': M.connect_material_property(scalar(mat,.7),'',u.MaterialProperty.MP_ROUGHNESS)
         M.recompile_material(mat); assert E.save_loaded_asset(mat); return mat
-    weather='/Game/Environment/StairwellModular/Scene/Materials/Weathered/'
+    weather='/Game/Constellation/Environments/Stairwell/Scene/Materials/Weathered/'
     replacements={}
     for key,mode in [('M_Kit_WallTile_Weathered','wall'),('M_CeilingAggregate_Weathered','ceiling'),('M_LandingTurn30','floor'),('M_Kit_MetalPaint_Weathered','wall')]:
         replacements[key]=clone(weather+key,key+'_Finish',mode)
-    door_mat=clone('/Game/Environment/StairwellModular/Materials/M_Stairwell_DoorPaint','M_DoorReferenceFinish','door')
+    door_mat=clone('/Game/Constellation/Environments/Stairwell/Materials/M_Stairwell_DoorPaint','M_DoorReferenceFinish','door')
     path=dest+'/M_NosingStable'
     if E.does_asset_exist(path): nosing=E.load_asset(path)
     else:

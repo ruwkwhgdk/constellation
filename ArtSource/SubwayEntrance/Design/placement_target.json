@@ -1,0 +1,32 @@
+{
+  "label": "subway_station",
+  "location": [
+    3900.0,
+    -19500.0,
+    10530.0
+  ],
+  "rotation_pitch_yaw_roll": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "scale": [
+    30.0,
+    30.0,
+    30.0
+  ],
+  "mesh": "/Game/Resources/Environments/Props/StartIsland/SubwayStation/subway_station.subway_station",
+  "map_saved": false,
+  "blender_to_unreal_axis_check": {
+    "swap_xy": false,
+    "x_sign": 1,
+    "y_sign": -1,
+    "mean_error_cm": 5.352350902127629e-07
+  },
+  "opening_outward_unreal_local": [
+    0,
+    1,
+    0
+  ],
+  "direction_evidence": "FBX front/back renders show opening toward Blender -Y; coordinate transform matched against native Unreal vertices."
+}

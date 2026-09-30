@@ -19,16 +19,16 @@ description: Project Constellation의 여주인공 애니메이션을 기존 게
 | 용도 | 현재 기준 |
 |---|---|
 | 달리기 편집 원본 | `ArtSource/Heroine_Tripo_Review/RunSoft/Heroine_Run_Soft.blend` |
-| 달리기 클립 | `/Game/Resources/Characters/PC/player_heroine_new/Animations/AS_player_heroine_new_Run_Soft` |
-| 달리기 프리뷰 메시 | `/Game/Resources/Characters/PC/player_heroine_new/SK_player_heroine_new_RunPreview` |
+| 달리기 클립 | `/Game/Constellation/Characters/Heroine/Refined/Animations/AS_player_heroine_new_Run_Soft` |
+| 달리기 프리뷰 메시 | `/Game/Constellation/Characters/Heroine/Refined/SK_player_heroine_new_RunPreview` |
 | 달리기 설정 | 30fps, 1.0초, In-place, 168cm/s, Play Rate 1.0 |
 | 한손검 1타 검토본 | `ArtSource/Heroine_Tripo_Review/Attack01/Heroine_Attack01.blend`; 상세 조건은 해당 폴더 README 참조 |
 | 한손검 1타 연결 후보 | 60fps·1초, 0.50~0.65초 입력 창. 2타 시작 후보는 `Attack01/combo_handoff_pose.json`; 실제 2타 연결은 미검증 |
 | 걷기 편집 원본 | `ArtSource/Heroine_Tripo_Review/WalkTimid/Heroine_Walk_Timid.blend` |
-| 걷기 클립 | `/Game/Resources/Characters/PC/player_heroine_new/Animations/AS_player_heroine_new_Walk_Timid` |
+| 걷기 클립 | `/Game/Constellation/Characters/Heroine/Refined/Animations/AS_player_heroine_new_Walk_Timid` |
 | 걷기 설정 | 첫 테스트본, 1.333초, 48cm/s. 재사용 전 품질 재평가 필요 |
 | 게임 스켈레톤/익스포터 | `ArtSource/Heroine_Tripo_Review/RigReferenceFit/Delivery/` |
-| 게임 원본 모션 | `/Game/Resources/Characters/CommonAnimation/Walk`, `/Game/Resources/Characters/CommonAnimation/Run` |
+| 게임 원본 모션 | `/Game/Constellation/Characters/Shared/Animations/Walk`, `/Game/Constellation/Characters/Shared/Animations/Run` |
 
 이 값은 현재 클립의 결과이지 모든 새 모션에 적용할 고정 표준이 아니다. 최신 README와 실제 리소스를 함께 확인한다. 모델링·텍스처 원본과 게임 원본 모션은 정리 대상이 아니다.
 

@@ -1,0 +1,49 @@
+{
+  "backup": "..\\..\\..\\..\\..\\..\\Users\\User\\Documents\\UnrealProjects\\Constellation\\Saved\\SubwayEntranceRecovery\\20260930_040909",
+  "maps": [
+    {
+      "map": "/Game/Levels/L_StartIsland",
+      "unrelated_actors_unchanged": true,
+      "ground_and_shaft_traces": [
+        {
+          "x": 3900,
+          "y": -19770,
+          "z": 9760.000008940697
+        },
+        {
+          "x": 3900,
+          "y": -19520,
+          "z": 9850.666651725769
+        },
+        {
+          "x": 4200,
+          "y": -19520,
+          "z": 10000.000001341105
+        },
+        {
+          "x": 3900,
+          "y": -18800,
+          "z": 10000.000001341105
+        }
+      ],
+      "ground_z": 10000,
+      "outer_bounds_unchanged": true,
+      "outer_surface_samples_passed": 80
+    },
+    {
+      "map": "/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_PlayScale2",
+      "existing_actors_unchanged": true,
+      "arrival": [
+        -520,
+        0,
+        460
+      ],
+      "return_trigger": [
+        -668,
+        0,
+        460
+      ]
+    }
+  ],
+  "play_tested": false
+}

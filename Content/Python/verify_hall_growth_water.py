@@ -1,9 +1,10 @@
+from resource_paths import loads as load_current_json, load as load_current_json_file
 import unreal as u,json,runpy
 from pathlib import Path
 ROOT=Path(u.Paths.project_dir());OUT=ROOT/'ArtSource/OvergrownHall/TripoReplacement/v006'
 runpy.run_path(str(ROOT/'Content/Python/verify_tripo_full_hall.py'))
-rows=json.loads((OUT.parent/'v005/shape_manifest.json').read_text());expected={r['id']:r for r in rows}
-report=json.loads((OUT/'applied.json').read_text());actors={a.get_actor_label():a for a in u.get_editor_subsystem(u.EditorActorSubsystem).get_all_level_actors()}
+rows=load_current_json((OUT.parent/'v005/shape_manifest.json').read_text());expected={r['id']:r for r in rows}
+report=load_current_json((OUT/'applied.json').read_text());actors={a.get_actor_label():a for a in u.get_editor_subsystem(u.EditorActorSubsystem).get_all_level_actors()}
 count=0;moss=0
 for label,actor in actors.items():
     key=label.split('_')[2] if label.startswith('OH_FULL_') else '19' if label.startswith('OH_Tripo_Tree_') else '26' if label.startswith('OH_STRUCTURE_Roof_') else None

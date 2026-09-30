@@ -1,9 +1,10 @@
 """v012 shallow transparent water. Run PROBE first; APPLY saves the reviewed result."""
+from resource_paths import loads as load_current_json, load as load_current_json_file
 import unreal as u,json,math
 from pathlib import Path
 APPLY=globals().get('APPLY',False)
 ROOT=Path(u.Paths.project_dir());OUT=ROOT/'ArtSource/OvergrownHall/TripoReplacement/v012';OUT.mkdir(exist_ok=True)
-D='/Game/Environment/OvergrownHall/TripoFull';MAP=D+'/Maps/L_OvergrownHall_TripoFull'
+D='/Game/Constellation/Environments/OvergrownHall/TripoFull';MAP='/Game/Constellation/Worlds/OvergrownHall/Maps/L_OvergrownHall_TripoFull'
 E=u.EditorAssetLibrary;ML=u.MaterialEditingLibrary;AT=u.AssetToolsHelpers.get_asset_tools();L=u.get_editor_subsystem(u.LevelEditorSubsystem)
 assert L.load_level(MAP)
 actors={a.get_actor_label():a for a in u.get_editor_subsystem(u.EditorActorSubsystem).get_all_level_actors()}
@@ -27,7 +28,7 @@ water=actors['OH_SM_OH_Blockout_21'];water.modify();water.static_mesh_component.
 basepath=OUT/'baseline.json'
 if not basepath.exists():
     basepath.write_text(json.dumps({n:dict(position=[a.get_actor_location().x,a.get_actor_location().y,a.get_actor_location().z],rotation=[a.get_actor_rotation().pitch,a.get_actor_rotation().yaw,a.get_actor_rotation().roll]) for n,a in actors.items() if n.startswith('OH_FULL_13_')},indent=2))
-base=json.loads(basepath.read_text());old_submerged=json.loads((OUT.parent/'v009/applied.json').read_text())['submerged_floor_tiles'];changes=[]
+base=load_current_json(basepath.read_text());old_submerged=load_current_json((OUT.parent/'v009/applied.json').read_text())['submerged_floor_tiles'];changes=[]
 for n,b in base.items():
     x,y,z=b['position'];position=b['position'][:]
     if n in old_submerged:
@@ -51,6 +52,6 @@ if (OUT/'SM_OH_ShoreSlab.fbx').exists():
             a.modify();a.static_mesh_component.set_static_mesh(mesh);shore_changes.append(n)
 if APPLY:assert L.save_current_level()
 (OUT/('applied.json' if APPLY else 'probe.json')).write_text(json.dumps(dict(map=MAP,material=m.get_name(),saved=APPLY,floor_changes=changes,shore_slabs=shore_changes,water_height_cm=2.2,translucent=True,refraction=False),indent=2))
-script=(ROOT/'Content/Python/capture_hall_exposure.py').read_text().replace('ArtSource/OvergrownHall/Scene/v001','ArtSource/OvergrownHall/TripoReplacement/v012').replace("assert u.get_editor_subsystem(u.LevelEditorSubsystem).load_level('/Game/Environment/OvergrownHall/Scene/Maps/L_OvergrownHall_Layout')",'# Capture current probe without reloading the maintained map.').replace('unreal_exposure_fixed.png','unreal_shallows.png' if APPLY else 'probe.png')
+script=(ROOT/'Content/Python/capture_hall_exposure.py').read_text().replace('ArtSource/OvergrownHall/Scene/v001','ArtSource/OvergrownHall/TripoReplacement/v012').replace("assert u.get_editor_subsystem(u.LevelEditorSubsystem).load_level('/Game/Constellation/Environments/OvergrownHall/Scene/Maps/L_OvergrownHall_Layout')",'# Capture current probe without reloading the maintained map.').replace('unreal_exposure_fixed.png','unreal_shallows.png' if APPLY else 'probe.png')
 script=script.replace('pp=next',"u.EditorLevelLibrary.set_level_viewport_camera_info(cam.get_actor_location(),cam.get_actor_rotation())\nu.EditorLevelLibrary.pilot_level_actor(cam)\npp=next").replace("'r.ScreenPercentage 100'","'ShowFlag.ReflectionEnvironment 1'")
 exec(compile(script,'capture_shallows','exec'),globals())

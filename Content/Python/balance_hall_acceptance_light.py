@@ -2,7 +2,7 @@
 import unreal as u,json,runpy
 from pathlib import Path
 ROOT=Path(u.Paths.project_dir());OUT=ROOT/'ArtSource/OvergrownHall/TripoReplacement/v027';OUT.mkdir(parents=True,exist_ok=True)
-MAP='/Game/Environment/OvergrownHall/TripoFull/Maps/L_OvergrownHall_TripoFull'
+MAP='/Game/Constellation/Worlds/OvergrownHall/Maps/L_OvergrownHall_TripoFull'
 L=u.get_editor_subsystem(u.LevelEditorSubsystem);A=u.get_editor_subsystem(u.EditorActorSubsystem)
 assert L.load_level(MAP);actors={a.get_actor_label():a for a in A.get_all_level_actors()}
 if not (OUT/'baseline.json').exists():

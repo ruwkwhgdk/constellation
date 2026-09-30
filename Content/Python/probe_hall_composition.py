@@ -2,7 +2,7 @@
 import unreal as u,json,time
 from pathlib import Path
 ROOT=Path(u.Paths.project_dir());OUT=ROOT/'ArtSource/OvergrownHall/TripoReplacement/v018';OUT.mkdir(exist_ok=True)
-MAP='/Game/Environment/OvergrownHall/TripoFull/Maps/L_OvergrownHall_TripoFull';L=u.get_editor_subsystem(u.LevelEditorSubsystem);assert L.load_level(MAP)
+MAP='/Game/Constellation/Worlds/OvergrownHall/Maps/L_OvergrownHall_TripoFull';L=u.get_editor_subsystem(u.LevelEditorSubsystem);assert L.load_level(MAP)
 actors={a.get_actor_label():a for a in u.get_editor_subsystem(u.EditorActorSubsystem).get_all_level_actors()};cam=actors['OH_ReferenceCamera'];cc=cam.get_component_by_class(u.CameraComponent)
 p=cam.get_actor_location();r=cam.get_actor_rotation()
 baseline=dict(position=[p.x,p.y,p.z],rotation=[r.pitch,r.yaw,r.roll],fov=cc.field_of_view,actor_count=len(actors))

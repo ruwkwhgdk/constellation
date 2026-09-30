@@ -1,0 +1,899 @@
+{
+  "skeletons": {
+    "/Game/Constellation/Environments/OvergrownHall/Bird/Tripo/Meshes/SK_OH_Pigeon_Skeleton": "<Object '/Game/Constellation/Environments/OvergrownHall/Bird/Tripo/Meshes/SK_OH_Pigeon_Skeleton.SK_OH_Pigeon_Skeleton' (0x000002548DDFCC00) Class 'Skeleton'>",
+    "/Game/Constellation/Characters/Enemies/Red_Panda/SK_Red_Panda": "<Object '/Game/Constellation/Characters/Enemies/Red_Panda/SK_Red_Panda.SK_Red_Panda' (0x0000025465B89C00) Class 'Skeleton'>",
+    "/Game/Constellation/Characters/Enemies/Slime_Normal/SK_Slime_Normal": "<Object '/Game/Constellation/Characters/Enemies/Slime_Normal/SK_Slime_Normal.SK_Slime_Normal' (0x0000025465411E00) Class 'Skeleton'>",
+    "/Game/Constellation/Characters/NPC/Little_Girl/SK_Little_Girl": "<Object '/Game/Constellation/Characters/NPC/Little_Girl/SK_Little_Girl.SK_Little_Girl' (0x0000025465419000) Class 'Skeleton'>",
+    "/Game/Constellation/Characters/NPC/Skeleton/SK_Skeleton": "<Object '/Game/Constellation/Characters/NPC/Skeleton/SK_Skeleton.SK_Skeleton' (0x0000025457425A00) Class 'Skeleton'>",
+    "/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton": "<Object '/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton.Player_Heroine_Skeleton' (0x000002543B616000) Class 'Skeleton'>",
+    "/Game/Constellation/Characters/Heroine/Refined/ReferenceFit/SKEL_player_heroine_new_ReferenceFit": "<Object '/Game/Constellation/Characters/Heroine/Refined/ReferenceFit/SKEL_player_heroine_new_ReferenceFit.SKEL_player_heroine_new_ReferenceFit' (0x000002546A82F000) Class 'Skeleton'>",
+    "/Game/Constellation/Characters/Heroine/Refined/SKEL_player_heroine_new": "<Object '/Game/Constellation/Characters/Heroine/Refined/SKEL_player_heroine_new.SKEL_player_heroine_new' (0x000002546A826000) Class 'Skeleton'>"
+  },
+  "animations": {
+    "/Game/Constellation/Characters/Enemies/Blueprints/ABP_Monster": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Enemies/Slime_Normal/SK_Slime_Normal.SK_Slime_Normal' (0x0000025465411E00) Class 'Skeleton'>",
+      "dependencies": [
+        "/Script/AnimGraph",
+        "/Script/AnimGraphRuntime",
+        "/Game/Constellation/Characters/Enemies/Slime_Normal/SK_Slime_Normal",
+        "/Game/Constellation/Characters/Enemies/Blueprints/BP_Monster"
+      ]
+    },
+    "/Game/Constellation/Characters/Enemies/Blueprints/ABP_Slime_Base": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Enemies/Slime_Normal/SK_Slime_Normal.SK_Slime_Normal' (0x0000025465411E00) Class 'Skeleton'>",
+      "dependencies": [
+        "/Script/AnimGraphRuntime",
+        "/Game/Constellation/Characters/Enemies/Blueprints/ABP_Monster",
+        "/Game/Constellation/Characters/Enemies/Slime_Normal/SK_Slime_Normal",
+        "/Game/Constellation/Characters/Enemies/Slime_Normal/Animation/AS_Slime_Dead",
+        "/Game/Constellation/Characters/Enemies/Slime_Normal/Animation/AS_Slime_Idle",
+        "/Game/Constellation/Characters/Enemies/Slime_Normal/Animation/AS_Slime_Move"
+      ]
+    },
+    "/Game/Constellation/Characters/Heroine/Blueprints/ABP_Player_Heroine": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton.Player_Heroine_Skeleton' (0x000002543B616000) Class 'Skeleton'>",
+      "dependencies": [
+        "/Script/AnimGraph",
+        "/Script/AnimGraphRuntime",
+        "/Game/Constellation/Characters/Heroine/Base/Animation/Jump",
+        "/Game/Constellation/Characters/Heroine/Base/Animation/Pushing",
+        "/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton",
+        "/Game/Constellation/Characters/Heroine/Blueprints/BP_Player_Heroine",
+        "/Game/Constellation/Characters/Shared/Animations/BS_Move",
+        "/Game/Constellation/Characters/Shared/Animations/Climbing_Ladder",
+        "/Game/Constellation/Gameplay/Combat/Components/Ac_ComboAttack",
+        "/Game/Constellation/Gameplay/Combat/Components/Ac_Dodge",
+        "/Game/Constellation/Gameplay/Combat/Components/Ac_Attack",
+        "/Engine/EditorBlueprintResources/StandardMacros"
+      ]
+    },
+    "/Game/Constellation/Environments/OvergrownHall/Bird/Tripo/Clips/A_OH_Pigeon_Fly": {
+      "skeleton": "<Object '/Game/Constellation/Environments/OvergrownHall/Bird/Tripo/Meshes/SK_OH_Pigeon_Skeleton.SK_OH_Pigeon_Skeleton' (0x000002548DDFCC00) Class 'Skeleton'>",
+      "dependencies": [
+        "/Script/MovieScene",
+        "/Script/AnimationModifiers",
+        "/Script/ControlRig",
+        "/Script/AnimationData",
+        "/ACLPlugin/ACLAnimBoneCompressionSettings",
+        "/ACLPlugin/ACLAnimCurveCompressionSettings",
+        "/Engine/Animation/DefaultVariableFrameStrippingSettings",
+        "/Game/Constellation/Environments/OvergrownHall/Bird/Tripo/Meshes/SK_OH_Pigeon_Skeleton"
+      ]
+    },
+    "/Game/Constellation/Environments/OvergrownHall/Bird/Tripo/Clips/A_OH_Pigeon_FlyToGlide": {
+      "skeleton": "<Object '/Game/Constellation/Environments/OvergrownHall/Bird/Tripo/Meshes/SK_OH_Pigeon_Skeleton.SK_OH_Pigeon_Skeleton' (0x000002548DDFCC00) Class 'Skeleton'>",
+      "dependencies": [
+        "/Script/MovieScene",
+        "/Script/AnimationModifiers",
+        "/Script/ControlRig",
+        "/Script/AnimationData",
+        "/ACLPlugin/ACLAnimBoneCompressionSettings",
+        "/ACLPlugin/ACLAnimCurveCompressionSettings",
+        "/Engine/Animation/DefaultVariableFrameStrippingSettings",
+        "/Game/Constellation/Environments/OvergrownHall/Bird/Tripo/Meshes/SK_OH_Pigeon_Skeleton"
+      ]
+    },
+    "/Game/Constellation/Environments/OvergrownHall/Bird/Tripo/Clips/A_OH_Pigeon_Glide": {
+      "skeleton": "<Object '/Game/Constellation/Environments/OvergrownHall/Bird/Tripo/Meshes/SK_OH_Pigeon_Skeleton.SK_OH_Pigeon_Skeleton' (0x000002548DDFCC00) Class 'Skeleton'>",
+      "dependencies": [
+        "/Script/MovieScene",
+        "/Script/AnimationModifiers",
+        "/Script/ControlRig",
+        "/Script/AnimationData",
+        "/ACLPlugin/ACLAnimBoneCompressionSettings",
+        "/ACLPlugin/ACLAnimCurveCompressionSettings",
+        "/Engine/Animation/DefaultVariableFrameStrippingSettings",
+        "/Game/Constellation/Environments/OvergrownHall/Bird/Tripo/Meshes/SK_OH_Pigeon_Skeleton"
+      ]
+    },
+    "/Game/Constellation/Environments/OvergrownHall/Bird/Tripo/Clips/A_OH_Pigeon_GlideToFly": {
+      "skeleton": "<Object '/Game/Constellation/Environments/OvergrownHall/Bird/Tripo/Meshes/SK_OH_Pigeon_Skeleton.SK_OH_Pigeon_Skeleton' (0x000002548DDFCC00) Class 'Skeleton'>",
+      "dependencies": [
+        "/Script/MovieScene",
+        "/Script/AnimationModifiers",
+        "/Script/ControlRig",
+        "/Script/AnimationData",
+        "/ACLPlugin/ACLAnimBoneCompressionSettings",
+        "/ACLPlugin/ACLAnimCurveCompressionSettings",
+        "/Engine/Animation/DefaultVariableFrameStrippingSettings",
+        "/Game/Constellation/Environments/OvergrownHall/Bird/Tripo/Meshes/SK_OH_Pigeon_Skeleton"
+      ]
+    },
+    "/Game/Constellation/Characters/Shared/Animations/AM_Damaged": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton.Player_Heroine_Skeleton' (0x000002543B616000) Class 'Skeleton'>",
+      "dependencies": [
+        "/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton",
+        "/Game/Constellation/Characters/Shared/Animations/Damaged"
+      ]
+    },
+    "/Game/Constellation/Characters/Shared/Animations/AM_Roll": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton.Player_Heroine_Skeleton' (0x000002543B616000) Class 'Skeleton'>",
+      "dependencies": [
+        "/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton",
+        "/Game/Constellation/Characters/Shared/Animations/Roll"
+      ]
+    },
+    "/Game/Constellation/Characters/Shared/Animations/AM_Roll_Inplace": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton.Player_Heroine_Skeleton' (0x000002543B616000) Class 'Skeleton'>",
+      "dependencies": [
+        "/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton",
+        "/Game/Constellation/Characters/Shared/Animations/Roll_Inplace"
+      ]
+    },
+    "/Game/Constellation/Characters/Shared/Animations/BS_Move": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton.Player_Heroine_Skeleton' (0x000002543B616000) Class 'Skeleton'>",
+      "dependencies": [
+        "/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton",
+        "/Game/Constellation/Characters/Shared/Animations/Idle",
+        "/Game/Constellation/Characters/Shared/Animations/Run",
+        "/Game/Constellation/Characters/Shared/Animations/Walk"
+      ]
+    },
+    "/Game/Constellation/Characters/Shared/Animations/Climbing_Ladder": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton.Player_Heroine_Skeleton' (0x000002543B616000) Class 'Skeleton'>",
+      "dependencies": [
+        "/Script/InterchangeEngine",
+        "/Script/MovieScene",
+        "/Script/AnimationModifiers",
+        "/Script/ControlRig",
+        "/Script/AnimationData",
+        "/ACLPlugin/ACLAnimBoneCompressionSettings",
+        "/ACLPlugin/ACLAnimCurveCompressionSettings",
+        "/Engine/Animation/DefaultVariableFrameStrippingSettings",
+        "/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton"
+      ]
+    },
+    "/Game/Constellation/Characters/Shared/Animations/Crouch_Idle": {
+      "skeleton": "<Object '/Game/Constellation/Characters/NPC/Skeleton/SK_Skeleton.SK_Skeleton' (0x0000025457425A00) Class 'Skeleton'>",
+      "dependencies": [
+        "/Script/InterchangeEngine",
+        "/Script/MovieScene",
+        "/Script/AnimationModifiers",
+        "/Script/ControlRig",
+        "/Script/AnimationData",
+        "/ACLPlugin/ACLAnimBoneCompressionSettings",
+        "/ACLPlugin/ACLAnimCurveCompressionSettings",
+        "/Engine/Animation/DefaultVariableFrameStrippingSettings",
+        "/Game/Constellation/Characters/NPC/Skeleton/SK_Skeleton"
+      ]
+    },
+    "/Game/Constellation/Characters/Shared/Animations/Damaged": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton.Player_Heroine_Skeleton' (0x000002543B616000) Class 'Skeleton'>",
+      "dependencies": [
+        "/Script/InterchangeEngine",
+        "/Script/MovieScene",
+        "/Script/AnimationModifiers",
+        "/Script/ControlRig",
+        "/Script/AnimationData",
+        "/ACLPlugin/ACLAnimBoneCompressionSettings",
+        "/ACLPlugin/ACLAnimCurveCompressionSettings",
+        "/Engine/Animation/DefaultVariableFrameStrippingSettings",
+        "/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton"
+      ]
+    },
+    "/Game/Constellation/Characters/Shared/Animations/Dying_Backwards": {
+      "skeleton": "<Object '/Game/Constellation/Characters/NPC/Skeleton/SK_Skeleton.SK_Skeleton' (0x0000025457425A00) Class 'Skeleton'>",
+      "dependencies": [
+        "/Script/InterchangeEngine",
+        "/Script/MovieScene",
+        "/Script/AnimationModifiers",
+        "/Script/ControlRig",
+        "/Script/AnimationData",
+        "/ACLPlugin/ACLAnimBoneCompressionSettings",
+        "/ACLPlugin/ACLAnimCurveCompressionSettings",
+        "/Engine/Animation/DefaultVariableFrameStrippingSettings",
+        "/Game/Constellation/Characters/NPC/Skeleton/SK_Skeleton"
+      ]
+    },
+    "/Game/Constellation/Characters/Shared/Animations/Idle": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton.Player_Heroine_Skeleton' (0x000002543B616000) Class 'Skeleton'>",
+      "dependencies": [
+        "/Script/InterchangeEngine",
+        "/Script/MovieScene",
+        "/Script/AnimationModifiers",
+        "/Script/ControlRig",
+        "/Script/AnimationData",
+        "/ACLPlugin/ACLAnimBoneCompressionSettings",
+        "/ACLPlugin/ACLAnimCurveCompressionSettings",
+        "/Engine/Animation/DefaultVariableFrameStrippingSettings",
+        "/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton"
+      ]
+    },
+    "/Game/Constellation/Characters/Shared/Animations/Pull_Heavy_Object": {
+      "skeleton": "<Object '/Game/Constellation/Characters/NPC/Skeleton/SK_Skeleton.SK_Skeleton' (0x0000025457425A00) Class 'Skeleton'>",
+      "dependencies": [
+        "/Script/InterchangeEngine",
+        "/Script/MovieScene",
+        "/Script/AnimationModifiers",
+        "/Script/ControlRig",
+        "/Script/AnimationData",
+        "/ACLPlugin/ACLAnimBoneCompressionSettings",
+        "/ACLPlugin/ACLAnimCurveCompressionSettings",
+        "/Engine/Animation/DefaultVariableFrameStrippingSettings",
+        "/Game/Constellation/Characters/NPC/Skeleton/SK_Skeleton"
+      ]
+    },
+    "/Game/Constellation/Characters/Shared/Animations/Roll": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton.Player_Heroine_Skeleton' (0x000002543B616000) Class 'Skeleton'>",
+      "dependencies": [
+        "/Script/InterchangeEngine",
+        "/Script/MovieScene",
+        "/Script/AnimationModifiers",
+        "/Script/ControlRig",
+        "/Script/AnimationData",
+        "/ACLPlugin/ACLAnimBoneCompressionSettings",
+        "/ACLPlugin/ACLAnimCurveCompressionSettings",
+        "/Engine/Animation/DefaultVariableFrameStrippingSettings",
+        "/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton"
+      ]
+    },
+    "/Game/Constellation/Characters/Shared/Animations/Roll_Inplace": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton.Player_Heroine_Skeleton' (0x000002543B616000) Class 'Skeleton'>",
+      "dependencies": [
+        "/Script/InterchangeEngine",
+        "/Script/MovieScene",
+        "/Script/AnimationModifiers",
+        "/Script/ControlRig",
+        "/Script/AnimationData",
+        "/ACLPlugin/ACLAnimBoneCompressionSettings",
+        "/ACLPlugin/ACLAnimCurveCompressionSettings",
+        "/Engine/Animation/DefaultVariableFrameStrippingSettings",
+        "/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton"
+      ]
+    },
+    "/Game/Constellation/Characters/Shared/Animations/Run": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton.Player_Heroine_Skeleton' (0x000002543B616000) Class 'Skeleton'>",
+      "dependencies": [
+        "/Script/InterchangeEngine",
+        "/Script/MovieScene",
+        "/Script/AnimationModifiers",
+        "/Script/ControlRig",
+        "/Script/AnimationData",
+        "/ACLPlugin/ACLAnimBoneCompressionSettings",
+        "/ACLPlugin/ACLAnimCurveCompressionSettings",
+        "/Engine/Animation/DefaultVariableFrameStrippingSettings",
+        "/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton"
+      ]
+    },
+    "/Game/Constellation/Characters/Shared/Animations/Sleeping_Idle": {
+      "skeleton": "<Object '/Game/Constellation/Characters/NPC/Skeleton/SK_Skeleton.SK_Skeleton' (0x0000025457425A00) Class 'Skeleton'>",
+      "dependencies": [
+        "/Script/InterchangeEngine",
+        "/Script/MovieScene",
+        "/Script/AnimationModifiers",
+        "/Script/ControlRig",
+        "/Script/AnimationData",
+        "/ACLPlugin/ACLAnimBoneCompressionSettings",
+        "/ACLPlugin/ACLAnimCurveCompressionSettings",
+        "/Engine/Animation/DefaultVariableFrameStrippingSettings",
+        "/Game/Constellation/Characters/NPC/Skeleton/SK_Skeleton"
+      ]
+    },
+    "/Game/Constellation/Characters/Shared/Animations/Sword_Damaged": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton.Player_Heroine_Skeleton' (0x000002543B616000) Class 'Skeleton'>",
+      "dependencies": [
+        "/Script/InterchangeEngine",
+        "/Script/MovieScene",
+        "/Script/AnimationModifiers",
+        "/Script/ControlRig",
+        "/Script/AnimationData",
+        "/ACLPlugin/ACLAnimBoneCompressionSettings",
+        "/ACLPlugin/ACLAnimCurveCompressionSettings",
+        "/Engine/Animation/DefaultVariableFrameStrippingSettings",
+        "/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton"
+      ]
+    },
+    "/Game/Constellation/Characters/Shared/Animations/Walk": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton.Player_Heroine_Skeleton' (0x000002543B616000) Class 'Skeleton'>",
+      "dependencies": [
+        "/Script/InterchangeEngine",
+        "/Script/MovieScene",
+        "/Script/AnimationModifiers",
+        "/Script/ControlRig",
+        "/Script/AnimationData",
+        "/ACLPlugin/ACLAnimBoneCompressionSettings",
+        "/ACLPlugin/ACLAnimCurveCompressionSettings",
+        "/Engine/Animation/DefaultVariableFrameStrippingSettings",
+        "/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton"
+      ]
+    },
+    "/Game/Constellation/Characters/Enemies/Slime_Normal/Animation/AM_Slime_Attack": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Enemies/Slime_Normal/SK_Slime_Normal.SK_Slime_Normal' (0x0000025465411E00) Class 'Skeleton'>",
+      "dependencies": [
+        "/Game/Constellation/Characters/Enemies/Slime_Normal/SK_Slime_Normal",
+        "/Game/Constellation/Characters/Enemies/Slime_Normal/Animation/AS_Slime_Attack"
+      ]
+    },
+    "/Game/Constellation/Characters/Enemies/Slime_Normal/Animation/AM_Slime_Damaged": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Enemies/Slime_Normal/SK_Slime_Normal.SK_Slime_Normal' (0x0000025465411E00) Class 'Skeleton'>",
+      "dependencies": [
+        "/Game/Constellation/Characters/Enemies/Slime_Normal/SK_Slime_Normal",
+        "/Game/Constellation/Characters/Enemies/Slime_Normal/Animation/AS_Slime_Damaged"
+      ]
+    },
+    "/Game/Constellation/Characters/Enemies/Slime_Normal/Animation/AM_Slime_Dead": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Enemies/Slime_Normal/SK_Slime_Normal.SK_Slime_Normal' (0x0000025465411E00) Class 'Skeleton'>",
+      "dependencies": [
+        "/Game/Constellation/Characters/Enemies/Slime_Normal/SK_Slime_Normal",
+        "/Game/Constellation/Characters/Enemies/Slime_Normal/Animation/AS_Slime_Dead"
+      ]
+    },
+    "/Game/Constellation/Characters/Enemies/Slime_Normal/Animation/AM_Slime_Idle": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Enemies/Slime_Normal/SK_Slime_Normal.SK_Slime_Normal' (0x0000025465411E00) Class 'Skeleton'>",
+      "dependencies": [
+        "/Game/Constellation/Characters/Enemies/Slime_Normal/SK_Slime_Normal",
+        "/Game/Constellation/Characters/Enemies/Slime_Normal/Animation/AS_Slime_Idle"
+      ]
+    },
+    "/Game/Constellation/Characters/Enemies/Slime_Normal/Animation/AM_Slime_Jump": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Enemies/Slime_Normal/SK_Slime_Normal.SK_Slime_Normal' (0x0000025465411E00) Class 'Skeleton'>",
+      "dependencies": [
+        "/Game/Constellation/Characters/Enemies/Slime_Normal/SK_Slime_Normal",
+        "/Game/Constellation/Characters/Enemies/Slime_Normal/Animation/AS_Slime_Jump"
+      ]
+    },
+    "/Game/Constellation/Characters/Enemies/Slime_Normal/Animation/AM_Slime_Move": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Enemies/Slime_Normal/SK_Slime_Normal.SK_Slime_Normal' (0x0000025465411E00) Class 'Skeleton'>",
+      "dependencies": [
+        "/Game/Constellation/Characters/Enemies/Slime_Normal/SK_Slime_Normal",
+        "/Game/Constellation/Characters/Enemies/Slime_Normal/Animation/AS_Slime_Move"
+      ]
+    },
+    "/Game/Constellation/Characters/Enemies/Slime_Normal/Animation/AS_Slime_Attack": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Enemies/Slime_Normal/SK_Slime_Normal.SK_Slime_Normal' (0x0000025465411E00) Class 'Skeleton'>",
+      "dependencies": [
+        "/Script/MovieScene",
+        "/Script/AnimationModifiers",
+        "/Script/ControlRig",
+        "/Script/AnimationData",
+        "/Engine/Animation/DefaultRecorderBoneCompression",
+        "/ACLPlugin/ACLAnimCurveCompressionSettings",
+        "/Engine/Animation/DefaultVariableFrameStrippingSettings",
+        "/Game/Constellation/Characters/Enemies/Slime_Normal/SK_Slime_Normal",
+        "/Game/Constellation/Characters/Enemies/Slime_Normal/SKM_Slime_Normal"
+      ]
+    },
+    "/Game/Constellation/Characters/Enemies/Slime_Normal/Animation/AS_Slime_Damaged": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Enemies/Slime_Normal/SK_Slime_Normal.SK_Slime_Normal' (0x0000025465411E00) Class 'Skeleton'>",
+      "dependencies": [
+        "/Script/MovieScene",
+        "/Script/AnimationModifiers",
+        "/Script/ControlRig",
+        "/Script/AnimationData",
+        "/Engine/Animation/DefaultRecorderBoneCompression",
+        "/ACLPlugin/ACLAnimCurveCompressionSettings",
+        "/Engine/Animation/DefaultVariableFrameStrippingSettings",
+        "/Game/Constellation/Characters/Enemies/Slime_Normal/SK_Slime_Normal",
+        "/Game/Constellation/Characters/Enemies/Slime_Normal/SKM_Slime_Normal"
+      ]
+    },
+    "/Game/Constellation/Characters/Enemies/Slime_Normal/Animation/AS_Slime_Dead": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Enemies/Slime_Normal/SK_Slime_Normal.SK_Slime_Normal' (0x0000025465411E00) Class 'Skeleton'>",
+      "dependencies": [
+        "/Script/MovieScene",
+        "/Script/AnimationModifiers",
+        "/Script/ControlRig",
+        "/Script/AnimationData",
+        "/Engine/Animation/DefaultRecorderBoneCompression",
+        "/ACLPlugin/ACLAnimCurveCompressionSettings",
+        "/Engine/Animation/DefaultVariableFrameStrippingSettings",
+        "/Game/Constellation/Characters/Enemies/Slime_Normal/SK_Slime_Normal",
+        "/Game/Constellation/Characters/Enemies/Slime_Normal/SKM_Slime_Normal"
+      ]
+    },
+    "/Game/Constellation/Characters/Enemies/Slime_Normal/Animation/AS_Slime_Idle": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Enemies/Slime_Normal/SK_Slime_Normal.SK_Slime_Normal' (0x0000025465411E00) Class 'Skeleton'>",
+      "dependencies": [
+        "/Script/MovieScene",
+        "/Script/AnimationModifiers",
+        "/Script/ControlRig",
+        "/Script/AnimationData",
+        "/Engine/Animation/DefaultRecorderBoneCompression",
+        "/ACLPlugin/ACLAnimCurveCompressionSettings",
+        "/Engine/Animation/DefaultVariableFrameStrippingSettings",
+        "/Game/Constellation/Characters/Enemies/Slime_Normal/SK_Slime_Normal",
+        "/Game/Constellation/Characters/Enemies/Slime_Normal/SKM_Slime_Normal"
+      ]
+    },
+    "/Game/Constellation/Characters/Enemies/Slime_Normal/Animation/AS_Slime_Jump": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Enemies/Slime_Normal/SK_Slime_Normal.SK_Slime_Normal' (0x0000025465411E00) Class 'Skeleton'>",
+      "dependencies": [
+        "/Script/MovieScene",
+        "/Script/AnimationModifiers",
+        "/Script/ControlRig",
+        "/Script/AnimationData",
+        "/Engine/Animation/DefaultRecorderBoneCompression",
+        "/ACLPlugin/ACLAnimCurveCompressionSettings",
+        "/Engine/Animation/DefaultVariableFrameStrippingSettings",
+        "/Game/Constellation/Characters/Enemies/Slime_Normal/SK_Slime_Normal",
+        "/Game/Constellation/Characters/Enemies/Slime_Normal/SKM_Slime_Normal"
+      ]
+    },
+    "/Game/Constellation/Characters/Enemies/Slime_Normal/Animation/AS_Slime_Move": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Enemies/Slime_Normal/SK_Slime_Normal.SK_Slime_Normal' (0x0000025465411E00) Class 'Skeleton'>",
+      "dependencies": [
+        "/Script/MovieScene",
+        "/Script/AnimationModifiers",
+        "/Script/ControlRig",
+        "/Script/AnimationData",
+        "/Engine/Animation/DefaultRecorderBoneCompression",
+        "/ACLPlugin/ACLAnimCurveCompressionSettings",
+        "/Engine/Animation/DefaultVariableFrameStrippingSettings",
+        "/Game/Constellation/Characters/Enemies/Slime_Normal/SK_Slime_Normal",
+        "/Game/Constellation/Characters/Enemies/Slime_Normal/SKM_Slime_Normal"
+      ]
+    },
+    "/Game/Constellation/Characters/NPC/Skeleton/Animation/Crouch_Idle_Pose": {
+      "skeleton": "<Object '/Game/Constellation/Characters/NPC/Skeleton/SK_Skeleton.SK_Skeleton' (0x0000025457425A00) Class 'Skeleton'>",
+      "dependencies": [
+        "/Script/MovieScene",
+        "/Script/AnimationModifiers",
+        "/Script/ControlRig",
+        "/Script/AnimationData",
+        "/ACLPlugin/ACLAnimBoneCompressionSettings",
+        "/ACLPlugin/ACLAnimCurveCompressionSettings",
+        "/Engine/Animation/DefaultVariableFrameStrippingSettings",
+        "/Game/Constellation/Characters/NPC/Skeleton/SK_Skeleton"
+      ]
+    },
+    "/Game/Constellation/Characters/NPC/Skeleton/Animation/Dying_Backwards_Pose": {
+      "skeleton": "<Object '/Game/Constellation/Characters/NPC/Skeleton/SK_Skeleton.SK_Skeleton' (0x0000025457425A00) Class 'Skeleton'>",
+      "dependencies": [
+        "/Script/MovieScene",
+        "/Script/AnimationModifiers",
+        "/Script/ControlRig",
+        "/Script/AnimationData",
+        "/ACLPlugin/ACLAnimBoneCompressionSettings",
+        "/ACLPlugin/ACLAnimCurveCompressionSettings",
+        "/Engine/Animation/DefaultVariableFrameStrippingSettings",
+        "/Game/Constellation/Characters/NPC/Skeleton/SK_Skeleton"
+      ]
+    },
+    "/Game/Constellation/Characters/NPC/Skeleton/Animation/Praying_Pos": {
+      "skeleton": "<Object '/Game/Constellation/Characters/NPC/Skeleton/SK_Skeleton.SK_Skeleton' (0x0000025457425A00) Class 'Skeleton'>",
+      "dependencies": [
+        "/Script/InterchangeEngine",
+        "/Script/MovieScene",
+        "/Script/AnimationModifiers",
+        "/Script/ControlRig",
+        "/Script/AnimationData",
+        "/ACLPlugin/ACLAnimBoneCompressionSettings",
+        "/ACLPlugin/ACLAnimCurveCompressionSettings",
+        "/Engine/Animation/DefaultVariableFrameStrippingSettings",
+        "/Game/Constellation/Characters/NPC/Skeleton/SK_Skeleton"
+      ]
+    },
+    "/Game/Constellation/Characters/NPC/Skeleton/Animation/Pull_Object_Pose": {
+      "skeleton": "<Object '/Game/Constellation/Characters/NPC/Skeleton/SK_Skeleton.SK_Skeleton' (0x0000025457425A00) Class 'Skeleton'>",
+      "dependencies": [
+        "/Script/MovieScene",
+        "/Script/AnimationModifiers",
+        "/Script/ControlRig",
+        "/Script/AnimationData",
+        "/ACLPlugin/ACLAnimBoneCompressionSettings",
+        "/ACLPlugin/ACLAnimCurveCompressionSettings",
+        "/Engine/Animation/DefaultVariableFrameStrippingSettings",
+        "/Game/Constellation/Characters/NPC/Skeleton/SK_Skeleton"
+      ]
+    },
+    "/Game/Constellation/Characters/NPC/Skeleton/Animation/Sleeping_Idle_Pose": {
+      "skeleton": "<Object '/Game/Constellation/Characters/NPC/Skeleton/SK_Skeleton.SK_Skeleton' (0x0000025457425A00) Class 'Skeleton'>",
+      "dependencies": [
+        "/Script/MovieScene",
+        "/Script/AnimationModifiers",
+        "/Script/ControlRig",
+        "/Script/AnimationData",
+        "/ACLPlugin/ACLAnimBoneCompressionSettings",
+        "/ACLPlugin/ACLAnimCurveCompressionSettings",
+        "/Engine/Animation/DefaultVariableFrameStrippingSettings",
+        "/Game/Constellation/Characters/NPC/Skeleton/SK_Skeleton"
+      ]
+    },
+    "/Game/Constellation/Characters/NPC/Skeleton/Skeleton_Anim": {
+      "skeleton": "<Object '/Game/Constellation/Characters/NPC/Skeleton/SK_Skeleton.SK_Skeleton' (0x0000025457425A00) Class 'Skeleton'>",
+      "dependencies": [
+        "/Script/InterchangeEngine",
+        "/Script/MovieScene",
+        "/Script/AnimationModifiers",
+        "/Script/ControlRig",
+        "/Script/AnimationData",
+        "/ACLPlugin/ACLAnimBoneCompressionSettings",
+        "/ACLPlugin/ACLAnimCurveCompressionSettings",
+        "/Engine/Animation/DefaultVariableFrameStrippingSettings",
+        "/Game/Constellation/Characters/NPC/Skeleton/SK_Skeleton"
+      ]
+    },
+    "/Game/Constellation/Characters/Heroine/Base/Animation/AM_Climbing_To_Top": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton.Player_Heroine_Skeleton' (0x000002543B616000) Class 'Skeleton'>",
+      "dependencies": [
+        "/Game/Constellation/Characters/Heroine/Base/Animation/Climbing_To_Top",
+        "/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton"
+      ]
+    },
+    "/Game/Constellation/Characters/Heroine/Base/Animation/AM_Falling": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton.Player_Heroine_Skeleton' (0x000002543B616000) Class 'Skeleton'>",
+      "dependencies": [
+        "/Game/Constellation/Characters/Heroine/Base/Animation/Falling",
+        "/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton"
+      ]
+    },
+    "/Game/Constellation/Characters/Heroine/Base/Animation/AM_Jump": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton.Player_Heroine_Skeleton' (0x000002543B616000) Class 'Skeleton'>",
+      "dependencies": [
+        "/Game/Constellation/Characters/Heroine/Base/Animation/Jump",
+        "/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton"
+      ]
+    },
+    "/Game/Constellation/Characters/Heroine/Base/Animation/AM_Look_Around": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton.Player_Heroine_Skeleton' (0x000002543B616000) Class 'Skeleton'>",
+      "dependencies": [
+        "/Game/Constellation/Characters/Heroine/Base/Animation/Look_Around",
+        "/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton"
+      ]
+    },
+    "/Game/Constellation/Characters/Heroine/Base/Animation/AM_Notice": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton.Player_Heroine_Skeleton' (0x000002543B616000) Class 'Skeleton'>",
+      "dependencies": [
+        "/Game/Constellation/Characters/Heroine/Base/Animation/Notice",
+        "/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton"
+      ]
+    },
+    "/Game/Constellation/Characters/Heroine/Base/Animation/AM_Pushing": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton.Player_Heroine_Skeleton' (0x000002543B616000) Class 'Skeleton'>",
+      "dependencies": [
+        "/Game/Constellation/Characters/Heroine/Base/Animation/Pushing",
+        "/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton"
+      ]
+    },
+    "/Game/Constellation/Characters/Heroine/Base/Animation/AM_Situps": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton.Player_Heroine_Skeleton' (0x000002543B616000) Class 'Skeleton'>",
+      "dependencies": [
+        "/Game/Constellation/Characters/Heroine/Base/Animation/Situps",
+        "/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton"
+      ]
+    },
+    "/Game/Constellation/Characters/Heroine/Base/Animation/AM_Sword_Attack_Downward": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton.Player_Heroine_Skeleton' (0x000002543B616000) Class 'Skeleton'>",
+      "dependencies": [
+        "/Game/Constellation/Characters/Heroine/Base/Animation/Sword_Attack_Downward",
+        "/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton"
+      ]
+    },
+    "/Game/Constellation/Characters/Heroine/Base/Animation/AM_Sword_Attack_Horizontal": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton.Player_Heroine_Skeleton' (0x000002543B616000) Class 'Skeleton'>",
+      "dependencies": [
+        "/Game/Constellation/Characters/Heroine/Base/Animation/Sword_Attack_Horizontal",
+        "/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton"
+      ]
+    },
+    "/Game/Constellation/Characters/Heroine/Base/Animation/AM_Sword_Attack_Stab": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton.Player_Heroine_Skeleton' (0x000002543B616000) Class 'Skeleton'>",
+      "dependencies": [
+        "/Game/Constellation/Characters/Heroine/Base/Animation/Sword_Attack_Stab",
+        "/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton"
+      ]
+    },
+    "/Game/Constellation/Characters/Heroine/Base/Animation/Climbing_To_Top": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton.Player_Heroine_Skeleton' (0x000002543B616000) Class 'Skeleton'>",
+      "dependencies": [
+        "/Script/InterchangeEngine",
+        "/Script/MovieScene",
+        "/Script/AnimationModifiers",
+        "/Script/ControlRig",
+        "/Script/AnimationData",
+        "/ACLPlugin/ACLAnimBoneCompressionSettings",
+        "/ACLPlugin/ACLAnimCurveCompressionSettings",
+        "/Engine/Animation/DefaultVariableFrameStrippingSettings",
+        "/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton"
+      ]
+    },
+    "/Game/Constellation/Characters/Heroine/Base/Animation/Falling": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton.Player_Heroine_Skeleton' (0x000002543B616000) Class 'Skeleton'>",
+      "dependencies": [
+        "/Script/InterchangeEngine",
+        "/Script/MovieScene",
+        "/Script/AnimationModifiers",
+        "/Script/ControlRig",
+        "/Script/AnimationData",
+        "/ACLPlugin/ACLAnimBoneCompressionSettings",
+        "/ACLPlugin/ACLAnimCurveCompressionSettings",
+        "/Engine/Animation/DefaultVariableFrameStrippingSettings",
+        "/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton"
+      ]
+    },
+    "/Game/Constellation/Characters/Heroine/Base/Animation/Jump": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton.Player_Heroine_Skeleton' (0x000002543B616000) Class 'Skeleton'>",
+      "dependencies": [
+        "/Script/InterchangeEngine",
+        "/Script/MovieScene",
+        "/Script/AnimationModifiers",
+        "/Script/ControlRig",
+        "/Script/AnimationData",
+        "/ACLPlugin/ACLAnimBoneCompressionSettings",
+        "/ACLPlugin/ACLAnimCurveCompressionSettings",
+        "/Engine/Animation/DefaultVariableFrameStrippingSettings",
+        "/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton"
+      ]
+    },
+    "/Game/Constellation/Characters/Heroine/Base/Animation/Look_Around": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton.Player_Heroine_Skeleton' (0x000002543B616000) Class 'Skeleton'>",
+      "dependencies": [
+        "/Script/InterchangeEngine",
+        "/Script/MovieScene",
+        "/Script/AnimationModifiers",
+        "/Script/ControlRig",
+        "/Script/AnimationData",
+        "/ACLPlugin/ACLAnimBoneCompressionSettings",
+        "/ACLPlugin/ACLAnimCurveCompressionSettings",
+        "/Engine/Animation/DefaultVariableFrameStrippingSettings",
+        "/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton"
+      ]
+    },
+    "/Game/Constellation/Characters/Heroine/Base/Animation/Notice": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton.Player_Heroine_Skeleton' (0x000002543B616000) Class 'Skeleton'>",
+      "dependencies": [
+        "/Script/InterchangeEngine",
+        "/Script/MovieScene",
+        "/Script/AnimationModifiers",
+        "/Script/ControlRig",
+        "/Script/AnimationData",
+        "/ACLPlugin/ACLAnimBoneCompressionSettings",
+        "/ACLPlugin/ACLAnimCurveCompressionSettings",
+        "/Engine/Animation/DefaultVariableFrameStrippingSettings",
+        "/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton"
+      ]
+    },
+    "/Game/Constellation/Characters/Heroine/Base/Animation/Push_Button": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton.Player_Heroine_Skeleton' (0x000002543B616000) Class 'Skeleton'>",
+      "dependencies": [
+        "/Script/InterchangeEngine",
+        "/Script/MovieScene",
+        "/Script/AnimationModifiers",
+        "/Script/ControlRig",
+        "/Script/AnimationData",
+        "/ACLPlugin/ACLAnimBoneCompressionSettings",
+        "/ACLPlugin/ACLAnimCurveCompressionSettings",
+        "/Engine/Animation/DefaultVariableFrameStrippingSettings",
+        "/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton"
+      ]
+    },
+    "/Game/Constellation/Characters/Heroine/Base/Animation/Pushing": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton.Player_Heroine_Skeleton' (0x000002543B616000) Class 'Skeleton'>",
+      "dependencies": [
+        "/Script/InterchangeEngine",
+        "/Script/MovieScene",
+        "/Script/AnimationModifiers",
+        "/Script/ControlRig",
+        "/Script/AnimationData",
+        "/ACLPlugin/ACLAnimBoneCompressionSettings",
+        "/ACLPlugin/ACLAnimCurveCompressionSettings",
+        "/Engine/Animation/DefaultVariableFrameStrippingSettings",
+        "/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton"
+      ]
+    },
+    "/Game/Constellation/Characters/Heroine/Base/Animation/Situp_Pose": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton.Player_Heroine_Skeleton' (0x000002543B616000) Class 'Skeleton'>",
+      "dependencies": [
+        "/Script/MovieScene",
+        "/Script/AnimationModifiers",
+        "/Script/ControlRig",
+        "/Script/AnimationData",
+        "/ACLPlugin/ACLAnimBoneCompressionSettings",
+        "/ACLPlugin/ACLAnimCurveCompressionSettings",
+        "/Engine/Animation/DefaultVariableFrameStrippingSettings",
+        "/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton"
+      ]
+    },
+    "/Game/Constellation/Characters/Heroine/Base/Animation/Situps": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton.Player_Heroine_Skeleton' (0x000002543B616000) Class 'Skeleton'>",
+      "dependencies": [
+        "/Script/InterchangeEngine",
+        "/Script/MovieScene",
+        "/Script/AnimationModifiers",
+        "/Script/ControlRig",
+        "/Script/AnimationData",
+        "/ACLPlugin/ACLAnimBoneCompressionSettings",
+        "/ACLPlugin/ACLAnimCurveCompressionSettings",
+        "/Engine/Animation/DefaultVariableFrameStrippingSettings",
+        "/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton"
+      ]
+    },
+    "/Game/Constellation/Characters/Heroine/Base/Animation/Sword_Attack_Downward": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton.Player_Heroine_Skeleton' (0x000002543B616000) Class 'Skeleton'>",
+      "dependencies": [
+        "/Script/InterchangeEngine",
+        "/Script/MovieScene",
+        "/Script/AnimationModifiers",
+        "/Script/ControlRig",
+        "/Script/AnimationData",
+        "/ACLPlugin/ACLAnimBoneCompressionSettings",
+        "/ACLPlugin/ACLAnimCurveCompressionSettings",
+        "/Engine/Animation/DefaultVariableFrameStrippingSettings",
+        "/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton"
+      ]
+    },
+    "/Game/Constellation/Characters/Heroine/Base/Animation/Sword_Attack_Horizontal": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton.Player_Heroine_Skeleton' (0x000002543B616000) Class 'Skeleton'>",
+      "dependencies": [
+        "/Script/InterchangeEngine",
+        "/Script/MovieScene",
+        "/Script/AnimationModifiers",
+        "/Script/ControlRig",
+        "/Script/NiagaraAnimNotifies",
+        "/Script/AnimationData",
+        "/ACLPlugin/ACLAnimBoneCompressionSettings",
+        "/ACLPlugin/ACLAnimCurveCompressionSettings",
+        "/Engine/Animation/DefaultVariableFrameStrippingSettings",
+        "/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton",
+        "/Game/Constellation/VFX/NS_SwordTrail"
+      ]
+    },
+    "/Game/Constellation/Characters/Heroine/Base/Animation/Sword_Attack_Stab": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton.Player_Heroine_Skeleton' (0x000002543B616000) Class 'Skeleton'>",
+      "dependencies": [
+        "/Script/InterchangeEngine",
+        "/Script/MovieScene",
+        "/Script/AnimationModifiers",
+        "/Script/ControlRig",
+        "/Script/AnimationData",
+        "/ACLPlugin/ACLAnimBoneCompressionSettings",
+        "/ACLPlugin/ACLAnimCurveCompressionSettings",
+        "/Engine/Animation/DefaultVariableFrameStrippingSettings",
+        "/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton"
+      ]
+    },
+    "/Game/Constellation/Characters/Heroine/Base/Animation/Sword_Jump_Attack": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton.Player_Heroine_Skeleton' (0x000002543B616000) Class 'Skeleton'>",
+      "dependencies": [
+        "/Script/InterchangeEngine",
+        "/Script/MovieScene",
+        "/Script/AnimationModifiers",
+        "/Script/ControlRig",
+        "/Script/AnimationData",
+        "/ACLPlugin/ACLAnimBoneCompressionSettings",
+        "/ACLPlugin/ACLAnimCurveCompressionSettings",
+        "/Engine/Animation/DefaultVariableFrameStrippingSettings",
+        "/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton"
+      ]
+    },
+    "/Game/Constellation/Characters/Heroine/Base/Animation/Touch": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton.Player_Heroine_Skeleton' (0x000002543B616000) Class 'Skeleton'>",
+      "dependencies": [
+        "/Script/InterchangeEngine",
+        "/Script/MovieScene",
+        "/Script/AnimationModifiers",
+        "/Script/ControlRig",
+        "/Script/AnimationData",
+        "/ACLPlugin/ACLAnimBoneCompressionSettings",
+        "/ACLPlugin/ACLAnimCurveCompressionSettings",
+        "/Engine/Animation/DefaultVariableFrameStrippingSettings",
+        "/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton"
+      ]
+    },
+    "/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Anim": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton.Player_Heroine_Skeleton' (0x000002543B616000) Class 'Skeleton'>",
+      "dependencies": [
+        "/Script/InterchangeEngine",
+        "/Script/MovieScene",
+        "/Script/AnimationModifiers",
+        "/Script/ControlRig",
+        "/Script/AnimationData",
+        "/ACLPlugin/ACLAnimBoneCompressionSettings",
+        "/ACLPlugin/ACLAnimCurveCompressionSettings",
+        "/Engine/Animation/DefaultVariableFrameStrippingSettings",
+        "/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton"
+      ]
+    },
+    "/Game/Constellation/Characters/Heroine/Refined/Animations/AM_player_heroine_new_Attack01_Horizontal": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Heroine/Refined/SKEL_player_heroine_new.SKEL_player_heroine_new' (0x000002546A826000) Class 'Skeleton'>",
+      "dependencies": [
+        "/Script/AnimGraphRuntime",
+        "/Game/Constellation/Characters/Heroine/Refined/Animations/AS_player_heroine_new_Attack01_Horizontal",
+        "/Game/Constellation/Characters/Heroine/Refined/SK_player_heroine_new_RunPreview",
+        "/Game/Constellation/Characters/Heroine/Refined/SKEL_player_heroine_new"
+      ]
+    },
+    "/Game/Constellation/Characters/Heroine/Refined/Animations/AS_player_heroine_new_Attack01_Horizontal": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Heroine/Refined/SKEL_player_heroine_new.SKEL_player_heroine_new' (0x000002546A826000) Class 'Skeleton'>",
+      "dependencies": [
+        "/Script/MovieScene",
+        "/Script/AnimationModifiers",
+        "/Script/ControlRig",
+        "/Script/AnimationData",
+        "/ACLPlugin/ACLAnimBoneCompressionSettings",
+        "/ACLPlugin/ACLAnimCurveCompressionSettings",
+        "/Engine/Animation/DefaultVariableFrameStrippingSettings",
+        "/Game/Constellation/Characters/Heroine/Refined/SK_player_heroine_new_RunPreview",
+        "/Game/Constellation/Characters/Heroine/Refined/SKEL_player_heroine_new"
+      ]
+    },
+    "/Game/Constellation/Characters/Heroine/Refined/Animations/AS_player_heroine_new_PreviewRelaxed": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Heroine/Refined/SKEL_player_heroine_new.SKEL_player_heroine_new' (0x000002546A826000) Class 'Skeleton'>",
+      "dependencies": [
+        "/Script/MovieScene",
+        "/Script/AnimationModifiers",
+        "/Script/ControlRig",
+        "/Script/AnimationData",
+        "/ACLPlugin/ACLAnimBoneCompressionSettings",
+        "/ACLPlugin/ACLAnimCurveCompressionSettings",
+        "/Engine/Animation/DefaultVariableFrameStrippingSettings",
+        "/Game/Constellation/Characters/Heroine/Refined/SKEL_player_heroine_new"
+      ]
+    },
+    "/Game/Constellation/Characters/Heroine/Refined/Animations/AS_player_heroine_new_Run_Soft": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Heroine/Refined/SKEL_player_heroine_new.SKEL_player_heroine_new' (0x000002546A826000) Class 'Skeleton'>",
+      "dependencies": [
+        "/Script/MovieScene",
+        "/Script/AnimationModifiers",
+        "/Script/ControlRig",
+        "/Script/AnimationData",
+        "/ACLPlugin/ACLAnimBoneCompressionSettings",
+        "/ACLPlugin/ACLAnimCurveCompressionSettings",
+        "/Engine/Animation/DefaultVariableFrameStrippingSettings",
+        "/Game/Constellation/Characters/Heroine/Refined/SK_player_heroine_new_RunPreview",
+        "/Game/Constellation/Characters/Heroine/Refined/SKEL_player_heroine_new"
+      ]
+    },
+    "/Game/Constellation/Characters/Heroine/Refined/Animations/AS_player_heroine_new_Walk_Timid": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Heroine/Refined/SKEL_player_heroine_new.SKEL_player_heroine_new' (0x000002546A826000) Class 'Skeleton'>",
+      "dependencies": [
+        "/Script/MovieScene",
+        "/Script/AnimationModifiers",
+        "/Script/ControlRig",
+        "/Script/AnimationData",
+        "/ACLPlugin/ACLAnimBoneCompressionSettings",
+        "/ACLPlugin/ACLAnimCurveCompressionSettings",
+        "/Engine/Animation/DefaultVariableFrameStrippingSettings",
+        "/Game/Constellation/Characters/Heroine/Refined/SK_player_heroine_new_WalkPreview",
+        "/Game/Constellation/Characters/Heroine/Refined/SKEL_player_heroine_new"
+      ]
+    },
+    "/Game/Constellation/Characters/Heroine/Refined/ReferenceFit/AS_player_heroine_new_ReferenceFit_PreviewRelaxed": {
+      "skeleton": "<Object '/Game/Constellation/Characters/Heroine/Refined/ReferenceFit/SKEL_player_heroine_new_ReferenceFit.SKEL_player_heroine_new_ReferenceFit' (0x000002546A82F000) Class 'Skeleton'>",
+      "dependencies": [
+        "/Script/MovieScene",
+        "/Script/AnimationModifiers",
+        "/Script/ControlRig",
+        "/Script/AnimationData",
+        "/ACLPlugin/ACLAnimBoneCompressionSettings",
+        "/ACLPlugin/ACLAnimCurveCompressionSettings",
+        "/Engine/Animation/DefaultVariableFrameStrippingSettings",
+        "/Game/Constellation/Characters/Heroine/Refined/ReferenceFit/SKEL_player_heroine_new_ReferenceFit"
+      ]
+    }
+  },
+  "classes": {
+    "/Game/Environment/OvergrownHall/Bird/Tripo/Meshes/SK_OH_Pigeon_Skeleton": [],
+    "/Game/Constellation/Environments/OvergrownHall/Bird/Tripo/Meshes/SK_OH_Pigeon_Skeleton": [
+      "Skeleton"
+    ],
+    "/Game/Resources/Characters/Monster/Red_Panda/SK_Red_Panda": [],
+    "/Game/Constellation/Characters/Enemies/Red_Panda/SK_Red_Panda": [
+      "Skeleton"
+    ],
+    "/Game/Resources/Characters/Monster/Slime_Normal/SK_Slime_Normal": [],
+    "/Game/Constellation/Characters/Enemies/Slime_Normal/SK_Slime_Normal": [
+      "Skeleton"
+    ],
+    "/Game/Resources/Characters/NPC/Little_Girl/SK_Little_Girl": [],
+    "/Game/Constellation/Characters/NPC/Little_Girl/SK_Little_Girl": [
+      "Skeleton"
+    ],
+    "/Game/Resources/Characters/NPC/Skeleton/SK_Skeleton": [],
+    "/Game/Constellation/Characters/NPC/Skeleton/SK_Skeleton": [
+      "Skeleton"
+    ],
+    "/Game/Resources/Characters/PC/Player_Heroine/Player_Heroine_Skeleton": [],
+    "/Game/Constellation/Characters/Heroine/Base/Player_Heroine_Skeleton": [
+      "Skeleton"
+    ],
+    "/Game/Resources/Characters/PC/player_heroine_new/ReferenceFit/SKEL_player_heroine_new_ReferenceFit": [],
+    "/Game/Constellation/Characters/Heroine/Refined/ReferenceFit/SKEL_player_heroine_new_ReferenceFit": [
+      "Skeleton"
+    ],
+    "/Game/Resources/Characters/PC/player_heroine_new/SKEL_player_heroine_new": [],
+    "/Game/Constellation/Characters/Heroine/Refined/SKEL_player_heroine_new": [
+      "Skeleton"
+    ]
+  }
+}

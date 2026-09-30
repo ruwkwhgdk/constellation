@@ -1,18 +1,19 @@
 """Verify the saved v012 level, capture it, and take a no-water diagnostic view."""
+from resource_paths import loads as load_current_json, load as load_current_json_file
 import unreal as u,json
 from pathlib import Path
-ROOT=Path(u.Paths.project_dir());OUT=ROOT/'ArtSource/OvergrownHall/TripoReplacement/v012';D='/Game/Environment/OvergrownHall/TripoFull'
-report=json.loads((OUT/'applied.json').read_text());assert report['saved']
+ROOT=Path(u.Paths.project_dir());OUT=ROOT/'ArtSource/OvergrownHall/TripoReplacement/v012';D='/Game/Constellation/Environments/OvergrownHall/TripoFull'
+report=load_current_json((OUT/'applied.json').read_text());assert report['saved']
 assert u.get_editor_subsystem(u.LevelEditorSubsystem).load_level(report['map'])
 actors={a.get_actor_label():a for a in u.get_editor_subsystem(u.EditorActorSubsystem).get_all_level_actors()}
-foliage=json.loads((OUT.parent/'v010/applied.json').read_text())
+foliage=load_current_json((OUT.parent/'v010/applied.json').read_text())
 for row in foliage['changes']:
     c=actors[row['label']].static_mesh_component
     assert c.static_mesh.get_name()=='SM_OH_Painted'+row['kind']
     assert c.get_material(0).get_name()==('M_OH_LeafFar' if row['far'] else 'M_OH_LeafNear')
-for row in json.loads((OUT.parent/'v011/applied.json').read_text())['changes']:
+for row in load_current_json((OUT.parent/'v011/applied.json').read_text())['changes']:
     assert actors[row['label']].static_mesh_component.static_mesh.get_name()==row['mesh']
-baseline=json.loads((OUT/'baseline.json').read_text())
+baseline=load_current_json((OUT/'baseline.json').read_text())
 for row in report['floor_changes']:
     a=actors[row['label']];p=a.get_actor_location();target=row['position'];assert max(abs(v-w) for v,w in zip([p.x,p.y,p.z],target))<.01
     assert 0<baseline[row['label']]['position'][2]-p.z<5
@@ -30,7 +31,7 @@ assert len([n for n in actors if n.startswith('OH_Flock_Bird_')])==28
 assert abs(actors['OH_Sun'].get_actor_rotation().yaw+55)<.01
 (OUT/'verification.json').write_text(json.dumps(dict(saved_map=True,translucent_surface=True,depth_fade=True,world_normal_ripples=True,reflection_flags=True,lowered_floor_tiles=len(report['floor_changes']),max_floor_drop_cm=max(r['drop_cm'] for r in report['floor_changes']),shore_slab_count=len(report['shore_slabs']),closed_slab_collision=True,foliage_preserved=foliage['counts'],broken_arches_preserved=3,birds=28,physical_refraction=False,playtest=False,performance_test=False),indent=2))
 u.log('SHALLOW_WATER_VERIFIED')
-script=(ROOT/'Content/Python/capture_hall_exposure.py').read_text().replace('ArtSource/OvergrownHall/Scene/v001','ArtSource/OvergrownHall/TripoReplacement/v012').replace('/Game/Environment/OvergrownHall/Scene/Maps/L_OvergrownHall_Layout',report['map']).replace('unreal_exposure_fixed.png','unreal_shallows.png')
+script=(ROOT/'Content/Python/capture_hall_exposure.py').read_text().replace('ArtSource/OvergrownHall/Scene/v001','ArtSource/OvergrownHall/TripoReplacement/v012').replace('/Game/Constellation/Environments/OvergrownHall/Scene/Maps/L_OvergrownHall_Layout',report['map']).replace('unreal_exposure_fixed.png','unreal_shallows.png')
 script=script.replace('pp=next',"water=next(a for a in actors if a.get_actor_label()=='OH_SM_OH_Blockout_21')\nu.EditorLevelLibrary.set_level_viewport_camera_info(cam.get_actor_location(),cam.get_actor_rotation())\nu.EditorLevelLibrary.pilot_level_actor(cam)\npp=next").replace("'r.ScreenPercentage 100'","'ShowFlag.ReflectionEnvironment 1'")
 script=script.replace('started=time.time(); requested=False','started=time.time(); requested=False; diagnostic=False')
 script=script.replace('global requested','global requested,diagnostic')

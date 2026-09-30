@@ -1,0 +1,17 @@
+Create a production modular asset concept sheet based on the supplied isolated Korean subway entrance illustration. Match its warm hand-painted anime background art, silver metal, gray granite, clear glass, off-white small rectangular wall tiles and yellow tactile tiles. Plain warm-gray background. NO city, vegetation, people, road or surrounding scenery.
+Layout: clean FOUR columns by FOUR rows grid, thirteen individually framed object panels, in reading order E01 through E13, with the last three cells empty plain gray. Put only a large clean ID label in the top-left of each occupied panel. Each object must be visually isolated as an individual modular part, with consistent three-quarter views and ample empty space. This is an art-direction sheet, not a scale drawing. No dimensions. Do not draw a whole station in every cell.
+The EXACT sequence:
+E01: a long shallow rectangular canopy roof shell with rounded silver metal fascia corners, viewed so shell thickness and top edge are clear; omit columns and signs.
+E02: one cream metal soffit ceiling cassette with narrow dark panel seams, viewed from below.
+E03: one tall square brushed-metal clad support column and its small stone base, without roof.
+E04: a short low gray granite parapet wall segment with a continuous stone coping on top, no glass.
+E05: one transparent glass balustrade panel supported in a thin silver frame, no granite wall.
+E06: a wide three-riser gray granite entrance stair module with its upper landing, shown as one coherent standalone module; no yellow tactile strip.
+E07: one thin yellow tactile paving strip made from a few rectangular panels with raised dots.
+E08: a short straight gray stair flight for descending into the entrance; show stairs alone, no surrounding walls.
+E09: a low rectangular interior wall panel with neatly aligned off-white small rectangular tiles and muted gray grout; no stairs or railings.
+E10: one sloping thin metal double handrail with wall brackets and clearly joined rounded ends; no wall.
+E11: one opaque tall rounded-corner brushed metal safety side panel with its tubular edge, like the right side of the entrance; NOT a glass panel.
+E12: a long flat dark charcoal fascia sign panel, with Korean 사당, English Sadang, green and blue circular line markers, yellow exit number 1, all flat and attached to the panel.
+E13: an isolated small group of wall-mounted station wayfinding props: blue accessibility/map box, small timetable board, small CCTV notice and rectangular column light fitting. This final cell can contain a grouped set; all other cells show only their specified module.
+Preserve crisp buildable silhouettes and soft painted surfaces. Do not fuse neighboring panels together. Avoid photographic grain, exaggerated shiny chrome, heavy damage, melted geometry, invented ornamental parts, duplicate IDs or duplicate asset types. No title or captions beyond E01 through E13.

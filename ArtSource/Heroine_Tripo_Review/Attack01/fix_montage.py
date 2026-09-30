@@ -1,6 +1,6 @@
 import unreal,json,hashlib
 from pathlib import Path
-P=Path(__file__).resolve().parent;B='/Game/Resources/Characters/PC/player_heroine_new';A=B+'/Animations'
+P=Path(__file__).resolve().parent;B='/Game/Constellation/Characters/Heroine/Refined';A=B+'/Animations'
 a=unreal.load_asset(A+'/AS_player_heroine_new_Attack01_Horizontal');mesh=unreal.load_asset(B+'/SK_player_heroine_new_RunPreview')
 mn='AM_player_heroine_new_Attack01_Horizontal';old=unreal.load_asset(A+'/'+mn)
 assert abs(a.sequence_length-1)<.001

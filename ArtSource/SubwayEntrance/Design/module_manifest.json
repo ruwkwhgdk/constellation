@@ -1,0 +1,197 @@
+{
+  "version": "v001",
+  "stage": "placed_in_unreal_pending_user_playtest",
+  "generation": "built-in image_gen",
+  "scope": "지하철역 입구만",
+  "exterior_map": "/Game/Levels/L_StartIsland",
+  "interior_map": "/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_PlayScale2",
+  "connection": "후속 레벨 이동; 물리 접합 없음",
+  "excluded": [
+    "도시 배경",
+    "차량",
+    "수목",
+    "고가도로",
+    "도로",
+    "인물",
+    "이번 단계의 이동 로직"
+  ],
+  "budget_note": "삼각형 수는 모듈별 잠정 상한이며 실제 측정값·조립체 합계·성능 보증이 아니다. 블록아웃/근접 검토에서 조정한다.",
+  "modules": [
+    {
+      "id": "E01",
+      "name": "차양 지붕·금속 테두리",
+      "route": "Blender 정밀 제작 / Tripo는 표면 후보에 한정",
+      "variants": [
+        "직선 구간",
+        "둥근 모서리",
+        "끝막음"
+      ],
+      "review_note": "E02와 중복 면 제거; 윗면과 뒤쪽은 추정 검토",
+      "provisional_triangle_ceiling_per_module": 6000,
+      "dimensions_status": "블록아웃에서 결정",
+      "approval": "accepted"
+    },
+    {
+      "id": "E02",
+      "name": "천장 패널",
+      "route": "Blender 반복 모듈",
+      "variants": [
+        "기본 패널",
+        "가장자리 패널"
+      ],
+      "review_note": "지붕 아래 열린 틈과 반복 이음새 검사",
+      "provisional_triangle_ceiling_per_module": 1000,
+      "dimensions_status": "블록아웃에서 결정",
+      "approval": "accepted"
+    },
+    {
+      "id": "E03",
+      "name": "금속 기둥·기단",
+      "route": "Blender 규격 제작 + 표면 보정",
+      "variants": [
+        "기둥",
+        "기단"
+      ],
+      "review_note": "높이·폭은 블록아웃에서 확정",
+      "provisional_triangle_ceiling_per_module": 3000,
+      "dimensions_status": "블록아웃에서 결정",
+      "approval": "accepted"
+    },
+    {
+      "id": "E04",
+      "name": "석재 하부 벽·두겁",
+      "route": "Blender 규격; Tripo 석재 외형 후보 보정 가능",
+      "variants": [
+        "직선 벽",
+        "코너",
+        "두겁"
+      ],
+      "review_note": "두겁과 유리 프레임 접합; 작은 노멀 노이즈 억제",
+      "provisional_triangle_ceiling_per_module": 4000,
+      "dimensions_status": "블록아웃에서 결정",
+      "approval": "accepted"
+    },
+    {
+      "id": "E05",
+      "name": "유리 난간 패널",
+      "route": "Blender 프레임 + Unreal 유리 재질",
+      "variants": [
+        "기본 패널",
+        "끝 기둥"
+      ],
+      "review_note": "기하 투명도·두께·반대편 가독성 검사",
+      "provisional_triangle_ceiling_per_module": 2000,
+      "dimensions_status": "블록아웃에서 결정",
+      "approval": "accepted"
+    },
+    {
+      "id": "E06",
+      "name": "외부 진입 계단·참",
+      "route": "Blender 치수 제작",
+      "variants": [
+        "3단 후보",
+        "상부 참"
+      ],
+      "review_note": "사진 실측값이 아닌 후보; 캐릭터와 단 높이 확인",
+      "provisional_triangle_ceiling_per_module": 4000,
+      "dimensions_status": "블록아웃에서 결정",
+      "approval": "accepted"
+    },
+    {
+      "id": "E07",
+      "name": "점자블록",
+      "route": "기존 키트 검토 후 Blender 규격 파생",
+      "variants": [
+        "점형 패널",
+        "끝 패널"
+      ],
+      "review_note": "실제 규격·돌기 크기 검토; 기존2배 기하 그대로 사용 금지",
+      "provisional_triangle_ceiling_per_module": 4000,
+      "dimensions_status": "블록아웃에서 결정",
+      "approval": "accepted"
+    },
+    {
+      "id": "E08",
+      "name": "입구용 하강 계단",
+      "route": "Blender 치수 제작 / 기존 키트 재사용 검토",
+      "variants": [
+        "짧은 하강부"
+      ],
+      "review_note": "기존 지하 레벨과 물리 접합하지 않음; 최종 단수 미확정",
+      "provisional_triangle_ceiling_per_module": 6000,
+      "dimensions_status": "블록아웃에서 결정",
+      "approval": "accepted"
+    },
+    {
+      "id": "E09",
+      "name": "하강부 타일 벽·안쪽 천장",
+      "route": "기존 타일 자산 검토 + Blender 파생",
+      "variants": [
+        "벽",
+        "코너",
+        "안쪽 천장"
+      ],
+      "review_note": "통일된 타일 피치; 숨은 하부/뒷면 확정 필요",
+      "provisional_triangle_ceiling_per_module": 4000,
+      "dimensions_status": "블록아웃에서 결정",
+      "approval": "accepted"
+    },
+    {
+      "id": "E10",
+      "name": "하강 난간·브래킷·끝단",
+      "route": "기존 난간 검토 + Blender 곡선 보정",
+      "variants": [
+        "경사",
+        "수평",
+        "끝단",
+        "벽 브래킷"
+      ],
+      "review_note": "시트는 한 줄 표현; 실제 단수/높이/접선은 사진 기준 검토",
+      "provisional_triangle_ceiling_per_module": 4000,
+      "dimensions_status": "블록아웃에서 결정",
+      "approval": "accepted"
+    },
+    {
+      "id": "E11",
+      "name": "금속 측판·외측 안전 난간",
+      "route": "Blender 정밀 제작",
+      "variants": [
+        "불투명 측판",
+        "관형 외측 난간"
+      ],
+      "review_note": "외측 관형 난간은 사진에 있으나 시트에 미표시",
+      "provisional_triangle_ceiling_per_module": 4000,
+      "dimensions_status": "블록아웃에서 결정",
+      "approval": "accepted"
+    },
+    {
+      "id": "E12",
+      "name": "역명·노선·출구 표지",
+      "route": "Blender 평면 패널 + 별도 텍스처",
+      "variants": [
+        "앞 표지",
+        "측면 표지",
+        "접근성 표지"
+      ],
+      "review_note": "사당/1번은 임시 기준; 작은 글자 오자 수정",
+      "provisional_triangle_ceiling_per_module": 1000,
+      "dimensions_status": "블록아웃에서 결정",
+      "approval": "accepted"
+    },
+    {
+      "id": "E13",
+      "name": "안내판·부착 소품",
+      "route": "형태별 Blender / 필요한 경우 Tripo 후보 보정",
+      "variants": [
+        "지도·접근성 박스",
+        "시간표·CCTV판",
+        "기둥 등기구",
+        "외벽 하부 수평 금속 부착물"
+      ],
+      "review_note": "후자의 기능 미확정, 외관만 사진에서 참고; 일부 시트에 생략",
+      "provisional_triangle_ceiling_per_module": 6000,
+      "dimensions_status": "블록아웃에서 결정",
+      "approval": "accepted"
+    }
+  ]
+}

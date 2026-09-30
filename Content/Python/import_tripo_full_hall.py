@@ -1,12 +1,13 @@
 """Import the complete Tripo kit and replace old visible geometry in a dedicated level."""
+from resource_paths import loads as load_current_json, load as load_current_json_file
 import unreal as u,json,runpy
 from pathlib import Path
 ROOT=Path(u.Paths.project_dir());SRC=ROOT/'ArtSource/OvergrownHall/TripoReplacement/v002'
-D='/Game/Environment/OvergrownHall/TripoFull';MAP=D+'/Maps/L_OvergrownHall_TripoFull'
+D='/Game/Constellation/Environments/OvergrownHall/TripoFull';MAP='/Game/Constellation/Worlds/OvergrownHall/Maps/L_OvergrownHall_TripoFull'
 E=u.EditorAssetLibrary;AT=u.AssetToolsHelpers.get_asset_tools();ML=u.MaterialEditingLibrary
 A=u.get_editor_subsystem(u.EditorActorSubsystem);L=u.get_editor_subsystem(u.LevelEditorSubsystem);SM=u.get_editor_subsystem(u.StaticMeshEditorSubsystem)
 u.SystemLibrary.execute_console_command(u.get_editor_subsystem(u.UnrealEditorSubsystem).get_editor_world(),'Interchange.FeatureFlags.Import.FBX 0')
-manifest=json.loads((SRC/'kit_manifest.json').read_text());meshes={};dimensions={};material_paths=[]
+manifest=load_current_json((SRC/'kit_manifest.json').read_text());meshes={};dimensions={};material_paths=[]
 for row in manifest:
     id=row['id'];folder=SRC/(id+'_'+row['name']);name=row['mesh']
     opts=u.FbxImportUI();opts.automated_import_should_detect_type=False;opts.import_mesh=True;opts.import_as_skeletal=False;opts.import_materials=False;opts.import_textures=False;opts.mesh_type_to_import=u.FBXImportType.FBXIT_STATIC_MESH
@@ -36,15 +37,15 @@ for row in manifest:
     elif id not in ['16','17','18']:
         mesh.get_editor_property('body_setup').set_editor_property('collision_trace_flag',u.CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE)
     E.save_loaded_asset(mesh,only_if_is_dirty=False);meshes[id]=mesh;dimensions[id]=row['dimensions_m']
-meshes['02']=E.load_asset('/Game/Environment/OvergrownHall/TripoReplacement/Meshes/SM_OH_Tripo_Pillar');dimensions['02']=[.65,.65,3]
-if not E.does_asset_exist(MAP):assert E.duplicate_asset('/Game/Environment/OvergrownHall/TripoReplacement/Maps/L_OvergrownHall_TripoReview',MAP)
+meshes['02']=E.load_asset('/Game/Constellation/Environments/OvergrownHall/TripoReplacement/Meshes/SM_OH_Tripo_Pillar');dimensions['02']=[.65,.65,3]
+if not E.does_asset_exist(MAP):assert E.duplicate_asset('/Game/Constellation/Environments/OvergrownHall/TripoReplacement/Maps/L_OvergrownHall_TripoReview',MAP)
 assert L.load_level(MAP)
 removed=[]
 for a in A.get_all_level_actors():
     label=a.get_actor_label()
     if (label.startswith('OH_SM_OH_Blockout_') and not label.endswith('_21')) or label.startswith(('OH_Tripo_Pillar_','OH_FULL_')):
         removed.append(label);A.destroy_actor(a)
-placements=json.loads((SRC/'placements.json').read_text());counts={}
+placements=load_current_json((SRC/'placements.json').read_text());counts={}
 for i,r in enumerate(placements):
     id=r['id'];a=A.spawn_actor_from_class(u.StaticMeshActor,u.Vector(*r['position']),u.Rotator(pitch=r['pitch'],yaw=r['yaw'],roll=r['roll']))
     a.set_actor_label('OH_FULL_'+id+'_%04d'%i);a.static_mesh_component.set_static_mesh(meshes[id])

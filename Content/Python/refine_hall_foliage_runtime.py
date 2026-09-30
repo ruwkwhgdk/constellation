@@ -1,8 +1,9 @@
 """v014: preserve approved near shapes, add foliage LODs and restrained leaf-only wind."""
+from resource_paths import loads as load_current_json, load as load_current_json_file
 import unreal as u,json,runpy
 from pathlib import Path
 ROOT=Path(u.Paths.project_dir());OUT=ROOT/'ArtSource/OvergrownHall/TripoReplacement/v014';OUT.mkdir(exist_ok=True)
-D='/Game/Environment/OvergrownHall/TripoFull';MAP=D+'/Maps/L_OvergrownHall_TripoFull'
+D='/Game/Constellation/Environments/OvergrownHall/TripoFull';MAP='/Game/Constellation/Worlds/OvergrownHall/Maps/L_OvergrownHall_TripoFull'
 E=u.EditorAssetLibrary;ML=u.MaterialEditingLibrary;SM=u.get_editor_subsystem(u.StaticMeshEditorSubsystem);L=u.get_editor_subsystem(u.LevelEditorSubsystem);A=u.get_editor_subsystem(u.EditorActorSubsystem)
 assert L.load_level(MAP)
 actors={a.get_actor_label():a for a in A.get_all_level_actors()}
@@ -15,7 +16,7 @@ if not basepath.exists():
         if not c.static_mesh or c.static_mesh.get_name() not in ['SM_OH_PaintedTree','SM_OH_PaintedShrub','SM_OH_PaintedCrown','SM_OH_Soft_18_Vine']:continue
         p=a.get_actor_location();snapshot[n]=dict(mesh=c.static_mesh.get_path_name(),shadow=c.get_editor_property('cast_shadow'),material=c.get_material(0).get_path_name(),position=[p.x,p.y,p.z])
     basepath.write_text(json.dumps(snapshot,indent=2))
-base=json.loads(basepath.read_text());source=(ROOT/'Content/Python/apply_hall_growth_water.py').read_text();exec(source[source.index('class Graph:'):source.index('\nmoss_keys=')])
+base=load_current_json(basepath.read_text());source=(ROOT/'Content/Python/apply_hall_growth_water.py').read_text();exec(source[source.index('class Graph:'):source.index('\nmoss_keys=')])
 wind={}
 for far in [False,True]:
     suffix='Far' if far else 'Near';src=D+'/FoliagePaint/M_OH_Leaf'+suffix;dst=D+'/FoliageRuntime/M_OH_LeafWind'+suffix

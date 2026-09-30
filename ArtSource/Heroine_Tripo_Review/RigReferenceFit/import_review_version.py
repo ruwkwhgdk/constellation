@@ -1,7 +1,7 @@
 import unreal,json
 from pathlib import Path
 P=Path(__file__).resolve().parent
-OLD='/Game/Resources/Characters/PC/player_heroine_new';B=OLD+'/ReferenceFit';N='player_heroine_new_ReferenceFit'
+OLD='/Game/Constellation/Characters/Heroine/Refined';B=OLD+'/ReferenceFit';N='player_heroine_new_ReferenceFit'
 asset=unreal.EditorAssetLibrary;at=unreal.AssetToolsHelpers.get_asset_tools()
 source_mesh=unreal.load_asset(OLD+'/SK_player_heroine_new');materials={str(s.material_slot_name):s.material_interface for s in source_mesh.materials}
 def imp(file,path,name,opt):

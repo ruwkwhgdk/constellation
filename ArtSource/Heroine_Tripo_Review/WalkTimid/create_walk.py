@@ -150,5 +150,5 @@ for layer in action.layers:
     for k in fc.keyframe_points:k.interpolation='LINEAR'
 sc.frame_set(1)
 bpy.ops.wm.save_as_mainfile(filepath=str(P/'Heroine_Walk_Timid.blend'))
-(P/'motion_design.json').write_text(json.dumps({'duration_s':duration,'fps':30,'frames':[1,41],'stride_m':stride,'speed_cm_s':speed*100,'stance_fraction':stance,'reference_asset':'/Game/Resources/Characters/CommonAnimation/Walk','foot_samples':feet_report},indent=2))
+(P/'motion_design.json').write_text(json.dumps({'duration_s':duration,'fps':30,'frames':[1,41],'stride_m':stride,'speed_cm_s':speed*100,'stance_fraction':stance,'reference_asset':'/Game/Constellation/Characters/Shared/Animations/Walk','foot_samples':feet_report},indent=2))
 print('TIMID_WALK_CREATED',speed)

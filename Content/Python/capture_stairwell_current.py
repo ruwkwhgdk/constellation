@@ -1,12 +1,13 @@
 """Read-only retained-map audit and best-effort screenshot; never rebuilds the map."""
+from resource_paths import loads as load_current_json, load as load_current_json_file
 import unreal as u, json, time
 from pathlib import Path
 ROOT=Path(u.Paths.project_dir()); OUT=ROOT/'ArtSource/Stairwell_Modular/Scene/v002'
 E=u.EditorAssetLibrary; A=u.get_editor_subsystem(u.EditorActorSubsystem); L=u.get_editor_subsystem(u.LevelEditorSubsystem)
-R=u.AssetRegistryHelpers.get_asset_registry(); R.scan_paths_synchronous(['/Game/Environment/StairwellModular','/Game/Blueprints/Character/PC/CameraBackups'],True)
-audit=json.loads((ROOT/'ArtSource/Stairwell_Modular/Workflow/asset_cleanup.json').read_text())
+R=u.AssetRegistryHelpers.get_asset_registry(); R.scan_paths_synchronous(['/Game/Constellation/Environments/Stairwell','/Game/Constellation/Characters/Heroine/Blueprints/CameraBackups'],True)
+audit=load_current_json((ROOT/'ArtSource/Stairwell_Modular/Workflow/asset_cleanup.json').read_text())
 for p in audit['deleted']: assert not E.does_asset_exist(p),p
-maps=['/Game/Environment/StairwellModular/ReviewKit/Maps/L_Stairwell_KitReview','/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_Reference','/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_PlayScale2']
+maps=['/Game/Constellation/Review/Stairwell/Maps/L_Stairwell_KitReview','/Game/Constellation/Review/Stairwell/Maps/L_Stairwell_Reference','/Game/Constellation/Worlds/Stairwell/Maps/L_Stairwell_PlayScale2']
 report=dict(status='pass',deleted_packages_absent=True,maps=[],playtest='not_run')
 for path in maps:
     assert L.load_level(path),path

@@ -1,6 +1,6 @@
 import unreal,json
 from pathlib import Path
-P=Path(__file__).resolve().parent;B='/Game/Resources/Characters/PC/player_heroine_new'
+P=Path(__file__).resolve().parent;B='/Game/Constellation/Characters/Heroine/Refined'
 registry=unreal.AssetRegistryHelpers.get_asset_registry();registry.search_all_assets(True)
 options=unreal.AssetRegistryDependencyOptions(include_soft_package_references=True,include_hard_package_references=True,include_searchable_names=True,include_soft_management_references=True,include_hard_management_references=True)
 names=['Natural','Retarget','Polish']

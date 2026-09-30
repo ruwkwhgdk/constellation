@@ -1,0 +1,123 @@
+{
+  "assets": [
+    {
+      "name": "SM_SE_E01",
+      "bounds_cm": [
+        570.0,
+        1010.0000305175781,
+        28.0
+      ],
+      "collision_hulls": 1
+    },
+    {
+      "name": "SM_SE_E02",
+      "bounds_cm": [
+        557.0,
+        1004.9999389648438,
+        2.79998779296875
+      ],
+      "collision_hulls": 32
+    },
+    {
+      "name": "SM_SE_E03",
+      "bounds_cm": [
+        490.0,
+        831.0,
+        380.0
+      ],
+      "collision_hulls": 12
+    },
+    {
+      "name": "SM_SE_E04",
+      "bounds_cm": [
+        491.99998474121094,
+        860.0000305175781,
+        122.49999237060547
+      ],
+      "collision_hulls": 4
+    },
+    {
+      "name": "SM_SE_E05",
+      "bounds_cm": [
+        457.0000305175781,
+        860.0000305175781,
+        77.0
+      ],
+      "collision_hulls": 26
+    },
+    {
+      "name": "SM_SE_E06",
+      "bounds_cm": [
+        500.0,
+        210.0,
+        47.999996185302734
+      ],
+      "collision_hulls": 4
+    },
+    {
+      "name": "SM_SE_E07",
+      "bounds_cm": [
+        419.9999694824219,
+        30.0,
+        3.1299972534179688
+      ],
+      "collision_hulls": 0
+    },
+    {
+      "name": "SM_SE_E08",
+      "bounds_cm": [
+        419.9999694824219,
+        719.9999694824219,
+        309.20000076293945
+      ],
+      "collision_hulls": 2
+    },
+    {
+      "name": "SM_SE_E09",
+      "bounds_cm": [
+        476.0000305175781,
+        760.0,
+        527.0000305175781
+      ],
+      "collision_hulls": 4
+    },
+    {
+      "name": "SM_SE_E10",
+      "bounds_cm": [
+        424.00001525878906,
+        625.0001525878906,
+        318.80006408691406
+      ],
+      "collision_hulls": 0
+    },
+    {
+      "name": "SM_SE_E11",
+      "bounds_cm": [
+        51.399993896484375,
+        192.4000244140625,
+        172.0
+      ],
+      "collision_hulls": 4
+    },
+    {
+      "name": "SM_SE_E12",
+      "bounds_cm": [
+        535.2000122070312,
+        461.0999755859375,
+        26.0
+      ],
+      "collision_hulls": 0
+    },
+    {
+      "name": "SM_SE_E13",
+      "bounds_cm": [
+        510.79998779296875,
+        815.0,
+        300.0
+      ],
+      "collision_hulls": 0
+    }
+  ],
+  "island_collision": "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>",
+  "maps_changed": false
+}

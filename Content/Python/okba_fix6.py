@@ -24,6 +24,7 @@ fix5 에서 밝혀진 것
 (0,0,0) 이니, 건물을 다른 자리로 옮기려면 끝난 뒤 아웃라이너에서
 OldKoreanBuildingA 폴더를 통째로 선택해 옮기면 된다.
 """
+from resource_paths import loads as load_current_json, load as load_current_json_file
 import json
 import os
 import traceback
@@ -32,7 +33,7 @@ import unreal
 SRC = r"C:\Users\User\Documents\UnrealProjects\Constellation\ArtSource\OldKoreanBuildingA"
 FBX_DIR = os.path.join(SRC, "fbx")
 MANIFEST = os.path.join(SRC, "placements.json")
-DEST = "/Game/Environment/OldKoreanBuildingA"
+DEST = "/Game/Constellation/Environments/KoreanBuildings/BuildingA"
 MESH_DIR = DEST + "/Meshes"
 MAT_DIR = DEST + "/Materials"
 PROBE_DIR = DEST + "/_scale_probe"
@@ -338,7 +339,7 @@ def rebuild_actors():
         P("[FIX6]   manifest not found: %s" % MANIFEST)
         return
     with open(MANIFEST) as fh:
-        placements = json.load(fh)["placements"]
+        placements = load_current_json_file(fh)["placements"]
     eas = unreal.get_editor_subsystem(unreal.EditorActorSubsystem)
     spawned = missing = 0
     for p in placements:

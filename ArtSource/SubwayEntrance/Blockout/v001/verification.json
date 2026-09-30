@@ -1,0 +1,13 @@
+{
+  "object_count": 142,
+  "finite_dimensions": true,
+  "clear_width_between_rails": 4.0,
+  "headroom_upper_landing": 3.3,
+  "rendered": [
+    "exterior",
+    "rear",
+    "section"
+  ],
+  "unreal_imported": false,
+  "collision_runtime_verified": false
+}

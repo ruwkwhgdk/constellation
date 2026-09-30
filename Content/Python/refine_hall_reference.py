@@ -1,16 +1,17 @@
 """v009 staged reference pass: forest, then light/water/weathering/framing/flock."""
+from resource_paths import loads as load_current_json, load as load_current_json_file
 import unreal as u,json,math,random,runpy
 from pathlib import Path
 ROOT=Path(u.Paths.project_dir());OUT=ROOT/'ArtSource/OvergrownHall/TripoReplacement/v009'
-D='/Game/Environment/OvergrownHall/TripoFull';MAP=D+'/Maps/L_OvergrownHall_TripoFull';STAGE=globals().get('STAGE',1)
-if STAGE==1 and (OUT/'applied.json').exists() and json.loads((OUT/'applied.json').read_text()).get('stage')==2:
+D='/Game/Constellation/Environments/OvergrownHall/TripoFull';MAP='/Game/Constellation/Worlds/OvergrownHall/Maps/L_OvergrownHall_TripoFull';STAGE=globals().get('STAGE',1)
+if STAGE==1 and (OUT/'applied.json').exists() and load_current_json((OUT/'applied.json').read_text()).get('stage')==2:
     raise RuntimeError('This level is already at stage 2. Reapply with finish_hall_reference.py, not the forest-only entry point.')
 E=u.EditorAssetLibrary;AT=u.AssetToolsHelpers.get_asset_tools();ML=u.MaterialEditingLibrary
 A=u.get_editor_subsystem(u.EditorActorSubsystem);L=u.get_editor_subsystem(u.LevelEditorSubsystem)
 assert L.load_level(MAP)
 u.SystemLibrary.execute_console_command(u.get_editor_subsystem(u.UnrealEditorSubsystem).get_editor_world(),'Interchange.FeatureFlags.Import.FBX 0')
 meshes={}
-for row in json.loads((OUT/'assets.json').read_text()):
+for row in load_current_json((OUT/'assets.json').read_text()):
     path=D+'/Meshes/'+row['mesh']
     if not E.does_asset_exist(path) or row['kind']=='water':
         opts=u.FbxImportUI();opts.automated_import_should_detect_type=False;opts.import_mesh=True;opts.import_as_skeletal=False;opts.import_materials=False;opts.import_textures=False;opts.mesh_type_to_import=u.FBXImportType.FBXIT_STATIC_MESH
@@ -27,7 +28,7 @@ if not baseline.exists():
         if n.startswith(('OH_FULL_','OH_STRUCTURE_','OH_Tripo_Tree_')):
             p=a.get_actor_location();s=a.get_actor_scale3d();r=a.get_actor_rotation();data[n]=dict(position=[p.x,p.y,p.z],scale=[s.x,s.y,s.z],rotation=[r.pitch,r.yaw,r.roll],mesh=a.static_mesh_component.static_mesh.get_path_name())
     baseline.write_text(json.dumps(data,indent=2))
-base=json.loads(baseline.read_text())
+base=load_current_json(baseline.read_text())
 for n,a in list(actors.items()):
     if n.startswith('OH_Refine_'):A.destroy_actor(a)
 source=(ROOT/'Content/Python/apply_hall_growth_water.py').read_text();exec(source[source.index('class Graph:'):source.index('\nmoss_keys=')])
@@ -35,7 +36,7 @@ def material(name):
     dest=D+'/ReferenceMaterials';m=E.load_asset(dest+'/'+name) if E.does_asset_exist(dest+'/'+name) else AT.create_asset(name,dest,u.Material,u.MaterialFactoryNew());m.modify();ML.delete_all_material_expressions(m);return m
 def pigment(name,low,high,emission):
     m=material(name);m.set_editor_property('two_sided',True);g=Graph(m)
-    t=g.n(u.MaterialExpressionTextureSample);t.texture=E.load_asset('/Game/Environment/OvergrownHall/TripoReplacement/Textures/T_Tree_basecolor');t.sampler_type=u.MaterialSamplerType.SAMPLERTYPE_COLOR
+    t=g.n(u.MaterialExpressionTextureSample);t.texture=E.load_asset('/Game/Constellation/Environments/OvergrownHall/TripoReplacement/Textures/T_Tree_basecolor');t.sampler_type=u.MaterialSamplerType.SAMPLERTYPE_COLOR
     t.set_editor_property('mip_value_mode',u.TextureMipValueMode.TMVM_MIP_BIAS);t.set_editor_property('const_mip_value',3)
     gray=g.n(u.MaterialExpressionDesaturation);g.wire(t,gray);g.wire(g.c(1),gray,'Fraction')
     c=g.lerp(g.color(low),g.color(high),g.clamp(g.add(g.c(.18),g.mul(gray,g.c(.9)))))

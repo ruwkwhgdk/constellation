@@ -1,0 +1,168 @@
+{
+  "packages": 3508,
+  "moved": 1786,
+  "missing": [],
+  "class_changes": [],
+  "dependency_changes": [
+    {
+      "old": "/Game/Blueprints/Actor/AbandonedSchool/BP_School_Door",
+      "new": "/Game/Constellation/Environments/School/Blueprints/BP_School_Door",
+      "lost": [
+        "/Game/Constellation/Gameplay/Sequences/Components/Ac_SequencePlayer"
+      ],
+      "added": [],
+      "lost_classification": {
+        "/Game/Constellation/Gameplay/Sequences/Components/Ac_SequencePlayer": "still_reachable_via_dependencies"
+      }
+    },
+    {
+      "old": "/Game/Blueprints/Actor/Common/BP_Kiosk_Reset",
+      "new": "/Game/Constellation/Gameplay/Interaction/Actors/BP_Kiosk_Reset",
+      "lost": [
+        "/Game/Constellation/Gameplay/Sequences/Components/Ac_SequencePlayer"
+      ],
+      "added": [],
+      "lost_classification": {
+        "/Game/Constellation/Gameplay/Sequences/Components/Ac_SequencePlayer": "still_reachable_via_dependencies"
+      }
+    },
+    {
+      "old": "/Game/Blueprints/Actor/StartIsland/BP_Apartment_Dummy",
+      "new": "/Game/Constellation/Environments/StartIsland/Blueprints/BP_Apartment_Dummy",
+      "lost": [
+        "/Game/Resources/Environments/Props/StartIsland/Apartment/RoofCrown/SM_Bld_RoofCrown_A",
+        "/Game/Resources/Environments/Props/StartIsland/Apartment/WaterTank/SM_Bld_WaterTank",
+        "/Game/Resources/Environments/Props/StartIsland/Apartment/WaterTank/SM_Bld_WaterTank_Ladder",
+        "/Game/Resources/Environments/Props/StartIsland/Apartment/Window/SM_Bld_WinModule_A"
+      ],
+      "added": [],
+      "lost_classification": {
+        "/Game/Resources/Environments/Props/StartIsland/Apartment/RoofCrown/SM_Bld_RoofCrown_A": "already_missing_before_move",
+        "/Game/Resources/Environments/Props/StartIsland/Apartment/WaterTank/SM_Bld_WaterTank": "already_missing_before_move",
+        "/Game/Resources/Environments/Props/StartIsland/Apartment/WaterTank/SM_Bld_WaterTank_Ladder": "already_missing_before_move",
+        "/Game/Resources/Environments/Props/StartIsland/Apartment/Window/SM_Bld_WinModule_A": "already_missing_before_move"
+      }
+    },
+    {
+      "old": "/Game/Blueprints/Character/Monster/BP_Monster_RedPanda",
+      "new": "/Game/Constellation/Characters/Enemies/Blueprints/BP_Monster_RedPanda",
+      "lost": [
+        "/Game/Constellation/Gameplay/Combat/Components/Ac_Stats",
+        "/Script/UMG"
+      ],
+      "added": [],
+      "lost_classification": {
+        "/Game/Constellation/Gameplay/Combat/Components/Ac_Stats": "still_reachable_via_dependencies",
+        "/Script/UMG": "already_missing_before_move"
+      }
+    },
+    {
+      "old": "/Game/Blueprints/Character/NPC/BP_NPC_Little_Girl",
+      "new": "/Game/Constellation/Characters/NPC/Blueprints/BP_NPC_Little_Girl",
+      "lost": [
+        "/Game/Constellation/Gameplay/Combat/Components/Ac_Stats"
+      ],
+      "added": [],
+      "lost_classification": {
+        "/Game/Constellation/Gameplay/Combat/Components/Ac_Stats": "still_reachable_via_dependencies"
+      }
+    },
+    {
+      "old": "/Game/Blueprints/Character/NPC/BP_NPC_Player_Heroine",
+      "new": "/Game/Constellation/Characters/NPC/Blueprints/BP_NPC_Player_Heroine",
+      "lost": [
+        "/Game/Constellation/Gameplay/Combat/Components/Ac_Stats"
+      ],
+      "added": [],
+      "lost_classification": {
+        "/Game/Constellation/Gameplay/Combat/Components/Ac_Stats": "still_reachable_via_dependencies"
+      }
+    },
+    {
+      "old": "/Game/Blueprints/Character/NPC/BP_NPC_Slime",
+      "new": "/Game/Constellation/Characters/NPC/Blueprints/BP_NPC_Slime",
+      "lost": [
+        "/Game/Constellation/Gameplay/Combat/Components/Ac_Stats"
+      ],
+      "added": [],
+      "lost_classification": {
+        "/Game/Constellation/Gameplay/Combat/Components/Ac_Stats": "still_reachable_via_dependencies"
+      }
+    },
+    {
+      "old": "/Game/Blueprints/System/BP_Interactable_CheckPosition",
+      "new": "/Game/Constellation/Gameplay/Interaction/BP_Interactable_CheckPosition",
+      "lost": [
+        "/Game/Blueprints/System/BP_Interactable_CheckPosition_df",
+        "/Game/Constellation/Gameplay/Sequences/Components/Ac_SequencePlayer"
+      ],
+      "added": [],
+      "lost_classification": {
+        "/Game/Blueprints/System/BP_Interactable_CheckPosition_df": "already_missing_before_move",
+        "/Game/Constellation/Gameplay/Sequences/Components/Ac_SequencePlayer": "still_reachable_via_dependencies"
+      }
+    },
+    {
+      "old": "/Game/Levels/L_Test",
+      "new": "/Game/Constellation/Review/General/Maps/L_Test",
+      "lost": [
+        "/Game/Resources/Environments/Props/StartIsland/Apartment/RoofCrown/SM_Bld_RoofCrown_A",
+        "/Game/Resources/Environments/Props/StartIsland/Apartment/WaterTank/SM_Bld_WaterTank",
+        "/Game/Resources/Environments/Props/StartIsland/Apartment/WaterTank/SM_Bld_WaterTank_Ladder",
+        "/Game/Resources/Environments/Props/StartIsland/Apartment/Window/SM_Bld_WinModule_A"
+      ],
+      "added": [],
+      "lost_classification": {
+        "/Game/Resources/Environments/Props/StartIsland/Apartment/RoofCrown/SM_Bld_RoofCrown_A": "already_missing_before_move",
+        "/Game/Resources/Environments/Props/StartIsland/Apartment/WaterTank/SM_Bld_WaterTank": "already_missing_before_move",
+        "/Game/Resources/Environments/Props/StartIsland/Apartment/WaterTank/SM_Bld_WaterTank_Ladder": "already_missing_before_move",
+        "/Game/Resources/Environments/Props/StartIsland/Apartment/Window/SM_Bld_WinModule_A": "already_missing_before_move"
+      }
+    },
+    {
+      "old": "/Game/Resources/Characters/PC/player_heroine_new/Preview/L_player_heroine_new_Preview",
+      "new": "/Game/Constellation/Review/Heroine/Maps/L_player_heroine_new_Preview",
+      "lost": [],
+      "added": [
+        "/Engine/EngineMaterials/WorldGridMaterial"
+      ],
+      "lost_classification": {}
+    },
+    {
+      "old": "/Game/Resources/Characters/PC/player_heroine_new/Preview/L_player_heroine_new_ReferenceFit",
+      "new": "/Game/Constellation/Review/Heroine/Maps/L_player_heroine_new_ReferenceFit",
+      "lost": [],
+      "added": [
+        "/Engine/EngineMaterials/WorldGridMaterial"
+      ],
+      "lost_classification": {}
+    },
+    {
+      "old": "/Game/Resources/Characters/PC/player_heroine_new/Preview/L_player_heroine_new_Walk_Timid",
+      "new": "/Game/Constellation/Review/Heroine/Maps/L_player_heroine_new_Walk_Timid",
+      "lost": [],
+      "added": [
+        "/Engine/EngineMaterials/WorldGridMaterial"
+      ],
+      "lost_classification": {}
+    },
+    {
+      "old": "/Game/Resources/LevelSequence/LS_AbandonedSchool_Checkpoint_Event_Choice_Yes",
+      "new": "/Game/Constellation/Gameplay/Sequences/LevelSequences/LS_AbandonedSchool_Checkpoint_Event_Choice_Yes",
+      "lost": [
+        "/Game/Constellation/Gameplay/Sequences/LevelSequences/LS_AbandonedSchool_Checkpoint_Event_Start"
+      ],
+      "added": [],
+      "lost_classification": {
+        "/Game/Constellation/Gameplay/Sequences/LevelSequences/LS_AbandonedSchool_Checkpoint_Event_Start": "still_reachable_via_dependencies"
+      }
+    }
+  ],
+  "import_source_changes": [],
+  "unexplained_lost_edges": [],
+  "new_raw_missing_references": [],
+  "duplicate_old_assets": [],
+  "owned_redirectors": [],
+  "recovery_dependencies": [],
+  "world_count": 27
+}

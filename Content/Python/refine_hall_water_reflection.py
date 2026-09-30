@@ -1,8 +1,9 @@
 """Shallow water with dynamic planar reflections for the maintained hall."""
+from resource_paths import loads as load_current_json, load as load_current_json_file
 import unreal as u,json,runpy
 from pathlib import Path
 ROOT=Path(u.Paths.project_dir());OUT=ROOT/'ArtSource/OvergrownHall/TripoReplacement/v006'
-D='/Game/Environment/OvergrownHall/TripoFull';MAP=D+'/Maps/L_OvergrownHall_TripoFull'
+D='/Game/Constellation/Environments/OvergrownHall/TripoFull';MAP='/Game/Constellation/Worlds/OvergrownHall/Maps/L_OvergrownHall_TripoFull'
 E=u.EditorAssetLibrary;ML=u.MaterialEditingLibrary;AT=u.AssetToolsHelpers.get_asset_tools()
 L=u.get_editor_subsystem(u.LevelEditorSubsystem);A=u.get_editor_subsystem(u.EditorActorSubsystem)
 assert L.load_level(MAP)
@@ -55,10 +56,10 @@ s.set_editor_property('override_reflection_method',True);s.set_editor_property('
 s.set_editor_property('override_screen_space_reflection_quality',True);s.set_editor_property('screen_space_reflection_quality',100.0)
 pp.set_editor_property('settings',s)
 assert L.save_current_level()
-report=json.loads((OUT/'applied.json').read_text());report.update(water_material=mat.get_path_name(),water_model='Stylized opaque puddle + dynamic planar reflection',water_roughness=.045,water_level_cm=2.2,reflection_screen_percentage=75,physical_transmission=False,interactive_water=False)
+report=load_current_json((OUT/'applied.json').read_text());report.update(water_material=mat.get_path_name(),water_model='Stylized opaque puddle + dynamic planar reflection',water_roughness=.045,water_level_cm=2.2,reflection_screen_percentage=75,physical_transmission=False,interactive_water=False)
 (OUT/'applied.json').write_text(json.dumps(report,indent=2))
 runpy.run_path(str(ROOT/'Content/Python/verify_hall_growth_water.py'))
-script=(ROOT/'Content/Python/capture_hall_exposure.py').read_text().replace('ArtSource/OvergrownHall/Scene/v001','ArtSource/OvergrownHall/TripoReplacement/v006').replace('/Game/Environment/OvergrownHall/Scene/Maps/L_OvergrownHall_Layout',MAP).replace('unreal_exposure_fixed.png','unreal_growth_water.png')
+script=(ROOT/'Content/Python/capture_hall_exposure.py').read_text().replace('ArtSource/OvergrownHall/Scene/v001','ArtSource/OvergrownHall/TripoReplacement/v006').replace('/Game/Constellation/Environments/OvergrownHall/Scene/Maps/L_OvergrownHall_Layout',MAP).replace('unreal_exposure_fixed.png','unreal_growth_water.png')
 script=script.replace('pp=next',"u.EditorLevelLibrary.set_level_viewport_camera_info(cam.get_actor_location(),cam.get_actor_rotation())\nu.EditorLevelLibrary.pilot_level_actor(cam)\npp=next")
 script=script.replace("'r.ScreenPercentage 100'","'ShowFlag.ReflectionEnvironment 1'")
 exec(compile(script,'capture_reflective_water','exec'),globals())

@@ -1,8 +1,9 @@
 """v020: scoped light, vegetation spacing and calmer water pass over v019."""
+from resource_paths import loads as load_current_json, load as load_current_json_file
 import unreal as u, json, math, runpy
 from pathlib import Path
 ROOT=Path(u.Paths.project_dir()); OUT=ROOT/'ArtSource/OvergrownHall/TripoReplacement/v020'; OUT.mkdir(parents=True,exist_ok=True)
-D='/Game/Environment/OvergrownHall/TripoFull'; MAP=D+'/Maps/L_OvergrownHall_TripoFull'; DEST=D+'/AtmosphereFinish'
+D='/Game/Constellation/Environments/OvergrownHall/TripoFull'; MAP='/Game/Constellation/Worlds/OvergrownHall/Maps/L_OvergrownHall_TripoFull'; DEST=D+'/AtmosphereFinish'
 E=u.EditorAssetLibrary; ML=u.MaterialEditingLibrary; AT=u.AssetToolsHelpers.get_asset_tools(); A=u.get_editor_subsystem(u.EditorActorSubsystem); L=u.get_editor_subsystem(u.LevelEditorSubsystem)
 assert L.load_level(MAP)
 actors={a.get_actor_label():a for a in A.get_all_level_actors()}
@@ -14,7 +15,7 @@ if not (OUT/'baseline.json').exists():
         if isinstance(a,u.StaticMeshActor):
             c=a.static_mesh_component;data[n].update(mesh=c.static_mesh.get_path_name() if c.static_mesh else None,materials=[c.get_material(i).get_path_name() if c.get_material(i) else None for i in range(c.get_num_materials())])
     (OUT/'baseline.json').write_text(json.dumps(data,indent=2))
-base=json.loads((OUT/'baseline.json').read_text())
+base=load_current_json((OUT/'baseline.json').read_text())
 source=(ROOT/'Content/Python/apply_hall_growth_water.py').read_text();exec(source[source.index('class Graph:'):source.index('\nmoss_keys=')])
 def material(name,src):
     path=DEST+'/'+name;m=E.load_asset(path) if E.does_asset_exist(path) else E.duplicate_asset(src,path);assert m;m.modify();return m

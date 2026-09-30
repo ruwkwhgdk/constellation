@@ -1,7 +1,7 @@
 """Dedicated pigeon skeleton and four animation sequences, no character edits."""
 import unreal as u,json
 from pathlib import Path
-ROOT=Path(u.Paths.project_dir()); SRC=ROOT/'ArtSource/OvergrownHall/Bird/v001'; DEST='/Game/Environment/OvergrownHall/Bird'
+ROOT=Path(u.Paths.project_dir()); SRC=ROOT/'ArtSource/OvergrownHall/Bird/v001'; DEST='/Game/Constellation/Environments/OvergrownHall/Bird'
 E=u.EditorAssetLibrary; AT=u.AssetToolsHelpers.get_asset_tools()
 world=u.get_editor_subsystem(u.UnrealEditorSubsystem).get_editor_world()
 u.SystemLibrary.execute_console_command(world,'Interchange.FeatureFlags.Import.FBX 0')

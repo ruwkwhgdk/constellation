@@ -1,8 +1,9 @@
 """v007 authored mineral pigment and restrained foliage value pass. Run after v006."""
+from resource_paths import loads as load_current_json, load as load_current_json_file
 import unreal as u, json, runpy
 from pathlib import Path
 ROOT=Path(u.Paths.project_dir()); OUT=ROOT/'ArtSource/OvergrownHall/TripoReplacement/v007'
-D='/Game/Environment/OvergrownHall/TripoFull'; MAP=D+'/Maps/L_OvergrownHall_TripoFull'
+D='/Game/Constellation/Environments/OvergrownHall/TripoFull'; MAP='/Game/Constellation/Worlds/OvergrownHall/Maps/L_OvergrownHall_TripoFull'
 E=u.EditorAssetLibrary; ML=u.MaterialEditingLibrary; AT=u.AssetToolsHelpers.get_asset_tools()
 A=u.get_editor_subsystem(u.EditorActorSubsystem); L=u.get_editor_subsystem(u.LevelEditorSubsystem)
 assert L.load_level(MAP)
@@ -21,7 +22,7 @@ tex.set_editor_property('compression_settings',u.TextureCompressionSettings.TC_D
 tex.set_editor_property('compression_no_alpha',True)
 tex.set_editor_property('never_stream',False)
 E.save_loaded_asset(tex)
-rows=json.loads((OUT.parent/'v005/shape_manifest.json').read_text())
+rows=load_current_json((OUT.parent/'v005/shape_manifest.json').read_text())
 stone={'01','02','03','04','05','09','11','12','13','26'}
 foliage={'16','17','18','19'}
 materials={}
@@ -61,7 +62,7 @@ for row in rows:
         moss=g.lerp(g.color((.08,.15,.06)),g.color((.21,.29,.10)),fine)
         base=g.lerp(base,moss,amount)
     else:
-        texturepath=(D+'/CleanTextures/T_OH_Clean_'+key) if key not in foliage and key!='15' else ('/Game/Environment/OvergrownHall/TripoReplacement/Textures/T_Tree_basecolor' if key=='19' else D+'/Textures/T_OH_'+key+'_basecolor')
+        texturepath=(D+'/CleanTextures/T_OH_Clean_'+key) if key not in foliage and key!='15' else ('/Game/Constellation/Environments/OvergrownHall/TripoReplacement/Textures/T_Tree_basecolor' if key=='19' else D+'/Textures/T_OH_'+key+'_basecolor')
         original=E.load_asset(texturepath); assert original,texturepath
         color=sample(g,original,bias=2.5 if key in foliage else 1)
         if key in foliage:

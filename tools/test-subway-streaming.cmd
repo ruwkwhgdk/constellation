@@ -1,0 +1,6 @@
+@echo off
+call "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvars64.bat" >nul
+if not exist Saved\SubwayTests mkdir Saved\SubwayTests
+cl /nologo /EHsc /W4 Tests\SubwayStreamingGateTests.cpp /FoSaved\SubwayTests\StreamingTests.obj /FeSaved\SubwayTests\StreamingTests.exe
+if errorlevel 1 exit /b 1
+Saved\SubwayTests\StreamingTests.exe

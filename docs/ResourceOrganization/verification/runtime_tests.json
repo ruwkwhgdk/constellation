@@ -1,0 +1,30 @@
+{
+  "path_unit_tests": {
+    "passed": 14,
+    "failed": 0
+  },
+  "subway_streaming_gate": {
+    "exit_code": 0,
+    "failures": 0
+  },
+  "subway_travel_gate": {
+    "exit_code": 0,
+    "failures": 0
+  },
+  "subway_portal_pose": {
+    "exit_code": 0,
+    "engine_tests": 1,
+    "result": "Success"
+  },
+  "packaging": {
+    "status": "passed_after_store_alignment",
+    "build_exit_code": 0,
+    "cook_exit_code": 0,
+    "restage_exit_code": 0,
+    "packaged_packages": 2251,
+    "startup_maps_passed": 4,
+    "startup_errors": 0,
+    "report": "packaging.json",
+    "headless_only": true
+  }
+}

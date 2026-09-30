@@ -5,7 +5,7 @@ def apply_details():
     actors={a.get_actor_label():a for a in A.get_all_level_actors()}
     for label,a in actors.items():
         if label.startswith('SWScene_Detail_'): A.destroy_actor(a)
-    root='/Game/Environment/StairwellModular/Scene/Materials/Weathered/'
+    root='/Game/Constellation/Environments/Stairwell/Scene/Materials/Weathered/'
     def mat(name): return E.load_asset(root+name+'_Weathered')
     def cube(name,pos,size,material):
         a=A.spawn_actor_from_class(u.StaticMeshActor,u.Vector(*pos),u.Rotator())

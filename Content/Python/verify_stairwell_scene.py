@@ -1,9 +1,10 @@
 """Read the saved scene and check actual stair/landing seams and clearances."""
+from resource_paths import loads as load_current_json, load as load_current_json_file
 import unreal as u, json
 from pathlib import Path
 OUT=Path(u.Paths.project_dir())/'ArtSource/Stairwell_Modular/Scene/v001'
 L=u.get_editor_subsystem(u.LevelEditorSubsystem)
-assert L.load_level('/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_Reference')
+assert L.load_level('/Game/Constellation/Review/Stairwell/Maps/L_Stairwell_Reference')
 actors={str(a.get_actor_label()).removeprefix('SWScene_'):a for a in u.get_editor_subsystem(u.EditorActorSubsystem).get_all_level_actors() if str(a.get_actor_label()).startswith('SWScene_')}
 def bounds(name):
     if name in ['UpperLanding','MiddleLandingLeft','MiddleLandingRight','MiddleLandingExtension','LowerLanding']:
@@ -51,7 +52,7 @@ wall_end=max(bounds(n)[1].x for n in actors if n.startswith(('MainRightWall_','D
 close(wall_end,120 if has_wall_extension else 60)
 cam=actors['ReferenceCamera']; cp=cam.get_actor_location(); cr=cam.get_actor_rotation()
 camera_config_path=OUT/'camera_revision.json'
-expected=json.loads(camera_config_path.read_text()) if camera_config_path.exists() else dict(position=[-160,-60,330],rotation=[-30,18,0],fov=68)
+expected=load_current_json(camera_config_path.read_text()) if camera_config_path.exists() else dict(position=[-160,-60,330],rotation=[-30,18,0],fov=68)
 for a,b in zip([cp.x,cp.y,cp.z,cr.pitch,cr.yaw,cr.roll],expected['position']+expected['rotation']): close(a,b)
 close(cam.get_component_by_class(u.CameraComponent).field_of_view,expected['fov'])
 result=dict(status='pass',mesh_instances=sum(isinstance(a,u.StaticMeshActor) for a in actors.values()),stairs_landing_seams=True,stair_width_cm=240,rail_clearance_cm=220,brackets_outward=True,minimum_ceiling_clearance_cm=ceiling_bottom-upper_top,beam_clearance_cm=beam_bottom-under_beam,door_leaf_frame_separate=True,scope='Static assembly measurements; no PIE movement or visual rating implied',playtest='not_run')

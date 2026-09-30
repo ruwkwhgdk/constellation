@@ -2,9 +2,9 @@
 
 ## Unreal
 
-- **플레이 기준**: `/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_PlayScale2`. 사용자가 공간 크기 해결을 확인했다. 계단 폭480cm, 참 깊이360cm, 단 높이30cm, 디딤판60cm. 캐릭터 MaxStepHeight45cm. 문에 맞춘 추가 벽은 제거했다.
-- **재생성 기준 장면**: `/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_Reference`. 플레이용이 아니라 확장본의 소스다. 계단 폭240cm. 삭제하거나 최종 맵과 혼동하지 않는다.
-- **채택 키트 카탈로그**: `/Game/Environment/StairwellModular/ReviewKit/Maps/L_Stairwell_KitReview`. ID01–22, 파생형 포함31개 메시. 사용하지 않은 파생형도 승인된 재사용 키트이므로 보존한다.
+- **플레이 기준**: `/Game/Constellation/Worlds/Stairwell/Maps/L_Stairwell_PlayScale2`. 사용자가 공간 크기 해결을 확인했다. 계단 폭480cm, 참 깊이360cm, 단 높이30cm, 디딤판60cm. 캐릭터 MaxStepHeight45cm. 문에 맞춘 추가 벽은 제거했다.
+- **재생성 기준 장면**: `/Game/Constellation/Review/Stairwell/Maps/L_Stairwell_Reference`. 플레이용이 아니라 확장본의 소스다. 계단 폭240cm. 삭제하거나 최종 맵과 혼동하지 않는다.
+- **채택 키트 카탈로그**: `/Game/Constellation/Review/Stairwell/Maps/L_Stairwell_KitReview`. ID01–22, 파생형 포함31개 메시. 사용하지 않은 파생형도 승인된 재사용 키트이므로 보존한다.
 - 문 메시2개와 `BP_Stairwell_DoorAssembly`는 재사용용이다. 문 열기 입력/런타임 상호작용은 미구현이다.
 - 주인공 `BP_Player_Heroine` 카메라 lag 설정은 저장 후 새 인스턴스에서 검증했다. 실제 계단 플레이 개선 체감은 사용자 재검증 대기다.
 

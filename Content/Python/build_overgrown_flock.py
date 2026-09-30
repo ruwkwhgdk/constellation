@@ -1,7 +1,7 @@
 """Repeatable, map-local flock choreography using native Sequencer tracks."""
 import unreal as u, json, math
 from pathlib import Path
-P=globals().get('FLOCK_DEST','/Game/Environment/OvergrownHall/Production'); B='/Game/Environment/OvergrownHall/Bird/Tripo'
+P=globals().get('FLOCK_DEST','/Game/Constellation/Environments/OvergrownHall/Production'); B='/Game/Constellation/Environments/OvergrownHall/Bird/Tripo'
 E=u.EditorAssetLibrary; L=u.get_editor_subsystem(u.LevelEditorSubsystem); A=u.get_editor_subsystem(u.EditorActorSubsystem)
 AT=u.AssetToolsHelpers.get_asset_tools()
 assert L.load_level(P+'/Maps/'+globals().get('FLOCK_MAP','L_OvergrownHall_Detail'))

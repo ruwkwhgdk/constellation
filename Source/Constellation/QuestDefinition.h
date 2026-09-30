@@ -9,7 +9,7 @@
 
 /**
  * Designer-authored definition of a single quest. Create instances as Data Assets (or Blueprint
- * child classes of this class when a custom unlock condition is needed) under Content/Data/Quests.
+ * child classes of this class when a custom unlock condition is needed) under Content/Constellation/Gameplay/Quests/Data.
  */
 UCLASS(Blueprintable, BlueprintType)
 class CONSTELLATION_API UQuestDefinition : public UDataAsset

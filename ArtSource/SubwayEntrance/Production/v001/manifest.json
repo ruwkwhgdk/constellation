@@ -1,0 +1,158 @@
+{
+  "assets": [
+    {
+      "name": "SM_SE_E01",
+      "id": "E01",
+      "triangles": 108,
+      "collision_hulls": 1,
+      "dimensions_cm": [
+        569.9999809265137,
+        1010.0000381469727,
+        28.00002098083496
+      ]
+    },
+    {
+      "name": "SM_SE_E02",
+      "id": "E02",
+      "triangles": 3456,
+      "collision_hulls": 32,
+      "dimensions_cm": [
+        556.9999694824219,
+        1004.9999237060547,
+        2.79998779296875
+      ]
+    },
+    {
+      "name": "SM_SE_E03",
+      "id": "E03",
+      "triangles": 1296,
+      "collision_hulls": 12,
+      "dimensions_cm": [
+        490.00000953674316,
+        830.9999942779541,
+        379.9999952316284
+      ]
+    },
+    {
+      "name": "SM_SE_E04",
+      "id": "E04",
+      "triangles": 432,
+      "collision_hulls": 4,
+      "dimensions_cm": [
+        491.9999837875366,
+        860.0000381469727,
+        122.49999046325684
+      ]
+    },
+    {
+      "name": "SM_SE_E05",
+      "id": "E05",
+      "triangles": 2808,
+      "collision_hulls": 26,
+      "dimensions_cm": [
+        457.0000171661377,
+        860.0000381469727,
+        76.99999809265137
+      ]
+    },
+    {
+      "name": "SM_SE_E06",
+      "id": "E06",
+      "triangles": 432,
+      "collision_hulls": 4,
+      "dimensions_cm": [
+        500.0,
+        209.99999046325684,
+        47.999995946884155
+      ]
+    },
+    {
+      "name": "SM_SE_E07",
+      "id": "E07",
+      "triangles": 2124,
+      "collision_hulls": 0,
+      "dimensions_cm": [
+        419.9999809265137,
+        30.000019073486328,
+        3.1299948692321777
+      ]
+    },
+    {
+      "name": "SM_SE_E08",
+      "id": "E08",
+      "triangles": 2268,
+      "collision_hulls": 2,
+      "dimensions_cm": [
+        419.9999809265137,
+        719.9999809265137,
+        309.20000076293945
+      ]
+    },
+    {
+      "name": "SM_SE_E09",
+      "id": "E09",
+      "triangles": 9792,
+      "collision_hulls": 4,
+      "dimensions_cm": [
+        476.0000228881836,
+        759.9999904632568,
+        527.0000219345093
+      ]
+    },
+    {
+      "name": "SM_SE_E10",
+      "id": "E10",
+      "triangles": 880,
+      "collision_hulls": 0,
+      "dimensions_cm": [
+        424.0000247955322,
+        625.0001430511475,
+        318.8000679016113
+      ]
+    },
+    {
+      "name": "SM_SE_E11",
+      "id": "E11",
+      "triangles": 240,
+      "collision_hulls": 4,
+      "dimensions_cm": [
+        51.399993896484375,
+        192.40005016326904,
+        172.00000286102295
+      ]
+    },
+    {
+      "name": "SM_SE_E12",
+      "id": "E12",
+      "triangles": 4,
+      "collision_hulls": 0,
+      "dimensions_cm": [
+        535.1999998092651,
+        461.09997630119324,
+        25.999999046325684
+      ]
+    },
+    {
+      "name": "SM_SE_E13",
+      "id": "E13",
+      "triangles": 900,
+      "collision_hulls": 0,
+      "dimensions_cm": [
+        510.7999801635742,
+        815.0000095367432,
+        300.0000089406967
+      ]
+    }
+  ],
+  "island": {
+    "triangles": 72,
+    "non_manifold_edges": 0,
+    "pivot_world": [
+      3900,
+      -19500,
+      10000
+    ],
+    "collision": "use_complex_as_simple on unique static island only"
+  },
+  "scope": "accepted entrance modules; not runtime play verified"
+}

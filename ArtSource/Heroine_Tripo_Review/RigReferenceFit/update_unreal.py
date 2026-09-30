@@ -1,6 +1,6 @@
 import unreal,json,hashlib
 from pathlib import Path
-P=Path(__file__).resolve().parent;B='/Game/Resources/Characters/PC/player_heroine_new';N='player_heroine_new'
+P=Path(__file__).resolve().parent;B='/Game/Constellation/Characters/Heroine/Refined';N='player_heroine_new'
 asset=unreal.EditorAssetLibrary;at=unreal.AssetToolsHelpers.get_asset_tools()
 mesh=unreal.load_asset(B+'/SK_'+N);skel=mesh.skeleton
 old_slots={str(s.material_slot_name):s.material_interface for s in mesh.materials}
@@ -29,7 +29,7 @@ if anim:
 opt=unreal.FbxImportUI();opt.import_mesh=False;opt.import_as_skeletal=True;opt.import_animations=True;opt.mesh_type_to_import=unreal.FBXImportType.FBXIT_ANIMATION;opt.automated_import_should_detect_type=False;opt.skeleton=skel;opt.import_materials=False;opt.import_textures=False;opt.create_physics_asset=False;opt.anim_sequence_import_data.import_uniform_scale=100.0
 paths+=import_file(P/'Delivery/PreviewRelaxed.fbx',B+'/Animations','AS_'+N+'_PreviewRelaxed',opt)
 assert asset.save_directory(B,only_if_is_dirty=True,recursive=True)
-ref=unreal.load_asset('/Game/Resources/Characters/PC/Player_Heroine/Player_Heroine')
+ref=unreal.load_asset('/Game/Constellation/Characters/Heroine/Base/Player_Heroine')
 report={'mesh':mesh.get_path_name(),'skeleton':mesh.skeleton.get_path_name(),'height_cm':mesh.get_bounds().box_extent.z*2,'materials':len(slots),'source':mesh.get_editor_property('asset_import_data').get_first_filename(),'source_sha256':hashlib.sha256((P/'Delivery/Heroine_Skeletal.fbx').read_bytes()).hexdigest(),'reference_source':ref.get_editor_property('asset_import_data').get_first_filename(),'imported':paths}
 assert abs(report['height_cm']-160)<.1 and mesh.skeleton==skel and all(s.material_interface for s in slots)
 report['pass']=True;(P/'unreal_update.json').write_text(json.dumps(report,indent=2));print('REFERENCE_FIT_IMPORTED',json.dumps(report))

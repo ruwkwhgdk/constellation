@@ -1,7 +1,8 @@
 """v017 bounded contact pass: attach leaf clusters and soften bench slab outline."""
+from resource_paths import loads as load_current_json, load as load_current_json_file
 import unreal as u,json,math,runpy
 from pathlib import Path
-ROOT=Path(u.Paths.project_dir());OUT=ROOT/'ArtSource/OvergrownHall/TripoReplacement/v017';D='/Game/Environment/OvergrownHall/TripoFull';MAP=D+'/Maps/L_OvergrownHall_TripoFull'
+ROOT=Path(u.Paths.project_dir());OUT=ROOT/'ArtSource/OvergrownHall/TripoReplacement/v017';D='/Game/Constellation/Environments/OvergrownHall/TripoFull';MAP='/Game/Constellation/Worlds/OvergrownHall/Maps/L_OvergrownHall_TripoFull'
 A=u.get_editor_subsystem(u.EditorActorSubsystem);L=u.get_editor_subsystem(u.LevelEditorSubsystem);E=u.EditorAssetLibrary;AT=u.AssetToolsHelpers.get_asset_tools()
 assert L.load_level(MAP);actors={a.get_actor_label():a for a in A.get_all_level_actors()}
 names=[n for n in actors if n.startswith('OH_Painterly_WallLeaves_')]
@@ -11,7 +12,7 @@ if not (OUT/'baseline.json').exists():
         a=actors[n];p=a.get_actor_location();r=a.get_actor_rotation();s=a.get_actor_scale3d()
         record[n]=dict(position=[p.x,p.y,p.z],rotation=[r.pitch,r.yaw,r.roll],scale=[s.x,s.y,s.z],mesh=a.static_mesh_component.static_mesh.get_path_name())
     (OUT/'baseline.json').write_text(json.dumps(record,indent=2))
-base=json.loads((OUT/'baseline.json').read_text());contacts=[]
+base=load_current_json((OUT/'baseline.json').read_text());contacts=[]
 columns=[a for n,a in actors.items() if n.startswith('OH_FULL_02_')]
 assert columns and len(names)==13
 def clamp(x,a,b):return max(a,min(b,x))

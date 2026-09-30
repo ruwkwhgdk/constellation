@@ -1,0 +1,128 @@
+{
+  "backup": "..\\..\\..\\..\\..\\..\\Users\\User\\Documents\\UnrealProjects\\Constellation\\Saved\\SubwayEntranceRecovery\\20260930_214904_dark",
+  "play_tested": false,
+  "maps": [
+    {
+      "map": "/Game/Levels/L_StartIsland",
+      "unrelated_actors_preserved": 222,
+      "traces": [
+        {
+          "x": 3900,
+          "y": -19770,
+          "expected": 9760,
+          "actual": 9760.000014305115
+        },
+        {
+          "x": 3900,
+          "y": -20065,
+          "expected": 9700,
+          "actual": 9700.740733146667
+        },
+        {
+          "x": 3900,
+          "y": -20500,
+          "expected": 9640,
+          "actual": 9639.99999821186
+        },
+        {
+          "x": 4700,
+          "y": -20500,
+          "expected": 9640,
+          "actual": 9639.99999821186
+        },
+        {
+          "x": 4200,
+          "y": -19520,
+          "expected": 10000,
+          "actual": 9999.99999821186
+        },
+        {
+          "x": 3900,
+          "y": -18800,
+          "expected": 10000,
+          "actual": 9999.99999821186
+        },
+        {
+          "x": 4700,
+          "y": -20500,
+          "expected": 10000,
+          "actual": 9999.99999821186
+        }
+      ]
+    },
+    {
+      "map": "/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_PlayScale2",
+      "unrelated_actors_preserved": 285,
+      "traces": [
+        {
+          "x": -720,
+          "y": 0,
+          "expected": 360,
+          "actual": 359.99999821186066
+        },
+        {
+          "x": -950,
+          "y": 0,
+          "expected": 360,
+          "actual": 359.99999821186066
+        },
+        {
+          "x": -1500,
+          "y": 0,
+          "expected": 360,
+          "actual": 359.99999821186066
+        },
+        {
+          "x": -1500,
+          "y": -400,
+          "expected": 360,
+          "actual": 359.99999821186066
+        },
+        {
+          "x": -1500,
+          "y": -800,
+          "expected": 360,
+          "actual": 359.99999821186066
+        }
+      ]
+    }
+  ],
+  "imports": [
+    {
+      "name": "SM_SE_E09_DarkEntry",
+      "dimensions": [
+        476.0000305175781,
+        760.0,
+        397.00003814697266
+      ],
+      "hulls": 0
+    },
+    {
+      "name": "SM_SE_ExteriorDarkTunnel",
+      "dimensions": [
+        1307.999984741211,
+        869.0,
+        455.0
+      ],
+      "hulls": 12
+    },
+    {
+      "name": "SM_SE_InteriorDarkTunnel",
+      "dimensions": [
+        1014.0,
+        1467.999984741211,
+        340.0
+      ],
+      "hulls": 9
+    },
+    {
+      "name": "SM_SE_IslandDarkTunnel",
+      "dimensions": [
+        9000.0,
+        9000.0,
+        3000.0
+      ],
+      "hulls": 0
+    }
+  ]
+}

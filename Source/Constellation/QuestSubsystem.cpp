@@ -11,7 +11,7 @@
 #include "Kismet/GameplayStatics.h"
 
 const FString UQuestSubsystem::SaveSlotName = TEXT("ConstellationSaveGame");
-const TCHAR* UQuestSubsystem::DefaultDatabasePath = TEXT("/Game/Data/Quests/DA_QuestDatabase.DA_QuestDatabase");
+const TCHAR* UQuestSubsystem::DefaultDatabasePath = TEXT("/Game/Constellation/Gameplay/Quests/Data/DA_QuestDatabase.DA_QuestDatabase");
 
 namespace
 {

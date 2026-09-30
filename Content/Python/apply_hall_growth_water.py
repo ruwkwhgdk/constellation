@@ -1,12 +1,13 @@
 """v006: masonry moss, attached Tripo foliage, shallow reflective water."""
+from resource_paths import loads as load_current_json, load as load_current_json_file
 import unreal as u,json,random,runpy
 from pathlib import Path
 ROOT=Path(u.Paths.project_dir());OUT=ROOT/'ArtSource/OvergrownHall/TripoReplacement/v006';OUT.mkdir(parents=True,exist_ok=True)
-D='/Game/Environment/OvergrownHall/TripoFull';MAP=D+'/Maps/L_OvergrownHall_TripoFull'
+D='/Game/Constellation/Environments/OvergrownHall/TripoFull';MAP='/Game/Constellation/Worlds/OvergrownHall/Maps/L_OvergrownHall_TripoFull'
 E=u.EditorAssetLibrary;ML=u.MaterialEditingLibrary;AT=u.AssetToolsHelpers.get_asset_tools()
 A=u.get_editor_subsystem(u.EditorActorSubsystem);L=u.get_editor_subsystem(u.LevelEditorSubsystem)
 assert L.load_level(MAP)
-settings=json.loads((OUT.parent/'v004/applied.json').read_text())['materials']
+settings=load_current_json((OUT.parent/'v004/applied.json').read_text())['materials']
 
 def material(name):
     path=D+'/GrowthMaterials/'+name
@@ -121,5 +122,5 @@ for side in [-1,1]:
 assert L.save_current_level()
 (OUT/'applied.json').write_text(json.dumps(dict(map=MAP,moss_instances=changed,foliage=placements,added_foliage=len(placements),water_material=water.get_path_name(),water_model='SingleLayerWater',water_roughness=.06,water_collision='NoCollision',interactive_water=False,playtest=False),indent=2))
 runpy.run_path(str(ROOT/'Content/Python/verify_hall_growth_water.py'))
-script=(ROOT/'Content/Python/capture_hall_exposure.py').read_text().replace('ArtSource/OvergrownHall/Scene/v001','ArtSource/OvergrownHall/TripoReplacement/v006').replace('/Game/Environment/OvergrownHall/Scene/Maps/L_OvergrownHall_Layout',MAP).replace('unreal_exposure_fixed.png','unreal_growth_water.png')
+script=(ROOT/'Content/Python/capture_hall_exposure.py').read_text().replace('ArtSource/OvergrownHall/Scene/v001','ArtSource/OvergrownHall/TripoReplacement/v006').replace('/Game/Constellation/Environments/OvergrownHall/Scene/Maps/L_OvergrownHall_Layout',MAP).replace('unreal_exposure_fixed.png','unreal_growth_water.png')
 exec(compile(script,'capture_growth_water','exec'),globals())

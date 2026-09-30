@@ -8,12 +8,13 @@
 
 각 항목을 개별 try 로 감싸서, API 이름이 하나 틀려도 나머지 진단은 계속 나온다.
 """
+from resource_paths import loads as load_current_json, load as load_current_json_file
 import json
 import os
 import traceback
 import unreal
 
-DEST = "/Game/Environment/OldKoreanBuildingA"
+DEST = "/Game/Constellation/Environments/KoreanBuildings/BuildingA"
 MESH_DIR = DEST + "/Meshes"
 MAT_DIR = DEST + "/Materials"
 MANIFEST = (r"C:\Users\User\Documents\UnrealProjects\Constellation"
@@ -130,7 +131,7 @@ def run():
             want = {}
             if os.path.exists(MANIFEST):
                 with open(MANIFEST) as fh:
-                    for p in json.load(fh)["placements"]:
+                    for p in load_current_json_file(fh)["placements"]:
                         want[p["instance"]] = p
             else:
                 P("[DIAG]   manifest not found: " + MANIFEST)

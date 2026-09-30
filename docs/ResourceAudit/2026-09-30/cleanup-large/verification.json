@@ -1,0 +1,96 @@
+{
+  "verified_utc": "2026-09-30T13:37:34.033597+00:00",
+  "deleted_packages": 232,
+  "deleted_bytes": 539428976,
+  "before_packages": 3790,
+  "after_packages": 3559,
+  "outside_references_to_deleted": {},
+  "unexpected_missing_files": [],
+  "concurrent_subway_asset_changes_observed": [
+    "Content/Levels/L_StartIsland.umap",
+    "Content/Environment/StairwellModular/Scene/Maps/L_Stairwell_PlayScale2.umap",
+    "Content/Environment/SubwayEntrance/Materials/M_SE_TunnelGuide.uasset",
+    "Content/Environment/SubwayEntrance/Materials/M_SE_TunnelGuide_Exterior.uasset",
+    "Content/Environment/SubwayEntrance/Meshes/SM_SE_ExteriorDarkTunnel.uasset",
+    "Content/Environment/SubwayEntrance/Meshes/SM_SE_InteriorDarkTunnel.uasset"
+  ],
+  "unchanged_retained_files": 3552,
+  "filesystem_fallback_count": 2,
+  "preserved_maps": 27,
+  "new_packages_during_operation": [
+    "/Game/Environment/SubwayEntrance/Materials/M_SE_TunnelApproach"
+  ],
+  "local_lfs_recovery_verified": true,
+  "recovery_head": "3131bf5396a5bd8725bc0a33eb89047826c50b93",
+  "groups": {
+    "/Game/Blueprints/Actor/AbandonedSchool": {
+      "count": 2,
+      "bytes": 60418
+    },
+    "/Game/Blueprints/Actor/Common": {
+      "count": 2,
+      "bytes": 61020
+    },
+    "/Game/Blueprints/Actor/StartIsland": {
+      "count": 1,
+      "bytes": 10067
+    },
+    "/Game/Levels/_GENERATED/User": {
+      "count": 1,
+      "bytes": 1596
+    },
+    "/Game/LuosCaves/Sounds": {
+      "count": 6,
+      "bytes": 15688238
+    },
+    "/Game/Resources/Characters/NPC/Lightning_Counter": {
+      "count": 6,
+      "bytes": 78668912
+    },
+    "/Game/Resources/Environments/Items/Bicycle": {
+      "count": 126,
+      "bytes": 73866178
+    },
+    "/Game/Resources/Environments/Props/AbandonedSchool/Clock_Tower_Prop": {
+      "count": 18,
+      "bytes": 63630672
+    },
+    "/Game/Resources/Environments/Props/AbandonedSchool/SM_Stalactite": {
+      "count": 5,
+      "bytes": 45783488
+    },
+    "/Game/Resources/Environments/Props/AbandonedSchool/SM_Sword_Stuck_At_Ground": {
+      "count": 5,
+      "bytes": 18118938
+    },
+    "/Game/Resources/Environments/Props/AbandonedSchool/School_Classroom_Music_Prop": {
+      "count": 36,
+      "bytes": 76506332
+    },
+    "/Game/Resources/Environments/Props/AbandonedSchool/School_Classroom_Prop": {
+      "count": 6,
+      "bytes": 19022039
+    },
+    "/Game/Resources/Environments/Props/Common/Red_Brick_Wall": {
+      "count": 3,
+      "bytes": 38705785
+    },
+    "/Game/Resources/Environments/Props/Common/SM_Beanstalk": {
+      "count": 5,
+      "bytes": 35967302
+    },
+    "/Game/Resources/Environments/Props/Common/SM_Mushroom": {
+      "count": 5,
+      "bytes": 59799311
+    },
+    "/Game/Resources/Environments/Props/StartIsland/Tree": {
+      "count": 5,
+      "bytes": 13538680
+    }
+  },
+  "limitations": [
+    "Saved packages and registry were validated; no full cook or in-game playtest.",
+    "Freed Content bytes exclude DDC/cache growth and preserved Git LFS history.",
+    "Existing interactive editor was left running; unsaved in-memory edits were not inspected."
+  ]
+}

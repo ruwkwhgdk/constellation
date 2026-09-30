@@ -1,0 +1,11 @@
+{
+  "FileVersion": 3,
+  "Version": 1,
+  "VersionName": "1.0",
+  "FriendlyName": "Constellation Resource Tools",
+  "Description": "Editor-only guarded resource recovery utilities.",
+  "Category": "Editor",
+  "EnabledByDefault": true,
+  "CanContainContent": false,
+  "Modules": [{"Name": "ConstellationResourceTools", "Type": "Editor", "LoadingPhase": "Default"}]
+}

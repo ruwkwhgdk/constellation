@@ -1,7 +1,7 @@
 import unreal as u,json,runpy
 from pathlib import Path
 root=Path(u.Paths.project_dir()); out=root/'ArtSource/OvergrownHall/TripoReplacement/v001'
-D='/Game/Environment/OvergrownHall/TripoReplacement'; MAP=D+'/Maps/L_OvergrownHall_TripoReview'
+D='/Game/Constellation/Environments/OvergrownHall/TripoReplacement'; MAP=D+'/Maps/L_OvergrownHall_TripoReview'
 assert u.get_editor_subsystem(u.LevelEditorSubsystem).load_level(MAP)
 actors={a.get_actor_label():a for a in u.get_editor_subsystem(u.EditorActorSubsystem).get_all_level_actors()}
 assert len([n for n in actors if n.startswith('OH_Tripo_Pillar_')])==30

@@ -1,0 +1,57 @@
+{
+  "play_tested": false,
+  "screenshots": [
+    {
+      "name": "entrance",
+      "refreshed": true,
+      "static_character_probe": false
+    },
+    {
+      "name": "descent",
+      "refreshed": true,
+      "static_character_probe": false
+    },
+    {
+      "name": "turn_guide",
+      "refreshed": true,
+      "static_character_probe": false
+    },
+    {
+      "name": "dark_handoff",
+      "refreshed": true,
+      "static_character_probe": true
+    },
+    {
+      "name": "interior_exit",
+      "refreshed": true,
+      "static_character_probe": false
+    },
+    {
+      "name": "interior_dark",
+      "refreshed": true,
+      "static_character_probe": true
+    }
+  ],
+  "maps": [
+    {
+      "map": "/Game/Levels/L_StartIsland",
+      "portal": [
+        4700.0,
+        -20500.0,
+        9640.0
+      ],
+      "dark_exposure_bounded": true,
+      "local_exposure_bias": -16
+    },
+    {
+      "map": "/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_PlayScale2",
+      "portal": [
+        -1500.0,
+        -800.0,
+        360.0
+      ],
+      "dark_exposure_bounded": true,
+      "local_exposure_bias": -16
+    }
+  ]
+}

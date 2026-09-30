@@ -3,6 +3,7 @@
 Reapply after refine_tripo_hall_structure.py. Source textures and mesh slots
 remain intact; the maintained level receives explicit material overrides.
 """
+from resource_paths import loads as load_current_json, load as load_current_json_file
 import unreal as u
 import json, runpy
 from pathlib import Path
@@ -10,8 +11,8 @@ from pathlib import Path
 ROOT = Path(u.Paths.project_dir())
 OUT = ROOT/'ArtSource/OvergrownHall/TripoReplacement/v004'
 OUT.mkdir(parents=True, exist_ok=True)
-D = '/Game/Environment/OvergrownHall/TripoFull'
-MAP = D+'/Maps/L_OvergrownHall_TripoFull'
+D = '/Game/Constellation/Environments/OvergrownHall/TripoFull'
+MAP = '/Game/Constellation/Worlds/OvergrownHall/Maps/L_OvergrownHall_TripoFull'
 DEST = D+'/PaintedMaterials'
 E = u.EditorAssetLibrary
 ML = u.MaterialEditingLibrary
@@ -20,7 +21,7 @@ L = u.get_editor_subsystem(u.LevelEditorSubsystem)
 A = u.get_editor_subsystem(u.EditorActorSubsystem)
 assert L.load_level(MAP)
 
-ids = [r['id'] for r in json.loads((OUT.parent/'v002/kit_manifest.json').read_text())]+['02','19']
+ids = [r['id'] for r in load_current_json((OUT.parent/'v002/kit_manifest.json').read_text())]+['02','19']
 materials = {}
 settings = {}
 for key in ids:
@@ -51,7 +52,7 @@ for key in ids:
     def sample(suffix):
         if key in ['02','19']:
             stem = 'Pillar' if key == '02' else 'Tree'
-            texpath = '/Game/Environment/OvergrownHall/TripoReplacement/Textures/T_'+stem+'_'+suffix
+            texpath = '/Game/Constellation/Environments/OvergrownHall/TripoReplacement/Textures/T_'+stem+'_'+suffix
         else:
             texpath = D+'/Textures/T_OH_'+key+'_'+suffix
         tex = E.load_asset(texpath); assert tex,texpath
@@ -119,6 +120,6 @@ assert verified == 532
 u.log('PAINTED_HALL_VERIFIED')
 script = (ROOT/'Content/Python/capture_hall_exposure.py').read_text()
 script = script.replace("out=root/'ArtSource/OvergrownHall/Scene/v001'","out=root/'ArtSource/OvergrownHall/TripoReplacement/v004'")
-script = script.replace('/Game/Environment/OvergrownHall/Scene/Maps/L_OvergrownHall_Layout',MAP)
+script = script.replace('/Game/Constellation/Environments/OvergrownHall/Scene/Maps/L_OvergrownHall_Layout',MAP)
 script = script.replace('unreal_exposure_fixed.png','unreal_painted.png')
 exec(compile(script,'capture_painted_hall','exec'),globals())

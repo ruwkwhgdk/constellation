@@ -1,7 +1,7 @@
 import unreal,json
 from pathlib import Path
 P=Path(__file__).resolve().parent
-w=unreal.load_asset('/Game/Resources/Weapons/SM_Weapon_Sword');m=unreal.load_asset('/Game/Resources/Characters/PC/Player_Heroine/Animation/AM_Sword_Attack_Horizontal')
+w=unreal.load_asset('/Game/Constellation/Characters/Shared/Equipment/SM_Weapon_Sword');m=unreal.load_asset('/Game/Constellation/Characters/Heroine/Base/Animation/AM_Sword_Attack_Horizontal')
 task=unreal.AssetExportTask();task.object=w;task.filename=str(P/'Reference_Sword.fbx');task.automated=True;task.prompt=False;task.replace_identical=True;task.options=unreal.FbxExportOption()
 report={'export_ok':unreal.Exporter.run_asset_export_task(task),'bounds':str(w.get_bounds()),'notifies':[]}
 for n in unreal.AnimationLibrary.get_animation_notify_events(m):

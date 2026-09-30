@@ -1,8 +1,9 @@
 """v016 reference finish: distant atmosphere, softer light, clustered growth and water."""
+from resource_paths import loads as load_current_json, load as load_current_json_file
 import unreal as u,json,random,math,runpy
 from pathlib import Path
 ROOT=Path(u.Paths.project_dir());OUT=ROOT/'ArtSource/OvergrownHall/TripoReplacement/v016';OUT.mkdir(exist_ok=True)
-D='/Game/Environment/OvergrownHall/TripoFull';MAP=D+'/Maps/L_OvergrownHall_TripoFull';DEST=D+'/PainterlyFinish'
+D='/Game/Constellation/Environments/OvergrownHall/TripoFull';MAP='/Game/Constellation/Worlds/OvergrownHall/Maps/L_OvergrownHall_TripoFull';DEST=D+'/PainterlyFinish'
 E=u.EditorAssetLibrary;ML=u.MaterialEditingLibrary;AT=u.AssetToolsHelpers.get_asset_tools();A=u.get_editor_subsystem(u.EditorActorSubsystem);L=u.get_editor_subsystem(u.LevelEditorSubsystem)
 assert L.load_level(MAP)
 actors={a.get_actor_label():a for a in A.get_all_level_actors()}
@@ -16,7 +17,7 @@ if not basepath.exists():
         p=a.get_actor_location();s=a.get_actor_scale3d();r=a.get_actor_rotation()
         base[n]=dict(position=[p.x,p.y,p.z],scale=[s.x,s.y,s.z],rotation=[r.pitch,r.yaw,r.roll],mesh=c.static_mesh.get_path_name(),materials=[c.get_material(i).get_path_name() if c.get_material(i) else None for i in range(c.get_num_materials())])
     basepath.write_text(json.dumps(base,indent=2))
-base=json.loads(basepath.read_text())
+base=load_current_json(basepath.read_text())
 for n,a in actors.items():
     if n.startswith('OH_Painterly_'):A.destroy_actor(a)
 actors={a.get_actor_label():a for a in A.get_all_level_actors()}
@@ -91,7 +92,7 @@ flock=flock.replace('rx=270+10*i; ry=320+4*i','rx=410+4*i; ry=270+3*i').replace(
 flock=flock.replace('yaw,1,1,1]','yaw,.50+.16*(i%4)/3,.50+.16*(i%4)/3,.50+.16*(i%4)/3]').replace('assert minimum>80','assert minimum>15')
 flock=flock.replace("    actor.set_actor_location(u.Vector(*samples[0]['position_cm']),False,False)","    actor.set_actor_scale3d(u.Vector(*([.50+.16*(i%4)/3]*3)))\n    actor.set_actor_location(u.Vector(*samples[0]['position_cm']),False,False)")
 exec(compile(flock,'painterly_flock','exec'),dict(FLOCK_DEST=D,FLOCK_MAP='L_OvergrownHall_TripoFull',FLOCK_OUT=OUT/'Flock'))
-bird=make_material('M_OH_PigeonWarm');ML.delete_all_material_expressions(bird);g=Graph(bird);sample=g.n(u.MaterialExpressionTextureSample);sample.texture=E.load_asset('/Game/Environment/OvergrownHall/Bird/Tripo/Textures/OH_Pigeon_Tripo_v001_basecolor');sample.sampler_type=u.MaterialSamplerType.SAMPLERTYPE_COLOR
+bird=make_material('M_OH_PigeonWarm');ML.delete_all_material_expressions(bird);g=Graph(bird);sample=g.n(u.MaterialExpressionTextureSample);sample.texture=E.load_asset('/Game/Constellation/Environments/OvergrownHall/Bird/Tripo/Textures/OH_Pigeon_Tripo_v001_basecolor');sample.sampler_type=u.MaterialSamplerType.SAMPLERTYPE_COLOR
 color=g.lerp(sample,g.color((.92,.84,.66)),g.c(.40));g.prop(color,u.MaterialProperty.MP_BASE_COLOR);g.prop(g.mul(color,g.c(250)),u.MaterialProperty.MP_EMISSIVE_COLOR);g.prop(g.c(.9),u.MaterialProperty.MP_ROUGHNESS);finish(bird)
 for a in A.get_all_level_actors():
     if a.get_actor_label().startswith('OH_Flock_Bird_'):a.modify();a.skeletal_mesh_component.set_material(0,bird)

@@ -1,6 +1,6 @@
 """Match the packed ORM sample to its Masks texture compression setting."""
 import unreal as u
-P='/Game/Environment/StairwellModular/ReviewKit'
+P='/Game/Constellation/Environments/Stairwell/ReviewKit'
 E=u.EditorAssetLibrary; M=u.MaterialEditingLibrary
 mat=E.load_asset(P+'/Materials/M_Kit_TripoLight'); assert mat
 M.delete_all_material_expressions(mat)

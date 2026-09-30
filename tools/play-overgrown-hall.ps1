@@ -6,6 +6,6 @@ if (!(Test-Path -LiteralPath $editorExe)) { throw 'Unreal Editor not found' }
 # Explicitly invoked local play helper; never automatically launched by production.
 Start-Process -FilePath $editorExe -ArgumentList @(
     ('"' + $projectFile + '"'),
-    '/Game/Environment/OvergrownHall/TripoFull/Maps/L_OvergrownHall_TripoFull',
+    '/Game/Constellation/Worlds/OvergrownHall/Maps/L_OvergrownHall_TripoFull',
     '-game', '-windowed', '-ResX=1280', '-ResY=720', '-nop4'
 ) -WindowStyle Normal

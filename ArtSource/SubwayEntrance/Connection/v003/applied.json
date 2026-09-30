@@ -1,0 +1,17 @@
+{
+  "play_tested": false,
+  "backup": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\Saved\\SubwayEntranceRecovery\\20260930_223816_access",
+  "rail_material": "/Game/Environment/StairwellModular/Scene/Materials/Weathered/M_Kit_RailSteel_Weathered.M_Kit_RailSteel_Weathered",
+  "maps": [
+    {
+      "map": "/Game/Levels/L_StartIsland",
+      "saved": true,
+      "approach_lights": 2
+    },
+    {
+      "map": "/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_PlayScale2",
+      "saved": true,
+      "approach_lights": 2
+    }
+  ]
+}

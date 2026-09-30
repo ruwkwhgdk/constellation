@@ -11,13 +11,14 @@
   D) 액터가 메시를 잃었나           -> static mesh = None 인 액터
   E) 배치 매니페스트와 어긋났나      -> placements.json 기대값과 대조
 """
+from resource_paths import loads as load_current_json, load as load_current_json_file
 import json
 import os
 import traceback
 import unreal
 
 SRC = r"C:\Users\User\Documents\UnrealProjects\Constellation\ArtSource\OldKoreanBuildingA"
-DEST = "/Game/Environment/OldKoreanBuildingA"
+DEST = "/Game/Constellation/Environments/KoreanBuildings/BuildingA"
 MESH_DIR = DEST + "/Meshes"
 MANIFEST = os.path.join(SRC, "placements.json")
 
@@ -121,7 +122,7 @@ def run():
         P("[CHK]   manifest not found: %s" % MANIFEST)
     else:
         with open(MANIFEST) as fh:
-            want = {p["instance"]: p for p in json.load(fh)["placements"]}
+            want = {p["instance"]: p for p in load_current_json_file(fh)["placements"]}
         bad = 0
         checked = 0
         for a in acts:

@@ -35,7 +35,7 @@
 
 ## 현재 유지 엔트리
 
-- 맵: `/Game/Environment/OvergrownHall/TripoFull/Maps/L_OvergrownHall_TripoFull`
+- 맵: `/Game/Constellation/Worlds/OvergrownHall/Maps/L_OvergrownHall_TripoFull`
 - 저장 검사/촬영: `Content/Python/capture_hall_acceptance_color.py`
 - 마지막 색조 적용: `Content/Python/finish_hall_acceptance_color.py`
 - 누적 소스 설명: `TripoReplacement/v028/STATUS.md`, `v027/STATUS.md`

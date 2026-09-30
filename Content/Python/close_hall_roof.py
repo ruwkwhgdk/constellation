@@ -1,8 +1,9 @@
 """v015: close the roof with the maintained Tripo-derived module and clear rear trees."""
+from resource_paths import loads as load_current_json, load as load_current_json_file
 import unreal as u,json,math,runpy
 from pathlib import Path
 ROOT=Path(u.Paths.project_dir());OUT=ROOT/'ArtSource/OvergrownHall/TripoReplacement/v015';OUT.mkdir(exist_ok=True)
-D='/Game/Environment/OvergrownHall/TripoFull';MAP=D+'/Maps/L_OvergrownHall_TripoFull'
+D='/Game/Constellation/Environments/OvergrownHall/TripoFull';MAP='/Game/Constellation/Worlds/OvergrownHall/Maps/L_OvergrownHall_TripoFull'
 A=u.get_editor_subsystem(u.EditorActorSubsystem);L=u.get_editor_subsystem(u.LevelEditorSubsystem);E=u.EditorAssetLibrary
 assert L.load_level(MAP)
 actors={a.get_actor_label():a for a in A.get_all_level_actors()}
@@ -14,7 +15,7 @@ def snapshot(a):
 if not (OUT/'baseline.json').exists():
     base={n:snapshot(a) for n,a in actors.items() if targeted(n)}
     (OUT/'baseline.json').write_text(json.dumps(base,indent=2))
-base=json.loads((OUT/'baseline.json').read_text())
+base=load_current_json((OUT/'baseline.json').read_text())
 roof_material=E.load_asset(next(v['materials'][0] for n,v in base.items() if n.startswith('OH_STRUCTURE_Roof_')))
 for n,a in actors.items():
     if targeted(n) or n.startswith('OH_ClosedRoof_'):assert A.destroy_actor(a)

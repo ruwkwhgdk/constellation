@@ -3,7 +3,7 @@ import unreal as u, json
 from pathlib import Path
 def apply_materials():
     E=u.EditorAssetLibrary; M=u.MaterialEditingLibrary; AT=u.AssetToolsHelpers.get_asset_tools()
-    dest='/Game/Environment/StairwellModular/Scene/Materials/Weathered'
+    dest='/Game/Constellation/Environments/Stairwell/Scene/Materials/Weathered'
     # Linear albedo, roughness, metal, fine variation, broad variation.
     specs={
         'M_Kit_Concrete':([.24,.28,.29],.9,0,.35,.24),

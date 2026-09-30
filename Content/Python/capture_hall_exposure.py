@@ -1,7 +1,7 @@
 import unreal as u,time,json,runpy
 from pathlib import Path
 root=Path(u.Paths.project_dir()); out=root/'ArtSource/OvergrownHall/Scene/v001'
-assert u.get_editor_subsystem(u.LevelEditorSubsystem).load_level('/Game/Environment/OvergrownHall/Scene/Maps/L_OvergrownHall_Layout')
+assert u.get_editor_subsystem(u.LevelEditorSubsystem).load_level('/Game/Constellation/Environments/OvergrownHall/Scene/Maps/L_OvergrownHall_Layout')
 actors=u.get_editor_subsystem(u.EditorActorSubsystem).get_all_level_actors()
 cam=next(a for a in actors if a.get_actor_label()=='OH_ReferenceCamera')
 pp=next(a for a in actors if a.get_actor_label()=='OH_Exposure')

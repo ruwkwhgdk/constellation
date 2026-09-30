@@ -1,7 +1,7 @@
 import unreal as u,json
 from pathlib import Path
 root=Path(u.Paths.project_dir());out=root/'ArtSource/OvergrownHall/TripoReplacement/v006';out.mkdir(parents=True,exist_ok=True)
-L=u.get_editor_subsystem(u.LevelEditorSubsystem);assert L.load_level('/Game/Environment/OvergrownHall/TripoFull/Maps/L_OvergrownHall_TripoFull')
+L=u.get_editor_subsystem(u.LevelEditorSubsystem);assert L.load_level('/Game/Constellation/Worlds/OvergrownHall/Maps/L_OvergrownHall_TripoFull')
 rows=[]
 for a in u.get_editor_subsystem(u.EditorActorSubsystem).get_all_level_actors():
     n=a.get_actor_label()

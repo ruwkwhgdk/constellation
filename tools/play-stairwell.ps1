@@ -7,7 +7,7 @@ if (!(Test-Path -LiteralPath $editorExe)) { throw "Unreal Editor not found: $edi
 # Interactive game window requested by the user; editor sessions are left running.
 $gameProcess = Start-Process -FilePath $editorExe -ArgumentList @(
     ('"' + $projectFile + '"'),
-    '/Game/Environment/StairwellModular/Scene/Maps/L_Stairwell_PlayScale2',
+    '/Game/Constellation/Worlds/Stairwell/Maps/L_Stairwell_PlayScale2',
     '-game', '-windowed', '-ResX=1280', '-ResY=900', '-nop4',
     ('-abslog="' + $gameLog + '"')
 ) -WindowStyle Normal -PassThru

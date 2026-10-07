@@ -5,6 +5,6 @@ public class ConstellationResourceTools : ModuleRules
     public ConstellationResourceTools(ReadOnlyTargetRules Target) : base(Target)
     {
         PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
-        PrivateDependencyModuleNames.AddRange(new[] { "Core", "CoreUObject", "Engine", "UnrealEd" });
+        PrivateDependencyModuleNames.AddRange(new[] { "Core", "CoreUObject", "Engine", "UnrealEd", "BlueprintGraph", "AIModule", "Constellation", "EnhancedInput", "InputBlueprintNodes", "AnimGraph", "AnimGraphRuntime", "AssetRegistry", "AnimationBlueprintLibrary" });
     }
 }

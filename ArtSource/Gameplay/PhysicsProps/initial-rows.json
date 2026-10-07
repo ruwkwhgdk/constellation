@@ -1,0 +1,29 @@
+[
+  {
+    "Name": "SchoolChair",
+    "MassKg": 8,
+    "LinearDamping": 0.800000011920929,
+    "AngularDamping": 2.0,
+    "bSimulatePhysics": true,
+    "bEnableGravity": true,
+    "PhysicalMaterial": "None"
+  },
+  {
+    "Name": "SchoolDesk",
+    "MassKg": 10,
+    "LinearDamping": 0.800000011920929,
+    "AngularDamping": 2.0,
+    "bSimulatePhysics": true,
+    "bEnableGravity": true,
+    "PhysicalMaterial": "None"
+  },
+  {
+    "Name": "TestBox",
+    "MassKg": 5,
+    "LinearDamping": 0.009999999776482582,
+    "AngularDamping": 0.0,
+    "bSimulatePhysics": true,
+    "bEnableGravity": true,
+    "PhysicalMaterial": "None"
+  }
+]

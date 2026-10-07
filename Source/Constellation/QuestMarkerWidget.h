@@ -26,8 +26,8 @@ public:
 	 * target (no quest tracked, or the tracked quest's current step has no marker positions left) —
 	 * collapse the panel in that case.
 	 *
-	 * ScreenPosition is where to place the marker panel, in viewport pixels (same space as
-	 * UWidgetLayoutLibrary::GetViewportSize / a CanvasPanelSlot with Anchors (0,0)-(0,0)). Set the
+	 * ScreenPosition is where to place the marker panel in DPI-scaled viewport local coordinates
+	 * (a CanvasPanelSlot with Anchors (0,0)-(0,0)). Set the
 	 * panel's CanvasPanelSlot Position to this value every update.
 	 *
 	 * bOnScreen is true when the target itself is visible on screen — ScreenPosition is then the
@@ -68,11 +68,6 @@ private:
 	/** Recomputes screen position/rotation/distance from the cached target and fires OnQuestMarkerUpdated. */
 	void UpdateMarker();
 
-	/**
-	 * Clamps a direction from the viewport center to the edge of a HalfExtents-sized rectangle
-	 * centered on it, returning the offset from center to the clamped edge point.
-	 */
-	static FVector2D ClampDirectionToRectEdge(const FVector2D& Direction, const FVector2D& HalfExtents);
 
 	bool bHasTarget = false;
 	FVector CurrentTargetPosition = FVector::ZeroVector;

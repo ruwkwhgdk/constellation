@@ -18,6 +18,7 @@ void UQuestLogWidget::NativeConstruct()
 			{
 				Sub->OnQuestStateChanged.AddDynamic(this, &UQuestLogWidget::HandleQuestStateChanged);
 				Sub->OnQuestProgressChanged.AddDynamic(this, &UQuestLogWidget::HandleQuestProgressChanged);
+				Sub->OnQuestInnerProgressChanged.AddDynamic(this, &UQuestLogWidget::HandleQuestInnerProgressChanged);
 				Sub->OnQuestCompleted.AddDynamic(this, &UQuestLogWidget::HandleQuestCompleted);
 			}
 		}
@@ -36,6 +37,7 @@ void UQuestLogWidget::NativeDestruct()
 			{
 				Sub->OnQuestStateChanged.RemoveDynamic(this, &UQuestLogWidget::HandleQuestStateChanged);
 				Sub->OnQuestProgressChanged.RemoveDynamic(this, &UQuestLogWidget::HandleQuestProgressChanged);
+				Sub->OnQuestInnerProgressChanged.RemoveDynamic(this, &UQuestLogWidget::HandleQuestInnerProgressChanged);
 				Sub->OnQuestCompleted.RemoveDynamic(this, &UQuestLogWidget::HandleQuestCompleted);
 			}
 		}
@@ -76,6 +78,11 @@ void UQuestLogWidget::HandleQuestProgressChanged(FName QuestID, int32 NewProgres
 }
 
 void UQuestLogWidget::HandleQuestCompleted(FName QuestID, FName EndingID)
+{
+	RefreshQuestList();
+}
+
+void UQuestLogWidget::HandleQuestInnerProgressChanged(FName QuestID, int32 NewInnerProgress)
 {
 	RefreshQuestList();
 }

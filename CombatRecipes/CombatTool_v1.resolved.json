@@ -1,0 +1,159 @@
+{
+  "schema_version": 2,
+  "id": "CombatTool_v1",
+  "mesh": "/Game/Constellation/Characters/Enemies/Slime_Normal/SKM_Slime_Normal",
+  "actions": [
+    {
+      "id": "Heavy",
+      "source": "/Game/Constellation/Review/CombatRecipes/SlimeScout_v1/DA_Heavy",
+      "values": {
+        "damage": 22.0,
+        "stamina_cost": 0.0,
+        "cooldown": 2.5,
+        "play_rate": 0.699999988079071,
+        "reach": 140.0,
+        "radius": 30.0
+      }
+    },
+    {
+      "id": "Light",
+      "source": "/Game/Constellation/Review/CombatRecipes/SlimeScout_v1/DA_Light",
+      "values": {
+        "damage": 12.0,
+        "stamina_cost": 0.0,
+        "cooldown": 1.0,
+        "play_rate": 1.100000023841858,
+        "reach": 140.0,
+        "radius": 30.0
+      }
+    }
+  ],
+  "patterns": [
+    {
+      "min_distance": 0.0,
+      "max_distance": 180.0,
+      "max_angle": 80.0,
+      "require_sight": true,
+      "weight": 3.0,
+      "max_consecutive": 2,
+      "id": "Light",
+      "action": "Light"
+    },
+    {
+      "min_distance": 0.0,
+      "max_distance": 150.0,
+      "max_angle": 70.0,
+      "require_sight": true,
+      "weight": 1.0,
+      "max_consecutive": 1,
+      "id": "Heavy",
+      "action": "Heavy"
+    }
+  ],
+  "encounter": {
+    "detect_radius": 800.0,
+    "lose_radius": 1100.0,
+    "leash_radius": 700.0,
+    "attack_distance": 140.0,
+    "move_speed": 220.0,
+    "think_interval": 0.20000000298023224,
+    "lost_sight_time": 3.0,
+    "home_tolerance": 50.0,
+    "retry_delay": 1.0,
+    "retry_cooldown": 3.0,
+    "stuck_timeout": 2.0,
+    "max_move_failures": 3,
+    "restore_on_return": true
+  },
+  "player": {
+    "actions": [
+      {
+        "id": "Basic",
+        "source": "/Game/Constellation/Review/CombatCore/DA_PlayerSlash",
+        "next_action": "Follow",
+        "values": {
+          "ultimate_gain": 15
+        }
+      },
+      {
+        "id": "Follow",
+        "source": "/Game/Constellation/Review/CombatCore/DA_PlayerFollowUp02",
+        "next_action": "Finish",
+        "values": {
+          "ultimate_gain": 15
+        }
+      },
+      {
+        "id": "Finish",
+        "source": "/Game/Constellation/Review/CombatCore/DA_PlayerFollowUp03",
+        "values": {
+          "ultimate_gain": 20
+        }
+      },
+      {
+        "id": "Dash",
+        "source": "/Game/Constellation/Review/CombatCore/DA_PlayerSlash",
+        "values": {
+          "damage": 25,
+          "stamina_cost": 20,
+          "cooldown": 3,
+          "dash_distance": 250,
+          "dash_duration": 0.25,
+          "ultimate_gain": 20
+        },
+        "hit_windows": [
+          {
+            "id": "DashHit",
+            "start": 0.12,
+            "end": 0.4
+          }
+        ]
+      },
+      {
+        "id": "Burst",
+        "source": "/Game/Constellation/Review/CombatCore/DA_PlayerSlash",
+        "values": {
+          "damage": 60,
+          "stamina_cost": 0,
+          "cooldown": 5,
+          "radial_hit": true,
+          "radius": 350,
+          "ultimate_cost": 100,
+          "ultimate_gain": 0
+        },
+        "hit_windows": [
+          {
+            "id": "BurstHit",
+            "start": 0.35,
+            "end": 0.5
+          }
+        ]
+      }
+    ],
+    "slots": {
+      "basic": "Basic",
+      "skill": "Dash",
+      "ultimate": "Burst"
+    },
+    "stats": {
+      "max_health": 100,
+      "max_stamina": 100
+    }
+  },
+  "monster_stats": {
+    "max_health": 150,
+    "max_stamina": 100
+  },
+  "enemies": [
+    {
+      "id": "Slime",
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "max_attackers": 1,
+  "warnings": []
+}

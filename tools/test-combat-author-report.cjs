@@ -1,0 +1,20 @@
+const fs=require("fs"),assert=require("assert"),{chromium}=require("C:/Users/User/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright");
+(async()=>{
+ const c=JSON.parse(fs.readFileSync("Saved/CombatAuthor/server.json","utf8")),f=JSON.parse(fs.readFileSync("Saved/CombatAuthor/acceptance.json","utf8"));
+ const b=await chromium.launch({channel:"msedge",headless:true}),p=await b.newPage({viewport:{width:1600,height:1000}});
+ const errors=[];p.on("pageerror",e=>errors.push(e.message));
+ await p.goto(c.url);await p.locator("#versions").selectOption("CombatTool_v3");await p.locator("#clone").click();
+ await p.locator("#versionName").fill(f.version);await p.locator("#versionName").press("Tab");
+ await p.getByRole("button",{name:"AI 파일 · JSON",exact:true}).click();
+ await p.getByLabel("플레이 조정 보고서").selectOption(f.report);
+ await p.getByRole("button",{name:"플레이 조정값 불러오기",exact:true}).click();
+ await p.locator("#message").filter({hasText:"조정값 2건"}).waitFor();
+ await p.getByRole("button",{name:"변경 내역",exact:true}).click();
+ await p.screenshot({path:"Saved/CombatAuthor/tuning-import.png",fullPage:true});
+ await p.locator("#save").click();await p.locator("#message").filter({hasText:"새 버전 파일 저장 완료"}).waitFor();
+ const saved=JSON.parse(fs.readFileSync("CombatRecipes/"+f.version+".json","utf8"));
+ assert.equal(saved.player.stats.max_health,117);
+ assert.equal(saved.enemies.find(e=>e.id==="Guard").action_values.Heavy.damage,31);
+ assert.equal(saved.enemies.find(e=>e.id==="Scout").action_values,undefined);
+ assert.deepEqual(errors,[]);await b.close();console.log("PASS: real play report imported, two edits reviewed, new version saved through UI");
+})().catch(e=>{console.error(e);process.exit(1)});

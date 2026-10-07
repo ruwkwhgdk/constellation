@@ -340,3 +340,9 @@ void UCarryComponent::EndPlay(const EEndPlayReason::Type Reason)
 {
     AbortCarry(); if(Notice) { Notice->RemoveFromParent(); Notice=nullptr; } Super::EndPlay(Reason);
 }
+
+bool UCarryComponent::AllowsCombatAction_Implementation(FString& Reason) const
+{
+    if(BlocksOtherActions()){Reason=TEXT("Carry interaction active");return false;}
+    Reason.Reset();return true;
+}

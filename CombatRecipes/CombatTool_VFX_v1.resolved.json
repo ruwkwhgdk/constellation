@@ -1,0 +1,379 @@
+{
+  "schema_version": 2,
+  "id": "CombatTool_VFX_v1",
+  "mesh": "/Game/Constellation/Characters/Enemies/Slime_Normal/SKM_Slime_Normal",
+  "actions": [
+    {
+      "id": "Heavy",
+      "source": "/Game/Constellation/Review/CombatRecipes/CombatTool_VFX_v1/DA_Heavy",
+      "values": {
+        "damage": 22.0,
+        "stamina_cost": 0.0,
+        "cooldown": 2.5,
+        "play_rate": 0.699999988079071,
+        "reach": 140.0,
+        "radius": 30.0,
+        "ultimate_cost": 0.0,
+        "ultimate_gain": 10.0,
+        "dash_distance": 0.0,
+        "dash_duration": 0.25,
+        "input_window_start": 0.5,
+        "input_window_end": 0.6499999761581421,
+        "dodge_cancel_start": 0.5,
+        "dodge_cancel_end": 0.699999988079071,
+        "radial_hit": false,
+        "allow_dodge_cancel": false
+      },
+      "montage": "/Game/Constellation/Review/CombatCore/AM_DA_EnemyHeavy"
+    },
+    {
+      "id": "Light",
+      "source": "/Game/Constellation/Review/CombatRecipes/CombatTool_VFX_v1/DA_Light",
+      "values": {
+        "damage": 12.0,
+        "stamina_cost": 0.0,
+        "cooldown": 1.0,
+        "play_rate": 1.100000023841858,
+        "reach": 140.0,
+        "radius": 30.0,
+        "ultimate_cost": 0.0,
+        "ultimate_gain": 10.0,
+        "dash_distance": 0.0,
+        "dash_duration": 0.25,
+        "input_window_start": 0.5,
+        "input_window_end": 0.6499999761581421,
+        "dodge_cancel_start": 0.5,
+        "dodge_cancel_end": 0.699999988079071,
+        "radial_hit": false,
+        "allow_dodge_cancel": false
+      },
+      "montage": "/Game/Constellation/Review/CombatCore/AM_DA_EnemyStrike"
+    }
+  ],
+  "patterns": [
+    {
+      "min_distance": 0,
+      "max_distance": 180,
+      "max_angle": 80,
+      "require_sight": true,
+      "weight": 3,
+      "max_consecutive": 2,
+      "id": "Light",
+      "action": "Light"
+    },
+    {
+      "min_distance": 0,
+      "max_distance": 150,
+      "max_angle": 70,
+      "require_sight": true,
+      "weight": 1,
+      "max_consecutive": 1,
+      "id": "Heavy",
+      "action": "Heavy"
+    }
+  ],
+  "encounter": {
+    "detect_radius": 800,
+    "lose_radius": 1100,
+    "leash_radius": 700,
+    "attack_distance": 140,
+    "move_speed": 220,
+    "think_interval": 0.20000000298023224,
+    "lost_sight_time": 3,
+    "home_tolerance": 50,
+    "retry_delay": 1,
+    "retry_cooldown": 3,
+    "stuck_timeout": 2,
+    "max_move_failures": 3,
+    "restore_on_return": true
+  },
+  "player": {
+    "actions": [
+      {
+        "id": "Basic",
+        "source": "/Game/Constellation/Review/CombatRecipes/CombatTool_VFX_v1/DA_Player_Basic",
+        "next_action": "Follow",
+        "values": {
+          "damage": 20.0,
+          "stamina_cost": 10.0,
+          "cooldown": 0.20000000298023224,
+          "play_rate": 1.0,
+          "reach": 140.0,
+          "radius": 30.0,
+          "ultimate_cost": 0.0,
+          "ultimate_gain": 15.0,
+          "dash_distance": 0.0,
+          "dash_duration": 0.25,
+          "input_window_start": 0.5,
+          "input_window_end": 0.6499999761581421,
+          "dodge_cancel_start": 0.5,
+          "dodge_cancel_end": 0.699999988079071,
+          "radial_hit": false,
+          "allow_dodge_cancel": false
+        },
+        "montage": "/Game/Constellation/Review/CombatCore/AM_DA_PlayerSlash"
+      },
+      {
+        "id": "Follow",
+        "source": "/Game/Constellation/Review/CombatRecipes/CombatTool_VFX_v1/DA_Player_Follow",
+        "next_action": "Finish",
+        "values": {
+          "damage": 20.0,
+          "stamina_cost": 10.0,
+          "cooldown": 0.20000000298023224,
+          "play_rate": 1.0,
+          "reach": 140.0,
+          "radius": 30.0,
+          "ultimate_cost": 0.0,
+          "ultimate_gain": 15.0,
+          "dash_distance": 0.0,
+          "dash_duration": 0.25,
+          "input_window_start": 0.5,
+          "input_window_end": 0.6499999761581421,
+          "dodge_cancel_start": 0.5,
+          "dodge_cancel_end": 0.699999988079071,
+          "radial_hit": false,
+          "allow_dodge_cancel": false
+        },
+        "montage": "/Game/Constellation/Review/CombatCore/AM_DA_PlayerFollowUp02"
+      },
+      {
+        "id": "Finish",
+        "source": "/Game/Constellation/Review/CombatRecipes/CombatTool_VFX_v1/DA_Player_Finish",
+        "values": {
+          "damage": 20.0,
+          "stamina_cost": 10.0,
+          "cooldown": 0.20000000298023224,
+          "play_rate": 1.0,
+          "reach": 140.0,
+          "radius": 30.0,
+          "ultimate_cost": 0.0,
+          "ultimate_gain": 20.0,
+          "dash_distance": 0.0,
+          "dash_duration": 0.25,
+          "input_window_start": 0.5,
+          "input_window_end": 0.6499999761581421,
+          "dodge_cancel_start": 0.5,
+          "dodge_cancel_end": 0.699999988079071,
+          "radial_hit": false,
+          "allow_dodge_cancel": false
+        },
+        "montage": "/Game/Constellation/Review/CombatCore/AM_DA_PlayerFollowUp03"
+      },
+      {
+        "id": "Dash",
+        "source": "/Game/Constellation/Review/CombatRecipes/CombatTool_VFX_v1/DA_Player_Dash",
+        "values": {
+          "damage": 25.0,
+          "stamina_cost": 20.0,
+          "cooldown": 3.0,
+          "play_rate": 1.0,
+          "reach": 140.0,
+          "radius": 30.0,
+          "ultimate_cost": 0.0,
+          "ultimate_gain": 20.0,
+          "dash_distance": 250.0,
+          "dash_duration": 0.25,
+          "input_window_start": 0.5,
+          "input_window_end": 0.6499999761581421,
+          "dodge_cancel_start": 0.5,
+          "dodge_cancel_end": 0.699999988079071,
+          "radial_hit": false,
+          "allow_dodge_cancel": false
+        },
+        "hit_windows": [
+          {
+            "id": "DashHit",
+            "start": 0.12,
+            "end": 0.4
+          }
+        ],
+        "montage": "/Game/Constellation/Review/CombatRecipes/CombatTool_VFX_v1/AM_Player_Dash"
+      },
+      {
+        "id": "Burst",
+        "source": "/Game/Constellation/Review/CombatRecipes/CombatTool_VFX_v1/DA_Player_Burst",
+        "values": {
+          "damage": 60.0,
+          "stamina_cost": 0.0,
+          "cooldown": 5.0,
+          "play_rate": 1.0,
+          "reach": 140.0,
+          "radius": 350.0,
+          "ultimate_cost": 100.0,
+          "ultimate_gain": 0.0,
+          "dash_distance": 0.0,
+          "dash_duration": 0.25,
+          "input_window_start": 0.5,
+          "input_window_end": 0.6499999761581421,
+          "dodge_cancel_start": 0.5,
+          "dodge_cancel_end": 0.699999988079071,
+          "radial_hit": true,
+          "allow_dodge_cancel": false
+        },
+        "hit_windows": [
+          {
+            "id": "BurstHit",
+            "start": 0.35,
+            "end": 0.5
+          }
+        ],
+        "montage": "/Game/Constellation/Review/CombatRecipes/CombatTool_VFX_v1/AM_Player_Burst"
+      }
+    ],
+    "slots": {
+      "basic": "Basic",
+      "skill": "Dash",
+      "ultimate": "Burst"
+    },
+    "stats": {
+      "max_health": 100.0,
+      "max_stamina": 100.0,
+      "stamina_recovery_per_second": 20.0,
+      "stamina_recovery_delay": 1.0,
+      "hit_reaction_duration": 0.3499999940395355,
+      "dodge_duration": 0.6000000238418579,
+      "dodge_distance": 240.0,
+      "dodge_stamina_cost": 20.0,
+      "dodge_invulnerable_start": 0.10000000149011612,
+      "dodge_invulnerable_end": 0.30000001192092896
+    },
+    "move_speed": 500.0,
+    "vfx": {
+      "enabled": true,
+      "attack": {
+        "mode": "Default",
+        "kind": "SwordHit",
+        "system": null,
+        "color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "scale": 1,
+        "duration": 2
+      },
+      "hit": {
+        "mode": "Default",
+        "kind": "SwordHit",
+        "system": null,
+        "color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "scale": 1,
+        "duration": 2
+      }
+    }
+  },
+  "monster_stats": {
+    "max_health": 150,
+    "max_stamina": 100,
+    "stamina_recovery_per_second": 20,
+    "stamina_recovery_delay": 1,
+    "hit_reaction_duration": 0.3499999940395355,
+    "dodge_duration": 0.6000000238418579,
+    "dodge_distance": 240,
+    "dodge_stamina_cost": 20,
+    "dodge_invulnerable_start": 0.10000000149011612,
+    "dodge_invulnerable_end": 0.30000001192092896
+  },
+  "enemies": [
+    {
+      "id": "Scout",
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "Guard",
+      "offset": [
+        0,
+        220,
+        0
+      ],
+      "stats": {
+        "max_health": 220
+      },
+      "action_values": {
+        "Heavy": {
+          "damage": 28
+        }
+      },
+      "vfx": {
+        "enabled": true,
+        "attack": {
+          "mode": "Default",
+          "kind": "SwordHit",
+          "system": null,
+          "color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "scale": 1,
+          "duration": 2
+        },
+        "hit": {
+          "mode": "Builtin",
+          "kind": "SlimeHit",
+          "system": null,
+          "color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "scale": 1.3,
+          "duration": 2
+        }
+      }
+    },
+    {
+      "id": "Flanker",
+      "offset": [
+        0,
+        -220,
+        0
+      ]
+    }
+  ],
+  "max_attackers": 1,
+  "battle_key": "",
+  "notify_scene": false,
+  "monster_vfx": {
+    "enabled": true,
+    "attack": {
+      "mode": "Default",
+      "kind": "SwordHit",
+      "system": null,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "scale": 1,
+      "duration": 2
+    },
+    "hit": {
+      "mode": "Default",
+      "kind": "SwordHit",
+      "system": null,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "scale": 1,
+      "duration": 2
+    }
+  }
+}

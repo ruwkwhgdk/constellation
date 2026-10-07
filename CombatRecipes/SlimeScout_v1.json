@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "id": "SlimeScout_v1",
+  "mesh": "/Game/Constellation/Characters/Enemies/Slime_Normal/SKM_Slime_Normal",
+  "actions": [
+    {"id": "Light", "source": "/Game/Constellation/Review/CombatCore/DA_EnemyStrike", "values": {"damage": 12, "stamina_cost": 0, "cooldown": 1.0, "play_rate": 1.1}},
+    {"id": "Heavy", "source": "/Game/Constellation/Review/CombatCore/DA_EnemyHeavy", "values": {"damage": 22, "stamina_cost": 0, "cooldown": 2.5, "play_rate": 0.7}}
+  ],
+  "patterns": [
+    {"id": "Light", "action": "Light", "min_distance": 0, "max_distance": 180, "max_angle": 80, "weight": 3, "max_consecutive": 2},
+    {"id": "Heavy", "action": "Heavy", "min_distance": 0, "max_distance": 150, "max_angle": 70, "weight": 1, "max_consecutive": 1}
+  ],
+  "encounter": {"move_speed": 220, "attack_distance": 140, "detect_radius": 800, "lose_radius": 1100, "leash_radius": 700}
+}

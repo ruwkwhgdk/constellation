@@ -32,10 +32,10 @@ public:
     UPROPERTY(EditAnywhere, Category = "SlimeClimb|Detection")
     float TraceLength = 150.f;
 
-    UPROPERTY(EditAnywhere, Category = "SlimeClimb|Detection")
+    UPROPERTY(EditAnywhere, Category = "SlimeClimb|Detection", meta = (ClampMin = "1", UIMin = "1"))
     int32 HorizontalSteps = 8;
 
-    UPROPERTY(EditAnywhere, Category = "SlimeClimb|Detection")
+    UPROPERTY(EditAnywhere, Category = "SlimeClimb|Detection", meta = (ClampMin = "1", UIMin = "1"))
     int32 VerticalSteps = 6;
 
     UPROPERTY(EditAnywhere, Category = "SlimeClimb|Detection")

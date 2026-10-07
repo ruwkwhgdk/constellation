@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
 #include "CarryData.h"
-
+#include "CombatActionGate.h"
 #include "CarryComponent.generated.h"
 
 class UHoldableComponent;
@@ -17,12 +17,12 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FCarryStateChanged, ECarryState, Sta
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FCarryMessage, const FText&, Message);
 
 UCLASS(ClassGroup=(Interaction), meta=(BlueprintSpawnableComponent))
-class CONSTELLATION_API UCarryComponent : public UActorComponent
+class CONSTELLATION_API UCarryComponent : public UActorComponent, public ICombatActionGate
 {
     GENERATED_BODY()
 public:
     UCarryComponent();
-
+    virtual bool AllowsCombatAction_Implementation(FString& Reason) const override;
     UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="Carry|Data", meta=(RowType="/Script/Constellation.CarrySettingsRow"))
     FDataTableRowHandle SettingsRow;
     UFUNCTION(BlueprintCallable, Category="Carry|Data") bool ApplySettings();

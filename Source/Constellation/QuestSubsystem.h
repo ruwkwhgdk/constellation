@@ -183,6 +183,7 @@ public:
 	FOnTrackedQuestChanged OnTrackedQuestChanged;
 
 private:
+	friend class FConstellationAuditPersistenceTest;
 	void SetQuestState(FName QuestID, EQuestState NewState);
 	void EvaluateAllLockedQuests();
 	bool IsUnlockConditionMet(const UQuestDefinition* Quest) const;
@@ -191,7 +192,7 @@ private:
 	/** Re-validates TrackedQuestID, picking another Progressed quest (Main-type preferred) if it's no longer valid. */
 	void AutoPickTrackedQuestIfNeeded();
 
-	static const FString SaveSlotName;
+	FString SaveSlotName = TEXT("ConstellationSaveGame");
 	static constexpr int32 SaveUserIndex = 0;
 	static const TCHAR* DefaultDatabasePath;
 
@@ -202,6 +203,7 @@ private:
 	TMap<FName, TObjectPtr<UQuestDefinition>> QuestDefinitions;
 
 	TMap<FName, FQuestRuntimeState> RuntimeStates;
+	TSet<FName> EvaluatingUnlocks;
 
 	/** QuestID of the quest tracker UI should show. NAME_None if no quest is Progressed. Not persisted. */
 	UPROPERTY(Transient)

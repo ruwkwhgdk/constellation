@@ -1,3 +1,11 @@
+# 2026-10-07 검수 작업 공간 이동 안내
+
+Rebuild 제작·검수 자료는 사용자 요청으로 `C:/Users/User/Documents/Constellation_ArtWorkspace/ArtSource/Heroine_Rebuild`로 이동했다. 아래 기록의 `ArtSource/Heroine_Rebuild/...` 참조는 외부 작업 공간 기준으로 읽는다. 기존 프로젝트 경로를 다시 생성하지 않는다.
+
+최신 검토 소스는 외부 경로의 `FaceDefectRepair/R11/Heroine_R11_Review.blend`, FBX는 같은 폴더의 `SK_player_heroine_new_FaceDefectReview.fbx`다. 최신 상태와 미완료 항목은 외부 `CURRENT.md`, `FaceDefectRepair/status.json`, `Migration_20261007/result.json`(외부 작업 공간 루트)을 함께 확인한다. 자동화 스크립트의 하드코딩된 경로 갱신은 후속 작업이며, 실행 전에 반드시 확인한다. 원본 Carry Blend/FBX와 게임 리소스는 프로젝트에 유지한다.
+
+외부 작업 공간은 이 Git 저장소의 푸시 대상이 아니므로 별도 보관이 필요하다. 과거 기록은 아래에 보존한다.
+
 ---
 name: constellation-character-animation
 description: Project Constellation의 여주인공 애니메이션을 기존 게임 모션 기반으로 리타기팅, 폴리싱, 검증하고 언리얼에 전달할 때 사용하는 프로젝트 작업 절차.
@@ -83,3 +91,32 @@ description: Project Constellation의 여주인공 애니메이션을 기존 게
 ## 7. 초안 정리
 
 정리 요청 시 최신본과 재임포트 원본·텍스처·스켈레톤 의존성을 먼저 확인한다. 언리얼 Asset Registry의 hard/soft referencers를 조회하고 살아 있는 외부 참조가 있으면 삭제하지 않는다. 삭제는 엔진 API로 처리하고 결과를 다시 확인한다. 파일 폴더는 절대경로가 프로젝트 내부인지 검증한 뒤 삭제한다. 삭제 목록과 용량을 기록하되 초안을 이름만 바꿔 중복 보관하지 않는다. 사용자의 모델링 원본·게임 원본·설정 백업은 별도 필요성을 검토한다.
+
+
+## Rebuild 얼굴 엔진 전달 검사 보충 — 2026-10-05
+
+새 Rebuild 작업은 `ArtSource/Heroine_Rebuild/CURRENT.md`의 유지 원본을 따른다. 현재 검토 메시 FBX는 `RuntimeSurfaceReview/SK_player_heroine_new_Rebuild_SurfaceUV.fbx`; 상세 재실행 절차는 같은 폴더 README.md.
+
+- NullRHI/독립 HLSL 컴파일 통과를 실제 엔진 렌더 통과로 간주하지 않는다. PreSkinnedPosition은 VertexInterpolator로 전달하고 스킨 메시의 실제 UV 한도(4)를 확인한다.
+- 닫힌 입술처럼 같은 중립 위치에서 서로 다른 모프 변위를 갖는 정점은 임포트 병합을 검사한다. 이번 검토본은 해당 면의 사용하지 않는 UV3 정점 식별값으로 원래 위치/표정을 보존했다.
+- 모프 이름/값 readback뿐 아니라 실제 눈꺼풀/입술 움직임을 캡처한다. 정적 에디터 씬에서 이전 변형 버퍼 재사용 문제가 있었으므로 검토는 상태별 독립 컴포넌트로 수행했다. 실제 게임에서는 연속 업데이트를 별도로 검증한다.
+- 기존 FBX 재임포트는 저장된 import data를 확인한다. uniform scale=100, morph targets 활성화를 새 옵션에만 지정해도 적용된다고 가정하지 않는다. 재임포트 후 160cm·94본·10모프·재질 연결을 다시 확인한다.
+- 전신 56/56 재질 연결과 7개 정적 비교까지 수행했다. RuntimeSurfaceReview/README.md를 따른다. 실제 게임 조명/후처리, 연속 표정·달리기, 얼굴 경계/셰이더 최적화·게임 ABP/표정 브리지 연결은 남아 있다.
+- Blender Standard 비교 시 캡처는 RTF_RGBA8_SRGB + Tonemapper off를 사용했다. 톤매핑 진단 화면의 검은 뭉침을 텍스처 자체의 문제로 간주해 원본 색을 밝히지 않는다. 검토용 카메라 설정을 게임 전체 설정 변경으로 확대하지 않는다.
+
+## Rebuild 표정 갱신 검사 보충 — 2026-10-06
+
+- 동일 컴포넌트의 모프 값 readback만으로 렌더 갱신을 판정하지 않는다. 일반 에디터 월드에서는 `set_update_animation_in_editor(True)` 및 `play(True)`를 설정해도 이번 오프스크린 환경에서 시간이 진행되지 않았다.
+- 정지 캡처는 상태별 초기화 방식으로 검사하되, 상태 전환 검사는 별도 Simulate In Editor 게임 월드를 사용하고 `get_position()` 진행·실제 변형·초기 상태 복귀를 함께 확인한다. 재생 시퀀스는 진단용으로만 만들고 기존 ABP/플레이어에 연결하지 않는다.
+- 현재 재현 스크립트: `ArtSource/Heroine_Rebuild/capture_simulated_expressions.py`; 검사 결과: `EngineSimulationReview/verification.json`. 단계별 캡처 GIF는 실시간 FPS 영상으로 보고하지 않는다.
+- `AnimationDataController.notify_populated`는 이 설치의 Python API에 노출되지 않음. 사용 가능한 `set_frame_rate`/`set_number_of_frames` 후 저장과 실제 길이 재확인으로 진단 시퀀스를 구성했다.
+
+- 2026-10-06 텍스처 확인: 일반 스트리밍 조건의 오프스크린 SIE에서 저해상도 텍스처 상태로 눈/입/헤어가 깨지는 현상을 재현. 모델을 재조형하기 전에 `SkeletalMeshComponent.prestream_textures(60., True, 0)`처럼 검토 컴포넌트에 한시적으로 로딩을 요청하고 기다린 뒤 비교한다. 이번 근거리 검사에서는 전역 NoTextureStreaming 기준과 픽셀 오차 0. 이를 실제 게임의 무제한 고해상도 상주 정책으로 적용하지 않는다. 메모리 예산·요청 만료·거리 전환을 따로 검증한다.
+
+
+### 2026-10-06 얼굴 표정 유지 / 엔진 검증 교훈
+- 최신 형태·표정 소스와 남은 작업은 ArtSource/Heroine_Rebuild/HairFoundationRebuild/CURRENT.md를 먼저 확인한다. 현재 exporter/importer는 export_hair_foundation.py / import_hair_foundation_unreal.py다. 과거 일회성 repair 스크립트를 유지 소스에 중복 적용하지 않는다.
+- 얼굴 4재질의 POINT 속성은 export-only UV2/UV3로 전달하며 UE Full Precision UVs가 필수다. MI_Exact 매핑을 보존한다. 원본 .blend UV나 형상을 변경해 이 전달을 흉내내지 않는다.
+- SkeletalMesh 자산을 바꿔도 컴포넌트의 재질 오버라이드/MID는 남을 수 있다. 비교 시 모든 슬롯을 재설정하고 실제 MID 부모 경로를 매 상태 검증한다. 자산 이름 변경이나 화면 일치만으로 다른 재질이 적용됐다고 판단하지 않는다.
+- 표정 검증은 실제 ticking SIE 게임 월드에서 동일 컴포넌트 재생 시간이 진행되는지 확인한다. 일반 에디터 월드 readback만으로 변형이 렌더됐다고 판단하지 않는다. 근접 텍스처는 컴포넌트 prestream과 대기 후 검사하고 전역 설정 변경은 피한다.
+- FaceAttributeTransferReview/Maintained 및 FinalBlinkSweep의 실제 재질·복귀 픽셀 검증을 기준으로 삼는다. 단계별 GIF와 정적 셰이더 명령 수는 실시간 애니메이션/FPS 검증이 아니다. 얼굴 기존 스타일과 중립 모프를 보존한다.

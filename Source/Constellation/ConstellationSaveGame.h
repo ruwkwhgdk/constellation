@@ -1,15 +1,15 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+﻿// Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
 
 #include "CoreMinimal.h"
 #include "GameFramework/SaveGame.h"
 #include "QuestTypes.h"
+#include "SceneEventSaveData.h"
 #include "ConstellationSaveGame.generated.h"
 
 /**
- * The game's persistent save data. Currently only holds StarCoin progress;
- * extend with additional fields as more systems need to persist.
+ * Shared persistent currency, collection, chest and quest data.
  */
 UCLASS()
 class CONSTELLATION_API UConstellationSaveGame : public USaveGame
@@ -17,6 +17,7 @@ class CONSTELLATION_API UConstellationSaveGame : public USaveGame
 	GENERATED_BODY()
 
 public:
+ UPROPERTY() FSceneEventSaveData SceneEvents;
 	UPROPERTY()
 	int32 StarCoin = 0;
 
@@ -31,7 +32,7 @@ public:
 	UPROPERTY()
 	TArray<FString> OpenedChestIDs;
 
-	/** Runtime state (State/Progress/Ending) for every quest that has left the Locked stage. */
+	/** Runtime state including main and inner progress for quests that have left Locked. */
 	UPROPERTY()
 	TArray<FQuestSaveEntry> QuestStates;
 };

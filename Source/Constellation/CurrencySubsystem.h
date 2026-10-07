@@ -122,6 +122,7 @@ protected:
 	int32 DummyItemCount = 0;
 
 private:
+	friend class FConstellationAuditPersistenceTest;
 	bool IsStarCoinIDCollected(const FString& CollectableID) const;
 	void MarkStarCoinIDCollected(const FString& CollectableID);
 	void RegisterStarCoinID(const FString& CollectableID);
@@ -129,7 +130,7 @@ private:
 	void MarkChestIDOpened(const FString& ChestID);
 	void SaveToDisk();
 
-	static const FString SaveSlotName;
+	FString SaveSlotName = TEXT("ConstellationSaveGame");
 	static constexpr int32 SaveUserIndex = 0;
 
 	UPROPERTY(Transient)

@@ -1,5 +1,6 @@
 ﻿#include "SlimeClimbComponent.h"
 #include "GameFramework/Actor.h"
+#include "SlimeClimbMath.h"
 #include "GameFramework/Pawn.h"
 #include "Kismet/KismetSystemLibrary.h"
 #include "Kismet/KismetMathLibrary.h"
@@ -13,6 +14,9 @@ USlimeClimbComponent::USlimeClimbComponent()
 
 void USlimeClimbComponent::BeginPlay()
 {
+    // A first-frame detection failure must recover to spawn, not world origin.
+    if (const AActor* Owner = GetOwner())
+        LastValidLocation = Owner->GetActorLocation();
     Super::BeginPlay();
 }
 
@@ -41,12 +45,15 @@ bool USlimeClimbComponent::DetectSurface()
     FVector PenetNormalSum = FVector::ZeroVector;
     int32 PenetCount = 0;
 
-    for (int32 v = 0; v <= VerticalSteps; ++v)
+    // Also guard loaded assets and C++ assignments that bypass editor metadata.
+    const int32 SafeVerticalSteps = FMath::Max(1, VerticalSteps);
+    const int32 SafeHorizontalSteps = FMath::Max(1, HorizontalSteps);
+    for (int32 v = 0; v <= SafeVerticalSteps; ++v)
     {
-        const float PolarRad = FMath::DegreesToRadians(-90.f + (180.f / VerticalSteps) * v);
-        for (int32 h = 0; h < HorizontalSteps; ++h)
+        const float PolarRad = FMath::DegreesToRadians(-90.f + (180.f / SafeVerticalSteps) * v);
+        for (int32 h = 0; h < SafeHorizontalSteps; ++h)
         {
-            const float AzimuthRad = (2.f * PI / HorizontalSteps) * h;
+            const float AzimuthRad = (2.f * PI / SafeHorizontalSteps) * h;
             const FVector Dir = FVector(
                 FMath::Cos(PolarRad) * FMath::Cos(AzimuthRad),
                 FMath::Cos(PolarRad) * FMath::Sin(AzimuthRad),
@@ -100,7 +107,7 @@ bool USlimeClimbComponent::DetectSurface()
                     - FMath::Max(0.f, MoveAlign) * ClimbBias;
 
                 // 스코어가 좋을수록(작을수록) 가중치 큼 → 여러 후보를 평균
-                const float Weight = 1.f / (1.f + Score * 0.01f);
+                const float Weight = SlimeClimbCandidateWeight(Score);
                 WeightedNormalSum += CandidateNormal * Weight;
                 WeightSum += Weight;
 

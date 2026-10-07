@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Blueprint/UserWidget.h"
+#include "TimerManager.h"
 #include "TutorialPromptWidget.generated.h"
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnTutorialPromptDismissed);
@@ -35,11 +36,13 @@ protected:
 
 private:
 	void ApplyInputMode();
+	void ReleaseInputMode();
 	// Re-focuses next tick instead of immediately, avoiding re-entrant focus churn during NativeOnFocusLost.
 	void ScheduleRefocus();
 
 	bool bDismissed = false;
 	bool bRefocusScheduled = false; // Prevents scheduling duplicate refocus timers
+	FTimerHandle RefocusTimer;
 
 	static TWeakObjectPtr<UTutorialPromptWidget> ActivePrompt;
 };

@@ -8,8 +8,6 @@
 #include "GameFramework/Actor.h"
 #include "Kismet/GameplayStatics.h"
 
-const FString UCurrencySubsystem::SaveSlotName = TEXT("ConstellationSaveGame");
-
 void UCurrencySubsystem::Initialize(FSubsystemCollectionBase& Collection)
 {
 	Super::Initialize(Collection);
@@ -36,6 +34,18 @@ void UCurrencySubsystem::Initialize(FSubsystemCollectionBase& Collection)
 
 void UCurrencySubsystem::SaveToDisk()
 {
+	// Both gameplay subsystems share this slot. Merge into the latest disk state,
+	// not the private snapshot taken when this subsystem was initialized.
+	if (UGameplayStatics::DoesSaveGameExist(SaveSlotName, SaveUserIndex))
+	{
+		UConstellationSaveGame* Latest = Cast<UConstellationSaveGame>(UGameplayStatics::LoadGameFromSlot(SaveSlotName, SaveUserIndex));
+		if (!Latest)
+		{
+			UE_LOG(LogTemp, Error, TEXT("Currency save aborted: existing slot %s could not be read."), *SaveSlotName);
+			return;
+		}
+		CurrentSaveGame = Latest;
+	}
 	if (!CurrentSaveGame)
 	{
 		CurrentSaveGame = Cast<UConstellationSaveGame>(UGameplayStatics::CreateSaveGameObject(UConstellationSaveGame::StaticClass()));
@@ -49,7 +59,10 @@ void UCurrencySubsystem::SaveToDisk()
 	CurrentSaveGame->CollectedStarCoinIDs = CollectedStarCoinIDs;
 	CurrentSaveGame->DummyItemCount = DummyItemCount;
 	CurrentSaveGame->OpenedChestIDs = OpenedChestIDs;
-	UGameplayStatics::SaveGameToSlot(CurrentSaveGame, SaveSlotName, SaveUserIndex);
+	if (!UGameplayStatics::SaveGameToSlot(CurrentSaveGame, SaveSlotName, SaveUserIndex))
+	{
+		UE_LOG(LogTemp, Error, TEXT("Currency save failed: %s"), *SaveSlotName);
+	}
 }
 
 bool UCurrencySubsystem::IsStarCoinIDCollected(const FString& CollectableID) const
@@ -240,7 +253,7 @@ void UCurrencySubsystem::AddGold(int32 Amount)
 		return;
 	}
 
-	Gold += Amount;
+	Gold = static_cast<int32>(FMath::Min<int64>(static_cast<int64>(Gold) + Amount, MAX_int32));
 	OnGoldChanged.Broadcast(Gold);
 }
 
@@ -263,7 +276,8 @@ void UCurrencySubsystem::AddStarCoin(int32 Amount)
 		return;
 	}
 
-	StarCoin += Amount;
+	StarCoin = static_cast<int32>(FMath::Min<int64>(static_cast<int64>(StarCoin) + Amount, MAX_int32));
+	SaveToDisk();
 	OnStarCoinChanged.Broadcast(StarCoin);
 }
 
@@ -275,6 +289,7 @@ bool UCurrencySubsystem::TrySpendStarCoin(int32 Amount)
 	}
 
 	StarCoin -= Amount;
+	SaveToDisk();
 	OnStarCoinChanged.Broadcast(StarCoin);
 	return true;
 }
@@ -286,6 +301,7 @@ void UCurrencySubsystem::AddDummyItem(int32 Amount)
 		return;
 	}
 
-	DummyItemCount += Amount;
+	DummyItemCount = static_cast<int32>(FMath::Min<int64>(static_cast<int64>(DummyItemCount) + Amount, MAX_int32));
+	SaveToDisk();
 	OnDummyItemChanged.Broadcast(DummyItemCount);
 }

@@ -10,7 +10,6 @@
 #include "UObject/UObjectGlobals.h"
 #include "Kismet/GameplayStatics.h"
 
-const FString UQuestSubsystem::SaveSlotName = TEXT("ConstellationSaveGame");
 const TCHAR* UQuestSubsystem::DefaultDatabasePath = TEXT("/Game/Constellation/Gameplay/Quests/Data/DA_QuestDatabase.DA_QuestDatabase");
 
 namespace
@@ -49,6 +48,7 @@ void UQuestSubsystem::Initialize(FSubsystemCollectionBase& Collection)
 			FQuestRuntimeState& RS = RuntimeStates.Add(Entry.QuestID);
 			RS.State = Entry.State;
 			RS.Progress = Entry.Progress;
+			RS.InnerProgress = Entry.InnerProgress;
 			RS.EndingID = Entry.EndingID;
 		}
 	}
@@ -86,11 +86,15 @@ void UQuestSubsystem::RegisterQuestDatabase(UQuestDatabase* Database)
 
 void UQuestSubsystem::EvaluateAllLockedQuests()
 {
-	for (const auto& Pair : QuestDefinitions)
+	// Unlock conditions and delegates are Blueprint callbacks and may register
+	// another database. Never iterate a map across user code that can mutate it.
+	TArray<FName> QuestIDs;
+	QuestDefinitions.GetKeys(QuestIDs);
+	for (FName QuestID : QuestIDs)
 	{
-		if (GetQuestState(Pair.Key) == EQuestState::Locked)
+		if (GetQuestState(QuestID) == EQuestState::Locked)
 		{
-			TryUnlockQuest(Pair.Key);
+			TryUnlockQuest(QuestID);
 		}
 	}
 }
@@ -171,12 +175,16 @@ void UQuestSubsystem::SetQuestState(FName QuestID, EQuestState NewState)
 bool UQuestSubsystem::TryUnlockQuest(FName QuestID)
 {
 	const UQuestDefinition* Quest = FindQuestDefinition(QuestID);
-	if (!Quest || GetQuestState(QuestID) != EQuestState::Locked)
+	if (!Quest || GetQuestState(QuestID) != EQuestState::Locked || EvaluatingUnlocks.Contains(QuestID))
 	{
 		return false;
 	}
 
-	if (!IsUnlockConditionMet(Quest))
+	// A custom condition can register another database and recursively evaluate unlocks.
+	EvaluatingUnlocks.Add(QuestID);
+	const bool bConditionMet = IsUnlockConditionMet(Quest);
+	EvaluatingUnlocks.Remove(QuestID);
+	if (!bConditionMet || GetQuestState(QuestID) != EQuestState::Locked)
 	{
 		return false;
 	}
@@ -198,7 +206,8 @@ bool UQuestSubsystem::AcceptQuest(FName QuestID)
 	RS.InnerProgress = 0;
 
 	OnQuestStateChanged.Broadcast(QuestID, EQuestState::Available, EQuestState::Progressed);
-	OnQuestProgressChanged.Broadcast(QuestID, RS.Progress);
+	// The state callback can insert into RuntimeStates and invalidate RS.
+	OnQuestProgressChanged.Broadcast(QuestID, GetQuestProgress(QuestID));
 	AutoPickTrackedQuestIfNeeded();
 	SaveToDisk();
 	return true;
@@ -264,12 +273,14 @@ bool UQuestSubsystem::AdvanceInnerQuestProgress(FName QuestID)
 
 bool UQuestSubsystem::AddQuestProgress(FName QuestID, int32 Amount)
 {
-	return SetQuestProgress(QuestID, GetQuestProgress(QuestID) + Amount);
+	const int64 Sum = static_cast<int64>(GetQuestProgress(QuestID)) + Amount;
+	return SetQuestProgress(QuestID, static_cast<int32>(FMath::Clamp<int64>(Sum, MIN_int32, MAX_int32)));
 }
 
 bool UQuestSubsystem::AddQuestInnerProgress(FName QuestID, int32 Amount)
 {
-	return SetQuestInnerProgress(QuestID, GetQuestInnerProgress(QuestID) + Amount);
+	const int64 Sum = static_cast<int64>(GetQuestInnerProgress(QuestID)) + Amount;
+	return SetQuestInnerProgress(QuestID, static_cast<int32>(FMath::Clamp<int64>(Sum, MIN_int32, MAX_int32)));
 }
 
 bool UQuestSubsystem::SetQuestProgress(FName QuestID, int32 NewProgress)
@@ -524,6 +535,17 @@ TArray<FName> UQuestSubsystem::GetSearchableQuestIDs(bool bFilterByType, EQuestT
 
 void UQuestSubsystem::SaveToDisk()
 {
+	// Currency writes the same slot; preserve its latest fields when saving quests.
+	if (UGameplayStatics::DoesSaveGameExist(SaveSlotName, SaveUserIndex))
+	{
+		UConstellationSaveGame* Latest = Cast<UConstellationSaveGame>(UGameplayStatics::LoadGameFromSlot(SaveSlotName, SaveUserIndex));
+		if (!Latest)
+		{
+			UE_LOG(LogTemp, Error, TEXT("Quest save aborted: existing slot %s could not be read."), *SaveSlotName);
+			return;
+		}
+		CurrentSaveGame = Latest;
+	}
 	if (!CurrentSaveGame)
 	{
 		CurrentSaveGame = Cast<UConstellationSaveGame>(UGameplayStatics::CreateSaveGameObject(UConstellationSaveGame::StaticClass()));
@@ -541,12 +563,16 @@ void UQuestSubsystem::SaveToDisk()
 		Entry.QuestID = Pair.Key;
 		Entry.State = Pair.Value.State;
 		Entry.Progress = Pair.Value.Progress;
+		Entry.InnerProgress = Pair.Value.InnerProgress;
 		Entry.EndingID = Pair.Value.EndingID;
 		Entries.Add(Entry);
 	}
 
 	CurrentSaveGame->QuestStates = Entries;
-	UGameplayStatics::SaveGameToSlot(CurrentSaveGame, SaveSlotName, SaveUserIndex);
+	if (!UGameplayStatics::SaveGameToSlot(CurrentSaveGame, SaveSlotName, SaveUserIndex))
+	{
+		UE_LOG(LogTemp, Error, TEXT("Quest save failed: %s"), *SaveSlotName);
+	}
 }
 
 bool UQuestSubsystem::TryUnlockQuestFor(const UObject* WorldContextObject, FName QuestID)

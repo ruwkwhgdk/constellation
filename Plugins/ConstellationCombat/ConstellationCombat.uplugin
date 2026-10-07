@@ -1,0 +1,35 @@
+{
+  "FileVersion": 3,
+  "Version": 1,
+  "VersionName": "0.1.0",
+  "FriendlyName": "Constellation Combat",
+  "Description": "Isolated GAS combat core and review arena.",
+  "Category": "Gameplay",
+  "EnabledByDefault": true,
+  "CanContainContent": false,
+  "Plugins": [
+    { "Name": "ConstellationSceneDirector", "Enabled": true },
+    { "Name": "ConstellationVFX", "Enabled": true },
+    { "Name": "Niagara", "Enabled": true },
+    {
+      "Name": "GameplayAbilities",
+      "Enabled": true
+    },
+    {
+      "Enabled": true,
+      "Name": "EnhancedInput"
+    }
+  ],
+  "Modules": [
+    {
+      "Name": "CombatRuntime",
+      "Type": "Runtime",
+      "LoadingPhase": "Default"
+    },
+    {
+      "Name": "CombatEditor",
+      "Type": "Editor",
+      "LoadingPhase": "Default"
+    }
+  ]
+}

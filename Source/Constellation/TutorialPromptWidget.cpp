@@ -25,11 +25,31 @@ void UTutorialPromptWidget::NativeConstruct()
 
 void UTutorialPromptWidget::NativeDestruct()
 {
+	// External removal must release input without completing the tutorial.
+	bDismissed = true;
+	ReleaseInputMode();
+	Super::NativeDestruct();
+}
+
+void UTutorialPromptWidget::ReleaseInputMode()
+{
+	if (UWorld* World = GetWorld())
+	{
+		World->GetTimerManager().ClearTimer(RefocusTimer);
+	}
+	RefocusTimer.Invalidate();
+	bRefocusScheduled = false;
+
+	// A replaced widget can destruct after its successor has acquired input.
 	if (ActivePrompt.Get() == this)
 	{
 		ActivePrompt = nullptr;
+		if (APlayerController* PC = GetOwningPlayer())
+		{
+			PC->SetInputMode(FInputModeGameOnly());
+			PC->SetShowMouseCursor(false);
+		}
 	}
-	Super::NativeDestruct();
 }
 
 void UTutorialPromptWidget::ApplyInputMode()
@@ -103,7 +123,7 @@ void UTutorialPromptWidget::ScheduleRefocus()
 	bRefocusScheduled = true;
 
 	TWeakObjectPtr<UTutorialPromptWidget> WeakThis(this);
-	World->GetTimerManager().SetTimerForNextTick([WeakThis]()
+	RefocusTimer = World->GetTimerManager().SetTimerForNextTick([WeakThis]()
 		{
 			if (!WeakThis.IsValid())
 			{
@@ -111,6 +131,7 @@ void UTutorialPromptWidget::ScheduleRefocus()
 			}
 
 			WeakThis->bRefocusScheduled = false;
+			WeakThis->RefocusTimer.Invalidate();
 
 			if (!WeakThis->bDismissed
 				&& WeakThis->ActivePrompt.Get() == WeakThis.Get()
@@ -132,16 +153,7 @@ void UTutorialPromptWidget::Dismiss()
 	}
 	bDismissed = true;
 
-	if (ActivePrompt.Get() == this)
-	{
-		ActivePrompt = nullptr;
-	}
-
-	if (APlayerController* PC = GetOwningPlayer())
-	{
-		PC->SetInputMode(FInputModeGameOnly());
-		PC->SetShowMouseCursor(false);
-	}
+	ReleaseInputMode();
 
 	OnTutorialPromptDismissed.Broadcast();
 	RemoveFromParent();

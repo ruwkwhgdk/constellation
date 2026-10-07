@@ -152,6 +152,9 @@ struct FQuestSaveEntry
 	int32 Progress = 0;
 
 	UPROPERTY()
+	int32 InnerProgress = 0;
+
+	UPROPERTY()
 	FName EndingID;
 };
 

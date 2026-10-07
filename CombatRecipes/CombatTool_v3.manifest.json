@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "kind": "ConstellationCombatAuthoringManifest",
+  "id": "CombatTool_v3",
+  "complete": true,
+  "recipe_sha256": "c337ed5d0fee22bd0eff581d165d069f829e628875db9b6452ec06d73f6b5e82",
+  "actors": {
+    "/Game/Constellation/Review/CombatRecipes/CombatTool_v3/L_Preview/CombatLabCharacter_0": {
+      "role": "player",
+      "id": "player",
+      "signature": "/Game/Constellation/Characters/Heroine/Refined/SK_player_heroine_new_RunPreview.SK_player_heroine_new_RunPreview|/Game/Constellation/Review/CombatRecipes/CombatTool_v3/DA_Player_Basic.DA_Player_Basic|None|None|skill:/Game/Constellation/Review/CombatRecipes/CombatTool_v3/DA_Player_Dash.DA_Player_Dash|ultimate:/Game/Constellation/Review/CombatRecipes/CombatTool_v3/DA_Player_Burst.DA_Player_Burst|/Game/Constellation/Review/CombatRecipes/CombatTool_v3/DA_Player_Basic.DA_Player_Basic|/Game/Constellation/Review/CombatRecipes/CombatTool_v3/DA_Player_Follow.DA_Player_Follow|/Game/Constellation/Review/CombatRecipes/CombatTool_v3/DA_Player_Finish.DA_Player_Finish|/Game/Constellation/Review/CombatRecipes/CombatTool_v3/DA_Player_Dash.DA_Player_Dash|/Game/Constellation/Review/CombatRecipes/CombatTool_v3/DA_Player_Burst.DA_Player_Burst",
+      "actions": {
+        "/Game/Constellation/Review/CombatRecipes/CombatTool_v3/DA_Player_Basic.DA_Player_Basic": "Basic",
+        "/Game/Constellation/Review/CombatRecipes/CombatTool_v3/DA_Player_Follow.DA_Player_Follow": "Follow",
+        "/Game/Constellation/Review/CombatRecipes/CombatTool_v3/DA_Player_Finish.DA_Player_Finish": "Finish",
+        "/Game/Constellation/Review/CombatRecipes/CombatTool_v3/DA_Player_Dash.DA_Player_Dash": "Dash",
+        "/Game/Constellation/Review/CombatRecipes/CombatTool_v3/DA_Player_Burst.DA_Player_Burst": "Burst"
+      },
+      "has_encounter": false,
+      "patterns": []
+    },
+    "/Game/Constellation/Review/CombatRecipes/CombatTool_v3/L_Preview/CombatLabCharacter_1": {
+      "role": "monster",
+      "id": "Scout",
+      "signature": "/Game/Constellation/Characters/Enemies/Slime_Normal/SKM_Slime_Normal.SKM_Slime_Normal|/Game/Constellation/Review/CombatRecipes/CombatTool_v3/DA_Heavy.DA_Heavy|/Game/Constellation/Review/CombatRecipes/CombatTool_v3/DA_Patterns.DA_Patterns|/Game/Constellation/Review/CombatRecipes/CombatTool_v3/DA_Encounter.DA_Encounter|pattern:Light=/Game/Constellation/Review/CombatRecipes/CombatTool_v3/DA_Light.DA_Light|pattern:Heavy=/Game/Constellation/Review/CombatRecipes/CombatTool_v3/DA_Heavy.DA_Heavy|/Game/Constellation/Review/CombatRecipes/CombatTool_v3/DA_Heavy.DA_Heavy|/Game/Constellation/Review/CombatRecipes/CombatTool_v3/DA_Light.DA_Light",
+      "actions": {
+        "/Game/Constellation/Review/CombatRecipes/CombatTool_v3/DA_Heavy.DA_Heavy": "Heavy",
+        "/Game/Constellation/Review/CombatRecipes/CombatTool_v3/DA_Light.DA_Light": "Light"
+      },
+      "has_encounter": true,
+      "patterns": [
+        "Light",
+        "Heavy"
+      ]
+    },
+    "/Game/Constellation/Review/CombatRecipes/CombatTool_v3/L_Preview/CombatLabCharacter_2": {
+      "role": "monster",
+      "id": "Guard",
+      "signature": "/Game/Constellation/Characters/Enemies/Slime_Normal/SKM_Slime_Normal.SKM_Slime_Normal|/Game/Constellation/Review/CombatRecipes/CombatTool_v3/Enemies/Guard/DA_Heavy.DA_Heavy|/Game/Constellation/Review/CombatRecipes/CombatTool_v3/Enemies/Guard/DA_Patterns.DA_Patterns|/Game/Constellation/Review/CombatRecipes/CombatTool_v3/Enemies/Guard/DA_Encounter.DA_Encounter|pattern:Light=/Game/Constellation/Review/CombatRecipes/CombatTool_v3/Enemies/Guard/DA_Light.DA_Light|pattern:Heavy=/Game/Constellation/Review/CombatRecipes/CombatTool_v3/Enemies/Guard/DA_Heavy.DA_Heavy|/Game/Constellation/Review/CombatRecipes/CombatTool_v3/Enemies/Guard/DA_Heavy.DA_Heavy|/Game/Constellation/Review/CombatRecipes/CombatTool_v3/Enemies/Guard/DA_Light.DA_Light",
+      "actions": {
+        "/Game/Constellation/Review/CombatRecipes/CombatTool_v3/Enemies/Guard/DA_Heavy.DA_Heavy": "Heavy",
+        "/Game/Constellation/Review/CombatRecipes/CombatTool_v3/Enemies/Guard/DA_Light.DA_Light": "Light"
+      },
+      "has_encounter": true,
+      "patterns": [
+        "Light",
+        "Heavy"
+      ]
+    },
+    "/Game/Constellation/Review/CombatRecipes/CombatTool_v3/L_Preview/CombatLabCharacter_3": {
+      "role": "monster",
+      "id": "Flanker",
+      "signature": "/Game/Constellation/Characters/Enemies/Slime_Normal/SKM_Slime_Normal.SKM_Slime_Normal|/Game/Constellation/Review/CombatRecipes/CombatTool_v3/DA_Heavy.DA_Heavy|/Game/Constellation/Review/CombatRecipes/CombatTool_v3/DA_Patterns.DA_Patterns|/Game/Constellation/Review/CombatRecipes/CombatTool_v3/DA_Encounter.DA_Encounter|pattern:Light=/Game/Constellation/Review/CombatRecipes/CombatTool_v3/DA_Light.DA_Light|pattern:Heavy=/Game/Constellation/Review/CombatRecipes/CombatTool_v3/DA_Heavy.DA_Heavy|/Game/Constellation/Review/CombatRecipes/CombatTool_v3/DA_Heavy.DA_Heavy|/Game/Constellation/Review/CombatRecipes/CombatTool_v3/DA_Light.DA_Light",
+      "actions": {
+        "/Game/Constellation/Review/CombatRecipes/CombatTool_v3/DA_Heavy.DA_Heavy": "Heavy",
+        "/Game/Constellation/Review/CombatRecipes/CombatTool_v3/DA_Light.DA_Light": "Light"
+      },
+      "has_encounter": true,
+      "patterns": [
+        "Light",
+        "Heavy"
+      ]
+    }
+  }
+}

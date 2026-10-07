@@ -38,5 +38,8 @@ private:
 	void HandleQuestProgressChanged(FName QuestID, int32 NewProgress);
 
 	UFUNCTION()
+	void HandleQuestInnerProgressChanged(FName QuestID, int32 NewInnerProgress);
+
+	UFUNCTION()
 	void HandleQuestCompleted(FName QuestID, FName EndingID);
 };

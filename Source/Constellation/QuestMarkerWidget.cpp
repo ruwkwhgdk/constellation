@@ -2,6 +2,10 @@
 
 
 #include "QuestMarkerWidget.h"
+#include "QuestMarkerProjection.h"
+#include "Engine/LocalPlayer.h"
+#include "Engine/GameViewportClient.h"
+#include "SceneView.h"
 #include "QuestSubsystem.h"
 #include "Engine/World.h"
 #include "Engine/GameInstance.h"
@@ -97,25 +101,6 @@ void UQuestMarkerWidget::RefreshTargetPosition()
 	}
 }
 
-FVector2D UQuestMarkerWidget::ClampDirectionToRectEdge(const FVector2D& Direction, const FVector2D& HalfExtents)
-{
-	if (FMath::IsNearlyZero(Direction.X) && FMath::IsNearlyZero(Direction.Y))
-	{
-		return FVector2D(0.f, -HalfExtents.Y);
-	}
-
-	// Compare the direction's slope against the rectangle's diagonal slope to decide whether the
-	// ray exits through the left/right edge or the top/bottom edge, then scale to that edge.
-	if (FMath::IsNearlyZero(Direction.X) || FMath::Abs(Direction.Y / Direction.X) > (HalfExtents.Y / HalfExtents.X))
-	{
-		const float Scale = HalfExtents.Y / FMath::Abs(Direction.Y);
-		return FVector2D(Direction.X * Scale, Direction.Y > 0.f ? HalfExtents.Y : -HalfExtents.Y);
-	}
-
-	const float Scale = HalfExtents.X / FMath::Abs(Direction.X);
-	return FVector2D(Direction.X > 0.f ? HalfExtents.X : -HalfExtents.X, Direction.Y * Scale);
-}
-
 void UQuestMarkerWidget::UpdateMarker()
 {
 	if (!bHasTarget)
@@ -136,15 +121,38 @@ void UQuestMarkerWidget::UpdateMarker()
 	static constexpr float CentimetersPerMeter = 100.f;
 	const float DistanceMeters = FVector::Dist(PawnLocation, CurrentTargetPosition) / CentimetersPerMeter;
 
-	// ProjectWorldLocationToScreen clips points behind the camera to a near-zero W plane rather than
-	// mirroring them, so even when it returns false (target behind camera / off screen) the resulting
-	// ScreenPos still points in the correct on-screen direction toward the target — usable for
-	// edge-clamping below.
-	FVector2D ScreenPos;
-	const bool bInFront = PC->ProjectWorldLocationToScreen(CurrentTargetPosition, ScreenPos, true);
-
 	const FVector2D ViewportSize = UWidgetLayoutLibrary::GetViewportSize(this);
+	if (ViewportSize.ContainsNaN() || ViewportSize.X <= 0.0 || ViewportSize.Y <= 0.0 || !FMath::IsFinite(DistanceMeters))
+	{
+		OnQuestMarkerUpdated(false, false, FVector2D::ZeroVector, 0.f, 0.f);
+		return;
+	}
 	const FVector2D ViewportCenter = ViewportSize * 0.5f;
+	FVector2D ScreenPos = FVector2D::ZeroVector;
+	const bool bInFront = PC->ProjectWorldLocationToScreen(CurrentTargetPosition, ScreenPos, true);
+	if (!bInFront)
+	{
+		// A failed projection does not supply a usable screen position. Derive the
+		// direction without dividing by W, including targets exactly on the camera plane.
+		const ULocalPlayer* LP = PC->GetLocalPlayer();
+		FSceneViewProjectionData ProjectionData;
+		FVector2D Direction;
+		if (!LP || !LP->ViewportClient || !LP->ViewportClient->Viewport
+			|| !LP->GetProjectionData(LP->ViewportClient->Viewport, ProjectionData)
+			|| !QuestMarkerProjection::GetBehindCameraDirection(CurrentTargetPosition,
+				ProjectionData.ComputeViewProjectionMatrix(),
+				FVector2D(ProjectionData.GetConstrainedViewRect().Width(), ProjectionData.GetConstrainedViewRect().Height()), Direction))
+		{
+			OnQuestMarkerUpdated(false, false, FVector2D::ZeroVector, 0.f, 0.f);
+			return;
+		}
+		ScreenPos = ViewportCenter + Direction;
+	}
+	if (ScreenPos.ContainsNaN())
+	{
+		OnQuestMarkerUpdated(false, false, FVector2D::ZeroVector, 0.f, 0.f);
+		return;
+	}
 
 	static constexpr float EdgeMarginPixels = 48.f;
 	const FVector2D HalfExtents(FMath::Max(ViewportSize.X * 0.5f - EdgeMarginPixels, 1.f),
@@ -159,7 +167,12 @@ void UQuestMarkerWidget::UpdateMarker()
 	// Panel Slot's Position is in DPI-scaled local space (screen_pixels = local_position * ViewportScale)
 	// — without this division the marker drifts away from the true target position (more so off-center)
 	// whenever the DPI scale curve isn't exactly 1.0 at the current resolution.
-	const float ViewportScale = FMath::Max(UWidgetLayoutLibrary::GetViewportScale(this), KINDA_SMALL_NUMBER);
+	const float ViewportScale = UWidgetLayoutLibrary::GetViewportScale(this);
+	if (!FMath::IsFinite(ViewportScale) || ViewportScale <= 0.f)
+	{
+		OnQuestMarkerUpdated(false, false, FVector2D::ZeroVector, 0.f, 0.f);
+		return;
+	}
 
 	if (bOnScreen)
 	{
@@ -167,7 +180,7 @@ void UQuestMarkerWidget::UpdateMarker()
 		return;
 	}
 
-	const FVector2D ClampedOffset = ClampDirectionToRectEdge(FromCenter, HalfExtents);
+	const FVector2D ClampedOffset = QuestMarkerProjection::ClampDirectionToRectEdge(FromCenter, HalfExtents);
 	const FVector2D ClampedScreenPos = ViewportCenter + ClampedOffset;
 	// 0 = straight up, positive = clockwise, matching screen space where +X is right and +Y is down.
 	const float ScreenRotationDegrees = FMath::RadiansToDegrees(FMath::Atan2(ClampedOffset.X, -ClampedOffset.Y));

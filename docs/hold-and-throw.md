@@ -126,3 +126,25 @@ DT_HoldableItems의 WeightKg와 HoldableComponent의 별도 WeightKg는 제거�
 들기 한계 비교는 Chaos 질량 반올림 오차를 위해 0.0001kg(0.1g)의 허용 오차를 둔다. 10kg 한계에서 10.01kg은 거부한다.
 
 검증: 저장 에셋 재로딩으로 세 물리 행과 Blueprint 연결, 기존 운반 행의 비질량 필드 보존을 확인했다. 최종 C++ 빌드 성공, Constellation 자동 검사 12개 실패 0개(5개는 경고 포함), 검토 맵 의자·책상 실제 플레이 검사 42개가 통과했다. 보고서는 Saved/PhysicsPropsReview/ 및 Saved/CarryReview/SchoolFurniture/에 있다. 이번 변경에서 패키징 및 학교 전체 맵 플레이는 실행하지 않았다.
+
+
+## 채팅 작업 정리 및 재검증 (2026-10-10)
+
+운반 기능과 아래 리소스·설정은 `771350ec7af7717f9914c3ee7efcdfda7bf9a020`에 포함되어 `origin/develop`에 반영되어 있다.
+
+- 주인공의 집기·내려놓기·조준·포물선 투척, 착지 위치 미리보기와 관련 애니메이션을 구현했다.
+- Ac_Holdable을 학교 의자·책상에 연결하고, 무게 제한과 실패 안내를 추가했다.
+- 운반 중 공격·점프를 제한하고 일반 걷기를 유지하며, 물체 충돌을 해제했다.
+- 바닥 접촉·넘어진 가구의 잘못된 집기 차단, 내려놓은 뒤 재획득, 초기 물리 설정을 보완했다.
+- 집기·내려놓기 속도는 2배, 캐릭터 최초/지속 밀기 힘은 360/6000으로 조정했다.
+- ST_CarryMessages는 안내 문구, DT_CarrySettings는 공통 운반 설정, DT_HoldableItems는 물건별 상호작용 설정을 관리한다.
+- DT_PhysicsProps와 PhysicsPropComponent는 질량·감쇠·초기 물리·중력·Physical Material을 관리한다. 의자 8kg, 책상 10kg, 테스트 상자 5kg이며, 들기 판정은 실제 메시 질량을 사용한다.
+
+2026-10-10에는 기존 구현을 중복 생성하지 않고 현재 저장본을 재검증했다.
+
+- `tools/verify-physics-props.py`: 세 물리 행, Blueprint 연결, 기존 운반 설정 보존 확인.
+- `Constellation.PhysicsProps` 및 `Constellation.Carry`: 자동 테스트 4개, 실패 0개(3개는 경고 포함).
+- `tools/review-school-holdables.py`: L_Carry_Review의 실제 의자·책상 Blueprint로 초기 물리, 집기, 걷기, 충돌 해제, 내려놓기, 재획득, 조준, 투척 검사 42개 통과.
+- 보고서: `Saved/PhysicsPropsReview/Recheck20261010/`. Saved 보고서는 로컬 검증 산출물이며 Git 배포 대상이 아니다.
+
+이번 재검증은 검토 맵 기준이며, 패키징 및 AbandonedSchool 전체 맵 재검증은 수행하지 않았다. 기획 값은 해당 테이블에서 수정·저장한 뒤 PIE를 재시작해 적용한다.

@@ -1,0 +1,25 @@
+{
+  "verifiedAt": "2026-10-09T11:43:12.394Z",
+  "checks": [
+    "6 full-HD scenes rendered",
+    "mural background loaded and style selected",
+    "CrB title and removed subtitle/counter verified",
+    "early input ignored",
+    "prompt appears after animation",
+    "exit fades then returns",
+    "ability selection works",
+    "7 slots and 6 links",
+    "390px no horizontal overflow",
+    "no browser JS errors"
+  ],
+  "mapping": {
+    "slots": 7,
+    "lines": 6,
+    "titles": [
+      "점프",
+      "전투 기술",
+      "변신"
+    ],
+    "mode": "still"
+  }
+}

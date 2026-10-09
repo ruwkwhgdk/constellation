@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ko">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Constellation · 어빌리티 획득 시안</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#10151c;color:#e0e9ef;font-family:'Malgun Gothic',sans-serif}header{max-width:1440px;margin:auto;padding:22px 28px 16px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}h1{font-size:18px;font-weight:500;margin:0 0 7px}header p{font-size:12px;color:#899aa8;margin:0;letter-spacing:1px}.controls{display:flex;align-items:center;gap:8px;flex-wrap:wrap}button,select{font:inherit;font-size:13px;color:#dbe8f2;border:1px solid #3a4c60;background:#1b2632;padding:10px 14px;border-radius:3px;cursor:pointer}button:hover{background:#2b4054}button:focus-visible,select:focus-visible,canvas:focus-visible{outline:2px solid #85d7ff;outline-offset:3px}button.primary{background:#c1e5f8;color:#142534;border-color:#c1e5f8}label{font-size:12px;color:#a7b8c6;display:flex;align-items:center;gap:5px}main{max-width:1440px;margin:auto;padding:0 28px}.screen{position:relative;background:#000;box-shadow:0 20px 70px #0005}canvas{width:100%;display:block;aspect-ratio:16/9}footer{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:16px 0 22px;font-size:12px;color:#a1b3c1}a{color:#b3d9ef}details{border-top:1px solid #304051;padding:18px 0;margin:4px 0 30px;color:#a7b8c6;font-size:13px;line-height:1.9}summary{cursor:pointer;color:#dde8f0}.capture header,.capture footer,.capture details{display:none}.capture main{max-width:none;padding:0}.capture .screen{box-shadow:none}.capture canvas{width:100vw;height:56.25vw}@media(max-width:650px){header{padding:16px}main{padding:0 10px}.controls{gap:5px}button,select{padding:9px;font-size:12px}}
+</style></head>
+<body><header><div><h1>어빌리티 획득 · 북쪽왕관자리</h1><p>CONSTELLATION / CELESTIAL RELIC / STUDY 03</p></div><div class="controls"><select id="style" aria-label="그래픽 스타일"><option value="d">유물 · 금박 천체 벽화</option></select><select id="ability" aria-label="획득 어빌리티"><option value="0">α CrB · 점프</option><option value="1">β CrB · 전투 기술</option><option value="2">γ CrB · 변신</option></select><button id="intro">화면 1 · 문양</button><button id="reveal">화면 2 · 획득</button><button id="play" class="primary">연출 재생</button><label><input id="sound" type="checkbox" checked>임시 SFX</label></div></header>
+<main><div class="screen"><canvas id="screen" width="1920" height="1080" tabindex="0" aria-label="북쪽왕관자리 어빌리티 획득 연출 시안. 재생 종료 후 아무 키를 눌러 닫습니다."></canvas></div><footer><span id="status" role="status">α CrB · 획득 완료 시안</span><span>1920 × 1080 · 연출 후 아무 키 / 화면 클릭으로 닫기 · <a href="README.md">작업 계획 & 리소스 목록</a></span></footer><details><summary>시안의 데이터와 적용 범위</summary><p>유물·벽화 시안: 청금석색 안료와 닳은 금박 천체도. 중앙 연결선은 끊김과 굵기 차이를 둔 선각, 별은 방사형 금빛 문양입니다. 이전 A/B/C 안은 미채택으로 기록했습니다. 배경의 장식 별과 실제 획득 별자리는 별개입니다. 최종 스타일 확정 전 검토용입니다.</p><p>설명은 프로젝트의 DT_SequenceStringData 원문입니다. ‘전투 기술’은 Combat 행을 사용했습니다. 별 배정은 이번 기획의 α → β → γ 순서를 우선합니다. 미획득 별은 표시하지 않으며, 전체 형태를 알 수 있도록 희미한 연결선만 남겼습니다.</p><p>브라우저에서 연출을 검토하는 시안입니다. SFX는 임시 합성음이며 페이드 아웃 후 표시되는 화면은 실제 인게임 화면이 아닌 복귀 자리표시자입니다. 게임패드·Unreal 입력 연동은 실제 제작 단계에 포함됩니다.</p></details></main>
+<script id="ability-data" type="application/json">
+{"abilities":[{"title":"점프","greek":"α","star":"알파성","row":"AbandonedSchool_Star_Object_Jump","description":["왕의 별은 누구보다 높은 곳에서 빛나야 한다.","별들이 길을 잃으면, 그들을 인도할 길잡이가 언제나 필요하기에."],"displayTitle":"α CrB"},{"title":"전투 기술","greek":"β","star":"베타성","row":"AbandonedSchool_Star_Object_Combat","description":["왕관은 무거우면서도 달콤하다.","그것을 머리에 쓴 자는, 자신을 지키기 위해 어떤 것과도 싸워야 할 준비가 되어 있다."],"displayTitle":"β CrB"},{"title":"변신","greek":"γ","star":"감마성","row":"AbandonedSchool_Star_Object_Metamorphosis","description":["세상에서 살아남기 위해선, 그 세상에 맞는 모습으로 자신을 변화시킬 필요가 있다.","그리고 대부분의 별들은 그 과정에서 자신을 잃어버린다."],"displayTitle":"γ CrB"}],"slots":[{"order":1,"star":"α","x":1202,"y":636.75},{"order":2,"star":"β","x":1361,"y":424.85},{"order":3,"star":"γ","x":1006,"y":677.05},{"order":4,"star":"δ","x":837,"y":697.85},{"order":5,"star":"ε","x":644,"y":622.45},{"order":6,"star":"θ","x":1232,"y":231.15},{"order":7,"star":"ι","x":560,"y":362.45}],"connection":[6,4,3,2,0,1,5]}
+</script>
+<script>
+'use strict';
+const data=JSON.parse(document.getElementById('ability-data').textContent), canvas=document.getElementById('screen'),ctx=canvas.getContext('2d'),status=document.getElementById('status');
+const params=new URLSearchParams(location.search);if(params.has('capture'))document.body.classList.add('capture');
+let style='d';
+const mural=new Image();mural.src='mural-background-v2.png';
+document.getElementById('style').value=style;
+let selected=Math.max(0,Math.min(2,Number(params.get('ability'))||0)),mode=params.get('scene')==='intro'?'intro':'still',start=0,exitStart=0,audio=null,lastStage='',lastT=7;
+document.getElementById('ability').value=selected;
+const clamp=x=>Math.max(0,Math.min(1,x)),smooth=x=>{x=clamp(x);return x*x*(3-2*x)},ease=(t,a,b)=>smooth((t-a)/(b-a));
+let seed=78231;function rnd(){seed=(seed*16807)%2147483647;return(seed-1)/2147483646}
+function segmentDistance(x,y,a,b){const dx=b.x-a.x,dy=b.y-a.y,k=clamp(((x-a.x)*dx+(y-a.y)*dy)/(dx*dx+dy*dy));return Math.hypot(x-a.x-dx*k,y-a.y-dy*k)}
+const field=[];for(let i=0;i<660;i++){let x=80+rnd()*1760,y=80+rnd()*920;if(y>730&&y<900&&x>270&&x<1650)continue;if(y<220&&x>690&&x<1230)continue;if(data.connection.some((v,j)=>j&&segmentDistance(x,y,data.slots[data.connection[j-1]],data.slots[v])<48))continue;field.push({x,y,r:.45+rnd()*1.35,a:.12+rnd()*.43,p:rnd()*6.28})}
+function line(points,color,width=1){ctx.beginPath();points.forEach((p,i)=>i?ctx.lineTo(...p):ctx.moveTo(...p));ctx.strokeStyle=color;ctx.lineWidth=width;ctx.stroke()}
+function text(s,x,y,size=24,color='#e6f5fc',family='"Malgun Gothic",sans-serif',align='center'){ctx.font=`400 ${size}px ${family}`;ctx.textAlign=align;ctx.fillStyle=color;ctx.fillText(s,x,y)}
+function glow(x,y,r,strength=1){let g=ctx.createRadialGradient(x,y,0,x,y,r);g.addColorStop(0,`rgba(192,246,255,${.75*strength})`);g.addColorStop(.12,`rgba(83,190,255,${.44*strength})`);g.addColorStop(.38,`rgba(41,128,245,${.17*strength})`);g.addColorStop(1,'rgba(15,70,170,0)');ctx.fillStyle=g;ctx.fillRect(x-r,y-r,r*2,r*2)}
+const palettes={d:{bg:'#06172a',line:'#b89b6399',active:'#ffe1a0',star:'#ffe5a6'},a:{bg:'#101e3e',line:'#446489',active:'#b9efff',star:'#e4fcff'},b:{bg:'#122b3b',line:'#527386',active:'#b5dfdd',star:'#fff1ce'},c:{bg:'#211d46',line:'#645784',active:'#e0c7ef',star:'#ffe4a3'}};
+function shapeStar(x,y,r,kind,fill,stroke){ctx.save();ctx.translate(x,y);ctx.beginPath();const n=kind==='five'?10:8;for(let i=0;i<n;i++){let angle=-Math.PI/2+i*Math.PI*2/n,rr=i%2?r*(kind==='five'?.46:.22):r;let px=Math.cos(angle)*rr,py=Math.sin(angle)*rr;if(style==='b'){px+=Math.sin(i*2.3)*1.3;py+=Math.cos(i*1.7)*1.3}i?ctx.lineTo(px,py):ctx.moveTo(px,py)}ctx.closePath();ctx.fillStyle=fill;ctx.fill();if(stroke){ctx.strokeStyle=stroke;ctx.lineJoin='round';ctx.lineWidth=2;ctx.stroke()}ctx.restore()}
+function cloud(path,color){ctx.fillStyle=color;ctx.fill(new Path2D(path))}
+function night(now){const pal=palettes[style];ctx.fillStyle=pal.bg;ctx.fillRect(0,0,1920,1080);
+if(style==='d'){ctx.fillStyle='#163044';ctx.fillRect(0,0,1920,1080);if(mural.complete&&mural.naturalWidth){ctx.save();ctx.globalAlpha*=.72;ctx.filter='blur(1.2px) saturate(0.65)';ctx.drawImage(mural,-3,-3,1926,1086);ctx.restore();}return;}
+if(style==='a'){
+cloud('M0 130 Q310 40 570 155 T1180 95 T1920 135 L1920 0 L0 0Z','#17294b');
+cloud('M0 870 Q290 770 580 910 T1200 970 T1920 830 L1920 1080 L0 1080Z','#152746');
+cloud('M0 925 Q330 850 570 965 T1210 1010 T1920 915 L1920 1080 L0 1080Z','#1b3050');
+}else if(style==='b'){
+cloud('M0 0 L0 285 Q75 247 127 283 Q95 200 185 192 Q225 115 320 174 Q366 98 453 158 Q540 102 600 178 Q555 58 721 0Z','#1a3a4a');
+cloud('M1920 1080 L1920 708 Q1860 660 1807 727 Q1760 660 1698 731 Q1650 704 1630 780 Q1535 736 1512 826 Q1422 802 1440 893 Q1322 903 1280 1080Z','#1b3d4b');
+for(let i=0;i<90;i++){let x=(i*317)%1920,y=(i*173)%1080;line([[x,y],[x+20,y-6],[x+35,y-4]],'#b3dbd608',2)}
+}else{
+cloud('M0 0 L0 455 Q160 355 290 391 Q470 185 700 220 Q980 50 1260 169 Q1520 57 1920 185 L1920 0Z','#302551');
+cloud('M0 0 L0 210 Q240 145 440 161 Q660 60 820 92 Q1030 1 1330 51 Q1630 0 1920 90 L1920 0Z','#443060');
+cloud('M0 1080 L0 859 Q241 770 433 875 Q700 978 963 963 Q1270 1000 1540 868 Q1730 766 1920 789 L1920 1080Z','#352849');
+cloud('M0 1080 L0 985 Q294 843 610 1020 Q995 1160 1390 991 Q1700 855 1920 929 L1920 1080Z','#4a3457');
+}
+const count=style==='a'?145:style==='b'?115:165;
+for(let i=0;i<Math.min(count,field.length);i++){const s=field[i];ctx.save();ctx.globalAlpha*=.35+s.a*.75;
+if(i%(style==='b'?5:7)===0){shapeStar(s.x,s.y,style==='b'?5:4.5,style==='c'?'five':'four',style==='c'?'#d4b991':'#8fbed1');}
+else{ctx.fillStyle=style==='c'?'#c9b2d5':'#94bbcf';ctx.beginPath();ctx.arc(s.x,s.y,style==='a'?1.5:1.6,0,Math.PI*2);ctx.fill()}ctx.restore()}
+}
+function constellationLine(p,q,color,width){ctx.save();
+if(style==='d'){ctx.lineCap='round';const dx=q.x-p.x,dy=q.y-p.y,len=Math.hypot(dx,dy),ux=dx/len,uy=dy/len;
+// Alternating engraved dashes and tiny beads, kept clear of star medallions.
+for(let at=44;at<len-44;at+=30){let end=Math.min(at+15,len-44);for(let bristle=0;bristle<3;bristle++){ctx.save();ctx.globalAlpha*=bristle===0?.75:.22;let off=(bristle-1)*.85,wave=Math.sin(at*.73)*.65;line([[p.x+ux*at-uy*off,p.y+uy*at+ux*off],[p.x+ux*end-uy*(off+wave),p.y+uy*end+ux*(off+wave)]],color,bristle===0?width*.65:.65);ctx.restore()}ctx.fillStyle=color;ctx.beginPath();ctx.arc(p.x+ux*(at+23),p.y+uy*(at+23),1.2,0,Math.PI*2);ctx.fill()}
+ctx.restore();return;}
+ctx.lineCap='round';ctx.lineJoin='round';if(style==='b'){ctx.beginPath();ctx.moveTo(p.x,p.y);ctx.quadraticCurveTo((p.x+q.x)/2+5,(p.y+q.y)/2-5,q.x,q.y);ctx.strokeStyle=color;ctx.lineWidth=width;ctx.stroke()}else line([[p.x,p.y],[q.x,q.y]],color,width);ctx.restore()}
+function star(p,newStar,t,alpha){ctx.save();ctx.globalAlpha*=alpha;const pal=palettes[style],burst=newStar&&t<5.3?Math.sin(clamp((t-4)/1.3)*Math.PI):0,r=(newStar?24:15)+burst*12;
+if(style==='d'){
+ctx.translate(p.x,p.y);const radius=([46,39,34,28,28,28,28][p.order-1])+burst*10,gold=newStar?'#ffe9b0':'#d3b67e';ctx.strokeStyle=gold;ctx.fillStyle=gold;ctx.lineWidth=newStar?2.2:1.8;
+if(newStar){ctx.save();const light=ctx.createRadialGradient(0,0,2,0,0,96);light.addColorStop(0,'rgba(255,227,154,.34)');light.addColorStop(.32,'rgba(244,188,86,.14)');light.addColorStop(1,'rgba(232,167,67,0)');ctx.fillStyle=light;ctx.fillRect(-96,-96,192,192);ctx.restore();ctx.shadowColor='rgba(255,222,144,.65)';ctx.shadowBlur=5;}
+// Nested eight-point filigree star, faceted petals and a fine surrounding halo.
+function rosette(r,inner,rot=0){ctx.beginPath();for(let i=0;i<16;i++){let a=rot-Math.PI/2+i*Math.PI/8,rr=i%2?inner:r;let x=Math.cos(a)*rr,y=Math.sin(a)*rr;i?ctx.lineTo(x,y):ctx.moveTo(x,y)}ctx.closePath();ctx.stroke();ctx.save();ctx.globalAlpha*=.25;ctx.translate(.65,-.4);ctx.lineWidth=.65;ctx.stroke();ctx.restore()}
+rosette(radius,radius*.39);rosette(radius*.74,radius*.29,Math.PI/8);
+for(let i=0;i<8;i++){let a=i*Math.PI/4;line([[Math.cos(a)*radius*.13,Math.sin(a)*radius*.13],[Math.cos(a)*radius*.92,Math.sin(a)*radius*.92]],gold,.75);let a2=a+Math.PI/8;for(let j=0;j<3;j++){let r=radius+9+j*6;ctx.beginPath();ctx.arc(Math.cos(a2)*r,Math.sin(a2)*r,j===2?1.6:.8,0,Math.PI*2);ctx.fill()}let r=radius+32;ctx.save();ctx.translate(Math.cos(a)*r,Math.sin(a)*r);ctx.rotate(Math.PI/4);ctx.strokeRect(-1.9,-1.9,3.8,3.8);ctx.restore()}
+ctx.beginPath();ctx.arc(0,0,4,0,Math.PI*2);ctx.fill();
+if(newStar&&t>=4&&t<5.3){let f=(t-4)/1.3;ctx.globalAlpha*=1-f;ctx.beginPath();ctx.arc(0,0,45+f*60,0,Math.PI*2);ctx.stroke()}
+ctx.restore();return;
+}
+// Flat translucent shapes for retired studies.
+
+if(newStar){ctx.save();ctx.globalAlpha*=.11;shapeStar(p.x,p.y,r*2.5,style==='c'?'five':'four',pal.star);ctx.restore();if(style==='a'){ctx.strokeStyle='#7fcde76b';ctx.lineWidth=2;ctx.beginPath();ctx.arc(p.x,p.y,39+burst*15,0,Math.PI*2);ctx.stroke()}if(style==='b'){ctx.strokeStyle='#c7d8bd66';ctx.lineWidth=1.5;ctx.beginPath();ctx.ellipse(p.x,p.y,39,36,-.25,0,Math.PI*2);ctx.stroke()}}
+shapeStar(p.x,p.y,r,style==='c'?'five':'four',newStar?pal.star:pal.active,style==='b'?'#496e77':null);
+if(newStar){shapeStar(p.x-37,p.y-27,5,'four',pal.star);shapeStar(p.x+29,p.y+37,4,'four',pal.active)}
+if(newStar&&t>=4&&t<5.3){let f=(t-4)/1.3;ctx.globalAlpha*=1-f;ctx.strokeStyle=pal.active;ctx.lineWidth=2;ctx.beginPath();ctx.arc(p.x,p.y,20+f*100,0,Math.PI*2);ctx.stroke()}ctx.restore()}
+function emblem(t){let a=mode==='intro'?1:ease(t,.35,1.55)*(1-ease(t,2.25,2.9));if(a<=0)return;ctx.save();ctx.globalAlpha=a;ctx.translate(960,540);glow(0,0,260,.3);ctx.scale(1.5,1.5);const path=new Path2D('M -100 -58 Q -79 -34 -78 -6 L -78 44 L 78 44 L 78 -6 Q 80 -34 100 -58 M -78 -6 C -78 -56 0 -56 0 -6 M 0 44 L 0 -60 M 0 -6 C 0 -56 78 -56 78 -6');ctx.strokeStyle='#89d9ff';ctx.lineWidth=3.8;ctx.lineCap='round';ctx.lineJoin='round';ctx.shadowColor='#368fff';ctx.shadowBlur=28;ctx.stroke(path);ctx.shadowBlur=8;ctx.strokeStyle='#b1e8ff';ctx.lineWidth=1.2;ctx.stroke(path);ctx.restore()}
+function dormantWash(p){
+// Translucent dry-brush pigment follows the wall grain; no opaque circular center.
+ctx.save();ctx.translate(p.x,p.y);ctx.rotate(-.24);ctx.lineCap='round';
+for(let i=0;i<52;i++){const v=Math.sin(i*127.1+p.order*31.7)*43758.5453,f=v-Math.floor(v),y=(i-26)*1.65,fall=Math.max(0,1-Math.abs(y)/46),half=(30+f*35)*fall;
+ctx.strokeStyle=`rgba(2,12,20,${.055+fall*.055})`;ctx.lineWidth=2+f*3;ctx.beginPath();ctx.moveTo(-half-7*f,y);ctx.quadraticCurveTo(-5,y+4*f,half,y-3*f);ctx.stroke();
+if(i%4===0){ctx.strokeStyle='rgba(64,89,96,.08)';ctx.lineWidth=.6;ctx.beginPath();ctx.moveTo(-half,y+3);ctx.lineTo(half*.6,y);ctx.stroke()}}
+ctx.restore();}
+function reveal(t,now){let a=ease(t,2.9,4);if(a<=0)return;ctx.save();ctx.globalAlpha=a;night(now);for(let i=selected;i<data.slots.length;i++){ctx.save();if(i===selected)ctx.globalAlpha*=1-ease(t,4,4.65);dormantWash(data.slots[i]);ctx.restore()}text('C O R O N A   B O R E A L I S',960,70,19,'#c9b586','Georgia,serif');
+ctx.save();ctx.filter='blur(0.35px)';
+for(let j=1;j<data.connection.length;j++){let ai=data.connection[j-1],bi=data.connection[j],p=data.slots[ai],q=data.slots[bi];constellationLine(p,q,palettes[style].line,2);if(ai<=selected&&bi<=selected){let linkAlpha=(ai===selected||bi===selected)?ease(t,4,5.3):1;ctx.save();ctx.globalAlpha*=linkAlpha;constellationLine(p,q,palettes[style].active,4);ctx.restore()}}
+for(let i=0;i<selected;i++)star(data.slots[i],false,t,1);star(data.slots[selected],true,t,ease(t,4,4.65));ctx.restore();
+const d=data.abilities[selected],ta=ease(t,4.8,5.8);ctx.save();ctx.globalAlpha*=ta;text(d.greek+' CrB',960,145,58,'#f3e2b7','Georgia,serif');line([[777,838],[923,838]],'#bfa16a66');line([[997,838],[1143,838]],'#bfa16a66');ctx.strokeStyle='#cdb37b';ctx.strokeRect(956,834,8,8);d.description.forEach((s,i)=>text(s,960,896+i*43,25,i===0?'#ece2c9':'#c7c2b3'));ctx.restore();if(t>=6.2){ctx.save();ctx.globalAlpha*=params.has('capture')?1:(.4+.6*(.5+.5*Math.cos((now-start)*.0024)));text('Press Any Key',960,1010,22,'#d8c799','Georgia,serif');ctx.restore()}ctx.restore()}
+function returnScreen(){ctx.fillStyle='#14212b';ctx.fillRect(0,0,1920,1080);text('인게임으로 복귀',960,522,38,'#b4c8d5');text('게임 연결 전 · 복귀 화면 자리표시자',960,575,23,'#8b9fab')}
+function render(now){let t=mode==='play'?(now-start)/1000:mode==='intro'?1.8:7;lastT=t;ctx.globalAlpha=1;ctx.fillStyle='#000';ctx.fillRect(0,0,1920,1080);if(mode==='returned'){returnScreen()}else{if(mode==='exit'){reveal(7,now);ctx.save();ctx.globalAlpha=ease((now-exitStart)/1000,0,.7);returnScreen();ctx.restore();if(now-exitStart>=700)mode='returned'}else{emblem(t);reveal(t,now)}}
+const stage=mode==='returned'?'복귀 완료 · 실제 게임 연결 전':mode==='exit'?'UI 페이드 아웃':mode==='intro'?'화면 1 · 별 없는 밤 / 왕관 문양':t<2.9?'화면 1 · 왕관 문양':t<4?'화면 2 · 밤하늘 공개':t<5.3?'화면 2 · 신규 별 점등':t<6.2?'화면 2 · 설명 공개':'획득 완료 · 아무 키나 눌러 닫기';if(stage!==lastStage){status.textContent=data.abilities[selected].greek+' CrB · '+stage;lastStage=stage}requestAnimationFrame(render)}
+function silence(){if(audio){audio.close().catch(()=>{});audio=null}}
+function tone(ac,at,f,duration,gain){let o=ac.createOscillator(),g=ac.createGain();o.type='sine';o.frequency.value=f;g.gain.setValueAtTime(0,at);g.gain.linearRampToValueAtTime(gain,at+.035);g.gain.exponentialRampToValueAtTime(.0001,at+duration);o.connect(g).connect(ac.destination);o.start(at);o.stop(at+duration+.05)}
+function playSound(){if(!document.getElementById('sound').checked)return;try{audio=new(window.AudioContext||window.webkitAudioContext)();audio.resume();let n=audio.currentTime;[130.81,196].forEach(f=>tone(audio,n+.4,f,2.4,.04));[523.25,783.99,1046.5].forEach((f,i)=>tone(audio,n+1.55+i*.07,f,1.5,.045));[659.25,987.77,1318.51,1975.53].forEach((f,i)=>tone(audio,n+4+i*.09,f,2.2,.04))}catch{status.textContent='오디오 재생 불가 · 무음으로 연출합니다'}}
+function reset(next){silence();mode=next;lastT=next==='play'?0:next==='intro'?1.8:7;start=performance.now();lastStage='';if(next==='play')playSound()}
+document.getElementById('style').onchange=e=>{style=e.target.value;reset('still')};
+document.getElementById('ability').onchange=e=>{selected=Number(e.target.value);reset('still')};document.getElementById('intro').onclick=()=>reset('intro');document.getElementById('reveal').onclick=()=>reset('still');document.getElementById('play').onclick=()=>{reset('play');canvas.focus({preventScroll:true})};document.getElementById('sound').onchange=e=>{if(!e.target.checked)silence()};
+function dismiss(){if((mode==='still'||mode==='play')&&lastT>=6.2){mode='exit';exitStart=performance.now();silence();if(document.getElementById('sound').checked){try{audio=new(window.AudioContext||window.webkitAudioContext)();tone(audio,audio.currentTime,523.25,.5,.04)}catch{}}}}
+canvas.addEventListener('pointerdown',()=>{canvas.focus({preventScroll:true});dismiss()});document.addEventListener('keydown',e=>{if(e.repeat||e.ctrlKey||e.metaKey||e.altKey||['INPUT','SELECT','BUTTON','SUMMARY','A'].includes(document.activeElement.tagName))return;if((mode==='play'||mode==='still')&&lastT>=6.2){e.preventDefault();dismiss()}});requestAnimationFrame(render);
+</script></body></html>

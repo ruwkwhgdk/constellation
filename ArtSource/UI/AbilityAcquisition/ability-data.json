@@ -1,0 +1,90 @@
+{
+  "abilities": [
+    {
+      "title": "점프",
+      "greek": "α",
+      "star": "알파성",
+      "row": "AbandonedSchool_Star_Object_Jump",
+      "description": [
+        "왕의 별은 누구보다 높은 곳에서 빛나야 한다.",
+        "별들이 길을 잃으면, 그들을 인도할 길잡이가 언제나 필요하기에."
+      ],
+      "displayTitle": "α CrB"
+    },
+    {
+      "title": "전투 기술",
+      "greek": "β",
+      "star": "베타성",
+      "row": "AbandonedSchool_Star_Object_Combat",
+      "description": [
+        "왕관은 무거우면서도 달콤하다.",
+        "그것을 머리에 쓴 자는, 자신을 지키기 위해 어떤 것과도 싸워야 할 준비가 되어 있다."
+      ],
+      "displayTitle": "β CrB"
+    },
+    {
+      "title": "변신",
+      "greek": "γ",
+      "star": "감마성",
+      "row": "AbandonedSchool_Star_Object_Metamorphosis",
+      "description": [
+        "세상에서 살아남기 위해선, 그 세상에 맞는 모습으로 자신을 변화시킬 필요가 있다.",
+        "그리고 대부분의 별들은 그 과정에서 자신을 잃어버린다."
+      ],
+      "displayTitle": "γ CrB"
+    }
+  ],
+  "slots": [
+    {
+      "order": 1,
+      "star": "α",
+      "x": 1202,
+      "y": 636.75
+    },
+    {
+      "order": 2,
+      "star": "β",
+      "x": 1361,
+      "y": 424.85
+    },
+    {
+      "order": 3,
+      "star": "γ",
+      "x": 1006,
+      "y": 677.05
+    },
+    {
+      "order": 4,
+      "star": "δ",
+      "x": 837,
+      "y": 697.85
+    },
+    {
+      "order": 5,
+      "star": "ε",
+      "x": 644,
+      "y": 622.45
+    },
+    {
+      "order": 6,
+      "star": "θ",
+      "x": 1232,
+      "y": 231.15
+    },
+    {
+      "order": 7,
+      "star": "ι",
+      "x": 560,
+      "y": 362.45
+    }
+  ],
+  "connection": [
+    6,
+    4,
+    3,
+    2,
+    0,
+    1,
+    5
+  ]
+}

@@ -1,4 +1,5 @@
 #include "SceneDirectorPlayer.h"
+#include "SDirectorVision.h"
 #include "Blueprint/WidgetBlueprintLibrary.h"
 #include "Blueprint/UserWidget.h"
 #include "SceneDirectorBranching.h"
@@ -143,6 +144,12 @@ bool ASceneDirectorPlayer::PlayDirector()
                  .OnAdvance_Lambda([Weak]{if(Weak.IsValid())Weak->AdvanceDialogue();})];
             GEngine->GameViewport->AddViewportWidgetContent(DialogueWidget.ToSharedRef(),100);
         }
+        VisionState=DirectorVision::Evaluate(ActiveCues,0);
+        if(auto* View=GetWorld()->GetGameViewport();View&&RuntimeSource&&RuntimeSource->Steps.ContainsByPredicate([](const FDirectorStep& S){return DirectorNodes::IsScreenEffect(S.Type);}))
+        {
+            VisionWidget=SNew(SDirectorVision).State_Lambda([Weak]{return Weak.IsValid()?Weak->VisionState:FDirectorVisionState();});
+            View->AddViewportWidgetContent(VisionWidget.ToSharedRef(),50);
+        }
         EvaluateConversation(0);
     }
     ControlCharacters();
@@ -151,6 +158,8 @@ bool ASceneDirectorPlayer::PlayDirector()
 void ASceneDirectorPlayer::StopDirector()
 {
     const bool WasPlaying=SequencePlayer!=nullptr;const bool Completed=bNaturalFinish;bNaturalFinish=false;
+    if(VisionWidget&&GetWorld()&&GetWorld()->GetGameViewport())GetWorld()->GetGameViewport()->RemoveViewportWidgetContent(VisionWidget.ToSharedRef());
+    VisionWidget.Reset();VisionState=FDirectorVisionState();
     RestoreStandIns();
     if(Performance){Performance->Reset();Performance.Reset();}
     if(VoiceComponent){VoiceComponent->Stop();VoiceComponent->DestroyComponent();VoiceComponent=nullptr;}
@@ -264,6 +273,7 @@ void ASceneDirectorPlayer::Tick(float DeltaSeconds)
 }
 void ASceneDirectorPlayer::EvaluateConversation(double Seconds)
 {
+    VisionState=DirectorVision::Evaluate(ActiveCues,Seconds*30);
     RememberStandIns();ControlCharacters();
     int32 NewDialogue=INDEX_NONE;const double Frame=Seconds*30;
     for(int32 I=0;I<ActiveCues.Num();++I)
@@ -446,3 +456,9 @@ void ASceneDirectorPlayer::SetPlayerHidden(bool Hidden)
         if(HiddenPlayer.IsValid())HiddenPlayer->SetActorHiddenInGame(bPlayerWasHidden);HiddenPlayer.Reset();bPlayerHandedBack=true;
     }
 }
+
+bool ASceneDirectorPlayer::HasEyeEffect() const
+{return ActiveCues.ContainsByPredicate([](const FDirectorCue& C){return C.Step.Type==EDirectorNodeType::Eyelids;});}
+
+bool ASceneDirectorPlayer::HasStartedEyeEffect() const
+{return ActiveCues.ContainsByPredicate([this](const FDirectorCue& C){return C.Step.Type==EDirectorNodeType::Eyelids&&C.StartFrame<=ClockSeconds*30;});}

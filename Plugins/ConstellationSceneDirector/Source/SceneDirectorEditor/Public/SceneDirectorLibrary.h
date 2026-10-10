@@ -1,6 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
+#include "SceneDirectorAsset.h"
 #include "SceneDirectorLibrary.generated.h"
 class USceneDirectorAsset;
 class ULevelSequence;
@@ -10,6 +11,8 @@ class SCENEDIRECTOREDITOR_API USceneDirectorLibrary : public UBlueprintFunctionL
 {
     GENERATED_BODY()
 public:
+    UFUNCTION(BlueprintCallable,Category="Scene Director|Editor") static int32 ConfigureSchoolTutorialFocus(UWorld* World,bool bApply=false);
+    UFUNCTION(BlueprintCallable,Category="Scene Director|Editor") static FDirectorStep MakeDirectorStep(EDirectorNodeType Type);
     UFUNCTION(BlueprintCallable,Category="Scene Director|Editor") static bool CompileAuthoringEvents(USceneDirectorAsset* Asset,FString& Report);
     UFUNCTION(BlueprintCallable,Category="Scene Director|Editor") static bool ConnectGameSignals(UBlueprint* Blueprint,const FString& Kind,FString& Error);
     UFUNCTION(BlueprintCallable,Category="Scene Director|Editor") static bool ConnectMappedInteraction(UBlueprint* Blueprint,FString& Error);

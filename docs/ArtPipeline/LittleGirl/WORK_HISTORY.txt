@@ -1,0 +1,54 @@
+## 결과 요약
+- 작업 내용: 기존 소녀 모델을 검토한 뒤 원화 기반 Tripo 생성 모델로 재제작하고, 얼굴·기본 자세·망토 변형을 보정했다. 리깅, 신규 Heroine 기반 대기·걷기·달리기 리타게팅, Unreal 프로토타입 검증을 거쳐 폐교 본편의 동굴 NPC와 도입부 소녀에 적용했다.
+- 사용 가능한 범위: 폐교 프로토타입 플레이 및 연출 통합 테스트. 이번 완료는 본편 테스트 가능 상태까지이며, 최종 상용 품질의 최적화·얼굴 표정·전용 연출 모션 완성을 뜻하지 않는다.
+- 작업 기간: <mention-date start="2026-10-07" end="2026-10-10"/>. 현재 채팅의 모델 제작부터 본편 반영·테스트 리소스 정리까지 통합 기록.
+
+## 목표와 유지 조건
+- 해결하려던 문제: 기존 모델의 형태·품질 문제, 비대칭 얼굴과 열린 입, 기울어진 자세, 팔을 과도하게 따라가는 망토, 다른 체형의 Heroine 애니메이션 활용 및 기존 NPC 이벤트와의 연결.
+- 유지할 스타일·조건: 금발·푸른 눈의 작은 소녀, 낡은 갈색 망토와 겹치마, 원화의 인상과 체형. 명조·엔드필드 수준의 서브컬처 품질은 장기 개선 목표로 유지하되, 사용자 요청에 따라 첫 게임 테스트를 우선했다.
+- 참고 자료: 사용자 원화 little_girl.png, 기존 Little_Girl NPC, 신규 Heroine 리깅 원본 R142, [Tripo 생성 작업](https://studio.tripo3d.ai/ko/workspace/generate/8146dd40-8044-45b7-9361-aa9a93dea444).
+
+## 작업 전후 비교
+### 작업 전
+기존 모델의 품질 개선 비용이 커 재제작으로 전환했다. 생성 모델에는 얼굴·입의 비대칭, 기본 자세와 머리 방향, 의상과 팔의 변형 간섭 문제가 있었다. 신규 모델을 기존 스토리 NPC 및 이동 애니메이션에 연결하는 경로도 필요했다.
+### 작업 후
+얼굴 중심과 시선·입 형태, 정면 자세와 T 자세 기준을 보정하고 스키닝과 의상 보정을 진행했다. 75개 본의 내보내기 리그와 대기·걷기·달리기를 연결했다. 본편의 기존 NPC 식별자·부착 관계·이벤트를 유지하면서 새 메시를 사용한다. 도입부는 기존 이동 트랙을 보존하는 자식 메시 방식으로 적용했다.
+### 주요 변경점
+- 입을 무표정으로 정리하고 찌그러진 입 벌어짐·좌우 위치를 반복 수정했다. 눈·코·입과 눈동자 방향의 얼굴 기준 정렬을 점검했다.
+- 머리 방향과 기울기를 바로잡고 리깅 기준 자세를 정리했다.
+- 망토의 팔 추종을 줄이고 어깨 보정 모프를 조정했다. 겨드랑이 폐쇄 메시를 추가하면서 기존 가중치와 모프를 보존했다.
+- 이동 BlendSpace에 0 / 27 / 98 cm/s 기준 대기·걷기·달리기를 연결하고 접지를 보정했다.
+- 게임용 자산 37개를 정식 Runtime 경로로 이동했다. 소녀 테스트 자산 24개, 테스트 코드 5개, 테스트 패키지 3개, 캡처·테스트 파일 47개를 제거했다. 향후 개선용 제작 원본과 진단 이력은 보존했다.
+
+## 제작 과정과 결정 이유
+- 사용 도구·버전: Tripo H3.1 생성 모델, Blender 작업 환경, Unreal Engine 5.8, Python·C++ 자동화, Git LFS. 원본 GLB는 anime character 3d model.glb.
+- 주요 작업 과정·설정:
+	1. 원본 모델 점검 후 원화 기반 재생성으로 전환했다. 생성 설정 화면은 Ultra Mesh, 2K 텍스처, 조명 제거, PBR, 삼각형 설정이었다. 화면의 목표 폴리곤 값과 후처리 최종 메시 수는 동일하지 않다.
+	2. 얼굴·기본 자세·망토·손·소매·가려진 면을 반복 보정했다. 겨드랑이 폐쇄는 삼각형 100개를 추가하고 기존 정점·가중치·4개 모프 좌표를 유지했다. 망토 어깨 보정은 원본의 25%로 낮췄다.
+	3. 신규 Heroine 원본 R142를 기준으로 체형 차이를 반영해 이동 애니메이션을 리타게팅했다. 동일 애니메이션 파일을 단순 공유하는 방식 대신 소녀 체형의 발 접지와 이동 속도를 검증했다.
+	4. 독립 테스트에서 평지·경사·계단·회전·AI 경로 이동을 검증하고 기존 NPC에 붙는 LittleGirlLocomotionComponent로 통합했다. 외부 연출 애니메이션 재생 중에는 이동 BlendSpace가 덮어쓰지 않게 했다.
+	5. 동굴의 BP_NPC_Little_Girl_C_1과 BP_EmptyActor_C_48 부착 관계, 대사·액션·볼륨을 보존했다. 기존 이벤트의 이동 클립과 달리기 전환 기준만 갱신했다.
+	6. 도입부 SkeletalMeshActor_0의 네이티브 루트와 원래 배율·이동 트랙을 유지하고 자식 시각 메시에서 원점 차이를 보정했다. 캐릭터 높이 약 132.913 cm와 기존 발 높이를 유지했다.
+	7. 본편 검증 후 정식 자산 경로와 재임포트 원본을 정리하고 전용 테스트 실행 자산을 제거했다.
+- 채택한 방법과 이유: 기존 스토리 캐릭터에 컴포넌트를 추가해 이벤트 호환성을 유지했다. 도입부는 자식 메시 방식으로 기존 연출의 저장 구조와 트랙을 보존했다. 중간 원본은 향후 품질 개선에 필요해 유지했다.
+- 폐기한 방법과 이유: 품질이 부족한 기존 모델의 계속된 부분 수리 대신 재제작을 택했다. 독립 테스트 캐릭터를 본편 NPC로 직접 대체하는 방식은 기존 이벤트 동작 보존에 불리해 제외했다. 네이티브 루트 직접 교체는 저장·재로드 문제가 있어 자식 메시 방식으로 바꿨다.
+
+## 결과물과 버전
+- 원본 파일: 프로젝트 ArtSource/LittleGirl_Production/Source/LittleGirl_UnderarmClosure_Candidate.blend. 이전 제작 이력은 ArtSource/LittleGirl_Prototype/CURRENT.txt 참조.
+- 텍스처: ArtSource/LittleGirl_Production/Source/Textures 및 Runtime/Materials·Textures.
+- 내보낸 파일: LittleGirl_UnderarmClosure_Candidate.fbx, SK_LittleGirl_UE.fbx, AS_LittleGirl_Idle_contact.fbx, AS_LittleGirl_Walk_Validation_contact.fbx, AS_LittleGirl_Run_ContactPrecision_contact.fbx.
+- Unreal 에셋 경로: /Game/Constellation/Characters/NPC/Little_Girl/Runtime. SK_LittleGirl, SKEL_LittleGirl, Animations/BS_LittleGirl_Locomotion 및 Idle·Walk·Run.
+- 본편 맵: /Game/Constellation/Worlds/AbandonedSchool/Maps/AbandonedSchool.
+- 연결 코드: Source/Constellation/LittleGirlLocomotionComponent.cpp 및 .h.
+- 기록 당시 사용본·버전·커밋: develop — 본 기록을 포함하는 소녀 본편 적용 커밋. 선행 의존성: 393dbe9..
+- 외부 제작 원본: Constellation_ArtWorkspace/ArtSource/LittleGirl_Tripo_New/FullBodyExport/R03_RuntimeBase와 Heroine_Rebuild/FaceDefectRepair/R142. 이 외부 폴더 전체는 Git 대상이 아니며, 본편 재임포트에 필요한 최종 원본은 프로젝트 Source 폴더로 복사해 보존했다.
+- 공유 맵 의존성: 기존 S0·Vision 연출과 사물함, 폐교에서 실제 참조하는 Heroine GamePilot 자산은 선행 의존성 커밋으로 구분했다. 이 항목들은 이 채팅에서 새로 제작한 소녀 모델 결과와 구분한다.
+
+## 검증과 남은 문제
+- 외형 확인: 정면·얼굴·망토·의상 검토 및 본편 도입부 화면 확인. ArtSource/LittleGirl_Production/opening_model.png.
+- 메시·텍스처 확인: 최종 자산 재로드, 재임포트 경로 및 제거된 테스트 에셋 참조 검사 통과. 모델은 약 34.3만 삼각형의 프로토타입 수준으로, 최종 폴리곤 예산 최적화는 남아 있다.
+- 관절 변형 확인: 망토 팔 추종 완화와 어깨 보정, 겨드랑이 폐쇄, 이동 접지 검사. 이동 테스트는 평지·11.31도 경사·12 cm 계단 6개·네 방향 회전과 장애물을 포함한 두 AI 이동 목표를 검사했다.
+- Unreal 적용 확인: 동굴 본편 진입 볼륨 7개 검사, 대사 4개·액션 4개, 카메라·입력 복귀 통과. 도입부는 조사 선택 두 순서와 취소 검사 통과. Editor 및 Game Development 빌드, 폐교 Win64 쿠킹 성공. 원본 SaveGames 해시 보존 확인.
+- 근거 파일: ArtSource/LittleGirl_Production/status.json, production_asset_check.json, volume_runtime.json, opening_runtime.json, cleanup_assets.json, original_save_hashes.json, INTEGRATION.txt.
+- 미확인 항목: 최종 본편 패키징 실행 파일의 전체 플레이 검사는 이번 단계에서 수행하지 않았다. 기존 프로토타입 패키지 검증과 구분한다.
+- 남은 문제·관련 후속 작업: 최종 리토폴로지·LOD·텍스처/재질 비용 최적화, 표정과 의상 폴리싱, 도입부 이동 모션, 락커 여는 애니메이션과 놀란 애니메이션. 기존 Heroine Carry 누락 참조 및 DodgeTimeline 경고는 소녀 적용과 별개로 남아 있다.

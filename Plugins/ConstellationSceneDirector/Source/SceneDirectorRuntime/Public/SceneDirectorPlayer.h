@@ -3,6 +3,7 @@
 #include "GameFramework/Actor.h"
 #include "SceneDirectorAsset.h"
 #include "SceneDirectorPerformance.h"
+#include "SceneDirectorVision.h"
 #include "SceneDirectorPlayer.generated.h"
 class USceneDirectorAsset;
 class ULevelSequencePlayer;
@@ -20,6 +21,13 @@ class SCENEDIRECTORRUNTIME_API ASceneDirectorPlayer : public AActor
     GENERATED_BODY()
 public:
     ASceneDirectorPlayer();
+    UFUNCTION(BlueprintPure,Category="시야 효과") bool HasEyeEffect() const;
+    UFUNCTION(BlueprintPure,Category="시야 효과") bool HasStartedEyeEffect() const;
+    UFUNCTION(BlueprintPure,Category="시야 효과") bool HasVisionOverlay() const {return VisionWidget.IsValid();}
+    UFUNCTION(BlueprintPure,Category="시야 효과") float GetEyeOpen() const {return VisionState.EyeOpen;}
+    UFUNCTION(BlueprintPure,Category="시야 효과") float GetVisionBlur() const {return VisionState.Blur;}
+    UFUNCTION(BlueprintPure,Category="시야 효과") float GetVisionHaze() const {return VisionState.Haze;}
+
     UPROPERTY(BlueprintAssignable,Category="연출") FDirectorGameplayReturned OnGameplayReturned;
     bool CaptureGameplayPose(AActor* Target);
     // Gameplay deactivation must survive visual-track RestoreState until an explicit activation.
@@ -122,6 +130,8 @@ private:
     UPROPERTY(Transient) TArray<TObjectPtr<AActor>> BoundActors;
     TArray<FTransform> OriginalTransforms;
     TUniquePtr<FDirectorPerformance> Performance;
+    TSharedPtr<SWidget> VisionWidget;
+    FDirectorVisionState VisionState;
     TSharedPtr<SWidget> DialogueWidget;
     TSharedPtr<class SDirectorDialogue> DialogueView;
     uint64 ChoiceInputFrame=MAX_uint64;

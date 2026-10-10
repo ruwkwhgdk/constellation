@@ -1,0 +1,63 @@
+{
+  "start": 233456.437,
+  "case": 2,
+  "phase": "playing",
+  "results": [
+    {
+      "case": [
+        "Slit",
+        "Inside"
+      ],
+      "vent_checked": true,
+      "turn_checked": true,
+      "flee_samples": 250,
+      "dialogues": [
+        "좁은 틈 너머로 칠판이 보입니다.",
+        "포스트잇, 스티커, 별자리 사진, 키링…",
+        "그다지 특별한 건 보이지 않습니다.",
+        "사진에는 당신이 찍혀 있습니다.",
+        "옆에 서 있는 건…누구일까요?",
+        "잠시 기억을 되짚어보지만, 그녀에 대한 것은 전혀 떠오르지 않습니다.",
+        "처음 보는 소녀가 당신이 갇혀 있는 락커 앞으로 달려옵니다.",
+        "이게 뭐지?"
+      ],
+      "position": "<Struct 'Vector' (0x0000024799746E00) {x: 2780.000000, y: 0.000000, z: 90.149950}>",
+      "status": "완료"
+    },
+    {
+      "case": [
+        "Inside",
+        "Slit"
+      ],
+      "vent_checked": true,
+      "turn_checked": true,
+      "flee_samples": 221,
+      "dialogues": [
+        "포스트잇, 스티커, 별자리 사진, 키링…",
+        "그다지 특별한 건 보이지 않습니다.",
+        "사진에는 당신이 찍혀 있습니다.",
+        "옆에 서 있는 건…누구일까요?",
+        "잠시 기억을 되짚어보지만, 그녀에 대한 것은 전혀 떠오르지 않습니다.",
+        "좁은 틈 너머로 칠판이 보입니다.",
+        "처음 보는 소녀가 당신이 갇혀 있는 락커 앞으로 달려옵니다.",
+        "이게 뭐지?"
+      ],
+      "position": "<Struct 'Vector' (0x0000024799746E00) {x: 2780.000000, y: 0.000000, z: 90.149950}>",
+      "status": "완료"
+    },
+    {
+      "case": "cancel",
+      "restored": true
+    }
+  ],
+  "selections": [],
+  "dialogues": [],
+  "wait_start": 233586.281,
+  "last_choice": "Slit|Inside",
+  "flee_samples": 0,
+  "vent_checked": false,
+  "turn_checked": false,
+  "flee_started": false,
+  "success": true,
+  "error": ""
+}

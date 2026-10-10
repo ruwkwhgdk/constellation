@@ -1,0 +1,125 @@
+{
+  "passed": true,
+  "source_directory_absent": true,
+  "imports": [
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/SK_LittleGirl",
+      "source": "C:/ArtSource/LittleGirl_Production/Source/LittleGirl_UnderarmClosure_Candidate.fbx",
+      "source_exists": false
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Animations/AS_LittleGirl_Idle",
+      "source": "C:/../ArtSource/LittleGirl_Production/Source/LegacyImports/AS_LittleGirl_Idle_forward.fbx",
+      "source_exists": false
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Animations/AS_LittleGirl_Run",
+      "source": "C:/../ArtSource/LittleGirl_Production/Source/LegacyImports/AS_LittleGirl_Run_ContactPrecision_forward.fbx",
+      "source_exists": false
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Animations/AS_LittleGirl_Walk",
+      "source": "C:/../ArtSource/LittleGirl_Production/Source/LegacyImports/AS_LittleGirl_Walk_Validation_forward.fbx",
+      "source_exists": false
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Mesh/SK_LittleGirl_Locomotion",
+      "source": "C:/../ArtSource/LittleGirl_Production/Source/LegacyImports/LittleGirl_Centimeter.fbx",
+      "source_exists": false
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/anime_character_3d_model_basecolor",
+      "source": "C:/../ArtSource/LittleGirl_Production/Source/Textures/anime_character_3d_model_basecolor.png",
+      "source_exists": false
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/anime_character_3d_model_normal",
+      "source": "C:/../ArtSource/LittleGirl_Production/Source/Textures/anime_character_3d_model_normal.png",
+      "source_exists": false
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/anime_character_3d_model_rm",
+      "source": "C:/../ArtSource/LittleGirl_Production/Source/Textures/anime_character_3d_model_rm.png",
+      "source_exists": false
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/EyeSurface_L_BaseColor",
+      "source": "C:/../ArtSource/LittleGirl_Production/Source/Textures/EyeSurface_L_BaseColor.png",
+      "source_exists": false
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/EyeSurface_R_BaseColor",
+      "source": "C:/../ArtSource/LittleGirl_Production/Source/Textures/EyeSurface_R_BaseColor.png",
+      "source_exists": false
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/LeftSleeve_BaseColor",
+      "source": "C:/../ArtSource/LittleGirl_Production/Source/Textures/LeftSleeve_BaseColor.png",
+      "source_exists": false
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/LeftSleeve_Normal",
+      "source": "C:/../ArtSource/LittleGirl_Production/Source/Textures/LeftSleeve_Normal.png",
+      "source_exists": false
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/LeftSleeve_Roughness",
+      "source": "C:/../ArtSource/LittleGirl_Production/Source/Textures/LeftSleeve_Roughness.png",
+      "source_exists": false
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/LittleGirl_Face_BaseColor_Baked",
+      "source": "C:/../ArtSource/LittleGirl_Production/Source/Textures/LittleGirl_Face_BaseColor_Baked.png",
+      "source_exists": false
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/LittleGirl_Hand_L_BaseColor",
+      "source": "C:/../ArtSource/LittleGirl_Production/Source/Textures/LittleGirl_Hand_L_BaseColor.png",
+      "source_exists": false
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/LittleGirl_Hand_L_Normal",
+      "source": "C:/../ArtSource/LittleGirl_Production/Source/Textures/LittleGirl_Hand_L_Normal.png",
+      "source_exists": false
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/LittleGirl_Hand_L_Roughness",
+      "source": "C:/../ArtSource/LittleGirl_Production/Source/Textures/LittleGirl_Hand_L_Roughness.png",
+      "source_exists": false
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/LittleGirl_Hand_R_BaseColor",
+      "source": "C:/../ArtSource/LittleGirl_Production/Source/Textures/LittleGirl_Hand_R_BaseColor.png",
+      "source_exists": false
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/LittleGirl_Hand_R_Normal",
+      "source": "C:/../ArtSource/LittleGirl_Production/Source/Textures/LittleGirl_Hand_R_Normal.png",
+      "source_exists": false
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/LittleGirl_Hand_R_Roughness",
+      "source": "C:/../ArtSource/LittleGirl_Production/Source/Textures/LittleGirl_Hand_R_Roughness.png",
+      "source_exists": false
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/RightSleeve_BaseColor",
+      "source": "C:/../ArtSource/LittleGirl_Production/Source/Textures/RightSleeve_BaseColor.png",
+      "source_exists": false
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/RightSleeve_Normal",
+      "source": "C:/../ArtSource/LittleGirl_Production/Source/Textures/RightSleeve_Normal.png",
+      "source_exists": false
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/RightSleeve_Roughness",
+      "source": "C:/../ArtSource/LittleGirl_Production/Source/Textures/RightSleeve_Roughness.png",
+      "source_exists": false
+    }
+  ],
+  "girls": [
+    "SkeletalMeshActor_0",
+    "BP_NPC_Little_Girl_C_1"
+  ]
+}

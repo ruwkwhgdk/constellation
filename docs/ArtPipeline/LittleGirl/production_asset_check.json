@@ -1,0 +1,102 @@
+{
+  "passed": true,
+  "girls": [
+    {
+      "actor": "SkeletalMeshActor_0",
+      "location": "<Struct 'Vector' (0x00000291A0185500) {x: 1800.000000, y: 450.000000, z: 67.000000}>",
+      "height": 132.91275949275476,
+      "bottom": 0.47766965366247405,
+      "mesh_parent": "<Object '/Game/Constellation/Worlds/AbandonedSchool/Maps/AbandonedSchool.AbandonedSchool:PersistentLevel.SkeletalMeshActor_0.SkeletalMeshComponent0' (0x0000029219BB7800) Class 'SkeletalMeshComponent'>",
+      "mesh_relative_location": "<Struct 'Vector' (0x0000029219BBDD80) {x: 0.000000, y: 0.000000, z: -95.031902}>",
+      "mesh_relative_scale": "<Struct 'Vector' (0x0000029219BBDDB0) {x: 1.934628, y: 1.934628, z: 1.934628}>"
+    },
+    {
+      "actor": "BP_NPC_Little_Girl_C_1",
+      "location": "<Struct 'Vector' (0x00000291A0185F00) {x: -25270.000000, y: -12530.000000, z: 18.000000}>",
+      "height": 160.0,
+      "bottom": -62.0,
+      "mesh_parent": "<Object '/Game/Constellation/Worlds/AbandonedSchool/Maps/AbandonedSchool.AbandonedSchool:PersistentLevel.BP_NPC_Little_Girl_C_1.CollisionCylinder' (0x00000292194C3F00) Class 'CapsuleComponent'>",
+      "mesh_relative_location": "<Struct 'Vector' (0x0000029219582980) {x: 0.000000, y: 0.000000, z: -66.456400}>",
+      "mesh_relative_scale": "<Struct 'Vector' (0x00000292195829B0) {x: 1.354240, y: 1.354240, z: 1.354240}>"
+    }
+  ],
+  "source_paths_updated": [
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/SK_LittleGirl",
+      "file": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\LittleGirl_Production\\Source\\LittleGirl_UnderarmClosure_Candidate.fbx"
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/anime_character_3d_model_basecolor",
+      "file": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\LittleGirl_Production\\Source\\Textures\\anime_character_3d_model_basecolor.png"
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/anime_character_3d_model_normal",
+      "file": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\LittleGirl_Production\\Source\\Textures\\anime_character_3d_model_normal.png"
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/anime_character_3d_model_rm",
+      "file": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\LittleGirl_Production\\Source\\Textures\\anime_character_3d_model_rm.png"
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/EyeSurface_L_BaseColor",
+      "file": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\LittleGirl_Production\\Source\\Textures\\EyeSurface_L_BaseColor.png"
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/EyeSurface_R_BaseColor",
+      "file": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\LittleGirl_Production\\Source\\Textures\\EyeSurface_R_BaseColor.png"
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/LeftSleeve_BaseColor",
+      "file": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\LittleGirl_Production\\Source\\Textures\\LeftSleeve_BaseColor.png"
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/LeftSleeve_Normal",
+      "file": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\LittleGirl_Production\\Source\\Textures\\LeftSleeve_Normal.png"
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/LeftSleeve_Roughness",
+      "file": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\LittleGirl_Production\\Source\\Textures\\LeftSleeve_Roughness.png"
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/LittleGirl_Face_BaseColor_Baked",
+      "file": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\LittleGirl_Production\\Source\\Textures\\LittleGirl_Face_BaseColor_Baked.png"
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/LittleGirl_Hand_L_BaseColor",
+      "file": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\LittleGirl_Production\\Source\\Textures\\LittleGirl_Hand_L_BaseColor.png"
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/LittleGirl_Hand_L_Normal",
+      "file": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\LittleGirl_Production\\Source\\Textures\\LittleGirl_Hand_L_Normal.png"
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/LittleGirl_Hand_L_Roughness",
+      "file": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\LittleGirl_Production\\Source\\Textures\\LittleGirl_Hand_L_Roughness.png"
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/LittleGirl_Hand_R_BaseColor",
+      "file": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\LittleGirl_Production\\Source\\Textures\\LittleGirl_Hand_R_BaseColor.png"
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/LittleGirl_Hand_R_Normal",
+      "file": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\LittleGirl_Production\\Source\\Textures\\LittleGirl_Hand_R_Normal.png"
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/LittleGirl_Hand_R_Roughness",
+      "file": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\LittleGirl_Production\\Source\\Textures\\LittleGirl_Hand_R_Roughness.png"
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/RightSleeve_BaseColor",
+      "file": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\LittleGirl_Production\\Source\\Textures\\RightSleeve_BaseColor.png"
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/RightSleeve_Normal",
+      "file": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\LittleGirl_Production\\Source\\Textures\\RightSleeve_Normal.png"
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/RightSleeve_Roughness",
+      "file": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\LittleGirl_Production\\Source\\Textures\\RightSleeve_Roughness.png"
+    }
+  ],
+  "test_dependencies": {}
+}

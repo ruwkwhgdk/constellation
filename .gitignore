@@ -36,3 +36,9 @@ ArtSource/**/*.blend1
 ArtSource/**/*.log
 ArtSource/**/*.dmp
 ArtSource/**/*.runtime-xml
+
+# Optional authoring checkout copies; pinned in docs/ArtPipeline/art-source-lock.json
+/ArtSource/LittleGirl_Production/
+/ArtSource/LittleGirl_Prototype/
+/ArtSource/SchoolLocker/
+/ArtSource/SchoolOpening/

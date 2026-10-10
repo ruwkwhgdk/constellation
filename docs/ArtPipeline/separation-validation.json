@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-10",
+  "art_commit": "0e81757d9edd67d074057760e3985576b223d91b",
+  "source_files_preserved": 236,
+  "all_reimport_sources_absent": 23,
+  "isolated_asset_load_passed": true,
+  "cook_exit_code": 0,
+  "cook_seconds": 89.01,
+  "art_source_open_records": 0,
+  "validation_scope": "Isolated project root without ArtSource; existing engine Content/Plugins/Binaries shared via junctions; fresh cook output. Not an independent checkout or packaged end-to-end play.",
+  "known_warnings": "Existing Heroine Carry missing animation dependencies remain.",
+  "original_history_backup": "Saved/LittleGirlProduction/before-art-split.bundle",
+  "unrelated_change_excluded": "GP_Climbing_Ladder.uasset working edit"
+}

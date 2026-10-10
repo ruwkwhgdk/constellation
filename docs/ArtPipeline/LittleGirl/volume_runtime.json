@@ -1,0 +1,51 @@
+{
+  "start": 232360.343,
+  "checks": {
+    "production_mesh": true,
+    "actor_preserved": true,
+    "parent_preserved": true,
+    "volume_event_completed": true,
+    "four_dialogues": true,
+    "view_restored": true,
+    "input_restored": true
+  },
+  "dialogue": [
+    "여, 여기까지 쫓아오다니...!",
+    "이, 인간! 나를 먹으려는 거지?!",
+    "나는 맛이 하나도 없단 말야!!",
+    "그러니까 이제 쫓아오지 마!!"
+  ],
+  "save_dir": "C:/Users/User/Documents/UnrealProjects/Constellation/Saved/LittleGirlSaveIsolation/Saved/",
+  "busy": true,
+  "play": 232372.343,
+  "npc": {
+    "name": "BP_NPC_Little_Girl_C_1",
+    "mesh": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/SK_LittleGirl.SK_LittleGirl",
+    "parent": "BP_EmptyActor_C_48"
+  },
+  "before_view": "BP_Player_Heroine_C_0",
+  "outside": 232380.343,
+  "volume": {
+    "center": [
+      -25750.0,
+      -11900.0,
+      -350.0
+    ],
+    "extent": [
+      1354.2286309276715,
+      1181.6690641222594,
+      400.0
+    ]
+  },
+  "entered": 232382.343,
+  "binding_status": "완료",
+  "seen": true,
+  "actions": [
+    true,
+    true,
+    true,
+    true
+  ],
+  "advance": 232387.781,
+  "passed": true
+}

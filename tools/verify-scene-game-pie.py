@@ -10,6 +10,14 @@ out=save_dir/'scene-pie-result.json'
 editor=u.get_editor_subsystem(u.UnrealEditorSubsystem)
 level=u.get_editor_subsystem(u.LevelEditorSubsystem)
 assert u.EditorLoadingAndSavingUtils.load_map('/Game/Constellation/Worlds/AbandonedSchool/Maps/AbandonedSchool')
+# This suite covers the four pre-existing events. S0 has its own two-order/cancel suite.
+# Isolate it in this unsaved test world so LevelReady cannot take the active event slot.
+actor_subsystem=u.get_editor_subsystem(u.EditorActorSubsystem)
+for actor in actor_subsystem.get_all_level_actors():
+ if isinstance(actor,u.SchoolOpeningSceneActor):actor_subsystem.destroy_actor(actor)
+ elif isinstance(actor,u.SceneEventBinding):
+  director=actor.get_editor_property('director')
+  if director and director.get_name()=='DA_S0_Opening':actor.set_editor_property('enabled',False)
 state={'phase':'boot','start':time.monotonic(),'phase_start':time.monotonic(),'results':[], 'index':0,'reload':False}
 names=['DA_Appear_Slime_Event','DA_Dump_Slime_Star_Obj_Get_Event','DA_Little_Girl_Event_Mushroom_Cave','DA_StatueInteraction']
 def phase(p):

@@ -9,6 +9,9 @@ struct FDirectorNodeMenuEntry
 inline TArray<FDirectorNodeMenuEntry> DirectorNodeMenuEntries()
 {
     return {
+        {TEXT("카메라"),TEXT("눈꺼풀 연출"),EDirectorNodeType::Eyelids},
+        {TEXT("카메라"),TEXT("시야 효과"),EDirectorNodeType::Vision},
+        {TEXT("카메라"),TEXT("시야 효과 해제"),EDirectorNodeType::ClearVision},
         {TEXT("흐름 제어"),TEXT("Integer 변수 설정"),EDirectorNodeType::SetInt},
         {TEXT("캐릭터"),TEXT("NPC 표시·숨김"),EDirectorNodeType::Visibility},
         {TEXT("카메라"),TEXT("화면 페이드"),EDirectorNodeType::Fade},

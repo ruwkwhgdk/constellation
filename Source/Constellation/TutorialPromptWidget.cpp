@@ -1,13 +1,52 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+﻿// Fill out your copyright notice in the Description page of Project Settings.
 
 #include "TutorialPromptWidget.h"
 #include "GameFramework/PlayerController.h"
+#include "SchoolOpeningSceneActor.h"
+#include "EngineUtils.h"
 
 TWeakObjectPtr<UTutorialPromptWidget> UTutorialPromptWidget::ActivePrompt = nullptr;
 
 void UTutorialPromptWidget::NativeConstruct()
 {
 	Super::NativeConstruct();
+	for (TActorIterator<ASchoolOpeningSceneActor> It(GetWorld()); It; ++It)
+	{
+		if (It->bPending)
+		{
+			bOpeningDeferred = true;
+			SetVisibility(ESlateVisibility::Collapsed);
+			GetWorld()->GetTimerManager().SetTimer(OpeningTimer, this, &UTutorialPromptWidget::WaitForOpening, .25f, true);
+			return;
+		}
+	}
+	ActivatePrompt();
+}
+
+void UTutorialPromptWidget::WaitForOpening()
+{
+	for (TActorIterator<ASchoolOpeningSceneActor> It(GetWorld()); It; ++It) if (It->bPending) return;
+	GetWorld()->GetTimerManager().ClearTimer(OpeningTimer);
+	// Allow the region title and first controllable moment before the existing tutorial.
+	GetWorld()->GetTimerManager().SetTimer(OpeningTimer, this, &UTutorialPromptWidget::ActivatePrompt, 4.5f, false);
+}
+
+void UTutorialPromptWidget::ActivatePrompt()
+{
+	// Cancellation can be followed by a new opening before this delayed callback fires.
+	if (bOpeningDeferred && GetWorld())
+	{
+		for (TActorIterator<ASchoolOpeningSceneActor> It(GetWorld()); It; ++It)
+		{
+			if (It->bPending)
+			{
+				GetWorld()->GetTimerManager().SetTimer(OpeningTimer, this, &UTutorialPromptWidget::WaitForOpening, .25f, true);
+				return;
+			}
+		}
+	}
+
+	if (bOpeningDeferred) { bOpeningDeferred = false; SetVisibility(ESlateVisibility::Visible); }
 
 	if (ActivePrompt.IsValid() && ActivePrompt.Get() != this)
 	{
@@ -25,6 +64,7 @@ void UTutorialPromptWidget::NativeConstruct()
 
 void UTutorialPromptWidget::NativeDestruct()
 {
+	if (GetWorld()) GetWorld()->GetTimerManager().ClearTimer(OpeningTimer);
 	// External removal must release input without completing the tutorial.
 	bDismissed = true;
 	ReleaseInputMode();

@@ -1,0 +1,268 @@
+{
+  "schema": 1,
+  "art_repository": "git@github.com:ruwkwhgdk/constellation-art-source.git",
+  "art_commit": "0e81757d9edd67d074057760e3985576b223d91b",
+  "branch": "develop",
+  "runtime_requires_art_checkout": false,
+  "reimport_policy": "Manual only; copy pinned authoring files into ignored ArtSource; do not watch art directory",
+  "source_manifest": "source-manifest.json",
+  "imports": [
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/SK_LittleGirl",
+      "source": "ArtSource/LittleGirl_Production/Source/LittleGirl_UnderarmClosure_Candidate.fbx",
+      "sha256": "67702a0e3d75813930aac27aa64718f6d4c64a03ddc7aab764e1c5a3609c2549",
+      "unreal_sha256": "2c6e5d18566f1437d3c197fa9d07d7a75b6d95b9a1a819bb394f281fc7a9f235"
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Animations/AS_LittleGirl_Idle",
+      "source": "ArtSource/LittleGirl_Production/Source/LegacyImports/AS_LittleGirl_Idle_forward.fbx",
+      "sha256": "65275bcb965f51031c7513461f2b8fbff8a258585f1485cd42effa33db0f804a",
+      "unreal_sha256": "8b53bbc4a923460b79aac94bc08f0b74366c1c6d4511984f3159c76f73486cf7"
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Animations/AS_LittleGirl_Run",
+      "source": "ArtSource/LittleGirl_Production/Source/LegacyImports/AS_LittleGirl_Run_ContactPrecision_forward.fbx",
+      "sha256": "3afd9fbe80f428a191196827c49b1eaf7d2c2137a597da6f6d2424a3aa3f3a07",
+      "unreal_sha256": "54c521aea27d959c4f5f84b05bbf3e450bf5514a42bc5a88a6a2b859cb977b81"
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Animations/AS_LittleGirl_Walk",
+      "source": "ArtSource/LittleGirl_Production/Source/LegacyImports/AS_LittleGirl_Walk_Validation_forward.fbx",
+      "sha256": "67381aa64c94fab6950f032df931c3a0d36dfebfb2ae3ca598bf11732390716f",
+      "unreal_sha256": "ac3047aff5244dd46bd141db04cba319f77ce438846aadd50cc21fa9050cb42a"
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Mesh/SK_LittleGirl_Locomotion",
+      "source": "ArtSource/LittleGirl_Production/Source/LegacyImports/LittleGirl_Centimeter.fbx",
+      "sha256": "ba06d6ce77fb965a36dffda124a2cdefddf09064261e3e19eed74713eda416e5",
+      "unreal_sha256": "ee308ba3a6ab1a118555f289d73263792a5b55bb1944eb76c499e82713c11aa2"
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/anime_character_3d_model_basecolor",
+      "source": "ArtSource/LittleGirl_Production/Source/Textures/anime_character_3d_model_basecolor.png",
+      "sha256": "242bdd65cf639fa3f9374e878544297ef77700bc0a7bb769673bcaca3701fdf8",
+      "unreal_sha256": "071556b93fcd7bf2dbfc168a82c40224d64c0bb7cc76380bc76473df205d48b3"
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/anime_character_3d_model_normal",
+      "source": "ArtSource/LittleGirl_Production/Source/Textures/anime_character_3d_model_normal.png",
+      "sha256": "9a4edd5cf7e6476cbaee3ea72ea4b878717090a1b33fad64641c81931b405933",
+      "unreal_sha256": "f44a8a91ace4752ed0d90152bb58f313814602f8ef95516d270a3a66f0300173"
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/anime_character_3d_model_rm",
+      "source": "ArtSource/LittleGirl_Production/Source/Textures/anime_character_3d_model_rm.png",
+      "sha256": "5dfef348b146348b3d35ab33b53d9201b9f8f04e8dd7e9cea4e35ed01d31a6d4",
+      "unreal_sha256": "d18f9ae4abceaed4a206939b9477605db0b7472f172713baca294a2368ddbfbe"
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/EyeSurface_L_BaseColor",
+      "source": "ArtSource/LittleGirl_Production/Source/Textures/EyeSurface_L_BaseColor.png",
+      "sha256": "6a0288f5763cc65bed0bc0fcd88a46a08d1038b759ae28ad0e4ccbf3d542a1b6",
+      "unreal_sha256": "22a14b29a2495c7fcfd381499eea1e8105d87c2fa8f2abf13e10c435e71b556e"
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/EyeSurface_R_BaseColor",
+      "source": "ArtSource/LittleGirl_Production/Source/Textures/EyeSurface_R_BaseColor.png",
+      "sha256": "48637ddacbc99ae8ebd2141df20c39f201a5149dd633d699d0bec404f6b439dd",
+      "unreal_sha256": "57673671bb44031247deed877bd536ce228c4b22e249bdadfb0507818ed88bf0"
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/LeftSleeve_BaseColor",
+      "source": "ArtSource/LittleGirl_Production/Source/Textures/LeftSleeve_BaseColor.png",
+      "sha256": "1765cfe80780d7255d3495aad936b0b78ec0434ccf48e7e73d9cb319b55f6f11",
+      "unreal_sha256": "d19f0142691b5ba6d0dd589c161cb9396510090c1ac4285406329475ef1c4a2a"
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/LeftSleeve_Normal",
+      "source": "ArtSource/LittleGirl_Production/Source/Textures/LeftSleeve_Normal.png",
+      "sha256": "85e5860c92a1250046bffa2211355802475c884acd5a74395d554f28095541c6",
+      "unreal_sha256": "96a7add7dc9a61df1721ae0f6178c4838c4bcca9201942f2172575118f0853cf"
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/LeftSleeve_Roughness",
+      "source": "ArtSource/LittleGirl_Production/Source/Textures/LeftSleeve_Roughness.png",
+      "sha256": "bc34fa8d5373bec592e1f015f20d03bde93d0a6e8d1ad49deb1e094db40f03fc",
+      "unreal_sha256": "9b053d6a70d66a621e5be8ba3e9fab995da70e6ee338e4eba164cbb612c026fa"
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/LittleGirl_Face_BaseColor_Baked",
+      "source": "ArtSource/LittleGirl_Production/Source/Textures/LittleGirl_Face_BaseColor_Baked.png",
+      "sha256": "66cbc6fdcdf63d360d9339268df4b1680bca3633f394af56c17accabe0029add",
+      "unreal_sha256": "e7dfae1d0096dbd05ed401b101b87b31428e7d1db7150f597e0f1f7cdae1b759"
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/LittleGirl_Hand_L_BaseColor",
+      "source": "ArtSource/LittleGirl_Production/Source/Textures/LittleGirl_Hand_L_BaseColor.png",
+      "sha256": "8ffb0ab209643fe6673fbf6c434baaac73f673b30531d8007bfcc8fff8948857",
+      "unreal_sha256": "dbd826d0e1bd4fbe7afe5d60d728281d499fa7934bcdea3355711a658b5496ba"
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/LittleGirl_Hand_L_Normal",
+      "source": "ArtSource/LittleGirl_Production/Source/Textures/LittleGirl_Hand_L_Normal.png",
+      "sha256": "c4f474bbcfb933cb4323a83e722f421d7b6aef088f98ad0736ab405bd16e17b6",
+      "unreal_sha256": "5ceee42c38d6176490f4cbdb132d19259047dc5a21950a52b61244644673674a"
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/LittleGirl_Hand_L_Roughness",
+      "source": "ArtSource/LittleGirl_Production/Source/Textures/LittleGirl_Hand_L_Roughness.png",
+      "sha256": "1b7518645ceaddc80e08fcd3a38e96d8a56fef38da46b75db2b3e76ea0b8c0db",
+      "unreal_sha256": "3f74f1f6accd41b08b9950487cd07a862fdce515eedf488b59cef6e6cbfd950e"
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/LittleGirl_Hand_R_BaseColor",
+      "source": "ArtSource/LittleGirl_Production/Source/Textures/LittleGirl_Hand_R_BaseColor.png",
+      "sha256": "daa5a026fcb3c486cc3ea2222e86d4f8f6f10170a8e5f629296399927c75941e",
+      "unreal_sha256": "dd20e56fd763707b47ede2379f9959129a232429d1c44796e3c9c5c5e431a7e0"
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/LittleGirl_Hand_R_Normal",
+      "source": "ArtSource/LittleGirl_Production/Source/Textures/LittleGirl_Hand_R_Normal.png",
+      "sha256": "6a6ca62cfc88696fdc83912dcd9bd16dc63162d3c9124c0a8460cdd536bcdbed",
+      "unreal_sha256": "b492316f7253661573999dd521eac287fd273d73c1ade2757d5338c95c8d3873"
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/LittleGirl_Hand_R_Roughness",
+      "source": "ArtSource/LittleGirl_Production/Source/Textures/LittleGirl_Hand_R_Roughness.png",
+      "sha256": "d7dc9f9e44b8fd4fce8d7faada6c03cec3df19dc3a321e2ab373a2dda438f125",
+      "unreal_sha256": "afc627e6bb867bd7969b31efbb4890e36d7678ff33b0f5b0c8f7b0043f7c1fd1"
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/RightSleeve_BaseColor",
+      "source": "ArtSource/LittleGirl_Production/Source/Textures/RightSleeve_BaseColor.png",
+      "sha256": "9c7d2c7d9373c14a03ad7df788027fdbc2513c7be15c34d1eb9d86fee039362d",
+      "unreal_sha256": "fd102e2f50f2452ef03fbb24bb1bee4e965cadc444f1a988504138f68225d12a"
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/RightSleeve_Normal",
+      "source": "ArtSource/LittleGirl_Production/Source/Textures/RightSleeve_Normal.png",
+      "sha256": "9002c494f3bf966fcb71ae20ce1f61051f9de59ed4937909829e74188c86e781",
+      "unreal_sha256": "f626376f70cace8fb9e87a89681f0ed2ab1e781ce1c465c95b6c9445763a8342"
+    },
+    {
+      "asset": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime/Textures/RightSleeve_Roughness",
+      "source": "ArtSource/LittleGirl_Production/Source/Textures/RightSleeve_Roughness.png",
+      "sha256": "dbf3f5908416b45edcb04b874e1f0e51fd00315c9cf57b20292ba6df16785bc2",
+      "unreal_sha256": "cb8a2516c25130b71d0630681a54236e0a2b820e5c67278a176c6f7eb4c9082b"
+    },
+    {
+      "asset": "/Game/Constellation/Environments/School/Props/SM_Locker/SM_Locker_Body",
+      "source": "ArtSource/SchoolLocker/Export/SM_Locker_Body.fbx",
+      "sha256": "1ef0dffc80d8364ab6ddbb5698525736ed2510932a404eb86721b4b46005de6f",
+      "unreal_sha256": "1c69cad8d295c3933f824185c1facd24a2de704fe2c83554532a2e2ea79313d4"
+    },
+    {
+      "asset": "/Game/Constellation/Environments/School/Props/SM_Locker/SM_Locker_Door",
+      "source": "ArtSource/SchoolLocker/Export/SM_Locker_Door.fbx",
+      "sha256": "04686700a5b2dc3a2133fe94d36597ce5fcca2b486335ee09d8f5f3dd5b322dc",
+      "unreal_sha256": "9c177dc294fba6cb5e52cea1831cc09343d4b9dd6f1667295ef908945c3caabc"
+    },
+    {
+      "asset": "/Game/Constellation/Environments/School/Props/SM_Locker/SM_Locker",
+      "source": "ArtSource/SchoolLocker/Export/SM_Locker.fbx",
+      "sha256": "3d1b08b5fecee55778ccb4b196f7cdd2acb7e18aed4ebc24936f1173898a719f",
+      "unreal_sha256": "65a50d5cad1f96a07db4a2e6460cfa4d26b95a6e595942a36572f2745198ffa0"
+    },
+    {
+      "asset": "/Game/Constellation/Environments/School/Props/SM_Locker/Textures/T_Locker_Paint_Base",
+      "source": "ArtSource/SchoolLocker/Source/Textures/T_Locker_Paint_Base.png",
+      "sha256": "485a6c4d7f9d27fa64d1d906288d0e767d21b68cf5b71c2ec4140cfdbb9f24fb",
+      "unreal_sha256": "e4cb333976b4a9ff7e753fea98f65f118ef937907b341d6d8e8427b71980496f"
+    },
+    {
+      "asset": "/Game/Constellation/Environments/School/Props/SM_Locker/Textures/T_Locker_Paint_Metallic",
+      "source": "ArtSource/SchoolLocker/Source/Textures/T_Locker_Paint_Metallic.png",
+      "sha256": "d39116a2db2566b5824b21fa6102bde47d9eaf95bccbb70b685409df235a5c98",
+      "unreal_sha256": "20905cbca3258361cc036da8a1d9cc73dab64abbd10cdd28a0ba13cfde48adc8"
+    },
+    {
+      "asset": "/Game/Constellation/Environments/School/Props/SM_Locker/Textures/T_Locker_Paint_Normal",
+      "source": "ArtSource/SchoolLocker/Source/Textures/T_Locker_Paint_Normal.png",
+      "sha256": "09442804e87a8f966f45b09c8ecfe5b8e4782acb0e0e43f3de418816f438fe1e",
+      "unreal_sha256": "c17a67e02aaaac2cabb4921e9efa9247fa0ec2a5fac45a5a6aa9c49a50134216"
+    },
+    {
+      "asset": "/Game/Constellation/Environments/School/Props/SM_Locker/Textures/T_Locker_Paint_Roughness",
+      "source": "ArtSource/SchoolLocker/Source/Textures/T_Locker_Paint_Roughness.png",
+      "sha256": "7cd0ce88f1e51500611677f25e2152b3038467d54c0b02ffa7d013bc1ff4f71c",
+      "unreal_sha256": "a84611ca7756f950f5d5c5a8a4b557bc1b8bcc2a6d16f72afcd3a9357617a140"
+    },
+    {
+      "asset": "/Game/Constellation/Environments/School/Props/SM_Locker/Textures/T_Locker_Rubber_Base",
+      "source": "ArtSource/SchoolLocker/Source/Textures/T_Locker_Rubber_Base.png",
+      "sha256": "c55cb90e1f5003dc62182c92c5e1b148da336a4b68475a086370985a9eed1e81",
+      "unreal_sha256": "52bb68b9bb20e15698ee445f03bf0b42a802c47879ff9d9e793505e564c6e595"
+    },
+    {
+      "asset": "/Game/Constellation/Environments/School/Props/SM_Locker/Textures/T_Locker_Rubber_Metallic",
+      "source": "ArtSource/SchoolLocker/Source/Textures/T_Locker_Rubber_Metallic.png",
+      "sha256": "f701c76ac7fb684490c5c2fc887c4414ee56d4a071f9ab2418ab5b3fa7c4f3ef",
+      "unreal_sha256": "7b78d014027c4773e4c6777de78bfb1556f04ffa428cb860dbfa0733fd023f8a"
+    },
+    {
+      "asset": "/Game/Constellation/Environments/School/Props/SM_Locker/Textures/T_Locker_Rubber_Roughness",
+      "source": "ArtSource/SchoolLocker/Source/Textures/T_Locker_Rubber_Roughness.png",
+      "sha256": "72ae611ca4e94bf23f14ce2c1e6332f412d32bcd46fdaf5aad451625ddeea6a2",
+      "unreal_sha256": "7792009ef967e34ae8afba3cc094a1e9bf096a5497c3d25e4c302bb41954f8f8"
+    },
+    {
+      "asset": "/Game/Constellation/Environments/School/Props/SM_Locker/Textures/T_Locker_Steel_Base",
+      "source": "ArtSource/SchoolLocker/Source/Textures/T_Locker_Steel_Base.png",
+      "sha256": "df785947ecc0b9a06436617dae7db3840ab1acda99599d41c3d0453a5056c45a",
+      "unreal_sha256": "1007a51c1318f7dad1cd154d3004289b9035df9004f7079ac6c88eb728ec37b0"
+    },
+    {
+      "asset": "/Game/Constellation/Environments/School/Props/SM_Locker/Textures/T_Locker_Steel_Metallic",
+      "source": "ArtSource/SchoolLocker/Source/Textures/T_Locker_Steel_Metallic.png",
+      "sha256": "35f873566c4e5e7803b288be92a363c2324c658e6d3ef22ccc20263f357f94c4",
+      "unreal_sha256": "0d713a9f5a072114b37c3aa02c97acb1da50bc0b3b9542218fa20afe20e0d69c"
+    },
+    {
+      "asset": "/Game/Constellation/Environments/School/Props/SM_Locker/Textures/T_Locker_Steel_Roughness",
+      "source": "ArtSource/SchoolLocker/Source/Textures/T_Locker_Steel_Roughness.png",
+      "sha256": "d22e9d694c868f7a0aafd48a2ca92efd9ffe04bddc692e9c1f0e09b6d36999c2",
+      "unreal_sha256": "08c557ecdde20220c583006eb0186ad92f0a275c6f5dc8e956b81addb8714efd"
+    },
+    {
+      "asset": "/Game/SceneDirector/School/S0/Card_Constellation",
+      "source": "ArtSource/SchoolOpening/Card_Constellation.png",
+      "sha256": "03115badde71da95dcdff4787cb2c04324ee72519cbf8b4d996914cd361cd9be",
+      "unreal_sha256": "fa79ecf164afe1ef643b30418479c92a4fce8e59a956f205a27ca211723037c0"
+    },
+    {
+      "asset": "/Game/SceneDirector/School/S0/Guide_Door_Creak",
+      "source": "ArtSource/SchoolOpening/Guide_Door_Creak.wav",
+      "sha256": "fca0fda32adf442607e6a7f4bab0ed8f72e7f5ac02e8b0557a3aadf8b7ceba3d",
+      "unreal_sha256": "53879e857cd358ce6a378503336265a0d7611594075ac9d18cfdecea54627ed0"
+    },
+    {
+      "asset": "/Game/SceneDirector/School/S0/Guide_Fall_Thud",
+      "source": "ArtSource/SchoolOpening/Guide_Fall_Thud.wav",
+      "sha256": "bfbc7549f2119ae1344298729c17028cc2caaac34044fec34e1d65a364d0f90c",
+      "unreal_sha256": "981c0761fff61d6e1c753f86b1c5ca8996aae4a76e1cdf919aa3c1b75e568545"
+    },
+    {
+      "asset": "/Game/SceneDirector/School/S0/Guide_Twinkle_Melody",
+      "source": "ArtSource/SchoolOpening/Guide_Twinkle_Melody.wav",
+      "sha256": "381a4714e014e4ae5ebd76a545977e5c090669b1b188fbf997888746739ff81a",
+      "unreal_sha256": "621c498003371e0781da9e2b12ff930f4814bdfd6fcd915ac9d694226d384445"
+    },
+    {
+      "asset": "/Game/SceneDirector/School/S0/Note_Stars",
+      "source": "ArtSource/SchoolOpening/Note_Stars.png",
+      "sha256": "db815ff44fb0c3f8030a33a9eb72580d5588154ea7724ab97ad7eb91dc26106d",
+      "unreal_sha256": "f9ea245783db83eec7c7c12ca1698a81b433abd5cb14e4bd5ec901628d220b42"
+    },
+    {
+      "asset": "/Game/SceneDirector/School/S0/Photo_Memory_Draft",
+      "source": "ArtSource/SchoolOpening/Photo_Memory_Draft.png",
+      "sha256": "e004c2e6b5967561b3f4e2028a0a8c0f4c62debb02eec83a180c87dcfc911077",
+      "unreal_sha256": "6fbd6d22c8d8b7113e2495bee155dc92f071171c0f36a93703db633424c4b41e"
+    }
+  ],
+  "animation_exports": [
+    "ArtSource/LittleGirl_Production/Source/AS_LittleGirl_Idle_contact.fbx",
+    "ArtSource/LittleGirl_Production/Source/AS_LittleGirl_Walk_Validation_contact.fbx",
+    "ArtSource/LittleGirl_Production/Source/AS_LittleGirl_Run_ContactPrecision_contact.fbx"
+  ]
+}

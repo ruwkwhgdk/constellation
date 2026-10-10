@@ -4,7 +4,7 @@
 IMPLEMENT_SIMPLE_AUTOMATION_TEST(FDirectorConversationMenuTest,"Constellation.SceneDirector.ConversationNodes",EAutomationTestFlags::EditorContext|EAutomationTestFlags::EngineFilter)
 bool FDirectorConversationMenuTest::RunTest(const FString&)
 {
-    TestEqual(TEXT("All conversation and branch nodes"),DirectorNodeMenuEntries().Num(),25);
+    TestEqual(TEXT("All conversation and branch nodes"),DirectorNodeMenuEntries().Num(),28);
     return true;
 }
 #endif

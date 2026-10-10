@@ -243,8 +243,8 @@ bool FDirectorEditorSmokeTest::RunTest(const FString&)
     if(FParse::Param(FCommandLine::Get(),TEXT("SceneDirectorManualCapture")))
     {
         Asset=NewObject<USceneDirectorAsset>();Asset->EventKey=TEXT("Greeting");
-        const EDirectorNodeType Types[]={EDirectorNodeType::Start,EDirectorNodeType::InputLock,EDirectorNodeType::HUDHidden,EDirectorNodeType::Dialogue,EDirectorNodeType::CloseDialogue,EDirectorNodeType::HUDHidden,EDirectorNodeType::InputLock,EDirectorNodeType::End};
-        for(int32 I=0;I<8;++I){FDirectorStep S;S.Type=Types[I];S.EditorPosition=FVector2D((I<4?I:7-I)*205,I<4?0:180);S.bLockInput=I==1;S.bHideHUD=I==2;S.Duration=1.f;
+        const EDirectorNodeType CaptureTypes[]={EDirectorNodeType::Start,EDirectorNodeType::InputLock,EDirectorNodeType::HUDHidden,EDirectorNodeType::Dialogue,EDirectorNodeType::CloseDialogue,EDirectorNodeType::HUDHidden,EDirectorNodeType::InputLock,EDirectorNodeType::End};
+        for(int32 I=0;I<8;++I){FDirectorStep S;S.Type=CaptureTypes[I];S.EditorPosition=FVector2D((I<4?I:7-I)*205,I<4?0:180);S.bLockInput=I==1;S.bHideHUD=I==2;S.Duration=1.f;
             if(I==3){S.SpeakerSource=EDirectorSpeakerSource::Table;S.SpeakerRow.DataTable=LoadObject<UDataTable>(nullptr,TEXT("/Game/Constellation/Gameplay/Sequences/Data/DT_SpeakerData"));S.SpeakerRow.RowName=TEXT("Heroine");S.DialogueText=FText::FromString(TEXT("어서 와. 여기서부터 함께 가자."));S.DialogueAdvance=EDirectorDialogueAdvance::Click;}
             Asset->Steps.Add(S);}
         for(int32 I=0;I<7;++I)Asset->Steps[I].NextNodes={Asset->Steps[I+1].Id};

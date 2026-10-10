@@ -1,0 +1,8 @@
+# Art source separation
+The game repository owns runtime Content assets and source code. The optional authoring repository is git@github.com:ruwkwhgdk/constellation-art-source.git, branch develop.
+The exact authoring revision and import hashes are in art-source-lock.json. Art source is not a required submodule and must not be required to cook or run the game.
+The four split ArtSource folders are local, ignored reimport copies. Existing copies are preserved. Changing those files alone must not update assets; do not add them to Unreal auto-reimport watch directories.
+For an intentional reimport: check out the locked art commit, verify the source-manifest hashes, copy the selected ArtSource files into the same relative local path, reimport only intended assets, review mesh/material/animation differences, and commit the changed Content assets with an updated lock. Do not run historical authoring scripts indiscriminately.
+Current split covers LittleGirl_Production, LittleGirl_Prototype, SchoolLocker and SchoolOpening only. Previously published ArtSource elsewhere is not rewritten.
+LittleGirl/ holds copied integration evidence. Historical reports can contain original absolute paths and retired commits; art-source-lock.json is the current source repository authority.
+On a new checkout, set the asset's Reimport Source File to the selected copied path from art-source-lock.json before reimporting; do not rely on a previous machine's serialized import path. This metadata change alone does not rebuild mesh or animation content. LegacyImports contains the exact previous import files for three animations and one auxiliary rig mesh; the maintained contact-corrected export files are separately listed and must be explicitly chosen when replacing animations.

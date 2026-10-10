@@ -1,4 +1,5 @@
 #include "SceneDirectorCompiler.h"
+#include "SceneDirectorVision.h"
 #include "SceneDirectorNodeTypes.h"
 #include "Sound/SoundBase.h"
 #include "SceneDirectorMotion.h"
@@ -45,7 +46,7 @@ bool FSceneDirectorCompiler::Schedule(const USceneDirectorAsset& Asset,FDirector
         IDs.Add(S.Id,I);
         if(S.Type==EDirectorNodeType::Start){if(Start!=INDEX_NONE)return Fail(TEXT("시작은 하나만 배치하세요."));Start=I;}
         if(S.Type==EDirectorNodeType::End){if(End!=INDEX_NONE)return Fail(TEXT("종료는 하나만 배치하세요."));End=I;}
-        if(uint8(S.Type)>uint8(EDirectorNodeType::CloseDialogue))return Fail(TEXT("알 수 없는 노드 종류입니다."));
+        if(uint8(S.Type)>uint8(EDirectorNodeType::ClearVision))return Fail(TEXT("알 수 없는 노드 종류입니다."));
         if(DirectorNodes::IsNPC(S.Type))
         {
             if(!S.ActorClass||S.ActorClass->HasAnyClassFlags(CLASS_Abstract|CLASS_Deprecated|CLASS_NewerVersionExists))return Fail(TEXT("NPC 추가: 생성 가능한 캐릭터 BP를 선택하세요."));
@@ -176,6 +177,7 @@ bool FSceneDirectorCompiler::Schedule(const USceneDirectorAsset& Asset,FDirector
         if(S.Type==EDirectorNodeType::BindNPC&&S.ActorSource==EDirectorActorSource::Tag&&S.ActorTag.IsNone())return Fail(TEXT("연결할 기존 Actor 태그를 입력하세요."));
         if(S.Type==EDirectorNodeType::Fade&&(!FMath::IsFinite(S.FadeFrom)||!FMath::IsFinite(S.FadeTo)||S.FadeFrom<0||S.FadeFrom>1||S.FadeTo<0||S.FadeTo>1))return Fail(TEXT("페이드는 0~1 값이어야 합니다."));
         if(S.Type==EDirectorNodeType::CameraSwitch&&(!FMath::IsFinite(S.BlendSeconds)||S.BlendSeconds<0||S.BlendSeconds>S.Duration))return Fail(TEXT("카메라 전환 시간은 0~노드 시간 이내로 입력하세요."));
+        if(DirectorNodes::IsScreenEffect(S.Type)&&!DirectorVision::Validate(S,Error))return Fail(Error);
         FTransform From=S.Transform;
         if(S.Type==EDirectorNodeType::CharacterMove)
         {
@@ -200,6 +202,7 @@ bool FSceneDirectorCompiler::Schedule(const USceneDirectorAsset& Asset,FDirector
         {
             Out.FromPoses[I]=From;Out.ToPoses[I]=From;
             if(S.Type==EDirectorNodeType::Fade||DirectorMotion::IsCamera(S.Type)||S.Type==EDirectorNodeType::Wait||S.Type==EDirectorNodeType::Animation||S.Type==EDirectorNodeType::LookAt||S.Type==EDirectorNodeType::Expression||S.Type==EDirectorNodeType::Dialogue||DirectorNodes::IsReturn(S.Type))Seconds=S.Duration;
+            if(DirectorNodes::IsScreenEffect(S.Type))Seconds=DirectorVision::Duration(S);
             if(S.Type==EDirectorNodeType::CameraPreset&&!S.bActivateCamera)Seconds=0;
             if(S.Type==EDirectorNodeType::Dialogue)
             {
@@ -324,8 +327,13 @@ bool FSceneDirectorCompiler::Schedule(const USceneDirectorAsset& Asset,FDirector
                     if((R.Target==EDirectorSequenceTarget::NPC&&DirectorSequence::UsesNPC(A,R.Key))||(R.Target==EDirectorSequenceTarget::Camera&&DirectorSequence::UsesCamera(A,R.Key)))return true;
                 return false;
             };
-            const bool Conflict=(S.Type==EDirectorNodeType::Fade&&T.Type==S.Type)||SequenceConflict(S,T)||SequenceConflict(T,S)||(S.Type==EDirectorNodeType::Dialogue&&T.Type==S.Type)||(S.Type==EDirectorNodeType::Expression&&T.Type==S.Type&&S.Role==T.Role)||(S.Type==EDirectorNodeType::LookAt&&T.Type==S.Type&&S.Role==T.Role)||(DirectorMotion::CutsCamera(S)&&DirectorMotion::CutsCamera(T))||(DirectorMotion::HasAnimation(S)&&DirectorMotion::HasAnimation(T)&&S.Role==T.Role&&!(S.Type==EDirectorNodeType::Animation&&T.Type==EDirectorNodeType::Animation&&S.bAllowAnimationBlend&&T.bAllowAnimationBlend));
-            if(Conflict&&Out.StartFrames[I]<Out.FinishFrames[J]&&Out.StartFrames[J]<Out.FinishFrames[I])return Fail(TEXT("대사, 촬영 카메라 또는 동일 NPC의 같은 연기 채널 시간이 겹칩니다."));
+            const bool Conflict=DirectorVision::Conflicts(S.Type,T.Type)||(S.Type==EDirectorNodeType::Fade&&T.Type==S.Type)||SequenceConflict(S,T)||SequenceConflict(T,S)||(S.Type==EDirectorNodeType::Dialogue&&T.Type==S.Type)||(S.Type==EDirectorNodeType::Expression&&T.Type==S.Type&&S.Role==T.Role)||(S.Type==EDirectorNodeType::LookAt&&T.Type==S.Type&&S.Role==T.Role)||(DirectorMotion::CutsCamera(S)&&DirectorMotion::CutsCamera(T))||(DirectorMotion::HasAnimation(S)&&DirectorMotion::HasAnimation(T)&&S.Role==T.Role&&!(S.Type==EDirectorNodeType::Animation&&T.Type==EDirectorNodeType::Animation&&S.bAllowAnimationBlend&&T.bAllowAnimationBlend));
+            const bool Overlap=Out.StartFrames[I]<Out.FinishFrames[J]&&Out.StartFrames[J]<Out.FinishFrames[I];
+            const bool InstantScreenConflict=DirectorVision::Conflicts(S.Type,T.Type)&&
+                ((Out.StartFrames[I]==Out.FinishFrames[I]&&Out.StartFrames[I]>=Out.StartFrames[J]&&Out.StartFrames[I]<Out.FinishFrames[J]&&!(Out.StartFrames[I]==Out.StartFrames[J]&&Ancestors[J].Contains(I)))||
+                 (Out.StartFrames[J]==Out.FinishFrames[J]&&Out.StartFrames[J]>=Out.StartFrames[I]&&Out.StartFrames[J]<Out.FinishFrames[I]&&!(Out.StartFrames[I]==Out.StartFrames[J]&&Ancestors[I].Contains(J)))||
+                 (Out.StartFrames[I]==Out.FinishFrames[I]&&Out.StartFrames[J]==Out.FinishFrames[J]&&Out.StartFrames[I]==Out.StartFrames[J]&&!Ancestors[I].Contains(J)&&!Ancestors[J].Contains(I)));
+            if(Conflict&&(Overlap||InstantScreenConflict))return Fail(TEXT("대사, 촬영 카메라 또는 동일 NPC의 같은 연기 채널 시간이 겹칩니다."));
         }
     }
     return true;

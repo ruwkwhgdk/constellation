@@ -1,0 +1,24 @@
+완료 — 2026-10-10 폐교 본편 소녀 모델 적용
+
+정식 게임 자산: /Game/Constellation/Characters/NPC/Little_Girl/Runtime (37개)
+본편 맵: /Game/Constellation/Worlds/AbandonedSchool/Maps/AbandonedSchool
+
+동굴 NPC: 기존 BP_NPC_Little_Girl_C_1 액터와 BP_EmptyActor_C_48 부착 관계 보존. 인스턴스 LittleGirlLocomotion 컴포넌트로 새 메시/대기·걷기·달리기 연결. 원본 BP와 다른 맵의 기본값은 변경하지 않음.
+동굴 연출: 기존 이벤트/진입 볼륨/오브젝트 바인딩 유지. 소녀 걷기·달리기 클립과 전환 속도만 갱신.
+도입부: SkeletalMeshActor_0의 네이티브 루트와 원래 이동 트랙(.7 배율, Z67) 유지. 자식 시각 메시로 원점 차이를 보정. 높이 132.913cm, 기존 발 높이 유지. 현재 대기 애니메이션을 사용하며 연출 이동 자체의 추가 모션 폴리싱은 별도 작업.
+
+검증:
+- 본편 동굴 진입 볼륨: 7개 검사, 대사 4개/액션 4개, 카메라·입력 복귀 통과.
+- 본편 도입부: 두 조사 선택 순서 및 취소 회귀 검사 통과.
+- 도입부 모델 화면 확인: opening_model.png.
+- 정식 자산 재로드/테스트 참조 제거 검증 통과.
+- ConstellationEditor / Constellation Development 빌드 통과.
+- 폐교 맵 Win64 쿠킹 성공(ExitCode 0). 패키징된 실행 파일의 전체 플레이 검사는 이번 범위에서 수행하지 않음.
+- 원본 SaveGames 해시 보존 확인.
+
+정리:
+- 소녀 Review 폴더 2개, 테스트 전용 에셋 24개 제거. 사용 자산 37개는 정식 경로로 이동.
+- 테스트 C++/독립 캐릭터 파일 5개, 테스트 패키지 3개, 캡처/테스트 실행 파일 47개 제거.
+- 최종 메시 .blend/.fbx, 애니메이션 FBX와 텍스처는 Source 폴더에 보존하고 재임포트 경로 갱신.
+- ArtSource/LittleGirl_Prototype에는 과거 제작 원본과 제작 스크립트/진단 이력을 보존. CURRENT.txt 참고.
+- 기존 Heroine Carry 애니메이션 누락 참조와 DodgeTimeline 경고는 이번 소녀 변경과 별개이며 남아 있음.

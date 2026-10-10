@@ -134,6 +134,9 @@ FText USceneDirectorGraphNode::GetNodeTitle(ENodeTitleType::Type) const
     case EDirectorNodeType::HUDHidden:return FText::FromString(Step.bHideHUD?TEXT("게임 HUD 숨김 · 켜기"):TEXT("게임 HUD 숨김 · 해제"));
     case EDirectorNodeType::CloseDialogue:return FText::FromString(TEXT("대사창 닫기"));
     case EDirectorNodeType::CinematicMode:return FText::FromString(TEXT("연출 모드 설정"));
+    case EDirectorNodeType::Eyelids:return FText::FromString(TEXT("눈꺼풀 연출"));
+    case EDirectorNodeType::Vision:return FText::FromString(TEXT("시야 효과"));
+    case EDirectorNodeType::ClearVision:return FText::FromString(TEXT("시야 효과 해제"));
     case EDirectorNodeType::Fade:return FText::FromString(TEXT("화면 페이드"));
     case EDirectorNodeType::Visibility:return FText::FromString(TEXT("NPC 표시 · ")+Step.Role.ToString());
     case EDirectorNodeType::CameraReturn:

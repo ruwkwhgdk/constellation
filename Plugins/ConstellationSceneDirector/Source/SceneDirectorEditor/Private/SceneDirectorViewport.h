@@ -2,6 +2,7 @@
 #include "SceneDirectorNodeTypes.h"
 #include "SEditorViewport.h"
 #include "SDirectorDialogue.h"
+#include "SDirectorVision.h"
 #include "SceneDirectorPlayer.h"
 #include "SceneDirectorAsset.h"
 #include "SceneDirectorPerformance.h"
@@ -164,6 +165,8 @@ public:
 protected:
     virtual void PopulateViewportOverlays(TSharedRef<SOverlay> Overlay) override
     {
+        Overlay->AddSlot().VAlign(VAlign_Fill).HAlign(HAlign_Fill)
+        [SNew(SDirectorVision).State_Lambda([this]{auto S=Sequencer.Pin();return S&&Asset.IsValid()?DirectorVision::Evaluate(Asset->Cues,S->GetGlobalTime().Time.AsDecimal()):FDirectorVisionState();})];
         const auto* Defaults=GetDefault<ASceneDirectorPlayer>();
         Overlay->AddSlot().VAlign(VAlign_Fill).HAlign(HAlign_Fill).Padding(12)
         [SNew(SDirectorDialogue).Position_Lambda([this]{const auto* C=GetDialogueCue();return C?C->Step.DialoguePosition:EDirectorDialoguePosition::Bottom;}).Background(Defaults->DialogueBackground).Continue(Defaults->DialogueContinue).SpeakerBackground(Defaults->DialogueSpeakerBackground)

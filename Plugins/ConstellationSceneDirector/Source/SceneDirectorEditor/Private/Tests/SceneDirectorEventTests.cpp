@@ -26,7 +26,7 @@ static USceneDirectorAsset* MakeEventTestAsset()
 IMPLEMENT_SIMPLE_AUTOMATION_TEST(FDirectorContextMenuTest,"Constellation.SceneDirector.ContextNodeCreation",EAutomationTestFlags::EditorContext|EAutomationTestFlags::EngineFilter)
 bool FDirectorContextMenuTest::RunTest(const FString&)
 {
-    const auto Entries=DirectorNodeMenuEntries();TestEqual(TEXT("All creatable node types"),Entries.Num(),25);
+    const auto Entries=DirectorNodeMenuEntries();TestEqual(TEXT("All creatable node types"),Entries.Num(),28);
     TSet<FString> Groups;for(const auto& E:Entries){Groups.Add(E.Category);TestTrue(TEXT("Start/end excluded"),E.Type!=EDirectorNodeType::Start&&E.Type!=EDirectorNodeType::End);}TestEqual(TEXT("Five categories"),Groups.Num(),5);
     auto* Asset=MakeEventTestAsset();auto Editor=MakeShared<FSceneDirectorToolkit>();Editor->Init(Asset,nullptr);
     auto* Start=CastChecked<USceneDirectorGraphNode>(Editor->Graph->Nodes[0]);auto* Out=Start->FindPin(TEXT("Out"));

@@ -1,0 +1,18 @@
+{
+  "map": "/Game/Constellation/Worlds/AbandonedSchool/Maps/AbandonedSchool",
+  "runtime_folder": "/Game/Constellation/Characters/NPC/Little_Girl/Runtime",
+  "runtime_assets": 37,
+  "removed_review_assets": 24,
+  "removed_test_code_files": 5,
+  "removed_test_packages": 3,
+  "removed_test_files": 47,
+  "removed_cooked_test_folders": [],
+  "volume_pie_passed": true,
+  "opening_two_orders_and_cancel_passed": true,
+  "editor_build_passed": true,
+  "game_build_passed": true,
+  "school_cook_passed": true,
+  "original_save_unchanged": true,
+  "retained": "Maintained production art source and historical authoring sources/scripts; regression verification tools",
+  "limitations": "Packaged executable end-to-end play was not run. Existing Heroine Carry missing-reference and DodgeTimeline warnings remain outside this girl integration."
+}

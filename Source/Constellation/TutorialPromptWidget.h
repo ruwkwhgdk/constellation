@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+﻿// Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
 
@@ -26,6 +26,7 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Tutorial")
 	void Dismiss();
+	UFUNCTION(BlueprintPure,Category="Tutorial") bool IsWaitingForOpening() const { return bOpeningDeferred; }
 
 protected:
 	virtual void NativeConstruct() override;
@@ -35,6 +36,11 @@ protected:
 	virtual void NativeOnFocusLost(const FFocusEvent& InFocusEvent) override;
 
 private:
+	friend class FSchoolOpeningTutorialRetryTest;
+	void ActivatePrompt();
+	void WaitForOpening();
+	FTimerHandle OpeningTimer;
+	bool bOpeningDeferred = false;
 	void ApplyInputMode();
 	void ReleaseInputMode();
 	// Re-focuses next tick instead of immediately, avoiding re-entrant focus churn during NativeOnFocusLost.

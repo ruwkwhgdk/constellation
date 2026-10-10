@@ -14,7 +14,7 @@ class ULevelSequence;
 class UAnimSequence;
 class USoundBase;
 UENUM(BlueprintType)
-enum class EDirectorNodeType : uint8 { Start, SpawnNPC, Camera, Wait, End, Animation, Hub, CharacterMove, CameraMove, BindNPC, CinematicMode, CameraPreset, LookAt, Expression, Dialogue, CameraSwitch, GameplayReturn, Condition, SetBool, GameAction, Sequence, Visibility, Fade, SetInt, PlayerHidden, InputLock, HUDHidden, CameraReturn, CloseDialogue };
+enum class EDirectorNodeType : uint8 { Start, SpawnNPC, Camera, Wait, End, Animation, Hub, CharacterMove, CameraMove, BindNPC, CinematicMode, CameraPreset, LookAt, Expression, Dialogue, CameraSwitch, GameplayReturn, Condition, SetBool, GameAction, Sequence, Visibility, Fade, SetInt, PlayerHidden, InputLock, HUDHidden, CameraReturn, CloseDialogue, Eyelids, Vision, ClearVision };
 
 UENUM(BlueprintType)
 enum class EDirectorValueMode : uint8 { Absolute UMETA(DisplayName="절대값"), Key UMETA(DisplayName="String Key"), Current UMETA(DisplayName="현재 값") };
@@ -26,6 +26,20 @@ UENUM(BlueprintType)
 enum class EDirectorFraming : uint8 { CloseUp UMETA(DisplayName="얼굴 클로즈업"), Medium UMETA(DisplayName="상반신"), Full UMETA(DisplayName="전신"), OverShoulder UMETA(DisplayName="오버숄더") };
 UENUM(BlueprintType)
 enum class EDirectorDialogueAdvance : uint8 { Timed UMETA(DisplayName="지정 시간 후"), Voice UMETA(DisplayName="음성 종료 후"), Click UMETA(DisplayName="시간/음성 종료 후 클릭") };
+UENUM(BlueprintType)
+enum class EDirectorEyeMode : uint8 { Open, Close, Blink };
+UENUM(BlueprintType)
+enum class EDirectorVisionCurve : uint8 { Linear, Smooth };
+USTRUCT(BlueprintType)
+struct FDirectorBlink
+{
+    GENERATED_BODY()
+    UPROPERTY(EditAnywhere,Category="눈꺼풀",meta=(DisplayName="개방량",ClampMin="0",ClampMax="1")) float OpenAmount=.3f;
+    UPROPERTY(EditAnywhere,Category="눈꺼풀",meta=(DisplayName="뜨는 시간",ClampMin="0.033334")) float OpenSeconds=.4f;
+    UPROPERTY(EditAnywhere,Category="눈꺼풀",meta=(DisplayName="열림 유지",ClampMin="0")) float OpenHold=.12f;
+    UPROPERTY(EditAnywhere,Category="눈꺼풀",meta=(DisplayName="감는 시간",ClampMin="0.033334")) float CloseSeconds=.12f;
+    UPROPERTY(EditAnywhere,Category="눈꺼풀",meta=(DisplayName="닫힘 유지",ClampMin="0")) float ClosedHold=.06f;
+};
 USTRUCT(BlueprintType)
 struct SCENEDIRECTORRUNTIME_API FDirectorVectorInput
 {
@@ -120,17 +134,31 @@ struct SCENEDIRECTORRUNTIME_API FDirectorStep
     UPROPERTY(EditAnywhere,Category="대사",meta=(DisplayName="화면 위치",EditCondition="Type == EDirectorNodeType::Dialogue",EditConditionHides)) EDirectorDialoguePosition DialoguePosition=EDirectorDialoguePosition::Bottom;
     UPROPERTY(EditAnywhere,Category="Integer 변수",meta=(DisplayName="변수 Key",EditCondition="Type == EDirectorNodeType::SetInt",EditConditionHides)) FName IntKey;
     UPROPERTY(EditAnywhere,Category="Integer 변수",meta=(DisplayName="설정 값",EditCondition="Type == EDirectorNodeType::SetInt",EditConditionHides)) int32 IntValue=0;
-    UPROPERTY(meta=(IgnoreForMemberInitializationTest)) FGuid Id = FGuid::NewGuid();
+    UPROPERTY(BlueprintReadWrite,Category="Authoring",meta=(IgnoreForMemberInitializationTest)) FGuid Id = FGuid::NewGuid();
     // Kept for loading version 1 assets.
     UPROPERTY(EditAnywhere,Category="기존 오브젝트",meta=(DisplayName="오브젝트 Key",EditCondition="Type == EDirectorNodeType::BindNPC && ActorSource == EDirectorActorSource::Object",EditConditionHides)) FName ObjectKey;
     UPROPERTY() FGuid Next;
-    UPROPERTY() TArray<FGuid> NextNodes;
-    UPROPERTY() TMap<FName,FGuid> ChoiceTargets;
+    UPROPERTY(BlueprintReadWrite,Category="Authoring") TArray<FGuid> NextNodes;
+    UPROPERTY(BlueprintReadWrite,Category="Authoring") TMap<FName,FGuid> ChoiceTargets;
     UPROPERTY() FGuid TrueTarget;
     UPROPERTY() FGuid FalseTarget;
     UPROPERTY() bool bForceCustomAnimation=true;
     UPROPERTY(EditAnywhere,Category="표시",meta=(DisplayName="플레이어 대역 (제어권 복귀 시 숨김)",EditCondition="Type == EDirectorNodeType::SpawnNPC || Type == EDirectorNodeType::BindNPC",EditConditionHides)) bool bPlayerStandIn=false;
     UPROPERTY(EditAnywhere,Category="표시",meta=(DisplayName="NPC 표시",EditCondition="Type == EDirectorNodeType::Visibility",EditConditionHides)) bool bVisible=true;
+    UPROPERTY(EditAnywhere,Category="눈꺼풀",meta=(DisplayName="동작",EditCondition="Type == EDirectorNodeType::Eyelids",EditConditionHides)) EDirectorEyeMode EyeMode=EDirectorEyeMode::Blink;
+    UPROPERTY(EditAnywhere,Category="눈꺼풀",meta=(DisplayName="시작 개방량",ClampMin="0",ClampMax="1",EditCondition="Type == EDirectorNodeType::Eyelids",EditConditionHides)) float EyeFrom=0;
+    UPROPERTY(EditAnywhere,Category="눈꺼풀",meta=(DisplayName="마지막 개방량",ClampMin="0",ClampMax="1",EditCondition="Type == EDirectorNodeType::Eyelids && EyeMode == EDirectorEyeMode::Blink",EditConditionHides)) float EyeFinalOpen=1;
+    UPROPERTY(EditAnywhere,Category="눈꺼풀",meta=(DisplayName="시작 유지 (초)",ClampMin="0",EditCondition="Type == EDirectorNodeType::Eyelids",EditConditionHides)) float EyeStartHold=.4f;
+    UPROPERTY(EditAnywhere,Category="눈꺼풀",meta=(DisplayName="깜박임 목록 (항목 수 = 횟수)",EditCondition="Type == EDirectorNodeType::Eyelids && EyeMode == EDirectorEyeMode::Blink",EditConditionHides)) TArray<FDirectorBlink> Blinks={FDirectorBlink(),FDirectorBlink()};
+    UPROPERTY(EditAnywhere,Category="눈꺼풀",meta=(DisplayName="마지막 전환 시간",ClampMin="0.033334",EditCondition="Type == EDirectorNodeType::Eyelids",EditConditionHides)) float EyeFinalSeconds=1.2f;
+    UPROPERTY(EditAnywhere,Category="눈꺼풀",meta=(DisplayName="마지막 유지 시간",ClampMin="0",EditCondition="Type == EDirectorNodeType::Eyelids",EditConditionHides)) float EyeFinalHold=.8f;
+    UPROPERTY(EditAnywhere,Category="시야 효과",meta=(DisplayName="시작 흐림",ClampMin="0",ClampMax="1",EditCondition="Type == EDirectorNodeType::Vision",EditConditionHides)) float BlurFrom=.8f;
+    UPROPERTY(EditAnywhere,Category="시야 효과",meta=(DisplayName="종료 흐림",ClampMin="0",ClampMax="1",EditCondition="Type == EDirectorNodeType::Vision",EditConditionHides)) float BlurTo=0;
+    UPROPERTY(EditAnywhere,Category="시야 효과",meta=(DisplayName="시작 흰 안개",ClampMin="0",ClampMax="1",EditCondition="Type == EDirectorNodeType::Vision",EditConditionHides)) float HazeFrom=.22f;
+    UPROPERTY(EditAnywhere,Category="시야 효과",meta=(DisplayName="종료 흰 안개",ClampMin="0",ClampMax="1",EditCondition="Type == EDirectorNodeType::Vision",EditConditionHides)) float HazeTo=0;
+    UPROPERTY(EditAnywhere,Category="시야 효과",meta=(DisplayName="안개 색",EditCondition="Type == EDirectorNodeType::Vision",EditConditionHides)) FLinearColor HazeColor=FLinearColor(.85f,.88f,1.f);
+    UPROPERTY(EditAnywhere,Category="시야 효과",meta=(DisplayName="변화 곡선",EditCondition="Type == EDirectorNodeType::Vision || Type == EDirectorNodeType::ClearVision || Type == EDirectorNodeType::Eyelids",EditConditionHides)) EDirectorVisionCurve VisionCurve=EDirectorVisionCurve::Smooth;
+    UPROPERTY(EditAnywhere,Category="시야 효과",meta=(DisplayName="즉시 해제",EditCondition="Type == EDirectorNodeType::ClearVision",EditConditionHides)) bool bClearVisionInstant=true;
     UPROPERTY(EditAnywhere,Category="화면 페이드",meta=(DisplayName="시작 암전",ClampMin="0",ClampMax="1",EditCondition="Type == EDirectorNodeType::Fade",EditConditionHides)) float FadeFrom=0;
     UPROPERTY(EditAnywhere,Category="화면 페이드",meta=(DisplayName="종료 암전",ClampMin="0",ClampMax="1",EditCondition="Type == EDirectorNodeType::Fade",EditConditionHides)) float FadeTo=1;
     UPROPERTY(Instanced) TObjectPtr<AActor> ImportedTemplate;
@@ -167,13 +195,13 @@ struct SCENEDIRECTORRUNTIME_API FDirectorStep
         return Successors();
     }
     TArray<FGuid> Successors() const { return NextNodes.Num() ? NextNodes : (Next.IsValid() ? TArray<FGuid>{Next} : TArray<FGuid>{}); }
-    UPROPERTY(EditAnywhere, Category="실행", meta=(DisplayName="완료 후 다음 실행", ToolTip="끄면 행동을 시작한 직후 다음 노드도 실행합니다. 합류 노드는 모든 경로의 행동 완료를 기다립니다.", EditCondition="Type == EDirectorNodeType::Sequence || Type == EDirectorNodeType::Camera || Type == EDirectorNodeType::Animation || Type == EDirectorNodeType::Wait || Type == EDirectorNodeType::CharacterMove || Type == EDirectorNodeType::CameraMove || Type == EDirectorNodeType::CameraPreset || Type == EDirectorNodeType::LookAt || Type == EDirectorNodeType::Expression || Type == EDirectorNodeType::CameraSwitch", EditConditionHides)) bool bWaitForCompletion = true;
+    UPROPERTY(EditAnywhere, Category="실행", meta=(DisplayName="완료 후 다음 실행", ToolTip="끄면 행동을 시작한 직후 다음 노드도 실행합니다. 합류 노드는 모든 경로의 행동 완료를 기다립니다.", EditCondition="Type == EDirectorNodeType::Eyelids || Type == EDirectorNodeType::Vision || Type == EDirectorNodeType::ClearVision || Type == EDirectorNodeType::Sequence || Type == EDirectorNodeType::Camera || Type == EDirectorNodeType::Animation || Type == EDirectorNodeType::Wait || Type == EDirectorNodeType::CharacterMove || Type == EDirectorNodeType::CameraMove || Type == EDirectorNodeType::CameraPreset || Type == EDirectorNodeType::LookAt || Type == EDirectorNodeType::Expression || Type == EDirectorNodeType::CameraSwitch", EditConditionHides)) bool bWaitForCompletion = true;
     UPROPERTY(EditAnywhere, Category="연출", meta=(DisplayName="재생할 애니메이션", EditCondition="Type == EDirectorNodeType::Animation || (Type == EDirectorNodeType::CharacterMove && bPlayMoveAnimation && !bAutoLocomotion)", EditConditionHides)) TObjectPtr<UAnimSequence> Animation;
     UPROPERTY(VisibleAnywhere, Category="연출", meta=(DisplayName="동작")) EDirectorNodeType Type = EDirectorNodeType::Wait;
     UPROPERTY(EditAnywhere, Category="연출", meta=(DisplayName="NPC String Key", EditCondition="Type == EDirectorNodeType::Visibility || Type == EDirectorNodeType::SpawnNPC || Type == EDirectorNodeType::Camera || Type == EDirectorNodeType::Animation || Type == EDirectorNodeType::CharacterMove || Type == EDirectorNodeType::BindNPC || Type == EDirectorNodeType::CameraPreset || Type == EDirectorNodeType::LookAt || Type == EDirectorNodeType::Expression", EditConditionHides)) FName Role = TEXT("NPC");
     UPROPERTY(EditAnywhere, Category="연출", meta=(DisplayName="캐릭터 BP", EditCondition="Type == EDirectorNodeType::SpawnNPC || Type == EDirectorNodeType::BindNPC", EditConditionHides)) TSubclassOf<AActor> ActorClass;
     UPROPERTY(EditAnywhere, Category="연출", meta=(DisplayName="월드 위치와 회전", EditCondition="Type == EDirectorNodeType::SpawnNPC || Type == EDirectorNodeType::BindNPC", EditConditionHides)) FTransform Transform;
-    UPROPERTY(EditAnywhere, Category="연출", meta=(DisplayName="시간 (초)", ClampMin="0.033334", EditCondition="Type == EDirectorNodeType::Fade || Type == EDirectorNodeType::Wait || Type == EDirectorNodeType::Camera || Type == EDirectorNodeType::Animation || (Type == EDirectorNodeType::CameraMove && !bUseMotionPath) || Type == EDirectorNodeType::CameraPreset || Type == EDirectorNodeType::LookAt || Type == EDirectorNodeType::Expression || Type == EDirectorNodeType::Dialogue || Type == EDirectorNodeType::CameraSwitch || (Type == EDirectorNodeType::GameplayReturn || Type == EDirectorNodeType::CameraReturn) || (Type == EDirectorNodeType::CharacterMove && !bUseMotionPath && MoveTiming == EDirectorMoveTiming::Duration)", EditConditionHides)) float Duration = 2.f;
+    UPROPERTY(EditAnywhere, Category="연출", meta=(DisplayName="시간 (초)", ClampMin="0.033334", EditCondition="Type == EDirectorNodeType::Vision || (Type == EDirectorNodeType::ClearVision && !bClearVisionInstant) || Type == EDirectorNodeType::Fade || Type == EDirectorNodeType::Wait || Type == EDirectorNodeType::Camera || Type == EDirectorNodeType::Animation || (Type == EDirectorNodeType::CameraMove && !bUseMotionPath) || Type == EDirectorNodeType::CameraPreset || Type == EDirectorNodeType::LookAt || Type == EDirectorNodeType::Expression || Type == EDirectorNodeType::Dialogue || Type == EDirectorNodeType::CameraSwitch || (Type == EDirectorNodeType::GameplayReturn || Type == EDirectorNodeType::CameraReturn) || (Type == EDirectorNodeType::CharacterMove && !bUseMotionPath && MoveTiming == EDirectorMoveTiming::Duration)", EditConditionHides)) float Duration = 2.f;
     UPROPERTY() float FieldOfView = 50.f;
     UPROPERTY(EditAnywhere,Category="카메라 복귀",meta=(DisplayName="미리보기 복귀 구도 지정",EditCondition="(Type == EDirectorNodeType::GameplayReturn || Type == EDirectorNodeType::CameraReturn)",EditConditionHides)) bool bUsePreviewReturnView=false;
     UPROPERTY(EditAnywhere,Category="카메라 복귀",meta=(DisplayName="미리보기 복귀 위치·회전",ToolTip="실제 게임에서는 연출 시작 전 카메라로 복귀합니다. 이 값은 편집기 미리보기 전용입니다.",EditCondition="(Type == EDirectorNodeType::GameplayReturn || Type == EDirectorNodeType::CameraReturn) && bUsePreviewReturnView",EditConditionHides)) FTransform PreviewReturnView;
@@ -213,7 +241,7 @@ struct SCENEDIRECTORRUNTIME_API FDirectorStep
     UPROPERTY(EditAnywhere,Category="연출 모드",meta=(DisplayName="이동·시점 조작 잠금",EditCondition="Type == EDirectorNodeType::CinematicMode || Type == EDirectorNodeType::InputLock",EditConditionHides)) bool bLockInput=true;
     UPROPERTY(EditAnywhere,Category="연출 모드",meta=(DisplayName="게임 HUD 숨김",EditCondition="Type == EDirectorNodeType::CinematicMode || Type == EDirectorNodeType::HUDHidden",EditConditionHides)) bool bHideHUD=true;
     FName EffectiveCameraKey() const {return CameraKey.IsNone()?FName(*(TEXT("Camera_")+Id.ToString(EGuidFormats::Digits))):CameraKey;}
-    UPROPERTY() FVector2D EditorPosition = FVector2D::ZeroVector;
+    UPROPERTY(BlueprintReadWrite,Category="Authoring") FVector2D EditorPosition = FVector2D::ZeroVector;
 };
 
 USTRUCT()
@@ -245,10 +273,10 @@ public:
     UPROPERTY(VisibleAnywhere,Category="변환 기록",meta=(DisplayName="보존된 원본")) TObjectPtr<ULevelSequence> ImportedFrom;
     UPROPERTY(VisibleAnywhere,Category="변환 기록",meta=(DisplayName="변환 보고서",MultiLine="true")) FString ImportReport;
     UPROPERTY(Transient) bool bResolvedBranchPath=false;
-    UPROPERTY() FName EventKey=TEXT("Event_1");
+    UPROPERTY(BlueprintReadWrite,Category="Authoring") FName EventKey=TEXT("Event_1");
     UPROPERTY(Instanced) TArray<TObjectPtr<USceneDirectorAsset>> EventGraphs;
     UFUNCTION(BlueprintPure,Category="연출",meta=(DisplayName="이벤트 그래프 찾기")) USceneDirectorAsset* FindEvent(FName Key) const;
-    UPROPERTY() TArray<FDirectorStep> Steps;
+    UPROPERTY(BlueprintReadWrite,Category="Authoring") TArray<FDirectorStep> Steps;
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="생성 결과") TObjectPtr<ULevelSequence> GeneratedSequence;
     UPROPERTY(VisibleAnywhere,BlueprintReadOnly,Category="생성 결과",meta=(DisplayName="재생성 필요")) bool bNeedsCompile = true;
     UPROPERTY() int32 FormatVersion = 3;

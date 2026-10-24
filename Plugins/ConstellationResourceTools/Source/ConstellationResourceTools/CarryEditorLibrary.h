@@ -5,6 +5,7 @@
 class UBlueprint;
 class UAnimBlueprint;
 class USkeleton;
+class USkeletalMesh;
 class UAnimSequence;
 class UMaterialInterface;
 class AActor;
@@ -13,6 +14,10 @@ class UCarryEditorLibrary : public UBlueprintFunctionLibrary
 {
     GENERATED_BODY()
 public:
+    UFUNCTION(BlueprintCallable,Category="Editor|Carry") static FString ImportCarryMorphs(USkeletalMesh* Mesh,const FString& JsonPath);
+    UFUNCTION(BlueprintCallable,Category="Editor|Carry") static FString ConfigureCarryFootPlant(UAnimBlueprint* Blueprint);
+    UFUNCTION(BlueprintCallable,Category="Editor|Carry") static FString ConfigureFittedCarryOverlay(UAnimBlueprint* Blueprint);
+    UFUNCTION(BlueprintCallable,Category="Editor|Interaction") static FString InstallInteractionAvailabilityGate(UBlueprint* Blueprint);
     UFUNCTION(BlueprintCallable,Category="Editor|Interaction") static FString CreateInteractionStrings(const FString& SourceCSV);
     UFUNCTION(BlueprintCallable,Category="Editor|Carry") static FString CreateCarryTables(UBlueprint* Hero,UBlueprint* Chair,UBlueprint* Desk,UBlueprint* Box);
     UFUNCTION(BlueprintCallable,Category="Editor|Carry") static FString InstallCarryInput(UBlueprint* Blueprint);

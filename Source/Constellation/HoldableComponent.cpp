@@ -1,4 +1,5 @@
 #include "HoldableComponent.h"
+#include "InteractionAvailabilityComponent.h"
 #include "Components/StaticMeshComponent.h"
 #include "GameFramework/Actor.h"
 #include "Engine/StaticMesh.h"
@@ -72,7 +73,7 @@ float UHoldableComponent::GetWeightKg() const
 bool UHoldableComponent::IsUsable() const
 {
     UStaticMeshComponent* Mesh = GetHoldMesh();
-    return !bPendingRestore && IsValid(GetOwner()) && Mesh && Mesh->GetStaticMesh() && Mesh == GetOwner()->GetRootComponent()
+    return !bPendingRestore && UInteractionAvailabilityComponent::CanActorInteract(GetOwner()) && Mesh && Mesh->GetStaticMesh() && Mesh == GetOwner()->GetRootComponent()
         && Mesh->Mobility == EComponentMobility::Movable && Mesh->GetCollisionEnabled()==ECollisionEnabled::QueryAndPhysics
         && Mesh->GetBodySetup() && Mesh->GetBodySetup()->CollisionTraceFlag!=CTF_UseComplexAsSimple && Mesh->GetBodySetup()->AggGeom.GetElementCount()>0
         && FMath::IsFinite(GetWeightKg()) && GetWeightKg() > 0;

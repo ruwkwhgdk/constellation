@@ -17,12 +17,15 @@ bool FCarryDataTest::RunTest(const FString&)
     UStringTable* Messages=NewObject<UStringTable>();
     FStringTableRegistry::Get().RegisterStringTable(Messages->GetStringTableId(),Messages->GetMutableStringTable());
     Messages->GetMutableStringTable()->SetSourceString(TEXT("TooHeavy"),TEXT("Designer message"),TEXT(""));
-    FCarrySettingsRow Row; Row.Reach=245; Row.PickupPlayRate=3; Row.PlacePlayRate=4; Row.Messages=Messages;
+    FCarrySettingsRow Row; Row.Reach=245; Row.PickupPlayRate=3; Row.PlacePlayRate=4; Row.PickupActionSeconds=.6f; Row.PlaceActionSeconds=.8f; Row.ThrowActionSeconds=.7f; Row.Messages=Messages;
     Settings->AddRow(TEXT("Tuned"),Row); Carry->SettingsRow.DataTable=Settings; Carry->SettingsRow.RowName=TEXT("Tuned");
     TestTrue(TEXT("Valid common row applies"),Carry->ApplySettings());
     TestEqual(TEXT("Reach comes from row"),Carry->Reach,245.f);
     TestEqual(TEXT("Pickup rate comes from row"),Carry->PickupPlayRate,3.f);
     TestEqual(TEXT("Place rate comes from row"),Carry->PlacePlayRate,4.f);
+    TestEqual(TEXT("Pickup target seconds come from row"),Carry->PickupActionSeconds,.6f);
+    TestEqual(TEXT("Place target seconds come from row"),Carry->PlaceActionSeconds,.8f);
+    TestEqual(TEXT("Throw target seconds come from row"),Carry->ThrowActionSeconds,.7f);
     TestEqual(TEXT("Message comes from String Table"),Carry->GetCarryMessage(TEXT("TooHeavy")).ToString(),FString(TEXT("Designer message")));
     Messages->GetMutableStringTable()->SetSourceString(TEXT("TooHeavy"),TEXT("Edited message"),TEXT(""));
     TestEqual(TEXT("Text edits are used"),Carry->GetCarryMessage(TEXT("TooHeavy")).ToString(),FString(TEXT("Edited message")));

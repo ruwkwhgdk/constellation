@@ -12,6 +12,9 @@
 #include "EngineUtils.h"
 #include "PhysicsEngine/BodyInstance.h"
 #include "PhysicsEngine/PhysicsSettings.h"
+#include "Animation/AnimMontage.h"
+#include "Animation/AnimInstance.h"
+#include "Components/SkeletalMeshComponent.h"
 
 namespace
 {
@@ -35,6 +38,17 @@ bool UsesWorldGravity(UWorld* World,const FVector& Position)
 
 FTransform UCarryComponent::GetReleaseTransform() const
 {
+    if(const FHoldableItemRow* Row=GetFittedProfile())
+    {
+        // Release the visible prop in place, rather than teleporting it to a launch offset.
+        if(State==ECarryState::Throwing) return HeldItem->GetHoldMesh()->GetComponentTransform();
+        if(const ACharacter* C=Cast<ACharacter>(GetOwner()))
+        {
+            FTransform Preview=Row->FittedReleaseMeshSpace*C->GetMesh()->GetComponentTransform();
+            Preview.SetScale3D(HeldItem->GetHoldMesh()->GetComponentScale());
+            return Preview;
+        }
+    }
     FTransform Transform=ReleaseOffset*GetOwner()->GetActorTransform();
     if(HeldItem&&HeldItem->GetHoldMesh())
     {
@@ -122,12 +136,28 @@ bool UCarryComponent::CommitThrow()
     if(State!=ECarryState::Aiming) return false;
     UpdateAim();
     if(!bAimValid) { ShowFailure(GetCarryMessage(TEXT("ThrowBlocked"))); CancelAim(); return false; }
-    ClearPreview(); AttachToActionHand(); bContactOccurred=false; SetState(ECarryState::Throwing); StartAction(ThrowMontage,ThrowContactTime,ThrowDuration,ThrowPlayRate); return true;
+    if(GetFittedProfile()) CaptureCarryFeet();
+    ClearPreview(); AttachToActionHand(); bContactOccurred=false; SetState(ECarryState::Throwing);
+    if(const FHoldableItemRow* Row=GetFittedProfile()) StartAction(Row->FittedThrowMontage,1.1f,Row->FittedThrowMontage->GetPlayLength());
+    else StartAction(ThrowMontage,ThrowContactTime,ThrowDuration);
+    return true;
 }
 void UCarryComponent::OnThrowRelease()
 {
+    // Animation notifies run before the refreshed socket transforms are published.
+    // Fitted props must detach after this frame's mesh and attachment updates.
+    const ACharacter* Character=Cast<ACharacter>(GetOwner());
+    if(GetFittedProfile()&&Character&&Character->GetMesh()->GetAnimInstance())
+    { bFittedReleasePending=true; return; }
+    PerformThrowRelease();
+}
+void UCarryComponent::PerformThrowRelease()
+{
     if(State!=ECarryState::Throwing||bContactOccurred||!IsValid(HeldItem)) return;
     const FTransform Release=GetReleaseTransform(); FHitResult Hit;
+    if(const ACharacter* Character=Cast<ACharacter>(GetOwner()))
+        if(const UAnimInstance* Anim=Character->GetMesh()->GetAnimInstance())
+            UE_LOG(LogTemp,Display,TEXT("Carry release check montage=%.6f location=%s"),Anim->Montage_GetPosition(ActiveMontage),*Release.GetLocation().ToString());
     if(!IsSpaceFree(Release,true,true)||!IsPathFree(HeldItem->GetHoldMesh()->GetComponentLocation(),Release.GetLocation(),Release.GetRotation(),Hit))
     { ShowFailure(GetCarryMessage(TEXT("ThrowBlocked"))); FinishAction(); return; }
     // Chaos advances with gravity first. Compensate its half-step bias at actual release,

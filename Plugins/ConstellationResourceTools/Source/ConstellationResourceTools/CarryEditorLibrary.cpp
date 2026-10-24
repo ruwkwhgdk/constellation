@@ -25,6 +25,7 @@
 #include "AnimGraphNode_SaveCachedPose.h"
 #include "AnimGraphNode_UseCachedPose.h"
 #include "AnimGraphNode_TwoBoneIK.h"
+#include "AnimGraphNode_CarryArmIK.h"
 #include "AnimBlueprintExtension.h"
 #include "Kismet2/BlueprintEditorUtils.h"
 #include "Kismet2/KismetEditorUtilities.h"
@@ -205,4 +206,85 @@ FString UCarryEditorLibrary::ConfigureTestBox(UBlueprint* BP,UClass* HoldableCla
     Hold->LeftHandGrip=FTransform(FRotator::ZeroRotator,FVector(0,-50,0));
     Hold->RightHandGrip=FTransform(FRotator::ZeroRotator,FVector(0,50,0));
     SCS->AddNode(HoldNode); return Compile(BP,2);
+}
+
+FString UCarryEditorLibrary::ConfigureFittedCarryOverlay(UAnimBlueprint* BP)
+{
+    if(!BP) return TEXT("ERROR missing blueprint");
+    TArray<UEdGraph*> Graphs; BP->GetAllGraphs(Graphs); int32 Count=0;
+    for(UEdGraph* G:Graphs)
+    {
+        TArray<UEdGraphNode*> Nodes=G->Nodes;
+        for(UEdGraphNode* N:Nodes)
+        {
+            auto* Old=Cast<UAnimGraphNode_TwoBoneIK>(N);
+            if(!Old||(Old->Node.IKBone.BoneName!=TEXT("hand_l")&&Old->Node.IKBone.BoneName!=TEXT("hand_r"))) continue;
+            const bool Left=Old->Node.IKBone.BoneName==TEXT("hand_l");
+            auto* IK=Node<UAnimGraphNode_CarryArmIK>(G,NAME_None,Old->NodePosX,Old->NodePosY);
+            IK->Node.UpperArm.BoneName=Left?TEXT("upperarm_l"):TEXT("upperarm_r");
+            IK->Node.UpperTwist.BoneName=Left?TEXT("upperarm_twist_01_l"):TEXT("upperarm_twist_01_r");
+            IK->Node.Forearm.BoneName=Left?TEXT("lowerarm_l"):TEXT("lowerarm_r");
+            IK->Node.ForearmTwist.BoneName=Left?TEXT("lowerarm_twist_01_l"):TEXT("lowerarm_twist_01_r");
+            IK->Node.Hand.BoneName=Old->Node.IKBone.BoneName;
+            if(Left) IK->Node.TargetReference.BoneName=TEXT("hand_r");
+            for(FOptionalPinFromProperty& Pin:IK->ShowPinForProperties) if(Pin.PropertyName==TEXT("Alpha")) Pin.bShowPin=true;
+            IK->AllocateDefaultPins(); const UEdGraphSchema* Schema=G->GetSchema();
+            for(FName Name:{FName("ComponentPose"),FName("Pose"),FName("Alpha")})
+            {
+                UEdGraphPin* Pin=Old->FindPinChecked(Name); TArray<UEdGraphPin*> Links=Pin->LinkedTo; Pin->BreakAllPinLinks();
+                for(UEdGraphPin* Link:Links) if(!Schema->TryCreateConnection(IK->FindPinChecked(Name),Link)) return TEXT("ERROR anatomical IK pose/alpha connection");
+            }
+            UEdGraphPin* Target=Old->FindPinChecked(TEXT("EffectorLocation")); if(Target->LinkedTo.Num()!=1) return TEXT("ERROR missing target");
+            auto* Call=Cast<UK2Node_CallFunction>(Target->LinkedTo[0]->GetOwningNode()); Target->BreakAllPinLinks();
+            if(!Call) return TEXT("ERROR target function");
+            Call->SetFromFunction(UCarryInputLibrary::StaticClass()->FindFunctionByName(TEXT("CarryIKTarget"))); Call->ReconstructNode();
+            if(UEdGraphPin* Side=Call->FindPin(TEXT("bLeft"))) Side->DefaultValue=Left?TEXT("true"):TEXT("false");
+            if(!Schema->TryCreateConnection(Call->GetReturnValuePin(),IK->FindPinChecked(TEXT("EffectorTransform")))) return TEXT("ERROR anatomical IK target connection");
+            if(UEdGraphPin* Joint=Old->FindPin(TEXT("JointTargetLocation")))
+            {
+                if(Joint->LinkedTo.Num()==1) { UEdGraphNode* Unused=Joint->LinkedTo[0]->GetOwningNode(); Joint->BreakAllPinLinks(); FBlueprintEditorUtils::RemoveNode(BP,Unused,true); }
+            }
+            FBlueprintEditorUtils::RemoveNode(BP,Old,true); ++Count;
+        }
+    }
+    return Compile(BP,Count);
+}
+
+FString UCarryEditorLibrary::ConfigureCarryFootPlant(UAnimBlueprint* BP)
+{
+    if(!BP) return TEXT("ERROR no blueprint");
+    TArray<UEdGraph*> Graphs; BP->GetAllGraphs(Graphs);
+    for(UEdGraph* G:Graphs)
+    {
+        auto Nodes=G->Nodes;
+        for(UEdGraphNode* N:Nodes) if(auto* IK=Cast<UAnimGraphNode_CarryArmIK>(N))
+            if(IK->Node.Hand.BoneName==TEXT("foot_l")) return Compile(BP,0);
+        for(UEdGraphNode* N:Nodes)
+        {
+            auto* Last=Cast<UAnimGraphNode_CarryArmIK>(N); if(!Last||Last->Node.Hand.BoneName!=TEXT("hand_l")) continue;
+            const UEdGraphSchema* Schema=G->GetSchema(); UEdGraphPin* Previous=Last->FindPinChecked(TEXT("Pose"));
+            TArray<UEdGraphPin*> Consumers=Previous->LinkedTo; Previous->BreakAllPinLinks();
+            auto* Self=Node<UK2Node_Self>(G,NAME_None,Last->NodePosX+200,Last->NodePosY+300); Self->AllocateDefaultPins();
+            for(bool Left:{false,true})
+            {
+                auto* Leg=Node<UAnimGraphNode_CarryArmIK>(G,NAME_None,Last->NodePosX+(Left?800:400),Last->NodePosY);
+                Leg->Node.UpperArm.BoneName=Left?TEXT("thigh_l"):TEXT("thigh_r"); Leg->Node.UpperTwist.BoneName=Left?TEXT("thigh_twist_01_l"):TEXT("thigh_twist_01_r");
+                Leg->Node.Forearm.BoneName=Left?TEXT("calf_l"):TEXT("calf_r"); Leg->Node.ForearmTwist.BoneName=Left?TEXT("calf_twist_01_l"):TEXT("calf_twist_01_r");
+                Leg->Node.Hand.BoneName=Left?TEXT("foot_l"):TEXT("foot_r"); Leg->Node.bUseTargetRotation=true;
+                for(auto& Pin:Leg->ShowPinForProperties) if(Pin.PropertyName==TEXT("Alpha")) Pin.bShowPin=true;
+                Leg->AllocateDefaultPins(); if(!Schema->TryCreateConnection(Previous,Leg->FindPinChecked(TEXT("ComponentPose")))) return TEXT("ERROR leg pose"); Previous=Leg->FindPinChecked(TEXT("Pose"));
+                for(bool Target:{false,true})
+                {
+                    auto* Call=Node<UK2Node_CallFunction>(G,NAME_None,Leg->NodePosX-100,Leg->NodePosY+(Target?200:400));
+                    Call->SetFromFunction(UCarryInputLibrary::StaticClass()->FindFunctionByName(Target?TEXT("CarryFootTarget"):TEXT("CarryFootAlpha"))); Call->AllocateDefaultPins();
+                    Schema->TryCreateConnection(Self->FindPinChecked(UEdGraphSchema_K2::PN_Self),Call->FindPinChecked(TEXT("AnimInstance")));
+                    if(Target) Call->FindPinChecked(TEXT("bLeft"))->DefaultValue=Left?TEXT("true"):TEXT("false");
+                    if(!Schema->TryCreateConnection(Call->GetReturnValuePin(),Leg->FindPinChecked(Target?TEXT("EffectorTransform"):TEXT("Alpha")))) return TEXT("ERROR foot target");
+                }
+            }
+            for(UEdGraphPin* Consumer:Consumers) if(!Schema->TryCreateConnection(Previous,Consumer)) return TEXT("ERROR output pose");
+            return Compile(BP,2);
+        }
+    }
+    return TEXT("ERROR no fitted arm node");
 }

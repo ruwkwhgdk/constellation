@@ -41,6 +41,12 @@ struct CONSTELLATION_API FCarrySettingsRow : public FTableRowBase
     TObjectPtr<UAnimMontage> AimMontage = nullptr;
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Settings")
     TObjectPtr<UMaterialInterface> PreviewMaterial = nullptr;
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Timing", meta=(ClampMin="0.5", ClampMax="0.9", ToolTip="Real action duration including fitted montages; restart PIE after editing."))
+    float PickupActionSeconds = .75f;
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Timing", meta=(ClampMin="0.5", ClampMax="0.9", ToolTip="Real action duration including fitted montages; restart PIE after editing."))
+    float PlaceActionSeconds = .75f;
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Timing", meta=(ClampMin="0.5", ClampMax="0.9", ToolTip="Real action duration including fitted montages; restart PIE after editing."))
+    float ThrowActionSeconds = .75f;
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Settings", meta=(ClampMin="0.01"))
     float PickupPlayRate = 2.f;
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Settings", meta=(ClampMin="0.01"))
@@ -69,6 +75,25 @@ USTRUCT(BlueprintType)
 struct CONSTELLATION_API FHoldableItemRow : public FTableRowBase
 {
     GENERATED_BODY()
+    // Optional fitted two-handed profile; legacy/small props retain component settings.
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Animation")
+    TObjectPtr<UAnimMontage> FittedThrowMontage = nullptr;
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Animation")
+    TObjectPtr<UAnimMontage> FittedHoldMontage = nullptr;
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Animation")
+    TObjectPtr<UAnimMontage> FittedPickupMontage = nullptr;
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Animation")
+    TObjectPtr<UAnimMontage> FittedPlaceMontage = nullptr;
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Animation")
+    FTransform FittedPlaceMeshSpace = FTransform::Identity;
+    // Uniform samples across the montage, shared by pre-pose IK and post-pose prop motion.
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Animation")
+    TArray<float> FittedPlaceProgress;
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Animation")
+    FTransform FittedPickupMeshSpace = FTransform::Identity;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Animation")
+    FTransform FittedReleaseMeshSpace = FTransform::Identity;
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Settings")
     FTransform CarryOffset = FTransform(FRotator::ZeroRotator,FVector(32,0,30));
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Settings")

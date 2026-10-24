@@ -22,10 +22,17 @@
 #include "Misc/CommandLine.h"
 #include "Misc/Parse.h"
 
-UCarryComponent::UCarryComponent() { PrimaryComponentTick.bCanEverTick = true; }
+UCarryComponent::UCarryComponent() { PrimaryComponentTick.bCanEverTick = true; PrimaryComponentTick.TickGroup=TG_PostUpdateWork; }
+const FHoldableItemRow* UCarryComponent::GetFittedProfile() const
+{
+    const FHoldableItemRow* Row=HeldItem?HeldItem->ItemRow.GetRow<FHoldableItemRow>(TEXT("Fitted carry")):nullptr;
+    return Row&&Row->FittedThrowMontage&&Row->FittedHoldMontage?Row:nullptr;
+}
 void UCarryComponent::BeginPlay()
 {
-    Super::BeginPlay(); ApplySettings(); GetOwner()->OnTakeAnyDamage.AddDynamic(this,&UCarryComponent::OnOwnerDamaged);
+    Super::BeginPlay();
+    if(const ACharacter* Character=Cast<ACharacter>(GetOwner())) AddTickPrerequisiteComponent(Character->GetMesh());
+    ApplySettings(); GetOwner()->OnTakeAnyDamage.AddDynamic(this,&UCarryComponent::OnOwnerDamaged);
 }
 bool UCarryComponent::ApplySettings()
 {
@@ -48,6 +55,9 @@ bool UCarryComponent::ApplySettings()
     HoldMontage=Row->HoldMontage;
     AimMontage=Row->AimMontage;
     PreviewMaterial=Row->PreviewMaterial;
+    PickupActionSeconds=FMath::Clamp(FMath::IsFinite(Row->PickupActionSeconds)?Row->PickupActionSeconds:.75f,.5f,.9f);
+    PlaceActionSeconds=FMath::Clamp(FMath::IsFinite(Row->PlaceActionSeconds)?Row->PlaceActionSeconds:.75f,.5f,.9f);
+    ThrowActionSeconds=FMath::Clamp(FMath::IsFinite(Row->ThrowActionSeconds)?Row->ThrowActionSeconds:.75f,.5f,.9f);
     PickupPlayRate=Row->PickupPlayRate;
     PlacePlayRate=Row->PlacePlayRate;
     ThrowPlayRate=Row->ThrowPlayRate;
@@ -89,7 +99,9 @@ bool UCarryComponent::CanReachItem(const UHoldableComponent* Item) const
     if(Mesh->Bounds.GetBox().ComputeSquaredDistanceToPoint(Start)>FMath::Square(Reach)) return false;
     FCollisionQueryParams Params(SCENE_QUERY_STAT(CarryPickup),false,GetOwner());
     Params.AddIgnoredActor(Item->GetOwner()); FHitResult Hit;
-    return !GetWorld()->LineTraceSingleByChannel(Hit,Start,Mesh->Bounds.Origin,ECC_Visibility,Params);
+    const bool bBlocked=GetWorld()->LineTraceSingleByChannel(Hit,Start,Mesh->Bounds.Origin,ECC_Visibility,Params);
+    if(bBlocked) UE_LOG(LogTemp,Verbose,TEXT("Carry pickup sight blocked by %s.%s"),*GetNameSafe(Hit.GetActor()),*GetNameSafe(Hit.GetComponent()));
+    return !bBlocked;
 }
 bool UCarryComponent::TryPickUp(UHoldableComponent* Item)
 {
@@ -99,6 +111,7 @@ bool UCarryComponent::TryPickUp(UHoldableComponent* Item)
         || C->GetCharacterMovement()->IsFalling()) return false;
     if(!CarryMath::CanLift(Item->GetWeightKg(),CharacterWeightKg,LiftWeightRatio))
     { ShowFailure(GetCarryMessage(TEXT("TooHeavy"))); return false; }
+    bCarryFeetPlanted=false;
     Item->EndBallisticFlight(); HeldItem=Item; Item->Carrier=this; UStaticMeshComponent* Mesh=Item->GetHoldMesh();
     bSavedPhysics=Mesh->IsSimulatingPhysics(); bSavedGravity=Mesh->IsGravityEnabled(); SavedCollision=Mesh->GetCollisionEnabled();
     OriginalItemTransform=Mesh->GetComponentTransform(); bHasLifted=false;
@@ -106,26 +119,56 @@ bool UCarryComponent::TryPickUp(UHoldableComponent* Item)
     TArray<USceneComponent*> Visuals; C->GetComponents(Visuals);
     for(USceneComponent* Visual:Visuals) if(Visual->GetFName()==WeaponComponentName)
     { WeaponVisual=Visual; bSavedWeaponVisible=Visual->IsVisible(); Visual->SetVisibility(false); break; }
-    bContactOccurred=false; SetState(ECarryState::PickingUp); StartAction(PickupMontage,PickupContactTime,PickupDuration,PickupPlayRate); return true;
+    bContactOccurred=false; bPickupContactPending=false; SetState(ECarryState::PickingUp);
+    if(const FHoldableItemRow* Row=GetFittedProfile(); Row&&Row->FittedPickupMontage)
+    {
+        PickupAlignStart=Mesh->GetComponentTransform();
+        PickupAlignTarget=Row->FittedPickupMeshSpace*C->GetMesh()->GetComponentTransform();
+        PickupAlignTarget.SetScale3D(PickupAlignStart.GetScale3D());
+        // Pickup is already authorized by reach, visibility and weight. From here
+        // the prop is non-colliding, including the approach to its authored pose.
+        PickupAlignRoute={PickupAlignStart,PickupAlignTarget};
+        PickupAlignDuration=PickupActionSeconds*.2f;
+        C->GetCharacterMovement()->StopMovementImmediately(); CaptureCarryFeet();
+        Mesh->SetSimulatePhysics(false); Mesh->SetCollisionEnabled(ECollisionEnabled::NoCollision); bPickupAlignmentTouched=true;
+        bAligningPickup=true; PickupAlignElapsed=0; StartFittedPickup(); return true;
+    }
+    StartAction(PickupMontage,PickupContactTime,PickupDuration); return true;
 }
 void UCarryComponent::OnPickupContact()
 {
     if(State!=ECarryState::PickingUp || bContactOccurred || !IsValid(HeldItem)) return;
+    if(bAligningPickup) { bPickupContactPending=true; return; }
+    bPickupContactPending=false;
     ACharacter* C=Cast<ACharacter>(GetOwner()); UStaticMeshComponent* Mesh=HeldItem->GetHoldMesh();
     if(!C || !Mesh) { AbortCarry(); return; }
     // Recheck reach/visibility at contact. Carrying is non-colliding: rotating
     // a toppled item into the carry pose must not require an empty upright box.
-    if(!CanReachItem(HeldItem))
+    if(!bPickupAlignmentTouched&&!CanReachItem(HeldItem))
     { ShowFailure(GetCarryMessage(TEXT("PickupUnreachable"))); AbortCarry(); return; }
     Mesh->SetSimulatePhysics(false); Mesh->SetCollisionEnabled(ECollisionEnabled::NoCollision);
     const FName Hand=C->GetMesh()->DoesSocketExist(TEXT("hand_r"))?TEXT("hand_r"):TEXT("RightHand");
-    if(C->GetMesh()->DoesSocketExist(Hand)) AttachToActionHand(); else AttachToCarryPosition();
+    if(GetFittedProfile())
+    {
+        PickupLiftStart=GetHeldActor()->GetActorTransform(); PickupLiftStartTime=GetWorld()->GetTimeSeconds();
+        const UAnimInstance* Anim=C->GetMesh()->GetAnimInstance();
+        PickupLiftSeconds=Anim&&ActiveMontage?FMath::Max(.1f,(ActiveMontage->GetPlayLength()-Anim->Montage_GetPosition(ActiveMontage))/FMath::Max(Anim->Montage_GetPlayRate(ActiveMontage),.01f)):.3f;
+        GetHeldActor()->AttachToComponent(C->GetMesh(),FAttachmentTransformRules::KeepWorldTransform);
+    }
+    else if(C->GetMesh()->DoesSocketExist(Hand)) AttachToActionHand(); else AttachToCarryPosition();
     bContactOccurred=true; bHasLifted=true;
 }
 void UCarryComponent::AttachToCarryPosition()
 {
     if(!IsValid(HeldItem)) return;
     ACharacter* C=Cast<ACharacter>(GetOwner()); const FVector Scale=HeldItem->GetHoldMesh()->GetComponentScale();
+    if(GetFittedProfile())
+    {
+        GetHeldActor()->AttachToComponent(C->GetMesh(),FAttachmentTransformRules::KeepWorldTransform);
+        GetHeldActor()->SetActorRelativeTransform(HeldItem->CarryOffset);
+        GetHeldActor()->SetActorScale3D(Scale);
+        return;
+    }
     const bool bSocketExists=C->GetMesh()->DoesSocketExist(CarrySocket);
     GetHeldActor()->AttachToComponent(bSocketExists?static_cast<USceneComponent*>(C->GetMesh()):C->GetRootComponent(),FAttachmentTransformRules::KeepWorldTransform,bSocketExists?CarrySocket:NAME_None);
     GetHeldActor()->SetActorRelativeTransform(HeldItem->CarryOffset); GetHeldActor()->SetActorScale3D(Scale);
@@ -134,12 +177,26 @@ void UCarryComponent::AttachToActionHand()
 {
     if(!IsValid(HeldItem)) return;
     ACharacter* C=Cast<ACharacter>(GetOwner()); const FName Hand=C->GetMesh()->DoesSocketExist(TEXT("hand_r"))?TEXT("hand_r"):TEXT("RightHand");
+    if(GetFittedProfile()&&C->GetMesh()->DoesSocketExist(Hand))
+    {
+        FTransform Wrist=C->GetMesh()->GetSocketTransform(Hand); Wrist.SetScale3D(FVector::OneVector);
+        FTransform Fitted=HeldItem->RightHandGrip.Inverse()*Wrist;
+        Fitted.SetScale3D(HeldItem->GetHoldMesh()->GetComponentScale());
+        GetHeldActor()->SetActorTransform(Fitted);
+    }
     if(C->GetMesh()->DoesSocketExist(Hand)) GetHeldActor()->AttachToComponent(C->GetMesh(),FAttachmentTransformRules::KeepWorldTransform,Hand);
 }
 bool UCarryComponent::AllowsWalking() const { return State==ECarryState::Idle || State==ECarryState::Carrying || State==ECarryState::Aiming; }
 AActor* UCarryComponent::GetHeldActor() const { return IsValid(HeldItem)?HeldItem->GetOwner():nullptr; }
 FTransform UCarryComponent::GetHandGrip(bool bLeft) const
 {
+    if(bFittedPlacing&&State==ECarryState::Placing&&IsValid(HeldItem))
+        return (bLeft?HeldItem->LeftHandGrip:HeldItem->RightHandGrip)*GetFittedPlaceTransform();
+    if(GetFittedProfile()&&State==ECarryState::PickingUp&&bHasLifted)
+        return (bLeft?HeldItem->LeftHandGrip:HeldItem->RightHandGrip)*GetFittedPickupTransform();
+    if(GetFittedProfile()&&(State==ECarryState::Carrying||State==ECarryState::Aiming))
+        if(const ACharacter* C=Cast<ACharacter>(GetOwner()))
+            return (bLeft?HeldItem->LeftHandGrip:HeldItem->RightHandGrip)*HeldItem->CarryOffset*C->GetMesh()->GetComponentTransform();
     return IsValid(HeldItem)&&HeldItem->GetHoldMesh()?(bLeft?HeldItem->LeftHandGrip:HeldItem->RightHandGrip)*HeldItem->GetHoldMesh()->GetComponentTransform():FTransform::Identity;
 }
 bool UCarryComponent::IsSpaceFree(const FTransform& Transform,bool bIncludeCarrier,bool bLaunching) const
@@ -184,13 +241,16 @@ bool UCarryComponent::FindPlace(FTransform& Transform) const
     const FBox Box=HeldItem->GetHoldMesh()->GetStaticMesh()->GetBoundingBox(); const FVector Scale=HeldItem->GetHoldMesh()->GetComponentScale();
     const FVector Extent=Box.GetExtent()*Scale.GetAbs(); const ACharacter* C=Cast<ACharacter>(GetOwner());
     const float Radius=C?C->GetCapsuleComponent()->GetScaledCapsuleRadius():35;
-    const FVector Center=GetOwner()->GetActorLocation()+GetOwner()->GetActorForwardVector()*(Radius+Extent.Size2D()+20);
+    const FHoldableItemRow* Profile=GetFittedProfile();
+    const bool bFitted=Profile&&Profile->FittedPlaceMontage&&C;
+    const FTransform Authored=bFitted?Profile->FittedPlaceMeshSpace*C->GetMesh()->GetComponentTransform():FTransform::Identity;
+    const FVector Center=bFitted?Authored.TransformPosition(Box.GetCenter()):GetOwner()->GetActorLocation()+GetOwner()->GetActorForwardVector()*(Radius+Extent.Size2D()+20);
     FCollisionQueryParams Params(SCENE_QUERY_STAT(CarryFloor),false,GetOwner()); Params.AddIgnoredActor(GetHeldActor()); FHitResult Floor;
     const UStaticMeshComponent* Mesh=HeldItem->GetHoldMesh();
     if(!GetWorld()->LineTraceSingleByChannel(Floor,Center+FVector(0,0,50),Center-FVector(0,0,200),Mesh->GetCollisionObjectType(),Params,FCollisionResponseParams(Mesh->GetCollisionResponseToChannels())) || Floor.ImpactNormal.Z<.75f) return false;
-    const FQuat Rot=(FRotator(0,GetOwner()->GetActorRotation().Yaw,0)+HeldItem->PlaceRotation).Quaternion();
+    const FQuat Rot=bFitted?Authored.GetRotation():(FRotator(0,GetOwner()->GetActorRotation().Yaw,0)+HeldItem->PlaceRotation).Quaternion();
     const float Support=FMath::Abs(Rot.GetAxisX().Z)*Extent.X+FMath::Abs(Rot.GetAxisY().Z)*Extent.Y+FMath::Abs(Rot.GetAxisZ().Z)*Extent.Z;
-    Transform=FTransform(Rot,Floor.ImpactPoint+FVector(0,0,Support+3)-Rot.RotateVector(Box.GetCenter()*Scale),Scale);
+    Transform=FTransform(Rot,Floor.ImpactPoint+FVector(0,0,Support+(bFitted?.1f:3.f))-Rot.RotateVector(Box.GetCenter()*Scale),Scale);
     FHitResult Hit; const bool bFree=IsSpaceFree(Transform);
     const bool bPath=IsPathFree(HeldItem->GetHoldMesh()->GetComponentLocation(),Transform.GetLocation(),Rot,Hit);
     if(!bFree||!bPath) UE_LOG(LogTemp,Verbose,TEXT("Carry place blocked: free=%d path=%d start=%s target=%s hit=%s depth=%f normal=%s"),bFree,bPath,*HeldItem->GetHoldMesh()->GetComponentLocation().ToString(),*Transform.GetLocation().ToString(),*GetNameSafe(Hit.GetActor()),Hit.PenetrationDepth,*Hit.ImpactNormal.ToString());
@@ -200,11 +260,23 @@ bool UCarryComponent::TryPlace()
 {
     if(State!=ECarryState::Carrying) return false;
     if(!FindPlace(PlaceTransform)) { ShowFailure(GetCarryMessage(TEXT("PlaceBlocked"))); return false; }
-    AttachToActionHand(); bContactOccurred=false; SetState(ECarryState::Placing); StartAction(PlaceMontage,PlaceContactTime,PlaceDuration,PlacePlayRate); return true;
+    const FHoldableItemRow* Row=GetFittedProfile();
+    bFittedPlacing=Row&&Row->FittedPlaceMontage;
+    bPlaceReleasePending=false;
+    if(bFittedPlacing)
+    {
+        PlaceStartTransform=HeldItem->GetHoldMesh()->GetComponentTransform();
+        GetHeldActor()->DetachFromActor(FDetachmentTransformRules::KeepWorldTransform);
+        PlaceStartTime=GetWorld()->GetTimeSeconds(); CaptureCarryFeet();
+    }
+    else AttachToActionHand();
+    bContactOccurred=false; SetState(ECarryState::Placing);
+    StartAction(bFittedPlacing?Row->FittedPlaceMontage.Get():PlaceMontage.Get(),bFittedPlacing?3.4f:PlaceContactTime,bFittedPlacing?6.f:PlaceDuration); return true;
 }
 void UCarryComponent::OnPlaceRelease()
 {
     if(State!=ECarryState::Placing || bContactOccurred) return;
+    if(bFittedPlacing) { bPlaceReleasePending=true; return; }
     FTransform Current;
     if(!FindPlace(Current)||!Current.GetLocation().Equals(PlaceTransform.GetLocation(),5.f)||!IsSpaceFree(PlaceTransform))
     { ShowFailure(GetCarryMessage(TEXT("PlaceBlocked"))); FinishAction(); return; }
@@ -224,34 +296,47 @@ void UCarryComponent::ReleaseHeld(const FTransform& Transform,const FVector& Vel
 }
 void UCarryComponent::PlayLoop(UAnimMontage* Montage)
 {
+    if(const FHoldableItemRow* Row=GetFittedProfile()) Montage=Row->FittedHoldMontage;
     ACharacter* C=Cast<ACharacter>(GetOwner()); UAnimInstance* Anim=C?C->GetMesh()->GetAnimInstance():nullptr;
     if(Anim&&Montage)
     {
-        ActiveMontage=Montage; Anim->Montage_Play(Montage);
+        const FHoldableItemRow* Row=GetFittedProfile();
+        const bool bMatchedPickup=Row&&ActiveMontage==Row->FittedPickupMontage;
+        ActiveMontage=Montage;
+        // Pickup ends at the hold pose. Blending two different slots would
+        // briefly mix idle into both slots and lose the furniture contact.
+        if(bMatchedPickup) Anim->Montage_PlayWithBlendIn(Montage,FAlphaBlendArgs(0.f));
+        else Anim->Montage_Play(Montage);
         if(Montage->GetNumSections()>0) Anim->Montage_SetNextSection(Montage->GetSectionName(0),Montage->GetSectionName(0),Montage);
     }
 }
-void UCarryComponent::StartAction(UAnimMontage* Montage,float ContactTime,float Duration,float PlayRate)
+void UCarryComponent::StartAction(UAnimMontage* Montage,float ContactTime,float Duration)
 {
     ACharacter* C=Cast<ACharacter>(GetOwner()); if(C) C->GetCharacterMovement()->StopMovementImmediately();
     GetWorld()->GetTimerManager().ClearTimer(ContactTimer); GetWorld()->GetTimerManager().ClearTimer(FinishTimer);
+    bActionFinishPending=false;
+    const float Seconds=FMath::Clamp(State==ECarryState::PickingUp?PickupActionSeconds:State==ECarryState::Placing?PlaceActionSeconds:ThrowActionSeconds,.5f,.9f);
+    // Finish after the mesh/notify update, including a delayed release on this frame.
+    GetWorld()->GetTimerManager().SetTimer(FinishTimer,FTimerDelegate::CreateWeakLambda(this,[this]() { bActionFinishPending=true; }),Seconds,false);
     UAnimInstance* Anim=C?C->GetMesh()->GetAnimInstance():nullptr;
+    const float PlayRate=Montage?Montage->GetPlayLength()/(Seconds*FMath::Max(Montage->RateScale,.01f)):1.f;
     if(Anim&&Montage&&Anim->Montage_Play(Montage,PlayRate)>0)
     {
         ActiveMontage=Montage; FOnMontageEnded Delegate; Delegate.BindUObject(this,&UCarryComponent::OnMontageFinished); Anim->Montage_SetEndDelegate(Delegate,Montage); return;
     }
-    // Timed prototype fallback is also used by transient test worlds without an anim instance.
+    // Preserve the source contact proportion when no animation instance is available.
     GetWorld()->GetTimerManager().SetTimer(ContactTimer,FTimerDelegate::CreateWeakLambda(this,[this]()
-    { if(State==ECarryState::PickingUp) OnPickupContact(); else if(State==ECarryState::Placing) OnPlaceRelease(); else if(State==ECarryState::Throwing) OnThrowRelease(); }),ContactTime/PlayRate,false);
-    GetWorld()->GetTimerManager().SetTimer(FinishTimer,this,&UCarryComponent::FinishAction,Duration/PlayRate,false);
+    { if(State==ECarryState::PickingUp) OnPickupContact(); else if(State==ECarryState::Placing) OnPlaceRelease(); else if(State==ECarryState::Throwing) OnThrowRelease(); }),Seconds*FMath::Clamp(ContactTime/FMath::Max(Duration,.01f),.01f,.95f),false);
 }
 void UCarryComponent::OnMontageFinished(UAnimMontage* Montage,bool bInterrupted)
 {
     if(Montage!=ActiveMontage || bAborting) return;
-    if(bInterrupted) AbortCarry(); else FinishAction();
+    if(bInterrupted) AbortCarry(); else bActionFinishPending=true;
 }
 void UCarryComponent::FinishAction()
 {
+    bFittedPlacing=false; bPlaceReleasePending=false;
+    bActionFinishPending=false;
     GetWorld()->GetTimerManager().ClearTimer(ContactTimer); GetWorld()->GetTimerManager().ClearTimer(FinishTimer);
     if(State!=ECarryState::PickingUp && State!=ECarryState::Placing && State!=ECarryState::Throwing) return;
     if(IsValid(HeldItem)&&(State!=ECarryState::PickingUp || bContactOccurred)) { AttachToCarryPosition(); SetState(ECarryState::Carrying); PlayLoop(HoldMontage); }
@@ -260,7 +345,7 @@ void UCarryComponent::FinishAction()
 void UCarryComponent::ClearPreview() { if(PreviewMesh) { PreviewMesh->DestroyComponent(); PreviewMesh=nullptr; } }
 void UCarryComponent::AbortCarry()
 {
-    if(bAborting) return; bAborting=true;
+    if(bAborting) return; bAborting=true; bActionFinishPending=false; bFittedReleasePending=false; bAligningPickup=false; bPickupContactPending=false; bFittedPlacing=false; bPlaceReleasePending=false;
     GetWorld()->GetTimerManager().ClearTimer(ContactTimer); GetWorld()->GetTimerManager().ClearTimer(FinishTimer); ClearPreview(); bAimValid=false;
     ACharacter* C=Cast<ACharacter>(GetOwner());
     if(C&&ActiveMontage&&C->GetMesh()->GetAnimInstance()) C->GetMesh()->GetAnimInstance()->Montage_Stop(.1f,ActiveMontage);
@@ -282,11 +367,16 @@ void UCarryComponent::AbortCarry()
                 GetHeldActor()->DetachFromActor(FDetachmentTransformRules::KeepWorldTransform); GetHeldActor()->SetActorTransform(Drop);
                 HeldItem->RestoreWhenClear(SavedCollision,bSavedGravity,bSavedPhysics);
             }
-            // Before contact, preserve the original item's attachment and simulation.
+            else if(bPickupAlignmentTouched)
+            {
+                if(bSavedPhysics) HeldItem->RestoreWhenClear(SavedCollision,bSavedGravity,true);
+                else { Mesh->SetCollisionEnabled(SavedCollision); Mesh->SetEnableGravity(bSavedGravity); }
+            }
+            // Legacy precontact items retain their original attachment and simulation.
         }
         HeldItem->Carrier.Reset();
     }
-    HeldItem=nullptr;
+    HeldItem=nullptr; bPickupAlignmentTouched=false;
     if(WeaponVisual.IsValid()) WeaponVisual->SetVisibility(bSavedWeaponVisible);
     WeaponVisual.Reset();
     bContactOccurred=false; SetState(ECarryState::Idle); bAborting=false;
@@ -303,7 +393,11 @@ UHoldableComponent* UCarryComponent::FindInteractionItem() const
 {
     FHitResult Hit; FCollisionQueryParams Params(SCENE_QUERY_STAT(CarryInteract),false,GetOwner()); const FVector Start=GetOwner()->GetActorLocation();
     if(GetWorld()->SweepSingleByChannel(Hit,Start,Start+GetOwner()->GetActorForwardVector()*Reach-FVector(0,0,65),FQuat::Identity,ECC_Visibility,FCollisionShape::MakeSphere(35),Params))
-        if(Hit.GetActor()) return Hit.GetActor()->FindComponentByClass<UHoldableComponent>();
+        if(Hit.GetActor())
+        {
+            UE_LOG(LogTemp,Verbose,TEXT("Carry selection hit %s.%s"),*GetNameSafe(Hit.GetActor()),*GetNameSafe(Hit.GetComponent()));
+            return Hit.GetActor()->FindComponentByClass<UHoldableComponent>();
+        }
     return nullptr;
 }
 bool UCarryComponent::CanPickUp(const UHoldableComponent* Item) const
@@ -321,10 +415,31 @@ bool UCarryComponent::CanPlace() const
 void UCarryComponent::TickComponent(float Dt,ELevelTick Type,FActorComponentTickFunction* Fn)
 {
     Super::TickComponent(Dt,Type,Fn);
+    if(bFittedPlacing&&State==ECarryState::Placing) UpdateFittedPlace();
+    if(bCarryFeetPlanted&&GetOwner()->GetVelocity().SizeSquared()>9.f) bCarryFeetPlanted=false;
+    if(GetFittedProfile()&&State==ECarryState::PickingUp&&bHasLifted) GetHeldActor()->SetActorTransform(GetFittedPickupTransform());
+    if(bFittedReleasePending) { bFittedReleasePending=false; PerformThrowRelease(); }
     if(State==ECarryState::Idle) return;
     if(!IsValid(HeldItem)&&State!=ECarryState::Placing&&State!=ECarryState::Throwing) { AbortCarry(); return; }
     ACharacter* C=Cast<ACharacter>(GetOwner()); APlayerController* PC=C?Cast<APlayerController>(C->GetController()):nullptr;
     if(PC&&PC->IsMoveInputIgnored()) { AbortCarry(); return; }
+    // Fitted pickup holds its final pose until this handoff; never blend via idle.
+    if(State==ECarryState::PickingUp&&bContactOccurred&&!bAligningPickup)
+    {
+        const FHoldableItemRow* Row=GetFittedProfile(); UAnimInstance* Anim=C?C->GetMesh()->GetAnimInstance():nullptr;
+        if(Row&&ActiveMontage==Row->FittedPickupMontage&&Anim&&Anim->Montage_GetPosition(ActiveMontage)>=ActiveMontage->GetPlayLength()-.002f)
+            FinishAction();
+    }
+    if(bAligningPickup)
+    {
+        PickupAlignElapsed+=Dt; const float T=FMath::Clamp(PickupAlignElapsed/PickupAlignDuration,0.f,1.f);
+        const float RouteT=T*(PickupAlignRoute.Num()-1); const int32 Segment=FMath::Min(FMath::FloorToInt(RouteT),PickupAlignRoute.Num()-2);
+        const float Blend=FMath::Clamp(RouteT-Segment,0.f,1.f);
+        FTransform Next; Next.Blend(PickupAlignRoute[Segment],PickupAlignRoute[Segment+1],Blend*Blend*(3.f-2.f*Blend));
+        HeldItem->GetHoldMesh()->SetWorldTransform(Next);
+        if(T>=1.f) { bAligningPickup=false; if(bPickupContactPending) OnPickupContact(); }
+    }
+    if(bActionFinishPending) FinishAction();
     if(State==ECarryState::Aiming&&PC&&!FParse::Param(FCommandLine::Get(),TEXT("RenderOffscreen")))
     {
         const ULocalPlayer* Player=PC->GetLocalPlayer();
@@ -345,4 +460,47 @@ bool UCarryComponent::AllowsCombatAction_Implementation(FString& Reason) const
 {
     if(BlocksOtherActions()){Reason=TEXT("Carry interaction active");return false;}
     Reason.Reset();return true;
+}
+
+FTransform UCarryComponent::GetFittedPickupTransform() const
+{
+    const ACharacter* C=CastChecked<ACharacter>(GetOwner());
+    FTransform Target=HeldItem->CarryOffset*C->GetMesh()->GetComponentTransform();
+    Target.SetScale3D(PickupLiftStart.GetScale3D());
+    const float T=FMath::Clamp((GetWorld()->GetTimeSeconds()-PickupLiftStartTime)/PickupLiftSeconds,0.f,1.f);
+    FTransform Result; Result.Blend(PickupLiftStart,Target,T*T*(3.f-2.f*T)); return Result;
+}
+float UCarryComponent::GetFittedPickupAlpha() const
+{
+    if(State!=ECarryState::PickingUp||bAligningPickup) return 0.f;
+    const FHoldableItemRow* Row=GetFittedProfile();
+    if(Row&&Row->FittedPickupMontage)
+    {
+        if(bHasLifted) return 1.f;
+        const ACharacter* C=Cast<ACharacter>(GetOwner()); const UAnimInstance* Anim=C?C->GetMesh()->GetAnimInstance():nullptr;
+        return Anim&&ActiveMontage?FMath::Clamp((Anim->Montage_GetPosition(ActiveMontage)-.75f)/.25f,0.f,1.f):0.f;
+    }
+    return Row&&bHasLifted?FMath::Clamp((GetWorld()->GetTimeSeconds()-PickupLiftStartTime)/.10f,0.f,1.f):0.f;
+}
+void UCarryComponent::CaptureCarryFeet()
+{
+    if(const ACharacter* C=Cast<ACharacter>(GetOwner()))
+    { CarryFootWorld[0]=C->GetMesh()->GetSocketTransform(TEXT("foot_l")); CarryFootWorld[1]=C->GetMesh()->GetSocketTransform(TEXT("foot_r")); bCarryFeetPlanted=true; }
+}
+bool UCarryComponent::ShouldPlantCarryFeet() const
+{
+    const ACharacter* C=Cast<ACharacter>(GetOwner());
+    return bCarryFeetPlanted&&C&&FVector::DistSquared(CarryFootWorld[0].GetLocation(),C->GetMesh()->GetSocketLocation(TEXT("foot_l")))<FMath::Square(30.f)&&C->GetVelocity().SizeSquared()<9.f&&!C->GetCharacterMovement()->IsFalling()&&(State==ECarryState::Throwing||State==ECarryState::Idle||State==ECarryState::Carrying||State==ECarryState::PickingUp||State==ECarryState::Placing);
+}
+FTransform UCarryComponent::GetCarryFootTarget(bool bLeft) const
+{
+    const ACharacter* C=CastChecked<ACharacter>(GetOwner());
+    return CarryFootWorld[bLeft?0:1].GetRelativeTransform(C->GetMesh()->GetComponentTransform());
+}
+
+void UCarryComponent::StartFittedPickup()
+{
+    const FHoldableItemRow* Row=GetFittedProfile();
+    if(!Row||!Row->FittedPickupMontage) { AbortCarry(); return; }
+    StartAction(Row->FittedPickupMontage,1.f,2.5f);
 }

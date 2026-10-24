@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
 #include "CarryData.h"
@@ -21,6 +21,12 @@ class CONSTELLATION_API UCarryComponent : public UActorComponent, public ICombat
 {
     GENERATED_BODY()
 public:
+    bool ShouldPlantCarryFeet() const;
+    FTransform GetCarryFootTarget(bool bLeft) const;
+    float GetFittedPickupAlpha() const;
+    float GetFittedPlaceAlpha() const;
+
+    bool UsesFittedCarry() const { return GetFittedProfile()!=nullptr; }
     UCarryComponent();
     virtual bool AllowsCombatAction_Implementation(FString& Reason) const override;
     UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="Carry|Data", meta=(RowType="/Script/Constellation.CarrySettingsRow"))
@@ -43,6 +49,9 @@ public:
     UPROPERTY(VisibleInstanceOnly, BlueprintReadWrite, Category="Carry|Resolved") TObjectPtr<UAnimMontage> HoldMontage;
     UPROPERTY(VisibleInstanceOnly, BlueprintReadWrite, Category="Carry|Resolved") TObjectPtr<UAnimMontage> AimMontage;
     UPROPERTY(VisibleInstanceOnly, BlueprintReadWrite, Category="Carry|Resolved") TObjectPtr<UMaterialInterface> PreviewMaterial;
+    UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category="Carry|Resolved") float PickupActionSeconds = .75f;
+    UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category="Carry|Resolved") float PlaceActionSeconds = .75f;
+    UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category="Carry|Resolved") float ThrowActionSeconds = .75f;
     UPROPERTY(VisibleInstanceOnly, BlueprintReadWrite, Category="Carry|Resolved") float PickupPlayRate = 2.f;
     UPROPERTY(VisibleInstanceOnly, BlueprintReadWrite, Category="Carry|Resolved") float PlacePlayRate = 2.f;
     UPROPERTY(VisibleInstanceOnly, BlueprintReadWrite, Category="Carry|Resolved") float ThrowPlayRate = 1.f;
@@ -82,13 +91,36 @@ protected:
     virtual void EndPlay(const EEndPlayReason::Type Reason) override;
     virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 private:
+    bool bFittedPlacing=false, bPlaceReleasePending=false;
+    float PlaceStartTime=0;
+    FTransform PlaceStartTransform;
+    FTransform GetFittedPlaceTransform() const;
+    void UpdateFittedPlace();
+    bool bCarryFeetPlanted=false;
+    FTransform CarryFootWorld[2];
+    void CaptureCarryFeet();
+    FTransform GetFittedPickupTransform() const;
+    bool bPickupContactPending=false;
+    bool bAligningPickup=false, bPickupAlignmentTouched=false;
+    float PickupAlignElapsed=0;
+    FTransform PickupAlignStart, PickupAlignTarget;
+    TArray<FTransform> PickupAlignRoute;
+    float PickupAlignDuration=.4f;
+    void StartFittedPickup();
+    FTransform PickupLiftStart;
+    float PickupLiftStartTime=0, PickupLiftSeconds=.3f;
+
+    bool bActionFinishPending=false;
+    bool bFittedReleasePending=false;
+    void PerformThrowRelease();
+    const FHoldableItemRow* GetFittedProfile() const;
     friend class FCarryPlacementTest;
     UPROPERTY(Transient) TObjectPtr<UHoldableComponent> HeldItem;
     UPROPERTY(Transient) TObjectPtr<UStaticMeshComponent> PreviewMesh;
     UPROPERTY(Transient) TObjectPtr<UCarryNoticeWidget> Notice;
     UPROPERTY(Transient) TObjectPtr<UAnimMontage> ActiveMontage;
     void SetState(ECarryState Next);
-    void StartAction(UAnimMontage* Montage, float ContactTime, float Duration, float PlayRate = 1.f);
+    void StartAction(UAnimMontage* Montage, float ContactTime, float Duration);
     void ReleaseHeld(const FTransform& Transform, const FVector& Velocity, float Spin);
     bool CanReachItem(const UHoldableComponent* Item) const;
     bool FindPlace(FTransform& Transform) const;

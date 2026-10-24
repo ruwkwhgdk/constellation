@@ -1,4 +1,4 @@
-#if WITH_DEV_AUTOMATION_TESTS
+﻿#if WITH_DEV_AUTOMATION_TESTS
 #include "Misc/AutomationTest.h"
 #include "CarryComponent.h"
 #include "TimerManager.h"
@@ -11,6 +11,7 @@
 #include "Engine/World.h"
 #include "GameFramework/Character.h"
 #include "Components/CapsuleComponent.h"
+#include "Animation/AnimMontage.h"
 
 IMPLEMENT_SIMPLE_AUTOMATION_TEST(FCarryLifecycleTest, "Constellation.Carry.WeightOwnershipAndRecovery",
     EAutomationTestFlags::EditorContext | EAutomationTestFlags::EngineFilter)
@@ -86,6 +87,70 @@ bool FCarryPlacementTest::RunTest(const FString&)
     ACharacter* Character=World->SpawnActor<ACharacter>(FVector(0,0,100),FRotator::ZeroRotator);
     const float OriginalSpeed=Character->GetCharacterMovement()->MaxWalkSpeed;
     UCarryComponent* Carry=NewObject<UCarryComponent>(Character); Character->AddInstanceComponent(Carry); Carry->RegisterComponent();
+    // Both missing-animation and authored-montage paths use real action seconds.
+    for(ECarryState Action : {ECarryState::PickingUp,ECarryState::Placing,ECarryState::Throwing})
+    {
+        Carry->State=Action; Carry->StartAction(nullptr,1.f,3.f);
+        TestTrue(TEXT("Each long fallback action has a subsecond deadline"),FMath::IsNearlyEqual(World->GetTimerManager().GetTimerRemaining(Carry->FinishTimer),.75f));
+        Carry->AbortCarry();
+    }
+    // Fitted furniture aligns itself; the player stays at the interaction pose.
+    {
+        AActor* Prop=World->SpawnActor<AActor>(); UStaticMeshComponent* PM=NewObject<UStaticMeshComponent>(Prop);
+        Prop->SetRootComponent(PM); PM->SetStaticMesh(LoadObject<UStaticMesh>(nullptr,TEXT("/Engine/BasicShapes/Cube.Cube")));
+        PM->SetWorldScale3D(FVector(.2f)); PM->SetMobility(EComponentMobility::Movable);
+        PM->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics); PM->RegisterComponent(); PM->SetMassOverrideInKg(NAME_None,5,true);
+        Prop->SetActorLocation(FVector(80,-35,25));
+        UHoldableComponent* HC=NewObject<UHoldableComponent>(Prop); Prop->AddInstanceComponent(HC); HC->RegisterComponent();
+        UDataTable* Table=NewObject<UDataTable>(); Table->RowStruct=FHoldableItemRow::StaticStruct();
+        FHoldableItemRow Row; Row.FittedHoldMontage=NewObject<UAnimMontage>(); Row.FittedThrowMontage=NewObject<UAnimMontage>(); Row.FittedPickupMontage=NewObject<UAnimMontage>();
+        const FTransform Target(FRotator(0,90,0),FVector(95,0,25),FVector(.2f));
+        Row.FittedPickupMeshSpace=Target.GetRelativeTransform(Character->GetMesh()->GetComponentTransform());
+        Table->AddRow(TEXT("Pickup"),Row); HC->ItemRow.DataTable=Table; HC->ItemRow.RowName=TEXT("Pickup");
+        const FTransform PlayerStart=Character->GetActorTransform();
+        TestTrue(TEXT("Fitted pickup begins"),Carry->TryPickUp(HC));
+        TestTrue(TEXT("Pickup animation clock starts during furniture alignment"),World->GetTimerManager().IsTimerActive(Carry->ContactTimer));
+        TestTrue(TEXT("Pickup completes within one second"),World->GetTimerManager().GetTimerRemaining(Carry->FinishTimer)<=1.f);
+        TestEqual(TEXT("Alignment immediately disables collision"),PM->GetCollisionEnabled(),ECollisionEnabled::NoCollision);
+        for(int I=0;I<60;++I) Carry->TickComponent(.016f,LEVELTICK_All,&Carry->PrimaryComponentTick);
+        TestTrue(TEXT("Furniture aligns to authored ground pose"),Prop->GetActorTransform().Equals(Target,.1f));
+        TestTrue(TEXT("Alignment never moves player"),Character->GetActorTransform().Equals(PlayerStart));
+        Carry->AbortCarry();
+        Prop->SetActorLocationAndRotation(FVector(80,-35,25),FRotator::ZeroRotator);
+        AActor* AlignmentWall=Box(FVector(95,0,25),FVector(12,8,24));
+        TestTrue(TEXT("Non-colliding alignment accepts occupied target pose"),Carry->TryPickUp(HC));
+        Carry->OnPickupContact();
+        Carry->TickComponent(.3f,LEVELTICK_All,&Carry->PrimaryComponentTick);
+        TestTrue(TEXT("Occupied alignment completes contact without a second sight rejection"),Carry->bContactOccurred);
+        Carry->FinishAction();
+        TestEqual(TEXT("Occupied alignment reaches Carrying"),Carry->State,ECarryState::Carrying);
+        Carry->AbortCarry();
+        Prop->SetActorLocationAndRotation(FVector(80,-35,25),FRotator::ZeroRotator);
+        AlignmentWall->Destroy();
+        PM->SetSimulatePhysics(true);
+        TestTrue(TEXT("Physical furniture alignment begins"),Carry->TryPickUp(HC));
+        TestFalse(TEXT("Alignment pauses rigid simulation"),PM->IsSimulatingPhysics());
+        Carry->TickComponent(.1f,LEVELTICK_All,&Carry->PrimaryComponentTick);
+        Carry->AbortCarry();
+        TestTrue(TEXT("Cancel alignment restores rigid simulation"),PM->IsSimulatingPhysics());
+        TestTrue(TEXT("Cancel alignment preserves player position"),Character->GetActorTransform().Equals(PlayerStart));
+        Prop->SetActorLocationAndRotation(FVector(80,-35,25),FRotator::ZeroRotator);
+        TestTrue(TEXT("Alignment starts before moving blocker arrives"),Carry->TryPickUp(HC));
+        Carry->TickComponent(.1f,LEVELTICK_All,&Carry->PrimaryComponentTick);
+        AActor* MovingBlocker=Box(Prop->GetActorLocation(),FVector(12,12,12));
+        Carry->AbortCarry();
+        TestFalse(TEXT("Blocked cancel defers rigid simulation"),PM->IsSimulatingPhysics());
+        MovingBlocker->Destroy(); static_cast<UActorComponent*>(HC)->TickComponent(0,LEVELTICK_All,&HC->PrimaryComponentTick);
+        TestTrue(TEXT("Cleared cancel restores rigid simulation"),PM->IsSimulatingPhysics());
+        Prop->SetActorLocationAndRotation(FVector(80,-35,25),FRotator::ZeroRotator);
+        TestTrue(TEXT("Hitch recovery pickup begins"),Carry->TryPickUp(HC));
+        Carry->OnPickupContact();
+        TestTrue(TEXT("Early notify is queued during alignment"),Carry->bPickupContactPending);
+        Carry->TickComponent(.8f,LEVELTICK_All,&Carry->PrimaryComponentTick);
+        TestTrue(TEXT("Queued contact is consumed after alignment"),Carry->bContactOccurred&&!Carry->bPickupContactPending&&!Carry->bAligningPickup);
+        Carry->AbortCarry();
+        Prop->Destroy();
+    }
     // Furniture pivots sit at floor level and can settle slightly below it.
     AActor* Chair=World->SpawnActor<AActor>();
     UStaticMeshComponent* ChairMesh=NewObject<UStaticMeshComponent>(Chair);
@@ -98,6 +163,13 @@ bool FCarryPlacementTest::RunTest(const FString&)
     Chair->AddInstanceComponent(ChairHold); ChairHold->RegisterComponent();
     TestTrue(TEXT("Settled floor-pivot furniture remains selectable"),Carry->TryPickUp(ChairHold));
     Carry->AbortCarry();
+    UDataTable* GroundTable=NewObject<UDataTable>(); GroundTable->RowStruct=FHoldableItemRow::StaticStruct();
+    FHoldableItemRow GroundRow; GroundRow.FittedHoldMontage=NewObject<UAnimMontage>(); GroundRow.FittedThrowMontage=NewObject<UAnimMontage>(); GroundRow.FittedPickupMontage=NewObject<UAnimMontage>();
+    GroundRow.FittedPickupMeshSpace=FTransform(FRotator(0,90,0),FVector(110,0,.35)).GetRelativeTransform(Character->GetMesh()->GetComponentTransform());
+    GroundTable->AddRow(TEXT("Ground"),GroundRow); ChairHold->ItemRow.DataTable=GroundTable; ChairHold->ItemRow.RowName=TEXT("Ground");
+    Chair->SetActorLocation(FVector(100,0,-.1));
+    TestTrue(TEXT("Shallow settled furniture can align off floor support"),Carry->TryPickUp(ChairHold));
+    Carry->AbortCarry(); ChairHold->ItemRow=FDataTableRowHandle(); Chair->SetActorLocationAndRotation(FVector(100,0,-.01),FRotator::ZeroRotator);
     AActor* Occluder=Box(FVector(50,0,70),FVector(5,60,70));
     TestFalse(TEXT("Furniture behind a wall stays unselectable"),Carry->TryPickUp(ChairHold));
     Carry->AbortCarry(); Occluder->Destroy();
@@ -118,11 +190,19 @@ bool FCarryPlacementTest::RunTest(const FString&)
     Mesh->SetWorldScale3D(FVector(.4)); Mesh->SetMobility(EComponentMobility::Movable); Mesh->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
     Mesh->SetCollisionResponseToAllChannels(ECR_Block); Mesh->RegisterComponent(); Mesh->SetMassOverrideInKg(NAME_None,5,true); Item->SetActorLocation(FVector(80,0,19.95));
     UHoldableComponent* Holdable=NewObject<UHoldableComponent>(Item); Item->AddInstanceComponent(Holdable); Holdable->RegisterComponent();
+    Carry->bCarryFeetPlanted=true;
     TestTrue(TEXT("Ground item can be selected by interaction sweep"),Carry->HandleInteract());
-    TestEqual(TEXT("Double-speed pickup contact timer"),World->GetTimerManager().GetTimerRemaining(Carry->ContactTimer),.225f);
-    TestEqual(TEXT("Double-speed pickup finish timer"),World->GetTimerManager().GetTimerRemaining(Carry->FinishTimer),.45f);
+    TestFalse(TEXT("New pickup clears previous throw foot anchors"),Carry->bCarryFeetPlanted);
+    TestEqual(TEXT("Pickup contact follows target duration"),World->GetTimerManager().GetTimerRemaining(Carry->ContactTimer),.375f);
+    TestEqual(TEXT("Pickup finish follows target duration"),World->GetTimerManager().GetTimerRemaining(Carry->FinishTimer),.75f);
     Carry->OnPickupContact(); Carry->FinishAction();
     TestEqual(TEXT("Ground item is held"),Carry->GetHeldActor(),Item);
+    UDataTable* FittedTable=NewObject<UDataTable>(); FittedTable->RowStruct=FHoldableItemRow::StaticStruct();
+    FHoldableItemRow Fitted; Fitted.FittedThrowMontage=NewObject<UAnimMontage>(); Fitted.FittedHoldMontage=NewObject<UAnimMontage>();
+    FittedTable->AddRow(TEXT("Fitted"),Fitted); Holdable->ItemRow.DataTable=FittedTable; Holdable->ItemRow.RowName=TEXT("Fitted");
+    Carry->State=ECarryState::Throwing;
+    TestTrue(TEXT("Fitted throw releases at visible prop transform without teleport"),Carry->GetReleaseTransform().Equals(Mesh->GetComponentTransform()));
+    Holdable->ItemRow=FDataTableRowHandle(); Carry->State=ECarryState::Carrying;
     TestEqual(TEXT("Carrying retains the character's normal walking speed"),Character->GetCharacterMovement()->MaxWalkSpeed,OriginalSpeed);
     FHitResult SupportHit;
     TestTrue(TEXT("Lifting away from exact floor contact is allowed"),
@@ -138,8 +218,8 @@ bool FCarryPlacementTest::RunTest(const FString&)
         Carry->IsPathFree(FVector(80,0,20),FVector(180,0,130),FQuat::Identity,SupportHit));
     LiftWall->Destroy();
     TestTrue(TEXT("Clear floor allows placing"),Carry->TryPlace());
-    TestEqual(TEXT("Double-speed place contact timer"),World->GetTimerManager().GetTimerRemaining(Carry->ContactTimer),.275f);
-    TestEqual(TEXT("Double-speed place finish timer"),World->GetTimerManager().GetTimerRemaining(Carry->FinishTimer),.5f);
+    TestEqual(TEXT("Place contact follows target duration"),World->GetTimerManager().GetTimerRemaining(Carry->ContactTimer),.4125f);
+    TestEqual(TEXT("Place finish follows target duration"),World->GetTimerManager().GetTimerRemaining(Carry->FinishTimer),.75f);
     AActor* Obstacle=Box(FVector(82,0,23),FVector(22,22,22));
     Carry->OnPlaceRelease(); Carry->FinishAction();
     TestEqual(TEXT("New obstacle must retain held item instead of stacking on it"),Carry->GetHeldActor(),Item);

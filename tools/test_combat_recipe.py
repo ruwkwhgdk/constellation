@@ -4,7 +4,7 @@ from combat_recipe import validate_recipe, load_recipe
 
 def recipe():
     return {"schema_version":1,"id":"SlimeScout_v1",
-            "mesh":"/Game/Constellation/Characters/Enemies/Slime_Normal/SKM_Slime_Normal",
+            "mesh":"/Game/Constellation/Characters/Enemies/Slime_Liquid/SKM_Slime_Liquid",
             "actions":[{"id":"Light","source":"/Game/Constellation/Review/CombatCore/DA_EnemyStrike","values":{"damage":12}}],
             "patterns":[{"id":"Light","action":"Light","max_consecutive":0}],
             "encounter":{}}

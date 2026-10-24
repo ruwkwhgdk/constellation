@@ -3,7 +3,7 @@
   "kind": "ConstellationCombatAuthoringManifest",
   "id": "CombatTool_Tuned_v1",
   "complete": true,
-  "recipe_sha256": "31568380e7c221080dade5aad818334ec72104aca8ec9302ac7f8089bfb498ec",
+  "recipe_sha256": "47c1087d364ce9bb35f7dca24e980d1ae6eed7d8ac9911eb5bc729e9091a634b",
   "actors": {
     "/Game/Constellation/Review/CombatRecipes/CombatTool_Tuned_v1/L_Preview/CombatLabCharacter_0": {
       "role": "player",
@@ -22,7 +22,7 @@
     "/Game/Constellation/Review/CombatRecipes/CombatTool_Tuned_v1/L_Preview/CombatLabCharacter_1": {
       "role": "monster",
       "id": "Scout",
-      "signature": "/Game/Constellation/Characters/Enemies/Slime_Normal/SKM_Slime_Normal.SKM_Slime_Normal|/Game/Constellation/Review/CombatRecipes/CombatTool_Tuned_v1/DA_Heavy.DA_Heavy|/Game/Constellation/Review/CombatRecipes/CombatTool_Tuned_v1/DA_Patterns.DA_Patterns|/Game/Constellation/Review/CombatRecipes/CombatTool_Tuned_v1/DA_Encounter.DA_Encounter|pattern:Light=/Game/Constellation/Review/CombatRecipes/CombatTool_Tuned_v1/DA_Light.DA_Light|pattern:Heavy=/Game/Constellation/Review/CombatRecipes/CombatTool_Tuned_v1/DA_Heavy.DA_Heavy|/Game/Constellation/Review/CombatRecipes/CombatTool_Tuned_v1/DA_Heavy.DA_Heavy|/Game/Constellation/Review/CombatRecipes/CombatTool_Tuned_v1/DA_Light.DA_Light",
+      "signature": "/Game/Constellation/Characters/Enemies/Slime_Liquid/SKM_Slime_Liquid.SKM_Slime_Liquid|/Game/Constellation/Review/CombatRecipes/CombatTool_Tuned_v1/DA_Heavy.DA_Heavy|/Game/Constellation/Review/CombatRecipes/CombatTool_Tuned_v1/DA_Patterns.DA_Patterns|/Game/Constellation/Review/CombatRecipes/CombatTool_Tuned_v1/DA_Encounter.DA_Encounter|pattern:Light=/Game/Constellation/Review/CombatRecipes/CombatTool_Tuned_v1/DA_Light.DA_Light|pattern:Heavy=/Game/Constellation/Review/CombatRecipes/CombatTool_Tuned_v1/DA_Heavy.DA_Heavy|/Game/Constellation/Review/CombatRecipes/CombatTool_Tuned_v1/DA_Heavy.DA_Heavy|/Game/Constellation/Review/CombatRecipes/CombatTool_Tuned_v1/DA_Light.DA_Light",
       "actions": {
         "/Game/Constellation/Review/CombatRecipes/CombatTool_Tuned_v1/DA_Heavy.DA_Heavy": "Heavy",
         "/Game/Constellation/Review/CombatRecipes/CombatTool_Tuned_v1/DA_Light.DA_Light": "Light"
@@ -36,7 +36,7 @@
     "/Game/Constellation/Review/CombatRecipes/CombatTool_Tuned_v1/L_Preview/CombatLabCharacter_2": {
       "role": "monster",
       "id": "Guard",
-      "signature": "/Game/Constellation/Characters/Enemies/Slime_Normal/SKM_Slime_Normal.SKM_Slime_Normal|/Game/Constellation/Review/CombatRecipes/CombatTool_Tuned_v1/Enemies/Guard/DA_Heavy.DA_Heavy|/Game/Constellation/Review/CombatRecipes/CombatTool_Tuned_v1/Enemies/Guard/DA_Patterns.DA_Patterns|/Game/Constellation/Review/CombatRecipes/CombatTool_Tuned_v1/Enemies/Guard/DA_Encounter.DA_Encounter|pattern:Light=/Game/Constellation/Review/CombatRecipes/CombatTool_Tuned_v1/Enemies/Guard/DA_Light.DA_Light|pattern:Heavy=/Game/Constellation/Review/CombatRecipes/CombatTool_Tuned_v1/Enemies/Guard/DA_Heavy.DA_Heavy|/Game/Constellation/Review/CombatRecipes/CombatTool_Tuned_v1/Enemies/Guard/DA_Heavy.DA_Heavy|/Game/Constellation/Review/CombatRecipes/CombatTool_Tuned_v1/Enemies/Guard/DA_Light.DA_Light",
+      "signature": "/Game/Constellation/Characters/Enemies/Slime_Liquid/SKM_Slime_Liquid.SKM_Slime_Liquid|/Game/Constellation/Review/CombatRecipes/CombatTool_Tuned_v1/Enemies/Guard/DA_Heavy.DA_Heavy|/Game/Constellation/Review/CombatRecipes/CombatTool_Tuned_v1/Enemies/Guard/DA_Patterns.DA_Patterns|/Game/Constellation/Review/CombatRecipes/CombatTool_Tuned_v1/Enemies/Guard/DA_Encounter.DA_Encounter|pattern:Light=/Game/Constellation/Review/CombatRecipes/CombatTool_Tuned_v1/Enemies/Guard/DA_Light.DA_Light|pattern:Heavy=/Game/Constellation/Review/CombatRecipes/CombatTool_Tuned_v1/Enemies/Guard/DA_Heavy.DA_Heavy|/Game/Constellation/Review/CombatRecipes/CombatTool_Tuned_v1/Enemies/Guard/DA_Heavy.DA_Heavy|/Game/Constellation/Review/CombatRecipes/CombatTool_Tuned_v1/Enemies/Guard/DA_Light.DA_Light",
       "actions": {
         "/Game/Constellation/Review/CombatRecipes/CombatTool_Tuned_v1/Enemies/Guard/DA_Heavy.DA_Heavy": "Heavy",
         "/Game/Constellation/Review/CombatRecipes/CombatTool_Tuned_v1/Enemies/Guard/DA_Light.DA_Light": "Light"
@@ -50,7 +50,7 @@
     "/Game/Constellation/Review/CombatRecipes/CombatTool_Tuned_v1/L_Preview/CombatLabCharacter_3": {
       "role": "monster",
       "id": "Flanker",
-      "signature": "/Game/Constellation/Characters/Enemies/Slime_Normal/SKM_Slime_Normal.SKM_Slime_Normal|/Game/Constellation/Review/CombatRecipes/CombatTool_Tuned_v1/DA_Heavy.DA_Heavy|/Game/Constellation/Review/CombatRecipes/CombatTool_Tuned_v1/DA_Patterns.DA_Patterns|/Game/Constellation/Review/CombatRecipes/CombatTool_Tuned_v1/DA_Encounter.DA_Encounter|pattern:Light=/Game/Constellation/Review/CombatRecipes/CombatTool_Tuned_v1/DA_Light.DA_Light|pattern:Heavy=/Game/Constellation/Review/CombatRecipes/CombatTool_Tuned_v1/DA_Heavy.DA_Heavy|/Game/Constellation/Review/CombatRecipes/CombatTool_Tuned_v1/DA_Heavy.DA_Heavy|/Game/Constellation/Review/CombatRecipes/CombatTool_Tuned_v1/DA_Light.DA_Light",
+      "signature": "/Game/Constellation/Characters/Enemies/Slime_Liquid/SKM_Slime_Liquid.SKM_Slime_Liquid|/Game/Constellation/Review/CombatRecipes/CombatTool_Tuned_v1/DA_Heavy.DA_Heavy|/Game/Constellation/Review/CombatRecipes/CombatTool_Tuned_v1/DA_Patterns.DA_Patterns|/Game/Constellation/Review/CombatRecipes/CombatTool_Tuned_v1/DA_Encounter.DA_Encounter|pattern:Light=/Game/Constellation/Review/CombatRecipes/CombatTool_Tuned_v1/DA_Light.DA_Light|pattern:Heavy=/Game/Constellation/Review/CombatRecipes/CombatTool_Tuned_v1/DA_Heavy.DA_Heavy|/Game/Constellation/Review/CombatRecipes/CombatTool_Tuned_v1/DA_Heavy.DA_Heavy|/Game/Constellation/Review/CombatRecipes/CombatTool_Tuned_v1/DA_Light.DA_Light",
       "actions": {
         "/Game/Constellation/Review/CombatRecipes/CombatTool_Tuned_v1/DA_Heavy.DA_Heavy": "Heavy",
         "/Game/Constellation/Review/CombatRecipes/CombatTool_Tuned_v1/DA_Light.DA_Light": "Light"

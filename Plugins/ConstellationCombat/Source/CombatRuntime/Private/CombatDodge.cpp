@@ -35,7 +35,16 @@ bool UCombatAbilitySystem::TryDodge(FVector Direction)
         !FMath::IsFinite(DodgeStaminaCost) || DodgeStaminaCost<0 || !FMath::IsFinite(DodgeInvulnerableStart) ||
         !FMath::IsFinite(DodgeInvulnerableEnd) || DodgeInvulnerableStart<0 || DodgeInvulnerableEnd<=DodgeInvulnerableStart || DodgeInvulnerableEnd>DodgeDuration)
         { LastReason=TEXT("Invalid dodge settings"); return false; }
-    if(GetStamina()<DodgeStaminaCost) { LastReason=TEXT("Not enough stamina"); return false; }
+    if(GetStamina()<DodgeStaminaCost)
+    {
+        LastReason=TEXT("Not enough stamina");
+        const auto* Candidate=Cast<ACharacter>(GetAvatarActor());
+        const auto* CandidateMovement=Candidate?Candidate->GetCharacterMovement():nullptr;
+        // Do not flash stamina for attempts that would also fail ground or direction validation.
+        if(CandidateMovement && CandidateMovement->IsMovingOnGround() && !Direction.ContainsNaN())
+            OnStaminaActionRejected.Broadcast();
+        return false;
+    }
     auto* Character=Cast<ACharacter>(GetAvatarActor());
     auto* Movement=Character?Character->GetCharacterMovement():nullptr;
     if(!Movement || !Movement->IsMovingOnGround()) { LastReason=TEXT("Dodge requires ground"); return false; }
@@ -49,9 +58,14 @@ bool UCombatAbilitySystem::TryDodge(FVector Direction)
     if(IsActing())
     {
         CancelAction();
-        if(!IsValid(Character) || !IsValid(Movement) || bDead || GetHealth()<=0 || IsActing() ||
-            IsHitReacting() || bResolvingDamage || !Movement->IsMovingOnGround() || GetStamina()<Cost)
-            {LastReason=TEXT("Dodge transition interrupted");return false;}
+        const bool bTransitionReady=IsValid(Character) && IsValid(Movement) && !bDead && !(GetHealth()<=0) && !IsActing() &&
+            !IsHitReacting() && !bResolvingDamage && Movement->IsMovingOnGround();
+        if(!bTransitionReady || GetStamina()<Cost)
+        {
+            LastReason=TEXT("Dodge transition interrupted");
+            if(bTransitionReady && GetStamina()<Cost) OnStaminaActionRejected.Broadcast();
+            return false;
+        }
     }
     auto Motion=MakeShared<FRootMotionSource_ConstantForce>();
     Motion->InstanceName=TEXT("CombatDodge"); Motion->Priority=500;

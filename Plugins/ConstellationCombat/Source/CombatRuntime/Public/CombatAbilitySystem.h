@@ -13,6 +13,7 @@ enum class ECombatActionResult : uint8 { Succeeded, Cancelled, Failed };
 DECLARE_MULTICAST_DELEGATE_TwoParams(FCombatActionEnded, uint64, ECombatActionResult);
 DECLARE_MULTICAST_DELEGATE(FCombatDied);
 DECLARE_MULTICAST_DELEGATE(FCombatHitReceived);
+DECLARE_MULTICAST_DELEGATE(FCombatStaminaRejected);
 struct FCombatAcceptedDamage
 {
     TWeakObjectPtr<AActor> Source;
@@ -73,6 +74,8 @@ public:
     FCombatWindowChanged OnHitWindowOpened;
     FCombatWindowChanged OnHitWindowClosed;
     FCombatHitReceived OnDodgeStarted;
+    // Cosmetic notification for an actual attempt blocked only by stamina; queries remain silent.
+    FCombatStaminaRejected OnStaminaActionRejected;
     UFUNCTION(BlueprintCallable, Category="Combat") bool TryDodge(FVector Direction);
     UFUNCTION(BlueprintCallable, Category="Combat") void CancelDodge();
     UFUNCTION(BlueprintPure, Category="Combat") bool IsDodging() const { return bDodging; }
@@ -107,6 +110,7 @@ public:
 protected:
     virtual void EndPlay(const EEndPlayReason::Type Reason) override;
 private:
+    bool CanStartInternal(const UCombatActionDefinition* Action, FString& Reason, bool bCheckStamina) const;
     UPROPERTY() TObjectPtr<UCombatAttributes> Attributes;
     UPROPERTY() TObjectPtr<UCombatActionAbility> ActiveAbility;
     UPROPERTY() TObjectPtr<UCombatActionDefinition> ActiveAction;

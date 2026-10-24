@@ -8,5 +8,5 @@ for path in ['/Game/Constellation/Characters/Enemies/Slime_Normal/Animation/AS_S
  out[path]=poses
 bp=u.load_asset('/Game/Constellation/Characters/Enemies/Blueprints/BP_Slime_Base');cdo=u.get_default_object(bp.generated_class());cap=cdo.get_component_by_class(u.CapsuleComponent)
 out['sourcecap']=[cap.get_scaled_capsule_radius(),cap.get_scaled_capsule_half_height()]
-sk=u.load_asset('/Game/Constellation/Characters/Enemies/Slime_Normal/SKM_Slime_Normal');out['skeletal_mesh_skeleton']=str(sk.get_editor_property('skeleton'));out['physics']=str(sk.get_editor_property('physics_asset'))
+sk=u.load_asset('/Game/Constellation/Characters/Enemies/Slime_Liquid/SKM_Slime_Liquid');out['skeletal_mesh_skeleton']=str(sk.get_editor_property('skeleton'));out['physics']=str(sk.get_editor_property('physics_asset'))
 Path(u.Paths.project_dir(),'Saved/VFXImplementation/slime-bone-audit.json').write_text(json.dumps(out,indent=2),encoding='utf8')

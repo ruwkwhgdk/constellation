@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "SlimeScout_v2",
-  "mesh": "/Game/Constellation/Characters/Enemies/Slime_Normal/SKM_Slime_Normal",
+  "mesh": "/Game/Constellation/Characters/Enemies/Slime_Liquid/SKM_Slime_Liquid",
   "actions": [
     {
       "id": "Heavy",

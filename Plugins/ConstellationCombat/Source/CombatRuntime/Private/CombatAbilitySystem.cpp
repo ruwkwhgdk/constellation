@@ -51,6 +51,10 @@ float UCombatAbilitySystem::GetMaxHealth() const { return Attributes ? Attribute
 float UCombatAbilitySystem::GetMaxStamina() const { return Attributes ? Attributes->GetMaxStamina() : (FMath::IsFinite(MaxStamina) && MaxStamina > 0.f ? MaxStamina : 100.f); }
 bool UCombatAbilitySystem::CanStart(const UCombatActionDefinition* Action, FString& Reason) const
 {
+    return CanStartInternal(Action,Reason,true);
+}
+bool UCombatAbilitySystem::CanStartInternal(const UCombatActionDefinition* Action, FString& Reason, bool bCheckStamina) const
+{
     if (!bInitialized || !GetOwner() || !GetOwner()->HasAuthority()) { Reason = TEXT("Not initialized or not authority"); return false; }
     if (bCommittingResources) {Reason=TEXT("Resource commit in progress");return false;}
     if (bDead || GetHealth() <= 0.f) { Reason = TEXT("Dead"); return false; }
@@ -62,7 +66,7 @@ bool UCombatAbilitySystem::CanStart(const UCombatActionDefinition* Action, FStri
     if (!AllowsExternalAction(Reason)) return false;
     if (!Action || !Action->Validate(Reason)) return false;
     if (GetUltimateCharge() < Action->UltimateCost) {Reason=TEXT("Not enough ultimate charge");return false;}
-    if (GetStamina() < Action->StaminaCost) { Reason = TEXT("Not enough stamina"); return false; }
+    if (bCheckStamina && GetStamina() < Action->StaminaCost) { Reason = TEXT("Not enough stamina"); return false; }
     if (const double* End = Cooldowns.Find(Action); End && GetWorld()->GetTimeSeconds() < *End)
         { Reason = TEXT("Cooldown"); return false; }
     const ACharacter* Character = Cast<ACharacter>(GetAvatarActor());
@@ -75,7 +79,14 @@ bool UCombatAbilitySystem::CanStart(const UCombatActionDefinition* Action, FStri
 }
 bool UCombatAbilitySystem::TryStartAction(UCombatActionDefinition* Action)
 {
-    if (!CanStart(Action, LastReason)) return false;
+    if (!CanStart(Action, LastReason))
+    {
+        // Keep the original failure precedence and reason; inspect later gates only for presentation.
+        FString OtherReason;
+        if (LastReason==TEXT("Not enough stamina") && CanStartInternal(Action,OtherReason,false))
+            OnStaminaActionRejected.Broadcast();
+        return false;
+    }
     FGameplayAbilitySpecHandle* Existing = GrantedActions.Find(Action);
     FGameplayAbilitySpecHandle Handle;
     if (Existing) Handle = *Existing;

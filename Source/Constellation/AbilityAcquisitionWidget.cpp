@@ -31,5 +31,6 @@ int32 UAbilityAcquisitionWidget::NativePaint(const FPaintArgs& Args,const FGeome
  FSlateDrawElement::MakeBox(Out,Layer++,C.ToPaintGeometry(FVector2D(5,5),FSlateLayoutTransform(FVector2D(957.5,836))),FCoreStyle::Get().GetBrush("WhiteBrush"),ESlateDrawEffect::None,Divider);
  FString Body=Art->Description(Slot).ToString().Replace(TEXT("\\n"),TEXT("\n"));TArray<FString> Lines;Body.ParseIntoArrayLines(Lines,false);for(int32 I=0;I<Lines.Num();I++)Text(Lines[I],896+43*I,25,FLinearColor(FColor(236,226,201)),Words);
  if(Elapsed>=6.2)Text(TEXT("Press Any Key"),1010,22,FLinearColor(FColor(216,199,153)),.4f+.6f*(.5f+.5f*FMath::Cos(Elapsed*2.4)),true);
+ if(WhiteOpacity>0)FSlateDrawElement::MakeBox(Out,Layer++,G.ToPaintGeometry(),FCoreStyle::Get().GetBrush("WhiteBrush"),ESlateDrawEffect::None,FLinearColor(1,1,1,WhiteOpacity));
  return Layer;
 }

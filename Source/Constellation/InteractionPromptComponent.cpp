@@ -1,4 +1,5 @@
 #include "InteractionPromptComponent.h"
+#include "InteractionAvailabilityComponent.h"
 #include "InteractionPromptWidget.h"
 #include "Internationalization/StringTable.h"
 #include "Internationalization/StringTableCore.h"
@@ -32,7 +33,7 @@ UInteractionPromptComponent::UInteractionPromptComponent()
 }
 EInteractionAction UInteractionPromptComponent::GetTargetAction(AActor* Target, UPrimitiveComponent* HitComponent) const
 {
-    if(!IsValid(Target) || Target->IsHidden()) return EInteractionAction::None;
+    if(!UInteractionAvailabilityComponent::CanActorInteract(Target)) return EInteractionAction::None;
     for(const FInteractionPromptRule& Rule:Rules)
     {
         if(!Rule.ActorClass || !Target->IsA(Rule.ActorClass)) continue;

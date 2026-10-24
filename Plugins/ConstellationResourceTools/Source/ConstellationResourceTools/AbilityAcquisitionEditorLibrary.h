@@ -8,4 +8,6 @@ class UAbilityAcquisitionEditorLibrary : public UBlueprintFunctionLibrary
  GENERATED_BODY()
 public:
  UFUNCTION(BlueprintCallable,Category="Editor|Ability UI") static bool InstallAcquisitionHooks(UBlueprint* Blueprint,FString& Error);
+ UFUNCTION(BlueprintCallable,Category="Editor|Ability UI") static bool InstallJumpInteractionRoute(UBlueprint* Blueprint,FString& Error);
+ UFUNCTION(BlueprintCallable,Category="Editor|Ability UI") static bool EnsureSceneInteractionComponent(AActor* Source);
 };

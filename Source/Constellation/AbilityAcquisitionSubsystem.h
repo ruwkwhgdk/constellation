@@ -4,6 +4,7 @@
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "AbilityAcquisitionSubsystem.generated.h"
 class UAbilityAcquisitionWidget;class UAbilityAcquisitionArt;class UActorComponent;class IInputProcessor;class SWidget;
+class ASceneDirectorPlayer;
 struct FAbilityAcquisitionRequest{int32 Slot=0,Mask=0;};
 UCLASS()
 class CONSTELLATION_API UAbilityAcquisitionSubsystem : public UTickableWorldSubsystem
@@ -15,9 +16,13 @@ public:
  virtual bool IsTickableWhenPaused()const override{return true;}
  virtual void Deinitialize()override;
  void Enqueue(int32 Slot,int32 PreviousMask);
- void Dismiss(bool Repeat);
- bool IsPresenting()const{return Widget!=nullptr;}
+ UFUNCTION(BlueprintCallable,Category="Ability UI") void Dismiss(bool Repeat);
+ UFUNCTION(BlueprintPure,Category="Ability UI") bool IsPresenting()const{return Widget!=nullptr;}
  int32 PendingCount()const{return Requests.Num();}
+ // Explicit lease: ordinary queued acquisitions still wait until cinematics finish.
+ bool PresentForScene(ASceneDirectorPlayer* Scene,int32 Slot,int32 PreviousMask);
+ void CancelScene(ASceneDirectorPlayer* Scene);
+ bool GrantPresentedAbility(UActorComponent* Component,int32 Slot);
  UFUNCTION(BlueprintCallable,Category="Ability UI") void Preview(int32 Slot,int32 PreviousMask);
 protected:
  virtual bool DoesSupportWorldType(EWorldType::Type Type)const override{return Type==EWorldType::Game||Type==EWorldType::PIE;}
@@ -31,6 +36,8 @@ private:
  double Started=0,ExitStarted=-1,NotBefore=0;
  bool PausedByUs=false,OldCursor=false;
  int32 SoundStage=0;
+ TWeakObjectPtr<ASceneDirectorPlayer> SceneOwner;
+ bool bSuppressEnqueue=false;
  void Finish();void PlayCue(int32 Index);
 };
 UCLASS()

@@ -10,6 +10,7 @@ class CONSTELLATION_API UAbilityAcquisitionWidget : public UUserWidget
 public:
  UPROPERTY() TObjectPtr<UAbilityAcquisitionArt> Art;
  int32 Slot=0;int32 OwnedMask=0;double Elapsed=0;float ExitOpacity=1;
+ float WhiteOpacity=0;
 protected:
  virtual TSharedRef<SWidget> RebuildWidget() override;
  virtual int32 NativePaint(const FPaintArgs&,const FGeometry&,const FSlateRect&,FSlateWindowElementList&,int32,const FWidgetStyle&,bool) const override;

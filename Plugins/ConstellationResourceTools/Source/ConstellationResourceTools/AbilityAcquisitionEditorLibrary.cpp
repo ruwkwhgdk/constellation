@@ -7,6 +7,30 @@
 #include "K2Node_Self.h"
 #include "Kismet2/BlueprintEditorUtils.h"
 #include "Kismet2/KismetEditorUtilities.h"
+#include "K2Node_Event.h"
+#include "K2Node_IfThenElse.h"
+#include "SceneDirectorInteractionComponent.h"
+bool UAbilityAcquisitionEditorLibrary::EnsureSceneInteractionComponent(AActor* Source)
+{
+ if(!Source)return false;if(Source->FindComponentByClass<USceneDirectorInteractionComponent>())return true;
+ Source->Modify();auto* C=NewObject<USceneDirectorInteractionComponent>(Source,TEXT("Ac_SceneDirectorInteraction"),RF_Transactional);Source->AddInstanceComponent(C);C->RegisterComponent();Source->MarkPackageDirty();return true;
+}
+bool UAbilityAcquisitionEditorLibrary::InstallJumpInteractionRoute(UBlueprint* BP,FString& Error)
+{
+ if(!BP){Error=TEXT("No blueprint");return false;}
+ auto* G=FBlueprintEditorUtils::FindEventGraph(BP);if(!G){Error=TEXT("No event graph");return false;}
+ for(UEdGraphNode* N:G->Nodes)if(N->NodeComment==TEXT("JumpAcquisition.Route"))return true;
+ UK2Node_Event* Event=nullptr;for(UEdGraphNode* N:G->Nodes)if(auto* E=Cast<UK2Node_Event>(N);E&&E->EventReference.GetMemberName()==TEXT("Interact"))Event=E;
+ auto* Then=Event?Event->FindPin(UEdGraphSchema_K2::PN_Then):nullptr;
+ if(!Then||Then->LinkedTo.Num()!=1||!Event->FindPin(TEXT("Interactor"))){Error=TEXT("Unexpected Interact schema");return false;}
+ auto* Original=Then->LinkedTo[0];BP->Modify();G->Modify();
+ auto Add=[&](UEdGraphNode* N,int Y){G->AddNode(N,false,false);N->CreateNewGuid();N->PostPlacedNewNode();N->AllocateDefaultPins();N->NodePosX=Event->NodePosX+300;N->NodePosY=Event->NodePosY+Y;};
+ auto* Call=NewObject<UK2Node_CallFunction>(G);Call->SetFromFunction(USceneDirectorInteractionComponent::StaticClass()->FindFunctionByName(TEXT("RouteInteraction")));Add(Call,-350);Call->NodeComment=TEXT("JumpAcquisition.Route");
+ auto* Self=NewObject<UK2Node_Self>(G);Add(Self,-150);auto* Branch=NewObject<UK2Node_IfThenElse>(G);Add(Branch,-550);
+ bool OK=true;auto Link=[&](UEdGraphPin* A,UEdGraphPin* B){if(!A||!B||!G->GetSchema()->TryCreateConnection(A,B))OK=false;};
+ Then->BreakLinkTo(Original);Link(Then,Call->GetExecPin());Link(Self->FindPin(UEdGraphSchema_K2::PN_Self),Call->FindPin(TEXT("Owner")));Link(Event->FindPin(TEXT("Interactor")),Call->FindPin(TEXT("Interactor")));Link(Call->GetThenPin(),Branch->GetExecPin());Link(Call->GetReturnValuePin(),Branch->GetConditionPin());Link(Branch->GetElsePin(),Original);
+ if(!OK){Error=TEXT("Route pins failed; do not save");return false;}FBlueprintEditorUtils::MarkBlueprintAsStructurallyModified(BP);FKismetEditorUtilities::CompileBlueprint(BP);if(BP->Status==BS_Error){Error=TEXT("Compile failed");return false;}return true;
+}
 bool UAbilityAcquisitionEditorLibrary::InstallAcquisitionHooks(UBlueprint* BP,FString& Error)
 {
  if(!BP){Error=TEXT("Missing blueprint");return false;}

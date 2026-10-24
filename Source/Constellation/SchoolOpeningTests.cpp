@@ -15,6 +15,35 @@ bool FSchoolOpeningContractTest::RunTest(const FString&)
 #include "TutorialPromptWidget.h"
 #include "Engine/Engine.h"
 #include "Engine/World.h"
+#include "SceneDirectorTesting.h"
+IMPLEMENT_SIMPLE_AUTOMATION_TEST(FSchoolOpeningSkipTest,"Constellation.SchoolOpening.SkipBootstrap",EAutomationTestFlags::EditorContext|EAutomationTestFlags::EngineFilter)
+bool FSchoolOpeningSkipTest::RunTest(const FString&)
+{
+ const bool WasSkipped=DirectorTesting::IsSkipEnabled();
+ DirectorTesting::SetSkipEnabled(true);
+ auto* World=UWorld::CreateWorld(EWorldType::PIE,false);
+ GEngine->CreateNewWorldContext(EWorldType::PIE).SetCurrentWorld(World);
+ World->InitializeActorsForPlay(FURL());
+ auto* Stage=World->SpawnActor<ASchoolOpeningSceneActor>();
+ Stage->DispatchBeginPlay();
+ TestFalse(TEXT("Skipped opening does not gate gameplay/tutorials"),Stage->bPending);
+ TestFalse(TEXT("Skipping does not mark story completed"),Stage->bCompleted);
+ TestFalse(TEXT("Skipping never installs the mask above the minimap"),Stage->EyeMask.IsValid());
+ TestEqual(TEXT("Skipped opening is fully uncovered"),Stage->EyeOpen,1.f);
+ Stage->Tick(46.f);
+ TestFalse(TEXT("No bootstrap timeout remains armed"),Stage->bPending);
+ GEngine->DestroyWorldContext(World);World->DestroyWorld(false);
+ DirectorTesting::SetSkipEnabled(false);
+ World=UWorld::CreateWorld(EWorldType::Game,false);
+ GEngine->CreateNewWorldContext(EWorldType::Game).SetCurrentWorld(World);
+ World->InitializeActorsForPlay(FURL());
+ Stage=World->SpawnActor<ASchoolOpeningSceneActor>();Stage->DispatchBeginPlay();
+ TestTrue(TEXT("Normal opening still waits for its graph"),Stage->bPending);
+ TestEqual(TEXT("Normal opening starts with closed eyes"),Stage->EyeOpen,0.f);
+ GEngine->DestroyWorldContext(World);World->DestroyWorld(false);
+ DirectorTesting::SetSkipEnabled(WasSkipped);
+ return true;
+}
 IMPLEMENT_SIMPLE_AUTOMATION_TEST(FSchoolOpeningTutorialRetryTest,"Constellation.SchoolOpening.TutorialRetry",EAutomationTestFlags::EditorContext|EAutomationTestFlags::EngineFilter)
 bool FSchoolOpeningTutorialRetryTest::RunTest(const FString&)
 {

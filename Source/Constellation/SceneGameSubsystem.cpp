@@ -1,6 +1,8 @@
-﻿#include "SceneGameSubsystem.h"
+#include "SceneGameSubsystem.h"
+#include "SceneDirectorTesting.h"
 #include "SceneEventSubsystem.h"
 #include "ConstellationSaveGame.h"
+#include "MinimapExplorationSubsystem.h"
 #include "Kismet/GameplayStatics.h"
 #include "Engine/GameInstance.h"
 #include "Engine/LevelStreaming.h"
@@ -19,7 +21,7 @@ bool USceneGameSubsystem::EnsureStorage()
  if(Save&&Save->SceneEvents.Version!=1){Status=TEXT("지원하지 않는 연출 저장 버전");return false;}
  auto* Events=GetWorld()->GetSubsystem<USceneEventSubsystem>();Events->RestorePersistence(Save?Save->SceneEvents:FSceneEventSaveData());Events->SaveHandler.BindUObject(this,&USceneGameSubsystem::WriteState);bStorageReady=true;Status=TEXT("UI·플레이어 준비 대기");return true;
 }
-bool USceneGameSubsystem::MergeSave(const FString& Slot,const FSceneEventSaveData& Delta,FString& Error)
+bool USceneGameSubsystem::MergeSave(const FString& Slot,const FSceneEventSaveData& Delta,FString& Error,const UMinimapExplorationSubsystem* Exploration)
 {
  Error.Reset();if(Slot.IsEmpty()||Delta.Version!=1){Error=TEXT("잘못된 저장 슬롯/버전");return false;}
  UConstellationSaveGame* Save=nullptr;
@@ -27,9 +29,14 @@ bool USceneGameSubsystem::MergeSave(const FString& Slot,const FSceneEventSaveDat
  else Save=NewObject<UConstellationSaveGame>();
  if(Save->SceneEvents.Version!=1){Error=TEXT("지원하지 않는 저장 버전");return false;}
  Save->SceneEvents.Merge(Delta);
+ if(Exploration&&Exploration->UsesSaveSlot(Slot))Exploration->MergeIntoSave(Save);
  if(!UGameplayStatics::SaveGameToSlot(Save,Slot,0)){Error=TEXT("연출 상태 저장 실패");return false;}return true;
 }
-bool USceneGameSubsystem::WriteState(const FSceneEventSaveData& Delta,FString& Error){return MergeSave(Slot,Delta,Error);}
+bool USceneGameSubsystem::WriteState(const FSceneEventSaveData& Delta,FString& Error)
+{
+ const auto* GI=GetWorld()->GetGameInstance();
+ return MergeSave(Slot,Delta,Error,GI?GI->GetSubsystem<UMinimapExplorationSubsystem>():nullptr);
+}
 void USceneGameSubsystem::UIReady(){bUIReady=true;EnsureStorage();}
 void USceneGameSubsystem::Tick(float)
 {
@@ -75,6 +82,8 @@ void USceneGameSubsystem::LegacyStopped(bool Completed)
 bool USceneGameSubsystem::RouteInteraction(AActor* Source,bool AfterUI)
 {
  if(!IsValid(Source))return false;auto* Property=FindFProperty<FObjectPropertyBase>(Source->GetClass(),TEXT("TargetLevelSequence"));auto* Sequence=Property?Cast<ULevelSequence>(Property->GetObjectPropertyValue_InContainer(Source)):nullptr;if(!Sequence)return false;
+ // Consume the bridge request so the original Blueprint sequence cannot fall back to playback.
+ if(DirectorTesting::ShouldSkip(GetWorld()))return true;
  for(TActorIterator<ASceneEventBinding> It(GetWorld());It;++It)if(It->Trigger==ESceneEventTrigger::LegacySequence&&It->OriginalSequence==Sequence)
  {
   auto* Events=GetWorld()->GetSubsystem<USceneEventSubsystem>();

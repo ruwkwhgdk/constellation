@@ -19,7 +19,7 @@ public:
  void BattleStarted(const FString& Key);
  void BattleEnded(const FString& Key);
  bool EnsureStorage();
- static bool MergeSave(const FString& Slot,const FSceneEventSaveData& Delta,FString& Error);
+ static bool MergeSave(const FString& Slot,const FSceneEventSaveData& Delta,FString& Error,const class UMinimapExplorationSubsystem* Exploration=nullptr);
  UPROPERTY(VisibleAnywhere,Category="연출") FString Status;
 private:
  TWeakObjectPtr<AActor> LegacyRequester;

@@ -30,9 +30,25 @@ Art 저장소의 제작 원본·재검증 자료·분리 기록은 `develop`의 
 
 ## 외부 아트 중복 사본 정리 기록 보관
 
-현재 `art-source-lock.json`은 Art 저장소 `develop`의 `e396c6bc33d6e14d5d2792ea5027b86e3c90443a`를 참조한다. `Migration/2026-10-24-ExternalArtDuplicates/`에 중복 20쌍의 판단, 사본 6개 삭제 기록(250,969,813바이트), 보존 경로와 복원 방법을 보관했다. 재검증 기준·별도 제작 산출물인 14쌍은 보존했으며 보호 파일 54개와 남은 쌍의 해시를 확인했다.
+이 기록의 Art 게시 커밋은 `e396c6bc33d6e14d5d2792ea5027b86e3c90443a`이며, 현재 잠금 정보는 아래 원격 보관 적용 커밋을 따른다. `Migration/2026-10-24-ExternalArtDuplicates/`에 중복 20쌍의 판단, 사본 6개 삭제 기록(250,969,813바이트), 보존 경로와 복원 방법을 보관했다. 재검증 기준·별도 제작 산출물인 14쌍은 보존했으며 보호 파일 54개와 남은 쌍의 해시를 확인했다.
 
 `publication-manifest.json`은 외부 기록과 보관본의 해시를 연결한다. `snapshot/deleted.jsonl`의 보존본 SHA-256을 확인하고 누락된 원래 경로에 복사하는 절차는 `README.txt`를 따른다. 실제 보존본은 외부 `Constellation_ArtWorkspace`에 있으며 기록만으로 모델 전체를 복원할 수는 없다. `snapshot/cleanup.py.txt`는 실행하지 않는 과거 삭제 스크립트 사본이다. 이번 게시에서 게임 자산과 기존 임포트 목록·해시는 변경하지 않았다.
+
+## 완료된 아트의 원격 보관과 로컬 복원
+
+현재 잠금 커밋은 Art `develop`의 `70dab1f2389a39e06512f2d29eacad99107a8734`다. 최초 15개 모두 원격 다운로드·해시 검증과 포인터 전환을 완료했다. 작업사본 회수량은 2,830,206,519바이트(약 2.64 GiB)이며 기존 공유 LFS 캐시는 유지했다.
+
+Art 저장소의 `tools/remote-art/README.txt`와 `remote_art.py`를 사용한다. 완료 목록 작성 → develop Push → 독립 임시 저장소에서 LFS 다운로드·SHA-256 검증 → 로컬 실파일을 작은 LFS 포인터로 전환하는 순서다. 파일 추가만으로 자동 제거하지 않는다. 현재 원본·연결 텍스처·최신 검토본은 완료 및 참조 검토 전까지 유지한다. 기존 Git/LFS 캐시는 자동 정리하지 않는다.
+
+첫 대상은 `Migration/2026-10-24-RemoteArtResidency/plan.json`의 과거 전달용 ZIP 15개다. 실제 적용 여부와 회수 바이트는 같은 폴더의 `eviction-result.json`을 확인한다. 과거 전달 패키지라는 분류는 모델 외형의 최종 승인 판정을 뜻하지 않는다. 외부 `Constellation_ArtWorkspace`의 현재 편집 파일은 이번 포인터 전환 대상이 아니다.
+
+포인터는 이미지·모델·압축 파일처럼 직접 열 수 없다. Art 저장소 루트에서 다음 명령으로 계획 대상만 복원한 뒤 사용한다. 원격 검증 후 포인터만 덮어쓰며 현재 편집본은 보호한다. 결과 파일명은 실행마다 새 이름을 사용한다.
+
+```powershell
+python tools/remote-art/remote_art.py restore --repo . --plan Migration/2026-10-24-RemoteArtResidency/plan.json --receipt Migration/2026-10-24-RemoteArtResidency/restore-NEW-ID.json
+```
+
+전체 `git lfs pull/checkout`은 보관 해제한 파일을 다시 다운로드할 수 있다. 현재 작업에 필요한 범위만 복원한다. 새 보관 작업은 Art 저장소에서 실제 원격 검증과 결과 Push를 마친 뒤 이 게임의 잠금 커밋을 갱신한다.
 
 ## 재임포트·재검증
 

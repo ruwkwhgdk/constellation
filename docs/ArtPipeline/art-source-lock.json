@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "art_repository": "git@github.com:ruwkwhgdk/constellation-art-source.git",
-  "art_commit": "dc5743db83f648b1fd5f6b3fd64753c1fac47e0d",
+  "art_commit": "07786fc8b7e74a9cec2649ffe2904dff6c2f73a7",
   "branch": "develop",
   "runtime_requires_art_checkout": false,
   "reimport_policy": "Manual only; copy pinned authoring files into ignored ArtSource; do not watch art directory",
@@ -265,5 +265,6 @@
     "ArtSource/LittleGirl_Production/Source/AS_LittleGirl_Walk_Validation_contact.fbx",
     "ArtSource/LittleGirl_Production/Source/AS_LittleGirl_Run_ContactPrecision_contact.fbx"
   ],
-  "migration_manifest": "Migration/2026-10-24/publication-manifest.json"
+  "migration_manifest": "Migration/2026-10-24/publication-manifest.json",
+  "cleanup_manifest": "Migration/2026-10-24-DiskCleanup/plan.json"
 }

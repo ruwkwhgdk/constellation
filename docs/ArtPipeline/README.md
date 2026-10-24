@@ -10,7 +10,15 @@
 - 정확한 보존 위치는 `copy-plan.json`, 복사 검증은 `copy-verification.jsonl`, 게임 쪽 사본 제거 기록은 `source-removal.jsonl`을 확인한다. 계획 목록만으로 제거 완료를 판단하지 않는다.
 - 기존 Art 파일과 다른 게임 버전은 `Migration/2026-10-24/PreservedGameVersions/`에 별도 보존했다. SchoolLocker README, SchoolOpening README와 Photo_Memory_Draft.png가 해당한다. 기존 Art 파일을 자동으로 덮어쓰지 않았다.
 
-Art 저장소의 제작 원본·재검증 자료·분리 기록은 `develop`의 `dc5743db83f648b1fd5f6b3fd64753c1fac47e0d`에 게시했다. `art-source-lock.json`의 `art_commit`도 이 커밋을 가리키며 기존 임포트 원본 42개의 해시는 유지한다. `Migration/2026-10-24/publication-manifest.json`은 게시 대상과 로컬에만 보존한 로그·생성 캐시를 구분한다. 게임 실행 자산의 재임포트는 수행하지 않았다.
+Art 저장소의 제작 원본·재검증 자료·분리 기록은 `develop`의 `dc5743db83f648b1fd5f6b3fd64753c1fac47e0d`에 게시했다. 이 커밋은 정리 전 복원 기준이며, 현재 참조는 아래 후속 정리 커밋을 따른다. 기존 임포트 원본 42개의 해시는 유지한다. `Migration/2026-10-24/publication-manifest.json`은 게시 대상과 로컬에만 보존한 로그·생성 캐시를 구분한다. 게임 실행 자산의 재임포트는 수행하지 않았다.
+
+## 2026-10-24 검토 프레임 정리
+
+현재 `art-source-lock.json`은 Art 저장소 `develop`의 `07786fc8b7e74a9cec2649ffe2904dff6c2f73a7`를 참조한다. 폰 모션 7,925개, 검 획득 1,502개, 보관된 게임 검토 프레임 12,377개의 추적 파일을 삭제했다. 편집 원본, 최종 영상, 보고서 연결 이미지와 대표 프레임은 유지한다.
+
+`Migration/2026-10-24-DiskCleanup/plan.json`과 `deleted.jsonl`에 파일별 경로·해시·삭제 근거를 기록했다. `verification.json`은 정리 직후의 검사 기록이다. 과거 이관 manifest는 당시 보존 목록이므로 현재 체크아웃에 모든 프레임이 남아 있다는 뜻은 아니다. 삭제된 추적 프레임이 필요하면 정리 전 커밋 `dc5743db83f648b1fd5f6b3fd64753c1fac47e0d`에서 필요한 경로만 복원한다.
+
+로컬 전용 셰이더 디버그 출력 정리까지 포함해 22,743개 파일, 12,550,543,101바이트를 제거했다. 게임의 추적 자산과 임포트 원본 해시는 변경하지 않았으며 재임포트도 수행하지 않았다. Git/LFS 이력은 유지한다.
 
 ## 재임포트·재검증
 

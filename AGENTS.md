@@ -95,7 +95,7 @@ Project Constellation의 3D 캐릭터 모델링 작업에서는 아래 지침을
 - 검증 영상·검사 범위·미검증 항목을 저장한다. 사용자 검수 단계가 있는 작업은 승인 후 엔진에 반영하며, 승인된 관절·손가락 자세의 보존을 다시 검증한다.
 
 Before heroine animation, rigging, retargeting, or animation polishing work, read
-`ArtSource/Heroine_Tripo_Review/AnimationWorkflow/SKILL.md`. It records the current
+`../constellation-art-source/ArtSource/Heroine_Tripo_Review/AnimationWorkflow/SKILL.md`. It records the current
 deliverables, preserved character style, contact/tempo/garment checks, Unreal
 handoff steps, and lessons from retired drafts. Start from the maintained source
 listed there, not removed intermediate versions.
@@ -103,14 +103,14 @@ listed there, not removed intermediate versions.
 # Modular environment production
 
 Before modular environment asset production, concept-to-Unreal scene reconstruction,
-or stairwell scene revisions, read `ArtSource/Stairwell_Modular/Workflow/SKILL.md`
+or stairwell scene revisions, read `../constellation-art-source/ArtSource/Stairwell_Modular/Workflow/SKILL.md`
 and its `CURRENT.md`. They record the maintained playable map, reusable sources,
 human review stages, character-scale-first checks, and cleanup rules. Use the
 maintained sources rather than retired backup maps or one-off revision scripts.
 
 For Tripo environment reconstruction, vegetation/water, reference matching, or
-environment cleanup, also read `ArtSource/OvergrownHall/Workflow/README.md` and
-`ArtSource/OvergrownHall/CURRENT.md`. They record the user-approved scene,
+environment cleanup, also read `../constellation-art-source/ArtSource/OvergrownHall/Workflow/README.md` and
+`../constellation-art-source/ArtSource/OvergrownHall/CURRENT.md`. They record the user-approved scene,
 reusable lessons, source dependencies, and separate visual/play/performance checks.
 
 
@@ -127,7 +127,7 @@ This is especially important when using a new `-UserDir` per run: repeated
 Asset Registry caches must not be generated in each validation folder.
 Before launching, verify these flags are present in the actual command, even
 when copying an older script. Use `tools/test-scene-game-pie.ps1` or the
-`tools/run-s0-*.ps1` launchers as examples.
+the archived `../constellation-art-source/ProjectArchive/Constellation/tools/run-s0-*.ps1` launchers as examples.
 
 Keep normal interactive editor cache settings unchanged. Apply this policy to
 future validation launches only; do not stop or restart ongoing jobs to add flags.
@@ -136,3 +136,12 @@ They may increase validation startup scanning time. Keep validation logs,
 reports, screenshots, source assets, autosaves, Packaged output, existing LFS
 objects, and Git configuration/commit behavior intact. This policy does not
 authorize deletion of Saved or Intermediate directories or automatic cleanup.
+
+# Art source and review storage
+
+Authoring originals live in the sibling `../constellation-art-source` repository.
+The 2026-10-24 migration manifest and restoration instructions are under its
+`Migration/2026-10-24/` directory. Historical review files, editor authoring scripts
+and one-off tools are preserved under `ProjectArchive/Constellation/` with their
+original relative paths. Consult `docs/ArtPipeline/README.md` before restoring
+authoring inputs. Never follow validation-project junctions during cleanup.

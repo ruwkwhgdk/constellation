@@ -42,3 +42,8 @@ ArtSource/**/*.runtime-xml
 /ArtSource/LittleGirl_Prototype/
 /ArtSource/SchoolLocker/
 /ArtSource/SchoolOpening/
+
+# Authoring originals live in sibling constellation-art-source.
+# Local restoration for a deliberate reimport must stay untracked.
+/ArtSource/
+/Saved_Sword*/

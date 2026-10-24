@@ -1,6 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "SteepSlopeMovementComponent.h"
+#include "PlayerFallComponent.h"
 #include "GameFramework/Character.h"
 #include "Components/CapsuleComponent.h"
 
@@ -18,6 +19,13 @@ void USteepSlopeMovementComponent::InitializeComponent()
 
 void USteepSlopeMovementComponent::PhysWalking(float deltaTime, int32 Iterations)
 {
+    if(const auto* Fall=GetOwner()->FindComponentByClass<UPlayerFallComponent>();Fall&&Fall->IsLandingLocked())
+    {
+        StopMovementImmediately();
+        Super::PhysWalking(deltaTime,Iterations);
+        return;
+    }
+
     if (deltaTime >= MIN_TICK_TIME && UpdatedComponent && MovementMode == MOVE_Walking)
     {
         const FVector Start = UpdatedComponent->GetComponentLocation();
@@ -108,3 +116,23 @@ void USteepSlopeMovementComponent::PostEditChangeProperty(FPropertyChangedEvent&
     }
 }
 #endif
+float USteepSlopeMovementComponent::GetMaxSpeed() const
+{
+    const auto* Fall=GetOwner()?GetOwner()->FindComponentByClass<UPlayerFallComponent>():nullptr;
+    return Fall&&Fall->IsLandingLocked()?0.f:Super::GetMaxSpeed();
+}
+float USteepSlopeMovementComponent::GetMaxAcceleration() const
+{
+    const auto* Fall=GetOwner()?GetOwner()->FindComponentByClass<UPlayerFallComponent>():nullptr;
+    return Fall&&Fall->IsLandingLocked()?0.f:Super::GetMaxAcceleration();
+}
+bool USteepSlopeMovementComponent::CanAttemptJump() const
+{
+    const auto* Fall=GetOwner()?GetOwner()->FindComponentByClass<UPlayerFallComponent>():nullptr;
+    return !(Fall&&Fall->IsLandingLocked())&&Super::CanAttemptJump();
+}
+void USteepSlopeMovementComponent::OnTeleported()
+{
+    Super::OnTeleported();
+    if(auto* Fall=GetOwner()?GetOwner()->FindComponentByClass<UPlayerFallComponent>():nullptr)Fall->ResetFall();
+}

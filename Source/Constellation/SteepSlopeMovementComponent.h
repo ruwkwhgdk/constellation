@@ -13,6 +13,10 @@ class CONSTELLATION_API USteepSlopeMovementComponent : public UCharacterMovement
 
 public:
     USteepSlopeMovementComponent();
+    virtual float GetMaxSpeed() const override;
+    virtual float GetMaxAcceleration() const override;
+    virtual bool CanAttemptJump() const override;
+    virtual void OnTeleported() override;
 
     UPROPERTY(EditAnywhere, Category = "SteepSlope")
     float NormalWalkableAngle = 45.f;

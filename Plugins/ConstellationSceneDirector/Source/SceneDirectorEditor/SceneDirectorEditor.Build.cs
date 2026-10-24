@@ -5,6 +5,6 @@ public class SceneDirectorEditor : ModuleRules
     {
         PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
         PublicDependencyModuleNames.AddRange(new[] { "Core", "CoreUObject", "Engine", "SceneDirectorRuntime", "UnrealEd" });
-        PrivateDependencyModuleNames.AddRange(new[] { "Slate", "SlateCore", "GraphEditor", "PropertyEditor", "AssetTools", "ToolMenus", "LevelSequence", "MovieScene", "MovieSceneTracks", "CinematicCamera", "InputCore", "Sequencer", "LevelSequenceEditor", "KismetCompiler", "BlueprintGraph", "AssetRegistry", "ContentBrowser", "UniversalObjectLocator" });
+        PrivateDependencyModuleNames.AddRange(new[] { "Slate", "UMG", "SlateCore", "GraphEditor", "PropertyEditor", "AssetTools", "ToolMenus", "LevelSequence", "MovieScene", "MovieSceneTracks", "CinematicCamera", "InputCore", "Sequencer", "LevelSequenceEditor", "KismetCompiler", "BlueprintGraph", "AssetRegistry", "ContentBrowser", "UniversalObjectLocator" });
     }
 }

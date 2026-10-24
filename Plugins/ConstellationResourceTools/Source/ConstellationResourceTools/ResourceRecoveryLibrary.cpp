@@ -19,7 +19,6 @@
 #include "UObject/UObjectHash.h"
 #include "UObject/CoreRedirects.h"
 
-IMPLEMENT_MODULE(FDefaultModuleImpl, ConstellationResourceTools)
 
 UBlueprint* UResourceRecoveryLibrary::LoadAuditAutosave(const FString& RelativeAutosavePath, const TMap<FString, FString>& PackageRedirects)
 {

@@ -9,9 +9,9 @@ public class Constellation : ModuleRules
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 		PublicIncludePaths.Add(ModuleDirectory);
 	
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "UMG", "EnhancedInput", "PhysicsCore", "SceneDirectorRuntime", "CombatRuntime" });
+		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "UMG", "EnhancedInput", "PhysicsCore", "SceneDirectorRuntime", "CombatRuntime", "AnimGraphRuntime", "AnimationCore" });
 
-		PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore", "LevelSequence", "MovieScene" });
+		PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore", "LevelSequence", "MovieScene", "ConstellationVFX" });
 		
 		// Uncomment if you are using online features
 		// PrivateDependencyModuleNames.Add("OnlineSubsystem");

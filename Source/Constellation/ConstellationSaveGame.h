@@ -6,6 +6,7 @@
 #include "GameFramework/SaveGame.h"
 #include "QuestTypes.h"
 #include "SceneEventSaveData.h"
+#include "MinimapTypes.h"
 #include "ConstellationSaveGame.generated.h"
 
 /**
@@ -17,6 +18,7 @@ class CONSTELLATION_API UConstellationSaveGame : public USaveGame
 	GENERATED_BODY()
 
 public:
+ UPROPERTY() FMinimapSaveData Minimap;
  UPROPERTY() FSceneEventSaveData SceneEvents;
 	UPROPERTY()
 	int32 StarCoin = 0;

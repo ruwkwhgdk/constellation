@@ -41,7 +41,7 @@ def tick(dt):
    current=str(r.get_editor_property('current_dialogue'))
    assert not S['stage'].get_editor_property('region_title_class'),'Duplicate S0 title still enabled'
    girl=S['binding'].get_editor_property('objects')['Girl'];gp=girl.get_actor_location();gy=girl.get_actor_rotation().yaw
-   if current=='좁은 틈 너머로 칠판이 보입니다.':
+   if current=='고개를 들어서 좁은 틈 너머로 바깥을 살펴봅니다.':
     cp=pc.player_camera_manager.get_camera_location()
     assert cp.distance(u.Vector(3165,0,214.6))<3,('Wrong vent camera',str(cp))
     S['vent_checked']=True

@@ -4,7 +4,7 @@ $root=Split-Path -Parent $PSScriptRoot
 $run=Join-Path $root ('Saved/SceneReleaseValidation/PIE-'+[guid]::NewGuid().ToString('N'))
 New-Item -ItemType Directory -Path $run -Force | Out-Null
 $log=Join-Path $run 'pie.log'
-& (Join-Path $EngineRoot 'Engine/Binaries/Win64/UnrealEditor-Cmd.exe') (Join-Path $root 'Constellation.uproject') -unattended -nullrhi -nosplash -NoSound "-UserDir=$run" "-ExecCmds=py $root/tools/verify-scene-game-pie.py" "-abslog=$log" *> (Join-Path $run 'console.log')
+& (Join-Path $EngineRoot 'Engine/Binaries/Win64/UnrealEditor-Cmd.exe') (Join-Path $root 'Constellation.uproject') -NoAssetRegistryCache -NoAssetRegistryCacheWrite -unattended -nullrhi -nosplash -NoSound "-UserDir=$run" "-ExecCmds=py $root/tools/verify-scene-game-pie.py" "-abslog=$log" *> (Join-Path $run 'console.log')
 $exit=$LASTEXITCODE
 $report=Join-Path $run 'Saved/scene-pie-result.json'
 if($exit -ne 0 -or !(Test-Path -LiteralPath $report)) { throw "PIE process failed ($exit); see $log" }

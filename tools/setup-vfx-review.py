@@ -15,7 +15,7 @@ def box(name,p,s):
 a.make_directory(base)
 box('Gallery_Floor',(1300,500,-20),(40,27,.4))
 names=['1 Sword swing','2 Sword impact','3 Sword block','4 Sword parry','5 Slime attack','6 Slime hit','7 Player hit','8 Glass break','9 Running dust','0 Cave ambience']
-hero=u.load_asset('/Game/Constellation/Characters/Heroine/Refined/SK_player_heroine_new_RunPreview');slime=u.load_asset('/Game/Constellation/Characters/Enemies/Slime_Normal/SKM_Slime_Normal')
+hero=u.load_asset('/Game/Constellation/Characters/Heroine/Refined/SK_player_heroine_new_RunPreview');slime=u.load_asset('/Game/Constellation/Characters/Enemies/Slime_Liquid/SKM_Slime_Liquid')
 for i,name in enumerate(names):
  x=(i%5)*650;y=(i//5)*1000
  box('Backdrop_'+str(i),(x,y+180,155),(5,.15,3.5))

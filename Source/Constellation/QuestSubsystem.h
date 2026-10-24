@@ -184,6 +184,7 @@ public:
 
 private:
 	friend class FConstellationAuditPersistenceTest;
+	friend class FQuestTrackerDisplayInfoTest;
 	void SetQuestState(FName QuestID, EQuestState NewState);
 	void EvaluateAllLockedQuests();
 	bool IsUnlockConditionMet(const UQuestDefinition* Quest) const;

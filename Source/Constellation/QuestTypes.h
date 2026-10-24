@@ -67,6 +67,10 @@ struct FQuestProgressStepDef
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Quest")
 	int32 InnerProgressCount = 0;
 
+	/** Opt in only when inner progress counts interchangeable items/actions, never sequential waypoints. */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Quest|Tracker")
+	bool bShowObjectiveQuantity = false;
+
 	/** World-space marker locations, one per inner sub-progress unit, for on-screen guidance. */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Quest")
 	TArray<FVector> TargetPositions;
@@ -123,6 +127,10 @@ struct FQuestDisplayInfo
 	/** Current step's total inner sub-progress units (from the step definition). 0 if the step has none. */
 	UPROPERTY(BlueprintReadOnly, Category = "Quest")
 	int32 MaxInnerProgress = 0;
+
+	/** Explicit authoring intent for the current objective; legacy steps default to hidden. */
+	UPROPERTY(BlueprintReadOnly, Category = "Quest|Tracker")
+	bool bShowObjectiveQuantity = false;
 
 	/** Current step's guidance marker locations (world space), one per inner sub-progress unit. */
 	UPROPERTY(BlueprintReadOnly, Category = "Quest")

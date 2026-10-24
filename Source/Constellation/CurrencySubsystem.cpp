@@ -3,6 +3,7 @@
 
 #include "CurrencySubsystem.h"
 #include "ConstellationSaveGame.h"
+#include "MinimapExplorationSubsystem.h"
 #include "Engine/World.h"
 #include "Engine/GameInstance.h"
 #include "GameFramework/Actor.h"
@@ -59,6 +60,10 @@ void UCurrencySubsystem::SaveToDisk()
 	CurrentSaveGame->CollectedStarCoinIDs = CollectedStarCoinIDs;
 	CurrentSaveGame->DummyItemCount = DummyItemCount;
 	CurrentSaveGame->OpenedChestIDs = OpenedChestIDs;
+	if (const auto* Exploration = GetGameInstance()->GetSubsystem<UMinimapExplorationSubsystem>(); Exploration && Exploration->UsesSaveSlot(SaveSlotName))
+	{
+		Exploration->MergeIntoSave(CurrentSaveGame);
+	}
 	if (!UGameplayStatics::SaveGameToSlot(CurrentSaveGame, SaveSlotName, SaveUserIndex))
 	{
 		UE_LOG(LogTemp, Error, TEXT("Currency save failed: %s"), *SaveSlotName);

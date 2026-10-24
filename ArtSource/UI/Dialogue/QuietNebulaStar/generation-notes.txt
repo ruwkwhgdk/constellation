@@ -1,0 +1,2 @@
+Reference: user-approved D · Quiet Nebula + Star dialogue mockup, 2026-10-11.
+Generated a transparent 1536x1024 atlas with three isolated text-free assets: long navy lapis/mural capsule with thin gold rim and paired ivory bracket/diamond ornaments; matching blank rounded nameplate; open downward gold triangle with central four-point star and subtle vertical glimmer. Quiet dark central writing area; gold dust restricted to the ends. No beige presentation backdrop or baked text. Actual generated bounds are recorded in README.md and used as brush UV regions.

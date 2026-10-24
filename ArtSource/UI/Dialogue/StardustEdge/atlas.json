@@ -1,0 +1,49 @@
+{
+  "source": "T_Choice_StardustAtlas.png",
+  "created_with": "ImageGen; original raster preserved; rendered via UV regions",
+  "size": [
+    1536,
+    1024
+  ],
+  "alpha": true,
+  "unreal_asset": "/Game/Constellation/UI/Dialogue/T_Choice_StardustAtlas",
+  "regions_px": {
+    "idle": [
+      150,
+      130,
+      1386,
+      342
+    ],
+    "focused": [
+      150,
+      394,
+      1386,
+      600
+    ],
+    "cursor": [
+      410,
+      675,
+      638,
+      915
+    ],
+    "star": [
+      917,
+      686,
+      1130,
+      914
+    ]
+  },
+  "integration": [
+    "SDirectorChoices",
+    "WBP_Choice / UStardustChoiceWidget"
+  ],
+  "effect": "Active option only: left cursor, bright border, right star opacity .4..1 over approx 2.09 sec",
+  "verification": [
+    "Development Editor build succeeded",
+    "ChoiceValidationAndInput passed (mouse hover, keyboard wrap, stable result, duplicate guard)",
+    "ChoiceRuntime passed",
+    "DialogueUI native and legacy capture passed",
+    "PIE display and branch resume succeeded; legacy keyboard focus capture succeeded"
+  ],
+  "preview": "native-second.png"
+}

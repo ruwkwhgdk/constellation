@@ -3,6 +3,7 @@
 
 #include "QuestSubsystem.h"
 #include "ConstellationSaveGame.h"
+#include "MinimapExplorationSubsystem.h"
 #include "QuestDatabase.h"
 #include "QuestDefinition.h"
 #include "Engine/World.h"
@@ -418,6 +419,7 @@ FQuestDisplayInfo UQuestSubsystem::GetQuestDisplayInfo(FName QuestID) const
 			const FQuestProgressStepDef& Step = Quest->ProgressSteps[Info.Progress - 1];
 			Info.CurrentStepDescription = Step.Description;
 			Info.MaxInnerProgress = Step.InnerProgressCount;
+			Info.bShowObjectiveQuantity = Step.bShowObjectiveQuantity;
 			Info.TargetPositions = Step.TargetPositions;
 		}
 		Info.InnerProgress = GetQuestInnerProgress(QuestID);
@@ -569,6 +571,10 @@ void UQuestSubsystem::SaveToDisk()
 	}
 
 	CurrentSaveGame->QuestStates = Entries;
+	if (const auto* Exploration = GetGameInstance()->GetSubsystem<UMinimapExplorationSubsystem>(); Exploration && Exploration->UsesSaveSlot(SaveSlotName))
+	{
+		Exploration->MergeIntoSave(CurrentSaveGame);
+	}
 	if (!UGameplayStatics::SaveGameToSlot(CurrentSaveGame, SaveSlotName, SaveUserIndex))
 	{
 		UE_LOG(LogTemp, Error, TEXT("Quest save failed: %s"), *SaveSlotName);

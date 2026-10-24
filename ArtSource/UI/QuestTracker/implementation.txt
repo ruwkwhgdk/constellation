@@ -1,0 +1,35 @@
+Starlight Guide — approved tracker implementation (2026-10-14)
+
+Reference: Concepts/2026-10-14/quest-tracker-A-starlight-guide.png
+A/B/C are content examples of one style, not selectable skins.
+
+Production artwork is a native Slate vector resource in QuestTrackerWidget.cpp:
+- faceted gold/ivory 20-unit title star, no bloom animation;
+- 0.85-unit antique gold bent guide, follows the objective's measured height;
+- soft, transparent navy vertex-color wash; no hard panel edge;
+- existing F_RegionMyeongjo title font (20), readable engine body font (16);
+- 310-unit default width, adjustable on WBP_QuestTracker;
+- minimap label lower edge + 24-unit gap, including its optional other-floor label.
+Text and counts are live FText, never baked into an image. Vector artwork scales
+with the viewport's existing DPI curve; no external font or raster dependency.
+
+Runtime integration:
+The existing BP_HUD still creates WBP_QuestTracker. Its native parent renders the
+new view and retains OnTrackerRefreshed for compatibility. The old prototype
+WidgetTree is initialized for that event but excluded from the displayed Slate
+tree, so its Progress/MaxProgress text cannot appear. No overall step bar, dots,
+percentage or stage fraction is rendered.
+
+Quantity authoring:
+QuestDefinition > ProgressSteps > Show Objective Quantity defaults FALSE.
+Enable only when InnerProgress / InnerProgressCount means interchangeable items
+or completed actions for the current objective. Never enable for sequential
+waypoints or story substeps. No existing quest is automatically opted in.
+This flag is definition metadata, not new persisted state. Quest acceptance,
+tracking, auto-selection, saves and world marker semantics are unchanged.
+
+Validation entrypoints:
+tools/apply-quest-tracker.py (backup, compile existing BP, save)
+tools/verify-quest-tracker-pie.py (isolated Saved/QuestTracker/PIE* user directory)
+Automation: Constellation.Quest.TrackerQuantity, TrackerDisplayInfo
+Actual-school and transient long/count/hidden screenshots go to Saved/QuestTracker.

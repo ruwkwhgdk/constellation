@@ -1,0 +1,33 @@
+Walkable rock ramp follow-up — 2026-10-16
+
+The earlier slope-recovery review covered ramp_1, not the broad Luos cave-floor
+ramps reported by the user. All eight new probes were grounded on the actual
+rock floor but had no generated Floor cells before this correction.
+
+Dedicated Luos Props_Floors and dummy ramp components now rasterize their
+simple collision footprint. Bounds enumerate probes only; a blocking Pawn
+collision query and walkable hit normal are required before a cell is accepted.
+This avoids depending on the render LOD's coverage/winding for these surfaces.
+Composite room shells and instanced meshes retain per-triangle sampling to
+preserve stacked storeys. Existing 50cm cells and height-layer rules are retained.
+
+Minimap footer region/floor/status and off-floor objective text are removed.
+The north marker stays. Quest tracker spacing no longer depends on footer text.
+
+Validation evidence:
+- Saved/Minimap/rock-ramp-build.log: incremental Development Editor build.
+- Saved/Minimap/rock-ramp-probes-before.json: 8 grounded probes, all no floor.
+- Saved/Minimap/rock-ramp-probes-after.json: 8 probes with exact Floor cell,
+  surface within 75cm of grounded feet, and at least 10 discovered cells each.
+- Actual after counts: 360, 364, 144, 128, 120, 128, 632, 240.
+- Saved/Minimap/slope-pie-result.json: existing 4 ramp probes plus temporary
+  data outage and restoration checks passed after regeneration.
+- Saved/Minimap/ramp-generation.json: data backup, unchanged level hash,
+  preserved manual markers and overrides.
+- Saved/Minimap/rock-ramp-tests.log: final minimap automation results.
+- Saved/Minimap/rock-ramp-after-400000.png: HUD visual check.
+
+Reproduce using tools/probe-minimap-rock-ramps.py with an isolated
+-UserDir=.../Saved/Minimap/PIE... and -VerifyRockRamps. Omit the verification
+flag to collect a baseline. No gameplay saves or level geometry are edited.
+No packaged-build verification was performed.

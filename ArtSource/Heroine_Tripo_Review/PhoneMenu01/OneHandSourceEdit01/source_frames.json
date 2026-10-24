@@ -1,0 +1,2290 @@
+{
+  "status": "Review only; no Unreal import",
+  "method": "Unmodified local source poses except two 12-frame quaternion crossfades; no authored draw/stow poses",
+  "sources": {
+    "cell": "Talking_On_A_Cell_Phone",
+    "text": "Texting"
+  },
+  "timeline": [
+    {
+      "output": 1,
+      "source": "cell",
+      "frame": 1,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 2,
+      "source": "cell",
+      "frame": 2,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 3,
+      "source": "cell",
+      "frame": 3,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 4,
+      "source": "cell",
+      "frame": 4,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 5,
+      "source": "cell",
+      "frame": 5,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 6,
+      "source": "cell",
+      "frame": 6,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 7,
+      "source": "cell",
+      "frame": 7,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 8,
+      "source": "cell",
+      "frame": 8,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 9,
+      "source": "cell",
+      "frame": 9,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 10,
+      "source": "cell",
+      "frame": 10,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 11,
+      "source": "cell",
+      "frame": 11,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 12,
+      "source": "cell",
+      "frame": 12,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 13,
+      "source": "cell",
+      "frame": 13,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 14,
+      "source": "cell",
+      "frame": 14,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 15,
+      "source": "cell",
+      "frame": 15,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 16,
+      "source": "cell",
+      "frame": 16,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 17,
+      "source": "cell",
+      "frame": 17,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 18,
+      "source": "cell",
+      "frame": 18,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 19,
+      "source": "cell",
+      "frame": 19,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 20,
+      "source": "cell",
+      "frame": 20,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 21,
+      "source": "cell",
+      "frame": 21,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 22,
+      "source": "cell",
+      "frame": 22,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 23,
+      "source": "cell",
+      "frame": 23,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 24,
+      "source": "cell",
+      "frame": 24,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 25,
+      "source": "cell",
+      "frame": 25,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 26,
+      "source": "cell",
+      "frame": 26,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 27,
+      "source": "cell",
+      "frame": 27,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 28,
+      "source": "cell",
+      "frame": 28,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 29,
+      "source": "cell",
+      "frame": 29,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 30,
+      "source": "cell",
+      "frame": 30,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 31,
+      "source": "cell",
+      "frame": 31,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 32,
+      "source": "cell",
+      "frame": 32,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 33,
+      "source": "cell",
+      "frame": 33,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 34,
+      "source": "cell",
+      "frame": 34,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 35,
+      "source": "cell",
+      "frame": 35,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 36,
+      "source": "cell",
+      "frame": 36,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 37,
+      "source": "cell",
+      "frame": 37,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 38,
+      "source": "cell",
+      "frame": 38,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 39,
+      "source": "cell",
+      "frame": 39,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 40,
+      "source": "cell",
+      "frame": 40,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 41,
+      "source": "cell",
+      "frame": 41,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 42,
+      "source": "cell",
+      "frame": 42,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 43,
+      "source": "cell",
+      "frame": 43,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 44,
+      "source": "cell",
+      "frame": 44,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 45,
+      "source": "cell",
+      "frame": 45,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 46,
+      "source": "cell",
+      "frame": 46,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 47,
+      "source": "cell",
+      "frame": 47,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 48,
+      "source": "cell",
+      "frame": 48,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 49,
+      "source": "cell",
+      "frame": 49,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 50,
+      "source": "cell",
+      "frame": 50,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 51,
+      "source": "cell",
+      "frame": 51,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 52,
+      "source": "cell",
+      "frame": 52,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 53,
+      "source": "cell",
+      "frame": 53,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 54,
+      "source": "cell",
+      "frame": 54,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 55,
+      "source": "cell",
+      "frame": 55,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 56,
+      "source": "cell",
+      "frame": 56,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 57,
+      "source": "cell",
+      "frame": 57,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 58,
+      "source": "cell",
+      "frame": 58,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 59,
+      "source": "cell",
+      "frame": 59,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 60,
+      "source": "cell",
+      "frame": 60,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 61,
+      "source": "cell",
+      "frame": 61,
+      "blend_source": "text",
+      "blend_frame": 35,
+      "weight": 0.08333333333333333
+    },
+    {
+      "output": 62,
+      "source": "cell",
+      "frame": 62,
+      "blend_source": "text",
+      "blend_frame": 36,
+      "weight": 0.16666666666666666
+    },
+    {
+      "output": 63,
+      "source": "cell",
+      "frame": 63,
+      "blend_source": "text",
+      "blend_frame": 37,
+      "weight": 0.25
+    },
+    {
+      "output": 64,
+      "source": "cell",
+      "frame": 64,
+      "blend_source": "text",
+      "blend_frame": 38,
+      "weight": 0.3333333333333333
+    },
+    {
+      "output": 65,
+      "source": "cell",
+      "frame": 65,
+      "blend_source": "text",
+      "blend_frame": 39,
+      "weight": 0.4166666666666667
+    },
+    {
+      "output": 66,
+      "source": "cell",
+      "frame": 66,
+      "blend_source": "text",
+      "blend_frame": 40,
+      "weight": 0.5
+    },
+    {
+      "output": 67,
+      "source": "cell",
+      "frame": 67,
+      "blend_source": "text",
+      "blend_frame": 41,
+      "weight": 0.5833333333333334
+    },
+    {
+      "output": 68,
+      "source": "cell",
+      "frame": 68,
+      "blend_source": "text",
+      "blend_frame": 42,
+      "weight": 0.6666666666666666
+    },
+    {
+      "output": 69,
+      "source": "cell",
+      "frame": 69,
+      "blend_source": "text",
+      "blend_frame": 43,
+      "weight": 0.75
+    },
+    {
+      "output": 70,
+      "source": "cell",
+      "frame": 70,
+      "blend_source": "text",
+      "blend_frame": 44,
+      "weight": 0.8333333333333334
+    },
+    {
+      "output": 71,
+      "source": "cell",
+      "frame": 71,
+      "blend_source": "text",
+      "blend_frame": 45,
+      "weight": 0.9166666666666666
+    },
+    {
+      "output": 72,
+      "source": "cell",
+      "frame": 72,
+      "blend_source": "text",
+      "blend_frame": 46,
+      "weight": 1.0
+    },
+    {
+      "output": 73,
+      "source": "text",
+      "frame": 47,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 74,
+      "source": "text",
+      "frame": 48,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 75,
+      "source": "text",
+      "frame": 49,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 76,
+      "source": "text",
+      "frame": 50,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 77,
+      "source": "text",
+      "frame": 51,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 78,
+      "source": "text",
+      "frame": 52,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 79,
+      "source": "text",
+      "frame": 53,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 80,
+      "source": "text",
+      "frame": 54,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 81,
+      "source": "text",
+      "frame": 55,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 82,
+      "source": "text",
+      "frame": 56,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 83,
+      "source": "text",
+      "frame": 57,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 84,
+      "source": "text",
+      "frame": 58,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 85,
+      "source": "text",
+      "frame": 59,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 86,
+      "source": "text",
+      "frame": 60,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 87,
+      "source": "text",
+      "frame": 61,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 88,
+      "source": "text",
+      "frame": 62,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 89,
+      "source": "text",
+      "frame": 63,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 90,
+      "source": "text",
+      "frame": 64,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 91,
+      "source": "text",
+      "frame": 65,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 92,
+      "source": "text",
+      "frame": 66,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 93,
+      "source": "text",
+      "frame": 67,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 94,
+      "source": "text",
+      "frame": 68,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 95,
+      "source": "text",
+      "frame": 69,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 96,
+      "source": "text",
+      "frame": 70,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 97,
+      "source": "text",
+      "frame": 71,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 98,
+      "source": "text",
+      "frame": 72,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 99,
+      "source": "text",
+      "frame": 73,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 100,
+      "source": "text",
+      "frame": 74,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 101,
+      "source": "text",
+      "frame": 75,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 102,
+      "source": "text",
+      "frame": 76,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 103,
+      "source": "text",
+      "frame": 77,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 104,
+      "source": "text",
+      "frame": 78,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 105,
+      "source": "text",
+      "frame": 79,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 106,
+      "source": "text",
+      "frame": 80,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 107,
+      "source": "text",
+      "frame": 81,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 108,
+      "source": "text",
+      "frame": 82,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 109,
+      "source": "text",
+      "frame": 83,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 110,
+      "source": "text",
+      "frame": 84,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 111,
+      "source": "text",
+      "frame": 85,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 112,
+      "source": "text",
+      "frame": 86,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 113,
+      "source": "text",
+      "frame": 87,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 114,
+      "source": "text",
+      "frame": 88,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 115,
+      "source": "text",
+      "frame": 89,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 116,
+      "source": "text",
+      "frame": 90,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 117,
+      "source": "text",
+      "frame": 91,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 118,
+      "source": "text",
+      "frame": 92,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 119,
+      "source": "text",
+      "frame": 93,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 120,
+      "source": "text",
+      "frame": 94,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 121,
+      "source": "text",
+      "frame": 95,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 122,
+      "source": "text",
+      "frame": 96,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 123,
+      "source": "text",
+      "frame": 97,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 124,
+      "source": "text",
+      "frame": 98,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 125,
+      "source": "text",
+      "frame": 99,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 126,
+      "source": "text",
+      "frame": 100,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 127,
+      "source": "text",
+      "frame": 101,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 128,
+      "source": "text",
+      "frame": 102,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 129,
+      "source": "text",
+      "frame": 103,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 130,
+      "source": "text",
+      "frame": 104,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 131,
+      "source": "text",
+      "frame": 105,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 132,
+      "source": "text",
+      "frame": 106,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 133,
+      "source": "text",
+      "frame": 107,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 134,
+      "source": "text",
+      "frame": 108,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 135,
+      "source": "text",
+      "frame": 109,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 136,
+      "source": "text",
+      "frame": 110,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 137,
+      "source": "text",
+      "frame": 111,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 138,
+      "source": "text",
+      "frame": 112,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 139,
+      "source": "text",
+      "frame": 113,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 140,
+      "source": "text",
+      "frame": 114,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 141,
+      "source": "text",
+      "frame": 115,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 142,
+      "source": "text",
+      "frame": 116,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 143,
+      "source": "text",
+      "frame": 117,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 144,
+      "source": "text",
+      "frame": 118,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 145,
+      "source": "text",
+      "frame": 119,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 146,
+      "source": "text",
+      "frame": 120,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 147,
+      "source": "text",
+      "frame": 121,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 148,
+      "source": "text",
+      "frame": 122,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 149,
+      "source": "text",
+      "frame": 123,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 150,
+      "source": "text",
+      "frame": 124,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 151,
+      "source": "text",
+      "frame": 125,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 152,
+      "source": "text",
+      "frame": 126,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 153,
+      "source": "text",
+      "frame": 127,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 154,
+      "source": "text",
+      "frame": 128,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 155,
+      "source": "text",
+      "frame": 129,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 156,
+      "source": "text",
+      "frame": 130,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 157,
+      "source": "text",
+      "frame": 131,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 158,
+      "source": "text",
+      "frame": 132,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 159,
+      "source": "text",
+      "frame": 133,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 160,
+      "source": "text",
+      "frame": 134,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 161,
+      "source": "text",
+      "frame": 135,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 162,
+      "source": "text",
+      "frame": 136,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 163,
+      "source": "text",
+      "frame": 137,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 164,
+      "source": "text",
+      "frame": 138,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 165,
+      "source": "text",
+      "frame": 139,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 166,
+      "source": "text",
+      "frame": 140,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 167,
+      "source": "text",
+      "frame": 141,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 168,
+      "source": "text",
+      "frame": 142,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 169,
+      "source": "text",
+      "frame": 143,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 170,
+      "source": "text",
+      "frame": 144,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 171,
+      "source": "text",
+      "frame": 145,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 172,
+      "source": "text",
+      "frame": 146,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 173,
+      "source": "text",
+      "frame": 147,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 174,
+      "source": "text",
+      "frame": 148,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 175,
+      "source": "text",
+      "frame": 149,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 176,
+      "source": "text",
+      "frame": 150,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 177,
+      "source": "text",
+      "frame": 151,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 178,
+      "source": "text",
+      "frame": 152,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 179,
+      "source": "text",
+      "frame": 153,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 180,
+      "source": "text",
+      "frame": 154,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 181,
+      "source": "text",
+      "frame": 155,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 182,
+      "source": "text",
+      "frame": 156,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 183,
+      "source": "text",
+      "frame": 157,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 184,
+      "source": "text",
+      "frame": 158,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 185,
+      "source": "text",
+      "frame": 159,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 186,
+      "source": "text",
+      "frame": 160,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 187,
+      "source": "text",
+      "frame": 161,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 188,
+      "source": "text",
+      "frame": 162,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 189,
+      "source": "text",
+      "frame": 163,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 190,
+      "source": "text",
+      "frame": 164,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 191,
+      "source": "text",
+      "frame": 165,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 192,
+      "source": "text",
+      "frame": 166,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 193,
+      "source": "text",
+      "frame": 167,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 194,
+      "source": "text",
+      "frame": 168,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 195,
+      "source": "text",
+      "frame": 169,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 196,
+      "source": "text",
+      "frame": 170,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 197,
+      "source": "text",
+      "frame": 171,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 198,
+      "source": "text",
+      "frame": 172,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 199,
+      "source": "text",
+      "frame": 173,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 200,
+      "source": "text",
+      "frame": 174,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 201,
+      "source": "text",
+      "frame": 175,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 202,
+      "source": "text",
+      "frame": 176,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 203,
+      "source": "text",
+      "frame": 177,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 204,
+      "source": "text",
+      "frame": 178,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 205,
+      "source": "text",
+      "frame": 179,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 206,
+      "source": "text",
+      "frame": 180,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 207,
+      "source": "text",
+      "frame": 181,
+      "blend_source": "cell",
+      "blend_frame": 1040,
+      "weight": 0.08333333333333333
+    },
+    {
+      "output": 208,
+      "source": "text",
+      "frame": 182,
+      "blend_source": "cell",
+      "blend_frame": 1041,
+      "weight": 0.16666666666666666
+    },
+    {
+      "output": 209,
+      "source": "text",
+      "frame": 183,
+      "blend_source": "cell",
+      "blend_frame": 1042,
+      "weight": 0.25
+    },
+    {
+      "output": 210,
+      "source": "text",
+      "frame": 184,
+      "blend_source": "cell",
+      "blend_frame": 1043,
+      "weight": 0.3333333333333333
+    },
+    {
+      "output": 211,
+      "source": "text",
+      "frame": 185,
+      "blend_source": "cell",
+      "blend_frame": 1044,
+      "weight": 0.4166666666666667
+    },
+    {
+      "output": 212,
+      "source": "text",
+      "frame": 186,
+      "blend_source": "cell",
+      "blend_frame": 1045,
+      "weight": 0.5
+    },
+    {
+      "output": 213,
+      "source": "text",
+      "frame": 187,
+      "blend_source": "cell",
+      "blend_frame": 1046,
+      "weight": 0.5833333333333334
+    },
+    {
+      "output": 214,
+      "source": "text",
+      "frame": 188,
+      "blend_source": "cell",
+      "blend_frame": 1047,
+      "weight": 0.6666666666666666
+    },
+    {
+      "output": 215,
+      "source": "text",
+      "frame": 189,
+      "blend_source": "cell",
+      "blend_frame": 1048,
+      "weight": 0.75
+    },
+    {
+      "output": 216,
+      "source": "text",
+      "frame": 190,
+      "blend_source": "cell",
+      "blend_frame": 1049,
+      "weight": 0.8333333333333334
+    },
+    {
+      "output": 217,
+      "source": "text",
+      "frame": 191,
+      "blend_source": "cell",
+      "blend_frame": 1050,
+      "weight": 0.9166666666666666
+    },
+    {
+      "output": 218,
+      "source": "text",
+      "frame": 192,
+      "blend_source": "cell",
+      "blend_frame": 1051,
+      "weight": 1.0
+    },
+    {
+      "output": 219,
+      "source": "cell",
+      "frame": 1052,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 220,
+      "source": "cell",
+      "frame": 1053,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 221,
+      "source": "cell",
+      "frame": 1054,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 222,
+      "source": "cell",
+      "frame": 1055,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 223,
+      "source": "cell",
+      "frame": 1056,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 224,
+      "source": "cell",
+      "frame": 1057,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 225,
+      "source": "cell",
+      "frame": 1058,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 226,
+      "source": "cell",
+      "frame": 1059,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 227,
+      "source": "cell",
+      "frame": 1060,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 228,
+      "source": "cell",
+      "frame": 1061,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 229,
+      "source": "cell",
+      "frame": 1062,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 230,
+      "source": "cell",
+      "frame": 1063,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 231,
+      "source": "cell",
+      "frame": 1064,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 232,
+      "source": "cell",
+      "frame": 1065,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 233,
+      "source": "cell",
+      "frame": 1066,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 234,
+      "source": "cell",
+      "frame": 1067,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 235,
+      "source": "cell",
+      "frame": 1068,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 236,
+      "source": "cell",
+      "frame": 1069,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 237,
+      "source": "cell",
+      "frame": 1070,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 238,
+      "source": "cell",
+      "frame": 1071,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 239,
+      "source": "cell",
+      "frame": 1072,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 240,
+      "source": "cell",
+      "frame": 1073,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 241,
+      "source": "cell",
+      "frame": 1074,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 242,
+      "source": "cell",
+      "frame": 1075,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 243,
+      "source": "cell",
+      "frame": 1076,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 244,
+      "source": "cell",
+      "frame": 1077,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 245,
+      "source": "cell",
+      "frame": 1078,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 246,
+      "source": "cell",
+      "frame": 1079,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 247,
+      "source": "cell",
+      "frame": 1080,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 248,
+      "source": "cell",
+      "frame": 1081,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 249,
+      "source": "cell",
+      "frame": 1082,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 250,
+      "source": "cell",
+      "frame": 1083,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 251,
+      "source": "cell",
+      "frame": 1084,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 252,
+      "source": "cell",
+      "frame": 1085,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 253,
+      "source": "cell",
+      "frame": 1086,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 254,
+      "source": "cell",
+      "frame": 1087,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 255,
+      "source": "cell",
+      "frame": 1088,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 256,
+      "source": "cell",
+      "frame": 1089,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 257,
+      "source": "cell",
+      "frame": 1090,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 258,
+      "source": "cell",
+      "frame": 1091,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 259,
+      "source": "cell",
+      "frame": 1092,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 260,
+      "source": "cell",
+      "frame": 1093,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 261,
+      "source": "cell",
+      "frame": 1094,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 262,
+      "source": "cell",
+      "frame": 1095,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 263,
+      "source": "cell",
+      "frame": 1096,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 264,
+      "source": "cell",
+      "frame": 1097,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 265,
+      "source": "cell",
+      "frame": 1098,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 266,
+      "source": "cell",
+      "frame": 1099,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 267,
+      "source": "cell",
+      "frame": 1100,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 268,
+      "source": "cell",
+      "frame": 1101,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 269,
+      "source": "cell",
+      "frame": 1102,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 270,
+      "source": "cell",
+      "frame": 1103,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 271,
+      "source": "cell",
+      "frame": 1104,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 272,
+      "source": "cell",
+      "frame": 1105,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 273,
+      "source": "cell",
+      "frame": 1106,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 274,
+      "source": "cell",
+      "frame": 1107,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 275,
+      "source": "cell",
+      "frame": 1108,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 276,
+      "source": "cell",
+      "frame": 1109,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 277,
+      "source": "cell",
+      "frame": 1110,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 278,
+      "source": "cell",
+      "frame": 1111,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 279,
+      "source": "cell",
+      "frame": 1112,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 280,
+      "source": "cell",
+      "frame": 1113,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 281,
+      "source": "cell",
+      "frame": 1114,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 282,
+      "source": "cell",
+      "frame": 1115,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 283,
+      "source": "cell",
+      "frame": 1116,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 284,
+      "source": "cell",
+      "frame": 1117,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    },
+    {
+      "output": 285,
+      "source": "cell",
+      "frame": 1118,
+      "blend_source": null,
+      "blend_frame": null,
+      "weight": 0
+    }
+  ]
+}

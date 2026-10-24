@@ -1,0 +1,119 @@
+{
+  "schema": "constellation.sword-grip-delivery.v1",
+  "status": "blender_verified_ready_for_engine_review",
+  "source": "C:\\Users\\User\\Documents\\UnrealProjects\\Constellation\\ArtSource\\SwordAcquisition\\GripRevision20261023\\Heroine_Sword_RightUpper06.blend",
+  "source_sha256": "8292108f9afbfff14c02a8812300899d8c45057e0c87bde24e9c5dfc97b0d9a5",
+  "motion_file": "motion.json",
+  "motion_sha256": "241d67925040e898824588b2201257755bde8cbc53404651b62828ffc822931c",
+  "sword_tracks_file": "sword_tracks.json",
+  "sword_tracks_sha256": "33f5a82d16c66bd66d0f1b4a29d4540008361c206f8807c01c4a06231ebc14ee",
+  "clip_order": [
+    "Approach",
+    "BraceLoop",
+    "ExtractRecover",
+    "ReleaseLeft",
+    "Raise",
+    "RaisedHoldLoop",
+    "Lower"
+  ],
+  "clips": {
+    "Approach": {
+      "duration": 3.3,
+      "fps": 30,
+      "samples": 100,
+      "loop": false
+    },
+    "BraceLoop": {
+      "duration": 2.4,
+      "fps": 30,
+      "samples": 73,
+      "loop": true
+    },
+    "ExtractRecover": {
+      "duration": 3.7,
+      "fps": 30,
+      "samples": 112,
+      "loop": false
+    },
+    "ReleaseLeft": {
+      "duration": 1.4,
+      "fps": 30,
+      "samples": 43,
+      "loop": false
+    },
+    "Raise": {
+      "duration": 2.2,
+      "fps": 30,
+      "samples": 67,
+      "loop": false
+    },
+    "RaisedHoldLoop": {
+      "duration": 2.4,
+      "fps": 30,
+      "samples": 73,
+      "loop": true
+    },
+    "Lower": {
+      "duration": 2.4,
+      "fps": 30,
+      "samples": 73,
+      "loop": false
+    }
+  },
+  "removed_runtime_stage": "RegripRight",
+  "verification": {
+    "saved_reopened_mesh_snapshot_equal": true,
+    "audit_report": "../audit_after06.json",
+    "preservation_report": "../preservation06.json",
+    "continuity_report": "../joint_continuity06.json",
+    "export_checks": "../delivery_checks06.json",
+    "original_source_preserved": true,
+    "all_adjacent_clip_boundaries_exact": true,
+    "initial_sword_transform_exactly_matches_original": true,
+    "right_contact_max_translation_delta_cm": 7.299904382900618e-05,
+    "right_contact_max_rotation_delta_degrees": 0.00016987306623615487,
+    "max_hand_half_frame_rotation_degrees": 4.119511204016831,
+    "video_decode_exit": 0
+  },
+  "visual_review": {
+    "source": "actual saved and reopened candidate06 mesh",
+    "approach_frames": [
+      13,
+      14,
+      24,
+      30,
+      35,
+      40,
+      42,
+      48,
+      49
+    ],
+    "key_frames": [
+      100,
+      280,
+      330,
+      355,
+      430,
+      457,
+      490,
+      523,
+      739
+    ],
+    "views": [
+      "front",
+      "side",
+      "hand close"
+    ],
+    "video": "blender_approach_hand.mp4",
+    "video_coverage": "Approach only, 50 samples at 15fps. Later phases verified using key pose images; complete video interrupted by disk exhaustion."
+  },
+  "unverified": [
+    "Unreal reloaded assets and actual sword placement",
+    "runtime QTE/loop phase transitions and montage blending",
+    "engine-compressed hand/finger deformation",
+    "full continuous post-approach visual playback"
+  ],
+  "review_page": "review.html",
+  "user_visual_approval": false,
+  "engine_verified": false
+}

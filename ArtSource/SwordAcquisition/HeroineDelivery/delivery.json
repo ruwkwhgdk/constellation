@@ -1,0 +1,96 @@
+{
+  "status": "character_applied_and_unreal_assets_saved",
+  "source": "C:\\Users\\User\\.codex\\visualizations\\2026\\09\\19\\01a0ba3a-ca09-73e0-b9bd-7084c8f3096b\\SwordPull_Heroine01\\Heroine_Sword_Final03.blend",
+  "assets": [
+    {
+      "name": "Approach",
+      "sequence": "/Game/Constellation/Characters/Heroine/GamePilot/SwordAcquisition/AS_Sword_Approach.AS_Sword_Approach",
+      "montage": "/Game/Constellation/Characters/Heroine/GamePilot/SwordAcquisition/AM_Sword_Approach.AM_Sword_Approach",
+      "duration": 3.299999952316284
+    },
+    {
+      "name": "BraceLoop",
+      "sequence": "/Game/Constellation/Characters/Heroine/GamePilot/SwordAcquisition/AS_Sword_BraceLoop.AS_Sword_BraceLoop",
+      "montage": "/Game/Constellation/Characters/Heroine/GamePilot/SwordAcquisition/AM_Sword_BraceLoop.AM_Sword_BraceLoop",
+      "duration": 2.4000000953674316
+    },
+    {
+      "name": "ExtractRecover",
+      "sequence": "/Game/Constellation/Characters/Heroine/GamePilot/SwordAcquisition/AS_Sword_ExtractRecover.AS_Sword_ExtractRecover",
+      "montage": "/Game/Constellation/Characters/Heroine/GamePilot/SwordAcquisition/AM_Sword_ExtractRecover.AM_Sword_ExtractRecover",
+      "duration": 3.700000047683716
+    },
+    {
+      "name": "RegripRight",
+      "sequence": "/Game/Constellation/Characters/Heroine/GamePilot/SwordAcquisition/AS_Sword_RegripRight.AS_Sword_RegripRight",
+      "montage": "/Game/Constellation/Characters/Heroine/GamePilot/SwordAcquisition/AM_Sword_RegripRight.AM_Sword_RegripRight",
+      "duration": 2.0
+    },
+    {
+      "name": "ReleaseLeft",
+      "sequence": "/Game/Constellation/Characters/Heroine/GamePilot/SwordAcquisition/AS_Sword_ReleaseLeft.AS_Sword_ReleaseLeft",
+      "montage": "/Game/Constellation/Characters/Heroine/GamePilot/SwordAcquisition/AM_Sword_ReleaseLeft.AM_Sword_ReleaseLeft",
+      "duration": 1.399999976158142
+    },
+    {
+      "name": "Raise",
+      "sequence": "/Game/Constellation/Characters/Heroine/GamePilot/SwordAcquisition/AS_Sword_Raise.AS_Sword_Raise",
+      "montage": "/Game/Constellation/Characters/Heroine/GamePilot/SwordAcquisition/AM_Sword_Raise.AM_Sword_Raise",
+      "duration": 2.200000047683716
+    },
+    {
+      "name": "RaisedHoldLoop",
+      "sequence": "/Game/Constellation/Characters/Heroine/GamePilot/SwordAcquisition/AS_Sword_RaisedHoldLoop.AS_Sword_RaisedHoldLoop",
+      "montage": "/Game/Constellation/Characters/Heroine/GamePilot/SwordAcquisition/AM_Sword_RaisedHoldLoop.AM_Sword_RaisedHoldLoop",
+      "duration": 2.4000000953674316
+    },
+    {
+      "name": "Lower",
+      "sequence": "/Game/Constellation/Characters/Heroine/GamePilot/SwordAcquisition/AS_Sword_Lower.AS_Sword_Lower",
+      "montage": "/Game/Constellation/Characters/Heroine/GamePilot/SwordAcquisition/AM_Sword_Lower.AM_Sword_Lower",
+      "duration": 2.4000000953674316
+    }
+  ],
+  "source_sha256": "3b064d141d5c2bc510a328f6a00d85364919306e75fc062d83318eaea269075c",
+  "engine_reload_position_error_cm": 0.001361048606040948,
+  "engine_reload_rotation_error_degrees": 0.0010592905570002953,
+  "loop_endpoint_checks": {
+    "BraceLoop": {
+      "position_cm": 6.925146613934359e-05,
+      "rotation_deg": 0.00019002937775444047
+    },
+    "RaisedHoldLoop": {
+      "position_cm": 0.0,
+      "rotation_deg": 0.0
+    }
+  },
+  "mesh_preservation_equal": true,
+  "videos": {
+    "front": {
+      "frames": 738,
+      "fps": 30,
+      "duration": 24.6,
+      "bytes": 3775642
+    },
+    "side": {
+      "frames": 738,
+      "fps": 30,
+      "duration": 24.6,
+      "bytes": 3836758
+    },
+    "hand": {
+      "frames": 738,
+      "fps": 30,
+      "duration": 24.6,
+      "bytes": 9007064
+    }
+  },
+  "verification_scope": "Saved AnimSequence playback on actual heroine mesh in transient Unreal review scene. Front/side/hands; proxy follows exported sword trajectory.",
+  "not_verified": [
+    "Actual sword-acquisition event, QTE, UI exit and player control handoff",
+    "Arbitrary-phase runtime loop exit blending",
+    "Production sword mesh geometry/pivot and collisions",
+    "Exhaustive triangle-triangle collision over all surfaces"
+  ],
+  "montage_loop_note": "AM assets are ordinary single-pass wrappers. BraceLoop/RaisedHoldLoop AnimSequences have matching loop endpoints; runtime unlimited waiting must explicitly enable looping in the event/AnimGraph."
+}

@@ -1,0 +1,16 @@
+{
+  "frames": 739,
+  "protected_bones": [
+    "pelvis",
+    "thigh_l",
+    "thigh_r",
+    "calf_l",
+    "calf_r",
+    "foot_l",
+    "foot_r",
+    "ball_l",
+    "ball_r"
+  ],
+  "max_world_matrix_difference": 1.817941665649414e-06,
+  "first_sword_max_matrix_difference": 0.0
+}

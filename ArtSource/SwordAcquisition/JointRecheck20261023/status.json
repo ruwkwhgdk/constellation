@@ -1,0 +1,9 @@
+{
+  "status": "confirmed_joint_twist_defect",
+  "source_modified": false,
+  "engine_modified": false,
+  "prior_visual_pass_withdrawn": true,
+  "max_right_hand_unwrapped_twist": 263.1901486288571,
+  "peak_source_frame": 278,
+  "repair_pending": true
+}

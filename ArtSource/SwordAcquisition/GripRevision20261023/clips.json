@@ -1,0 +1,72 @@
+{
+  "Approach": {
+    "action": "Sword_Approach_GripRevision",
+    "sword_action": "Sword_Approach_GripRevision_Prop",
+    "range": [
+      1,
+      100
+    ],
+    "duration": 3.3,
+    "loop": false
+  },
+  "BraceLoop": {
+    "action": "Sword_BraceLoop_GripRevision",
+    "sword_action": "Sword_BraceLoop_GripRevision_Prop",
+    "range": [
+      100,
+      172
+    ],
+    "duration": 2.4,
+    "loop": true
+  },
+  "ExtractRecover": {
+    "action": "Sword_ExtractRecover_GripRevision",
+    "sword_action": "Sword_ExtractRecover_GripRevision_Prop",
+    "range": [
+      244,
+      355
+    ],
+    "duration": 3.7,
+    "loop": false
+  },
+  "ReleaseLeft": {
+    "action": "Sword_ReleaseLeft_GripRevision",
+    "sword_action": "Sword_ReleaseLeft_GripRevision_Prop",
+    "range": [
+      415,
+      457
+    ],
+    "duration": 1.4,
+    "loop": false
+  },
+  "Raise": {
+    "action": "Sword_Raise_GripRevision",
+    "sword_action": "Sword_Raise_GripRevision_Prop",
+    "range": [
+      457,
+      523
+    ],
+    "duration": 2.2,
+    "loop": false
+  },
+  "RaisedHoldLoop": {
+    "action": "Sword_RaisedHoldLoop_GripRevision",
+    "sword_action": "Sword_RaisedHoldLoop_GripRevision_Prop",
+    "range": [
+      523,
+      595
+    ],
+    "duration": 2.4,
+    "loop": true
+  },
+  "Lower": {
+    "action": "Sword_Lower_GripRevision",
+    "sword_action": "Sword_Lower_GripRevision_Prop",
+    "range": [
+      667,
+      739
+    ],
+    "duration": 2.4,
+    "loop": false
+  }
+}

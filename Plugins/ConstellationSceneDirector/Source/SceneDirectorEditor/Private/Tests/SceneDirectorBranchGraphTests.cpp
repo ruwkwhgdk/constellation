@@ -69,6 +69,18 @@ bool FDirectorBranchLegacyPinsTest::RunTest(const FString&)
     TestEqual(TEXT("Bool registry rename propagates"),A->Steps[1].BoolKey,FName(TEXT("After")));
     return true;
 }
+IMPLEMENT_SIMPLE_AUTOMATION_TEST(FDirectorLockedBranchPinsTest,"Constellation.SceneDirector.LockedBranchPins",EAutomationTestFlags::EditorContext|EAutomationTestFlags::EngineFilter)
+bool FDirectorLockedBranchPinsTest::RunTest(const FString&)
+{
+    auto* A=BranchGraphAsset();A->Steps[1].Choices[1].bEnabled=false;
+    const FGuid Destination=A->Steps[3].Id;auto* G=BranchGraph(A);G->Sync();G->Load();
+    TestEqual(TEXT("Locked output survives roundtrip"),A->Steps[1].ChoiceTargets.FindRef(TEXT("B")),Destination);
+    auto* N=CastChecked<USceneDirectorGraphNode>(G->Nodes[1]);
+    auto* Pin=N->FindPin(USceneDirectorGraphNode::ChoicePinName(TEXT("B")));
+    if(TestNotNull(TEXT("Locked row exposes configurable output"),Pin))Pin->BreakAllPinLinks();
+    G->Sync();TestFalse(TEXT("Unconnected locked output is optional"),A->Steps[1].ChoiceTargets.Contains(TEXT("B")));
+    return true;
+}
 IMPLEMENT_SIMPLE_AUTOMATION_TEST(FDirectorBranchPinSaveTest,"Constellation.SceneDirector.BranchPinSaveReopen",EAutomationTestFlags::EditorContext|EAutomationTestFlags::EngineFilter)
 bool FDirectorBranchPinSaveTest::RunTest(const FString&)
 {

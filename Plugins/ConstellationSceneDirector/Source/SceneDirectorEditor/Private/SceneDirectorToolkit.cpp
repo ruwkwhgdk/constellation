@@ -1,4 +1,8 @@
 #include "SceneDirectorToolkit.h"
+#include "Widgets/Input/SSpinBox.h"
+#include "Containers/Ticker.h"
+#include "SceneDirectorNavigation.h"
+#include "Subsystems/AssetEditorSubsystem.h"
 #include "SceneDirectorDetails.h"
 #include "GameFramework/Pawn.h"
 #include "SceneEventEditor.h"
@@ -43,12 +47,53 @@
 #include "Engine/World.h"
 
 static const FName DirectorTab(TEXT("SceneDirector.Main"));
-FSceneDirectorToolkit::~FSceneDirectorToolkit(){ClosePreview();if(GEditor)GEditor->UnregisterForUndo(this);FEditorDelegates::MapChange.RemoveAll(this);FEditorDelegates::BeginPIE.RemoveAll(this);}
+static USceneDirectorAsset* FindTextEvent(USceneDirectorAsset* Root,const FSoftObjectPath& Path)
+{
+    TSet<USceneDirectorAsset*> Seen;
+    TFunction<USceneDirectorAsset*(USceneDirectorAsset*)> Find=[&](USceneDirectorAsset* Event)->USceneDirectorAsset*
+    {
+        if(!Event||Seen.Contains(Event))return nullptr;
+        Seen.Add(Event);if(FSoftObjectPath(Event)==Path)return Event;
+        for(USceneDirectorAsset* Child:Event->EventGraphs)if(auto* Match=Find(Child))return Match;
+        return nullptr;
+    };
+    return Find(Root);
+}
+
+bool OpenDirectorTextLocation(USceneDirectorAsset* Root,const FSoftObjectPath& EventPath,FGuid StepId,FName ChoiceKey,FName FieldName,FText& OutMessage)
+{
+    if(!GEditor||!Root){OutMessage=FText::FromString(TEXT("연출 에셋을 열 수 없습니다."));return false;}
+    auto* Editors=GEditor->GetEditorSubsystem<UAssetEditorSubsystem>();
+    Editors->OpenEditorForAsset(Root);
+    auto* Instance=Editors->FindEditorForAsset(Root,true);
+    if(!Instance||Instance->GetEditorName()!=TEXT("SceneDirector")){OutMessage=FText::FromString(TEXT("Scene Director 편집기를 찾지 못했습니다."));return false;}
+    return static_cast<FSceneDirectorToolkit*>(Instance)->FocusTextLocation(EventPath,StepId,ChoiceKey,FieldName,OutMessage);
+}
+bool FSceneDirectorToolkit::FocusTextLocation(const FSoftObjectPath& EventPath,FGuid StepId,FName ChoiceKey,FName FieldName,FText& OutMessage)
+{
+    USceneDirectorAsset* Target=FindTextEvent(RootAsset,EventPath);
+    if(!Target){OutMessage=FText::FromString(TEXT("이벤트가 이동되거나 삭제됐습니다. 문자열 목록을 다시 검사하세요."));return false;}
+    // Validate before switching events, so a stale selection cannot interrupt a preview.
+    const FDirectorStep* Step=Target->Steps.FindByPredicate([&](const FDirectorStep& S){return S.Id==StepId;});
+    if(!Step||(!ChoiceKey.IsNone()&&!Step->Choices.ContainsByPredicate([&](const FDirectorChoice& C){return C.Key==ChoiceKey;})))
+    {OutMessage=FText::FromString(TEXT("대사/선택지가 삭제됐습니다. 문자열 목록을 다시 검사하세요."));return false;}
+    SelectEvent(Target);
+    for(UEdGraphNode* Node:Graph->Nodes)if(auto* DirectorNode=Cast<USceneDirectorGraphNode>(Node);DirectorNode&&DirectorNode->Step.Id==StepId)
+    {
+        GraphEditor->ClearSelectionSet();GraphEditor->SetNodeSelection(DirectorNode,true);GraphEditor->JumpToNode(DirectorNode,false);
+        Details->SetObject(DirectorNode,true);
+        Status=TEXT("문자열 위치: ")+FieldName.ToString()+(ChoiceKey.IsNone()?TEXT(""):TEXT(" / 선택지 ")+ChoiceKey.ToString());
+        OutMessage=FText::FromString(Status);return true;
+    }
+    OutMessage=FText::FromString(TEXT("현재 그래프에서 노드를 찾지 못했습니다. 다시 검사하세요."));return false;
+}
+FSceneDirectorToolkit::~FSceneDirectorToolkit(){FTSTicker::GetCoreTicker().RemoveTicker(NodePreviewTicker);ClosePreview();if(GEditor)GEditor->UnregisterForUndo(this);FEditorDelegates::MapChange.RemoveAll(this);FEditorDelegates::BeginPIE.RemoveAll(this);}
 void FSceneDirectorToolkit::Init(USceneDirectorAsset* InAsset,const TSharedPtr<IToolkitHost>& Host)
 {
     RootAsset=InAsset;RootAsset->UpgradeControlNodes();Asset=InAsset; Asset->SetFlags(RF_Transactional);
     Graph=NewObject<USceneDirectorGraph>(GetTransientPackage(),NAME_None,RF_Transactional);
-    Graph->OnChanged.AddRaw(this,&FSceneDirectorToolkit::ClosePreview);
+    Graph->OnChanged.AddRaw(this,&FSceneDirectorToolkit::PreviewGraphChanged);
+    NodePreviewTicker=FTSTicker::GetCoreTicker().AddTicker(FTickerDelegate::CreateRaw(this,&FSceneDirectorToolkit::TickNodePreview));
     Graph->OnChanged.AddRaw(this,&FSceneDirectorToolkit::RefreshNPCList);
     FEditorDelegates::BeginPIE.AddRaw(this,&FSceneDirectorToolkit::OnBeginPIE);
     Graph->Schema=USceneDirectorSchema::StaticClass(); Graph->Asset=Asset; Graph->Load();
@@ -62,13 +107,13 @@ void FSceneDirectorToolkit::RegisterTabSpawners(const TSharedRef<FTabManager>& M
     Manager->RegisterTabSpawner(DirectorTab,FOnSpawnTab::CreateSP(this,&FSceneDirectorToolkit::SpawnTab)).SetDisplayName(FText::FromString(TEXT("연출 그래프")));
 }
 void FSceneDirectorToolkit::UnregisterTabSpawners(const TSharedRef<FTabManager>& Manager){Manager->UnregisterTabSpawner(DirectorTab);FAssetEditorToolkit::UnregisterTabSpawners(Manager);}
-void FSceneDirectorToolkit::AddReferencedObjects(FReferenceCollector& Collector){Collector.AddReferencedObject(RootAsset);Collector.AddReferencedObject(Asset);Collector.AddReferencedObject(Graph);Collector.AddReferencedObject(ComparisonSequence);}
+void FSceneDirectorToolkit::AddReferencedObjects(FReferenceCollector& Collector){Collector.AddReferencedObject(RootAsset);Collector.AddReferencedObject(Asset);Collector.AddReferencedObject(Graph);Collector.AddReferencedObject(ComparisonSequence);Collector.AddReferencedObject(NodePreviewAsset);}
 TSharedRef<SDockTab> FSceneDirectorToolkit::SpawnTab(const FSpawnTabArgs&)
 {
     FDetailsViewArgs Args; Args.bHideSelectionTip=true;
     Details=FModuleManager::LoadModuleChecked<FPropertyEditorModule>("PropertyEditor").CreateDetailView(Args);
     SGraphEditor::FGraphEditorEvents Events;
-    Events.OnSelectionChanged=SGraphEditor::FOnSelectionChanged::CreateLambda([this](const TSet<UObject*>& Objects){TArray<UObject*> Selected;for(auto* O:Objects)Selected.Add(O);Details->SetObjects(Selected);});
+    Events.OnSelectionChanged=SGraphEditor::FOnSelectionChanged::CreateLambda([this](const TSet<UObject*>& Objects){TArray<UObject*> Selected;for(auto* O:Objects)Selected.Add(O);Details->SetObjects(Selected);if(bNodePreview)QueueNodePreview();});
     GraphCommands=MakeShared<FUICommandList>();
     GraphCommands->MapAction(FGenericCommands::Get().Delete,FExecuteAction::CreateLambda([this]{DeleteNodes();}));
     Events.OnCreateActionMenuAtLocation=SGraphEditor::FOnCreateActionMenuAtLocation::CreateLambda([this](UEdGraph*,const FVector2f& Location,const TArray<UEdGraphPin*>& Pins,bool,SGraphEditor::FActionMenuClosed OnClosed){auto Menu=CreateNodeMenu(Location,Pins);Menu.OnMenuDismissed.AddLambda([OnClosed]{OnClosed.ExecuteIfBound();});return Menu;});
@@ -97,6 +142,17 @@ TSharedRef<SDockTab> FSceneDirectorToolkit::SpawnTab(const FSpawnTabArgs&)
             +SWrapBox::Slot().Padding(2)[Button(TEXT("선택 삭제"),FOnClicked::CreateSP(this,&FSceneDirectorToolkit::DeleteNodes))]
             +SWrapBox::Slot().Padding(2)[Button(TEXT("뷰포트 위치 가져오기"),FOnClicked::CreateSP(this,&FSceneDirectorToolkit::CapturePosition))]
             +SWrapBox::Slot().Padding(2)[Button(TEXT("생성 및 미리보기"),FOnClicked::CreateSP(this,&FSceneDirectorToolkit::BuildPreview))]
+            +SWrapBox::Slot().Padding(2)[SNew(SButton).Text_Lambda([this]{return FText::FromString(bNodePreview?TEXT("선택 노드 미리보기 ON"):TEXT("선택 노드 미리보기 OFF"));}).OnClicked(FOnClicked::CreateSP(this,&FSceneDirectorToolkit::ToggleNodePreview))]
+            +SWrapBox::Slot().Padding(2)[SNew(SButton).Text(FText::FromString(TEXT("적용 전"))).IsEnabled_Lambda([this]{return bNodePreview;}).OnClicked_Lambda([this]{return SetNodePreviewPhase(false);})]
+            +SWrapBox::Slot().Padding(2)[SNew(SButton).Text(FText::FromString(TEXT("적용 후"))).IsEnabled_Lambda([this]{return bNodePreview;}).OnClicked_Lambda([this]{return SetNodePreviewPhase(true);})]
+            +SWrapBox::Slot().Padding(2)[SNew(SButton).Text(FText::FromString(TEXT("구간 재생"))).IsEnabled_Lambda([this]{return bNodePreview;}).OnClicked(FOnClicked::CreateSP(this,&FSceneDirectorToolkit::PlayNodePreview))]
+            +SWrapBox::Slot().Padding(2)[SNew(SButton).Text(FText::FromString(TEXT("대상 보기"))).IsEnabled_Lambda([this]{return bNodePreview;}).OnClicked(FOnClicked::CreateSP(this,&FSceneDirectorToolkit::FocusNodePreview))]
+            +SWrapBox::Slot().Padding(2)[SNew(SButton).Text_Lambda([this]{return FText::FromString(bDirectEdit?TEXT("직접 편집 ON"):TEXT("직접 편집 OFF"));}).IsEnabled_Lambda([this]{return bNodePreview&&bNodeAfter&&!bNodePlaying;}).OnClicked(FOnClicked::CreateSP(this,&FSceneDirectorToolkit::ToggleDirectEdit))]
+            +SWrapBox::Slot().Padding(2)[SNew(SButton).Text_Lambda([this]{return FText::FromString(bCameraPilot?TEXT("카메라 시점 → 외부 보기"):TEXT("외부 보기 → 카메라 시점"));}).IsEnabled_Lambda([this]{return bNodePreview&&bDirectEdit&&bNodeAfter&&!bNodePlaying;}).OnClicked(FOnClicked::CreateSP(this,&FSceneDirectorToolkit::ToggleCameraPilot))]
+            +SWrapBox::Slot().Padding(2)[SNew(STextBlock).Text(FText::FromString(TEXT("편집 경유점")))]
+            +SWrapBox::Slot().Padding(2)[SNew(SSpinBox<int32>).MinValue(1).MinDesiredWidth(55).Value_Lambda([this]{return FMath::Max(1,DirectPathPoint+1);})
+                .IsEnabled_Lambda([this]{return bNodePreview&&bDirectEdit&&bNodeAfter&&!bNodePlaying&&DirectPointFrame>=0;})
+                .OnValueCommitted_Lambda([this](int32 Value,ETextCommit::Type){DirectPathPoint=Value-1;QueueNodePreview();})]
             +SWrapBox::Slot().Padding(2)[Button(TEXT("원본 비교"),FOnClicked::CreateSP(this,&FSceneDirectorToolkit::PreviewOriginal))]
             +SWrapBox::Slot().Padding(2)[Button(TEXT("미리보기 종료"),FOnClicked::CreateSP(this,&FSceneDirectorToolkit::StopPreview))]
             +SWrapBox::Slot().Padding(2)[Button(TEXT("레벨에 실행기 배치"),FOnClicked::CreateSP(this,&FSceneDirectorToolkit::PlacePlayer))]
@@ -214,13 +270,20 @@ FReply FSceneDirectorToolkit::CapturePosition()
 }
 void FSceneDirectorToolkit::ClosePreview()
 {
+    if(bDirectEdit&&SceneViewport)
+    {
+        auto* Client=static_cast<FDirectorViewportClient*>(SceneViewport->GetViewportClient().Get());
+        if(Client->bDirectEdit&&Client->bNodeFreeView){DirectFreeView=FTransform(Client->GetViewRotation(),Client->GetViewLocation());DirectFreeViewNode=SelectedPreviewId;}
+    }
+    bNodePlaying=false;NodeRefreshAt=0;PendingDirectPose.Reset();DirectPointFrame=-1;
     SceneViewport.Reset();
     if(Sequencer){FLevelEditorSequencerIntegration::Get().RemoveSequencer(Sequencer.ToSharedRef());Sequencer->Close();Sequencer.Reset();}
-    ComparisonSequence=nullptr;
+    ComparisonSequence=nullptr;NodePreviewAsset=nullptr;
     if(PreviewBox)PreviewBox->SetContent(SNew(STextBlock).Text(FText::FromString(TEXT("미리보기가 종료되었습니다."))));
 }
 FReply FSceneDirectorToolkit::BuildPreview()
 {
+    bNodePreview=false;
     if(GEditor->PlayWorld){Status=TEXT("게임 실행을 종료한 다음 편집기 미리보기를 실행하세요.");return FReply::Handled();}
     const double Elapsed=PreviewElapsed();ClosePreview();Graph->Sync();
     if(!FSceneDirectorCompiler::Compile(*Asset,Status))return FReply::Handled();
@@ -229,7 +292,7 @@ FReply FSceneDirectorToolkit::BuildPreview()
     for(const auto& Cue:Asset->Cues)if(Cue.Step.Type==EDirectorNodeType::Dialogue&&!Cue.Step.Choices.IsEmpty())
     {
         const int32 Index=Cue.Step.PreviewChoiceIndex-1;
-        if(Cue.Step.Choices.IsValidIndex(Index))Path+=FString::Printf(TEXT(" [%s → %d: %s]"),*Cue.Step.DialogueText.ToString().Left(16),Index+1,*Cue.Step.Choices[Index].Text.ToString());
+        if(Cue.Step.Choices.IsValidIndex(Index))Path+=FString::Printf(TEXT(" [%s → %d: %s]"),*Cue.Step.ResolveDialogue().ToString().Left(16),Index+1,*Cue.Step.Choices[Index].ResolveText().ToString());
     }
     if(!Path.IsEmpty())Status+=TEXT(" 미리보기 선택 경로:")+Path+TEXT(". 각 대사 노드의 미리보기 선택지 번호로 변경합니다.");
     for(const auto& B:Asset->BoolVariables)Status+=FString::Printf(TEXT(" [%s 초기값=%s]"),*B.Key.ToString(),B.Value?TEXT("참"):TEXT("거짓"));
@@ -238,15 +301,19 @@ FReply FSceneDirectorToolkit::BuildPreview()
     Status+=TEXT(" 자동 생성 구간은 여기서 직접 편집하지 마세요. 변경은 노드 속성에서 진행하세요.");
     return FReply::Handled();
 }
-FReply FSceneDirectorToolkit::StopPreview(){ClosePreview();Status=TEXT("미리보기를 종료하고 임시 객체를 정리했습니다.");return FReply::Handled();}
-void FSceneDirectorToolkit::OnMapChanged(uint32){ClosePreview();}
-void FSceneDirectorToolkit::OnBeginPIE(bool){ClosePreview();}
+FReply FSceneDirectorToolkit::StopPreview(){bNodePreview=false;ClosePreview();Status=TEXT("미리보기를 종료하고 임시 객체를 정리했습니다.");return FReply::Handled();}
+void FSceneDirectorToolkit::OnMapChanged(uint32){bNodePreview=false;ClosePreview();}
+void FSceneDirectorToolkit::OnBeginPIE(bool){bNodePreview=false;ClosePreview();}
 void FSceneDirectorToolkit::PostUndo(bool bSuccess)
 {
-    if(!bSuccess)return;ClosePreview();
+    if(!bSuccess)return;
+    FGuid RestoreSelection;
+    for(auto* O:GraphEditor->GetSelectedNodes())if(auto* N=Cast<USceneDirectorGraphNode>(O))RestoreSelection=N->Step.Id;
+    ClosePreview();
     if(Asset!=RootAsset&&!RootAsset->EventGraphs.Contains(Asset))Asset=RootAsset;
     Graph->Asset=Asset;Graph->Load();GraphEditor->ClearSelectionSet();Details->SetObject(nullptr);
     ObjectDetails->SetObject(Asset,true);OriginDetails->SetObject(RootAsset,true);CameraDetails->SetObject(Asset,true);VectorDetails->SetObject(Asset,true);BoolDetails->SetObject(RootAsset,true);ConditionDetails->SetObject(Asset,true);ActionDetails->SetObject(Asset,true);RefreshNPCList();RefreshEventList();
+    if(bNodePreview){for(auto O:Graph->Nodes)if(auto* N=Cast<USceneDirectorGraphNode>(O.Get());N&&N->Step.Id==RestoreSelection)GraphEditor->SetNodeSelection(N,true);QueueNodePreview();}
 }
 void FSceneDirectorToolkit::SaveAsset_Execute()
 {
@@ -322,8 +389,12 @@ void FSceneDirectorToolkit::RefreshNPCList()
 
 void FSceneDirectorToolkit::RegistryChanged(const FPropertyChangedEvent&)
 {
+    FGuid Selected;
+    for(auto* O:GraphEditor->GetSelectedNodes())if(auto* N=Cast<USceneDirectorGraphNode>(O))Selected=N->Step.Id;
     ClosePreview();Asset->bNeedsCompile=true;Asset->MarkPackageDirty();
     Graph->Load();GraphEditor->ClearSelectionSet();Details->SetObject(nullptr);RefreshNPCList();
+    for(auto O:Graph->Nodes)if(auto* N=Cast<USceneDirectorGraphNode>(O.Get());N&&N->Step.Id==Selected)GraphEditor->SetNodeSelection(N,true);
+    if(bNodePreview)QueueNodePreview();
 }
 
 
@@ -371,7 +442,7 @@ void FSceneDirectorToolkit::RefreshEventList()
 void FSceneDirectorToolkit::SelectEvent(USceneDirectorAsset* Event)
 {
     if(!Event||Event==Asset)return;
-    if(Event!=RootAsset&&!RootAsset->EventGraphs.Contains(Event))return;
+    if(!FindTextEvent(RootAsset,FSoftObjectPath(Event)))return;
     ClosePreview();Graph->Sync();Asset=Event;Asset->SetFlags(RF_Transactional);Graph->Asset=Asset;Graph->Load();
     GraphEditor->ClearSelectionSet();GraphEditor->ZoomToFit(false);Details->SetObject(nullptr);
     ObjectDetails->SetObject(Asset,true);OriginDetails->SetObject(RootAsset,true);CameraDetails->SetObject(Asset,true);VectorDetails->SetObject(Asset,true);BoolDetails->SetObject(RootAsset,true);ConditionDetails->SetObject(Asset,true);ActionDetails->SetObject(Asset,true);RefreshNPCList();RefreshEventList();
@@ -445,9 +516,234 @@ void FSceneDirectorToolkit::OpenPreview(ULevelSequence* Sequence,USceneDirectorA
 }
 FReply FSceneDirectorToolkit::PreviewOriginal()
 {
+    bNodePreview=false;
     if(GEditor->PlayWorld){Status=TEXT("PIE를 종료한 뒤 원본 비교를 실행하세요.");return FReply::Handled();}
     if(!Asset->ImportedFrom){Status=TEXT("시퀀스에서 변환한 이벤트에서 원본 비교를 사용할 수 있습니다.");return FReply::Handled();}
     if(!FSceneDirectorImporter::Convert(Asset->ImportedFrom,GetTransientPackage(),Status))return FReply::Handled();
     const double Elapsed=PreviewElapsed();ClosePreview();ComparisonSequence=DuplicateObject<ULevelSequence>(Asset->ImportedFrom,GetTransientPackage());
     OpenPreview(ComparisonSequence,nullptr,Elapsed);Status=TEXT("원본 비교 중 (읽기 전용 복사본). 생성 및 미리보기를 누르면 같은 시간의 변환 결과로 돌아갑니다.");return FReply::Handled();
+}
+
+
+void FSceneDirectorToolkit::QueueNodePreview()
+{
+    ClosePreview();
+    if(bNodePreview)NodeRefreshAt=FPlatformTime::Seconds()+.2;
+}
+void FSceneDirectorToolkit::PreviewGraphChanged()
+{
+    if(bRefreshingNode)return;
+    if(bNodePreview)QueueNodePreview();else ClosePreview();
+}
+bool FSceneDirectorToolkit::TickNodePreview(float DeltaSeconds)
+{
+    if(PendingDirectRedo.IsSet())
+    {const bool Redo=PendingDirectRedo.GetValue();PendingDirectRedo.Reset();PendingDirectPose.Reset();if(Redo)GEditor->RedoTransaction();else GEditor->UndoTransaction();}
+    if(PendingDirectPose.IsSet())
+    {const FTransform Pose=PendingDirectPose.GetValue();PendingDirectPose.Reset();CommitDirectPose(Pose);}
+    if(NodeRefreshAt>0&&FPlatformTime::Seconds()>=NodeRefreshAt)
+    {NodeRefreshAt=0;if(bNodePreview)RefreshNodePreview();}
+    if(bNodePlaying&&Sequencer)
+    {
+        NodeFrame=FMath::Min(NodeEndFrame,NodeFrame+DeltaSeconds*30.);
+        if(NodeFrame>=NodeEndFrame){bNodePlaying=false;bNodeAfter=true;}
+        EvaluateNodePreview(NodeFrame);
+    }
+    return true;
+}
+FReply FSceneDirectorToolkit::ToggleNodePreview()
+{
+    bNodePreview=!bNodePreview;
+    if(bNodePreview){bNodeAfter=true;RefreshNodePreview();}else ClosePreview();
+    return FReply::Handled();
+}
+FReply FSceneDirectorToolkit::SetNodePreviewPhase(bool bAfter)
+{
+    bNodeAfter=bAfter;bNodePlaying=false;
+    if(bNodePreview)RefreshNodePreview();
+    return FReply::Handled();
+}
+bool FSceneDirectorToolkit::RefreshNodePreview()
+{
+    ClosePreview();
+    if(!GEditor||GEditor->PlayWorld){Status=TEXT("게임 실행을 종료한 뒤 선택 노드를 미리보세요.");return false;}
+    if(!GraphEditor||GraphEditor->GetSelectedNodes().Num()!=1){Status=TEXT("좌표를 사용하는 노드 하나를 선택하세요.");return false;}
+    auto* Node=Cast<USceneDirectorGraphNode>(*GraphEditor->GetSelectedNodes().CreateConstIterator());
+    if(!Node)return false;
+    const auto Type=Node->Step.Type;
+    if(!(DirectorNodes::IsNPC(Type)||DirectorNodes::IsCamera(Type)||DirectorNodes::IsReturn(Type)||Type==EDirectorNodeType::CharacterMove||Type==EDirectorNodeType::LookAt))
+    {Status=TEXT("캐릭터 배치·이동, 카메라 또는 주시 노드를 선택하세요.");return false;}
+    SelectedPreviewId=Node->Step.Id;
+    TGuardValue<bool> Guard(bRefreshingNode,true);
+    Graph->Sync();
+    // Compile a disposable snapshot; editing a coordinate must not replace the saved generated sequence.
+    NodePreviewAsset=DuplicateObject<USceneDirectorAsset>(Asset,GetTransientPackage());
+    NodePreviewAsset->SetFlags(RF_Transient);
+    FDirectorSchedule Plan;
+    if(!FSceneDirectorCompiler::Schedule(*NodePreviewAsset,Plan,Status)){NodePreviewAsset=nullptr;return false;}
+    const int32 Index=NodePreviewAsset->Steps.IndexOfByPredicate([this](const FDirectorStep& S){return S.Id==SelectedPreviewId;});
+    if(!Plan.Order.Contains(Index)){NodePreviewAsset=nullptr;Status=TEXT("선택 노드는 현재 미리보기 분기에서 실행되지 않습니다. 조건/선택지 미리보기 값을 확인하세요.");return false;}
+    if(!FSceneDirectorCompiler::Compile(*NodePreviewAsset,Status)){NodePreviewAsset=nullptr;return false;}
+    NodeStartFrame=Plan.StartFrames[Index];NodeEndFrame=Plan.FinishFrames[Index];
+    OpenPreview(NodePreviewAsset->GeneratedSequence,NodePreviewAsset,0);
+    auto* Client=static_cast<FDirectorViewportClient*>(SceneViewport->GetViewportClient().Get());
+    const auto& Step=NodePreviewAsset->Steps[Index];
+    const bool Camera=DirectorNodes::IsCamera(Type);
+    const FGuid* Binding=Camera?NodePreviewAsset->CameraBindings.Find(Step.EffectiveCameraKey()):NodePreviewAsset->NPCBindings.Find(Step.Role);
+    if(Binding)Client->NodePreviewBinding=*Binding;
+    Client->bNodeCamera=Camera;
+    Client->bNodeFreeView=!Camera&&!DirectorNodes::IsReturn(Type);
+    Client->NodeBeforePose=Plan.FromPoses[Index];Client->NodeAfterPose=Plan.ToPoses[Index];
+    // Static framing computes From==To for playback; comparison still needs the incoming camera pose.
+    if(Type==EDirectorNodeType::CameraPreset)
+    {
+        if(const auto* Entry=NodePreviewAsset->Cameras.FindByPredicate([&](const FDirectorCameraEntry& C){return C.Key==Step.EffectiveCameraKey();}))Client->NodeBeforePose=Entry->Transform;
+        int32 Latest=-1;
+        for(int32 Previous:Plan.Order)
+        {
+            const auto& P=NodePreviewAsset->Steps[Previous];
+            if(Previous!=Index&&DirectorNodes::IsCamera(P.Type)&&P.Type!=EDirectorNodeType::CameraSwitch&&P.EffectiveCameraKey()==Step.EffectiveCameraKey()&&Plan.StartFrames[Previous]<NodeStartFrame&&Plan.FinishFrames[Previous]<=NodeStartFrame&&Plan.FinishFrames[Previous]>Latest)
+            {Latest=Plan.FinishFrames[Previous];Client->NodeBeforePose=Plan.ToPoses[Previous];}
+        }
+    }
+    Client->bNodeCanOverridePose=(DirectorNodes::IsNPC(Type)||Type==EDirectorNodeType::CharacterMove||Camera)&&Type!=EDirectorNodeType::CameraSwitch;
+    ConfigureDirectEditing();
+    EvaluateNodePreview(bNodeAfter?NodeEndFrame:NodeStartFrame);
+    if(Client->bNodeFreeView)
+    {
+        if(Client->bDirectEdit&&DirectFreeView.IsSet()&&DirectFreeViewNode==SelectedPreviewId)
+        {Client->SetViewLocation(DirectFreeView->GetLocation());Client->SetViewRotation(DirectFreeView->Rotator());}
+        else FocusNodePreview();
+    }
+    Status=FString::Printf(TEXT("선택 노드 · %s · %.2f → %.2f초 | 좌표 수정 시 자동 갱신 · 기존 분기/기준 좌표 사용 · 게임 액션 미실행"),bNodeAfter?TEXT("적용 후"):TEXT("적용 전"),NodeStartFrame/30.,NodeEndFrame/30.);
+    if(bDirectEdit)Status+=TEXT(" | 직접 편집: W 이동 / E 회전 · 드래그 후 반영 · Esc 취소 · 카메라 시점은 우클릭+WASD 이동 후 우클릭을 놓으면 반영. 카메라 샷/전환은 공유 카메라 초기값을 변경합니다. 구도 프리셋은 위치만 편집합니다.");
+    return true;
+}
+void FSceneDirectorToolkit::EvaluateNodePreview(double Frame)
+{
+    if(!Sequencer||!SceneViewport||!NodePreviewAsset)return;
+    auto* Client=static_cast<FDirectorViewportClient*>(SceneViewport->GetViewportClient().Get());
+    // Evaluate just inside the selected interval, before downstream cuts/hides or end-of-sequence despawn.
+    const double MaxFrame=NodePreviewAsset->GeneratedSequence->GetMovieScene()->GetPlaybackRange().GetUpperBoundValue().Value-.001;
+    double Sample=Frame;
+    if(!bNodePlaying)Sample=bNodeAfter?FMath::Max(NodeStartFrame,NodeEndFrame-.001):FMath::Max(0.,NodeStartFrame-.001);
+    if(bDirectEdit&&bNodeAfter&&!bNodePlaying&&DirectPointFrame>=0)Sample=DirectPointFrame;
+    Sequencer->SetGlobalTime(FFrameTime::FromDecimal(FMath::Clamp(Sample,0.,MaxFrame)));
+    Sequencer->ForceEvaluate();
+    Client->NodeStaticPose=(!bNodePlaying&&Client->bNodeCanOverridePose)?TOptional<FTransform>(bNodeAfter?Client->NodeAfterPose:Client->NodeBeforePose):TOptional<FTransform>();
+    Client->Tick(0);
+}
+FReply FSceneDirectorToolkit::PlayNodePreview()
+{
+    bDirectEdit=false;
+    if(!bNodePreview||!RefreshNodePreview())return FReply::Handled();
+    NodeFrame=NodeStartFrame;bNodePlaying=NodeEndFrame>NodeStartFrame;
+    EvaluateNodePreview(NodeFrame);return FReply::Handled();
+}
+FReply FSceneDirectorToolkit::FocusNodePreview()
+{
+    if(!Sequencer||!SceneViewport)return FReply::Handled();
+    auto* Client=static_cast<FDirectorViewportClient*>(SceneViewport->GetViewportClient().Get());
+    if(!Client->bNodeCamera)for(auto O:Sequencer->FindBoundObjects(Client->NodePreviewBinding,MovieSceneSequenceID::Root))if(auto* Actor=Cast<AActor>(O.Get()))
+    {
+        FBox Bounds=Actor->GetComponentsBoundingBox(true);
+        if(!Bounds.IsValid||Bounds.GetExtent().IsNearlyZero())Bounds=FBox(Actor->GetActorLocation()-FVector(50),Actor->GetActorLocation()+FVector(50));
+        Client->FocusViewportOnBox(Bounds,true);break;
+    }
+    return FReply::Handled();
+}
+
+
+FReply FSceneDirectorToolkit::ToggleDirectEdit()
+{
+    bDirectEdit=!bDirectEdit;bCameraPilot=false;
+    if(bNodePreview){bNodeAfter=true;RefreshNodePreview();}
+    return FReply::Handled();
+}
+FReply FSceneDirectorToolkit::ToggleCameraPilot()
+{
+    if(!NodePreviewAsset)return FReply::Handled();
+    const auto* Step=NodePreviewAsset->Steps.FindByPredicate([this](const FDirectorStep& S){return S.Id==SelectedPreviewId;});
+    if(!Step||!DirectorNodes::IsCamera(Step->Type)||Step->Type==EDirectorNodeType::CameraPreset)
+    {Status=TEXT("카메라 시점 직접 편집은 카메라 샷·이동·전환 노드에서 사용하세요. 구도 프리셋은 대상 주시를 유지합니다.");return FReply::Handled();}
+    bCameraPilot=!bCameraPilot;RefreshNodePreview();return FReply::Handled();
+}
+void FSceneDirectorToolkit::ConfigureDirectEditing()
+{
+    if(!SceneViewport||!NodePreviewAsset)return;
+    auto* Client=static_cast<FDirectorViewportClient*>(SceneViewport->GetViewportClient().Get());
+    const auto* Step=NodePreviewAsset->Steps.FindByPredicate([this](const FDirectorStep& S){return S.Id==SelectedPreviewId;});
+    if(!Step)return;
+    DirectIncomingPose=Client->NodeBeforePose;DirectOriginalPose=Client->NodeAfterPose;
+    if(DirectPathNode!=SelectedPreviewId){DirectPathNode=SelectedPreviewId;DirectPathPoint=-1;}
+    Client->bDirectEdit=bDirectEdit&&bNodeAfter&&!bNodePlaying&&Client->NodePreviewBinding.IsValid()&&(DirectorNodes::IsNPC(Step->Type)||DirectorNodes::IsCamera(Step->Type)||Step->Type==EDirectorNodeType::CharacterMove);
+    if(!Client->bDirectEdit)return;
+    if(!DirectorNodes::IsCamera(Step->Type))bCameraPilot=false;
+    if(Step->bUseMotionPath&&!Step->MotionPoints.IsEmpty())
+    {
+        if(!Step->MotionPoints.IsValidIndex(DirectPathPoint))DirectPathPoint=Step->MotionPoints.Num()-1;
+        Client->NodeAfterPose=Step->MotionPoints[DirectPathPoint].Pose();DirectOriginalPose=Client->NodeAfterPose;
+        DirectPointFrame=NodeStartFrame+Step->MotionPoints[DirectPathPoint].Time*30.;
+    }
+    Client->bNodeCanOverridePose=true;
+    Client->bAllowNodeRotation=Step->Type!=EDirectorNodeType::CameraPreset;
+    Client->bPilotCamera=bCameraPilot&&DirectorNodes::IsCamera(Step->Type)&&Client->bAllowNodeRotation;
+    Client->bNodeCamera=Client->bPilotCamera;Client->bNodeFreeView=!Client->bPilotCamera;
+    Client->SetGameView(false);Client->EngineShowFlags.SetModeWidgets(true);
+    const TWeakPtr<FSceneDirectorToolkit> Weak=SharedThis(this);
+    Client->RequestNodeUndoRedo=[Weak](bool Redo){if(auto Self=Weak.Pin())Self->PendingDirectRedo=Redo;};
+    Client->CommitNodePose=[Weak](const FTransform& Pose){if(auto Self=Weak.Pin())Self->PendingDirectPose=Pose;};
+}
+void FSceneDirectorToolkit::CommitDirectPose(const FTransform& Pose)
+{
+    if(!bNodePreview||!bDirectEdit||!bNodeAfter||bNodePlaying||!Graph||!NodePreviewAsset||GEditor->PlayWorld)return;
+    USceneDirectorGraphNode* Node=nullptr;
+    for(auto O:Graph->Nodes)if(auto* N=Cast<USceneDirectorGraphNode>(O.Get());N&&N->Step.Id==SelectedPreviewId){Node=N;break;}
+    if(!Node||Pose.ContainsNaN())return;
+    FDirectorStep Edited=Node->Step;
+    const bool Rotated=!Pose.GetRotation().Equals(DirectOriginalPose.GetRotation(),1.e-5);
+    auto WriteInput=[&](FDirectorVectorInput& Input,const FVector& Value,const FVector& Current)->bool
+    {
+        if(Input.Mode==EDirectorValueMode::Absolute)Input.Value=Value;
+        else if(Input.Mode==EDirectorValueMode::Current)Input.Offset=Value-Current;
+        else if(Input.Mode==EDirectorValueMode::Key)
+        {
+            const auto* Entry=Asset->Vectors.FindByPredicate([&](const FDirectorVectorEntry& V){return V.Key==Input.Key;});
+            if(!Entry){Status=TEXT("Vector3 Key를 찾을 수 없어 편집을 반영하지 않았습니다.");return false;}
+            Input.Offset=Value-Entry->Value-(Input.bAddCurrent?Current:FVector::ZeroVector);
+        }
+        else return false;
+        return true;
+    };
+    bool SharedCamera=false;
+    if(Edited.bUseMotionPath&&(Edited.Type==EDirectorNodeType::CharacterMove||Edited.Type==EDirectorNodeType::CameraMove))
+    {
+        if(!Edited.MotionPoints.IsValidIndex(DirectPathPoint))return;
+        auto& Point=Edited.MotionPoints[DirectPathPoint];Point.Position=Pose.GetLocation();
+        if(Rotated)Point.Rotation=Pose.Rotator().Euler();
+    }
+    else if(DirectorNodes::IsNPC(Edited.Type))Edited.Transform=Pose;
+    else if(Edited.Type==EDirectorNodeType::CharacterMove||Edited.Type==EDirectorNodeType::CameraMove)
+    {
+        if(!WriteInput(Edited.Destination,Pose.GetLocation(),DirectIncomingPose.GetLocation()))return;
+        if(Rotated)
+        {
+            if(!WriteInput(Edited.Rotation,Pose.Rotator().Euler(),DirectIncomingPose.Rotator().Euler()))return;
+            if(Edited.Type==EDirectorNodeType::CharacterMove)Edited.bSpecifyArrivalRotation=true;
+        }
+    }
+    else if(Edited.Type==EDirectorNodeType::CameraPreset)
+        Edited.ShotOffset+=Pose.GetLocation()-DirectOriginalPose.GetLocation();
+    else if(Edited.Type==EDirectorNodeType::Camera||Edited.Type==EDirectorNodeType::CameraSwitch)
+    {SharedCamera=true;Edited.Transform=Pose;if(Rotated)Edited.bLookAtTarget=false;}
+    else return;
+    {
+        const FScopedTransaction Transaction(FText::FromString(TEXT("미리보기에서 위치·회전 편집")));
+        Asset->Modify();Node->Modify();Node->Step=Edited;
+        if(SharedCamera)if(auto* Camera=Asset->Cameras.FindByPredicate([&](const FDirectorCameraEntry& C){return C.Key==Edited.EffectiveCameraKey();}))Camera->Transform=Pose;
+        Graph->Sync();
+    }
+    Details->ForceRefresh();
+    // The viewport input callback only queued this operation; it is safe to rebuild on the next ticker.
+    QueueNodePreview();
 }

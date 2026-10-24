@@ -1,5 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "Containers/Ticker.h"
 #include "Toolkits/AssetEditorToolkit.h"
 #include "EditorUndoClient.h"
 #include "UObject/GCObject.h"
@@ -19,6 +20,7 @@ class FSceneDirectorToolkit : public FAssetEditorToolkit, public FEditorUndoClie
 public:
     virtual ~FSceneDirectorToolkit();
     FReply BuildPreview();
+    bool FocusTextLocation(const FSoftObjectPath& EventPath,FGuid StepId,FName ChoiceKey,FName FieldName,FText& OutMessage);
     void Init(USceneDirectorAsset* InAsset, const TSharedPtr<IToolkitHost>& Host);
     virtual FName GetToolkitFName() const override {return TEXT("SceneDirector");}
     virtual FText GetBaseToolkitName() const override {return FText::FromString(TEXT("Scene Director"));}
@@ -32,9 +34,39 @@ public:
     virtual void PostRedo(bool bSuccess) override {PostUndo(bSuccess);}
     virtual void SaveAsset_Execute() override;
 private:
+    friend class FDirectorNodePreviewTest;
+    bool RefreshNodePreview();
+    friend class FDirectorDirectEditingTest;
+    FReply ToggleDirectEdit();
+    FReply ToggleCameraPilot();
+    void CommitDirectPose(const FTransform& Pose);
+    void ConfigureDirectEditing();
+    bool bDirectEdit=false,bCameraPilot=false;
+    int32 DirectPathPoint=-1;
+    FGuid DirectPathNode;
+    FTransform DirectIncomingPose,DirectOriginalPose;
+    TOptional<FTransform> DirectFreeView;
+    FGuid DirectFreeViewNode;
+    TOptional<FTransform> PendingDirectPose;
+    TOptional<bool> PendingDirectRedo;
+    double DirectPointFrame=-1;
+    void PreviewGraphChanged();
+    void QueueNodePreview();
+    bool TickNodePreview(float DeltaSeconds);
+    FReply ToggleNodePreview();
+    FReply SetNodePreviewPhase(bool bAfter);
+    FReply PlayNodePreview();
+    FReply FocusNodePreview();
+    void EvaluateNodePreview(double Frame);
+    FTSTicker::FDelegateHandle NodePreviewTicker;
+    bool bNodePreview=false,bNodeAfter=true,bNodePlaying=false,bRefreshingNode=false;
+    double NodeRefreshAt=0,NodeStartFrame=0,NodeEndFrame=0,NodeFrame=0;
+    FGuid SelectedPreviewId;
+    TObjectPtr<USceneDirectorAsset> NodePreviewAsset=nullptr;
     friend class FDirectorDeleteKeyTest;
     friend class FDirectorPreviewVisibilityTest;
     friend class FDirectorPreviewReturnTest;
+    friend class FDirectorShakePreviewTest;
     friend class FDirectorEditorCapture;
     friend class FDirectorEditorSmokeTest;
     friend class FDirectorEventGraphsTest;

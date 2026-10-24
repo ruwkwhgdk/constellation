@@ -1,4 +1,5 @@
-﻿#include "SceneEventSubsystem.h"
+#include "SceneEventSubsystem.h"
+#include "SceneDirectorTesting.h"
 #include "SceneDirectorAsset.h"
 #include "SceneDirectorPlayer.h"
 #include "Engine/World.h"
@@ -20,7 +21,8 @@ bool USceneEventSubsystem::IsBusy() const
 }
 ASceneDirectorPlayer* USceneEventSubsystem::Start(USceneDirectorAsset* D,const FString& Key,const FTransform& Origin,bool UseOrigin,const TMap<FName,TObjectPtr<AActor>>& Objects,FString& Error)
 {
- Error.Reset();if(bShuttingDown||IsBusy()){Error=TEXT("다른 연출이 진행 중입니다.");return nullptr;}
+ Error.Reset();if(DirectorTesting::ShouldSkip(GetWorld())){Error=TEXT("테스트 설정으로 연출 생략");return nullptr;}
+ if(bShuttingDown||IsBusy()){Error=TEXT("다른 연출이 진행 중입니다.");return nullptr;}
  if(!D){Error=TEXT("연출 그래프를 지정하세요.");return nullptr;}
  auto& State=States.FindOrAdd(Key);if(State.Asset!=D){State=FSceneEventState();State.Asset=D;}
  TMap<FName,bool> Bools;TMap<FName,int32> Ints;
@@ -57,6 +59,7 @@ void USceneEventSubsystem::Unregister(ASceneEventBinding* B)
 bool USceneEventSubsystem::Request(ASceneEventBinding* B,const FString& Signal)
 {
  if(!IsValid(B)||!B->bEnabled||bShuttingDown)return false;
+ if(DirectorTesting::ShouldSkip(GetWorld())){Record(B,TEXT("테스트 설정으로 연출 생략"));return false;}
  if((B->bPersistVariables||B->Repeat==ESceneEventRepeat::OncePerSave)&&!SaveHandler.IsBound()){Record(B,TEXT("저장 시스템 준비가 필요합니다."));return false;}
  if((B->Repeat!=ESceneEventRepeat::EveryTime&&Completed.Contains(B->EventId))||(B->Repeat==ESceneEventRepeat::OncePerSave&&SavedState.Completed.Contains(PersistentKey(B->EventId.ToString())))){Record(B,TEXT("이번 방문에서 이미 완료"));return false;}
  const FString Id=Signal.IsEmpty()?FString():B->EventId.ToString()+TEXT(":")+Signal;
@@ -71,6 +74,7 @@ bool USceneEventSubsystem::Request(ASceneEventBinding* B,const FString& Signal)
 bool USceneEventSubsystem::Execute(const FSceneEventRequest& R)
 {
  auto* B=R.Binding.Get();if(!B||!B->bEnabled)return false;
+ if(DirectorTesting::ShouldSkip(GetWorld())){Record(B,TEXT("테스트 설정으로 연출 생략"));return false;}
  if((B->Repeat!=ESceneEventRepeat::EveryTime&&Completed.Contains(B->EventId))||(B->Repeat==ESceneEventRepeat::OncePerSave&&SavedState.Completed.Contains(PersistentKey(B->EventId.ToString()))))return false;
  if(B->Trigger==ESceneEventTrigger::Volume&&!B->PlayerInside()){Record(B,TEXT("영역 이탈 · 대기 취소"));return false;}
  // The destroyed source is intentionally no longer required; its transform was captured at signal time.
@@ -115,4 +119,15 @@ bool USceneEventSubsystem::RetryPendingSave()
  LastSaveError.Reset();if(!SaveHandler.IsBound()){LastSaveError=TEXT("저장 연결 없음");return false;}
  if(!SaveHandler.Execute(PendingSave,LastSaveError))return false;
  PendingSave=FSceneEventSaveData();return true;
+}
+
+bool USceneEventSubsystem::HasCompletedInteraction(const AActor* Source) const
+{
+    // Match RouteInteraction's first matching binding, including its repeat policy.
+    for(auto Weak:Bindings)
+        if(const auto* Binding=Weak.Get();Binding && Binding->Trigger==ESceneEventTrigger::Interaction && Binding->Source==Source)
+            return (Binding->Repeat!=ESceneEventRepeat::EveryTime && Completed.Contains(Binding->EventId))
+                || (Binding->Repeat==ESceneEventRepeat::OncePerSave
+                    && SavedState.Completed.Contains(PersistentKey(Binding->EventId.ToString())));
+    return false;
 }

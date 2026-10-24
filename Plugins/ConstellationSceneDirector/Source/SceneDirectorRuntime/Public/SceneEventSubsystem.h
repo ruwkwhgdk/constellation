@@ -1,4 +1,4 @@
-﻿#pragma once
+#pragma once
 #include "CoreMinimal.h"
 #include "Subsystems/WorldSubsystem.h"
 #include "SceneEventBinding.h"
@@ -31,6 +31,7 @@ public:
  void Unregister(ASceneEventBinding* Binding);
  bool Request(ASceneEventBinding* Binding,const FString& Signal=FString());
  bool RouteInteraction(AActor* Source,AActor* Interactor);
+ bool HasCompletedInteraction(const AActor* Source) const;
  UFUNCTION(BlueprintCallable,Category="연출 이벤트",meta=(DisplayName="레벨 준비 완료 알림")) void NotifyLevelReady();
  UFUNCTION(BlueprintCallable,Category="연출 이벤트",meta=(DisplayName="전투 종료 알림")) void NotifyCombatFinished(FName CombatKey,FGuid BattleInstance,ESceneCombatResult Result);
  UFUNCTION(BlueprintCallable,Category="연출 이벤트") void CancelActive();

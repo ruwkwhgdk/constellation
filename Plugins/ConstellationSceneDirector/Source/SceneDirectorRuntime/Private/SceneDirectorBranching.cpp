@@ -8,7 +8,7 @@ namespace DirectorBranching
 bool HasBranches(const USceneDirectorAsset& A)
 {
     if(A.bResolvedBranchPath)return false;
-    for(const auto& S:A.Steps)if(S.Type==EDirectorNodeType::Condition||S.Type==EDirectorNodeType::SetBool||!S.ChoiceTargets.IsEmpty())return true;
+    for(const auto& S:A.Steps)if(S.Type==EDirectorNodeType::QTE||S.Type==EDirectorNodeType::Condition||S.Type==EDirectorNodeType::SetBool||!S.ChoiceTargets.IsEmpty())return true;
     return false;
 }
 bool Resolve(const USceneDirectorAsset& A,const TMap<FGuid,FName>& Decisions,const TMap<FName,bool>& Overrides,USceneDirectorAsset& Out,FGuid& Pending,FString& Error)
@@ -27,9 +27,15 @@ bool Resolve(const USceneDirectorAsset& A,const TMap<FGuid,FName>& Decisions,con
         if(S.Type==EDirectorNodeType::Start){if(Start!=INDEX_NONE)return Fail(TEXT("시작 노드는 하나만 배치하세요."));Start=I;}
         if(S.Type==EDirectorNodeType::End){if(End!=INDEX_NONE)return Fail(TEXT("종료 노드는 하나만 배치하세요."));End=I;}
         if((S.Type==EDirectorNodeType::Condition||S.Type==EDirectorNodeType::SetBool)&&!Values.Contains(S.BoolKey))return Fail(TEXT("조건 또는 변수 설정 노드의 Bool 변수 Key를 찾을 수 없습니다."));
-        if(!S.ChoiceTargets.IsEmpty())
+        if(S.Type==EDirectorNodeType::QTE)
         {
-            if(S.Type!=EDirectorNodeType::Dialogue||S.Choices.IsEmpty()||S.ChoiceTargets.Num()!=S.Choices.FilterByPredicate([](const FDirectorChoice& C){return C.bEnabled;}).Num())return Fail(TEXT("선택지 출력 Key와 선택지 목록이 일치해야 합니다."));
+            if(!S.QTE.Validate(Error))return false;
+            if(S.ChoiceTargets.Num()!=2||!S.ChoiceTargets.Contains(TEXT("Success"))||!S.ChoiceTargets.Contains(TEXT("Failure"))||!S.Successors().IsEmpty())return Fail(TEXT("QTE Success/Failure 출력을 각각 연결하세요."));
+        }
+        else if(!S.ChoiceTargets.IsEmpty())
+        {
+            if(S.Type!=EDirectorNodeType::Dialogue||S.Choices.IsEmpty())return Fail(TEXT("선택지 출력 Key와 선택지 목록이 일치해야 합니다."));
+            for(const auto& Target:S.ChoiceTargets)if(!S.Choices.ContainsByPredicate([&](const FDirectorChoice& C){return C.Key==Target.Key;}))return Fail(TEXT("선택지 출력 Key와 선택지 목록이 일치해야 합니다."));
             if(!DirectorChoices::Validate(S.Choices,Error))return false;
             for(const auto& C:S.Choices)if(C.bEnabled&&!S.ChoiceTargets.Contains(C.Key))return Fail(TEXT("모든 선택지 출력을 연결하세요."));
         }
@@ -69,7 +75,7 @@ bool Resolve(const USceneDirectorAsset& A,const TMap<FGuid,FName>& Decisions,con
                 ActiveDecisions.Add(I);
                 if(Condition)Selected=Values.FindChecked(S.BoolKey)?S.TrueTarget:S.FalseTarget;
                 else if(const FName* Key=Decisions.Find(S.Id))
-                {if(!S.Choices.ContainsByPredicate([&](const FDirectorChoice& C){return C.Key==*Key&&C.bEnabled;}))return Fail(TEXT("비활성 선택지는 실행할 수 없습니다."));const FGuid* Target=S.ChoiceTargets.Find(*Key);if(!Target)return Fail(TEXT("선택 결과의 Key를 선택지 목록에서 찾을 수 없습니다."));Selected=*Target;}
+                {if(S.Type!=EDirectorNodeType::QTE&&!S.Choices.ContainsByPredicate([&](const FDirectorChoice& C){return C.Key==*Key&&C.bEnabled;}))return Fail(TEXT("비활성 선택지는 실행할 수 없습니다."));const FGuid* Target=S.ChoiceTargets.Find(*Key);if(!Target)return Fail(TEXT("선택 결과의 Key를 선택지 목록에서 찾을 수 없습니다."));Selected=*Target;}
                 else {if(Pending.IsValid())return Fail(TEXT("선택지 앞에 합류를 배치하여 병렬 작업을 완료하세요."));Pending=S.Id;Awaiting=true;}
             }
         }
@@ -97,6 +103,18 @@ bool Resolve(const USceneDirectorAsset& A,const TMap<FGuid,FName>& Decisions,con
 }
 bool ValidateAll(const USceneDirectorAsset& A,FString& Error)
 {
+    // Connected locked outputs may become available later. Validate their routes too,
+    // while retaining the rule that every authored prompt has an enabled escape.
+    auto* Potential=NewObject<USceneDirectorAsset>(GetTransientPackage(),NAME_None,RF_Transient);
+    Potential->Steps=A.Steps;Potential->Cameras=A.Cameras;Potential->Objects=A.Objects;
+    Potential->BoolVariables=A.BoolVariables;Potential->IntVariables=A.IntVariables;
+    Potential->Vectors=A.Vectors;Potential->Actions=A.Actions;
+    Potential->AuthoringOrigin=A.AuthoringOrigin;Potential->FormatVersion=A.FormatVersion;Potential->EventKey=A.EventKey;
+    for(auto& Step:Potential->Steps)
+    {
+        if(!DirectorChoices::Validate(Step.Choices,Error))return false;
+        for(auto& Choice:Step.Choices)if(Step.ChoiceTargets.Contains(Choice.Key))Choice.bEnabled=true;
+    }
     constexpr int32 MaxRoutes=256;
     struct FRoute {TMap<FGuid,FName> Decisions;TMap<FName,bool> Overrides;};
     TArray<FName> Keys;
@@ -113,11 +131,12 @@ bool ValidateAll(const USceneDirectorAsset& A,FString& Error)
     {
         FRoute Route=Routes.Pop(EAllowShrinking::No);
         auto* Resolved=NewObject<USceneDirectorAsset>(GetTransientPackage(),NAME_None,RF_Transient);FGuid Pending;
-        if(!Resolve(A,Route.Decisions,Route.Overrides,*Resolved,Pending,Error))return false;
+        if(!Resolve(*Potential,Route.Decisions,Route.Overrides,*Resolved,Pending,Error))return false;
         FDirectorSchedule Plan;if(!FSceneDirectorCompiler::Schedule(*Resolved,Plan,Error))return false;
         if(!Pending.IsValid()){++Complete;continue;}
-        const auto* Step=A.Steps.FindByPredicate([&](const FDirectorStep& S){return S.Id==Pending;});
-        if(Complete+Routes.Num()+Step->Choices.Num()>MaxRoutes){Error=TEXT("분기 검증은 초기값과 선택 경로의 조합을 최대 256개까지 지원합니다. 이벤트를 작은 그래프로 나누세요.");return false;}
+        const auto* Step=Potential->Steps.FindByPredicate([&](const FDirectorStep& S){return S.Id==Pending;});
+        if(Complete+Routes.Num()+(Step->Type==EDirectorNodeType::QTE?2:Step->Choices.Num())>MaxRoutes){Error=TEXT("분기 검증은 초기값과 선택 경로의 조합을 최대 256개까지 지원합니다. 이벤트를 작은 그래프로 나누세요.");return false;}
+        if(Step->Type==EDirectorNodeType::QTE)for(FName Key:{FName(TEXT("Success")),FName(TEXT("Failure"))}){FRoute Next=Route;Next.Decisions.Add(Pending,Key);Routes.Add(MoveTemp(Next));}
         for(const auto& C:Step->Choices)if(C.bEnabled){FRoute Next=Route;Next.Decisions.Add(Pending,C.Key);Routes.Add(MoveTemp(Next));}
     }
     return true;

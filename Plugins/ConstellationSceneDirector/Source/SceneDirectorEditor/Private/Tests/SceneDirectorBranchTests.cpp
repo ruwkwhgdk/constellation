@@ -26,6 +26,12 @@ bool FDirectorBranchResolverTest::RunTest(const FString&)
     Decisions.Add(Pending,TEXT("B"));TestTrue(TEXT("Selected path resolves"),DirectorBranching::Resolve(*A,Decisions,{},*R,Pending,Error));TestFalse(TEXT("Complete route"),Pending.IsValid());TestEqual(TEXT("Inactive branch omitted"),R->Steps.Num(),6);
     TestFalse(TEXT("A absent"),R->Steps.ContainsByPredicate([&](const FDirectorStep& S){return S.Id==A->Steps[2].Id;}));if(!TestTrue(TEXT("All paths validate"),DirectorBranching::ValidateAll(*A,Error)))AddError(Error);
     A->Steps[1].ChoiceTargets.Remove(TEXT("B"));TestFalse(TEXT("Missing output rejected"),DirectorBranching::ValidateAll(*A,Error));
+    A=BranchGraph();A->Steps[1].Choices[1].bEnabled=false;
+    TestTrue(TEXT("Connected locked output can be authored"),DirectorBranching::ValidateAll(*A,Error));
+    Decisions.Reset();Decisions.Add(A->Steps[1].Id,TEXT("B"));
+    TestFalse(TEXT("Locked branch cannot be selected"),DirectorBranching::Resolve(*A,Decisions,{},*R,Pending,Error));
+    A->Steps[3].Type=EDirectorNodeType::Expression;A->Steps[3].Role=TEXT("MissingNPC");
+    TestFalse(TEXT("Potential unlock route is validated"),DirectorBranching::ValidateAll(*A,Error));
     A=BranchGraph();FDirectorStep Parallel;Parallel.Type=EDirectorNodeType::Wait;Parallel.Duration=1;Parallel.NextNodes={A->Steps[4].Id};A->Steps[0].NextNodes.Add(Parallel.Id);A->Steps.Add(Parallel);TestFalse(TEXT("Parallel decision rejected"),DirectorBranching::ValidateAll(*A,Error));
     A=BranchGraph();A->Steps[2].Type=EDirectorNodeType::SetBool;A->Steps[2].BoolKey=TEXT("Seen");FDirectorBoolEntry V;V.Key=TEXT("Seen");A->BoolVariables.Add(V);
     A->Steps[4].Type=EDirectorNodeType::Condition;A->Steps[4].BoolKey=TEXT("Seen");A->Steps[4].NextNodes.Empty();A->Steps[4].TrueTarget=A->Steps[5].Id;A->Steps[4].FalseTarget=A->Steps[5].Id;

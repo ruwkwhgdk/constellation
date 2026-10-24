@@ -21,6 +21,15 @@ class SCENEDIRECTORRUNTIME_API ASceneDirectorPlayer : public AActor
     GENERATED_BODY()
 public:
     ASceneDirectorPlayer();
+    UFUNCTION(BlueprintCallable,Category="연출") void SetDirectorPaused(bool bPaused);
+    UFUNCTION(BlueprintPure,Category="연출") bool IsDirectorPaused() const {return bDirectorPaused;}
+    UFUNCTION(BlueprintPure,Category="QTE") bool IsWaitingForQTE() const {return QTEPrompt.IsValid();}
+    UFUNCTION(BlueprintPure,Category="QTE") EDirectorQTEOutcome GetLastQTEOutcome() const {return LastQTEOutcome;}
+#if WITH_DEV_AUTOMATION_TESTS
+    TSharedPtr<class SDirectorQTE> GetQTEViewForTesting() const {return QTEView;}
+#endif
+    FDirectorShakeOffset GetCameraShake(AActor* ViewTarget) const;
+    UFUNCTION(BlueprintPure,Category="카메라 진동") int32 GetActiveCameraShakeCount() const {return CameraShakeState.Num();}
     UFUNCTION(BlueprintPure,Category="시야 효과") bool HasEyeEffect() const;
     UFUNCTION(BlueprintPure,Category="시야 효과") bool HasStartedEyeEffect() const;
     UFUNCTION(BlueprintPure,Category="시야 효과") bool HasVisionOverlay() const {return VisionWidget.IsValid();}
@@ -48,6 +57,8 @@ public:
     UPROPERTY(VisibleAnywhere,BlueprintReadOnly,Category="선택지") FName LastChoiceKey;
     UPROPERTY(BlueprintAssignable,Category="선택지") FDirectorChoiceSelected OnChoiceSelected;
     UFUNCTION(BlueprintCallable,Category="선택지") bool SelectDialogueChoice(FName Key);
+    // Updates only the active prompt. False leaves state unchanged (including missing branch targets).
+    UFUNCTION(BlueprintCallable,Category="선택지") bool SetChoiceAvailability(FName Key,bool bEnabled,FText Reason);
     UFUNCTION(BlueprintPure,Category="선택지") bool IsWaitingForChoice()const{return WaitingCue!=INDEX_NONE&&!CurrentChoices.IsEmpty();}
     UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="조건 변수",meta=(DisplayName="재생 초기값 덮어쓰기")) TMap<FName,bool> InitialBoolOverrides;
     UPROPERTY(VisibleAnywhere,BlueprintReadOnly,Category="조건 변수") TMap<FName,bool> BoolValues;
@@ -57,6 +68,8 @@ public:
     bool bReturningToGameplay=false;
     TMap<TWeakObjectPtr<AActor>,bool> StandInVisibility;
     TMap<TWeakObjectPtr<class UPrimitiveComponent>,bool> StandInComponentVisibility;
+    // A scene-owned modal overlay may remain visible while ordinary gameplay HUD is hidden.
+    TSet<TWeakObjectPtr<class UUserWidget>> SceneOverlays;
     void RememberStandIns();
     void RestoreStandIns();
 
@@ -82,6 +95,22 @@ protected:
     virtual void BeginPlay() override;
     virtual void EndPlay(const EEndPlayReason::Type Reason) override;
 private:
+    friend class USceneDirectorLibrary;
+    friend class FDirectorQTEPlayerTest;
+    friend class FDirectorSkipRequestsTest;
+    bool StartQTE(int32 CueIndex);
+    void ResolveQTE(FGuid Prompt,EDirectorQTEOutcome Outcome);
+    void CleanupQTE(bool bCancel);
+    void TickQTE();
+    TSharedPtr<class SDirectorQTE> QTEView;
+    TArray<TSharedPtr<class SDirectorQTE>> RetiringQTEViews;
+    TWeakPtr<SWidget> QTEPreviousFocus;
+    FGuid QTEPrompt;
+    EDirectorQTEOutcome LastQTEOutcome=EDirectorQTEOutcome::Pending;
+    bool bDirectorPaused=false,bQTECursor=false,bQTEIgnoreInput=false,bQTEHideCapture=false,bQTEInputSnapshot=false;
+    uint8 QTEMouseCapture=0,QTEMouseLock=0;
+    FDirectorShakeState CameraShakeState;
+    UPROPERTY(Transient) TObjectPtr<UDirectorCameraShakeModifier> CameraShakeModifier;
     UPROPERTY(Transient) TWeakObjectPtr<AActor> HiddenPlayer;
     bool bPlayerWasHidden=false;
     UPROPERTY(Transient) TObjectPtr<USceneDirectorAsset> RuntimeSource;

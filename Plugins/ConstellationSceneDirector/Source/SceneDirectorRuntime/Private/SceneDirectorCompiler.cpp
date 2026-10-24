@@ -46,7 +46,7 @@ bool FSceneDirectorCompiler::Schedule(const USceneDirectorAsset& Asset,FDirector
         IDs.Add(S.Id,I);
         if(S.Type==EDirectorNodeType::Start){if(Start!=INDEX_NONE)return Fail(TEXT("시작은 하나만 배치하세요."));Start=I;}
         if(S.Type==EDirectorNodeType::End){if(End!=INDEX_NONE)return Fail(TEXT("종료는 하나만 배치하세요."));End=I;}
-        if(uint8(S.Type)>uint8(EDirectorNodeType::ClearVision))return Fail(TEXT("알 수 없는 노드 종류입니다."));
+        if(uint8(S.Type)>uint8(EDirectorNodeType::QTE))return Fail(TEXT("알 수 없는 노드 종류입니다."));
         if(DirectorNodes::IsNPC(S.Type))
         {
             if(!S.ActorClass||S.ActorClass->HasAnyClassFlags(CLASS_Abstract|CLASS_Deprecated|CLASS_NewerVersionExists))return Fail(TEXT("NPC 추가: 생성 가능한 캐릭터 BP를 선택하세요."));
@@ -120,16 +120,19 @@ bool FSceneDirectorCompiler::Schedule(const USceneDirectorAsset& Asset,FDirector
         const bool Same=(S.Type==EDirectorNodeType::CharacterMove&&T.Type==S.Type&&S.Role==T.Role)||(DirectorMotion::IsCamera(S.Type)&&S.Type!=EDirectorNodeType::CameraSwitch&&DirectorMotion::IsCamera(T.Type)&&T.Type!=EDirectorNodeType::CameraSwitch&&S.EffectiveCameraKey()==T.EffectiveCameraKey());
         if(S.Type==EDirectorNodeType::SetInt&&T.Type==S.Type&&S.IntKey==T.IntKey&&!Ancestors[I].Contains(J)&&!Ancestors[J].Contains(I))return Fail(TEXT("같은 Integer 변수 설정은 순서대로 연결하세요."));
         if(S.Type==EDirectorNodeType::GameAction&&T.Type==S.Type&&!Ancestors[I].Contains(J)&&!Ancestors[J].Contains(I))return Fail(TEXT("게임 액션은 순서대로 연결하세요. 병렬 액션은 실행 순서가 불명확합니다."));
+        auto ShakeNode=[](EDirectorNodeType Type){return Type==EDirectorNodeType::CameraShake||Type==EDirectorNodeType::StopCameraShake;};
+        const bool SameShake=ShakeNode(S.Type)&&ShakeNode(T.Type)&&((S.Type==EDirectorNodeType::StopCameraShake&&S.bStopAllCameraShakes)||(T.Type==EDirectorNodeType::StopCameraShake&&T.bStopAllCameraShakes)||(S.bShakeCurrentCamera==T.bShakeCurrentCamera&&(S.bShakeCurrentCamera||S.CameraKey==T.CameraKey)));
+        if(SameShake&&!Ancestors[I].Contains(J)&&!Ancestors[J].Contains(I))return Fail(TEXT("같은 대상의 진동 시작·중단은 순서대로 연결하세요."));
         if(Same&&!Ancestors[I].Contains(J)&&!Ancestors[J].Contains(I))return Fail(TEXT("동일 NPC/카메라를 변경하는 노드는 순서대로 연결하세요."));
     }
     for(int32 I:Out.Order)
     {
         const auto& S=Asset.Steps[I];int32 Begin=0,Outstanding=0;double Seconds=0;
-        const bool Barrier=Parents[I].Num()>1||S.Type==EDirectorNodeType::Hub||S.Type==EDirectorNodeType::End||S.Type==EDirectorNodeType::Condition||(S.Type==EDirectorNodeType::Dialogue&&!S.Choices.IsEmpty());
+        const bool Barrier=Parents[I].Num()>1||S.Type==EDirectorNodeType::Hub||S.Type==EDirectorNodeType::End||S.Type==EDirectorNodeType::Condition||(S.Type==EDirectorNodeType::QTE&&S.QTE.ScenePolicy==EDirectorQTEScenePolicy::Hold)||(S.Type==EDirectorNodeType::Dialogue&&!S.Choices.IsEmpty());
         for(int32 P:Parents[I])
         {
             Outstanding=FMath::Max(Outstanding,Out.BranchFinishFrames[P]);
-            Begin=FMath::Max(Begin,Barrier?Out.BranchFinishFrames[P]:(Asset.Steps[P].bWaitForCompletion?Out.FinishFrames[P]:Out.StartFrames[P]));
+            Begin=FMath::Max(Begin,Barrier?Out.BranchFinishFrames[P]:((Asset.Steps[P].bWaitForCompletion||Asset.Steps[P].Type==EDirectorNodeType::QTE)?Out.FinishFrames[P]:Out.StartFrames[P]));
         }
         Out.StartFrames[I]=Begin;
         if(S.Type==EDirectorNodeType::GameAction)
@@ -189,6 +192,11 @@ bool FSceneDirectorCompiler::Schedule(const USceneDirectorAsset& Asset,FDirector
             }
             FVector Destination;if(!DirectorMotion::Resolve(S.Destination,Vectors,From.GetLocation(),Destination,Error))return Fail(Error);
             Out.FromPoses[I]=From;Out.ToPoses[I]=From;Out.ToPoses[I].SetLocation(Destination);
+            if(S.bSpecifyArrivalRotation&&!S.bUseMotionPath)
+            {
+                FVector Rotation;if(!DirectorMotion::Resolve(S.Rotation,Vectors,From.Rotator().Euler(),Rotation,Error))return Fail(Error);
+                Out.ToPoses[I].SetRotation(FRotator::MakeFromEuler(Rotation).Quaternion());
+            }
             const double Distance=FVector::Distance(From.GetLocation(),Destination);
             if(S.MoveTiming==EDirectorMoveTiming::Speed)
             {
@@ -203,12 +211,23 @@ bool FSceneDirectorCompiler::Schedule(const USceneDirectorAsset& Asset,FDirector
             Out.FromPoses[I]=From;Out.ToPoses[I]=From;
             if(S.Type==EDirectorNodeType::Fade||DirectorMotion::IsCamera(S.Type)||S.Type==EDirectorNodeType::Wait||S.Type==EDirectorNodeType::Animation||S.Type==EDirectorNodeType::LookAt||S.Type==EDirectorNodeType::Expression||S.Type==EDirectorNodeType::Dialogue||DirectorNodes::IsReturn(S.Type))Seconds=S.Duration;
             if(DirectorNodes::IsScreenEffect(S.Type))Seconds=DirectorVision::Duration(S);
+            if(S.Type==EDirectorNodeType::CameraShake||S.Type==EDirectorNodeType::StopCameraShake)
+            {
+                if(!S.bShakeCurrentCamera&&!(S.Type==EDirectorNodeType::StopCameraShake&&S.bStopAllCameraShakes)&&(!Cameras.Contains(S.CameraKey)||S.CameraKey.IsNone()))return Fail(TEXT("카메라 진동: 등록된 대상 카메라를 선택하세요."));
+                if(S.Type==EDirectorNodeType::CameraShake){if(!S.Shake.Validate(Error))return Fail(Error);Seconds=S.Shake.bUnlimited?0:S.Shake.Duration;}
+                else {if(!FMath::IsFinite(S.StopShakeSeconds)||S.StopShakeSeconds<0||S.StopShakeSeconds>3600)return Fail(TEXT("진동 중단 시간은 0~3600초로 입력하세요."));Seconds=S.StopShakeSeconds>0?FMath::Max(1.f/30.f,S.StopShakeSeconds):0;}
+            }
             if(S.Type==EDirectorNodeType::CameraPreset&&!S.bActivateCamera)Seconds=0;
+            if(S.Type==EDirectorNodeType::QTE)
+            {
+                if(!S.QTE.Validate(Error))return Fail(Error);
+                Seconds=S.QTEElapsedSeconds>=0?S.QTEElapsedSeconds:(S.QTE.ScenePolicy==EDirectorQTEScenePolicy::Continue?S.QTE.AppearanceDuration+S.QTE.TimeLimit:1.f/30.f);
+            }
             if(S.Type==EDirectorNodeType::Dialogue)
             {
                 if(!S.ValidateSpeaker(Error))return Fail(Error);
                 if(!DirectorChoices::Validate(S.Choices,Error))return Fail(Error);
-                if(S.DialogueText.IsEmpty())return Fail(TEXT("대사 내용을 입력하세요."));
+                if(!S.ValidateDialogue(Error))return Fail(Error);
                 if(S.DialogueAdvance==EDirectorDialogueAdvance::Voice&&!S.Voice)return Fail(TEXT("음성 종료 진행에는 음성이 필요합니다."));
                 if(S.Voice&&(S.DialogueAdvance==EDirectorDialogueAdvance::Voice||S.DialogueAdvance==EDirectorDialogueAdvance::Click))Seconds=S.Voice->GetDuration();
                 if(!S.bWaitForCompletion)return Fail(TEXT("대사는 완료 대기를 사용해야 합니다."));
@@ -224,7 +243,7 @@ bool FSceneDirectorCompiler::Schedule(const USceneDirectorAsset& Asset,FDirector
             for(double V:TArray<double>{S.AnimationRate,S.AnimationStartOffset,S.AnimationEndOffset,S.AnimationFirstOffset,S.AnimationBlendIn,S.AnimationBlendOut,S.AnimationWeight})if(!FMath::IsFinite(V)||V<0)return Fail(TEXT("애니메이션 재생·블렌딩 값은 유한한 양수 또는 0이어야 합니다."));
             if(S.AnimationRate<=0||S.AnimationWeight>1||S.AnimationBlendIn>Seconds+.0001||S.AnimationBlendOut>Seconds+.0001||!S.Animation||S.AnimationStartOffset+S.AnimationEndOffset>=S.Animation->GetPlayLength())return Fail(TEXT("애니메이션 속도·가중치·오프셋·블렌딩 시간을 확인하세요."));
         }
-        const bool Timed=(S.Type==EDirectorNodeType::CameraPreset&&!S.bActivateCamera)?false:Seconds!=0||S.Type==EDirectorNodeType::Dialogue||S.Type==EDirectorNodeType::Expression||S.Type==EDirectorNodeType::LookAt||DirectorNodes::IsReturn(S.Type)||S.Type==EDirectorNodeType::CharacterMove||DirectorMotion::IsCamera(S.Type)||S.Type==EDirectorNodeType::Wait||S.Type==EDirectorNodeType::Animation;
+        const bool Timed=(S.Type==EDirectorNodeType::CameraPreset&&!S.bActivateCamera)?false:Seconds!=0||S.Type==EDirectorNodeType::QTE||S.Type==EDirectorNodeType::Dialogue||S.Type==EDirectorNodeType::Expression||S.Type==EDirectorNodeType::LookAt||DirectorNodes::IsReturn(S.Type)||S.Type==EDirectorNodeType::CharacterMove||DirectorMotion::IsCamera(S.Type)||S.Type==EDirectorNodeType::Wait||S.Type==EDirectorNodeType::Animation;
         if(Timed&&(!FMath::IsFinite(Seconds)||Seconds<1.0/30.0-1.e-8||Seconds>3600))return Fail(TEXT("시간은 1/30초~3600초로 입력하세요."));
         const int32 Duration=Timed?FMath::Max(1,FMath::RoundToInt(Seconds*30)):0;
         Out.FinishFrames[I]=Begin+Duration;Out.BranchFinishFrames[I]=FMath::Max(Outstanding,Begin+Duration);
@@ -402,6 +421,7 @@ bool FSceneDirectorCompiler::Compile(USceneDirectorAsset& Asset,FString& Error)
         TMap<FGuid,FName> Decisions;
         for(const auto& S:Asset.Steps)if(!S.ChoiceTargets.IsEmpty())
         {
+            if(S.Type==EDirectorNodeType::QTE){Decisions.Add(S.Id,TEXT("Success"));continue;}
             if(!S.Choices.IsValidIndex(S.PreviewChoiceIndex-1)||!S.Choices[S.PreviewChoiceIndex-1].bEnabled){Error=TEXT("미리보기 선택지 번호가 선택지 목록 범위를 벗어났습니다.");return false;}
             Decisions.Add(S.Id,S.Choices[S.PreviewChoiceIndex-1].Key);
         }

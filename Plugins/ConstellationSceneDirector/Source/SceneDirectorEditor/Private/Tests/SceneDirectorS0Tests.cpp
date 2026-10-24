@@ -37,7 +37,9 @@ bool FS0DisabledBranchTest::RunTest(const FString&)
  auto* R=NewObject<USceneDirectorAsset>();FGuid Pending;TMap<FGuid,FName> Decisions;Decisions.Add(Q.Id,TEXT("Open"));
  TestFalse(TEXT("Disabled decision cannot be injected"),DirectorBranching::Resolve(*A,Decisions,{},*R,Pending,Error));
  Q.PreviewChoiceIndex=2;TestFalse(TEXT("Preview cannot pick disabled"),FSceneDirectorCompiler::Compile(*A,Error));Q.PreviewChoiceIndex=1;
- Q.ChoiceTargets.Add(TEXT("Open"),A->Steps[2].Id);TestFalse(TEXT("Stale disabled output diagnosed"),DirectorBranching::ValidateAll(*A,Error));
+ Q.ChoiceTargets.Add(TEXT("Open"),A->Steps[2].Id);TestTrue(TEXT("Locked output may connect a future unlock route"),DirectorBranching::ValidateAll(*A,Error));
+ TestFalse(TEXT("Connected locked decision still cannot be injected"),DirectorBranching::Resolve(*A,Decisions,{},*R,Pending,Error));
+ Q.ChoiceTargets[TEXT("Open")]=FGuid::NewGuid();TestFalse(TEXT("Locked output must target an existing node"),DirectorBranching::ValidateAll(*A,Error));
  return true;
 }
 #endif

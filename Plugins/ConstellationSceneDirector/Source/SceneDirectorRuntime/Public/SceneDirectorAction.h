@@ -22,6 +22,9 @@ class SCENEDIRECTORRUNTIME_API USceneDirectorAction : public UObject
     GENERATED_BODY()
 public:
     virtual UWorld* GetWorld() const override;
+    // Opt in only for actions which can pause asynchronously during Execute.
+    // Ordinary synchronous actions must retain the full current tick delta.
+    virtual bool RequiresPresentationBoundary() const {return false;}
     // Override as a Blueprint function: return true on completion, false and Error on failure.
     UFUNCTION(BlueprintNativeEvent,Category="연출 액션",meta=(DisplayName="액션 실행"))
     bool Execute(ASceneDirectorPlayer* Player,AActor* Target,const FDirectorActionParameters& Parameters,FString& Error);

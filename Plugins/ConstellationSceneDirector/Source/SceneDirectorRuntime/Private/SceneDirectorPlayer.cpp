@@ -1,9 +1,11 @@
 #include "SceneDirectorPlayer.h"
+#include "SceneDirectorTesting.h"
 #include "SDirectorVision.h"
 #include "Blueprint/WidgetBlueprintLibrary.h"
 #include "Blueprint/UserWidget.h"
 #include "SceneDirectorBranching.h"
 #include "SceneDirectorCompiler.h"
+#include "Camera/PlayerCameraManager.h"
 #include "Camera/CameraActor.h"
 #include "Camera/CameraComponent.h"
 #include "SDirectorDialogue.h"
@@ -25,6 +27,7 @@
 #include "Widgets/Text/STextBlock.h"
 #include "Widgets/Input/SButton.h"
 #include "InputCoreTypes.h"
+#include "Framework/Application/SlateApplication.h"
 #include "Styling/CoreStyle.h"
 #include "SceneDirectorAsset.h"
 #include "LevelSequencePlayer.h"
@@ -35,21 +38,23 @@
 #include "EngineUtils.h"
 ASceneDirectorPlayer::ASceneDirectorPlayer()
 {
-    PrimaryActorTick.bCanEverTick=true;PrimaryActorTick.TickGroup=TG_PostUpdateWork;
-    static ConstructorHelpers::FObjectFinder<UTexture2D> Background(TEXT("/Game/Constellation/UI/Dialogue/T_Dialogue_Background"));
-    static ConstructorHelpers::FObjectFinder<UTexture2D> Continue(TEXT("/Game/Constellation/UI/Dialogue/T_Dialogue_Continue"));
-    static ConstructorHelpers::FObjectFinder<UTexture2D> SpeakerBackground(TEXT("/Game/Constellation/UI/Dialogue/T_Dialogue_SpeakerBackground"));
+    PrimaryActorTick.bCanEverTick=true;PrimaryActorTick.bTickEvenWhenPaused=true;PrimaryActorTick.TickGroup=TG_PostUpdateWork;
+    static ConstructorHelpers::FObjectFinder<UTexture2D> Background(TEXT("/Game/Constellation/UI/Dialogue/T_Dialogue_QuietNebulaAtlas"));
+    static ConstructorHelpers::FObjectFinder<UTexture2D> Continue(TEXT("/Game/Constellation/UI/Dialogue/T_Dialogue_QuietNebulaAtlas"));
+    static ConstructorHelpers::FObjectFinder<UTexture2D> SpeakerBackground(TEXT("/Game/Constellation/UI/Dialogue/T_Dialogue_QuietNebulaAtlas"));
     DialogueBackground=Background.Object;DialogueContinue=Continue.Object;DialogueSpeakerBackground=SpeakerBackground.Object;
-    static ConstructorHelpers::FObjectFinder<UTexture2D> ChoiceFocusedBG(TEXT("/Game/Constellation/UI/Dialogue/T_Dialogue_ChoiceFocusedBG"));
+    static ConstructorHelpers::FObjectFinder<UTexture2D> ChoiceFocusedBG(TEXT("/Game/Constellation/UI/Dialogue/T_Choice_StardustAtlas"));
     DialogueChoiceStyle.FocusedBG=ChoiceFocusedBG.Object;
-    static ConstructorHelpers::FObjectFinder<UTexture2D> ChoiceFocusedStroke(TEXT("/Game/Constellation/UI/Dialogue/T_Dialogue_ChoiceFocusedStroke"));
+    static ConstructorHelpers::FObjectFinder<UTexture2D> ChoiceFocusedStroke(TEXT("/Game/Constellation/UI/Dialogue/T_Choice_StardustAtlas"));
     DialogueChoiceStyle.FocusedStroke=ChoiceFocusedStroke.Object;
-    static ConstructorHelpers::FObjectFinder<UTexture2D> ChoiceIdleBG(TEXT("/Game/Constellation/UI/Dialogue/T_Dialogue_ChoiceIdleBG"));
+    static ConstructorHelpers::FObjectFinder<UTexture2D> ChoiceIdleBG(TEXT("/Game/Constellation/UI/Dialogue/T_Choice_StardustAtlas"));
     DialogueChoiceStyle.IdleBG=ChoiceIdleBG.Object;
-    static ConstructorHelpers::FObjectFinder<UTexture2D> ChoiceIdleStroke(TEXT("/Game/Constellation/UI/Dialogue/T_Dialogue_ChoiceIdleStroke"));
+    static ConstructorHelpers::FObjectFinder<UTexture2D> ChoiceIdleStroke(TEXT("/Game/Constellation/UI/Dialogue/T_Choice_StardustAtlas"));
     DialogueChoiceStyle.IdleStroke=ChoiceIdleStroke.Object;
-    static ConstructorHelpers::FObjectFinder<UTexture2D> ChoiceCursor(TEXT("/Game/Constellation/UI/Dialogue/T_Dialogue_ChoiceCursor"));
+    static ConstructorHelpers::FObjectFinder<UTexture2D> ChoiceCursor(TEXT("/Game/Constellation/UI/Dialogue/T_Choice_StardustAtlas"));
     DialogueChoiceStyle.Cursor=ChoiceCursor.Object;
+    static ConstructorHelpers::FObjectFinder<UTexture2D> ChoiceLocked(TEXT("/Game/Constellation/UI/Dialogue/T_Choice_LockedAtlas"));
+    DialogueChoiceStyle.LockedAtlas=ChoiceLocked.Object;
 }
 ASceneDirectorPlayer::~ASceneDirectorPlayer()=default;
 void ASceneDirectorPlayer::BeginPlay(){Super::BeginPlay();if(bAutoPlay)PlayDirector();}
@@ -58,6 +63,7 @@ bool ASceneDirectorPlayer::PlayDirector()
 {
     if(bExecutingAction)return false; // An action may stop this session, but cannot replace it during its callback.
     LastError.Reset();
+    if(DirectorTesting::ShouldSkip(GetWorld())){LastError=TEXT("테스트 설정으로 연출 생략");return false;}
     if(SequencePlayer){LastError=TEXT("이미 실행 중입니다.");return false;}
     USceneDirectorAsset* Selected=Director?(EventKey.IsNone()?Director.Get():Director->FindEvent(EventKey)):nullptr;
     if(!Selected||!Selected->GeneratedSequence||Selected->bNeedsCompile){LastError=TEXT("연출 그래프를 지정하고 생성 및 저장을 먼저 실행하세요.");return false;}
@@ -84,7 +90,9 @@ bool ASceneDirectorPlayer::PlayDirector()
     {if(!BoolValues.Contains(Entry.Key)){LastError=TEXT("초기값 변수 Key를 찾을 수 없습니다: ")+Entry.Key.ToString();return false;}BoolValues[Entry.Key]=Entry.Value;}
     if(DirectorBranching::HasBranches(*Selected))
     {
-        BranchSource=Selected;BranchInitialOverrides=InitialBoolOverrides;BranchDecisions.Reset();
+        // Availability changes belong to this playback session, never the authored asset.
+        BranchSource=DuplicateObject<USceneDirectorAsset>(Selected,this);BranchSource->SetFlags(RF_Transient);
+        BranchInitialOverrides=InitialBoolOverrides;BranchDecisions.Reset();
         if(!CompileBranchPrefix()){StopDirector();return false;}
         Selected=BranchPrefix;
     }
@@ -125,21 +133,37 @@ bool ASceneDirectorPlayer::PlayDirector()
     if(BranchSource){BindBranchActors();if(!PrepareBranchActors(0)){StopDirector();return false;}}
     bManualClock=BranchSource||ActiveCues.ContainsByPredicate([](const FDirectorCue& C){return DirectorNodes::IsCue(C.Step.Type);});
     ClockSeconds=0;WaitingCue=DialogueCue=INDEX_NONE;AdvancedCues.Reset();FiredControls.Reset();Performance=MakeUnique<FDirectorPerformance>();
+    if(Controller.IsValid()&&Controller->PlayerCameraManager&&(BranchSource||ActiveCues.ContainsByPredicate([](const FDirectorCue& C){return C.Step.Type==EDirectorNodeType::CameraShake;})))
+    {
+        CameraShakeModifier=Cast<UDirectorCameraShakeModifier>(Controller->PlayerCameraManager->AddNewCameraModifier(UDirectorCameraShakeModifier::StaticClass()));
+        if(CameraShakeModifier)CameraShakeModifier->DirectorPlayer=this;
+    }
     SequencePlayer->Play();if(bManualClock)SequencePlayer->Pause();
     if(bManualClock)
     {
         const TWeakObjectPtr<ASceneDirectorPlayer> Weak=this;
-        if(GEngine&&GEngine->GameViewport&&Controller.IsValid()&&ActiveCues.ContainsByPredicate([](const FDirectorCue& C){return C.Step.Type==EDirectorNodeType::Dialogue;}))
+        // A QTE branch can reach dialogue after the initial active cue segment.
+        const bool HasDialogue=ActiveCues.ContainsByPredicate([](const FDirectorCue& C){return C.Step.Type==EDirectorNodeType::Dialogue;})
+            ||(RuntimeSource&&RuntimeSource->Steps.ContainsByPredicate([](const FDirectorStep& S){return S.Type==EDirectorNodeType::Dialogue;}));
+        if(GEngine&&GEngine->GameViewport&&Controller.IsValid()&&HasDialogue)
         {
             bOriginalCursor=Controller->bShowMouseCursor;bHasCursorSnapshot=true;Controller->bShowMouseCursor=true;
             DialogueWidget=SNew(SBox).Padding(36,24)
                 [SAssignNew(DialogueView,SDirectorDialogue).Position_Lambda([Weak]{return Weak.IsValid()?Weak->CurrentDialoguePosition:EDirectorDialoguePosition::Bottom;}).Background(DialogueBackground).Continue(DialogueContinue).SpeakerBackground(DialogueSpeakerBackground)
                  .ChoiceStyle(DialogueChoiceStyle)
-                 .Choices_Lambda([Weak]{return Weak.IsValid()&&Weak->IsWaitingForChoice()?Weak->CurrentChoices:TArray<FDirectorChoice>();})
+                 .Choices_Lambda([Weak]{return Weak.IsValid()?Weak->CurrentChoices:TArray<FDirectorChoice>();})
                  .ChoicePrompt_Lambda([Weak]{return Weak.IsValid()?Weak->ChoicePrompt:FGuid();})
                  .OnChoice_Lambda([Weak](FName Key){if(Weak.IsValid())Weak->SelectDialogueChoice(Key);})
                  .Speaker_Lambda([Weak]{return Weak.IsValid()?Weak->CurrentSpeaker:FText::GetEmpty();})
                  .Dialogue_Lambda([Weak]{return Weak.IsValid()?Weak->CurrentDialogue:FText::GetEmpty();})
+                 .CharacterInterval_Lambda([Weak]{return Weak.IsValid()&&Weak->RuntimeSource?Weak->RuntimeSource->DialogueCharacterInterval:0.f;})
+                 .RevealDuration_Lambda([Weak]
+                 {
+                     if(!Weak.IsValid()||!Weak->ActiveCues.IsValidIndex(Weak->DialogueCue))return 0.f;
+                     const auto& Cue=Weak->ActiveCues[Weak->DialogueCue];
+                     return Cue.Step.DialogueAdvance==EDirectorDialogueAdvance::Click||!Cue.Step.Choices.IsEmpty()?0.f:FMath::Max(.01f,float(Cue.EndFrame-Cue.StartFrame)/30.f-.1f);
+                 })
+                 .OnTextTick_Lambda([Weak]{if(Weak.IsValid()&&Weak->RuntimeSource&&Weak->RuntimeSource->DialogueTickSound)UGameplayStatics::PlaySound2D(Weak.Get(),Weak->RuntimeSource->DialogueTickSound,.25f);})
                  .Waiting_Lambda([Weak]{return Weak.IsValid()&&Weak->IsWaitingForDialogue();})
                  .OnAdvance_Lambda([Weak]{if(Weak.IsValid())Weak->AdvanceDialogue();})];
             GEngine->GameViewport->AddViewportWidgetContent(DialogueWidget.ToSharedRef(),100);
@@ -157,6 +181,9 @@ bool ASceneDirectorPlayer::PlayDirector()
 }
 void ASceneDirectorPlayer::StopDirector()
 {
+    CleanupQTE(true);bDirectorPaused=false;
+    CameraShakeState.Reset();
+    if(CameraShakeModifier){CameraShakeModifier->DirectorPlayer.Reset();if(Controller.IsValid()&&Controller->PlayerCameraManager)Controller->PlayerCameraManager->RemoveCameraModifier(CameraShakeModifier);CameraShakeModifier=nullptr;}
     const bool WasPlaying=SequencePlayer!=nullptr;const bool Completed=bNaturalFinish;bNaturalFinish=false;
     if(VisionWidget&&GetWorld()&&GetWorld()->GetGameViewport())GetWorld()->GetGameViewport()->RemoveViewportWidgetContent(VisionWidget.ToSharedRef());
     VisionWidget.Reset();VisionState=FDirectorVisionState();
@@ -208,7 +235,7 @@ TArray<FString> ASceneDirectorPlayer::GetEventOptions() const
 void ASceneDirectorPlayer::HideGameWidgets()
 {
  TArray<UUserWidget*> Widgets;UWidgetBlueprintLibrary::GetAllWidgetsOfClass(this,Widgets,UUserWidget::StaticClass(),true);
- for(auto* W:Widgets)if(W&&W->GetWorld()==GetWorld()){if(!WidgetVisibility.Contains(W))WidgetVisibility.Add(W,uint8(W->GetVisibility()));W->SetVisibility(ESlateVisibility::Hidden);}
+ for(auto* W:Widgets)if(W&&W->GetWorld()==GetWorld()&&!SceneOverlays.Contains(W)){if(!WidgetVisibility.Contains(W))WidgetVisibility.Add(W,uint8(W->GetVisibility()));W->SetVisibility(ESlateVisibility::Hidden);}
 }
 void ASceneDirectorPlayer::RestoreControls()
 {
@@ -223,6 +250,7 @@ void ASceneDirectorPlayer::RestoreControls()
 }
 void ASceneDirectorPlayer::AdvanceDialogue()
 {
+    if(DialogueView&&DialogueView->FinishReveal())return;
     if(WaitingCue!=INDEX_NONE&&CurrentChoices.IsEmpty()){AdvancedCues.Add(WaitingCue);WaitingCue=INDEX_NONE;}
 }
 bool ASceneDirectorPlayer::SelectDialogueChoice(FName Key)
@@ -234,14 +262,46 @@ bool ASceneDirectorPlayer::SelectDialogueChoice(FName Key)
     AdvancedCues.Add(WaitingCue);WaitingCue=INDEX_NONE;CurrentChoices.Reset();
     OnChoiceSelected.Broadcast(Id,Key);return true;
 }
+bool ASceneDirectorPlayer::SetChoiceAvailability(FName Key,bool bEnabled,FText Reason)
+{
+    if(!IsWaitingForChoice()||!ActiveCues.IsValidIndex(WaitingCue))return false;
+    TArray<FDirectorChoice> Updated=CurrentChoices;
+    auto* Choice=Updated.FindByPredicate([Key](const FDirectorChoice& C){return C.Key==Key;});
+    if(!Choice)return false;
+    Choice->bEnabled=bEnabled;Choice->DisabledReasonRow=FDataTableRowHandle();Choice->DisabledReason=bEnabled?FText::GetEmpty():Reason;
+    FString Error;if(!DirectorChoices::Validate(Updated,Error))return false;
+    FDirectorStep* BranchStep=BranchSource?BranchSource->Steps.FindByPredicate([this](const FDirectorStep& S){return S.Id==ChoicePrompt;}):nullptr;
+    if(BranchSource)
+    {
+        if(!BranchStep)return false;
+        if(bEnabled&&!BranchStep->ChoiceTargets.IsEmpty())
+        {
+            const FGuid* Target=BranchStep->ChoiceTargets.Find(Key);
+            if(!Target||!Target->IsValid())return false;
+        }
+        BranchStep->Choices=Updated;
+    }
+    CurrentChoices=MoveTemp(Updated);ActiveCues[WaitingCue].Step.Choices=CurrentChoices;
+    return true;
+}
 void ASceneDirectorPlayer::Tick(float DeltaSeconds)
 {
+    // Also honor console changes before paused/dialogue/QTE early returns.
+    if(!bExecutingAction&&SequencePlayer&&DirectorTesting::ShouldSkip(GetWorld())){StopDirector();return;}
     if(bHideGameWidgets)HideGameWidgets();
     Super::Tick(DeltaSeconds);
-    if(bExecutingAction||!SequencePlayer)return;
+    TickQTE();
+    if(bExecutingAction||!SequencePlayer||bDirectorPaused||UGameplayStatics::IsGamePaused(this))return;
+    if(IsWaitingForQTE()&&FSlateApplication::IsInitialized()&&!FSlateApplication::Get().IsActive())return;
     ControlCharacters();
+    CameraShakeState.Advance(DeltaSeconds);
     if(!bManualClock)return;
     if(bRebuildBranch){if(!RebuildBranchPlayback()){StopDirector();return;}}
+    if(IsWaitingForQTE())
+    {
+        const auto* Cue=ActiveCues.FindByPredicate([this](const FDirectorCue& C){return C.Step.Id==QTEPrompt;});
+        if(!Cue||Cue->Step.QTE.ScenePolicy==EDirectorQTEScenePolicy::Hold)return;
+    }
     if(IsWaitingForChoice())
     {
         if(Controller.IsValid()&&DialogueView)
@@ -258,6 +318,12 @@ void ASceneDirectorPlayer::Tick(float DeltaSeconds)
     for(int32 I=0;I<ActiveCues.Num();++I)
     {
         const auto& Cue=ActiveCues[I];
+        // Only presentation actions opt into a clock barrier; synchronous game
+        // actions retain their original timing even across a large frame delta.
+        const auto ActionClass=ActiveActions.FindRef(Cue.Step.ActionKey);
+        const bool PresentationBoundary=Cue.Step.Type==EDirectorNodeType::GameAction&&ActionClass&&ActionClass->GetDefaultObject<USceneDirectorAction>()->RequiresPresentationBoundary();
+        if((Cue.Step.Type==EDirectorNodeType::QTE||PresentationBoundary)&&!FiredControls.Contains(I)&&Cue.StartFrame/30.0<=Next)
+        {Next=Cue.StartFrame/30.0;break;}
         if(Cue.Step.Type==EDirectorNodeType::Dialogue&&(Cue.Step.DialogueAdvance==EDirectorDialogueAdvance::Click||!Cue.Step.Choices.IsEmpty())&&!AdvancedCues.Contains(I)&&Cue.EndFrame/30.0<=Next)
         {
             // Keep evaluation strictly before the next action boundary, even after a large frame hitch.
@@ -265,11 +331,12 @@ void ASceneDirectorPlayer::Tick(float DeltaSeconds)
         }
     }
     const double End=SequencePlayer->GetDuration().AsSeconds();
+    if(IsWaitingForQTE())Next=FMath::Min(Next,End-.0001);
     ClockSeconds=FMath::Min(Next,End);
     if(BranchSource&&!PrepareBranchActors(FMath::Min(ClockSeconds,End-.0001)*30.)){StopDirector();return;}
     SequencePlayer->SetPlaybackPosition(FMovieSceneSequencePlaybackParams(FFrameTime::FromDecimal(FMath::Min(ClockSeconds,End-.0001)*30.),EUpdatePositionMethod::Play));
     EvaluateConversation(ClockSeconds);
-    if(SequencePlayer&&ClockSeconds>=End)OnFinished();
+    if(SequencePlayer&&!bDirectorPaused&&ClockSeconds>=End)OnFinished();
 }
 void ASceneDirectorPlayer::EvaluateConversation(double Seconds)
 {
@@ -280,11 +347,16 @@ void ASceneDirectorPlayer::EvaluateConversation(double Seconds)
     {
         const auto& Cue=ActiveCues[I];const auto& S=Cue.Step;
         if(Cue.StartFrame>Frame)continue;
+        if(S.Type==EDirectorNodeType::QTE&&!FiredControls.Contains(I))
+        {
+            FiredControls.Add(I);
+            if(!AdvancedCues.Contains(I)&&(!StartQTE(I)||!SequencePlayer)){StopDirector();return;}
+        }
         if(S.Type==EDirectorNodeType::Dialogue&&Frame<Cue.EndFrame)NewDialogue=I;
         if(S.Type==EDirectorNodeType::GameAction&&!FiredControls.Contains(I))
         {
             FiredControls.Add(I);const FDirectorStep ActionStep=S;
-            if(!ExecuteGameAction(ActionStep)||!SequencePlayer)return;
+            if(!ExecuteGameAction(ActionStep)||!SequencePlayer||bDirectorPaused)return;
         }
         if(!FiredControls.Contains(I)&&((DirectorNodes::IsCamera(S.Type)&&((S.Type!=EDirectorNodeType::CameraMove&&S.Type!=EDirectorNodeType::CameraPreset)||S.bActivateCamera))||(S.Type==EDirectorNodeType::Sequence&&DirectorSequence::HasCamera(S))))
         {SequencePlayer->SetDisableCameraCuts(false);bReturningToGameplay=false;FiredControls.Add(I);}
@@ -293,6 +365,8 @@ void ASceneDirectorPlayer::EvaluateConversation(double Seconds)
             bool Handled=true;
             switch(S.Type)
             {
+            case EDirectorNodeType::CameraShake:
+            case EDirectorNodeType::StopCameraShake:CameraShakeState.Execute(S);break;
             case EDirectorNodeType::PlayerHidden:SetPlayerHidden(S.bHidePlayer);break;
             case EDirectorNodeType::InputLock:SetInputLocked(S.bLockInput);break;
             case EDirectorNodeType::HUDHidden:SetHUDHidden(S.bHideHUD);break;
@@ -339,7 +413,8 @@ void ASceneDirectorPlayer::EvaluateConversation(double Seconds)
         DialogueCue=NewDialogue;if(NewDialogue!=INDEX_NONE||!bKeepCurrentDialogue)CurrentSpeaker=CurrentDialogue=FText::GetEmpty();CurrentChoices.Reset();ChoicePrompt.Invalidate();
         if(NewDialogue!=INDEX_NONE)
         {
-            const auto& Cue=ActiveCues[NewDialogue];CurrentDialogue=Cue.Step.DialogueText;CurrentChoices=Cue.Step.Choices;ChoicePrompt=Cue.Step.Id;
+            const auto& Cue=ActiveCues[NewDialogue];CurrentDialogue=Cue.Step.ResolveDialogue();CurrentChoices=Cue.Step.Choices;ChoicePrompt=Cue.Step.Id;
+            for(auto& Choice:CurrentChoices){Choice.Text=Choice.ResolveText();Choice.DisabledReason=Choice.ResolveDisabledReason();}
             CurrentSpeaker=Cue.Step.ResolveSpeaker();CurrentDialoguePosition=Cue.Step.DialoguePosition;bKeepCurrentDialogue=Cue.Step.bKeepDialogueOpen;
             if(Cue.Step.Voice)VoiceComponent=UGameplayStatics::SpawnSound2D(this,Cue.Step.Voice,1,1,float(Seconds-Cue.StartFrame/30.0),nullptr,false,false);
         }
@@ -462,3 +537,11 @@ bool ASceneDirectorPlayer::HasEyeEffect() const
 
 bool ASceneDirectorPlayer::HasStartedEyeEffect() const
 {return ActiveCues.ContainsByPredicate([this](const FDirectorCue& C){return C.Step.Type==EDirectorNodeType::Eyelids&&C.StartFrame<=ClockSeconds*30;});}
+
+FDirectorShakeOffset ASceneDirectorPlayer::GetCameraShake(AActor* ViewTarget) const
+{
+ FName Key;
+ for(const auto& Pair:ActiveCameraBindings)if(FindCamera(Pair.Key)==ViewTarget&&ViewTarget){Key=Pair.Key;break;}
+ if(Key.IsNone()&&RuntimeSource)for(const auto& C:RuntimeSource->Cameras)if(!C.ObjectKey.IsNone()&&ViewTarget&&ResolveObject(C.ObjectKey)==ViewTarget){Key=C.Key;break;}
+ return CameraShakeState.Sample(Key);
+}

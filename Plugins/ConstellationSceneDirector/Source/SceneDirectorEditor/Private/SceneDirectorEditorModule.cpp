@@ -1,3 +1,6 @@
+#include "SceneDirectorTesting.h"
+#include "Misc/ConfigCacheIni.h"
+#include "Styling/AppStyle.h"
 #include "SceneEventEditor.h"
 #include "SceneDirectorDetails.h"
 #include "Modules/ModuleManager.h"
@@ -27,6 +30,9 @@ class FSceneDirectorEditorModule : public IModuleInterface
 public:
     virtual void StartupModule() override
     {
+        bool bSkip=false;
+        GConfig->GetBool(TEXT("SceneDirector.Testing"),TEXT("bSkipCinematics"),bSkip,GEditorPerProjectIni);
+        DirectorTesting::SetSkipEnabled(bSkip);
         DirectorAuthoring::RegisterDetails();RegisterSceneEventTab();Actions=MakeShared<FSceneDirectorActions>();FModuleManager::LoadModuleChecked<FAssetToolsModule>("AssetTools").Get().RegisterAssetTypeActions(Actions.ToSharedRef());
         UToolMenus::RegisterStartupCallback(FSimpleMulticastDelegate::FDelegate::CreateRaw(this,&FSceneDirectorEditorModule::RegisterMenus));
     }
@@ -34,6 +40,21 @@ public:
     {
         FToolMenuOwnerScoped Owner(this);
         auto* Menu=UToolMenus::Get()->ExtendMenu("LevelEditor.MainMenu.Tools");
+        const FUIAction SkipAction(
+            FExecuteAction::CreateLambda([]{
+                const bool bSkip=!DirectorTesting::IsSkipEnabled();
+                DirectorTesting::SetSkipEnabled(bSkip);
+                GConfig->SetBool(TEXT("SceneDirector.Testing"),TEXT("bSkipCinematics"),bSkip,GEditorPerProjectIni);
+                GConfig->Flush(false,GEditorPerProjectIni);
+            }),
+            FCanExecuteAction::CreateLambda([]{return GEditor != nullptr;}),
+            FIsActionChecked::CreateLambda([]{return DirectorTesting::IsSkipEnabled();}));
+        const auto SkipLabel=TAttribute<FText>::CreateLambda([]{return FText::FromString(DirectorTesting::IsSkipEnabled()?TEXT("연출 스킵 ON"):TEXT("연출 스킵 OFF"));});
+        const FText SkipTip=FText::FromString(TEXT("PIE/시뮬레이션 중에도 켜고 끌 수 있습니다. ON이면 이후 요청되는 연출과 내부 액션·보상·완료 기록을 생략하고, OFF이면 이후 요청부터 정상 재생합니다. 이미 재생 중인 연출도 즉시 중단하고 카메라·조작·HUD를 복구합니다. 중단된 연출은 완료로 기록하지 않습니다. 마우스가 게임에 잡혀 있으면 Shift+F1로 해제하세요. 툴 미리보기와 패키지 게임에는 적용되지 않습니다."));
+        Menu->FindOrAddSection("SceneDirector").AddMenuEntry("SceneDirectorSkip",SkipLabel,SkipTip,FSlateIcon(),SkipAction,EUserInterfaceActionType::ToggleButton);
+        UToolMenus::Get()->ExtendMenu("LevelEditor.LevelEditorToolBar.PlayToolBar")->FindOrAddSection("SceneDirectorTesting").AddEntry(
+            FToolMenuEntry::InitToolBarButton("SceneDirectorSkip",SkipAction,SkipLabel,SkipTip,FSlateIcon(FAppStyle::GetAppStyleSetName(),"Icons.Visible"),EUserInterfaceActionType::ToggleButton));
+
         Menu->FindOrAddSection("SceneDirector").AddMenuEntry("SceneEventPlacement",FText::FromString(TEXT("Scene Director · 이벤트 배치")),FText(),FSlateIcon(),FUIAction(FExecuteAction::CreateStatic(&OpenSceneEventTab)));
         Menu->FindOrAddSection("SceneDirector").AddMenuEntry("SceneDirectorNew",FText::FromString(TEXT("Scene Director · 새 연출 그래프")),FText::FromString(TEXT("기획자용 노드 기반 연출 그래프를 만듭니다.")),FSlateIcon(),FUIAction(FExecuteAction::CreateLambda([]
         {

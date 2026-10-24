@@ -15,6 +15,8 @@
 #include "Widgets/SOverlay.h"
 #include "Styling/CoreStyle.h"
 #include "EditorViewportClient.h"
+#include "EditorModeManager.h"
+#include "UnrealWidget.h"
 #include "ISequencer.h"
 #include "Camera/CameraComponent.h"
 #include "Camera/CameraActor.h"
@@ -32,6 +34,8 @@ public:
         : FEditorViewportClient(nullptr),World(InWorld),Sequencer(InSequencer),Asset(InAsset)
     {
         SetViewLocation(Focus+FVector(-400,150,180));SetViewRotation((Focus+FVector(0,0,80)-GetViewLocation()).Rotation());
+        GetModeTools()->SetSupportsViewportITF(false); // This standalone viewport handles its own legacy transform widget.
+        Widget->SetUsesEditorModeTools(nullptr);
         SetGameView(true);SetViewMode(VMI_Unlit);SetRealtime(true);EngineShowFlags.SetSelectionOutline(false);
     }
     virtual ~FDirectorViewportClient() override {for(const auto& Pair:HiddenLevelActors)if(Pair.Key.IsValid())Pair.Key->SetIsTemporarilyHiddenInEditor(Pair.Value);Performance.Reset();if(Audio.IsValid()){Audio->Stop();Audio->DestroyComponent();}}
@@ -49,11 +53,68 @@ public:
             if(const auto* Binding=Asset->NPCBindings.Find(Cue.Step.Role))for(auto O:S->FindBoundObjects(*Binding,MovieSceneSequenceID::Root))
                 if(auto* A=Cast<AActor>(O.Get()))Start.StandIns.Add(Cue.Step.Role,A->GetActorTransform());
     }
+    // Selected-node editing overrides only preview spawnables, never registered level actors.
+    FGuid NodePreviewBinding;
+    bool bNodeCamera=false,bNodeFreeView=false,bNodeCanOverridePose=false;
+    FTransform NodeBeforePose,NodeAfterPose;
+    TOptional<FTransform> NodeStaticPose;
+    bool bCancelNodeDrag=false,bDirectEdit=false,bPilotCamera=false,bPilotNavigating=false,bDraggingNode=false,bAllowNodeRotation=true;
+    UE::Widget::EWidgetMode NodeWidgetMode=UE::Widget::WM_Translate;
+    FTransform DragStart;
+    TFunction<void(const FTransform&)> CommitNodePose;
+    TFunction<void(bool)> RequestNodeUndoRedo;
+    virtual UE::Widget::EWidgetMode GetWidgetMode() const override {return bDirectEdit&&!bPilotCamera?NodeWidgetMode:UE::Widget::WM_None;}
+    virtual void SetWidgetMode(UE::Widget::EWidgetMode Mode) override
+    {if(Mode==UE::Widget::WM_Translate||(Mode==UE::Widget::WM_Rotate&&bAllowNodeRotation))NodeWidgetMode=Mode;}
+    virtual bool CanSetWidgetMode(UE::Widget::EWidgetMode Mode) const override {return bDirectEdit&&(Mode==UE::Widget::WM_Translate||(bAllowNodeRotation&&Mode==UE::Widget::WM_Rotate));}
+    virtual ECoordSystem GetWidgetCoordSystemSpace() const override {return COORD_World;}
+    virtual FVector GetWidgetLocation() const override {return NodeStaticPose.IsSet()?NodeStaticPose->GetLocation():FVector::ZeroVector;}
+    virtual FMatrix GetWidgetCoordSystem() const override {return FMatrix::Identity;}
+    virtual void TrackingStarted(const FInputEventState&,bool bWidget,bool) override
+    {if(bDirectEdit&&bWidget&&NodeStaticPose.IsSet()){bCancelNodeDrag=false;bDraggingNode=true;DragStart=NodeStaticPose.GetValue();}}
+    virtual void TrackingStopped() override
+    {bCancelNodeDrag=false;if(bDraggingNode){bDraggingNode=false;if(CommitNodePose&&NodeStaticPose.IsSet()&&!NodeStaticPose->Equals(DragStart))CommitNodePose(NodeStaticPose.GetValue());}}
+    virtual bool InputWidgetDelta(FViewport*,EAxisList::Type Axis,FVector& Drag,FRotator& Rot,FVector&) override
+    {
+        if(!bDirectEdit||bPilotCamera||Axis==EAxisList::None||!NodeStaticPose.IsSet())return false;
+        if(bCancelNodeDrag)return true;
+        if(!bDraggingNode){bDraggingNode=true;DragStart=NodeStaticPose.GetValue();}
+        FTransform Pose=NodeStaticPose.GetValue();Pose.AddToTranslation(Drag);
+        if(bAllowNodeRotation)Pose.SetRotation((Rot.Quaternion()*Pose.GetRotation()).GetNormalized());
+        NodeStaticPose=Pose;Invalidate();return true;
+    }
+    virtual bool InputKey(const FInputKeyEventArgs& Args) override
+    {
+        if(bDirectEdit)
+        {
+            if(Args.Event==IE_Pressed&&Args.Viewport&&(Args.Viewport->KeyState(EKeys::LeftControl)||Args.Viewport->KeyState(EKeys::RightControl))&&(Args.Key==EKeys::Z||Args.Key==EKeys::Y))
+            {
+                if(!bDraggingNode&&!bPilotNavigating&&RequestNodeUndoRedo)RequestNodeUndoRedo(Args.Key==EKeys::Y||Args.Viewport->KeyState(EKeys::LeftShift)||Args.Viewport->KeyState(EKeys::RightShift));
+                return true;
+            }
+            if(Args.Key==EKeys::Escape&&Args.Event==IE_Pressed)
+            {if(bDraggingNode||bPilotNavigating){NodeStaticPose=DragStart;SetViewLocation(DragStart.GetLocation());SetViewRotation(DragStart.Rotator());bDraggingNode=false;bPilotNavigating=false;bCancelNodeDrag=true;return true;}}
+            if(!bPilotCamera&&Args.Event==IE_Pressed)
+            {if(Args.Key==EKeys::W){SetWidgetMode(UE::Widget::WM_Translate);return true;}if(Args.Key==EKeys::E){SetWidgetMode(UE::Widget::WM_Rotate);return true;}}
+            if(bPilotCamera&&Args.Key==EKeys::RightMouseButton)
+            {
+                if(Args.Event==IE_Pressed&&NodeStaticPose.IsSet()){bPilotNavigating=true;DragStart=NodeStaticPose.GetValue();}
+                else if(Args.Event==IE_Released&&bPilotNavigating)
+                {bPilotNavigating=false;NodeStaticPose=FTransform(GetViewRotation(),GetViewLocation(),DragStart.GetScale3D());if(CommitNodePose&&!NodeStaticPose->Equals(DragStart))CommitNodePose(NodeStaticPose.GetValue());}
+            }
+        }
+        return FEditorViewportClient::InputKey(Args);
+    }
     FString PerformanceError;
     virtual UWorld* GetWorld() const override {return World.Get();}
     virtual void Tick(float DeltaSeconds) override
     {
+        if(bAppliedShake&&GetViewLocation().Equals(LastShakeView.GetLocation(),.001)&&GetViewRotation().Equals(LastShakeView.Rotator(),.001))
+        {SetViewLocation(BaseShakeView.GetLocation());SetViewRotation(BaseShakeView.Rotator());}
+        bAppliedShake=false;ShakeViewTarget.Reset();
         FEditorViewportClient::Tick(DeltaSeconds);
+        ShowWidget(bDirectEdit&&!bPilotCamera&&NodeStaticPose.IsSet());
+        if(bDirectEdit&&bPilotCamera&&bPilotNavigating)NodeStaticPose=FTransform(GetViewRotation(),GetViewLocation(),DragStart.GetScale3D());
         if(auto S=Sequencer.Pin())
         {
             if(Asset.IsValid())
@@ -83,7 +144,7 @@ public:
                         for(auto Object:S->FindBoundObjects(Cut->GetCameraBindingID().GetGuid(),ID))
                             if(auto* Actor=Cast<ACameraActor>(Object.Get()))
                             {
-                                auto* Camera=Actor->GetCameraComponent();SetViewLocation(Camera->GetComponentLocation());SetViewRotation(Camera->GetComponentRotation());ViewFOV=Camera->FieldOfView;
+                                ShakeViewTarget=Actor;auto* Camera=Actor->GetCameraComponent();SetViewLocation(Camera->GetComponentLocation());SetViewRotation(Camera->GetComponentRotation());ViewFOV=Camera->FieldOfView;
                                 const float Weight=Cut->EvaluateEasing(Time);
                                 if(Weight<1)for(auto* Other:Cuts->GetAllSections())if(Other!=Cut&&Other->IsActive()&&!Cuts->IsRowEvalDisabled(Other->GetRowIndex())&&Other->HasEndFrame()&&Other->GetExclusiveEndFrame()==Cut->GetInclusiveStartFrame())
                                     if(auto* Prev=Cast<UMovieSceneCameraCutSection>(Other))for(auto O:S->FindBoundObjects(Prev->GetCameraBindingID().GetGuid(),ID))if(auto* P=Cast<ACameraActor>(O.Get()))
@@ -91,16 +152,35 @@ public:
                             }
             };
             auto* Movie=S->GetRootMovieSceneSequence()->GetMovieScene();const FFrameTime Time=S->GetGlobalTime().Time;
-            ApplyCuts(Movie,MovieSceneSequenceID::Root,Time);
+            if(!bNodeFreeView&&!bDirectEdit)ApplyCuts(Movie,MovieSceneSequenceID::Root,Time);
             for(auto* Track:Movie->GetTracks())if(auto* SubTrack=Cast<UMovieSceneSubTrack>(Track))if(!SubTrack->IsEvalDisabled())
                 for(auto* Base:SubTrack->GetAllSections())if(auto* Sub=Cast<UMovieSceneSubSection>(Base))
                     if(Sub->IsActive()&&!SubTrack->IsRowEvalDisabled(Sub->GetRowIndex())&&Sub->GetRange().Contains(Time.FrameNumber)&&Sub->GetSequence())
-                        ApplyCuts(Sub->GetSequence()->GetMovieScene(),Sub->GetSequenceID(),Time*Sub->OuterToInnerTransform());
+                        if(!bNodeFreeView&&!bDirectEdit)ApplyCuts(Sub->GetSequence()->GetMovieScene(),Sub->GetSequenceID(),Time*Sub->OuterToInnerTransform());
         }
-        if(auto S=Sequencer.Pin())ApplyGameplayReturn(*S);
+        if(!bDirectEdit&&!bNodeFreeView&&!bNodeCamera)if(auto S=Sequencer.Pin())ApplyGameplayReturn(*S);
+        if(auto S=Sequencer.Pin())if(Asset.IsValid())
+        {
+            FName Key;
+            for(const auto& Pair:Asset->CameraBindings)for(auto O:S->FindBoundObjects(Pair.Value,MovieSceneSequenceID::Root))if(O.Get()==ShakeViewTarget.Get()&&O.IsValid())Key=Pair.Key;
+            BaseShakeView=FTransform(GetViewRotation(),GetViewLocation());
+            auto Offset=FDirectorShakeState::At(Asset->Cues,S->GetGlobalTime().Time.AsDecimal()/30.).Sample(Key);
+            FVector P=GetViewLocation();FRotator R=GetViewRotation();Offset.Apply(P,R);SetViewLocation(P);SetViewRotation(R);
+            LastShakeView=FTransform(R,P);bAppliedShake=true;
+        }
+        if(auto S=Sequencer.Pin())if(NodePreviewBinding.IsValid())
+            for(auto O:S->FindBoundObjects(NodePreviewBinding,MovieSceneSequenceID::Root))if(auto* Actor=Cast<AActor>(O.Get()))
+            {
+                if(NodeStaticPose.IsSet())Actor->SetActorTransform(NodeStaticPose.GetValue());
+                if(bNodeCamera)if(auto* Camera=Actor->FindComponentByClass<UCameraComponent>())
+                {SetViewLocation(Camera->GetComponentLocation());SetViewRotation(Camera->GetComponentRotation());ViewFOV=Camera->FieldOfView;}
+            }
         Invalidate();
     }
 private:
+    bool bAppliedShake=false;
+    FTransform BaseShakeView,LastShakeView;
+    TWeakObjectPtr<AActor> ShakeViewTarget;
     void ApplyGameplayReturn(ISequencer& S)
     {
         if(!Asset.IsValid())return;
@@ -108,6 +188,7 @@ private:
         for(const auto& C:Asset->Cues)if(C.StartFrame<=Frame&&(DirectorNodes::IsReturn(C.Step.Type)||C.Step.Type==EDirectorNodeType::CinematicMode||(DirectorNodes::IsCamera(C.Step.Type)&&((C.Step.Type!=EDirectorNodeType::CameraMove&&C.Step.Type!=EDirectorNodeType::CameraPreset)||C.Step.bActivateCamera))||(C.Step.Type==EDirectorNodeType::Sequence&&DirectorSequence::HasCamera(C.Step))))
             if(!Latest||C.StartFrame>=Latest->StartFrame)Latest=&C;
         if(!Latest||!DirectorNodes::IsReturn(Latest->Step.Type))return;
+        ShakeViewTarget.Reset();
         const auto* Start=ReturnStarts.Find(Latest->Step.Id);if(!Start)return;
         const auto& Step=Latest->Step;const FTransform Goal=Step.bUsePreviewReturnView?Step.PreviewReturnView:GameplayPreviewView;
         const float Alpha=FMath::Clamp(float((Frame-Latest->StartFrame)/FMath::Max(1,Latest->EndFrame-Latest->StartFrame)),0.f,1.f);
@@ -174,7 +255,7 @@ protected:
          .Choices_Lambda([this]{const auto* C=GetDialogueCue();return C?C->Step.Choices:TArray<FDirectorChoice>();})
          .ChoicePrompt_Lambda([this]{const auto* C=GetDialogueCue();return C?C->Step.Id:FGuid();})
          .Speaker_Lambda([this]{const auto* C=GetDialogueCue();return C?C->Step.ResolveSpeaker():FText::GetEmpty();})
-         .Dialogue_Lambda([this]{const auto* C=GetDialogueCue();return C?C->Step.DialogueText:FText::GetEmpty();})
+         .Dialogue_Lambda([this]{const auto* C=GetDialogueCue();return C?C->Step.ResolveDialogue():FText::GetEmpty();})
          .Waiting_Lambda([this]{const auto* C=GetDialogueCue();return C&&C->Step.DialogueAdvance==EDirectorDialogueAdvance::Click;})];
         Overlay->AddSlot().VAlign(VAlign_Top).Padding(10)
         [SNew(STextBlock).ColorAndOpacity(FLinearColor::Red).AutoWrapText(true).Text_Lambda([this]

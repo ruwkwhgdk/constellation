@@ -11,7 +11,11 @@ class SCENEDIRECTOREDITOR_API USceneDirectorLibrary : public UBlueprintFunctionL
 {
     GENERATED_BODY()
 public:
+    // Editor PIE recording only: inject an outcome, not a physical input event.
+    UFUNCTION(BlueprintCallable,Category="Scene Director|Editor|Review") static bool ResolveQTEForReview(class ASceneDirectorPlayer* Player,bool bSuccess);
     UFUNCTION(BlueprintCallable,Category="Scene Director|Editor") static int32 ConfigureSchoolTutorialFocus(UWorld* World,bool bApply=false);
+    UFUNCTION(BlueprintCallable,Category="Scene Director|Editor") static int32 RemoveSchoolOpeningLegacyPresentation(UWorld* World,bool bApply=false);
+    UFUNCTION(BlueprintCallable,Category="Scene Director|Editor") static bool CaptureGameViewportFrame(UWorld* World,const FString& Filename);
     UFUNCTION(BlueprintCallable,Category="Scene Director|Editor") static FDirectorStep MakeDirectorStep(EDirectorNodeType Type);
     UFUNCTION(BlueprintCallable,Category="Scene Director|Editor") static bool CompileAuthoringEvents(USceneDirectorAsset* Asset,FString& Report);
     UFUNCTION(BlueprintCallable,Category="Scene Director|Editor") static bool ConnectGameSignals(UBlueprint* Blueprint,const FString& Kind,FString& Error);

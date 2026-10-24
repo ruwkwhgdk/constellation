@@ -33,11 +33,13 @@ void USceneDirectorGraph::Load()
         {auto* Next=Map.FindRef(Target);auto* Pin=Node->FindPin(PinName);if(Next&&Pin&&Next->FindPin(TEXT("In")))Pin->MakeLinkTo(Next->FindPin(TEXT("In")));};
         if(Node->Step.Type==EDirectorNodeType::Condition)
         {Link(TEXT("True"),Node->Step.TrueTarget);Link(TEXT("False"),Node->Step.FalseTarget);}
+        else if(Node->Step.Type==EDirectorNodeType::QTE)
+        {Link(TEXT("Success"),Node->Step.ChoiceTargets.FindRef(TEXT("Success")));Link(TEXT("Failure"),Node->Step.ChoiceTargets.FindRef(TEXT("Failure")));}
         else if(Node->HasChoiceOutputs())
         {
             const auto Legacy=Node->Step.Successors();
-            for(const auto& Choice:Node->Step.Choices)if(Choice.bEnabled)
-                Link(USceneDirectorGraphNode::ChoicePinName(Choice.Key),Node->Step.ChoiceTargets.IsEmpty()&&Legacy.Num()==1?Legacy[0]:Node->Step.ChoiceTargets.FindRef(Choice.Key));
+            for(const auto& Choice:Node->Step.Choices)
+                Link(USceneDirectorGraphNode::ChoicePinName(Choice.Key),Choice.bEnabled&&Node->Step.ChoiceTargets.IsEmpty()&&Legacy.Num()==1?Legacy[0]:Node->Step.ChoiceTargets.FindRef(Choice.Key));
             // Ambiguous legacy parallel successors remain visible until explicitly repaired.
             for(FGuid Next:Legacy)Link(TEXT("Out"),Next);
         }
@@ -58,7 +60,9 @@ void USceneDirectorGraph::Sync()
         auto Target=[&](FName Name)->FGuid
         {auto* Pin=Node->FindPin(Name);if(Pin&&Pin->LinkedTo.Num())if(auto* Next=Cast<USceneDirectorGraphNode>(Pin->LinkedTo[0]->GetOwningNode()))return Next->Step.Id;return FGuid();};
         if(Step.Type==EDirectorNodeType::Condition){Step.TrueTarget=Target(TEXT("True"));Step.FalseTarget=Target(TEXT("False"));}
-        if(Node->HasChoiceOutputs())for(const auto& Choice:Step.Choices)if(Choice.bEnabled)Step.ChoiceTargets.Add(Choice.Key,Target(USceneDirectorGraphNode::ChoicePinName(Choice.Key)));
+        if(Step.Type==EDirectorNodeType::QTE){Step.ChoiceTargets.Add(TEXT("Success"),Target(TEXT("Success")));Step.ChoiceTargets.Add(TEXT("Failure"),Target(TEXT("Failure")));}
+        if(Node->HasChoiceOutputs())for(const auto& Choice:Step.Choices)
+        {const FGuid Destination=Target(USceneDirectorGraphNode::ChoicePinName(Choice.Key));if(Choice.bEnabled||Destination.IsValid())Step.ChoiceTargets.Add(Choice.Key,Destination);}
         if(auto* Pin=Node->FindPin(TEXT("Out"));Pin && Pin->LinkedTo.Num())
             for(auto* Link:Pin->LinkedTo) if(auto* Next=Cast<USceneDirectorGraphNode>(Link->GetOwningNode()))Step.NextNodes.AddUnique(Next->Step.Id);
         Node->Step=Step;
@@ -81,9 +85,14 @@ void USceneDirectorGraphNode::AllocateDefaultPins()
         CreatePin(EGPD_Output,TEXT("exec"),TEXT("True"))->PinFriendlyName=FText::FromString(TEXT("참"));
         CreatePin(EGPD_Output,TEXT("exec"),TEXT("False"))->PinFriendlyName=FText::FromString(TEXT("거짓"));
     }
+    else if(Step.Type==EDirectorNodeType::QTE)
+    {
+        CreatePin(EGPD_Output,TEXT("exec"),TEXT("Success"))->PinFriendlyName=FText::FromString(TEXT("성공"));
+        CreatePin(EGPD_Output,TEXT("exec"),TEXT("Failure"))->PinFriendlyName=FText::FromString(TEXT("실패"));
+    }
     else if(HasChoiceOutputs())
     {
-        for(const auto& Choice:Step.Choices)if(Choice.bEnabled)CreatePin(EGPD_Output,TEXT("exec"),ChoicePinName(Choice.Key))->PinFriendlyName=FText::FromString(Choice.Key.ToString()+TEXT(" · ")+Choice.Text.ToString());
+        for(const auto& Choice:Step.Choices)CreatePin(EGPD_Output,TEXT("exec"),ChoicePinName(Choice.Key))->PinFriendlyName=FText::FromString(Choice.Key.ToString()+TEXT(" · ")+Choice.ResolveText().ToString());
         if(Step.Successors().Num()>1)CreatePin(EGPD_Output,TEXT("exec"),TEXT("Out"))->PinFriendlyName=FText::FromString(TEXT("이전 병렬 연결 · 선택지별 재연결 필요"));
     }
     else if(Step.Type!=EDirectorNodeType::End)CreatePin(EGPD_Output,TEXT("exec"),TEXT("Out"))->PinFriendlyName=FText::FromString(TEXT("다음"));
@@ -120,13 +129,14 @@ FText USceneDirectorGraphNode::GetNodeTitle(ENodeTitleType::Type) const
 {
     switch(Step.Type)
     {
+    case EDirectorNodeType::QTE:return FText::FromString(TEXT("QTE · Golden Orbit"));
     case EDirectorNodeType::Condition:return FText::FromString(TEXT("조건 분기\n")+Step.BoolKey.ToString());
     case EDirectorNodeType::SetInt:return FText::FromString(TEXT("Integer 설정\n")+Step.IntKey.ToString()+FString::Printf(TEXT(" = %d"),Step.IntValue));
     case EDirectorNodeType::SetBool:return FText::FromString(TEXT("변수 설정\n")+Step.BoolKey.ToString()+(Step.BoolValue?TEXT(" = 참"):TEXT(" = 거짓")));
     case EDirectorNodeType::BindNPC:return FText::FromString((DirectorAuthoring::IsCharacterEntry(Step)?TEXT("기존 캐릭터 연결\n"):TEXT("기존 오브젝트 연결\n"))+Step.Role.ToString());
     case EDirectorNodeType::LookAt:return FText::FromString(TEXT("시선 지정\n")+Step.Role.ToString()+TEXT(" → ")+Step.TargetRole.ToString());
     case EDirectorNodeType::Expression:return FText::FromString(TEXT("표정 변경\n")+Step.Role.ToString()+TEXT(" · ")+Step.ExpressionKey.ToString());
-    case EDirectorNodeType::Dialogue:return FText::FromString(TEXT("대사 출력\n")+Step.DialogueText.ToString().Left(24));
+    case EDirectorNodeType::Dialogue:return FText::FromString(TEXT("대사 출력\n")+Step.ResolveDialogue().ToString().Left(24));
     case EDirectorNodeType::CameraPreset:return FText::FromString(TEXT("구도 프리셋\n")+Step.CameraKey.ToString()+TEXT(" · ")+Step.Role.ToString());
     case EDirectorNodeType::CameraSwitch:return FText::FromString(TEXT("카메라 전환\n")+Step.CameraKey.ToString());
     case EDirectorNodeType::PlayerHidden:return FText::FromString(Step.bHidePlayer?TEXT("플레이어 숨김 · 켜기"):TEXT("플레이어 숨김 · 해제"));
@@ -134,6 +144,8 @@ FText USceneDirectorGraphNode::GetNodeTitle(ENodeTitleType::Type) const
     case EDirectorNodeType::HUDHidden:return FText::FromString(Step.bHideHUD?TEXT("게임 HUD 숨김 · 켜기"):TEXT("게임 HUD 숨김 · 해제"));
     case EDirectorNodeType::CloseDialogue:return FText::FromString(TEXT("대사창 닫기"));
     case EDirectorNodeType::CinematicMode:return FText::FromString(TEXT("연출 모드 설정"));
+    case EDirectorNodeType::CameraShake:return FText::FromString(TEXT("카메라 진동 · ")+(Step.Shake.bUnlimited?FString(TEXT("무제한")):FString::Printf(TEXT("%.2f초"),Step.Shake.Duration))+TEXT("\n")+(Step.bShakeCurrentCamera?TEXT("현재 화면"):Step.CameraKey.ToString()));
+    case EDirectorNodeType::StopCameraShake:return FText::FromString(TEXT("카메라 진동 중단\n")+(Step.bStopAllCameraShakes?FString(TEXT("모든 대상")):(Step.bShakeCurrentCamera?FString(TEXT("현재 화면")):Step.CameraKey.ToString())));
     case EDirectorNodeType::Eyelids:return FText::FromString(TEXT("눈꺼풀 연출"));
     case EDirectorNodeType::Vision:return FText::FromString(TEXT("시야 효과"));
     case EDirectorNodeType::ClearVision:return FText::FromString(TEXT("시야 효과 해제"));
@@ -209,7 +221,7 @@ const FPinConnectionResponse USceneDirectorSchema::CanCreateConnection(const UEd
     }
     const UEdGraphPin* Output=A->Direction==EGPD_Output?A:B;
     const auto* Owner=Cast<USceneDirectorGraphNode>(Output->GetOwningNode());
-    if(Owner&&(Owner->HasChoiceOutputs()||Owner->Step.Type==EDirectorNodeType::Condition)&&Output->PinName!=TEXT("Out")&&!Output->LinkedTo.IsEmpty())
+    if(Owner&&(Owner->HasChoiceOutputs()||Owner->Step.Type==EDirectorNodeType::QTE||Owner->Step.Type==EDirectorNodeType::Condition)&&Output->PinName!=TEXT("Out")&&!Output->LinkedTo.IsEmpty())
         return FPinConnectionResponse(A==Output?CONNECT_RESPONSE_BREAK_OTHERS_A:CONNECT_RESPONSE_BREAK_OTHERS_B,TEXT("이 분기의 연결을 교체합니다."));
     return FPinConnectionResponse(CONNECT_RESPONSE_MAKE,TEXT("분기: 병렬 실행 / 합류: 모두 완료 대기"));
 }

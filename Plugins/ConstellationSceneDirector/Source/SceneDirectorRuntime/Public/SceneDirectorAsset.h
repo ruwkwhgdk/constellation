@@ -8,13 +8,15 @@
 #include "SceneDirectorMotionPath.h"
 #include "Generators/MovieSceneEasingCurves.h"
 #include "SceneDirectorSpeaker.h"
+#include "SceneDirectorShake.h"
+#include "DirectorQTE.h"
 #include "SceneDirectorAsset.generated.h"
 
 class ULevelSequence;
 class UAnimSequence;
 class USoundBase;
 UENUM(BlueprintType)
-enum class EDirectorNodeType : uint8 { Start, SpawnNPC, Camera, Wait, End, Animation, Hub, CharacterMove, CameraMove, BindNPC, CinematicMode, CameraPreset, LookAt, Expression, Dialogue, CameraSwitch, GameplayReturn, Condition, SetBool, GameAction, Sequence, Visibility, Fade, SetInt, PlayerHidden, InputLock, HUDHidden, CameraReturn, CloseDialogue, Eyelids, Vision, ClearVision };
+enum class EDirectorNodeType : uint8 { Start, SpawnNPC, Camera, Wait, End, Animation, Hub, CharacterMove, CameraMove, BindNPC, CinematicMode, CameraPreset, LookAt, Expression, Dialogue, CameraSwitch, GameplayReturn, Condition, SetBool, GameAction, Sequence, Visibility, Fade, SetInt, PlayerHidden, InputLock, HUDHidden, CameraReturn, CloseDialogue, Eyelids, Vision, ClearVision, CameraShake, StopCameraShake, QTE };
 
 UENUM(BlueprintType)
 enum class EDirectorValueMode : uint8 { Absolute UMETA(DisplayName="절대값"), Key UMETA(DisplayName="String Key"), Current UMETA(DisplayName="현재 값") };
@@ -130,6 +132,9 @@ USTRUCT(BlueprintType)
 struct SCENEDIRECTORRUNTIME_API FDirectorStep
 {
     GENERATED_BODY()
+    UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="QTE",meta=(EditCondition="Type == EDirectorNodeType::QTE",EditConditionHides)) FDirectorQTESettings QTE;
+    // Runtime branch duration, never written to the authored asset.
+    UPROPERTY(Transient) float QTEElapsedSeconds=-1.f;
     UPROPERTY(EditAnywhere,Category="대사",meta=(DisplayName="대사창 유지",EditCondition="Type == EDirectorNodeType::Dialogue",EditConditionHides)) bool bKeepDialogueOpen=true;
     UPROPERTY(EditAnywhere,Category="대사",meta=(DisplayName="화면 위치",EditCondition="Type == EDirectorNodeType::Dialogue",EditConditionHides)) EDirectorDialoguePosition DialoguePosition=EDirectorDialoguePosition::Bottom;
     UPROPERTY(EditAnywhere,Category="Integer 변수",meta=(DisplayName="변수 Key",EditCondition="Type == EDirectorNodeType::SetInt",EditConditionHides)) FName IntKey;
@@ -189,13 +194,14 @@ struct SCENEDIRECTORRUNTIME_API FDirectorStep
     UPROPERTY(EditAnywhere,Category="미리보기",meta=(DisplayName="미리보기 선택지 번호",ClampMin="1",ClampMax="4",EditCondition="Type == EDirectorNodeType::Dialogue",EditConditionHides)) int32 PreviewChoiceIndex=1;
     TArray<FGuid> AllSuccessors() const
     {
+        if(Type==EDirectorNodeType::QTE&&!ChoiceTargets.IsEmpty())return {ChoiceTargets.FindRef(TEXT("Success")),ChoiceTargets.FindRef(TEXT("Failure"))};
         if(Type==EDirectorNodeType::Condition)return {TrueTarget,FalseTarget};
         if(Type==EDirectorNodeType::Dialogue&&!Choices.IsEmpty()&&!ChoiceTargets.IsEmpty())
         {TArray<FGuid> Result;for(const auto& Choice:Choices)if(Choice.bEnabled)Result.Add(ChoiceTargets.FindRef(Choice.Key));return Result;}
         return Successors();
     }
     TArray<FGuid> Successors() const { return NextNodes.Num() ? NextNodes : (Next.IsValid() ? TArray<FGuid>{Next} : TArray<FGuid>{}); }
-    UPROPERTY(EditAnywhere, Category="실행", meta=(DisplayName="완료 후 다음 실행", ToolTip="끄면 행동을 시작한 직후 다음 노드도 실행합니다. 합류 노드는 모든 경로의 행동 완료를 기다립니다.", EditCondition="Type == EDirectorNodeType::Eyelids || Type == EDirectorNodeType::Vision || Type == EDirectorNodeType::ClearVision || Type == EDirectorNodeType::Sequence || Type == EDirectorNodeType::Camera || Type == EDirectorNodeType::Animation || Type == EDirectorNodeType::Wait || Type == EDirectorNodeType::CharacterMove || Type == EDirectorNodeType::CameraMove || Type == EDirectorNodeType::CameraPreset || Type == EDirectorNodeType::LookAt || Type == EDirectorNodeType::Expression || Type == EDirectorNodeType::CameraSwitch", EditConditionHides)) bool bWaitForCompletion = true;
+    UPROPERTY(EditAnywhere, Category="실행", meta=(DisplayName="완료 후 다음 실행", ToolTip="끄면 행동을 시작한 직후 다음 노드도 실행합니다. 합류 노드는 모든 경로의 행동 완료를 기다립니다. 무제한 카메라 진동은 이 설정에 관계없이 즉시 다음으로 진행합니다.", EditCondition="Type == EDirectorNodeType::CameraShake || (Type == EDirectorNodeType::StopCameraShake && StopShakeSeconds > 0) || Type == EDirectorNodeType::Eyelids || Type == EDirectorNodeType::Vision || Type == EDirectorNodeType::ClearVision || Type == EDirectorNodeType::Sequence || Type == EDirectorNodeType::Camera || Type == EDirectorNodeType::Animation || Type == EDirectorNodeType::Wait || Type == EDirectorNodeType::CharacterMove || Type == EDirectorNodeType::CameraMove || Type == EDirectorNodeType::CameraPreset || Type == EDirectorNodeType::LookAt || Type == EDirectorNodeType::Expression || Type == EDirectorNodeType::CameraSwitch", EditConditionHides)) bool bWaitForCompletion = true;
     UPROPERTY(EditAnywhere, Category="연출", meta=(DisplayName="재생할 애니메이션", EditCondition="Type == EDirectorNodeType::Animation || (Type == EDirectorNodeType::CharacterMove && bPlayMoveAnimation && !bAutoLocomotion)", EditConditionHides)) TObjectPtr<UAnimSequence> Animation;
     UPROPERTY(VisibleAnywhere, Category="연출", meta=(DisplayName="동작")) EDirectorNodeType Type = EDirectorNodeType::Wait;
     UPROPERTY(EditAnywhere, Category="연출", meta=(DisplayName="NPC String Key", EditCondition="Type == EDirectorNodeType::Visibility || Type == EDirectorNodeType::SpawnNPC || Type == EDirectorNodeType::Camera || Type == EDirectorNodeType::Animation || Type == EDirectorNodeType::CharacterMove || Type == EDirectorNodeType::BindNPC || Type == EDirectorNodeType::CameraPreset || Type == EDirectorNodeType::LookAt || Type == EDirectorNodeType::Expression", EditConditionHides)) FName Role = TEXT("NPC");
@@ -208,9 +214,10 @@ struct SCENEDIRECTORRUNTIME_API FDirectorStep
     UPROPERTY(EditAnywhere,Category="카메라 복귀",meta=(DisplayName="미리보기 복귀 화각",ClampMin="10",ClampMax="170",EditCondition="(Type == EDirectorNodeType::GameplayReturn || Type == EDirectorNodeType::CameraReturn) && bUsePreviewReturnView",EditConditionHides)) float PreviewReturnFOV=90;
 
     UPROPERTY(EditAnywhere, Category="연출", meta=(DisplayName="대상 바라보기", EditCondition="Type == EDirectorNodeType::Camera", EditConditionHides)) bool bLookAtTarget = true;
-    UPROPERTY(EditAnywhere,Category="카메라",meta=(DisplayName="카메라 String Key",EditCondition="Type == EDirectorNodeType::Camera || Type == EDirectorNodeType::CameraMove || Type == EDirectorNodeType::CameraPreset || Type == EDirectorNodeType::CameraSwitch",EditConditionHides)) FName CameraKey;
+    UPROPERTY(EditAnywhere,Category="카메라",meta=(DisplayName="카메라 String Key",EditCondition="Type == EDirectorNodeType::Camera || Type == EDirectorNodeType::CameraMove || Type == EDirectorNodeType::CameraPreset || Type == EDirectorNodeType::CameraSwitch || ((Type == EDirectorNodeType::CameraShake || (Type == EDirectorNodeType::StopCameraShake && !bStopAllCameraShakes)) && !bShakeCurrentCamera)",EditConditionHides)) FName CameraKey;
     UPROPERTY(EditAnywhere,Category="이동",meta=(DisplayName="이동 위치 (cm)",EditCondition="!bUseMotionPath && (Type == EDirectorNodeType::CharacterMove || Type == EDirectorNodeType::CameraMove)",EditConditionHides)) FDirectorVectorInput Destination;
-    UPROPERTY(EditAnywhere,Category="이동",meta=(DisplayName="회전 (X=Roll, Y=Pitch, Z=Yaw / 도)",EditCondition="Type == EDirectorNodeType::CameraMove && !bUseMotionPath",EditConditionHides)) FDirectorVectorInput Rotation;
+    UPROPERTY(EditAnywhere,Category="이동",meta=(DisplayName="도착 회전 지정",ToolTip="켜면 이동 시작 회전에서 지정한 도착 회전까지 이동 시간 동안 회전합니다. 경유점 경로는 각 점의 회전을 사용합니다.",EditCondition="Type == EDirectorNodeType::CharacterMove && !bUseMotionPath",EditConditionHides)) bool bSpecifyArrivalRotation=false;
+    UPROPERTY(EditAnywhere,Category="이동",meta=(DisplayName="회전 (X=Roll, Y=Pitch, Z=Yaw / 도)",EditCondition="!bUseMotionPath && (Type == EDirectorNodeType::CameraMove || (Type == EDirectorNodeType::CharacterMove && bSpecifyArrivalRotation))",EditConditionHides)) FDirectorVectorInput Rotation;
     UPROPERTY(EditAnywhere,Category="이동",meta=(DisplayName="속도 / 시간 선택",EditCondition="Type == EDirectorNodeType::CharacterMove && !bUseMotionPath",EditConditionHides)) EDirectorMoveTiming MoveTiming=EDirectorMoveTiming::Speed;
     UPROPERTY(EditAnywhere,Category="이동",meta=(DisplayName="이동 속도 (cm/s)",ClampMin="0.01",EditCondition="Type == EDirectorNodeType::CharacterMove && !bUseMotionPath && MoveTiming == EDirectorMoveTiming::Speed",EditConditionHides)) float MoveSpeed=150;
     UPROPERTY(EditAnywhere,Category="이동",meta=(DisplayName="자체 걷기·달리기 자동 선택",EditCondition="Type == EDirectorNodeType::CharacterMove && bPlayMoveAnimation",EditConditionHides)) bool bAutoLocomotion=true;
@@ -234,6 +241,9 @@ struct SCENEDIRECTORRUNTIME_API FDirectorStep
     FText ResolveSpeaker() const;
     bool ValidateSpeaker(FString& Error) const;
     UPROPERTY(EditAnywhere,Category="대사",meta=(DisplayName="대사 (String Table 연결 가능)",MultiLine="true",EditCondition="Type == EDirectorNodeType::Dialogue",EditConditionHides)) FText DialogueText;
+    UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="대사",meta=(DisplayName="대사 데이터 행 (선택)",EditCondition="Type == EDirectorNodeType::Dialogue",EditConditionHides)) FDataTableRowHandle DialogueRow;
+    FText ResolveDialogue() const;
+    bool ValidateDialogue(FString& Error) const;
     UPROPERTY(EditAnywhere,Category="대사",meta=(DisplayName="선택지 (최대 4개)",TitleProperty="Text",EditCondition="Type == EDirectorNodeType::Dialogue",EditConditionHides)) TArray<FDirectorChoice> Choices;
     UPROPERTY(EditAnywhere,Category="대사",meta=(DisplayName="음성",EditCondition="Type == EDirectorNodeType::Dialogue",EditConditionHides)) TObjectPtr<USoundBase> Voice;
     UPROPERTY(EditAnywhere,Category="대사",meta=(DisplayName="진행 방식",EditCondition="Type == EDirectorNodeType::Dialogue",EditConditionHides)) EDirectorDialogueAdvance DialogueAdvance=EDirectorDialogueAdvance::Timed;
@@ -241,6 +251,10 @@ struct SCENEDIRECTORRUNTIME_API FDirectorStep
     UPROPERTY(EditAnywhere,Category="연출 모드",meta=(DisplayName="이동·시점 조작 잠금",EditCondition="Type == EDirectorNodeType::CinematicMode || Type == EDirectorNodeType::InputLock",EditConditionHides)) bool bLockInput=true;
     UPROPERTY(EditAnywhere,Category="연출 모드",meta=(DisplayName="게임 HUD 숨김",EditCondition="Type == EDirectorNodeType::CinematicMode || Type == EDirectorNodeType::HUDHidden",EditConditionHides)) bool bHideHUD=true;
     FName EffectiveCameraKey() const {return CameraKey.IsNone()?FName(*(TEXT("Camera_")+Id.ToString(EGuidFormats::Digits))):CameraKey;}
+    UPROPERTY(EditAnywhere,Category="카메라 진동",meta=(DisplayName="현재 촬영 화면 대상",ToolTip="켜면 현재 화면에 적용합니다. 끄면 등록 카메라를 선택합니다.",EditCondition="Type == EDirectorNodeType::CameraShake || (Type == EDirectorNodeType::StopCameraShake && !bStopAllCameraShakes)",EditConditionHides)) bool bShakeCurrentCamera=true;
+    UPROPERTY(EditAnywhere,Category="카메라 진동",meta=(DisplayName="진동 설정",EditCondition="Type == EDirectorNodeType::CameraShake",EditConditionHides)) FDirectorShakeSettings Shake;
+    UPROPERTY(EditAnywhere,Category="카메라 진동 중단",meta=(DisplayName="모든 대상의 진동 중단",EditCondition="Type == EDirectorNodeType::StopCameraShake",EditConditionHides)) bool bStopAllCameraShakes=true;
+    UPROPERTY(EditAnywhere,Category="카메라 진동 중단",meta=(DisplayName="중단 완화 시간 (초, 0=즉시)",ClampMin="0",ClampMax="3600",EditCondition="Type == EDirectorNodeType::StopCameraShake",EditConditionHides)) float StopShakeSeconds=0;
     UPROPERTY(BlueprintReadWrite,Category="Authoring") FVector2D EditorPosition = FVector2D::ZeroVector;
 };
 
@@ -257,6 +271,9 @@ class SCENEDIRECTORRUNTIME_API USceneDirectorAsset : public UDataAsset
 {
     GENERATED_BODY()
 public:
+    // Zero preserves instant text for existing scenes. Timed lines fit within their authored duration.
+    UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="Dialogue UI",meta=(ClampMin="0",Units="s")) float DialogueCharacterInterval=0.f;
+    UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="Dialogue UI") TObjectPtr<class USoundBase> DialogueTickSound;
     // One authoring list; existing typed storage and save-game keys remain compatible.
     UPROPERTY(Transient,EditAnywhere,Category="공용 변수",meta=(DisplayName="변수 목록",TitleProperty="Key")) TArray<FDirectorVariableEntry> Variables;
     void RefreshVariableEntries();

@@ -22,6 +22,7 @@ public:
     bool Choose(int32 Index);
     int32 GetFocusedIndex()const{return FocusedIndex;}
     bool IsCommitted()const{return bCommitted;}
+    float GetUnlockProgress(FName Key) const;
     virtual bool SupportsKeyboardFocus()const override{return true;}
     virtual FReply OnKeyDown(const FGeometry&,const FKeyEvent&)override;
 private:
@@ -32,7 +33,12 @@ private:
     FGuid CurrentPrompt;
     FOnDirectorChoice Chosen;
     TSharedPtr<SVerticalBox> Rows;
-    FSlateBrush FocusBG,FocusStroke,IdleBG,IdleStroke,Cursor;
+    FSlateBrush FocusBG,FocusStroke,IdleBG,IdleStroke,Cursor,Star;
+    FSlateBrush LockedBG,ClosedLock,OpenLock;
+    TMap<FName,float> UnlockElapsed;
+    TMap<FName,FText> UnlockReasons;
+    bool bStardust=false;
+    float SparkleTime=0;
     FButtonStyle ButtonStyle;
     int32 FocusedIndex=0;
     bool bCommitted=false,bInitialized=false;

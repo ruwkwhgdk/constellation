@@ -9,6 +9,8 @@ struct FDirectorNodeMenuEntry
 inline TArray<FDirectorNodeMenuEntry> DirectorNodeMenuEntries()
 {
     return {
+        {TEXT("카메라"),TEXT("카메라 진동"),EDirectorNodeType::CameraShake},
+        {TEXT("카메라"),TEXT("카메라 진동 중단"),EDirectorNodeType::StopCameraShake},
         {TEXT("카메라"),TEXT("눈꺼풀 연출"),EDirectorNodeType::Eyelids},
         {TEXT("카메라"),TEXT("시야 효과"),EDirectorNodeType::Vision},
         {TEXT("카메라"),TEXT("시야 효과 해제"),EDirectorNodeType::ClearVision},
@@ -30,6 +32,7 @@ inline TArray<FDirectorNodeMenuEntry> DirectorNodeMenuEntries()
         {TEXT("카메라"),TEXT("구도 프리셋"),EDirectorNodeType::CameraPreset},
         {TEXT("카메라"),TEXT("촬영 카메라 전환"),EDirectorNodeType::CameraSwitch},
         {TEXT("대화"),TEXT("대사 출력"),EDirectorNodeType::Dialogue},
+        {TEXT("입력"),TEXT("QTE · Golden Orbit"),EDirectorNodeType::QTE},
         {TEXT("게임 연동"),TEXT("레벨 시퀀스 재생"),EDirectorNodeType::Sequence},
         {TEXT("게임 연동"),TEXT("블루프린트 액션"),EDirectorNodeType::GameAction},
         {TEXT("게임 연동"),TEXT("플레이어 숨김"),EDirectorNodeType::PlayerHidden},

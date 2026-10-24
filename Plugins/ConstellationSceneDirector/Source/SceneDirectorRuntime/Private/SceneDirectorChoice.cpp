@@ -1,4 +1,11 @@
 #include "SceneDirectorChoice.h"
+#include "SceneDirectorText.h"
+
+FText FDirectorChoice::ResolveText() const
+{return DirectorText::Resolve(TextRow,Text);}
+FText FDirectorChoice::ResolveDisabledReason() const
+{return DirectorText::Resolve(DisabledReasonRow,DisabledReason);}
+
 bool DirectorChoices::Validate(const TArray<FDirectorChoice>& Choices,FString& Error)
 {
     Error.Reset();
@@ -7,7 +14,8 @@ bool DirectorChoices::Validate(const TArray<FDirectorChoice>& Choices,FString& E
     for(const auto& C:Choices)
     {
         if(C.Key.IsNone()||Keys.Contains(C.Key)){Error=TEXT("선택지 결과 Key는 비어 있거나 중복될 수 없습니다.");return false;}
-        if(C.Text.ToString().TrimStartAndEnd().IsEmpty()){Error=TEXT("선택지 문구를 입력하세요.");return false;}
+        if(!DirectorText::Validate(C.TextRow,Error)||!DirectorText::Validate(C.DisabledReasonRow,Error))return false;
+        if(C.ResolveText().ToString().TrimStartAndEnd().IsEmpty()){Error=TEXT("선택지 문구를 입력하세요.");return false;}
         Keys.Add(C.Key);
     }
     if(!Choices.IsEmpty()&&!Choices.ContainsByPredicate([](const FDirectorChoice& C){return C.bEnabled;})){Error=TEXT("선택 가능한 항목이 하나 이상 필요합니다.");return false;}

@@ -24,7 +24,9 @@ bool SaveDirectorPackage(UObject* Object)
 bool USceneDirectorLibrary::CompileDirector(USceneDirectorAsset* Asset,FString& Message)
 {
     if(!Asset){Message=TEXT("연출 에셋이 없습니다.");return false;}
-    return FSceneDirectorCompiler::Compile(*Asset,Message);
+    const bool bCompiled=FSceneDirectorCompiler::Compile(*Asset,Message);
+    if(!bCompiled)UE_LOG(LogTemp,Error,TEXT("Scene Director compile %s: %s"),*Asset->GetPathName(),*Message);
+    return bCompiled;
 }
 USceneDirectorAsset* USceneDirectorLibrary::CreateExample()
 {

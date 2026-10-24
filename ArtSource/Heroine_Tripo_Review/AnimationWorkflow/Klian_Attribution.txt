@@ -1,0 +1,13 @@
+# Klian get-up animation attribution
+
+Runtime asset: /Game/Constellation/Characters/Heroine/GamePilot/Locker/AS_Locker_GetUp
+Earlier review asset: /Game/Constellation/Characters/Heroine/GamePilot/Locker/AS_Locker_GetUp_Klian
+Original creator: Klian
+Original work: Getting Up Animation, motion capture created using Rokoko suit/gloves.
+Source: https://www.fab.com/listings/69dae222-05e9-4065-9030-45887986cdec
+License: Creative Commons Attribution 4.0 International
+https://creativecommons.org/licenses/by/4.0/
+
+Changes: knee-supported recovery adjustment on source mannequin; retargeting to Constellation heroine; hand/knee contact, foot support, terminal-frame stabilization and hand-floor clearance corrections.
+
+Retain this attribution with distributions containing the derivative animation. No endorsement by the original author is implied. Physitrack served only as an observational movement reference; no Physitrack media is included.

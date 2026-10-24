@@ -1,3 +1,44 @@
+> **2026-10-23 관절 보정 진행 중:** 아래 RightUpper06은 결함 재현 및 수정 기준점이며 외형 합격본이 아니다. `SwordAcquisition.md` 최상단 상태를 먼저 확인한다. `ArmCorrection20261023` 후보는 정방향 그립·어깨/전완 누적 비틀림·실제 메시 검수와 엔진 재로드 완료 전 유지본으로 사용하지 않는다.
+
+# 의자·책상 내려놓기 — 2026-10-24
+
+승인된 Chair04/Desk02의 0.9초 게임 연결, 양손 IK 시간 동기화 및 재로드 가능한 의상 보정은 [PutDown.md](PutDown.md)를 따른다. 검수 맵 PIE와 폐교 맵 결과를 구분하고, 최종 전달 보고서의 검증 상태를 확인한다.
+
+# 검 획득 애니메이션 — 2026-10-21
+
+검 뽑기·버티기 루프·정방향 재그립·한손 들기 작업은 [SwordAcquisition.md](SwordAcquisition.md)를 따른다. 현재 캐릭터 소스는 `ArtSource/SwordAcquisition/GripRevision20261023/Heroine_Sword_RightUpper06.blend`이며, 오른손 상단·왼손 하단의 7종 시퀀스/몽타주를 사용한다. `RegripRight`는 런타임에서 제외했다. 손목 원점 외에 실제 손가락 접촉, 팔 도달 범위, 손·검 quaternion의 키 사이 회전도 검사한다. 에셋 추가와 실제 이벤트/QTE/UI 연결을 구분한다.
+
+# 폰 메뉴 무료 원본 기반 전환 — 2026-10-21
+
+사용자는 폰 꺼내기·넣기 모션을 직접 제작하지 말고 무료로 상업 이용 가능한 기존 결과물을 사용하도록 지정했다. 이전 Mixamo 원본 보존·리타기팅 방식을 따른다. 직접 제작한 PhoneMenu01/Candidate01–10은 중단본이며 승인본이 아니다. [폰 메뉴 현재 상태](../PhoneMenu01/CURRENT.md)를 읽고, 무료 원본 확보 후 영상 승인 전에 엔진에 반영하지 않는다.
+
+# 낙하·착지 연결 — 2026-10-19
+
+현재 낙하 작업의 승인 소스, 엔진 연결, 접지 보정 및 검증 상태는 [FallLanding.md](FallLanding.md)를 먼저 읽는다. 기존 피해 기준은 유지하며 심한 추락 뒤 승인된 일어서기로 복귀한다.
+
+# 별 연출 추가 5종 검수 후보 — 2026-10-18
+
+최신 엔진 상태(2026-10-19): 승인된 5종의 `Interaction/AS_Star_*`, `AM_Star_*` 저장 및 별도 엔진 재로드 검사 완료. `StarSequence01/UnrealApply01/Delivery/review.html`에 실제 엔진 시퀀스 재생 영상과 검증 범위가 있다. 기존 Reach 보존. 게임 이벤트/카메라/VFX/최종 Idle 및 런타임 몽타주 블렌드는 별도 통합 단계이며 아직 검증하지 않았다.
+
+2026-10-19 사용자가 Fingers01 보정본을 포함한 추가 5종의 언리얼 반영을 승인했다. 현재 전달 작업은 `StarSequence01/UnrealApply01`에 기록하며, 아래의 승인 대기 기록은 당시 상태다. 프로젝트 `AGENTS.md`의 **최우선 품질 게이트: 관절 꺾임과 손가락 자세**를 모든 후속 애니메이션에 적용한다. 수치 연속성/데이터 일치만으로 손·관절 자세를 통과시키지 않으며 원본→보정→저장 재열기→엔진 재생에서 근접 시각 검사를 수행한다.
+
+2026-10-19 손가락 수정: RecoverChest·PalmConfused의 최신 검수 후보는 `StarSequence01/FingerCorrection01/Heroine_Star_Fingers01.blend`의 `*_Fingers01` Action이다. 근접 전후 영상은 `FingerCorrection01/Delivery/review.html`. 다른 동작은 아래 Wrist02를 유지한다. 사용자 승인 전 Unreal 반영 금지. 상세 보존 검사와 원본 기준은 [StarSequence.md](StarSequence.md)의 최상단을 따른다.
+
+Inspect·Surprise·Absorb·RecoverChest·PalmConfused의 원본 기반 Blender 검수 후보와 정면/측면 영상은 [StarSequence.md](StarSequence.md)를 따른다. 손목 재검사 후 Surprise·Absorb·RecoverChest·PalmConfused를 보정한 `StarSequence01/WristCorrection01/Heroine_Star_Wrist02.blend`가 현재 수정 후보이며, `WristCorrection01/Delivery/review.html`에서 전후 영상을 검수한다. 기존 `StarSequence01/Delivery`는 수정 전 자료다. 기존 Reach 끝에서 이어지는 Surprise를 포함한다. **새 5종은 사용자 영상 검수 전 언리얼 적용 금지**이며, 기존 Reach 에셋은 유지한다. 해당 문서에 저장본·Action·프레임 범위·폐기 후보·손목 검수 교훈을 기록했다.
+
+# 오른손 조심스럽게 뻗기 — 2026-10-18
+
+최신 언리얼 상태: 승인된 Mixamo 원본 기반 `ReachTouch_SourceAudit/Heroine_Mixamo_ReachingOut_02.blend`를 `GamePilot/Interaction/AS_ReachTouch_Right` 및 `AM_ReachTouch_Right`로 저장하고 별도 엔진 재로드 검증 완료. 4초/30fps. 이벤트 연결·접촉 notify·실제 게임 검수는 아직 별도 단계다. 자세한 경로와 대기 항목은 [ReachTouch.md](ReachTouch.md)의 최상단을 따른다.
+
+이 동작의 후속 작업은 [ReachTouch.md](ReachTouch.md)를 읽는다. `ReachTouch01/04`는 손 방향 문제로 사용자 반려됐으며 유지 승인본이 아니다. 2026-10-18 사용자가 Mixamo `Reaching Out` 다운로드 원본 자세를 그대로 사용하도록 승인했다. 원본의 남은 팔꿈치 굽힘을 거의100% 신전으로 억지 수정하지 않는다. `ReachTouch_SourceAudit`에서 원본과 캐릭터 리타기팅 비교를 진행하며 언리얼에는 아직 미반영이다.
+
+# 의자·책상 D 운반·투척 Unreal 적용 — 2026-10-17
+
+운반·투척, 팔 IK, 손 접촉 또는 해제 시점 수정 전 [CarryD_Unreal.md](CarryD_Unreal.md)를 읽는다. 현재 94본 리그의 비틀림 보조 본 처리, 실제 PIE 검증 영상, 해제 순서 및 집어 들기·발 블렌드 잔여 항목을 구분해 기록했다.
+
+# 최신 락커 GetUp 제작 절차 — 2026-10-14
+
+락커 일어서기와 이후 모캡·리타기팅 작업은 먼저 [MocapRetargeting.md](MocapRetargeting.md)를 읽는다. 최신 승인 소스(Klian_Heroine04_PalmsDown), 기존 대기 연결, 제작 단계, 양손/손가락 바닥 접촉 검사, 실제 게임 연결과 시퀀스 전달의 구분을 기록했다. 아래 R11 및 과거 Run 경로는 해당 작업의 역사적 기록이며 최신 GetUp 시작점이 아니다. 게임 반영 여부는 새 문서에 명시한 runtime_delivery.json의 실제 결과로 판정한다.
 # 2026-10-07 검수 작업 공간 이동 안내
 
 Rebuild 제작·검수 자료는 사용자 요청으로 `C:/Users/User/Documents/Constellation_ArtWorkspace/ArtSource/Heroine_Rebuild`로 이동했다. 아래 기록의 `ArtSource/Heroine_Rebuild/...` 참조는 외부 작업 공간 기준으로 읽는다. 기존 프로젝트 경로를 다시 생성하지 않는다.
@@ -120,3 +161,9 @@ description: Project Constellation의 여주인공 애니메이션을 기존 게
 - SkeletalMesh 자산을 바꿔도 컴포넌트의 재질 오버라이드/MID는 남을 수 있다. 비교 시 모든 슬롯을 재설정하고 실제 MID 부모 경로를 매 상태 검증한다. 자산 이름 변경이나 화면 일치만으로 다른 재질이 적용됐다고 판단하지 않는다.
 - 표정 검증은 실제 ticking SIE 게임 월드에서 동일 컴포넌트 재생 시간이 진행되는지 확인한다. 일반 에디터 월드 readback만으로 변형이 렌더됐다고 판단하지 않는다. 근접 텍스처는 컴포넌트 prestream과 대기 후 검사하고 전역 설정 변경은 피한다.
 - FaceAttributeTransferReview/Maintained 및 FinalBlinkSweep의 실제 재질·복귀 픽셀 검증을 기준으로 삼는다. 단계별 GIF와 정적 셰이더 명령 수는 실시간 애니메이션/FPS 검증이 아니다. 얼굴 기존 스타일과 중립 모프를 보존한다.
+
+
+
+## 의자·책상 집기 후속 작업
+
+[의자·책상 양손 집기와 가구 동시 정렬](CarryPickup.md)에 유지 원본, 런타임 전환, 접촉 알림 지연 복구 및 검증 기록을 정리한다. 이후 집기 수정은 이 기록의 완료/미완료 구분을 먼저 확인한다.

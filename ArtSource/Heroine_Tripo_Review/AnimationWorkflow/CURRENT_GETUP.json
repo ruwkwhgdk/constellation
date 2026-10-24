@@ -1,0 +1,62 @@
+{
+  "hold_to_getup_max_error_cm": 0.00013496913262588873,
+  "source": "C:\\Users\\User\\.codex\\visualizations\\2026\\09\\19\\01a0ba3a-ca09-73e0-b9bd-7084c8f3096b\\Klian_GarmentFull01\\Heroine_GarmentFull.blend",
+  "source_sha256": "16c681cbb90813fc4e1419b4b3c3f36174253694f5dea9eacc39c2db5c12392c",
+  "asset": "/Game/Constellation/Characters/Heroine/GamePilot/Locker/AS_Locker_GetUp.AS_Locker_GetUp",
+  "duration": 5.766666889190674,
+  "skeleton": "/Game/Constellation/Characters/Heroine/RebuildReview/SKEL_player_heroine_new_RebuildReview.SKEL_player_heroine_new_RebuildReview",
+  "saved_reload_verified": true,
+  "bone_positions_checked": 16356,
+  "max_error_cm": 0.004255711633800212,
+  "game_event_connected": true,
+  "montage_getup_updated": true,
+  "existing_event_assets_modified": true,
+  "scope": "Approved motion connected to actual school S0: Fall, event-owned prone loop, Recover, root-motion endpoint, montage blend, GameplayReturn. Both investigation orders and prone cancellation verified in actual map PIE.",
+  "engine_visual_playback_verified": true,
+  "playback_checks_passed": 12,
+  "hold_seconds": [
+    0,
+    5,
+    15
+  ],
+  "save_process_exit_code": 0,
+  "verification_process_exit_code": 0,
+  "runtime_process_exit_code": -1073741819,
+  "school_event": "/Game/SceneDirector/School/DA_S0_Opening",
+  "enable_root_motion": true,
+  "use_normalized_root_motion_scale": false,
+  "root_motion_root_lock": "AnimFirstFrame",
+  "school_gameplay_process_exit_code": 0,
+  "school_gameplay_validation": "SchoolLockerIntegration/result.json",
+  "school_gameplay_cases": [
+    "Slit then Inside",
+    "Inside then Slit",
+    "cancel during prone"
+  ],
+  "root_motion_distance_cm": 91.0159336693951,
+  "handoff_position_delta_cm": 0,
+  "prone_hold_drift_cm": 0,
+  "school_final_validation": "SchoolLockerIntegration/final_result.json",
+  "school_final_process_exit_code": 0,
+  "school_review_video": "SchoolLockerIntegration/school_locker_game.mp4",
+  "school_review_page": "SchoolLockerIntegration/review.html",
+  "school_final_input_movement_cm": 104.49139337543374,
+  "body_motion_source": "C:\\Users\\User\\.codex\\visualizations\\2026\\09\\19\\01a0ba3a-ca09-73e0-b9bd-7084c8f3096b\\Klian_Heroine04_PalmsDown\\Heroine_Klian_PalmsDown.blend",
+  "garment_delivery": {
+    "review": "C:\\Users\\User\\.codex\\visualizations\\2026\\09\\19\\01a0ba3a-ca09-73e0-b9bd-7084c8f3096b\\Klian_GarmentFull01\\review.html",
+    "status": "C:\\Users\\User\\.codex\\visualizations\\2026\\09\\19\\01a0ba3a-ca09-73e0-b9bd-7084c8f3096b\\Klian_GarmentFull01\\status.json",
+    "morphs": [
+      "Cloth_Klian_KeyPose_061",
+      "Cloth_Klian_KeyPose_091",
+      "Cloth_Klian_KeyPose_121",
+      "Cloth_Klian_KeyPose_161",
+      "Cloth_Klian_KeyPose_201",
+      "Cloth_Klian_Lift_LocalClearance",
+      "Cloth_Klian_Lift_CardiganOverlap"
+    ],
+    "material_slots": 60,
+    "total_morphs": 683,
+    "school_gameplay_verified": true,
+    "runtime_material_reset_verified": true
+  }
+}

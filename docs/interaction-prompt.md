@@ -74,3 +74,21 @@ BP_Player_Heroine의 InteractionPrompt 컴포넌트 → Interaction / Action Str
 tools/verify-interaction-strings.py는 최초 16개 문구 이관 확인용으로, 이후 의도적인 기획 편집 시 원본과 달라지는 것은 정상이다.
 
 2026-10-03 문자열 이전 검증: 빌드 성공. 별도 프로세스 재로딩에서 16개 문구와 플레이어 연결 확인. 상호작용 자동 검사 3개 통과(1개 경고 포함). 그래픽 플레이 검사는 에디터 시작 중 컴퓨터 멈춤으로 완료하지 못했으며, 이전 캡처를 새 검증 결과로 사용하지 않는다. 보고서: Saved/InteractionPromptReview/strings-reload.json 및 StringTests/index.json.
+
+## 상호작용 완료 상태 (2026-10-12)
+
+대상 Blueprint의 InteractionAvailability 컴포넌트에서 **Interaction Unavailable** (코드명 bInteractionUnavailable)을 관리한다.
+true이면 상호작용 안내 UI가 숨겨지고 F 입력 및 물건 집기가 차단된다.
+상자/사물함의 IsOpened, InteractOnce와 bIsInteracted, Scene Director의 일회성 이벤트 완료를 감지하면 true로 유지한다.
+반복 가능한 문의 IsOpen과 반복 연출은 완료로 취급하지 않는다. 취소하거나 실패한 연출도 완료로 취급하지 않는다.
+
+새로운 일회성 오브젝트는 성공 처리 시 이 변수를 true로 설정하면 된다.
+다른 완료 변수를 사용한다면 Completed Property에 bool 변수명을 지정한다.
+재사용을 허용할 때는 원래 완료 상태를 초기화한 뒤 Interaction Unavailable도 false로 바꾼다.
+이 변수는 오브젝트가 살아 있는 동안 유지된다. SaveGame 표시만으로 별도 디스크 저장이 자동 추가되지는 않는다.
+기존 상자 저장 상태와 Scene Director의 OncePerSave 기록이 복원되면 해당 완료 상태로부터 다시 계산한다.
+
+tools/setup-interaction-availability.py는 컴포넌트와 Ac_Interact의 공통 입력 검사를 설치한다.
+tools/verify-interaction-availability.py는 저장된 대상 Blueprint를 다시 불러와 컴포넌트 및 상태 유지를 검사한다.
+
+2026-10-12 검증: Development 빌드 성공, 상호작용 자동 검사 4개 통과. 별도 엔진 프로세스에서 대상 Blueprint 20종의 컴포넌트 1개·초기 상태·입력 차단과 Ac_Interact 연결을 확인했다. 기존 DodgeTimeline 경고가 남아 있으며, 렌더링을 사용하는 PIE 및 패키지 검사는 실행하지 않았다. 결과: Saved/InteractionAvailabilityReview/reload.json, verified-tests.log.

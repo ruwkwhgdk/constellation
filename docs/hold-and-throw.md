@@ -11,7 +11,7 @@
 | `DT_HoldableItems` | `SchoolChair`, `SchoolDesk`, `TestBox` | 운반 위치, 좌우 손 위치, 던지기 허용, 내려놓기 회전 |
 | `DT_PhysicsProps` | `SchoolChair`, `SchoolDesk`, `TestBox` | 질량, 이동·회전 감쇠, 초기 물리·중력, Physical Material |
 
-문구는 String Table의 **Source String**을 수정하고 키는 유지한다. 공통 수치는 Data Table의 `Default` 행을 선택해 편집한다. `PickupPlayRate`와 `PlacePlayRate`는 현재 2이며, 1은 원래 속도다. `Pickup/Place/ThrowContactTime`과 `Duration`은 몽타주가 없을 때 사용하는 대체 시간이다. 몽타주가 있으면 실제 접촉 시점은 몽타주의 Notify를 따른다. `NoticeDuration`은 실패 문구 표시 시간(초)이다.
+문구는 String Table의 **Source String**을 수정하고 키는 유지한다. 공통 수치는 Data Table의 `Default` 행을 선택해 편집한다. `PickupActionSeconds`, `PlaceActionSeconds`, `ThrowActionSeconds`는 실제 행동 길이(초)이며 현재 모두 0.75다. 기존 PlayRate 필드 대신 이 세 값을 수정한다. `Pickup/Place/ThrowContactTime`과 `Duration`은 몽타주가 없을 때 사용하는 접촉 비율의 기준이다. 몽타주가 있으면 실제 접촉 시점은 몽타주의 Notify를 따른다. `NoticeDuration`은 실패 문구 표시 시간(초)이다.
 
 `BP_Player_Heroine`의 Carry 컴포넌트 → **Carry / Data / Settings Row**가 공통 행을 선택한다. 각 물건의 `Ac_Holdable` → **Holdable / Data / Item Row**가 물건 행을 선택한다. 새 물건은 `DT_HoldableItems`에 행을 추가한 뒤 이 항목에서 지정한다. 운반 위치와 손 위치는 물건 로컬 좌표를 사용한다. `HoldMesh`가 지정되지 않았으면 기존대로 루트 Static Mesh를 사용한다.
 
@@ -21,7 +21,7 @@
 
 ## 플레이
 
-현재 조정값: 주인공의 최초 밀기 힘은 360, 지속 밀기 힘은 6000으로 이전 300/5000보다 20% 높였다. 집기·내려놓기 몽타주는 2배속이며 접촉 Notify도 함께 빨라진다. 애니메이션이 없는 경우의 대체 타이머도 절반으로 줄인다. 던지기·운반 루프 속도는 유지한다. 아래 이전 물리 조정 수치와 시험 결과는 당시의 기록이다.
+현재 조정값: 주인공의 최초 밀기 힘은 360, 지속 밀기 힘은 6000으로 이전 300/5000보다 20% 높였다. 집기·내려놓기·던지기는 각각 목표 0.75초에 완료되도록 몽타주 전체 재생 속도를 조정하며 접촉 Notify도 함께 빨라진다. 애니메이션 없는 경로에도 같은 길이를 적용한다. 운반 루프 속도는 유지한다. 아래 이전 물리 조정 수치와 시험 결과는 당시의 기록이다.
 
 `/Game/Constellation/Review/Carry/Maps/L_Carry_Review`를 열고 Play로 확인한다. 실제 `BP_Player_Heroine`을 사용한다. AbandonedSchool에도 적용되어 있으며, 해당 맵의 가구 5개에 남아 있던 개별 물리 비활성 설정을 수정했다.
 
@@ -148,3 +148,21 @@ DT_HoldableItems의 WeightKg와 HoldableComponent의 별도 WeightKg는 제거�
 - 보고서: `Saved/PhysicsPropsReview/Recheck20261010/`. Saved 보고서는 로컬 검증 산출물이며 Git 배포 대상이 아니다.
 
 이번 재검증은 검토 맵 기준이며, 패키징 및 AbandonedSchool 전체 맵 재검증은 수행하지 않았다. 기획 값은 해당 테이블에서 수정·저장한 뒤 PIE를 재시작해 적용한다.
+
+
+## 2026-10-24 운반 응답 시간 및 집기 정렬 수정
+
+가구 전용 FittedPickup/FittedThrow 경로가 공통 배속을 우회하면서 집기는 2.5초, 투척은 원본 길이만큼 조작을 잠갔다. 또한 후속 양손 집기 구현의 정렬 경로 충돌 검사가 캐릭터 캡슐·주변 가구·바닥 접촉으로 집기를 취소했다. 운반 중 충돌을 해제하는 정책에 맞춰 다음과 같이 변경한다.
+
+- DT_CarrySettings의 PickupActionSeconds / PlaceActionSeconds / ThrowActionSeconds로 실제 행동 시간을 관리한다. 기본 각 0.75초, 편집 범위 0.5~0.9초(프레임 처리 여유 포함 1초 이내 목표).
+- 가구 전용/일반 몽타주의 전체 클립을 목표 시간에 맞춰 재생한다. 접촉 Notify는 같은 속도로 재생하며 애니메이션 인스턴스가 없는 경우에도 동일한 실시간 길이를 사용한다.
+- 기존 PickupPlayRate / PlacePlayRate / ThrowPlayRate는 이전 데이터 호환을 위해 남아 있으며 현재 속도 조절은 ActionSeconds를 사용한다. ContactTime / Duration은 애니메이션 없는 경로의 접촉 비율에만 사용한다.
+- 집기 승인 시 가구 정렬부터 NoCollision을 적용한다. 주변 공간·경로 검사를 집기 정렬 조건에서 제거하고, 코드가 정렬시킨 가구를 접촉 시 다시 시야 검사해 취소하지 않는다.
+- 최초 무게·거리·시야·상호작용 가능 상태 검사와 내려놓기·투척 안전 검사는 유지한다. 들고 있는 동안 기존 공격·점프 제한은 유지하며 집기가 끝나면 이동·내려놓기·조준이 가능하다.
+- 애니메이션 본/손가락 키·원본 파일·잡는 위치는 변경하지 않는다. 재생 속도 변경이 전환 및 실제 메시 외형에 미치는 영향은 실제 엔진 영상으로 별도 확인한다.
+
+검증 완료: 수정 전 Red 검사에서 1초 초과·정렬 충돌 유지·점유된 목표 위치 집기 거부를 재현했다. 최종 증분 빌드(build05) 성공, Green02 운반·물리 자동 테스트 4개 실패 0개(3개 경고 포함). 저장된 테이블의 기존 필드 보존도 확인했다.
+
+렌더링된 검토 맵 Play07(60FPS 정상 가구) 및 Play08Tilted30(30FPS 넘어진 가구)에서 각각 50개 검사 통과. 집기·내려놓기·재획득·조준·실제 물리 투척과 조작 복귀를 확인했다. 60FPS 실측 집기 0.75~0.93초, 내려놓기·투척 0.75초; 30FPS 세 행동 모두 약 0.77초. 단계별 실제 엔진 PNG를 같은 보고서 폴더에 저장했다. 손가락 근접/전체 프레임 영상 품질 및 AbandonedSchool 모든 배치 검증으로 확대 해석하지 않는다.
+
+보고서: Saved/CarryResponsive20261024/. 재현: tools/review-carry-responsive.py를 검토 맵에서 -RenderOffscreen -UseFixedTimeStep -FPS=60 -NoAssetRegistryCache -NoAssetRegistryCacheWrite와 함께 실행한다. 넘어진 자세는 -SchoolTiltedPickup을 추가한다. 매 실행 독립 출력 폴더를 생성한다. PIE 블루프린트 재생성 후 TRASH 컴포넌트를 읽지 않도록 매 프레임 현재 컴포넌트를 재조회한다. 초기 Play01~06은 본 갱신/폐기 컴포넌트 참조를 진단한 실행이며 완료 증거로 사용하지 않는다.

@@ -1,0 +1,107 @@
+[
+  {
+    "path": "Saved/FolderCleanup/20261014/asset-audit-retry.log",
+    "sha256": "d33365bf65d34219870749b060df19230772155ba029f55ddfe11f9306eb9963",
+    "bytes": 269019
+  },
+  {
+    "path": "Saved/FolderCleanup/20261014/asset-audit.json",
+    "sha256": "9bd8ef9c60ec75a4a43c5b29cecc83bc67d115dc972028b629b039551fd93708",
+    "bytes": 19469
+  },
+  {
+    "path": "Saved/FolderCleanup/20261014/asset-audit.log",
+    "sha256": "a972ed33c66c2d405e75f7db1ce07fa44a59d62bdf996b037c55f3847e4aaac2",
+    "bytes": 100898
+  },
+  {
+    "path": "Saved/FolderCleanup/20261014/audit_assets.py",
+    "sha256": "219817b8a0d869c6ce832a50eeb83c6940e898205e44fc749d35e7883950c4af",
+    "bytes": 925
+  },
+  {
+    "path": "Saved/FolderCleanup/20261014/category-summary.json",
+    "sha256": "a6e6e6c09272e8963f211c3395b914fcf59004f923efd2b3c35171bc39de3153",
+    "bytes": 906
+  },
+  {
+    "path": "Saved/FolderCleanup/20261014/deletion-plan.json",
+    "sha256": "e7f027728a9b8ab77b8bcf6bfb706deb06f05cb1d8aa918279b5dc13d0849a18",
+    "bytes": 15671151
+  },
+  {
+    "path": "Saved/FolderCleanup/20261014/deletion-result.json",
+    "sha256": "1c81bfb63beea749650b5fee99db47398e1043f02eb66ff8087ee2a3c246beb8",
+    "bytes": 11683987
+  },
+  {
+    "path": "Saved/FolderCleanup/20261014/finish_retire_assets.py",
+    "sha256": "0445b474604487c86b7d3217f1b5e748c8dade7fe5a6efdbc6a48510b638c93a",
+    "bytes": 1309
+  },
+  {
+    "path": "Saved/FolderCleanup/20261014/inventory.json",
+    "sha256": "e0b2593c13e477838a94e4e249b6937fec2b936ad564d398d454cb0f5268cbbf",
+    "bytes": 203767
+  },
+  {
+    "path": "Saved/FolderCleanup/20261014/md-manifest.json",
+    "sha256": "137cd5bc93bc24d069bbce799fca3080b67957ccbc76a2591ccf0c2eefb2df06",
+    "bytes": 11924
+  },
+  {
+    "path": "Saved/FolderCleanup/20261014/md-supplement-manifest.json",
+    "sha256": "d5cef2c6bbae71668e637178218c86468f1afac42bb05c9607fd0fec658a6c8f",
+    "bytes": 1781
+  },
+  {
+    "path": "Saved/FolderCleanup/20261014/resume-summary.json",
+    "sha256": "0f503633577db2fc542ccb58af90d07d1ee29c5ac26c12a6cb3de668910f18ae",
+    "bytes": 458
+  },
+  {
+    "path": "Saved/FolderCleanup/20261014/retire-assets.log",
+    "sha256": "73a26479356d284d78c3f39960fcde85cac89503c290405ad51515c3ba31a547",
+    "bytes": 266854
+  },
+  {
+    "path": "Saved/FolderCleanup/20261014/retired-assets-before.json",
+    "sha256": "b13e2f2b5504ea3446c94a9d2d06fa72d8f6de77d81046b5d628ecc253844a47",
+    "bytes": 4639
+  },
+  {
+    "path": "Saved/FolderCleanup/20261014/retire_assets.py",
+    "sha256": "474076062ec8753457def55cf2f48306553c98af7368e4612d26dc939c18c5a3",
+    "bytes": 1584
+  },
+  {
+    "path": "Saved/FolderCleanup/20261014/scratch-deletion.json",
+    "sha256": "790f563b61375af956892dcf3bb4cca8b98e3cc2389b3329b888b04e30fba442",
+    "bytes": 721
+  },
+  {
+    "path": "Saved/FolderCleanup/20261014/STOPPED.json",
+    "sha256": "190e98f49606565d5ceba7088def9cb012ccb720725f913ed60c3bcf5873b68b",
+    "bytes": 697
+  },
+  {
+    "path": "Saved/FolderCleanup/20261014/Constellation_MD_Archive_2026-10-14.zip",
+    "sha256": "0d707c0872aa4235f60f19887607410112ca00c90a15c75e07128dcbfddfecc0",
+    "bytes": 183209
+  },
+  {
+    "path": "Saved/FolderCleanup/20261014/drive-readback.zip",
+    "sha256": "0d707c0872aa4235f60f19887607410112ca00c90a15c75e07128dcbfddfecc0",
+    "bytes": 183209
+  },
+  {
+    "path": "Saved/FolderCleanup/20261014/Constellation_MD_Archive_2026-10-14_Supplement.zip",
+    "sha256": "4f02c0689779a4929ad1e5ed2eb05fd48d13122bef66f4f950f87517a4969e17",
+    "bytes": 24860
+  },
+  {
+    "path": "Saved/FolderCleanup/20261014/drive-supplement-readback.zip",
+    "sha256": "4f02c0689779a4929ad1e5ed2eb05fd48d13122bef66f4f950f87517a4969e17",
+    "bytes": 24860
+  }
+]

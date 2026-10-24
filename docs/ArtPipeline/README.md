@@ -22,11 +22,17 @@ Art 저장소의 제작 원본·재검증 자료·분리 기록은 `develop`의 
 
 ## 외부 아트 작업공간 정리 기록 보관
 
-현재 `art-source-lock.json`은 Art 저장소 `develop`의 `200bee11eaa27c1918ff9c5494574b842a9e0da4`를 참조한다. `Migration/2026-10-24-ExternalArtCleanup/`에 외부 `Constellation_ArtWorkspace/Cleanup_20261024`의 정리·재생성 비교 기록과 복원 도구를 보관했다. 파일별 원본/보관본 해시는 `publication-manifest.json`, 사용 방법은 `README.txt`를 따른다.
+이 기록의 Art 게시 커밋은 `200bee11eaa27c1918ff9c5494574b842a9e0da4`이며, 현재 잠금 정보는 아래 중복 정리 기록의 후속 커밋을 따른다. `Migration/2026-10-24-ExternalArtCleanup/`에 외부 `Constellation_ArtWorkspace/Cleanup_20261024`의 정리·재생성 비교 기록과 복원 도구를 보관했다. 파일별 원본/보관본 해시는 `publication-manifest.json`, 사용 방법은 `README.txt`를 따른다.
 
 외부 작업공간에서 백업 9개·동일 사본 3개·재생성 중간본 36개를 제거한 기록이다. 편집 원본 모델 자체를 Art 저장소에 추가한 것은 아니며, 기록만으로 외부 원본 전체를 복원할 수는 없다. 복원 도구는 원래 외부 작업공간의 `Cleanup_20261024`에서 사용한다. 보관본에는 저장소에서 잘못 실행되는 것을 거부하는 위치 검사가 있다. 기존 폴더가 있으면 후속 기록을 덮어쓰지 않도록 먼저 비교한다.
 
 게임 실행 자산과 기존 임포트 원본 42개의 해시는 유지했으며, 재임포트는 수행하지 않았다.
+
+## 외부 아트 중복 사본 정리 기록 보관
+
+현재 `art-source-lock.json`은 Art 저장소 `develop`의 `e396c6bc33d6e14d5d2792ea5027b86e3c90443a`를 참조한다. `Migration/2026-10-24-ExternalArtDuplicates/`에 중복 20쌍의 판단, 사본 6개 삭제 기록(250,969,813바이트), 보존 경로와 복원 방법을 보관했다. 재검증 기준·별도 제작 산출물인 14쌍은 보존했으며 보호 파일 54개와 남은 쌍의 해시를 확인했다.
+
+`publication-manifest.json`은 외부 기록과 보관본의 해시를 연결한다. `snapshot/deleted.jsonl`의 보존본 SHA-256을 확인하고 누락된 원래 경로에 복사하는 절차는 `README.txt`를 따른다. 실제 보존본은 외부 `Constellation_ArtWorkspace`에 있으며 기록만으로 모델 전체를 복원할 수는 없다. `snapshot/cleanup.py.txt`는 실행하지 않는 과거 삭제 스크립트 사본이다. 이번 게시에서 게임 자산과 기존 임포트 목록·해시는 변경하지 않았다.
 
 ## 재임포트·재검증
 

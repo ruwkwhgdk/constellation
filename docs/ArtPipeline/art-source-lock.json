@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "art_repository": "git@github.com:ruwkwhgdk/constellation-art-source.git",
-  "art_commit": "200bee11eaa27c1918ff9c5494574b842a9e0da4",
+  "art_commit": "e396c6bc33d6e14d5d2792ea5027b86e3c90443a",
   "branch": "develop",
   "runtime_requires_art_checkout": false,
   "reimport_policy": "Manual only; copy pinned authoring files into ignored ArtSource; do not watch art directory",
@@ -267,5 +267,6 @@
   ],
   "migration_manifest": "Migration/2026-10-24/publication-manifest.json",
   "cleanup_manifest": "Migration/2026-10-24-DiskCleanup/plan.json",
-  "external_cleanup_manifest": "Migration/2026-10-24-ExternalArtCleanup/publication-manifest.json"
+  "external_cleanup_manifest": "Migration/2026-10-24-ExternalArtCleanup/publication-manifest.json",
+  "external_duplicate_cleanup_manifest": "Migration/2026-10-24-ExternalArtDuplicates/publication-manifest.json"
 }

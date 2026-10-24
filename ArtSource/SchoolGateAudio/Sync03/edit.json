@@ -1,0 +1,33 @@
+{
+  "source": "C:\\Users\\User\\.codex\\visualizations\\2026\\09\\19\\01a0ba3a-ca09-73e0-b9bd-7084c8f3096b\\GateOpen01\\Sync02\\SoundSources\\0683.wav",
+  "license": "CC0",
+  "pitch_semitones": -8,
+  "lowpass_hz": 1100,
+  "edits": [
+    {
+      "source_start": 2,
+      "timeline": [
+        0.85,
+        1.7
+      ],
+      "gain": 0.85
+    },
+    {
+      "source_start": 18.8,
+      "timeline": [
+        2,
+        5.8
+      ],
+      "gain": 0.9
+    },
+    {
+      "source_start": 0.35,
+      "timeline": [
+        5.8,
+        8
+      ],
+      "gain": 0.5
+    }
+  ],
+  "peak": 0.21061769767797606
+}

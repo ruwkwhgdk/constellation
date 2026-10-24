@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "art_repository": "git@github.com:ruwkwhgdk/constellation-art-source.git",
-  "art_commit": "ac8d9cfe62427efdb07f3ef4e62fb8cf664c6454",
+  "art_commit": "da1e2ae9543ae086ffa743701970f767ee3a3f89",
   "branch": "develop",
   "runtime_requires_art_checkout": false,
   "reimport_policy": "Manual only; copy pinned authoring files into ignored ArtSource; do not watch art directory",
@@ -272,5 +272,8 @@
   "remote_residency_plan": "Migration/2026-10-24-RemoteArtResidency/plan.json",
   "remote_residency_result": "Migration/2026-10-24-RemoteArtResidency/eviction-result.json",
   "remote_residency_followup_plan": "Migration/2026-10-24-RemoteArtResidency02/plan.json",
-  "remote_residency_followup_result": "Migration/2026-10-24-RemoteArtResidency02/final-verification.json"
+  "remote_residency_followup_result": "Migration/2026-10-24-RemoteArtResidency02/final-verification.json",
+  "lfs_cache_cleanup_manifest": "Migration/2026-10-24-LfsCacheCleanup/publication-manifest.json",
+  "lfs_cache_cleanup_result": "Migration/2026-10-24-LfsCacheCleanup/cleanup-result.json",
+  "lfs_cache_restore_tool": "Migration/2026-10-24-LfsCacheCleanup/restore_cache.py"
 }

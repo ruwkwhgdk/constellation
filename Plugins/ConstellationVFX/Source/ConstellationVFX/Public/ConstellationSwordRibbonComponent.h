@@ -13,6 +13,8 @@ class CONSTELLATIONVFX_API UConstellationSwordRibbonComponent : public UInstance
 public:
     UConstellationSwordRibbonComponent(const FObjectInitializer& ObjectInitializer);
     void Configure(FLinearColor Color);
+    // Candidate styling only; hit-window timing is owned by the combat action.
+    void ConfigureShape(float Width, float Lifetime, float Brightness=1.7f);
     void AddTip(FVector WorldTip,float Delta);
     void ResetTrail();
     // Logical sampled spans, independent of the smooth mesh tessellation.
@@ -28,4 +30,5 @@ private:
     struct FTipSample { FVector Position;float Age=0.f; };
     TArray<FTipSample> Samples;
     int32 ActiveSegments=0;
+    float TrailWidth=24.f, TrailLifetime=.18f, TrailBrightness=1.7f;
 };

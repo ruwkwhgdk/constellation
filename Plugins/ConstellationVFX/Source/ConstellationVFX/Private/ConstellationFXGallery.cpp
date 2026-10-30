@@ -1,4 +1,6 @@
 #include "ConstellationFXGallery.h"
+#include "ConstellationCombatFXReview.h"
+#include "ConstellationMonsterTelegraphReview.h"
 #include "ConstellationFXLibrary.h"
 #include "ConstellationFXActor.h"
 #include "ConstellationSwordRibbonComponent.h"
@@ -37,6 +39,8 @@ const TCHAR* AConstellationFXGallery::StationName(int32 I){static const TCHAR* N
 FVector AConstellationFXGallery::StationPosition(int32 I)const{return GetActorLocation()+FVector((I%5)*650,(I/5)*1000,0);}
 AConstellationFXGallery::AConstellationFXGallery(){PrimaryActorTick.bCanEverTick=true;RootComponent=CreateDefaultSubobject<USceneComponent>(TEXT("Root"));Sword=CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Sword"));Sword->SetupAttachment(RootComponent);Sword->SetCollisionEnabled(ECollisionEnabled::NoCollision);Ribbon=CreateDefaultSubobject<UConstellationSwordRibbonComponent>(TEXT("Ribbon"));Ribbon->SetupAttachment(RootComponent);Ribbon->SetCollisionEnabled(ECollisionEnabled::NoCollision);Ribbon->SetCastShadow(false);Trail=CreateDefaultSubobject<UNiagaraComponent>(TEXT("Trail"));Trail->SetupAttachment(Sword);Trail->SetAutoActivate(false);}
 void AConstellationFXGallery::BeginPlay(){Super::BeginPlay();
+ if(FParse::Param(FCommandLine::Get(),TEXT("MonsterTelegraphReview"))){GetWorld()->SpawnActor<AConstellationMonsterTelegraphReview>(GetActorLocation()+FVector(0,0,2000),FRotator::ZeroRotator);SetActorTickEnabled(false);return;}
+ if(FParse::Param(FCommandLine::Get(),TEXT("VFXCandidatesReview"))){GetWorld()->SpawnActor<AConstellationCombatFXReview>(GetActorLocation()+FVector(0,0,1200),FRotator::ZeroRotator);SetActorTickEnabled(false);return;}
  bReactionCapture=FParse::Param(FCommandLine::Get(),TEXT("VFXReactionCapture"));
  bProbe=FParse::Param(FCommandLine::Get(),TEXT("VFXGalleryProbe"));bCapture=FParse::Param(FCommandLine::Get(),TEXT("VFXGalleryCapture"));
  // Explicit legacy diagnostics own their camera; interactive viewing never does.

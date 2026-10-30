@@ -5,7 +5,7 @@
 #include "EngineUtils.h"
 AConstellationFXActor* UConstellationFXLibrary::SpawnEffect(const UObject* Context,EConstellationFXKind Kind,FVector Location,FVector Direction,FLinearColor Color,float Scale) {
  UWorld* W=GEngine?GEngine->GetWorldFromContextObject(Context,EGetWorldErrorMode::ReturnNull):nullptr;
- if(!W||Location.ContainsNaN()||Direction.ContainsNaN()||!FMath::IsFinite(Scale)||Scale<=0||uint8(Kind)>uint8(EConstellationFXKind::PlayerHit))return nullptr;
+ if(!W||Location.ContainsNaN()||Direction.ContainsNaN()||!FMath::IsFinite(Scale)||Scale<=0||uint8(Kind)>uint8(EConstellationFXKind::GroggyExit))return nullptr;
  int32 Active=0;for(TActorIterator<AConstellationFXActor> It(W);It;++It)if(!It->IsActorBeingDestroyed())++Active;
  if(Active>=160)return nullptr;
  const FTransform Transform(FRotator::ZeroRotator,Location);
@@ -27,6 +27,7 @@ FLinearColor UConstellationFXLibrary::CombatColor(EConstellationFXKind Kind) {
  case EConstellationFXKind::PlayerHit:return FLinearColor(.95f,.12f,.025f,1.f);
  case EConstellationFXKind::SwordBlock:return FLinearColor(1.f,.58f,.18f,1.f);
  case EConstellationFXKind::SwordParry:return FLinearColor(1.f,.82f,.43f,1.f);
+ case EConstellationFXKind::GroggyEnter:case EConstellationFXKind::GroggyHold:case EConstellationFXKind::GroggyExit:return FLinearColor(.48f,.72f,1.f,.8f);
  default:return FLinearColor(.8f,.88f,1.f,1.f);
  }
 }

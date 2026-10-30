@@ -5,7 +5,7 @@
 class AConstellationFXActor;
 class UNiagaraSystem;
 UENUM(BlueprintType)
-enum class EConstellationFXKind : uint8 { SwordHit, SwordBlock, SwordParry, SlimeAttack, SlimeHit, RunDust, GlassBreak, CaveDust, CaveMist, WaterDrop, WaterRipple, CaveSpore, PlayerHit };
+enum class EConstellationFXKind : uint8 { SwordHit, SwordBlock, SwordParry, SlimeAttack, SlimeHit, RunDust, GlassBreak, CaveDust, CaveMist, WaterDrop, WaterRipple, CaveSpore, PlayerHit, GroggyEnter, GroggyHold, GroggyExit };
 UCLASS()
 class CONSTELLATIONVFX_API UConstellationFXLibrary : public UBlueprintFunctionLibrary {
  GENERATED_BODY()

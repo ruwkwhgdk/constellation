@@ -47,7 +47,17 @@ void AConstellationFXActor::InitializeEffect(EConstellationFXKind Kind,FVector D
   P.Instance=(Layer==0?Shapes:Soft)->AddInstance(FTransform(P.Rotation,Pos,P.Size));(Layer==0?Shapes:Soft)->SetCustomDataValue(P.Instance,0,1,false);Particles.Add(P);
  };
  Duration=.6f;
- if(Gel){
+ if(Kind==EConstellationFXKind::GroggyEnter||Kind==EConstellationFXKind::GroggyHold||Kind==EConstellationFXKind::GroggyExit){
+  // Six moving shards: no orbiting UI icon and no per-tick actor/particle spawning.
+  const bool Hold=Kind==EConstellationFXKind::GroggyHold,Exit=Kind==EConstellationFXKind::GroggyExit;
+  Duration=Hold?1.f:Exit?.28f:.4f;
+  for(int I=0;I<6;++I){
+   const float Angle=2.f*PI*I/6.f;const FVector Radial(FMath::Cos(Angle),FMath::Sin(Angle),0);
+   Add(Radial*24.f*Scale,Hold?FVector::ZeroVector:Radial*(Exit?35.f:100.f)+FVector(0,0,Exit?30.f:55.f),FVector(.025,.025,.12),Duration,0,0,0,false,false);
+  }
+  if(!Hold)Add(FVector::ZeroVector,FVector(0,0,10),FVector(Exit?.2:.45),Duration*.55f,1,0,Exit?-0.8f:.8f,true,false);
+ }
+ else if(Gel){
   const bool Hit=Kind==EConstellationFXKind::SlimeHit;Duration=Hit?.68f:.42f;
   // A hit tears in the blade's travel direction; an attack releases a compact forward fan.
   const FVector Across=FVector::CrossProduct(Forward,FVector::UpVector).GetSafeNormal();
@@ -82,10 +92,11 @@ void AConstellationFXActor::InitializeEffect(EConstellationFXKind Kind,FVector D
   Add(FVector::ZeroVector,FVector::ZeroVector,Parry?FVector(.55,.55,.1):Block?FVector(.24,.24,.1):FVector(.42,.13,.1),Parry?.13f:.10f,1,0,.25f,true,false);
  }
 
- ParticleCount=Particles.Num();SetLifeSpan(Duration+.2f);AdvanceEffect(0);
+ ParticleCount=Particles.Num();SetLifeSpan(Kind==EConstellationFXKind::GroggyHold?0.f:Duration+.2f);AdvanceEffect(0);
 }
 void AConstellationFXActor::Tick(float Delta){
  Super::Tick(Delta);
+ if(EffectKind==EConstellationFXKind::GroggyHold && (!IsValid(GetOwner()) || GetOwner()->IsActorBeingDestroyed())){Destroy();return;}
  // A newly spawned actor must not consume time that elapsed before its contact event.
  const double Now=GetWorld()->GetTimeSeconds();
  const float Elapsed=FMath::Clamp(float(Now-LastEffectWorldTime),0.f,Delta);
@@ -96,6 +107,17 @@ void AConstellationFXActor::Tick(float Delta){
 }
 void AConstellationFXActor::AdvanceEffect(float Delta){
  if(IsActorBeingDestroyed())return;
+ if(EffectKind==EConstellationFXKind::GroggyHold){
+  Age=FMath::Fmod(Age+FMath::Max(0.f,Delta),20.f*PI);
+  for(int32 I=0;I<Particles.Num();++I){
+   const auto& P=Particles[I];const float Angle=2.f*PI*I/6.f+Age*.7f;
+   const float Radius=P.Position.Size();
+   const FVector Position(FMath::Cos(Angle)*Radius,FMath::Sin(Angle)*Radius,FMath::Sin(Age*2.f+I)*Radius*.18f);
+   Shapes->UpdateInstanceTransform(P.Instance,FTransform(FRotator(15.f,Angle*180.f/PI,20.f),Position,P.Size),false,false,true);
+   Shapes->SetCustomDataValue(P.Instance,0,.45f+.2f*FMath::Sin(Age*2.f+I),false);
+  }
+  Shapes->MarkRenderInstancesDirty();return;
+ }
  Age+=Delta;if(Age>=Duration){Destroy();return;}
  auto* Camera=UGameplayStatics::GetPlayerCameraManager(this,0);
  for(auto& P:Particles){P.Age+=Delta;float T=FMath::Clamp(P.Age/P.Life,0.f,1.f);P.Velocity*=FMath::Exp(-P.Drag*Delta);P.Velocity.Z-=P.Gravity*Delta;P.Position+=P.Velocity*Delta;P.Rotation+=P.Spin*Delta;

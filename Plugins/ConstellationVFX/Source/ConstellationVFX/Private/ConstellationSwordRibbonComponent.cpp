@@ -54,11 +54,18 @@ void UConstellationSwordRibbonComponent::Configure(FLinearColor Color)
     if (auto* Material=LoadObject<UMaterialInterface>(nullptr,TEXT("/Game/Constellation/VFX/Materials/M_FX_SwordRibbon.M_FX_SwordRibbon")))
     {
         auto* Dynamic=UMaterialInstanceDynamic::Create(Material,this);
-        Dynamic->SetVectorParameterValue(TEXT("Tint"),FLinearColor(Color.R*1.7f,Color.G*1.7f,Color.B*1.7f,Color.A));
+        Dynamic->SetVectorParameterValue(TEXT("Tint"),FLinearColor(Color.R*TrailBrightness,Color.G*TrailBrightness,Color.B*TrailBrightness,Color.A));
         SetMaterial(0,Dynamic);
         EnsureRibbonMesh();
         if (RibbonMesh) RibbonMesh->SetMaterial(0,Dynamic);
     }
+}
+void UConstellationSwordRibbonComponent::ConfigureShape(float Width,float Lifetime,float Brightness)
+{
+    TrailWidth=FMath::IsFinite(Width)?FMath::Clamp(Width,1.f,80.f):24.f;
+    TrailLifetime=FMath::IsFinite(Lifetime)?FMath::Clamp(Lifetime,.05f,.35f):.18f;
+    TrailBrightness=FMath::IsFinite(Brightness)?FMath::Clamp(Brightness,.1f,4.f):1.7f;
+    ResetTrail();
 }
 void UConstellationSwordRibbonComponent::ResetTrail()
 {
@@ -69,13 +76,13 @@ void UConstellationSwordRibbonComponent::AddTip(FVector WorldTip,float Delta)
 {
     EnsureRibbonMesh();
     if (!IsValid(RibbonMesh)) return;
-    constexpr float Lifetime=.18f;
+    const float Lifetime=TrailLifetime;
     if (WorldTip.ContainsNaN() || !FMath::IsFinite(Delta) || Delta<0.f) { ResetTrail();return; }
     if (Delta>Lifetime || (!Samples.IsEmpty() && FVector::DistSquared(Samples.Last().Position,WorldTip)>FMath::Square(120.f))) ResetTrail();
     for (auto& Sample:Samples) Sample.Age+=Delta;
-    Samples.RemoveAll([](const FTipSample& Sample){return Sample.Age>=.18f;});
+    Samples.RemoveAll([Lifetime](const FTipSample& Sample){return Sample.Age>=Lifetime;});
     // Keep the same temporal history at high frame rates, capped at sixteen samples.
-    if (Samples.IsEmpty() || (Samples.Last().Age>=.012f && FVector::DistSquared(Samples.Last().Position,WorldTip)>1.f))
+    if (Samples.IsEmpty() || (Samples.Last().Age>=Lifetime/15.f && FVector::DistSquared(Samples.Last().Position,WorldTip)>1.f))
     {
         if (Samples.Num()>=16) Samples.RemoveAt(0);
         Samples.Add({WorldTip,0.f});
@@ -127,7 +134,7 @@ void UConstellationSwordRibbonComponent::AddTip(FVector WorldTip,float Delta)
         const float U=Distances[Index]/FMath::Max(Distances.Last(),UE_SMALL_NUMBER);
         for (int32 Edge=0;Edge<2;++Edge)
         {
-            Vertices.Add(ToWorld.InverseTransformPosition(Centers[Index]+Side*((Edge?1.f:-1.f)*12.f*Fade)));
+            Vertices.Add(ToWorld.InverseTransformPosition(Centers[Index]+Side*((Edge?1.f:-1.f)*TrailWidth*.5f*Fade)));
             Normals.Add(ToWorld.InverseTransformVectorNoScale(Facing));
             UV.Add(FVector2D(U,float(Edge)));
             Colors.Add(FLinearColor(1.f,1.f,1.f,Fade));
